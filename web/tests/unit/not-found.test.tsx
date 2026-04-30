@@ -37,9 +37,7 @@ describe("/ (not-found)", () => {
 
   it("links back to the home page", () => {
     render(<NotFound />);
-    const homeLinks = screen
-      .getAllByRole("link")
-      .filter((a) => a.getAttribute("href") === "/");
+    const homeLinks = screen.getAllByRole("link").filter((a) => a.getAttribute("href") === "/");
     expect(homeLinks.length).toBeGreaterThan(0);
   });
 
