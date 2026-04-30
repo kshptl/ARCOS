@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { type KeyboardEvent, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { SearchIndexEntry } from "@/lib/data/schemas";
 import styles from "./SearchBox.module.css";
@@ -55,6 +56,7 @@ export function SearchBox({
   placeholder?: string;
 }) {
   const listboxId = useId();
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
@@ -86,7 +88,7 @@ export function SearchBox({
     } else if (e.key === "Enter" && activeIdx >= 0 && flat[activeIdx]) {
       e.preventDefault();
       const target = flat[activeIdx];
-      if (target) window.location.assign(hrefFor(target));
+      if (target) router.push(hrefFor(target) as Parameters<typeof router.push>[0]);
     } else if (e.key === "Escape") {
       setOpen(false);
       setActiveIdx(-1);

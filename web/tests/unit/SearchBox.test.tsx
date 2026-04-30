@@ -4,6 +4,21 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { SearchBox } from "@/components/search/SearchBox";
 import { resetSearchIndexCache } from "@/components/search/useSearchIndex";
 
+const { routerPush } = vi.hoisted(() => ({ routerPush: vi.fn() }));
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({
+    push: routerPush,
+    replace: vi.fn(),
+    back: vi.fn(),
+    forward: vi.fn(),
+    refresh: vi.fn(),
+    prefetch: vi.fn(),
+  }),
+  usePathname: () => "/",
+  useSearchParams: () => new URLSearchParams(),
+  useParams: () => ({}),
+}));
+
 const FIXTURE = [
   {
     type: "county",
@@ -42,6 +57,7 @@ const FIXTURE = [
 
 beforeEach(() => {
   resetSearchIndexCache();
+  routerPush.mockReset();
   globalThis.sessionStorage.clear();
   vi.stubGlobal(
     "fetch",
@@ -81,11 +97,6 @@ describe("SearchBox", () => {
 
   it("navigates with keyboard and activates via Enter", async () => {
     const user = userEvent.setup();
-    const assign = vi.fn();
-    Object.defineProperty(window, "location", {
-      value: { assign },
-      writable: true,
-    });
     render(<SearchBox />);
     const input = screen.getByRole("combobox");
     await user.click(input);
@@ -93,7 +104,7 @@ describe("SearchBox", () => {
     await waitFor(() => expect(screen.getByText("Mingo County")).toBeInTheDocument());
     await user.keyboard("{ArrowDown}");
     await user.keyboard("{Enter}");
-    expect(assign).toHaveBeenCalledWith("/county/54059");
+    expect(routerPush).toHaveBeenCalledWith("/county/54059");
   });
 
   it("shows a no-matches message for an empty result set", async () => {
