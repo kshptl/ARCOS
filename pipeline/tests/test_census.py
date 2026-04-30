@@ -38,10 +38,10 @@ def test_parse_popest_preserves_non_county_names(fixtures_dir):
     df = census.parse_popest_csv(fixtures_dir / "census" / "co-est2019-sample.csv")
     # Virginia independent cities, Louisiana parishes, Alaska boroughs: keep full name
     row = df.filter(pl.col("fips") == "51720").to_dicts()[0]
-    # Parser does NOT strip " County" because this name doesn't have that suffix
-    assert (
-        row["name"] == "South"
-    )  # In real data this would be "Norton city"; we use raw CTYNAME verbatim
+    # Parser does NOT strip " County" because this name doesn't have that suffix;
+    # raw CTYNAME "Norton city" is preserved verbatim.
+    assert row["name"] == "Norton city"
+    assert row["state"] == "VA"
 
 
 def test_parse_popest_handles_missing_population(fixtures_dir, tmp_path):
