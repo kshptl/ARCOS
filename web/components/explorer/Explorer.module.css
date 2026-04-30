@@ -1,0 +1,67 @@
+.root {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-areas:
+    "header header"
+    "controls controls"
+    "slider slider"
+    "map browse";
+  gap: var(--space-lg);
+  padding: var(--space-xl) 0;
+  container-type: inline-size;
+}
+
+.header { grid-area: header; }
+.controls { grid-area: controls; }
+.slider { grid-area: slider; }
+.mapArea { grid-area: map; min-height: 420px; }
+.browse { grid-area: browse; }
+
+.lede {
+  max-width: 56ch;
+  color: var(--text-muted);
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+
+.browseList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 2px;
+  font-size: var(--type-body-sm);
+  max-height: 420px;
+  overflow-y: auto;
+  border: 1px solid var(--rule);
+  padding: var(--space-xs);
+}
+
+.browseList a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.browseList a:hover,
+.browseList a:focus-visible {
+  text-decoration: underline;
+  color: var(--accent-cool);
+}
+
+@container (max-width: 640px) {
+  .root {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "controls"
+      "slider"
+      "map"
+      "browse";
+  }
+}

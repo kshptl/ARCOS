@@ -1,8 +1,13 @@
-export const metadata = {
-  title: "Explorer — openarcos",
-  description: "Interactive choropleth of US county-level opioid shipments 2006–2014.",
+import type { Metadata } from 'next';
+import { Explorer } from '@/components/explorer/Explorer';
+import { loadCountyMeta } from '@/lib/data/loadCountyMeta';
+
+export const metadata: Metadata = {
+  title: 'Explorer — openarcos',
+  description: 'Interactive choropleth of US county-level opioid shipments 2006–2014.',
 };
 
-export default function ExplorerPage() {
-  return <main>Explorer (stub).</main>;
+export default async function ExplorerPage() {
+  const counties = await loadCountyMeta();
+  return <Explorer counties={counties} />;
 }
