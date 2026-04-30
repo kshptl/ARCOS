@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Ajv from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import type { AnyValidateFunction, ErrorObject } from "ajv";
+import type { ValidateFunction, ErrorObject } from "ajv";
 
 export interface ValidateArtifactArgs {
   schemaDir: string;
@@ -36,13 +36,13 @@ function getAjv(schemaDir: string): Ajv {
 async function loadSchema(
   schemaDir: string,
   artifactName: string,
-): Promise<AnyValidateFunction> {
+): Promise<ValidateFunction> {
   const schemaPath = path.join(schemaDir, `${artifactName}.schema.json`);
   const raw = await fs.readFile(schemaPath, "utf8");
   const schema = JSON.parse(raw);
   const ajv = getAjv(schemaDir);
   const existing = ajv.getSchema(schema.$id ?? artifactName);
-  if (existing) return existing;
+  if (existing) return existing as ValidateFunction;
   return ajv.compile(schema);
 }
 
