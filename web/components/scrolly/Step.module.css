@@ -1,0 +1,14 @@
+.step {
+  max-width: 40ch;
+  padding: var(--space-md);
+  background: color-mix(in srgb, var(--canvas) 92%, transparent);
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  line-height: var(--leading-normal);
+}
+
+.step h3 {
+  font-family: var(--font-display);
+  font-size: var(--type-heading-sm);
+  margin: 0 0 var(--space-xs) 0;
+}
