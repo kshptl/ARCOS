@@ -153,4 +153,21 @@ describe("Act3Enforcement", () => {
     expect(Number(wStr)).toBeGreaterThanOrEqual(640);
     expect(Number(hStr)).toBeGreaterThanOrEqual(360);
   });
+
+  it("does not render per-bar notable-action callout labels", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    const svgText = Array.from(svg!.querySelectorAll("text")).map(
+      (t) => t.textContent ?? "",
+    );
+    for (const s of svgText) {
+      expect(s).not.toMatch(/Operation X/);
+      expect(s).not.toMatch(/Operation Y/);
+    }
+  });
 });

@@ -26,16 +26,6 @@ const FULL_YEAR_RANGE: number[] = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 201
 const INFLECTION_START = 2012;
 const INFLECTION_END = 2014;
 
-/**
- * Trim a notable-action title to a single-line callout ≤ 30 chars to fit in
- * the margin. Preserves the most specific prefix.
- */
-function shortTitle(title: string): string {
-  const cleaned = title.replace(/^United States v\.\s*/i, "").trim();
-  if (cleaned.length <= 30) return cleaned;
-  return `${cleaned.slice(0, 28)}…`;
-}
-
 export function Act3Enforcement({ actions }: Act3EnforcementProps) {
   const progress = useScrollyProgress();
   const showInflection = progress > 0.5;
@@ -65,15 +55,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
   };
   const yScale = (v: number) => PAD_TOP + plotH - (v / yMax) * plotH;
   const barWidth = Math.min(BAR_WIDTH, step - 6);
-
-  // Notable-action callout positions alternate up/down to avoid collisions.
-  const callouts = actions
-    .filter((a) => a.notable_actions.length > 0)
-    .map((a, i) => ({
-      year: a.year,
-      title: shortTitle(a.notable_actions[0]?.title ?? ""),
-      above: i % 2 === 0,
-    }));
 
   return (
     <div className={styles.act}>
@@ -200,32 +181,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             stroke="var(--ink)"
             strokeWidth={1}
           />
-
-          {/* Notable-action callouts with leader lines */}
-          {callouts.map((c) => {
-            const a = byYear.get(c.year);
-            if (!a) return null;
-            const cx = xFor(c.year);
-            const barTopY = PAD_TOP + plotH - (a.action_count / yMax) * plotH;
-            // Leader line + label
-            const labelY = c.above ? Math.max(PAD_TOP - 4, barTopY - 22) : PAD_TOP + plotH + 30;
-            const anchorY = c.above ? barTopY - 3 : PAD_TOP + plotH + 3;
-            return (
-              <g key={`callout-${c.year}`} opacity={progress > 0.3 ? 1 : 0}>
-                <line
-                  x1={cx}
-                  y1={anchorY}
-                  x2={cx}
-                  y2={labelY + (c.above ? 3 : -8)}
-                  stroke="var(--accent-hot)"
-                  strokeWidth={0.8}
-                />
-                <text className={styles.notableCallout} x={cx} y={labelY} textAnchor="middle">
-                  {c.year}: {c.title}
-                </text>
-              </g>
-            );
-          })}
         </svg>
 
         <p className={styles.subCaption}>
