@@ -1,0 +1,114 @@
+/* Bold Poster design tokens. Loaded globally; extended in
+   styles/globals.css. Dark mode applies only when an ancestor sets
+   data-theme="dark" — used on /methodology and /about. */
+
+:root {
+  /* palette */
+  --ink: #1a1a1a;
+  --ink-80: #1a1a1acc;
+  --ink-60: #1a1a1a99;
+  --ink-40: #1a1a1a66;
+  --canvas: #f5ecd7;
+  --canvas-warm: #f0e3c4;
+  --canvas-shade: #ece0c2;
+  --accent-hot: #c23b20;
+  --accent-cool: #2a5f7a;
+  --muted: #766d5a;
+  --grid: rgba(26, 26, 26, 0.12);
+
+  /* surface semantic tokens */
+  --surface: var(--canvas);
+  --surface-elevated: var(--canvas-warm);
+  --text: var(--ink);
+  --text-muted: var(--ink-60);
+  --rule: var(--grid);
+
+  /* type scale */
+  --font-display: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+  --font-body: var(--font-body), "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+
+  --type-display-xl: 6rem;     /* 96px - act-opening numeral */
+  --type-display-lg: 4.5rem;   /* 72px - section hero */
+  --type-display-md: 3rem;     /* 48px - subsection */
+  --type-display-sm: 2rem;     /* 32px - card hero */
+  --type-h1: 2.25rem;          /* 36px */
+  --type-h2: 1.5rem;           /* 24px */
+  --type-h3: 1.25rem;          /* 20px */
+  --type-body: 1.0625rem;      /* 17px */
+  --type-body-sm: 0.9375rem;   /* 15px */
+  --type-caption: 0.8125rem;   /* 13px */
+  --type-eyebrow: 0.75rem;     /* 12px uppercase */
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-loose: 1.7;
+
+  --numeric: tabular-nums;
+  --font-feature-numeric: "tnum", "lnum";
+
+  /* spacing scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.25rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 5.25rem;
+  --space-4xl: 8rem;
+
+  /* radii */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* shadows */
+  --shadow-soft: 0 1px 0 rgba(26, 26, 26, 0.08), 0 10px 24px rgba(26, 26, 26, 0.08);
+  --shadow-strong: 0 2px 0 rgba(26, 26, 26, 0.1), 0 14px 32px rgba(26, 26, 26, 0.18);
+
+  /* motion */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0, 0, 0, 1);
+  --duration-fast: 140ms;
+  --duration-med: 220ms;
+  --duration-slow: 320ms;
+
+  /* layout */
+  --page-max: 1200px;
+  --gutter: clamp(1rem, 3vw, 2rem);
+
+  /* z */
+  --z-header: 40;
+  --z-tooltip: 60;
+  --z-overlay: 80;
+  --z-popover: 70;
+}
+
+[data-theme="dark"] {
+  --ink: #f3efe5;
+  --ink-80: #f3efe5cc;
+  --ink-60: #f3efe599;
+  --ink-40: #f3efe566;
+  --canvas: #161513;
+  --canvas-warm: #1e1d1a;
+  --canvas-shade: #232220;
+  --accent-hot: #e56b4f;
+  --accent-cool: #6ea8c4;
+  --muted: #a8a08e;
+  --grid: rgba(243, 239, 229, 0.14);
+  --surface: var(--canvas);
+  --surface-elevated: var(--canvas-warm);
+  --text: var(--ink);
+  --text-muted: var(--ink-60);
+  --rule: var(--grid);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-med: 0ms;
+    --duration-slow: 0ms;
+  }
+}
