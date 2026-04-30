@@ -53,13 +53,20 @@ function scaleFor(metric: MapMetric): (v: number | null | undefined, d: ScaleDom
 }
 
 export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonLayerProps {
-  const { featureCollection, valueByFips, metric, domain, colorKey } = args;
+  const { featureCollection, valueByFips, metric, domain, colorKey, onHover, onClick } = args;
   const colorFn = scaleFor(metric);
+
+  // Only enable picking when a consumer actually listens for hover/click.
+  // Deck.gl picking performs a synchronous gl.readPixels on every mouse
+  // move/tap (the "GPU stall due to ReadPixels" warning) — disabling it
+  // by default removes that cost entirely for the common case where no
+  // tooltip is wired up.
+  const pickable = Boolean(onHover || onClick);
 
   return {
     id: `counties-${metric}`,
     data: featureCollection.features,
-    pickable: true,
+    pickable,
     stroked: true,
     filled: true,
     extruded: false,
@@ -72,8 +79,8 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     getLineColor: [26, 26, 26, 40],
     getLineWidth: 1,
     lineWidthMinPixels: 0.5,
-    onHover: args.onHover,
-    onClick: args.onClick,
+    onHover,
+    onClick,
     updateTriggers: {
       // Primitive keys only — Deck.gl shallow-compares this array.
       // Passing a Map reference here would invalidate on every parent

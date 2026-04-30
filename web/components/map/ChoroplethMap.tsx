@@ -65,10 +65,16 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       // updateTriggers.getFillColor; avoids passing Map references that
       // churn identity on every parent render.
       colorKey: `${metric}-${year ?? ""}-${domain.domainMin}-${domain.domainMax}`,
-      onHover: (info) =>
-        onCountyHover?.(String(info.object?.id ?? "") || null, info.object ?? null),
-      onClick: (info) =>
-        onCountyClick?.(String(info.object?.id ?? "") || null, info.object ?? null),
+      // Only wire picking handlers when the parent actually listens, so
+      // countyLayer can keep pickable=false and skip gl.readPixels.
+      onHover: onCountyHover
+        ? (info) =>
+            onCountyHover(String(info.object?.id ?? "") || null, info.object ?? null)
+        : undefined,
+      onClick: onCountyClick
+        ? (info) =>
+            onCountyClick(String(info.object?.id ?? "") || null, info.object ?? null)
+        : undefined,
     });
     const layersOut: PolygonLayer[] = [
       new PolygonLayer(countyProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
