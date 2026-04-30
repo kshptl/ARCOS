@@ -4,10 +4,10 @@
  * If a source artifact is missing (e.g. pipeline not run yet), the seed
  * fixture at public/data/scrolly-data.json is kept untouched.
  */
-import { readFile, writeFile, access } from 'node:fs/promises';
-import path from 'node:path';
+import { access, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 
-const AFTERMATH_FIPS = ['54059', '51720', '54011', '54045', '21071', '21195'] as const;
+const AFTERMATH_FIPS = ["54059", "51720", "54011", "54045", "21071", "21195"] as const;
 
 type StateShip = { state: string; year: number; pills: number; pills_per_capita: number };
 type TopDist = { distributor: string; year: number; pills: number; share_pct: number };
@@ -28,7 +28,7 @@ async function exists(p: string): Promise<boolean> {
 
 async function readJSON<T>(p: string): Promise<T | null> {
   if (!(await exists(p))) return null;
-  const raw = await readFile(p, 'utf8');
+  const raw = await readFile(p, "utf8");
   return JSON.parse(raw) as T;
 }
 
@@ -57,8 +57,10 @@ function pickAct2(top: TopDist[]): {
   const endYear = years[years.length - 1]!;
   const dists = new Set(top.map((r) => r.distributor));
   const rows = Array.from(dists).map((distributor) => {
-    const start = top.find((r) => r.distributor === distributor && r.year === startYear)?.share_pct ?? 0;
-    const end = top.find((r) => r.distributor === distributor && r.year === endYear)?.share_pct ?? 0;
+    const start =
+      top.find((r) => r.distributor === distributor && r.year === startYear)?.share_pct ?? 0;
+    const end =
+      top.find((r) => r.distributor === distributor && r.year === endYear)?.share_pct ?? 0;
     return { distributor, start, end, emphasized: false };
   });
   rows.sort((a, b) => b.end - a.end);
@@ -73,13 +75,15 @@ function pickAct3(actions: DEA[]): { actions: DEA[] } {
 }
 
 async function main() {
-  const dataDir = path.join(process.cwd(), 'public', 'data');
-  const state = await readJSON<StateShip[]>(path.join(dataDir, 'state-shipments-by-year.json'));
-  const top = await readJSON<TopDist[]>(path.join(dataDir, 'top-distributors-by-year.json'));
-  const dea = await readJSON<DEA[]>(path.join(dataDir, 'dea-enforcement-actions.json'));
+  const dataDir = path.join(process.cwd(), "public", "data");
+  const state = await readJSON<StateShip[]>(path.join(dataDir, "state-shipments-by-year.json"));
+  const top = await readJSON<TopDist[]>(path.join(dataDir, "top-distributors-by-year.json"));
+  const dea = await readJSON<DEA[]>(path.join(dataDir, "dea-enforcement-actions.json"));
 
   if (state === null || top === null || dea === null || state.length === 0) {
-    console.log('[build-scrolly] one or more upstream artifacts missing/empty; keeping existing scrolly-data.json');
+    console.log(
+      "[build-scrolly] one or more upstream artifacts missing/empty; keeping existing scrolly-data.json",
+    );
     return;
   }
 
@@ -91,13 +95,13 @@ async function main() {
       counties: AFTERMATH_FIPS.map((fips) => ({
         fips,
         name: fips,
-        state: '',
+        state: "",
         deaths: [],
       })),
     },
   };
-  await writeFile(path.join(dataDir, 'scrolly-data.json'), JSON.stringify(out, null, 2));
-  console.log(`[build-scrolly] wrote ${path.join(dataDir, 'scrolly-data.json')}`);
+  await writeFile(path.join(dataDir, "scrolly-data.json"), JSON.stringify(out, null, 2));
+  console.log(`[build-scrolly] wrote ${path.join(dataDir, "scrolly-data.json")}`);
 }
 
 main().catch((err) => {

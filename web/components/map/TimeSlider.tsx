@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { type KeyboardEvent, useCallback, useId } from 'react';
-import styles from './TimeSlider.module.css';
+import { type KeyboardEvent, useCallback, useId } from "react";
+import styles from "./TimeSlider.module.css";
 
 export interface TimeSliderProps {
   years: number[];
@@ -10,7 +10,7 @@ export interface TimeSliderProps {
   label?: string;
 }
 
-export function TimeSlider({ years, value, onChange, label = 'Year' }: TimeSliderProps) {
+export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSliderProps) {
   const labelId = useId();
   const sortedYears = [...years].sort((a, b) => a - b);
   const min = sortedYears[0] ?? value;
@@ -22,24 +22,24 @@ export function TimeSlider({ years, value, onChange, label = 'Year' }: TimeSlide
       if (sortedYears.length === 0) return;
       let nextIdx = idx;
       switch (e.key) {
-        case 'ArrowRight':
-        case 'ArrowUp':
+        case "ArrowRight":
+        case "ArrowUp":
           nextIdx = idx + 1;
           break;
-        case 'ArrowLeft':
-        case 'ArrowDown':
+        case "ArrowLeft":
+        case "ArrowDown":
           nextIdx = idx - 1;
           break;
-        case 'Home':
+        case "Home":
           nextIdx = 0;
           break;
-        case 'End':
+        case "End":
           nextIdx = sortedYears.length - 1;
           break;
-        case 'PageUp':
+        case "PageUp":
           nextIdx = Math.min(sortedYears.length - 1, idx + 3);
           break;
-        case 'PageDown':
+        case "PageDown":
           nextIdx = Math.max(0, idx - 3);
           break;
         default:
@@ -74,18 +74,11 @@ export function TimeSlider({ years, value, onChange, label = 'Year' }: TimeSlide
         className={styles.track}
       >
         <div className={styles.progress} style={{ width: `${pct}%` }} aria-hidden="true" />
-        <div
-          className={styles.thumb}
-          style={{ left: `calc(${pct}% - 10px)` }}
-          aria-hidden="true"
-        />
+        <div className={styles.thumb} style={{ left: `calc(${pct}% - 10px)` }} aria-hidden="true" />
       </div>
       <div className={styles.ticks} aria-hidden="true">
         {sortedYears.map((y) => (
-          <span
-            key={y}
-            className={`${styles.tick} ${y === value ? styles.tickActive : ''}`}
-          >
+          <span key={y} className={`${styles.tick} ${y === value ? styles.tickActive : ""}`}>
             {y}
           </span>
         ))}

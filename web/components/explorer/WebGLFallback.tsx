@@ -1,5 +1,5 @@
-import type { CountyMetadata } from '@/lib/data/schemas';
-import styles from './WebGLFallback.module.css';
+import type { CountyMetadata } from "@/lib/data/schemas";
+import styles from "./WebGLFallback.module.css";
 
 export interface WebGLFallbackProps {
   counties: CountyMetadata[];

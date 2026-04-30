@@ -1,11 +1,11 @@
-import AxeBuilder from '@axe-core/playwright';
-import { test, expect } from '@playwright/test';
+import AxeBuilder from "@axe-core/playwright";
+import { expect, test } from "@playwright/test";
 
 const pages = [
-  { name: 'home', url: '/' },
-  { name: 'explorer', url: '/explorer' },
-  { name: 'methodology', url: '/methodology' },
-  { name: 'county', url: '/county/54059' },
+  { name: "home", url: "/" },
+  { name: "explorer", url: "/explorer" },
+  { name: "methodology", url: "/methodology" },
+  { name: "county", url: "/county/54059" },
 ];
 
 for (const p of pages) {
@@ -16,12 +16,12 @@ for (const p of pages) {
       test.skip();
       return;
     }
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState("networkidle");
     const results = await new AxeBuilder({ page })
-      .withTags(['wcag2a', 'wcag2aa', 'best-practice'])
+      .withTags(["wcag2a", "wcag2aa", "best-practice"])
       .analyze();
     const serious = results.violations.filter((v) =>
-      ['serious', 'critical'].includes(v.impact ?? ''),
+      ["serious", "critical"].includes(v.impact ?? ""),
     );
     if (serious.length > 0) {
       console.log(JSON.stringify(serious, null, 2));

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useId, useRef, useState } from 'react';
-import styles from './CitationPopover.module.css';
+import { useCallback, useEffect, useId, useRef, useState } from "react";
+import styles from "./CitationPopover.module.css";
 
 type Props = {
   source: string;
@@ -19,17 +19,17 @@ export function CitationPopover({ source, year, url }: Props) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') close();
+      if (e.key === "Escape") close();
     };
     const onClickOutside = (e: MouseEvent) => {
       const target = e.target as Node | null;
       if (rootRef.current && target && !rootRef.current.contains(target)) close();
     };
-    document.addEventListener('keydown', onKey);
-    document.addEventListener('mousedown', onClickOutside);
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClickOutside);
     return () => {
-      document.removeEventListener('keydown', onKey);
-      document.removeEventListener('mousedown', onClickOutside);
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClickOutside);
     };
   }, [open, close]);
 

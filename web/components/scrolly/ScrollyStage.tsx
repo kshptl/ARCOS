@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import type { ReactNode } from 'react';
-import { useScrollProgress } from './useScrollProgress';
-import { useReducedMotion } from './useReducedMotion';
-import { ScrollyProgressContext } from './progressContext';
-import styles from './ScrollyStage.module.css';
+import type { ReactNode } from "react";
+import { ScrollyProgressContext } from "./progressContext";
+import styles from "./ScrollyStage.module.css";
+import { useReducedMotion } from "./useReducedMotion";
+import { useScrollProgress } from "./useScrollProgress";
 
 export interface ScrollyStageProps {
   canvas: ReactNode;
@@ -24,10 +24,10 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
       role="region"
       aria-label={ariaLabel}
       className={styles.stage}
-      data-reduced={reduced ? 'true' : 'false'}
+      data-reduced={reduced ? "true" : "false"}
     >
       <ScrollyProgressContext.Provider value={effective}>
-        <div className={styles.sticky} aria-hidden={reduced ? 'false' : 'true'}>
+        <div className={styles.sticky} aria-hidden={reduced ? "false" : "true"}>
           {canvas}
         </div>
         <div className={styles.steps}>{children}</div>

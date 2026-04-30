@@ -1,6 +1,6 @@
-import { readFile as defaultReadFile } from 'node:fs/promises';
-import path from 'node:path';
-import type { DEAEnforcementAction } from './schemas';
+import { readFile as defaultReadFile } from "node:fs/promises";
+import path from "node:path";
+import type { DEAEnforcementAction } from "./schemas";
 
 export type ScrollyData = {
   act1: { totalPills: number; yearly: { year: number; pills: number }[] };
@@ -29,20 +29,20 @@ export interface LoadScrollyDataOptions {
   cwd?: string;
 }
 
-export async function loadScrollyData(
-  options: LoadScrollyDataOptions = {},
-): Promise<ScrollyData> {
+export async function loadScrollyData(options: LoadScrollyDataOptions = {}): Promise<ScrollyData> {
   if (cache) return cache;
-  const readFile = options.readFile ?? (defaultReadFile as unknown as (p: string, enc: BufferEncoding) => Promise<string>);
+  const readFile =
+    options.readFile ??
+    (defaultReadFile as unknown as (p: string, enc: BufferEncoding) => Promise<string>);
   const cwd = options.cwd ?? process.cwd();
-  const filepath = path.join(cwd, 'public', 'data', 'scrolly-data.json');
+  const filepath = path.join(cwd, "public", "data", "scrolly-data.json");
   try {
-    const raw = await readFile(filepath, 'utf8');
+    const raw = await readFile(filepath, "utf8");
     const parsed = JSON.parse(raw) as ScrollyData;
     cache = parsed;
     return parsed;
   } catch (err) {
-    if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
       cache = EMPTY;
       return EMPTY;
     }

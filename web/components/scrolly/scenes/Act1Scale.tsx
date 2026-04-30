@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useScrollyProgress } from '../progressContext';
-import { formatCompact, formatFull } from '@/lib/format/number';
-import styles from './scenes.module.css';
+import { formatCompact, formatFull } from "@/lib/format/number";
+import { useScrollyProgress } from "../progressContext";
+import styles from "./scenes.module.css";
 
 export interface YearlyTotal {
   year: number;
@@ -26,11 +26,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
     <div className={styles.act}>
       <div className={styles.bigStat}>
         <span className={styles.eyebrow}>2006–2014</span>
-        <span
-          data-testid="act1-count"
-          className={`${styles.count} numeric`}
-          aria-live="polite"
-        >
+        <span data-testid="act1-count" className={`${styles.count} numeric`} aria-live="polite">
           {progress >= 1 ? formatFull(totalPills) : formatCompact(currentCount)}
         </span>
         <span className={styles.unit}>pills</span>
@@ -46,7 +42,13 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
           const x = 20 + i * 40;
           return (
             <g key={d.year}>
-              <rect x={x} y={200 - barHeight} width={28} height={barHeight} fill="var(--accent-cool)" />
+              <rect
+                x={x}
+                y={200 - barHeight}
+                width={28}
+                height={barHeight}
+                fill="var(--accent-cool)"
+              />
               <text x={x + 14} y={215} textAnchor="middle" fontSize="10" fill="var(--text-muted)">
                 {d.year}
               </text>
@@ -57,7 +59,10 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
       <table data-testid="act1-yearly-table" className={styles.dataTable}>
         <caption>Act 1 — pills shipped per year</caption>
         <thead>
-          <tr><th>Year</th><th>Pills</th></tr>
+          <tr>
+            <th>Year</th>
+            <th>Pills</th>
+          </tr>
         </thead>
         <tbody>
           {yearly.map((d) => (

@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useState } from 'react';
-import type { CountyMetadata } from '@/lib/data/schemas';
-import { ChoroplethMap } from '@/components/map/ChoroplethMap';
-import { TimeSlider } from '@/components/map/TimeSlider';
-import { useWebGLSupport } from '@/components/map/useWebGLSupport';
-import { loadCountyTopology, loadStateTopology } from '@/lib/geo/topology';
-import { Filters } from './Filters';
-import { useURLState } from './useURLState';
-import { WebGLFallback } from './WebGLFallback';
-import { DataLoader } from './DataLoader';
-import styles from './Explorer.module.css';
-import type { FeatureCollection, Geometry } from 'geojson';
+import type { FeatureCollection, Geometry } from "geojson";
+import { useEffect, useMemo, useState } from "react";
+import { ChoroplethMap } from "@/components/map/ChoroplethMap";
+import { TimeSlider } from "@/components/map/TimeSlider";
+import { useWebGLSupport } from "@/components/map/useWebGLSupport";
+import type { CountyMetadata } from "@/lib/data/schemas";
+import { loadCountyTopology, loadStateTopology } from "@/lib/geo/topology";
+import { DataLoader } from "./DataLoader";
+import styles from "./Explorer.module.css";
+import { Filters } from "./Filters";
+import { useURLState } from "./useURLState";
+import { WebGLFallback } from "./WebGLFallback";
 
 const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 
@@ -22,15 +22,13 @@ interface ExplorerProps {
 export function Explorer({ counties }: ExplorerProps) {
   const [urlState, setURLState] = useURLState({
     year: 2012,
-    metric: 'pills',
+    metric: "pills",
   });
   const [topology, setTopology] = useState<{
     counties: FeatureCollection<Geometry, { name?: string }> | null;
     states: FeatureCollection<Geometry, { name?: string }> | null;
   }>({ counties: null, states: null });
-  const [valuesByYear, setValuesByYear] = useState<Map<number, Map<string, number>>>(
-    new Map(),
-  );
+  const [valuesByYear, setValuesByYear] = useState<Map<number, Map<string, number>>>(new Map());
   const [topologyError, setTopologyError] = useState<string | null>(null);
   const webgl = useWebGLSupport();
 
@@ -96,7 +94,10 @@ export function Explorer({ counties }: ExplorerProps) {
 
       <div className={styles.mapArea}>
         {topologyError ? (
-          <WebGLFallback counties={sortedCounties} reason={`Topology load failed: ${topologyError}`} />
+          <WebGLFallback
+            counties={sortedCounties}
+            reason={`Topology load failed: ${topologyError}`}
+          />
         ) : webgl === false ? (
           <WebGLFallback counties={sortedCounties} reason="WebGL unavailable in this browser." />
         ) : topology.counties && topology.states ? (

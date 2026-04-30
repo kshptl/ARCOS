@@ -1,8 +1,8 @@
-import type { Feature, FeatureCollection, Geometry } from 'geojson';
-import type { RGBA, ScaleDomain } from '../colorScales';
-import { deathsColorScale, pillsColorScale } from '../colorScales';
+import type { Feature, FeatureCollection, Geometry } from "geojson";
+import type { RGBA, ScaleDomain } from "../colorScales";
+import { deathsColorScale, pillsColorScale } from "../colorScales";
 
-export type MapMetric = 'pills' | 'pills_per_capita' | 'deaths';
+export type MapMetric = "pills" | "pills_per_capita" | "deaths";
 
 export interface BuildCountyLayerPropsArgs {
   featureCollection: FeatureCollection<Geometry, { name?: string }>;
@@ -31,7 +31,7 @@ export interface PolygonLayerProps {
 }
 
 function scaleFor(metric: MapMetric): (v: number | null | undefined, d: ScaleDomain) => RGBA {
-  return metric === 'deaths' ? deathsColorScale : pillsColorScale;
+  return metric === "deaths" ? deathsColorScale : pillsColorScale;
 }
 
 export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonLayerProps {
@@ -47,12 +47,12 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     extruded: false,
     getPolygon: (f) => {
       const g = f.geometry;
-      if (g.type === 'Polygon') return g.coordinates;
-      if (g.type === 'MultiPolygon') return g.coordinates[0]!;
+      if (g.type === "Polygon") return g.coordinates;
+      if (g.type === "MultiPolygon") return g.coordinates[0]!;
       return [];
     },
     getFillColor: (f) => {
-      const id = String(f.id ?? '');
+      const id = String(f.id ?? "");
       const val = valueByFips.get(id);
       return colorFn(val ?? null, domain);
     },

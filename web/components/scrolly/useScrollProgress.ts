@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { type RefObject, useEffect, useRef, useState } from 'react';
+import { type RefObject, useEffect, useRef, useState } from "react";
 
 export function clampProgress(p: number): number {
   if (Number.isNaN(p)) return 0;
@@ -49,12 +49,12 @@ export function useScrollProgress(options: UseScrollProgressOptions = {}): {
     };
 
     update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
     return () => {
       cancelAnimationFrame(rafId);
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
     };
   }, [targetRef]);
 

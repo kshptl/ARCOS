@@ -1,6 +1,6 @@
-import type { FeatureCollection, Geometry } from 'geojson';
-import { feature } from 'topojson-client';
-import type { Topology, GeometryCollection } from 'topojson-specification';
+import type { FeatureCollection, Geometry } from "geojson";
+import { feature } from "topojson-client";
+import type { GeometryCollection, Topology } from "topojson-specification";
 
 export interface TopologyLoadOptions {
   /** Pre-parsed TopoJSON, used by tests. Bypasses fetch. */
@@ -12,9 +12,9 @@ export interface TopologyLoadOptions {
 }
 
 const DEFAULT_URL =
-  typeof window === 'undefined'
-    ? 'https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json'
-    : '/data/counties-10m.json';
+  typeof window === "undefined"
+    ? "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json"
+    : "/data/counties-10m.json";
 
 let cachedTopology: Topology | null = null;
 let inflight: Promise<Topology> | null = null;

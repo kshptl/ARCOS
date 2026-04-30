@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { fetchParquetRows } from '@/lib/data/parquet';
-import type { CountyShipmentsByYear } from '@/lib/data/schemas';
-import type { MapMetric } from '@/components/map/layers/countyLayer';
+import { useEffect } from "react";
+import type { MapMetric } from "@/components/map/layers/countyLayer";
+import { fetchParquetRows } from "@/lib/data/parquet";
+import type { CountyShipmentsByYear } from "@/lib/data/schemas";
 
 export interface DataLoaderProps {
   year: number;
@@ -14,16 +14,16 @@ export interface DataLoaderProps {
   parquetUrl?: string;
 }
 
-const DEFAULT_URL = '/data/county-shipments-by-year.parquet';
+const DEFAULT_URL = "/data/county-shipments-by-year.parquet";
 
 function field(row: CountyShipmentsByYear, metric: MapMetric): number {
-  if (metric === 'pills_per_capita') return row.pills_per_capita ?? 0;
+  if (metric === "pills_per_capita") return row.pills_per_capita ?? 0;
   // Note: deaths come from a different artifact; this loader only covers shipments.
   return row.pills ?? 0;
 }
 
 export function DataLoader(props: DataLoaderProps) {
-  const { onData, onError, onProgress, parquetUrl = DEFAULT_URL, metric = 'pills' } = props;
+  const { onData, onError, onProgress, parquetUrl = DEFAULT_URL, metric = "pills" } = props;
 
   useEffect(() => {
     let cancelled = false;

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { Component, type ReactNode } from 'react';
-import styles from './ErrorBoundary.module.css';
+import { Component, type ReactNode } from "react";
+import styles from "./ErrorBoundary.module.css";
 
 type Props = { children: ReactNode };
 type State = { err: Error | null };
@@ -14,7 +14,7 @@ export class ExplorerErrorBoundary extends Component<Props, State> {
   }
 
   override componentDidCatch(err: Error): void {
-    console.error('[explorer error]', err);
+    console.error("[explorer error]", err);
   }
 
   override render(): ReactNode {

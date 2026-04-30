@@ -2,12 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./out",
-      "url": [
-        "/",
-        "/explorer",
-        "/methodology",
-        "/county/54059"
-      ],
+      "url": ["/", "/explorer", "/methodology", "/county/54059"],
       "numberOfRuns": 3
     },
     "assert": {

@@ -67,8 +67,8 @@ export const deathsColorScale = build(DEATHS_STOPS);
 
 export function rgbToCss(rgba: RGBA): string {
   const [r, g, b, a] = rgba;
-  const alphaStr = (a / 255).toFixed(3).replace(/\.?0+$/, '');
-  return `rgba(${r}, ${g}, ${b}, ${alphaStr || '0'})`;
+  const alphaStr = (a / 255).toFixed(3).replace(/\.?0+$/, "");
+  return `rgba(${r}, ${g}, ${b}, ${alphaStr || "0"})`;
 }
 
 export function quantizeBuckets(

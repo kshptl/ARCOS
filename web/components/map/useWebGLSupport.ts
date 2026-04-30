@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export function detectWebGL(canvas?: HTMLCanvasElement): boolean {
   const el: HTMLCanvasElement | null =
-    canvas ?? (typeof document !== 'undefined' ? document.createElement('canvas') : null);
+    canvas ?? (typeof document !== "undefined" ? document.createElement("canvas") : null);
   if (!el) return false;
   try {
     const gl =
-      el.getContext('webgl2') ||
-      el.getContext('webgl') ||
-      (el.getContext as unknown as (name: string) => unknown)('experimental-webgl');
+      el.getContext("webgl2") ||
+      el.getContext("webgl") ||
+      (el.getContext as unknown as (name: string) => unknown)("experimental-webgl");
     return Boolean(gl);
   } catch {
     return false;

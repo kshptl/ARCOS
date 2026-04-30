@@ -1,6 +1,6 @@
-import { renderHook, act } from '@testing-library/react';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { useReducedMotion } from '@/components/scrolly/useReducedMotion';
+import { act, renderHook } from "@testing-library/react";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { useReducedMotion } from "@/components/scrolly/useReducedMotion";
 
 type Listener = (e: { matches: boolean }) => void;
 
@@ -11,7 +11,10 @@ function installMatchMedia(initial: boolean) {
     addEventListener: vi.fn((_type: string, cb: Listener) => listeners.push(cb)),
     removeEventListener: vi.fn(),
   };
-  vi.stubGlobal('matchMedia', vi.fn(() => mq));
+  vi.stubGlobal(
+    "matchMedia",
+    vi.fn(() => mq),
+  );
   return {
     mq,
     fire(matches: boolean) {
@@ -29,20 +32,20 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 
-describe('useReducedMotion', () => {
-  it('returns initial match state', () => {
+describe("useReducedMotion", () => {
+  it("returns initial match state", () => {
     installMatchMedia(true);
     const { result } = renderHook(() => useReducedMotion());
     expect(result.current).toBe(true);
   });
 
-  it('returns false when matchMedia absent (SSR)', () => {
-    vi.stubGlobal('matchMedia', undefined);
+  it("returns false when matchMedia absent (SSR)", () => {
+    vi.stubGlobal("matchMedia", undefined);
     const { result } = renderHook(() => useReducedMotion());
     expect(result.current).toBe(false);
   });
 
-  it('updates on change event', () => {
+  it("updates on change event", () => {
     const { fire } = installMatchMedia(false);
     const { result } = renderHook(() => useReducedMotion());
     expect(result.current).toBe(false);

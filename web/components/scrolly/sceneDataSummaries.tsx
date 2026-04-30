@@ -1,7 +1,7 @@
-import type { ReactNode } from 'react';
-import { formatFull } from '@/lib/format/number';
-import { formatPercent } from '@/lib/format/percent';
-import type { DEAEnforcementAction } from '@/lib/data/schemas';
+import type { ReactNode } from "react";
+import type { DEAEnforcementAction } from "@/lib/data/schemas";
+import { formatFull } from "@/lib/format/number";
+import { formatPercent } from "@/lib/format/percent";
 
 export function act1Summary({
   totalPills,
@@ -75,7 +75,7 @@ export function act3Summary({ actions }: { actions: DEAEnforcementAction[] }): R
           <tr key={action.year}>
             <th scope="row">{action.year}</th>
             <td>{formatFull(action.action_count)}</td>
-            <td>{action.notable_actions.map((n) => n.title).join('; ')}</td>
+            <td>{action.notable_actions.map((n) => n.title).join("; ")}</td>
           </tr>
         ))}
       </tbody>
@@ -106,7 +106,8 @@ export function act4Summary({
             </th>
             <td>{row.deaths.length}</td>
             <td>
-              {formatFull(row.deaths[0] ?? 0)} → {formatFull(row.deaths[row.deaths.length - 1] ?? 0)}
+              {formatFull(row.deaths[0] ?? 0)} →{" "}
+              {formatFull(row.deaths[row.deaths.length - 1] ?? 0)}
             </td>
           </tr>
         ))}

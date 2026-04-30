@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import type { DEAEnforcementAction } from '@/lib/data/schemas';
-import { formatFull } from '@/lib/format/number';
-import { useScrollyProgress } from '../progressContext';
-import styles from './scenes.module.css';
+import type { DEAEnforcementAction } from "@/lib/data/schemas";
+import { formatFull } from "@/lib/format/number";
+import { useScrollyProgress } from "../progressContext";
+import styles from "./scenes.module.css";
 
 export interface Act3EnforcementProps {
   actions: DEAEnforcementAction[];
@@ -32,7 +32,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                 y1={180}
                 x2={x}
                 y2={180 - tickHeight}
-                stroke={inflection ? 'var(--accent-hot)' : 'var(--accent-cool)'}
+                stroke={inflection ? "var(--accent-hot)" : "var(--accent-cool)"}
                 strokeWidth={inflection ? 3 : 1.5}
               />
               <text x={x} y={200} textAnchor="middle" fontSize="10" fill="var(--text-muted)">
@@ -55,13 +55,19 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
       </svg>
       <table data-testid="act3-table" className={styles.dataTable}>
         <caption>Act 3 — DEA enforcement actions per year</caption>
-        <thead><tr><th>Year</th><th>Actions</th><th>Notable</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Actions</th>
+            <th>Notable</th>
+          </tr>
+        </thead>
         <tbody>
           {sorted.map((a) => (
             <tr key={a.year}>
               <td>{a.year}</td>
               <td>{formatFull(a.action_count)}</td>
-              <td>{a.notable_actions.map((n) => n.title).join('; ')}</td>
+              <td>{a.notable_actions.map((n) => n.title).join("; ")}</td>
             </tr>
           ))}
         </tbody>

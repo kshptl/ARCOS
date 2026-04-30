@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { Explorer } from '@/components/explorer/Explorer';
-import { ExplorerErrorBoundary } from '@/components/errors/ExplorerErrorBoundary';
-import { loadCountyMeta } from '@/lib/data/loadCountyMeta';
+import type { Metadata } from "next";
+import { ExplorerErrorBoundary } from "@/components/errors/ExplorerErrorBoundary";
+import { Explorer } from "@/components/explorer/Explorer";
+import { loadCountyMeta } from "@/lib/data/loadCountyMeta";
 
 export const metadata: Metadata = {
-  title: 'Explorer — openarcos',
-  description: 'Interactive choropleth of US county-level opioid shipments 2006–2014.',
+  title: "Explorer — openarcos",
+  description: "Interactive choropleth of US county-level opioid shipments 2006–2014.",
 };
 
 export default async function ExplorerPage() {

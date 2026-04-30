@@ -1,5 +1,5 @@
-import type { Feature, FeatureCollection, Geometry } from 'geojson';
-import type { PolygonLayerProps } from './countyLayer';
+import type { Feature, FeatureCollection, Geometry } from "geojson";
+import type { PolygonLayerProps } from "./countyLayer";
 
 export interface BuildStateLayerPropsArgs {
   featureCollection: FeatureCollection<Geometry, { name?: string }>;
@@ -7,7 +7,7 @@ export interface BuildStateLayerPropsArgs {
 
 export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLayerProps {
   return {
-    id: 'states',
+    id: "states",
     data: args.featureCollection.features,
     pickable: false,
     stroked: true,
@@ -15,8 +15,8 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
     extruded: false,
     getPolygon: (f: Feature) => {
       const g = f.geometry;
-      if (g.type === 'Polygon') return g.coordinates;
-      if (g.type === 'MultiPolygon') return g.coordinates[0]!;
+      if (g.type === "Polygon") return g.coordinates;
+      if (g.type === "MultiPolygon") return g.coordinates[0]!;
       return [];
     },
     getFillColor: () => [0, 0, 0, 0],

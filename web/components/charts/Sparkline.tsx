@@ -28,12 +28,7 @@ export function Sparkline({ values, ariaLabel, width = 120, height = 32 }: Spark
       role="img"
       aria-label={ariaLabel}
     >
-      <polyline
-        fill="none"
-        stroke="var(--accent-hot)"
-        strokeWidth="1.5"
-        points={points}
-      />
+      <polyline fill="none" stroke="var(--accent-hot)" strokeWidth="1.5" points={points} />
     </svg>
   );
 }

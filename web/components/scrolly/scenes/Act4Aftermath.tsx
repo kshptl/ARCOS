@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Sparkline } from '@/components/charts/Sparkline';
-import { formatFull } from '@/lib/format/number';
-import { useScrollyProgress } from '../progressContext';
-import styles from './scenes.module.css';
+import { Sparkline } from "@/components/charts/Sparkline";
+import { formatFull } from "@/lib/format/number";
+import { useScrollyProgress } from "../progressContext";
+import styles from "./scenes.module.css";
 
 export interface Act4County {
   fips: string;
@@ -31,13 +31,13 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
               </a>
             </figcaption>
             <Sparkline values={c.deaths} ariaLabel={`${c.name} overdose deaths trend`} />
-            <span className={styles.multValue}>{formatFull(c.deaths[c.deaths.length - 1] ?? 0)}</span>
+            <span className={styles.multValue}>
+              {formatFull(c.deaths[c.deaths.length - 1] ?? 0)}
+            </span>
           </figure>
         ))}
       </div>
-      <p className={styles.ctaLede}>
-        Every county has its own story. Find yours.
-      </p>
+      <p className={styles.ctaLede}>Every county has its own story. Find yours.</p>
       <a href="/explorer" className={styles.cta}>
         See your county →
       </a>

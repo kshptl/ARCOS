@@ -7,7 +7,19 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.json", "**/*.mjs", "!out/**", "!.next/**", "!public/data/**", "!next-env.d.ts", "!node_modules/**"]
+    "includes": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.json",
+      "**/*.mjs",
+      "!out",
+      "!.next",
+      "!public/data",
+      "!next-env.d.ts",
+      "!node_modules"
+    ]
   },
   "formatter": {
     "enabled": true,

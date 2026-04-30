@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from "react";
 
 export const ScrollyProgressContext = createContext<number>(0);
 
