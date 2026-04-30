@@ -34,14 +34,15 @@ test.describe("/explorer", () => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("/explorer");
-    const fallback = page.getByRole("figure", { name: /county list fallback/i });
-    const map = page.getByRole("figure", { name: /County map of/i });
-    await Promise.race([
-      fallback.waitFor({ state: "visible", timeout: 3000 }).catch(() => {}),
-      map.waitFor({ state: "visible", timeout: 3000 }).catch(() => {}),
-    ]);
-    const either = (await fallback.count()) > 0 || (await map.count()) > 0;
-    expect(either).toBe(true);
+    // The map area always resolves to either a figure (map or fallback) or a
+    // "Loading map…" status while topology fetches. Wait for either terminal
+    // state — the map's sticky aria-label starts with "County map of …" and
+    // the fallback's is "Static county list fallback".
+    const mapOrFallback = page.locator(
+      'figure[aria-label^="County map of"], figure[aria-label="Static county list fallback"]',
+    );
+    await mapOrFallback.first().waitFor({ state: "attached", timeout: 15_000 });
+    expect(await mapOrFallback.count()).toBeGreaterThan(0);
     await context.close();
   });
 });

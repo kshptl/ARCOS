@@ -16,7 +16,7 @@ for (const p of pages) {
       test.skip();
       return;
     }
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("domcontentloaded");
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "best-practice"])
       .analyze();
