@@ -201,7 +201,7 @@ def emit_county_shipments_parquet(cfg: Config) -> Path:
     _validate_parquet_as_json(df, "county-shipments-by-year")
     out = cfg.emit_dir / "county-shipments-by-year.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
-    df.write_parquet(out, compression="zstd")
+    df.write_parquet(out, compression="snappy")
     log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
     return out
 
@@ -220,7 +220,7 @@ def emit_top_pharmacies_parquet(cfg: Config) -> Path:
     _validate_parquet_as_json(df, "top-pharmacies")
     out = cfg.emit_dir / "top-pharmacies.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
-    df.write_parquet(out, compression="zstd")
+    df.write_parquet(out, compression="snappy")
     log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
     return out
 
@@ -238,7 +238,7 @@ def emit_cdc_overdose_parquet(cfg: Config) -> Path:
     _validate_parquet_as_json(df, "cdc-overdose-by-county-year")
     out = cfg.emit_dir / "cdc-overdose-by-county-year.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
-    df.write_parquet(out, compression="zstd")
+    df.write_parquet(out, compression="snappy")
     log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
     return out
 
