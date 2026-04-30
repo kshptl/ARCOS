@@ -13,16 +13,12 @@ app = typer.Typer(
 log = get_logger("openarcos.cli")
 
 
-@app.command()
-def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> None:
-    """Download raw source data."""
-    from openarcos_pipeline.config import Config
-    from openarcos_pipeline.sources.wapo_arcos import WapoClient
-    from openarcos_pipeline.sources.wapo_runner import fetch_all
-
-    cfg = Config.from_env()
+def _run_fetch(cfg, source: str = "all") -> None:
+    """Helper: download raw source data. Reused by `fetch` and `all`."""
     cfg.ensure_dirs()
     if source in ("all", "wapo"):
+        from openarcos_pipeline.sources.wapo_arcos import WapoClient
+        from openarcos_pipeline.sources.wapo_runner import fetch_all
         with WapoClient() as client:
             fetch_all(client, cfg)
         log.info("wapo fetch complete")
@@ -42,9 +38,8 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
         log.info("census fetch complete")
 
 
-@app.command()
-def clean() -> None:
-    """Normalize raw data into canonical parquet."""
+def _run_clean(cfg) -> None:
+    """Helper: normalize raw data into canonical parquet. Reused by `clean` and `all`."""
     import json
 
     import polars as pl
@@ -56,9 +51,7 @@ def clean() -> None:
         clean_distributors,
         clean_pharmacies,
     )
-    from openarcos_pipeline.config import Config
 
-    cfg = Config.from_env()
     cfg.clean_dir.mkdir(parents=True, exist_ok=True)
 
     # Census — runs first so the joined grid has county metadata.
@@ -145,6 +138,24 @@ def clean() -> None:
             )
 
     log.info("clean complete")
+
+
+@app.command()
+def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> None:
+    """Download raw source data."""
+    from openarcos_pipeline.config import Config
+
+    cfg = Config.from_env()
+    _run_fetch(cfg, source)
+
+
+@app.command()
+def clean() -> None:
+    """Normalize raw data into canonical parquet."""
+    from openarcos_pipeline.config import Config
+
+    cfg = Config.from_env()
+    _run_clean(cfg)
     raise typer.Exit(0)
 
 
@@ -177,15 +188,36 @@ def aggregate() -> None:
 
 @app.command()
 def emit() -> None:
-    """Write schema-validated artifacts to the web's public/data/."""
-    log.info("emit: not yet implemented")
+    """Emit validated artifacts to web/public/data/."""
+    from openarcos_pipeline.config import Config
+    from openarcos_pipeline.emit import emit_all
+
+    cfg = Config.from_env()
+    outs = emit_all(cfg)
+    log.info("emit complete: %d files", len(outs))
     raise typer.Exit(0)
 
 
-@app.command("all")
-def all_cmd() -> None:
-    """Run fetch → clean → join → aggregate → emit."""
-    log.info("all: not yet implemented")
+@app.command(name="all")
+def all_cmd(
+    skip_fetch: bool = typer.Option(False, "--skip-fetch", help="Skip network fetching; use cached raw/"),
+    years_start: int = typer.Option(2006, "--years-start"),
+    years_end: int = typer.Option(2020, "--years-end"),
+) -> None:
+    """Run the full pipeline: fetch → clean → join → aggregate → emit."""
+    from openarcos_pipeline.aggregate import run_all as run_aggregate
+    from openarcos_pipeline.config import Config
+    from openarcos_pipeline.emit import emit_all
+    from openarcos_pipeline.join import build_master
+
+    cfg = Config.from_env()
+    if not skip_fetch:
+        _run_fetch(cfg)
+    _run_clean(cfg)
+    build_master(cfg, years=range(years_start, years_end + 1))
+    run_aggregate(cfg)
+    emit_all(cfg)
+    log.info("pipeline complete")
     raise typer.Exit(0)
 
 
