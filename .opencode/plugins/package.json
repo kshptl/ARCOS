@@ -1,0 +1,6 @@
+{
+  "name": "arcos-skill-overrides",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "skill-overrides.js"
+}
