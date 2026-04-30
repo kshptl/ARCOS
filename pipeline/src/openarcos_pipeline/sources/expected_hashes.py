@@ -7,6 +7,12 @@ trigger. Goal: fail loud if WaPo renames/drops columns.
 Update deliberately when we knowingly accept an upstream contract change.
 """
 
+# ⚠️ These signatures were computed from SYNTHETIC fixtures, not live
+# API responses. When the upstream API is restored, the first live
+# fetch will trip RuntimeError("shape changed") even if the shape is
+# identical. Regenerate by running notebooks/01-wapo-api-probe.py
+# and pasting the new signatures below. See notes/wapo.md.
+
 from __future__ import annotations
 
 # Map endpoint → expected sorted-key signature (str representation).
