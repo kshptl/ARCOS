@@ -38,6 +38,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Playwright MCP scratch artifacts (console logs, screenshots)
+.playwright-mcp/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
