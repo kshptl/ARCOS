@@ -1,0 +1,47 @@
+.stage {
+  position: relative;
+  min-height: 300vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--canvas);
+  overflow: hidden;
+}
+
+.canvas {
+  width: 80vmin;
+  height: 80vmin;
+  background: var(--canvas-warm);
+  border: 2px solid var(--ink);
+  display: grid;
+  place-items: center;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.marker {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--accent-cool);
+  font-variant-numeric: tabular-nums;
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  max-width: 48ch;
+  background: color-mix(in srgb, var(--canvas) 92%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    transition: none;
+  }
+}
