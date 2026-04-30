@@ -10,10 +10,9 @@ export interface ScrollyStageProps {
   canvas: ReactNode;
   children: ReactNode;
   ariaLabel: string;
-  dataSummary?: ReactNode;
 }
 
-export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: ScrollyStageProps) {
+export function ScrollyStage({ canvas, children, ariaLabel }: ScrollyStageProps) {
   const { progress, ref } = useScrollProgress();
   const reduced = useReducedMotion();
   const effective = reduced ? 1 : progress;
@@ -27,20 +26,11 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
     >
       <ScrollyProgressContext.Provider value={effective}>
         {/*
-         * When motion is enabled, the sticky canvas is a purely visual layer:
-         * Act 4 duplicates its county links into the <details> data summary
-         * below, and the Explorer + Rankings pages list every county. Mark
-         * it both aria-hidden (for AT) and inert (to remove its focusable
-         * descendants from the tab order) so axe's aria-hidden-focus rule is
-         * satisfied. When reduced motion is on, the canvas is the only view,
-         * so it must remain both visible to AT and focusable.
-         *
-         * The .details block is rendered INSIDE the sticky wrapper (not its
-         * inert canvas child) so the "Show data" toggle remains visible and
-         * operable at every scroll position within the act. The wrapper uses
-         * overflow: visible so the expanded panel can spill past the canvas
-         * bounds without being clipped. The inner .canvas div preserves the
-         * original overflow: hidden behaviour the scenes rely on.
+         * When motion is enabled, the sticky canvas is a purely visual layer.
+         * We mark it both aria-hidden (for AT) and inert (to remove its
+         * focusable descendants from the tab order) so axe's aria-hidden-focus
+         * rule is satisfied. When reduced motion is on, the canvas is the only
+         * view, so it must remain both visible to AT and focusable.
          */}
         <div className={styles.sticky}>
           <div
@@ -50,12 +40,6 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
           >
             {canvas}
           </div>
-          {dataSummary ? (
-            <details className={styles.details}>
-              <summary className={styles.summary}>Show data</summary>
-              <div className={styles.detailsPanel}>{dataSummary}</div>
-            </details>
-          ) : null}
         </div>
         <div className={styles.steps}>{children}</div>
       </ScrollyProgressContext.Provider>

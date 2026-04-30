@@ -26,26 +26,15 @@ describe("ScrollyStage", () => {
     expect(screen.getByRole("region").getAttribute("aria-label")).toContain("76 billion");
   });
 
-  it("renders <details> fallback when dataSummary provided", () => {
-    render(
-      <ScrollyStage
-        canvas={<div />}
-        ariaLabel="act"
-        dataSummary={
-          <table data-testid="fallback">
-            <tbody>
-              <tr>
-                <td>x</td>
-              </tr>
-            </tbody>
-          </table>
-        }
-      >
+  it("does not render a Show data toggle", () => {
+    const { container } = render(
+      <ScrollyStage canvas={<div data-testid="canvas">c</div>} ariaLabel="act">
         <div>step</div>
       </ScrollyStage>,
     );
-    expect(screen.getByTestId("fallback")).toBeInTheDocument();
-    expect(screen.getByText(/show data/i)).toBeInTheDocument();
+    expect(screen.queryByText(/show data/i)).toBeNull();
+    expect(container.querySelector("details")).toBeNull();
+    expect(container.querySelector("summary")).toBeNull();
   });
 
   /*
@@ -71,28 +60,18 @@ describe("ScrollyStage", () => {
   });
 
   /*
-   * Bug 2: the "Show data" <summary> must live INSIDE the sticky canvas
-   * wrapper (not below it as a grid row) so it is always visible during the
-   * act's scroll range. We assert the summary and the canvas share a common
-   * ancestor that is a direct child of the <section> (i.e. the sticky div).
+   * Bug 2: "Show data" has been removed from the scrolly stage. There must be
+   * no <details> / <summary> rendered inside the stage, regardless of whether
+   * dataSummary is passed (legacy prop tolerated for callsite migration).
    */
-  it("renders the data toggle inside the sticky canvas container", () => {
+  it("never renders details/summary inside the stage", () => {
     const { container } = render(
-      <ScrollyStage
-        canvas={<div data-testid="canvas-inner">canvas</div>}
-        ariaLabel="act"
-        dataSummary={<table data-testid="t" />}
-      >
+      <ScrollyStage canvas={<div />} ariaLabel="act">
         <div>step</div>
       </ScrollyStage>,
     );
-    const summary = screen.getByText(/show data/i);
-    const canvas = screen.getByTestId("canvas-inner");
-    const section = container.querySelector("section");
-    expect(section).not.toBeNull();
-    const children = section ? Array.from(section.children) : [];
-    const stickyLike = children.find((c) => c.contains(summary) && c.contains(canvas));
-    expect(stickyLike).toBeDefined();
+    expect(container.querySelector("details")).toBeNull();
+    expect(container.querySelector("summary")).toBeNull();
   });
 
   it("omits the data toggle when no dataSummary is supplied", () => {

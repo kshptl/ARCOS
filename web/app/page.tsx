@@ -4,12 +4,6 @@ import { BigNumeral } from "@/components/brand/BigNumeral";
 import { ScrollyErrorBoundary } from "@/components/errors/ScrollyErrorBoundary";
 import { ScrollyStage } from "@/components/scrolly/ScrollyStage";
 import { Step } from "@/components/scrolly/Step";
-import {
-  act1Summary,
-  act2Summary,
-  act3Summary,
-  act4Summary,
-} from "@/components/scrolly/sceneDataSummaries";
 import { Act1Scale } from "@/components/scrolly/scenes/Act1Scale";
 import { Act2Distributors } from "@/components/scrolly/scenes/Act2Distributors";
 import { Act3Enforcement } from "@/components/scrolly/scenes/Act3Enforcement";
@@ -58,7 +52,6 @@ export default async function HomePage() {
         <ScrollyStage
           canvas={<Act1Scale totalPills={data.act1.totalPills} yearly={data.act1.yearly} />}
           ariaLabel="Act 1: the scale of shipments from 2006 to 2014, peaking at about 9.6 billion pills in 2010."
-          dataSummary={act1Summary(data.act1)}
         >
           <Step id="act1">
             <p className="eyebrow">Act 1 — Scale</p>
@@ -76,7 +69,6 @@ export default async function HomePage() {
         <ScrollyStage
           canvas={<Act2Distributors rows={data.act2.rows} />}
           ariaLabel="Act 2: three distributors handled more than 80 percent of shipments across the period."
-          dataSummary={act2Summary(data.act2)}
         >
           <Step id="act2">
             <p className="eyebrow">Act 2 — Distributors</p>
@@ -93,7 +85,6 @@ export default async function HomePage() {
         <ScrollyStage
           canvas={<Act3Enforcement actions={data.act3.actions} />}
           ariaLabel="Act 3: enforcement actions from the DEA Diversion Control Division climb from 2010 to 2013."
-          dataSummary={act3Summary(data.act3)}
         >
           <Step id="act3">
             <p className="eyebrow">Act 3 — Enforcement</p>
@@ -110,7 +101,6 @@ export default async function HomePage() {
         <ScrollyStage
           canvas={<Act4Aftermath counties={data.act4.counties} />}
           ariaLabel="Act 4: six hard-hit counties where overdose death counts climbed through the ARCOS window."
-          dataSummary={act4Summary(data.act4)}
         >
           <Step id="act4">
             <p className="eyebrow">Act 4 — Aftermath</p>
