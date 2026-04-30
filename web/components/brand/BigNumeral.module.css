@@ -1,0 +1,35 @@
+.root {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  color: var(--text);
+}
+
+.value {
+  font-size: var(--type-display-xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+
+.unit {
+  font-family: var(--font-display);
+  font-size: var(--type-display-sm);
+  color: var(--text-muted);
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+
+.numeric {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "lnum";
+}
+
+.accentHot .value { color: var(--accent-hot); }
+.accentCool .value { color: var(--accent-cool); }
+
+@media (max-width: 720px) {
+  .value { font-size: var(--type-display-lg); }
+  .unit { font-size: var(--type-h2); }
+}

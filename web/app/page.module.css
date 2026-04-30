@@ -1,0 +1,42 @@
+.root {
+  min-height: 100vh;
+  padding: var(--space-4xl) 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  width: 100%;
+}
+
+.h1 {
+  font-size: var(--type-display-lg);
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+  margin: var(--space-md) 0 var(--space-lg);
+  max-width: 18ch;
+}
+
+.numeral {
+  margin: var(--space-2xl) 0;
+}
+
+.cta {
+  margin-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.ctaLink {
+  text-decoration: none;
+}
+
+.ctaNote {
+  color: var(--text-muted);
+  max-width: 56ch;
+}

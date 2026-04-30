@@ -5,12 +5,14 @@ on:
   pull_request:
     paths:
       - "pipeline/**"
+      - "web/**"
       - ".github/workflows/ci.yml"
       - "Makefile"
   push:
     branches: [main]
     paths:
       - "pipeline/**"
+      - "web/**"
       - ".github/workflows/ci.yml"
       - "Makefile"
   workflow_dispatch:
@@ -80,3 +82,55 @@ jobs:
         if: steps.data.outputs.present == 'true'
         working-directory: pipeline
         run: uv run python scripts/validate_web_data.py
+
+  web:
+    name: web (lint + typecheck + test + e2e + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
+      - run: pnpm run typecheck
+      - run: pnpm run test
+      - run: pnpm run validate-data
+      - run: pnpm run build-ranks
+      - run: pnpm run build-similar
+      - run: pnpm run build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run e2e
+
+  lighthouse:
+    name: lighthouse
+    needs: [web]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build-ranks
+      - run: pnpm run build-similar
+      - run: pnpm run build
+      - run: pnpm exec lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

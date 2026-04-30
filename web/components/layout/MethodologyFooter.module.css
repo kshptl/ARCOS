@@ -1,0 +1,14 @@
+.root {
+  border-top: 1px solid var(--rule);
+  padding: var(--space-xl) var(--gutter);
+  font-size: var(--type-body-sm);
+  color: var(--text-muted);
+}
+.inner {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: space-between;
+}

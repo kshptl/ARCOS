@@ -1,0 +1,55 @@
+.root {
+  /* data-theme="dark" inverts the surface for this route only */
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+  padding: var(--space-3xl) 0;
+}
+
+.article {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.header {
+  margin-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--space-xl);
+}
+
+.lede {
+  font-size: var(--type-h3);
+  color: var(--text-muted);
+  max-width: 56ch;
+  margin-top: var(--space-md);
+}
+
+.sourceList dt {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-top: var(--space-lg);
+}
+
+.sourceList dd {
+  margin-left: 0;
+  margin-top: var(--space-xs);
+  color: var(--text-muted);
+}
+
+.article section {
+  margin-top: var(--space-2xl);
+}
+
+.article h2 {
+  font-size: var(--type-h2);
+  margin-bottom: var(--space-md);
+}
+
+.article code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: rgba(245, 236, 215, 0.08);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
