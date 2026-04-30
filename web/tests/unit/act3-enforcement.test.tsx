@@ -139,4 +139,18 @@ describe("Act3Enforcement", () => {
     const titleBands = container.querySelectorAll('[class*="titleBand"]');
     expect(titleBands.length).toBe(0);
   });
+
+  it("uses an enlarged chart viewBox (>=640 x >=360)", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    const viewBox = svg!.getAttribute("viewBox") ?? "0 0 0 0";
+    const [, , wStr, hStr] = viewBox.split(" ");
+    expect(Number(wStr)).toBeGreaterThanOrEqual(640);
+    expect(Number(hStr)).toBeGreaterThanOrEqual(360);
+  });
 });

@@ -10,8 +10,8 @@ export interface Act3EnforcementProps {
   actions: DEAEnforcementAction[];
 }
 
-const VIEW_W = 520;
-const VIEW_H = 300;
+const VIEW_W = 720;
+const VIEW_H = 420;
 const PAD_LEFT = 64;
 const PAD_RIGHT = 24;
 const PAD_TOP = 60;
