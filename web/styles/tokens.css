@@ -1,0 +1,44 @@
+:root {
+  /* Canvas & surfaces */
+  --canvas: #f7f4ec;
+  --canvas-warm: #f2e8d5;
+  --canvas-shade: #ece6d5;
+  --surface: #ffffff;
+
+  /* Ink & text */
+  --ink: #1a1a1a;
+  --text: #1a1a1a;
+  --text-muted: #5a5a5a;
+  --rule: #d5ccb9;
+
+  /* Accents */
+  --accent-hot: #c23b20;
+  --accent-cool: #1e5f74;
+
+  /* Typography */
+  --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --type-display-xl: clamp(2.75rem, 6vw, 4.5rem);
+  --type-heading-sm: clamp(1.25rem, 2vw, 1.5rem);
+  --type-lede: 1.125rem;
+  --type-body: 1rem;
+  --type-body-sm: 0.875rem;
+  --type-eyebrow: 0.75rem;
+
+  --leading-tight: 1.05;
+  --leading-normal: 1.5;
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+
+  /* Shadow / radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
