@@ -16,6 +16,13 @@ type Props = {
    * cannot be nested in `<p>` and will trigger hydration mismatches.
    */
   as?: "figure" | "span";
+  /**
+   * Pre-formatted display string that overrides the default compact/full
+   * formatting. Use this when callers need a specific precision (e.g.
+   * one-decimal per-capita rates) that neither `compact` nor full thousands
+   * formatting provides.
+   */
+  displayValue?: string;
 };
 
 const COMPACT_FORMATTER = new Intl.NumberFormat("en-US", {
@@ -32,8 +39,10 @@ export function BigNumeral({
   tone = "default",
   ariaLabel,
   as = "figure",
+  displayValue,
 }: Props) {
-  const display = compact ? COMPACT_FORMATTER.format(value) : FULL_FORMATTER.format(value);
+  const display =
+    displayValue ?? (compact ? COMPACT_FORMATTER.format(value) : FULL_FORMATTER.format(value));
   const toneClass = tone === "hot" ? styles.accentHot : tone === "cool" ? styles.accentCool : "";
   const label = ariaLabel ?? `${display} ${typeof unit === "string" ? unit : ""}`;
   const children = (

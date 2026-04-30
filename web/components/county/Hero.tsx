@@ -2,7 +2,7 @@ import { BigNumeral } from "@/components/brand/BigNumeral";
 import { computeCountyHeroStats } from "@/lib/data/countyHeroStats";
 import type { CountyBundle } from "@/lib/data/loadCountyBundle";
 import type { CountyMetadata } from "@/lib/data/schemas";
-import { formatCompact, formatFull } from "@/lib/format/number";
+import { formatCompact, formatFull, formatPerCapita } from "@/lib/format/number";
 import styles from "./Hero.module.css";
 
 export function Hero({ meta, bundle }: { meta: CountyMetadata; bundle: CountyBundle }) {
@@ -28,6 +28,7 @@ export function Hero({ meta, bundle }: { meta: CountyMetadata; bundle: CountyBun
             <span className={styles.statLabel}>Peak per-capita</span>
             <BigNumeral
               value={stats.peakPerCapita}
+              displayValue={formatPerCapita(stats.peakPerCapita)}
               unit={`per person in ${stats.peakYear}`}
               tone="hot"
             />
