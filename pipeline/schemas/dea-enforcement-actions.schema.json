@@ -14,11 +14,16 @@
         "type": "array",
         "items": {
           "type": "object",
-          "required": ["title", "url"],
+          "required": ["title"],
           "additionalProperties": false,
           "properties": {
             "title": {"type": "string", "minLength": 1},
-            "url": {"type": "string", "format": "uri"},
+            "url": {
+              "oneOf": [
+                {"type": "string", "format": "uri"},
+                {"type": "null"}
+              ]
+            },
             "target": {"type": ["string", "null"]}
           }
         }

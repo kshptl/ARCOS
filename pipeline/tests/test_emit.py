@@ -79,7 +79,69 @@ def test_emit_dea_enforcement_json(seeded_cfg):
         assert set(row.keys()) == {"year", "action_count", "notable_actions"}
         assert isinstance(row["notable_actions"], list)
         for action in row["notable_actions"]:
-            assert "title" in action and "url" in action
+            assert "title" in action
+            # url is optional (null or omitted) rather than fabricated.
+            # When present it must be a real URI (see schema); never the
+            # placeholder "https://openarcos.org/unknown".
+            url = action.get("url")
+            assert url != "https://openarcos.org/unknown", (
+                "emit must not fabricate placeholder citation URLs"
+            )
+            if url is not None:
+                assert url.startswith("http"), url
+
+
+def test_emit_dea_enforcement_preserves_null_url(tmp_path, agg_master_parquet):
+    """When clean_dea emits notable_actions without a real URL (url == "" or
+    None), emit must surface that as null/absent — never invent a URL.
+    """
+    import shutil
+
+    from openarcos_pipeline.aggregate import run_all
+    from openarcos_pipeline.config import Config
+
+    # Build a fresh seeded config but overwrite the dea_enforcement clean
+    # parquet with rows that have empty-string URLs (matching clean/dea.py's
+    # real output for synthetic fixtures).
+    src = agg_master_parquet
+    data_root = tmp_path / "data"
+    cfg = Config(data_root=data_root, emit_dir=tmp_path / "emit")
+    cfg.ensure_dirs()
+    for sub in ("clean", "joined"):
+        src_dir = src.data_root / sub
+        dst_dir = data_root / sub
+        if src_dir.is_dir():
+            for f in src_dir.iterdir():
+                shutil.copy(f, dst_dir / f.name)
+
+    pl.DataFrame(
+        {
+            "year": [2011, 2012, 2013],
+            "action_count": [100, 200, 300],
+            "notable_actions": [
+                [{"title": "Cardinal Health MOA", "url": "", "target": None}],
+                [{"title": "Operation X", "url": None, "target": None}],
+                [],
+            ],
+        }
+    ).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
+
+    run_all(cfg)
+    cfg.emit_dir.mkdir(parents=True, exist_ok=True)
+
+    out = emit_dea_enforcement_json(cfg)
+    data = json.loads(out.read_text())
+    # First row: empty-string url → must surface as null, NOT the placeholder
+    first = next(r for r in data if r["year"] == 2011)
+    assert len(first["notable_actions"]) == 1
+    action = first["notable_actions"][0]
+    assert action["title"] == "Cardinal Health MOA"
+    assert action.get("url") is None, (
+        f"empty URL must become null in emit, got {action.get('url')!r}"
+    )
+    # Second row: literal None url
+    second = next(r for r in data if r["year"] == 2012)
+    assert second["notable_actions"][0].get("url") is None
 
 
 def test_emit_search_index_json(seeded_cfg):

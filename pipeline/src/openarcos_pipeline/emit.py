@@ -118,15 +118,17 @@ def emit_dea_enforcement_json(cfg: Config) -> Path:
     rows = []
     for r in df.iter_rows(named=True):
         actions = r["notable_actions"] or []
-        # Schema requires `url` to be a URI; skip actions without a valid URL.
+        # If the source record has no real URL (the DEA summary parser often
+        # can't recover a per-case link), emit url=null. We must never
+        # fabricate a citation URL — a fake URL masquerading as a real one
+        # is a trust violation. See notes/dea.md and the schema
+        # dea-enforcement-actions.schema.json where `url` is optional and
+        # nullable.
         notable = []
         for a in actions:
-            url = a.get("url") or ""
-            if not url:
-                # Use a placeholder self-link to satisfy the URI format while
-                # remaining clearly-synthetic; in real data the URL is a DOJ
-                # press release.
-                url = "https://openarcos.org/unknown"
+            url = a.get("url")
+            if not url:  # "" or None → emit null
+                url = None
             notable.append(
                 {
                     "title": a["title"],

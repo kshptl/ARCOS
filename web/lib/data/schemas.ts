@@ -59,7 +59,12 @@ export interface TopPharmacy {
 
 export interface DEANotableAction {
   title: string;
-  url: string;
+  /**
+   * DOJ press release URL if known. `null` (or omitted) when the underlying
+   * DEA source didn't include a stable link — we do NOT fabricate one.
+   * See pipeline/schemas/dea-enforcement-actions.schema.json.
+   */
+  url?: string | null;
   /** Target of action; null if not identifiable */
   target: string | null;
 }

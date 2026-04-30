@@ -74,6 +74,15 @@ describe("schemas mirror", () => {
     expect(row.notable_actions).toHaveLength(1);
   });
 
+  it("DEANotableAction allows null url (citation pending)", () => {
+    const row: DEAEnforcementAction = {
+      year: 2012,
+      action_count: 42,
+      notable_actions: [{ title: "Unlinked case", url: null, target: null }],
+    };
+    expect(row.notable_actions[0]?.url).toBeNull();
+  });
+
   it("CDCOverdoseByCountyYear shape with suppressed", () => {
     const suppressed: CDCOverdoseByCountyYear = {
       fips: "54059",
