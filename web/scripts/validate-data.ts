@@ -46,8 +46,7 @@ async function loadSchema(schemaDir: string, artifactName: string): Promise<Vali
 export async function validateArtifact(args: ValidateArtifactArgs): Promise<ValidateResult> {
   const { schemaDir, dataPath, artifactName } = args;
   const validate = await loadSchema(schemaDir, artifactName);
-  const raw = await fs.readFile(dataPath, "utf8");
-  const data = JSON.parse(raw);
+  const data = await loadArtifact(dataPath);
   const ok = validate(data);
   return {
     file: path.basename(dataPath),
@@ -55,6 +54,57 @@ export async function validateArtifact(args: ValidateArtifactArgs): Promise<Vali
     ok: Boolean(ok),
     errors: ok ? [] : (validate.errors ?? []),
   };
+}
+
+/**
+ * Read an artifact from disk into a JSON-Schema-validatable shape.
+ *
+ * JSON files are parsed directly. Parquet files are materialised to an
+ * array of plain objects via `hyparquet` so that the same
+ * array-of-objects schemas used for the JSON artifacts apply unchanged.
+ * BigInt columns are coerced to `number` because `ajv`'s `integer`
+ * validator rejects BigInt values.
+ *
+ * hyparquet is imported dynamically to avoid eager resolution under
+ * tsx: its package.json `exports` map only declares ESM, and a static
+ * top-level import of this script chains into the runtime's CJS
+ * resolver (even via the `../lib/data/parquet.js` helper) which then
+ * fails with `ERR_PACKAGE_PATH_NOT_EXPORTED`. Dynamic import sidesteps
+ * that codepath — see also `build-county-ranks.ts` which uses the same
+ * pattern.
+ */
+async function loadArtifact(dataPath: string): Promise<unknown> {
+  const ext = path.extname(dataPath).toLowerCase();
+  if (ext === ".json") {
+    const raw = await fs.readFile(dataPath, "utf8");
+    return JSON.parse(raw);
+  }
+  if (ext === ".parquet") {
+    const buf = await fs.readFile(dataPath);
+    const { parquetRead } = await import("hyparquet");
+    // Copy to a fresh ArrayBuffer to guarantee hyparquet's instanceof check passes.
+    const ab = new ArrayBuffer(buf.byteLength);
+    new Uint8Array(ab).set(buf);
+    const rows: Record<string, unknown>[] = [];
+    await new Promise<void>((resolve, reject) => {
+      parquetRead({
+        file: ab,
+        rowFormat: "object",
+        onComplete: (data) => {
+          for (const row of data as Record<string, unknown>[]) rows.push(row);
+          resolve();
+        },
+      }).catch(reject);
+    });
+    return rows.map((row) => {
+      const out: Record<string, unknown> = {};
+      for (const [key, value] of Object.entries(row)) {
+        out[key] = typeof value === "bigint" ? Number(value) : value;
+      }
+      return out;
+    });
+  }
+  throw new Error(`validate-data: unsupported extension ${ext} for ${dataPath}`);
 }
 
 export interface ValidateAllArgs {
@@ -67,8 +117,9 @@ export async function validateAllArtifacts(args: ValidateAllArgs): Promise<Valid
   const entries = await fs.readdir(dataDir);
   const results: ValidateResult[] = [];
   for (const entry of entries) {
-    if (!entry.endsWith(".json")) continue;
-    const stem = entry.replace(/\.json$/, "");
+    const ext = path.extname(entry).toLowerCase();
+    if (ext !== ".json" && ext !== ".parquet") continue;
+    const stem = entry.slice(0, entry.length - ext.length);
     const bestMatch = await findArtifactMatch(schemaDir, stem);
     if (!bestMatch) continue;
     const result = await validateArtifact({

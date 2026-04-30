@@ -35,4 +35,33 @@ describe("validate-data", () => {
     const names = results.map((r) => r.file);
     expect(names).toContain("county-metadata-good.json");
   });
+
+  it("accepts a valid county-shipments-by-year parquet fixture", async () => {
+    const result = await validateArtifact({
+      schemaDir: SCHEMA_DIR,
+      dataPath: path.join(FIXTURE_DIR, "county-shipments-by-year-good.parquet"),
+      artifactName: "county-shipments-by-year",
+    });
+    expect(result.ok).toBe(true);
+    expect(result.errors).toHaveLength(0);
+  });
+
+  it("rejects a malformed county-shipments-by-year parquet fixture", async () => {
+    const result = await validateArtifact({
+      schemaDir: SCHEMA_DIR,
+      dataPath: path.join(FIXTURE_DIR, "county-shipments-by-year-bad.parquet"),
+      artifactName: "county-shipments-by-year",
+    });
+    expect(result.ok).toBe(false);
+    expect(result.errors.length).toBeGreaterThan(0);
+  });
+
+  it("validateAllArtifacts includes parquet artifacts", async () => {
+    const results = await validateAllArtifacts({
+      schemaDir: SCHEMA_DIR,
+      dataDir: FIXTURE_DIR,
+    });
+    const names = results.map((r) => r.file);
+    expect(names).toContain("county-shipments-by-year-good.parquet");
+  });
 });
