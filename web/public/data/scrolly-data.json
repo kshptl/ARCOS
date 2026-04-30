@@ -1,7 +1,27 @@
 {
   "act1": {
-    "totalPills": 30681346,
+    "totalPills": 88512758,
     "yearly": [
+      {
+        "year": 2006,
+        "pills": 8860250
+      },
+      {
+        "year": 2007,
+        "pills": 9414510
+      },
+      {
+        "year": 2008,
+        "pills": 9884495
+      },
+      {
+        "year": 2009,
+        "pills": 10299883
+      },
+      {
+        "year": 2010,
+        "pills": 10889256
+      },
       {
         "year": 2011,
         "pills": 11154554
@@ -13,6 +33,10 @@
       {
         "year": 2013,
         "pills": 9298563
+      },
+      {
+        "year": 2014,
+        "pills": 8483018
       }
     ]
   },
@@ -20,32 +44,32 @@
     "rows": [
       {
         "distributor": "MCKESSON CORPORATION",
-        "start": 37.87847801354621,
-        "end": 37.87847801354621,
+        "start": 38.92617449664429,
+        "end": 35,
         "emphasized": true
       },
       {
         "distributor": "CARDINAL HEALTH",
-        "start": 25.87443626905172,
-        "end": 25.87443626905172,
+        "start": 25.503355704697988,
+        "end": 27.5,
         "emphasized": true
       },
       {
         "distributor": "AMERISOURCEBERGEN DRUG CORPORATION",
-        "start": 20.602747113742993,
-        "end": 20.602747113742993,
+        "start": 20.13422818791946,
+        "end": 21.73076923076923,
         "emphasized": true
       },
       {
         "distributor": "H.D. SMITH WHOLESALE DRUG CO",
-        "start": 10.152332966223357,
-        "end": 10.152332966223357,
+        "start": 10.06711409395973,
+        "end": 10.288461538461538,
         "emphasized": false
       },
       {
         "distributor": "MIAMI-LUKEN INC",
-        "start": 5.4920056374357245,
-        "end": 5.4920056374357245,
+        "start": 5.369127516778524,
+        "end": 5.480769230769231,
         "emphasized": false
       }
     ]
@@ -104,7 +128,8 @@
         "state": "WV",
         "deaths": [
           0,
-          15
+          15,
+          18
         ]
       },
       {
