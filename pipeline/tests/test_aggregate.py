@@ -89,3 +89,18 @@ def test_dea_enforcement_passthrough(agg_master_parquet):
         ).alias("notable_actions")
     )
     _assert_snapshot(df2, SNAPSHOTS / "dea_enforcement.expected.csv")
+
+
+def test_search_index(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "search_index")
+    df = pl.read_parquet(out).sort(["type", "id"])
+    # Every row has a non-empty label and id
+    assert df["id"].null_count() == 0
+    assert (df["id"].str.len_chars() > 0).all()
+    assert df["label"].null_count() == 0
+    # All types are from the known set
+    assert set(df["type"].unique().to_list()).issubset(
+        {"county", "city", "zip", "distributor", "pharmacy"}
+    )
+    _assert_snapshot(df, SNAPSHOTS / "search_index.expected.csv")

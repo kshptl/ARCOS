@@ -1,0 +1,10 @@
+type,id,label,sublabel,fips,state,total_pills
+county,21119,Knott County,KY,21119,KY,
+county,51720,Norton city,VA,51720,VA,
+county,54059,Mingo County,WV,54059,WV,
+distributor,amerisourcebergen,AmerisourceBergen,2200000.0,,,2200000.0
+distributor,cardinal,Cardinal,4000000.0,,,4000000.0
+distributor,mckesson,McKesson,7700000.0,,,7700000.0
+pharmacy,DEA-AB1234567,SAV-RITE PHARMACY,100 MAIN ST,54059,,12500000.0
+pharmacy,DEA-CD9876543,TUG VALLEY PHARMACY,234 APPALACHIAN DR,54059,,8800000.0
+pharmacy,DEA-EF1122334,NORTON APOTHECARY,17 PARK AVE,51720,,450000.0
