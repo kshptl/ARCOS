@@ -60,3 +60,18 @@ def test_top_pharmacies(agg_master_parquet):
     out = run_single(cfg, "top_pharmacies")
     df = pl.read_parquet(out).sort("total_pills", descending=True)
     _assert_snapshot(df, SNAPSHOTS / "top_pharmacies.expected.csv")
+
+
+def test_cdc_overdose_preserves_suppressed(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "cdc_overdose_by_county_year")
+    df = pl.read_parquet(out).sort(["fips", "year"])
+    # Structural invariants (spec §4 watch-out #1)
+    rows = df.to_dicts()
+    for r in rows:
+        assert r["suppressed"] in (True, False)
+        if r["suppressed"]:
+            assert r["deaths"] is None, f"suppressed row had non-null deaths: {r}"
+        else:
+            assert isinstance(r["deaths"], int) and r["deaths"] >= 10, f"bad unsuppressed row: {r}"
+    _assert_snapshot(df, SNAPSHOTS / "cdc_overdose_by_county_year.expected.csv")
