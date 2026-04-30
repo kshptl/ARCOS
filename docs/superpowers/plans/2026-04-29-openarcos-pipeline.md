@@ -6017,7 +6017,7 @@ All checks must pass before starting the next phase. If any check fails, fix bef
 
 ---
 
-## Phase 10 — CI + Deploy (tasks 54–58)
+## Phase 10 — CI + Deploy (tasks 54–59)
 
 The pipeline now produces every artifact in §4. Phase 10 wires it into Make + GitHub Actions so `make all` is the canonical local workflow and a weekly cron keeps `web/public/data/` current against live sources.
 
@@ -6638,7 +6638,47 @@ git commit -m "pipeline: complete README (quickstart, layout, troubleshooting)"
 
 ---
 
-### Task 58: Final push
+### Task 58: Final verification sweep
+
+Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test). Runs **before** Task 59 so nothing broken gets pushed.
+
+**Files:** none (audit only)
+
+- [ ] **Step 1:** Full local matrix. Run from the repo root:
+
+```bash
+cd pipeline && make lint && make test && make all
+```
+
+- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
+
+- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
+
+```bash
+cd pipeline && make lint && make test && make all
+```
+
+- [ ] **Step 4:** Commit a no-op marker if nothing broke:
+
+```bash
+git commit --allow-empty -m "chore: final verification sweep clean"
+```
+
+---
+
+### Phase 10 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
+### Task 59: Final push
 
 **Files:**
 - None modified — this task ships everything.
@@ -6697,46 +6737,6 @@ git push origin main
 ```
 
 Expected: push succeeds; GitHub Actions `CI` workflow fires on the push and completes green.
-
----
-
-### Phase 10 gate
-
-After every task in this phase, run the full verification matrix:
-
-```bash
-cd pipeline && make lint && make test
-```
-
-All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
-
----
-
-### Task 59: Final verification sweep
-
-Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
-
-**Files:** none (audit only)
-
-- [ ] **Step 1:** Full local matrix. Run from the repo root:
-
-```bash
-cd pipeline && make lint && make test && make all
-```
-
-- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
-
-- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
-
-```bash
-cd pipeline && make lint && make test && make all
-```
-
-- [ ] **Step 4:** Commit a no-op marker if nothing broke:
-
-```bash
-git commit --allow-empty -m "chore: final verification sweep clean"
-```
 
 ---
 

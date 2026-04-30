@@ -1759,7 +1759,7 @@ git commit -m "web: ui primitives (Button, Pill, Tooltip, Typography)"
 - Create: `web/tests/unit/layout.test.tsx`
 - Modify: `web/app/layout.tsx` (wrap children in Header + Footer)
 
-Header carries the site title, nav links, and a slot for SearchBox (Task 36 fills it). Footer carries the data-source attribution + last-build date. MethodologyFooter is a lighter variant for `/methodology` + `/about`.
+Header carries the site title, nav links, and a slot for SearchBox (Task 35 fills it). Footer carries the data-source attribution + last-build date. MethodologyFooter is a lighter variant for `/methodology` + `/about`.
 
 - [ ] **Step 1: Write the failing test**
 
@@ -4789,7 +4789,7 @@ git commit -m "web: explorer stub with fallback county list"
 
 ---
 
-## Phase 5 — Small charts (tasks 29–34)
+## Phase 5 — Small charts (tasks 29–33)
 
 Four visual primitives used by `/rankings`, `/county/[fips]`, and (eventually) the scrolly acts in Plan 3. Every chart must render in SSG (no browser-only APIs at build), expose an `aria-label` summary, and include a `<details><table>` fallback for accessibility.
 
@@ -5619,34 +5619,17 @@ git add web/components/charts/Slope.tsx web/tests/unit/chart-slope.test.tsx
 git commit -m "web: Slope chart with highlight emphasis"
 ```
 
-### Task 34: Phase 5 verification gate
-
-- [ ] **Step 1: Run full loop**
-
-```bash
-cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build
-```
-
-Expected:
-- All chart-* unit tests pass
-- Production build completes
-- No lint/typecheck errors
-
-- [ ] **Step 2: Tag (optional)**
-
-```bash
-git tag web-phase-5-done
-```
+**Phase 5 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-5-done`.
 
 ---
 
-## Phase 6 — Search (tasks 35–39)
+## Phase 6 — Search (tasks 34–38)
 
 Grouped fuzzy search across 5 entity types. Lazy-loads the `search-index.json` on first input focus so the payload doesn't block initial page render. **Per design decision, the index includes every county, city, zip, distributor, and pharmacy (no top-N pharmacy cap), making the file ~8–12 MB.** The hook mitigates with a "Loading…" indicator and a sessionStorage cache (populated after first successful load) so subsequent pages on the same session reuse it without re-downloading.
 
 > **Note for Plan 3:** If post-launch telemetry shows the initial search interaction is slow on mid-tier mobile, revisit the decision to include all pharmacies. Options: top-N cap per county, or a two-tier index (places/distributors load immediately; pharmacies load on pharmacy-scoped query).
 
-### Task 35 — `useSearchIndex` hook
+### Task 34 — `useSearchIndex` hook
 
 **Files:**
 - Create: `web/components/search/useSearchIndex.ts`
@@ -5924,7 +5907,7 @@ git commit -m "web: add useSearchIndex hook with sessionStorage cache"
 
 ---
 
-### Task 36 — `SearchBox` component
+### Task 35 — `SearchBox` component
 
 **Files:**
 - Create: `web/components/search/SearchBox.tsx`
@@ -6169,7 +6152,7 @@ git commit -m "web: add SearchBox grouped combobox"
 
 ---
 
-### Task 37 — SearchBox unit tests
+### Task 36 — SearchBox unit tests
 
 **Files:**
 - Create: `web/tests/unit/SearchBox.test.tsx`
@@ -6284,7 +6267,7 @@ git commit -m "web: test SearchBox grouping, keyboard nav, error state"
 
 ---
 
-### Task 38 — Wire SearchBox into `Header`
+### Task 37 — Wire SearchBox into `Header`
 
 **Files:**
 - Modify: `web/components/layout/Header.tsx`
@@ -6366,7 +6349,7 @@ git commit -m "web: mount SearchBox in Header"
 
 ---
 
-### Task 39 — E2E smoke: search → county page
+### Task 38 — E2E smoke: search → county page
 
 **Files:**
 - Create: `web/tests/e2e/search.spec.ts`
@@ -6467,15 +6450,15 @@ git commit -m "web: e2e smoke for search → county navigation"
 
 ---
 
-**Phase 6 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-6-done`.
+**Phase 6 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-6-done`.
 
 ---
 
-## Phase 7 — `/rankings` (tasks 40–43)
+## Phase 7 — `/rankings` (tasks 39–42)
 
 Two-tab rankings page. **Distributors** tab is pre-rendered from the year-indexed JSON at build time (small, server-side; includes a sparkline of each distributor's yearly share). **Pharmacies** tab streams the `top-pharmacies.parquet` artifact on the client via `hyparquet` and paginates 100 per page; this also exercises the browser Parquet loader ahead of Plan 3's explorer.
 
-### Task 40 — Rankings page scaffold with tabs
+### Task 39 — Rankings page scaffold with tabs
 
 **Files:**
 - Create: `web/app/rankings/page.tsx`
@@ -6657,8 +6640,8 @@ export default function RankingsPage() {
       </header>
       <Tabs
         tabs={[
-          { key: "distributors", label: "Distributors", panel: <p>(populated in Task 41)</p> },
-          { key: "pharmacies", label: "Pharmacies", panel: <p>(populated in Task 42)</p> },
+          { key: "distributors", label: "Distributors", panel: <p>(populated in Task 40)</p> },
+          { key: "pharmacies", label: "Pharmacies", panel: <p>(populated in Task 41)</p> },
         ]}
       />
     </main>
@@ -6683,7 +6666,7 @@ git commit -m "web: add /rankings page scaffold with tabs"
 
 ---
 
-### Task 41 — Distributors tab
+### Task 40 — Distributors tab
 
 **Files:**
 - Create: `web/app/rankings/DistributorsPanel.tsx`
@@ -6913,7 +6896,7 @@ export default async function RankingsPage() {
       <Tabs
         tabs={[
           { key: "distributors", label: "Distributors", panel: <DistributorsPanel rows={distributors} /> },
-          { key: "pharmacies", label: "Pharmacies", panel: <p>(populated in Task 42)</p> },
+          { key: "pharmacies", label: "Pharmacies", panel: <p>(populated in Task 41)</p> },
         ]}
       />
     </main>
@@ -6968,7 +6951,7 @@ git commit -m "web: add distributors rankings tab"
 
 ---
 
-### Task 42 — Pharmacies tab with client-side parquet pagination
+### Task 41 — Pharmacies tab with client-side parquet pagination
 
 **Files:**
 - Create: `web/app/rankings/PharmaciesPanel.tsx`
@@ -7243,7 +7226,7 @@ git commit -m "web: add pharmacies rankings tab with client-side pagination"
 
 ---
 
-### Task 43 — Rankings E2E + anchor test
+### Task 42 — Rankings E2E + anchor test
 
 **Files:**
 - Create: `web/tests/e2e/rankings.spec.ts`
@@ -7295,18 +7278,18 @@ git commit -m "web: e2e for rankings tab switching + anchor id"
 
 ---
 
-**Phase 7 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-7-done`.
+**Phase 7 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-7-done`.
 
 ---
 
-## Phase 8 — `/county/[fips]` (tasks 44–51)
+## Phase 8 — `/county/[fips]` (tasks 43–50)
 
 The deepest route: one fully-SSG page per US county (~3,100 pages). Each page assembles hero numerals, comparative rank callouts, a multi-series time chart, top distributors and pharmacies, and similar-counties links. All data is pre-loaded at build time via the existing loaders; no client Parquet on this page.
 
-### Task 44 — Full county page with `generateStaticParams`
+### Task 43 — Full county page with `generateStaticParams`
 
 **Files:**
-- Modify: `web/app/county/[fips]/page.tsx` (stubbed in Task 39)
+- Modify: `web/app/county/[fips]/page.tsx` (stubbed in Task 38)
 - Create: `web/app/county/[fips]/page.module.css`
 - Create: `web/tests/unit/county-page.test.tsx`
 
@@ -7498,13 +7481,13 @@ describe("CountyPage", () => {
 });
 ```
 
-- [ ] **Step 4: Run the test (it will fail for missing sub-modules; continue through Task 50 to make it green)**
+- [ ] **Step 4: Run the test (it will fail for missing sub-modules; continue through Task 49 to make it green)**
 
 ```bash
 pnpm test -- county-page
 ```
 
-Expected: FAIL — this is expected; the remaining Task 45–50 modules fill in.
+Expected: FAIL — this is expected; the remaining Task 44–49 modules fill in.
 
 - [ ] **Step 5: Commit the scaffold**
 
@@ -7515,7 +7498,7 @@ git commit -m "web: scaffold full /county/[fips] page composition"
 
 ---
 
-### Task 45 — `Hero` component
+### Task 44 — `Hero` component
 
 **Files:**
 - Create: `web/components/county/Hero.tsx`
@@ -7686,7 +7669,7 @@ git commit -m "web: add county Hero component"
 
 ---
 
-### Task 46 — `RankCallouts` component
+### Task 45 — `RankCallouts` component
 
 **Files:**
 - Create: `web/components/county/RankCallouts.tsx`
@@ -7746,7 +7729,7 @@ export async function loadCountyRanks(fips: string): Promise<CountyRanks> {
 }
 ```
 
-> The `county-ranks.json` artifact is produced by `web/scripts/build-county-ranks.ts` (added in Task 47 as part of the `build-similar-counties.ts` companion script). If the file is absent, the loader returns a zero-filled default so the page still renders during early development.
+> The `county-ranks.json` artifact is produced by `web/scripts/build-county-ranks.ts` (added in Task 46 as part of the `build-similar-counties.ts` companion script). If the file is absent, the loader returns a zero-filled default so the page still renders during early development.
 
 - [ ] **Step 2: CSS**
 
@@ -7886,7 +7869,7 @@ git commit -m "web: add county RankCallouts component"
 
 ---
 
-### Task 47 — Similar counties + build scripts
+### Task 46 — Similar counties + build scripts
 
 **Files:**
 - Create: `web/lib/geo/similar.ts`
@@ -8164,7 +8147,7 @@ git commit -m "web: add similar-counties + county-ranks build scripts"
 
 ---
 
-### Task 48 — `CountyTimeSeries` component
+### Task 47 — `CountyTimeSeries` component
 
 **Files:**
 - Create: `web/components/county/CountyTimeSeries.tsx`
@@ -8339,7 +8322,7 @@ git commit -m "web: add county time-series component"
 
 ---
 
-### Task 49 — `TopDistributors` component
+### Task 48 — `TopDistributors` component
 
 **Files:**
 - Create: `web/components/county/TopDistributors.tsx`
@@ -8441,7 +8424,7 @@ git commit -m "web: add county TopDistributors component"
 
 ---
 
-### Task 50 — `TopPharmacies` component
+### Task 49 — `TopPharmacies` component
 
 **Files:**
 - Create: `web/components/county/TopPharmacies.tsx`
@@ -8589,7 +8572,7 @@ git commit -m "web: add county TopPharmacies component"
 
 ---
 
-### Task 51 — `SimilarCounties` component + E2E for random FIPS
+### Task 50 — `SimilarCounties` component + E2E for random FIPS
 
 **Files:**
 - Create: `web/components/county/SimilarCounties.tsx`
@@ -8764,13 +8747,13 @@ git commit -m "web: add SimilarCounties component + county E2E"
 
 ---
 
-**Phase 8 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-8-done`.
+**Phase 8 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-8-done`.
 
 ---
 
-## Phase 9 — SEO, analytics, security (tasks 52–55)
+## Phase 9 — SEO, analytics, security (tasks 51–54)
 
-### Task 52 — `app/sitemap.ts`
+### Task 51 — `app/sitemap.ts`
 
 **Files:**
 - Create: `web/app/sitemap.ts`
@@ -8860,7 +8843,7 @@ git commit -m "web: generate sitemap with all static + county routes"
 
 ---
 
-### Task 53 — `app/robots.ts`
+### Task 52 — `app/robots.ts`
 
 **Files:**
 - Create: `web/app/robots.ts`
@@ -8913,7 +8896,7 @@ git commit -m "web: add permissive robots.txt"
 
 ---
 
-### Task 54 — Plausible analytics + Sentry
+### Task 53 — Plausible analytics + Sentry
 
 **Files:**
 - Modify: `web/app/layout.tsx`
@@ -9059,7 +9042,7 @@ git commit -m "web: wire Plausible (env-gated) and Sentry errors-only"
 
 ---
 
-### Task 55 — CSP & cache headers via `vercel.json`
+### Task 54 — CSP & cache headers via `vercel.json`
 
 **Files:**
 - Create: `web/vercel.json`
@@ -9157,9 +9140,9 @@ git commit -m "web: add vercel.json with CSP + cache headers"
 
 ---
 
-## Phase 10 — CI + Deploy (tasks 56–60)
+## Phase 10 — CI + Deploy (tasks 55–59)
 
-### Task 56 — `ci.yml` web job
+### Task 55 — `ci.yml` web job
 
 **Files:**
 - Modify: `.github/workflows/ci.yml` (created in Plan 1 Phase 10)
@@ -9258,7 +9241,7 @@ git commit -m "web: add CI job for lint/test/build/e2e/lighthouse"
 
 ---
 
-### Task 57 — Lighthouse CI config
+### Task 56 — Lighthouse CI config
 
 **Files:**
 - Create: `web/.lighthouserc.json`
@@ -9305,7 +9288,7 @@ git commit -m "web: add Lighthouse CI assertions (\u22650.9 a11y/bp/seo; perf wa
 
 ---
 
-### Task 58 — Ops docs + DNS cutover notes
+### Task 57 — Ops docs + DNS cutover notes
 
 **Files:**
 - Create: `docs/ops.md`
@@ -9366,7 +9349,7 @@ git commit -m "docs: ops.md with Vercel + Cloudflare DNS cutover"
 
 ---
 
-### Task 59 — Root `.gitattributes` (verify binaries)
+### Task 58 — Root `.gitattributes` (verify binaries)
 
 **Files:**
 - Modify: root `.gitattributes` (created in Plan 1 Task 4 with `*.parquet binary`; append woff2)
@@ -9390,7 +9373,7 @@ git diff --cached --quiet || git commit -m "chore: mark woff2 as binary for git"
 
 ---
 
-### Task 60 — Final verification + push
+### Task 59 — Final verification + push
 
 - [ ] **Step 1: Full local loop**
 
@@ -9440,7 +9423,7 @@ git push origin web-core-v1
 
 ---
 
-### Task 61: Final verification sweep
+### Task 60: Final verification sweep
 
 Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
 
@@ -9476,17 +9459,17 @@ git commit --allow-empty -m "chore: final verification sweep clean"
 | Parquet loader mismatch between build (Node) and client | One library (`hyparquet`) used in both; `readParquetRows` wrapper tested against a committed fixture from the pipeline's own build. |
 | `search-index.json` grows past 12 MB | `useSearchIndex` lazy-loads on first input focus, caches in sessionStorage (no second download per session). Plan 3 revisits if telemetry shows slow first-search on mobile. |
 | 3,100 county pages bloat build time | Next's static generator handles this at ~1–2 min on a typical runner; if a future regression pushes over the 10-min CI budget, enable partial prerender via `dynamicParams=true` + on-demand ISR. |
-| Plan 1's pipeline does not yet emit `county-distributors.json` | Task 49's loader returns `[]` when the file is absent; the component renders a placeholder. Follow-up task in Plan 1: add `sql/county_distributors.sql` + a new emit function. |
-| Plan 1's top-pharmacies parquet lacks per-year arrays (`yearly?: number[]`) | Task 50's schema change is backward-compatible (`yearly?` is optional). Sparkline column is empty until the pipeline is extended in a future iteration. |
+| Plan 1's pipeline does not yet emit `county-distributors.json` | Task 48's loader returns `[]` when the file is absent; the component renders a placeholder. Follow-up task in Plan 1: add `sql/county_distributors.sql` + a new emit function. |
+| Plan 1's top-pharmacies parquet lacks per-year arrays (`yearly?: number[]`) | Task 49's schema change is backward-compatible (`yearly?` is optional). Sparkline column is empty until the pipeline is extended in a future iteration. |
 | Vercel CSP blocks third-party legitimately needed (e.g., a new analytics host) | CSP source lives in `web/vercel.json` — amend and re-deploy; `tests/unit/vercel-config.test.ts` asserts the allow-list shape. |
 | Lighthouse perf regression from chart render | Perf assertion is `warn` in web-core and becomes `error` after Plan 3 lands the scrolly + explorer, which have their own perf budgets. |
 
 ## Cross-plan self-review
 
 - **Spec §5 routes covered:** `/` (stub + full home via Plan 3), `/explorer` (stub + full via Plan 3), `/rankings`, `/methodology`, `/about`, `/county/[fips]`. ✔
-- **Spec §4 artifacts consumed:** state-shipments-by-year.json (Plan 2 Task 22), county-metadata.json (21), county-shipments-by-year.parquet (22), top-distributors-by-year.json (22 → aggregated in 41), top-pharmacies.parquet (22 → paginated in 42, per-county in 50), cdc-overdose-by-county-year.parquet (22 → via bundle in 44), dea-enforcement-actions.json (not consumed in Plan 2 by design — Plan 3 uses it in Act 3; sanity check confirms it's still validated in Phase 3 Task 16), search-index.json (35). 2 net-new web-only artifacts declared (`county-ranks.json` and `similar-counties.json`) are built from the primary 8 and are not part of spec §4. ✔
+- **Spec §4 artifacts consumed:** state-shipments-by-year.json (Plan 2 Task 22), county-metadata.json (21), county-shipments-by-year.parquet (22), top-distributors-by-year.json (22 → aggregated in 40), top-pharmacies.parquet (22 → paginated in 41, per-county in 49), cdc-overdose-by-county-year.parquet (22 → via bundle in 43), dea-enforcement-actions.json (not consumed in Plan 2 by design — Plan 3 uses it in Act 3; sanity check confirms it's still validated in Phase 3 Task 16), search-index.json (34). 2 net-new web-only artifacts declared (`county-ranks.json` and `similar-counties.json`) are built from the primary 8 and are not part of spec §4. ✔
 - **Spec §5 a11y commitments covered:** focus rings (tokens.css in Phase 2), tabular-nums (tokens + numeric class), aria-labels on figures (Phase 5 + 8), `<details><table>` fallback on every chart, semantic tabs in Phase 7. ✔
-- **Spec §7 failure modes covered:** schema drift (validate-data.ts in CI + prebuild), search-index failure (Task 35 error state with retry), Parquet failure on client (Task 42 retry button), bad FIPS (Task 44 `notFound()` via dynamicParams=false). JS-disabled fallback is inherent to SSG. WebGL-disabled is a Plan 3 concern. Reduced-motion is a Plan 3 concern. ✔
+- **Spec §7 failure modes covered:** schema drift (validate-data.ts in CI + prebuild), search-index failure (Task 34 error state with retry), Parquet failure on client (Task 41 retry button), bad FIPS (Task 43 `notFound()` via dynamicParams=false). JS-disabled fallback is inherent to SSG. WebGL-disabled is a Plan 3 concern. Reduced-motion is a Plan 3 concern. ✔
 - **Type consistency:** `CountyBundle` is defined once in `components/county/Hero.tsx` and re-imported elsewhere — no duplicate definitions. `SearchIndexEntry`, `TopPharmacy`, `CountyRanks`, `SimilarCountyRef` are each defined in exactly one place and referenced by path. ✔
 - **Placeholder scan:** no "TBD" or "similar to Task N" strings; every step has concrete paths and commands. ✔
 - **Fresh-eyes gaps caught during review:**
