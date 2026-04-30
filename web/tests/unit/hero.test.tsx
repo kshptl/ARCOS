@@ -19,4 +19,34 @@ describe("Hero", () => {
     expect(screen.getByText(/WV/)).toBeInTheDocument();
     expect(screen.getByText(/per person in 2012/i)).toBeInTheDocument();
   });
+
+  it("renders em-dash and hides peak per-capita when all shipments are zero (suppressed)", () => {
+    const meta = { fips: "21119", name: "Knott County", state: "KY", pop: 16232 };
+    const bundle = {
+      meta,
+      shipments: [
+        { fips: "21119", year: 2011, pills: 0, pills_per_capita: 0 },
+        { fips: "21119", year: 2012, pills: 0, pills_per_capita: 0 },
+        { fips: "21119", year: 2013, pills: 0, pills_per_capita: 0 },
+      ],
+      pharmacies: [],
+      overdose: [],
+    };
+    render(<Hero meta={meta} bundle={bundle} />);
+    expect(screen.getByText("—")).toBeInTheDocument();
+    expect(screen.queryByText(/per person in /i)).toBeNull();
+    expect(screen.queryByText(/^0 pills$/)).toBeNull();
+  });
+
+  it("renders em-dash when shipments is an empty array", () => {
+    const meta = { fips: "99999", name: "Nowhere County", state: "XX", pop: 1000 };
+    const bundle = {
+      meta,
+      shipments: [],
+      pharmacies: [],
+      overdose: [],
+    };
+    render(<Hero meta={meta} bundle={bundle} />);
+    expect(screen.getByText("—")).toBeInTheDocument();
+  });
 });

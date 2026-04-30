@@ -7,6 +7,7 @@ import { SimilarCounties } from "@/components/county/SimilarCounties";
 import { TopDistributors } from "@/components/county/TopDistributors";
 import { TopPharmacies } from "@/components/county/TopPharmacies";
 import { MethodologyFooter } from "@/components/layout/MethodologyFooter";
+import { computeCountyHeroStats } from "@/lib/data/countyHeroStats";
 import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
 import { loadCountyDistributors } from "@/lib/data/loadCountyDistributors";
 import { loadAllFips, loadCountyMetaByFips } from "@/lib/data/loadCountyMeta";
@@ -46,6 +47,11 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
   const topDistributors = await loadCountyDistributors(fips);
   const stateSeries = await loadStateShipments();
   const similar = await loadSimilarCounties(fips);
+  // Compute suppression once so Hero and RankCallouts agree. A county is
+  // suppressed when it has no shipment rows or the total pills is 0 —
+  // rendering "0 pills shipped" / "3rd of 4 by pills" for these counties
+  // misleads readers about the underlying ARCOS/CDC data being unavailable.
+  const heroStats = computeCountyHeroStats(meta, bundle.shipments);
 
   return (
     <div className={`${styles.root} container`}>
@@ -56,7 +62,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
 
       <div className={styles.heroGrid}>
         <Hero meta={meta} bundle={bundle} />
-        <RankCallouts meta={meta} ranks={ranks} />
+        <RankCallouts meta={meta} ranks={ranks} suppressed={heroStats.suppressed} />
       </div>
 
       <section className={styles.section}>

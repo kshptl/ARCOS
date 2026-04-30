@@ -40,4 +40,27 @@ describe("RankCallouts", () => {
     );
     expect(screen.getAllByText("—")).toHaveLength(3);
   });
+
+  it("hides shipment-derived ranks when the county is suppressed", () => {
+    render(
+      <RankCallouts
+        meta={{ fips: "21119", name: "Knott", state: "KY", pop: 16232 }}
+        ranks={{
+          fips: "21119",
+          national_rank: 3,
+          national_total: 4,
+          peer_rank: 2,
+          peer_size: 2,
+          overdose_rank: 5,
+          overdose_total: 100,
+        }}
+        suppressed
+      />,
+    );
+    // National + peer rank cards show em-dash, overdose-deaths rank still shows 5th.
+    expect(screen.getAllByText("—")).toHaveLength(2);
+    expect(screen.queryByText("3rd")).toBeNull();
+    expect(screen.queryByText("2nd")).toBeNull();
+    expect(screen.getByText("5th")).toBeInTheDocument();
+  });
 });

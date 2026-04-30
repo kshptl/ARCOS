@@ -7,6 +7,9 @@ import styles from "./Hero.module.css";
 
 export function Hero({ meta, bundle }: { meta: CountyMetadata; bundle: CountyBundle }) {
   const stats = computeCountyHeroStats(meta, bundle.shipments);
+  const pillsAria = stats.suppressed
+    ? `Pills shipped to ${meta.name} are suppressed or unavailable.`
+    : `${formatFull(stats.totalPills)} pills shipped to ${meta.name} from 2006 to 2014`;
   return (
     <div className={styles.root}>
       <h1 className={styles.name}>{meta.name}</h1>
@@ -18,12 +21,13 @@ export function Hero({ meta, bundle }: { meta: CountyMetadata; bundle: CountyBun
           <span className={styles.statLabel}>Pills shipped 2006–2014</span>
           <BigNumeral
             value={stats.totalPills}
-            unit="pills"
+            displayValue={stats.suppressed ? "—" : undefined}
+            unit={stats.suppressed ? "suppressed" : "pills"}
             compact
-            ariaLabel={`${formatFull(stats.totalPills)} pills shipped to ${meta.name} from 2006 to 2014`}
+            ariaLabel={pillsAria}
           />
         </div>
-        {stats.peakPerCapita !== null && stats.peakYear !== null && (
+        {!stats.suppressed && stats.peakPerCapita !== null && stats.peakYear !== null && (
           <div className={styles.stat}>
             <span className={styles.statLabel}>Peak per-capita</span>
             <BigNumeral
