@@ -2,7 +2,6 @@
 
 import type { DEAEnforcementAction } from "@/lib/data/schemas";
 import { formatFull } from "@/lib/format/number";
-import { useScrollyProgress } from "../progressContext";
 import { formatTickValue, niceTicks } from "./axes";
 import styles from "./scenes.module.css";
 
@@ -23,13 +22,8 @@ const BAR_WIDTH = 28;
 const BAR_PADDING = BAR_WIDTH / 2 + 2;
 
 const FULL_YEAR_RANGE: number[] = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
-const INFLECTION_START = 2012;
-const INFLECTION_END = 2014;
 
 export function Act3Enforcement({ actions }: Act3EnforcementProps) {
-  const progress = useScrollyProgress();
-  const showInflection = progress > 0.5;
-
   // Build a dense year series so the timeline reads 2006→2014 with equal
   // x-axis spacing even if the fixture only has data for some years.
   const byYear = new Map(actions.map((a) => [a.year, a]));
@@ -90,36 +84,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             );
           })}
 
-          {/* Inflection rectangle (behind bars) */}
-          {showInflection && (
-            <g data-testid="inflection-zoom" opacity={Math.min(1, (progress - 0.5) / 0.3)}>
-              {(() => {
-                const x0 = xFor(INFLECTION_START) - barWidth / 2 - 4;
-                const x1 = xFor(INFLECTION_END) + barWidth / 2 + 4;
-                return (
-                  <>
-                    <rect
-                      x={x0}
-                      y={PAD_TOP - 18}
-                      width={x1 - x0}
-                      height={plotH + 18}
-                      fill="var(--accent-hot)"
-                      opacity={0.1}
-                    />
-                    <text
-                      className={styles.inflectionLabel}
-                      x={(x0 + x1) / 2}
-                      y={PAD_TOP - 24}
-                      textAnchor="middle"
-                    >
-                      Inflection
-                    </text>
-                  </>
-                );
-              })()}
-            </g>
-          )}
-
           {/* Bars */}
           {years.map((year) => {
             const a = byYear.get(year);
@@ -128,7 +92,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             const x = cx - barWidth / 2;
             const h = (count / yMax) * plotH;
             const y = PAD_TOP + plotH - h;
-            const inflection = year >= INFLECTION_START && year <= INFLECTION_END && count > 0;
             const hasCount = count > 0;
             return (
               <g key={year}>
@@ -139,7 +102,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                     y={y}
                     width={barWidth}
                     height={h}
-                    fill={inflection ? "var(--accent-hot)" : "var(--ink-60)"}
+                    fill="var(--ink-60)"
                   />
                 )}
                 {!hasCount && (

@@ -32,13 +32,19 @@ describe("Act3Enforcement", () => {
     expect(ticks.length).toBeGreaterThanOrEqual(9);
   });
 
-  it("highlights 2012-14 inflection when progress > 0.5", () => {
-    render(
+  it("does not render a 2012-14 inflection band or label", () => {
+    const { container } = render(
       <ScrollyProgressContext.Provider value={0.8}>
         <Act3Enforcement actions={ACTIONS} />
       </ScrollyProgressContext.Provider>,
     );
-    expect(screen.getByTestId("inflection-zoom")).toBeInTheDocument();
+    expect(container.querySelector('[data-testid="inflection-zoom"]')).toBeNull();
+    const svgText = Array.from(
+      container.querySelectorAll("svg text"),
+    ).map((t) => t.textContent ?? "");
+    for (const s of svgText) {
+      expect(s).not.toMatch(/Inflection/i);
+    }
   });
 
   it("renders notable-actions ticker table", () => {
