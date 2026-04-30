@@ -21,3 +21,7 @@ test-results/
 # editor
 .vscode/
 .idea/
+
+# override root gitignore (which is pythonic and drops lib/)
+!lib/
+!lib/**

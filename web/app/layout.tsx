@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { bodyFont, displayFont } from "@/lib/fonts";
 
 export const metadata = {
   title: "openarcos",
@@ -7,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body>{children}</body>
     </html>
   );
