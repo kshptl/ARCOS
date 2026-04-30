@@ -51,8 +51,11 @@ def test_cli_clean_then_join_produces_valid_master(tmp_path, fixtures_dir, monke
     master = data_root / "joined" / "master.parquet"
     assert master.exists()
     df = pl.read_parquet(master)
-    # 4 counties × 3 years = 12 rows (per Census fixture which has 4 counties)
-    assert len(df) == 12
+    # N counties × 3 years (per Census fixture); keep this check tied to the
+    # fixture's county count so new counties can be added without churn.
+    n_counties = df.select(pl.col("fips").n_unique()).item()
+    assert len(df) == n_counties * 3
+    assert n_counties >= 4
     assert set(df.columns) == {"fips", "year", "pop", "pills", "deaths", "suppressed"}
     # 54059 should have a non-null pills figure in 2012 (the year the WaPo fixture covers)
     mingo_2012 = df.filter((pl.col("fips") == "54059") & (pl.col("year") == 2012)).to_dicts()[0]

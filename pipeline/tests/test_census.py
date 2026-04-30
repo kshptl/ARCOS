@@ -11,14 +11,20 @@ def test_parse_popest_filters_state_summaries(fixtures_dir):
     df = census.parse_popest_csv(fixtures_dir / "census" / "co-est2019-sample.csv")
     assert isinstance(df, pl.DataFrame)
     fips = df["fips"].to_list()
-    # State summary row (SUMLEV=040) must be gone; only 4 county rows remain
-    assert len(df) == 4
+    # State summary row (SUMLEV=040) must be gone; only county rows remain.
+    # Fixture currently has 7 county rows covering every AFTERMATH_FIPS in
+    # web/scripts/build-scrolly-data.mts; update here if that list grows.
+    assert len(df) == 7
     # All FIPS are zero-padded to 5 chars
     assert all(len(f) == 5 for f in fips)
     assert "54059" in fips
     assert "51720" in fips  # independent city (no "County" suffix)
     assert "21119" in fips
     assert "21195" in fips
+    # Cabell, Logan, Floyd are aftermath counties (see notes/cdc.md).
+    assert "54011" in fips
+    assert "54045" in fips
+    assert "21071" in fips
 
 
 def test_parse_popest_extracts_expected_columns(fixtures_dir):

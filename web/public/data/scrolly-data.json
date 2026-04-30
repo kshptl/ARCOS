@@ -1,42 +1,42 @@
 {
   "act1": {
-    "totalPills": 88512758,
+    "totalPills": 228623838,
     "yearly": [
       {
         "year": 2006,
-        "pills": 8860250
+        "pills": 22360250
       },
       {
         "year": 2007,
-        "pills": 9414510
+        "pills": 23722510
       },
       {
         "year": 2008,
-        "pills": 9884495
+        "pills": 25049455
       },
       {
         "year": 2009,
-        "pills": 10299883
+        "pills": 26373764
       },
       {
         "year": 2010,
-        "pills": 10889256
+        "pills": 27927210
       },
       {
         "year": 2011,
-        "pills": 11154554
+        "pills": 29215117
       },
       {
         "year": 2012,
-        "pills": 10228229
+        "pills": 26843948
       },
       {
         "year": 2013,
-        "pills": 9298563
+        "pills": 24585023
       },
       {
         "year": 2014,
-        "pills": 8483018
+        "pills": 22546561
       }
     ]
   },
@@ -217,20 +217,28 @@
       },
       {
         "fips": "54011",
-        "name": "54011",
-        "state": "",
-        "deaths": []
+        "name": "Cabell County",
+        "state": "WV",
+        "deaths": [
+          63,
+          72,
+          85
+        ]
       },
       {
         "fips": "54045",
-        "name": "54045",
-        "state": "",
-        "deaths": []
+        "name": "Logan County",
+        "state": "WV",
+        "deaths": [
+          22,
+          25,
+          29
+        ]
       },
       {
         "fips": "21071",
-        "name": "21071",
-        "state": "",
+        "name": "Floyd County",
+        "state": "KY",
         "deaths": []
       },
       {

@@ -1,6 +1,9 @@
 SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,POPESTIMATE2012
 040,3,5,54,000,West Virginia,West Virginia,1855447
+050,3,5,54,011,West Virginia,Cabell County,94000
+050,3,5,54,045,West Virginia,Logan County,32500
 050,3,5,54,059,West Virginia,Mingo County,25764
 050,3,5,51,720,Virginia,Norton city,3892
+050,3,5,21,071,Kentucky,Floyd County,38200
 050,3,5,21,119,Kentucky,Knott County,16232
 050,3,5,21,195,Kentucky,Pike County,64757
