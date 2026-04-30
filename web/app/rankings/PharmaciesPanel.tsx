@@ -60,17 +60,11 @@ export function PharmaciesPanel() {
       </table>
       <div className={styles.footer}>
         {hasMore ? (
-          <Button
-            variant="primary"
-            onClick={() => void loadMore()}
-            disabled={status === "loading"}
-          >
+          <Button variant="primary" onClick={() => void loadMore()} disabled={status === "loading"}>
             {status === "loading" ? "Loading…" : "Show more"}
           </Button>
         ) : (
-          <span className={styles.status}>
-            Showing all {total ?? rows.length} pharmacies
-          </span>
+          <span className={styles.status}>Showing all {total ?? rows.length} pharmacies</span>
         )}
       </div>
     </div>

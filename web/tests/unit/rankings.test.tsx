@@ -14,16 +14,10 @@ describe("Tabs", () => {
         ]}
       />,
     );
-    expect(screen.getByRole("tab", { name: "Alpha" })).toHaveAttribute(
-      "aria-selected",
-      "true",
-    );
+    expect(screen.getByRole("tab", { name: "Alpha" })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByText("alpha-panel")).toBeInTheDocument();
     await user.click(screen.getByRole("tab", { name: "Beta" }));
-    expect(screen.getByRole("tab", { name: "Beta" })).toHaveAttribute(
-      "aria-selected",
-      "true",
-    );
+    expect(screen.getByRole("tab", { name: "Beta" })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByText("beta-panel")).toBeInTheDocument();
   });
 });

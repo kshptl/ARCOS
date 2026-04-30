@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import { loadDistributorsAggregated } from "@/lib/data/loadTopDistributors";
 import { DistributorsPanel } from "./DistributorsPanel";
 import { PharmaciesPanel } from "./PharmaciesPanel";
-import { Tabs } from "./Tabs";
-import { loadDistributorsAggregated } from "@/lib/data/loadTopDistributors";
 import styles from "./page.module.css";
+import { Tabs } from "./Tabs";
 
 export const metadata: Metadata = {
   title: "Rankings",
@@ -19,8 +19,8 @@ export default async function RankingsPage() {
         <p className="eyebrow">2006–2014</p>
         <h1 className={styles.title}>Rankings</h1>
         <p className={styles.lede}>
-          Who shipped the most prescription opioids, and to whom. Based on Washington Post
-          ARCOS aggregates.
+          Who shipped the most prescription opioids, and to whom. Based on Washington Post ARCOS
+          aggregates.
         </p>
       </header>
       <Tabs

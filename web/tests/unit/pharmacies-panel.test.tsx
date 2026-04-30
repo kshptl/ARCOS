@@ -31,14 +31,10 @@ describe("PharmaciesPanel", () => {
   it("renders first 100 then adds more on click", async () => {
     const user = userEvent.setup();
     render(<PharmaciesPanel />);
-    await waitFor(() =>
-      expect(screen.getByText("Pharmacy 0")).toBeInTheDocument(),
-    );
+    await waitFor(() => expect(screen.getByText("Pharmacy 0")).toBeInTheDocument());
     expect(screen.queryByText("Pharmacy 100")).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /show more/i }));
-    await waitFor(() =>
-      expect(screen.getByText("Pharmacy 100")).toBeInTheDocument(),
-    );
+    await waitFor(() => expect(screen.getByText("Pharmacy 100")).toBeInTheDocument());
     expect(screen.getByText(/showing all 150 pharmacies/i)).toBeInTheDocument();
   });
 });

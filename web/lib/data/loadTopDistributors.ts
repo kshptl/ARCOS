@@ -1,14 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { slugify } from "@/lib/format/slug";
 import type { TopDistributorsByYear } from "@/lib/data/schemas";
+import { slugify } from "@/lib/format/slug";
 
-const DATA_PATH = path.join(
-  process.cwd(),
-  "public",
-  "data",
-  "top-distributors-by-year.json",
-);
+const DATA_PATH = path.join(process.cwd(), "public", "data", "top-distributors-by-year.json");
 
 let cache: TopDistributorsByYear[] | null = null;
 let byYear: Map<number, TopDistributorsByYear[]> | null = null;
@@ -32,9 +27,7 @@ export async function loadTopDistributors(): Promise<TopDistributorsByYear[]> {
   return cache;
 }
 
-export async function loadTopDistributorsByYear(): Promise<
-  Map<number, TopDistributorsByYear[]>
-> {
+export async function loadTopDistributorsByYear(): Promise<Map<number, TopDistributorsByYear[]>> {
   await loadTopDistributors();
   return byYear ?? new Map();
 }
@@ -65,7 +58,9 @@ export async function loadDistributorsAggregated(): Promise<DistributorAggregate
   for (const [year, rows] of grouped) {
     const sorted = [...rows].sort((a, b) => b.pills - a.pills);
     const m = new Map<string, number>();
-    sorted.forEach((r, i) => m.set(r.distributor, i + 1));
+    sorted.forEach((r, i) => {
+      m.set(r.distributor, i + 1);
+    });
     ranksByYear.set(year, m);
   }
   const out: DistributorAggregate[] = [];
