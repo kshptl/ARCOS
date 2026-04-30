@@ -1,0 +1,53 @@
+.root {
+  display: block;
+  max-width: 100%;
+}
+
+.root svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-family: var(--font-body);
+  font-feature-settings: var(--font-feature-numeric);
+}
+
+.details {
+  margin-top: var(--space-sm);
+  font-size: var(--type-caption);
+  color: var(--text-muted);
+}
+
+.details summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.details table {
+  margin-top: var(--space-sm);
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: var(--numeric);
+}
+
+.details th,
+.details td {
+  text-align: left;
+  padding: var(--space-2xs) var(--space-sm);
+  border-bottom: 1px solid var(--rule);
+}
+
+.details td {
+  color: var(--text);
+}
+
+.sparkline {
+  vertical-align: middle;
+}
+
+.sparkline path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
