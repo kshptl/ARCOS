@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SYNTHETIC CDC WONDER D76 response fixture for Virginia.
+  Hand-authored for pipeline tests; see pipeline/notes/cdc.md.
+  Same shape as wv_2012_2014.xml.
+-->
+<page>
+  <response>
+    <data-table>
+      <r>
+        <c l="Norton city, VA (51720)"/>
+        <c l="2012"/>
+        <c>Suppressed</c>
+      </r>
+      <r>
+        <c l="Norton city, VA (51720)"/>
+        <c l="2013"/>
+        <c>11</c>
+      </r>
+      <r>
+        <c l="Norton city, VA (51720)"/>
+        <c l="2014"/>
+        <c>14</c>
+      </r>
+    </data-table>
+  </response>
+</page>

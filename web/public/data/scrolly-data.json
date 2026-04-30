@@ -213,7 +213,11 @@
         "fips": "51720",
         "name": "Norton city",
         "state": "VA",
-        "deaths": []
+        "deaths": [
+          0,
+          11,
+          14
+        ]
       },
       {
         "fips": "54011",
@@ -239,13 +243,21 @@
         "fips": "21071",
         "name": "Floyd County",
         "state": "KY",
-        "deaths": []
+        "deaths": [
+          19,
+          24,
+          29
+        ]
       },
       {
         "fips": "21195",
         "name": "Pike County",
         "state": "KY",
-        "deaths": []
+        "deaths": [
+          42,
+          51,
+          58
+        ]
       }
     ]
   }

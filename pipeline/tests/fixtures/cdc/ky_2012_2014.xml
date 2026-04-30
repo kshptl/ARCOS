@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SYNTHETIC CDC WONDER D76 response fixture for Kentucky.
+  Hand-authored for pipeline tests; see pipeline/notes/cdc.md.
+  Same shape as wv_2012_2014.xml.
+-->
+<page>
+  <response>
+    <data-table>
+      <r>
+        <c l="Floyd County, KY (21071)"/>
+        <c l="2012"/>
+        <c>19</c>
+      </r>
+      <r>
+        <c l="Floyd County, KY (21071)"/>
+        <c l="2013"/>
+        <c>24</c>
+      </r>
+      <r>
+        <c l="Floyd County, KY (21071)"/>
+        <c l="2014"/>
+        <c>29</c>
+      </r>
+      <r>
+        <c l="Knott County, KY (21119)"/>
+        <c l="2012"/>
+        <c>Suppressed</c>
+      </r>
+      <r>
+        <c l="Knott County, KY (21119)"/>
+        <c l="2013"/>
+        <c>10</c>
+      </r>
+      <r>
+        <c l="Knott County, KY (21119)"/>
+        <c l="2014"/>
+        <c>13</c>
+      </r>
+      <r>
+        <c l="Pike County, KY (21195)"/>
+        <c l="2012"/>
+        <c>42</c>
+      </r>
+      <r>
+        <c l="Pike County, KY (21195)"/>
+        <c l="2013"/>
+        <c>51</c>
+      </r>
+      <r>
+        <c l="Pike County, KY (21195)"/>
+        <c l="2014"/>
+        <c>58</c>
+      </r>
+    </data-table>
+  </response>
+</page>
