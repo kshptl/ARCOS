@@ -1,12 +1,10 @@
-import { describe, expect, it } from "vitest";
 import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Sparkline } from "@/components/charts/Sparkline";
 
 describe("Sparkline", () => {
   it("renders inline svg of default size", () => {
-    const { container } = render(
-      <Sparkline values={[1, 2, 3, 4, 5]} ariaLabel="rising" />,
-    );
+    const { container } = render(<Sparkline values={[1, 2, 3, 4, 5]} ariaLabel="rising" />);
     const svg = container.querySelector("svg");
     expect(svg).toBeTruthy();
     expect(svg?.getAttribute("width")).toBe("100");

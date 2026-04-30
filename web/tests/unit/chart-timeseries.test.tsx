@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { TimeSeries } from "@/components/charts/TimeSeries";
 
 const DATA = [
@@ -33,9 +33,7 @@ describe("TimeSeries", () => {
   });
 
   it("handles empty data without crashing", () => {
-    const { container } = render(
-      <TimeSeries data={[]} x="year" y="value" ariaLabel="t" />,
-    );
+    const { container } = render(<TimeSeries data={[]} x="year" y="value" ariaLabel="t" />);
     expect(container.querySelector("figure")).toBeTruthy();
   });
 });

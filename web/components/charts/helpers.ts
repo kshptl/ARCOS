@@ -24,18 +24,13 @@ export function rowsToTable<T extends Record<string, unknown>>(
 /**
  * One-line English summary of a time series for screen readers.
  */
-export function summarizeTrend(
-  points: Array<{ year: number; value: number | null }>,
-): string {
-  const present = points.filter(
-    (p): p is { year: number; value: number } => p.value !== null,
-  );
+export function summarizeTrend(points: Array<{ year: number; value: number | null }>): string {
+  const present = points.filter((p): p is { year: number; value: number } => p.value !== null);
   if (present.length === 0) return "";
   const first = present[0];
   const last = present[present.length - 1];
   if (!first || !last) return "";
   if (present.length === 1) return `${formatFull(first.value)} in ${first.year}.`;
-  const verb =
-    last.value > first.value ? "rose" : last.value < first.value ? "fell" : "held";
+  const verb = last.value > first.value ? "rose" : last.value < first.value ? "fell" : "held";
   return `${verb} from ${formatFull(first.value)} to ${formatFull(last.value)} (${first.year}-${last.year}).`;
 }

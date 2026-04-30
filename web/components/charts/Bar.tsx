@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { formatCompact, formatFull } from "@/lib/format/number";
-import { rowsToTable } from "./helpers";
 import styles from "./charts.module.css";
+import { rowsToTable } from "./helpers";
 
 export interface BarProps<T extends Record<string, unknown>> {
   data: T[];
@@ -26,9 +26,7 @@ export function Bar<T extends Record<string, unknown>>(props: BarProps<T>): Reac
     ariaLabel,
   } = props;
 
-  const rows = [...data].sort(
-    (a, b) => (Number(b[value]) ?? 0) - (Number(a[value]) ?? 0),
-  );
+  const rows = [...data].sort((a, b) => (Number(b[value]) ?? 0) - (Number(a[value]) ?? 0));
   const max = rows.reduce((m, r) => Math.max(m, Number(r[value]) ?? 0), 0);
   const labelWidth = 160;
   const valueWidth = 72;
@@ -41,12 +39,7 @@ export function Bar<T extends Record<string, unknown>>(props: BarProps<T>): Reac
 
   return (
     <figure aria-label={summary} className={styles.root}>
-      <svg
-        width={width}
-        height={height}
-        viewBox={`0 0 ${width} ${height}`}
-        aria-hidden="true"
-      >
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden="true">
         <title>{summary}</title>
         {rows.map((row, i) => {
           const v = Number(row[value]) ?? 0;
@@ -106,12 +99,18 @@ function Table<T extends Record<string, unknown>>({
   return (
     <table>
       <thead>
-        <tr>{header?.map((h) => <th key={h}>{h}</th>)}</tr>
+        <tr>
+          {header?.map((h) => (
+            <th key={h}>{h}</th>
+          ))}
+        </tr>
       </thead>
       <tbody>
         {body.map((r, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: data table rows have no stable id beyond position
           <tr key={i}>
             {r.map((c, j) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey: table cells within a row are positional
               <td key={j}>{c}</td>
             ))}
           </tr>

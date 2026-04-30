@@ -1,7 +1,7 @@
 import * as Plot from "@observablehq/plot";
 import type { ReactElement } from "react";
-import { rowsToTable, summarizeTrend } from "./helpers";
 import styles from "./charts.module.css";
+import { rowsToTable, summarizeTrend } from "./helpers";
 
 export interface TimeSeriesProps<T extends Record<string, unknown>> {
   data: T[];
@@ -99,12 +99,18 @@ function DataTable<T extends Record<string, unknown>>({
   return (
     <table>
       <thead>
-        <tr>{header?.map((h) => <th key={h}>{h}</th>)}</tr>
+        <tr>
+          {header?.map((h) => (
+            <th key={h}>{h}</th>
+          ))}
+        </tr>
       </thead>
       <tbody>
         {body.map((row, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: data table rows have no stable id beyond position
           <tr key={i}>
             {row.map((cell, j) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey: table cells within a row are positional
               <td key={j}>{cell}</td>
             ))}
           </tr>

@@ -12,37 +12,18 @@ export interface SlopeProps<T extends Record<string, unknown>> {
   ariaLabel: string;
 }
 
-export function Slope<T extends Record<string, unknown>>(
-  props: SlopeProps<T>,
-): ReactElement {
-  const {
-    data,
-    left,
-    right,
-    rowLabelKey,
-    highlight,
-    width = 480,
-    height = 320,
-    ariaLabel,
-  } = props;
+export function Slope<T extends Record<string, unknown>>(props: SlopeProps<T>): ReactElement {
+  const { data, left, right, rowLabelKey, highlight, width = 480, height = 320, ariaLabel } = props;
 
   const xLeft = 140;
   const xRight = width - 140;
-  const values = data.flatMap((d) => [
-    Number(d[left.key]) ?? 0,
-    Number(d[right.key]) ?? 0,
-  ]);
+  const values = data.flatMap((d) => [Number(d[left.key]) ?? 0, Number(d[right.key]) ?? 0]);
   const max = Math.max(...values, 1);
   const y = (v: number) => height - (v / max) * (height - 40) - 20;
 
   return (
     <figure aria-label={ariaLabel} className={styles.root}>
-      <svg
-        width={width}
-        height={height}
-        viewBox={`0 0 ${width} ${height}`}
-        aria-hidden="true"
-      >
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden="true">
         <title>{ariaLabel}</title>
         <text x={xLeft} y={12} textAnchor="middle" fontSize="12" fill="currentColor">
           {left.label}
@@ -57,6 +38,7 @@ export function Slope<T extends Record<string, unknown>>(
           const stroke = isHi ? "var(--accent-hot)" : "var(--text-muted)";
           const strokeOpacity = isHi ? 1 : 0.35;
           return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: rows are stable-ordered input; no intrinsic id
             <g key={i}>
               <line
                 x1={xLeft}
