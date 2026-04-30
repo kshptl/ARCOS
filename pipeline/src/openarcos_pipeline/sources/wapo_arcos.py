@@ -18,6 +18,10 @@ from tenacity import (
 )
 
 from openarcos_pipeline.log import get_logger
+from openarcos_pipeline.sources.expected_hashes import (
+    EXPECTED_SIGNATURES,
+    signature_of,
+)
 
 BASE_URL = "https://arcos-api.ext.nile.works"
 DEFAULT_KEY = "WaPo"
@@ -68,7 +72,16 @@ class WapoClient:
                 resp.raise_for_status()
             resp.raise_for_status()
             time.sleep(0.25)
-            return resp.json()
+            data = resp.json()
+            if isinstance(data, list) and path in EXPECTED_SIGNATURES:
+                actual = signature_of(data)
+                expected = EXPECTED_SIGNATURES[path]
+                if expected != "REPLACE_ME_WITH_SIG" and actual != expected:
+                    raise RuntimeError(
+                        f"WaPo response shape changed for {path}: "
+                        f"expected {expected!r}, got {actual!r}"
+                    )
+            return data
 
         return _do()
 

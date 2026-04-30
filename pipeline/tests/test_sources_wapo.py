@@ -65,3 +65,14 @@ def test_gives_up_after_max_retries():
     client = WapoClient(transport=httpx.MockTransport(handler), max_retries=2)
     with pytest.raises(httpx.HTTPStatusError):
         client.county_list("WV")
+
+
+def test_signature_mismatch_raises(monkeypatch):
+    from openarcos_pipeline.sources import expected_hashes
+
+    monkeypatch.setitem(
+        expected_hashes.EXPECTED_SIGNATURES, "/v1/county_list", "wrong_signature"
+    )
+    client = WapoClient(transport=make_transport())
+    with pytest.raises(RuntimeError, match="shape changed"):
+        client.county_list("WV")
