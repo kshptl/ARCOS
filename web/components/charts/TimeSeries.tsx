@@ -19,12 +19,16 @@ export interface TimeSeriesProps<T extends Record<string, unknown>> {
   color?: string;
   /** Short description for aria-label */
   ariaLabel: string;
+  /** Human-readable x-axis label (defaults to the x key name) */
+  xLabel?: string;
+  /** Human-readable y-axis label (defaults to the y key name) */
+  yLabel?: string;
 }
 
 export function TimeSeries<T extends Record<string, unknown>>(
   props: TimeSeriesProps<T>,
 ): ReactElement {
-  const { data, x, y, series, width = 640, height = 280, color, ariaLabel } = props;
+  const { data, x, y, series, width = 640, height = 280, color, ariaLabel, xLabel, yLabel } = props;
   const columns = series ? [x, series, y] : [x, y];
 
   const summary =
@@ -48,9 +52,9 @@ export function TimeSeries<T extends Record<string, unknown>>(
       height,
       marginLeft: 56,
       marginBottom: 36,
-      x: { label: String(x), tickFormat: "d", grid: false },
+      x: { label: xLabel ?? String(x), tickFormat: "d", grid: false },
       y: {
-        label: String(y),
+        label: yLabel ?? String(y),
         grid: true,
         nice: true,
       },
@@ -71,7 +75,7 @@ export function TimeSeries<T extends Record<string, unknown>>(
     return () => {
       chart.remove();
     };
-  }, [data, x, y, series, width, height, color]);
+  }, [data, x, y, series, width, height, color, xLabel, yLabel]);
 
   return (
     <figure aria-label={`${ariaLabel}. ${summary}`} className={styles.root}>

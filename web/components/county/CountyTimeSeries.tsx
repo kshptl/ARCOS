@@ -1,8 +1,48 @@
 import { TimeSeries } from "@/components/charts/TimeSeries";
 import type { CountyBundle } from "@/lib/data/loadCountyBundle";
-import type { CountyMetadata, StateShipmentsByYear } from "@/lib/data/schemas";
+import type {
+  CountyMetadata,
+  CountyShipmentsByYear,
+  StateShipmentsByYear,
+} from "@/lib/data/schemas";
 import styles from "./CountyTimeSeries.module.css";
 
+/**
+ * Dedupe county shipment rows that arrive with multiple records per
+ * (fips, year). The upstream parquet has occasional duplicates for some
+ * counties (e.g. Mingo 54059 has two rows per year from a join that
+ * wasn't collapsed in the pipeline). We sum `pills` within each year
+ * and recompute `pills_per_capita` from the aggregate using `pop` so
+ * the chart shows one point per year instead of two.
+ */
+export function dedupeCountyShipments(
+  rows: CountyShipmentsByYear[],
+  pop: number,
+): CountyShipmentsByYear[] {
+  const byYear = new Map<number, { pills: number; fips: string }>();
+  for (const r of rows) {
+    const prev = byYear.get(r.year);
+    if (prev) prev.pills += r.pills;
+    else byYear.set(r.year, { pills: r.pills, fips: r.fips });
+  }
+  return [...byYear.entries()]
+    .map(([year, v]) => ({
+      fips: v.fips,
+      year,
+      pills: v.pills,
+      pills_per_capita: pop > 0 ? v.pills / pop : 0,
+    }))
+    .sort((a, b) => a.year - b.year);
+}
+
+/**
+ * Compute per-year median across states. Returns an empty map when fewer
+ * than 5 states are available — with 3 or 4 states the "median" is either
+ * identical to a specific state's value or a meaningless mid-point, and
+ * presenting it as a "US median" misleads readers. In that case we drop
+ * the US series entirely at the call site rather than aliasing it to the
+ * state average (which produced two identical lines on openarcos.org).
+ */
 function medianByYear(rows: StateShipmentsByYear[]): Map<number, number> {
   const byYear = new Map<number, number[]>();
   for (const r of rows) {
@@ -20,6 +60,8 @@ function medianByYear(rows: StateShipmentsByYear[]): Map<number, number> {
   return out;
 }
 
+const MIN_STATES_FOR_US_MEDIAN = 5;
+
 export function CountyTimeSeries({
   fips,
   meta,
@@ -32,8 +74,12 @@ export function CountyTimeSeries({
   stateSeries: StateShipmentsByYear[];
 }) {
   const stateRows = stateSeries.filter((s) => s.state === meta.state);
-  const medians = medianByYear(stateSeries);
-  const countySeries = bundle.shipments.map((r) => ({
+  const distinctStates = new Set(stateSeries.map((s) => s.state));
+  const showUSMedian = distinctStates.size >= MIN_STATES_FOR_US_MEDIAN;
+  const medians = showUSMedian ? medianByYear(stateSeries) : new Map<number, number>();
+
+  const dedupedShipments = dedupeCountyShipments(bundle.shipments, meta.pop);
+  const countySeries = dedupedShipments.map((r) => ({
     year: r.year,
     value: r.pills_per_capita,
     series: meta.name,
@@ -57,9 +103,13 @@ export function CountyTimeSeries({
         x="year"
         y="value"
         series="series"
-        ariaLabel={`Pills per capita in ${meta.name}, ${meta.state}, compared with state and national medians, 2006–2014.`}
+        xLabel="Year"
+        yLabel="Pills per person"
+        ariaLabel={`Pills per capita in ${meta.name}, ${meta.state}, compared with state${
+          showUSMedian ? " and national medians" : ""
+        }, 2006–2014.`}
       />
-      <div className={styles.legend} aria-hidden="true">
+      <div className={styles.legend} aria-hidden="true" data-testid="county-timeseries-legend">
         <span>
           <span className={styles.swatch} style={{ background: "var(--accent-hot)" }} />
           {meta.name}
@@ -68,10 +118,12 @@ export function CountyTimeSeries({
           <span className={styles.swatch} style={{ background: "var(--accent-cool)" }} />
           {meta.state} state avg
         </span>
-        <span>
-          <span className={styles.swatch} style={{ background: "var(--muted)" }} />
-          US median
-        </span>
+        {showUSMedian ? (
+          <span>
+            <span className={styles.swatch} style={{ background: "var(--muted)" }} />
+            US median
+          </span>
+        ) : null}
       </div>
     </div>
   );
