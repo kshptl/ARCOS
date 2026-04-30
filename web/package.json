@@ -24,6 +24,7 @@
     "lhci": "lhci autorun"
   },
   "dependencies": {
+    "hyparquet": "~1.25",
     "next": "15",
     "react": "19",
     "react-dom": "19"
