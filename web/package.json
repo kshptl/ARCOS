@@ -22,7 +22,8 @@
     "build-similar": "tsx scripts/build-similar-counties.ts",
     "build-ranks": "tsx scripts/build-county-ranks.ts",
     "build-scrolly": "tsx scripts/build-scrolly-data.ts",
-    "prebuild": "pnpm validate-data && pnpm build-ranks && pnpm build-similar && pnpm build-scrolly",
+    "copy-us-atlas": "tsx scripts/copy-us-atlas.ts",
+    "prebuild": "pnpm validate-data && pnpm build-ranks && pnpm build-similar && pnpm build-scrolly && pnpm copy-us-atlas",
     "lhci": "lhci autorun"
   },
   "dependencies": {
