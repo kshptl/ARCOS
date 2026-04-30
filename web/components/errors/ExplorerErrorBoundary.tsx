@@ -1,6 +1,7 @@
 "use client";
 
 import { Component, type ReactNode } from "react";
+import { GITHUB_ISSUE_NEW_URL } from "@/lib/config";
 import styles from "./ErrorBoundary.module.css";
 
 type Props = { children: ReactNode };
@@ -19,7 +20,7 @@ export class ExplorerErrorBoundary extends Component<Props, State> {
 
   override render(): ReactNode {
     if (this.state.err) {
-      const issueUrl = `https://github.com/openarcos/openarcos.org/issues/new?labels=bug&title=${encodeURIComponent(
+      const issueUrl = `${GITHUB_ISSUE_NEW_URL}?labels=bug&title=${encodeURIComponent(
         `Explorer error: ${this.state.err.message}`,
       )}`;
       return (
