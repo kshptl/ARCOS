@@ -5,6 +5,22 @@ import { useScrollyProgress } from "../progressContext";
 import { formatTickValue, niceTicks } from "./axes";
 import styles from "./scenes.module.css";
 
+// Act 1 shows a live count-up numeral during the build phase. We want it to
+// always display a fractional digit (e.g. "25.0M", not "25M") so the number
+// reads as a precise, ticking measurement rather than a round marketing
+// figure. `formatCompact` from the shared module uses maximumFractionDigits
+// only, which drops the decimal on exact round values, so we use a local
+// formatter with minimumFractionDigits forced to 1.
+const ACT1_COUNT_FMT = new Intl.NumberFormat("en-US", {
+  notation: "compact",
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+function formatAct1Count(n: number): string {
+  if (!Number.isFinite(n)) return "—";
+  return ACT1_COUNT_FMT.format(n);
+}
+
 export interface YearlyTotal {
   year: number;
   pills: number;
@@ -76,7 +92,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
         <div className={styles.bigStat}>
           <span className={styles.eyebrow}>Total pills shipped</span>
           <span data-testid="act1-count" className={`${styles.count} numeric`} aria-live="polite">
-            {buildT >= 1 ? formatFull(totalPills) : formatCompact(currentCount)}
+            {buildT >= 1 ? formatFull(totalPills) : formatAct1Count(currentCount)}
           </span>
           <span className={styles.unit}>pills</span>
           <p className={styles.subCaption}>Shipped from distributors to pharmacies nationwide</p>

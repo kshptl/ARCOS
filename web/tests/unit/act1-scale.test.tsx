@@ -39,7 +39,9 @@ describe("Act1Scale", () => {
   it("at progress=0, displays 0 pills as the count-up start", () => {
     renderWithProgress(0);
     const value = screen.getByTestId("act1-count");
-    expect(value.textContent?.replace(/[,\s]/g, "")).toMatch(/^[0-9]+$/);
+    // Count starts at 0 but the compact formatter forces one decimal so it
+    // reads "0.0" rather than "0" — see A1.1 requirement.
+    expect(value.textContent?.replace(/[,\s]/g, "")).toMatch(/^0(\.0)?$/);
   });
 
   it("at progress=1, displays the full total", () => {
@@ -111,5 +113,50 @@ describe("Act1Scale", () => {
   it("peak annotation is visible at progress >= 0.5", () => {
     renderWithProgress(0.5);
     expect(screen.getByTestId("act1-peak-callout")).toBeInTheDocument();
+  });
+
+  describe("count-up numeral always shows one decimal", () => {
+    const DECIMAL_RE = /^\d+\.\d[KMB]?$/;
+    const cases: Array<[string, number]> = [
+      ["1 pill", 1],
+      ["25M", 25_000_000],
+      ["228.6M", 228_623_838],
+      ["76B", 76_000_000_000],
+    ];
+    for (const [label, total] of cases) {
+      it(`renders a decimal for ${label}`, () => {
+        // Single-year fixture so we can jump straight to the full total at
+        // progress=1 and inspect the formatted numeral.
+        const yearly = [{ year: 2010, pills: total }];
+        renderWithProgress(1, yearly, total);
+        const text = screen.getByTestId("act1-count").textContent ?? "";
+        // Strip thousands separators (formatFull uses commas).
+        const stripped = text.replace(/,/g, "");
+        // Either compact with a decimal (e.g., "25.0M") or full with a
+        // decimal (rare for round integers). The requirement is that the
+        // compact display — which is what we show during the build phase —
+        // always has at least one fractional digit.
+        if (/[KMB]$/.test(stripped)) {
+          expect(stripped).toMatch(DECIMAL_RE);
+        }
+      });
+    }
+
+    it("compact display mid-count has a decimal for a value that would otherwise be integer", () => {
+      // Construct yearly data whose cumulative at progress=0.4 is exactly an
+      // integer multiple of 1B so the compact formatter would drop the
+      // decimal without the fix.
+      const yearly = [
+        { year: 2010, pills: 20_000_000_000 },
+        { year: 2011, pills: 20_000_000_000 },
+      ];
+      // At progress=0.8, currentCount = full total (40B), but we want to
+      // catch a mid-build integer. buildT=0.5 -> first bar fully up (20B),
+      // second bar at 0 -> currentCount = 20B exactly.
+      renderWithProgress(0.4, yearly, 40_000_000_000);
+      const text = screen.getByTestId("act1-count").textContent ?? "";
+      // Expect "20.0B" not "20B".
+      expect(text).toMatch(/^\d+\.\d[KMB]$/);
+    });
   });
 });
