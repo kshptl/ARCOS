@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/cdc-overdose-by-county-year.schema.json",
+  "title": "CDC WONDER county-year overdose deaths",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["fips", "year", "deaths", "suppressed"],
+    "additionalProperties": false,
+    "properties": {
+      "fips": {"type": "string", "pattern": "^[0-9]{5}$"},
+      "year": {"type": "integer", "minimum": 1999, "maximum": 2030},
+      "deaths": {"type": ["integer", "null"], "minimum": 0},
+      "suppressed": {"type": "boolean"}
+    },
+    "allOf": [
+      {
+        "if": {"properties": {"suppressed": {"const": true}}},
+        "then": {"properties": {"deaths": {"type": "null"}}}
+      },
+      {
+        "if": {"properties": {"suppressed": {"const": false}}},
+        "then": {"properties": {"deaths": {"type": "integer", "minimum": 10}}}
+      }
+    ]
+  }
+}
