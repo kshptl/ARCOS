@@ -48,7 +48,7 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     getPolygon: (f) => {
       const g = f.geometry;
       if (g.type === "Polygon") return g.coordinates;
-      if (g.type === "MultiPolygon") return g.coordinates[0]!;
+      if (g.type === "MultiPolygon") return g.coordinates[0] ?? [];
       return [];
     },
     getFillColor: (f) => {

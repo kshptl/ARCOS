@@ -16,7 +16,7 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
     getPolygon: (f: Feature) => {
       const g = f.geometry;
       if (g.type === "Polygon") return g.coordinates;
-      if (g.type === "MultiPolygon") return g.coordinates[0]!;
+      if (g.type === "MultiPolygon") return g.coordinates[0] ?? [];
       return [];
     },
     getFillColor: () => [0, 0, 0, 0],

@@ -49,8 +49,10 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
         e.preventDefault();
         return;
       }
+      const nextYear = sortedYears[nextIdx];
+      if (nextYear === undefined) return;
       e.preventDefault();
-      onChange(sortedYears[nextIdx]!);
+      onChange(nextYear);
     },
     [idx, sortedYears, onChange],
   );

@@ -53,8 +53,9 @@ function pickAct2(top: TopDist[]): {
 } {
   if (top.length === 0) return { rows: [] };
   const years = top.map((r) => r.year).sort((a, b) => a - b);
-  const startYear = years[0]!;
-  const endYear = years[years.length - 1]!;
+  const startYear = years[0];
+  const endYear = years[years.length - 1];
+  if (startYear === undefined || endYear === undefined) return { rows: [] };
   const dists = new Set(top.map((r) => r.distributor));
   const rows = Array.from(dists).map((distributor) => {
     const start =
