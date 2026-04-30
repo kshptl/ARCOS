@@ -73,10 +73,6 @@ export default async function HomePage() {
           <Step id="act2">
             <p className="eyebrow">Act 2 — Distributors</p>
             <h2>Three companies.</h2>
-            <p>
-              McKesson, Cardinal Health, and AmerisourceBergen together moved most of the pills.
-              Their share shifted, but the trio stayed on top.
-            </p>
           </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>

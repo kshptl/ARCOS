@@ -82,6 +82,36 @@ describe("Act2Distributors", () => {
     expect(screen.getByTestId("act2-table")).toBeInTheDocument();
   });
 
+  it("does not render a chart title band above the svg", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act2Distributors data={DATA} />
+      </ScrollyProgressContext.Provider>,
+    );
+    // Visible title band ("Oxy + hydro market share, 2006 → 2014") should not
+    // exist — the chart headline lives in the scrollytelling step text instead.
+    const titleBands = container.querySelectorAll('[class*="titleBand"]');
+    expect(titleBands.length).toBe(0);
+    // Also assert no <text> inside the svg reads like the old title.
+    const svgText = Array.from(container.querySelectorAll("svg text")).map(
+      (t) => t.textContent ?? "",
+    );
+    for (const s of svgText) {
+      expect(s).not.toMatch(/market share/i);
+      expect(s).not.toMatch(/oxy \+ hydro/i);
+    }
+  });
+
+  it("does not render a sub-caption paragraph under the chart", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act2Distributors data={DATA} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const subCaptions = container.querySelectorAll('[class*="subCaption"]');
+    expect(subCaptions.length).toBe(0);
+  });
+
   it("series labels do not overlap y-axis tick labels (>= 8px horizontal gap)", () => {
     const { container } = render(
       <ScrollyProgressContext.Provider value={1}>
@@ -90,8 +120,7 @@ describe("Act2Distributors", () => {
     );
     const svg = container.querySelector("svg");
     expect(svg).not.toBeNull();
-    // Y-axis tick labels are anchored "end" — their right edge is at x,
-    // and they extend leftward. So their rightmost bound is x.
+    // Y-axis tick labels are anchored "end" — their right edge is at x.
     const yTickLabels = Array.from(svg!.querySelectorAll("text")).filter((t) => {
       const content = t.textContent ?? "";
       return /^[\d.]+%$/.test(content) && t.getAttribute("text-anchor") === "end";
@@ -100,18 +129,13 @@ describe("Act2Distributors", () => {
     const yTickRightMax = Math.max(
       ...yTickLabels.map((t) => Number(t.getAttribute("x") ?? "0")),
     );
-
-    // Any series-associated labels (value + name) use text-anchor "start".
-    // Their LEFT edge is at x; they extend rightward. We require those whose
-    // x is near the plot area to be at least 8px to the right of yTickRightMax.
+    // Any start-anchored series label (value or distributor name) must sit
+    // at least 8px to the right of the y-axis tick column.
     const startLabels = Array.from(svg!.querySelectorAll("text")).filter(
       (t) => t.getAttribute("text-anchor") === "start",
     );
     for (const l of startLabels) {
       const x = Number(l.getAttribute("x") ?? "0");
-      // Ignore far-right labels that are obviously clear (past the plot area).
-      // Only enforce for labels anywhere on the page: any start-anchored label
-      // must not sit within 8px of the y-axis tick column.
       expect(x).toBeGreaterThanOrEqual(yTickRightMax + 8);
     }
   });
