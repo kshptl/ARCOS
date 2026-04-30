@@ -1,8 +1,8 @@
 """Tests for Census county metadata source."""
+
 from __future__ import annotations
 
 import polars as pl
-import pytest
 
 from openarcos_pipeline.sources import census
 
@@ -39,7 +39,9 @@ def test_parse_popest_preserves_non_county_names(fixtures_dir):
     # Virginia independent cities, Louisiana parishes, Alaska boroughs: keep full name
     row = df.filter(pl.col("fips") == "51720").to_dicts()[0]
     # Parser does NOT strip " County" because this name doesn't have that suffix
-    assert row["name"] == "South"  # In real data this would be "Norton city"; we use raw CTYNAME verbatim
+    assert (
+        row["name"] == "South"
+    )  # In real data this would be "Norton city"; we use raw CTYNAME verbatim
 
 
 def test_parse_popest_handles_missing_population(fixtures_dir, tmp_path):

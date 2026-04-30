@@ -1,11 +1,11 @@
 """End-to-end CLI test: seed raw/, run clean + join, assert master.parquet content."""
+
 from __future__ import annotations
 
 import shutil
 from pathlib import Path
 
 import polars as pl
-import pytest
 from typer.testing import CliRunner
 
 from openarcos_pipeline.cli import app

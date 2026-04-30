@@ -1,10 +1,8 @@
 """Full clean pass on fixture data: CDC + DEA + WaPo produce parquets."""
 
-import json
 import shutil
 from pathlib import Path
 
-import polars as pl
 from typer.testing import CliRunner
 
 from openarcos_pipeline.cli import app

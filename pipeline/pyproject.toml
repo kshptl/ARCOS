@@ -41,3 +41,13 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "RUF"]
+ignore = [
+    # Project uses em-dash / × / Unicode quotes in docstrings; warnings add noise.
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    # Closure-over-loop-variable is correct inside tenacity's @retry wrapper.
+    "B023",
+    # Long lines (URLs, inline SQL); project allows 100 but some WaPo docstrings exceed.
+    "E501",
+]

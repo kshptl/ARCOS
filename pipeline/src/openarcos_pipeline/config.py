@@ -6,7 +6,6 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
-
 PIPELINE_ROOT = Path(__file__).resolve().parent.parent.parent  # /pipeline
 REPO_ROOT = PIPELINE_ROOT.parent
 
@@ -37,9 +36,7 @@ class Config:
             d.mkdir(parents=True, exist_ok=True)
 
     @classmethod
-    def from_env(cls) -> "Config":
+    def from_env(cls) -> Config:
         data_root = Path(os.environ.get("OPENARCOS_DATA_ROOT", PIPELINE_ROOT / "data"))
-        emit_dir = Path(
-            os.environ.get("OPENARCOS_EMIT_DIR", REPO_ROOT / "web" / "public" / "data")
-        )
+        emit_dir = Path(os.environ.get("OPENARCOS_EMIT_DIR", REPO_ROOT / "web" / "public" / "data"))
         return cls(data_root=data_root.resolve(), emit_dir=emit_dir.resolve())

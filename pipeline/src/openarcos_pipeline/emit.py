@@ -4,6 +4,7 @@ Every emitter validates its payload against the corresponding JSON Schema
 BEFORE writing to disk. A validation failure raises SchemaValidationError
 and does not touch the destination file.
 """
+
 from __future__ import annotations
 
 import json
@@ -55,6 +56,7 @@ def _write_json(dest: Path, data: list | dict) -> None:
 
 # ---------- JSON emitters ----------
 
+
 def emit_state_shipments_json(cfg: Config) -> Path:
     df = pl.read_parquet(cfg.agg_dir / "state_shipments_by_year.parquet")
     # Convert state_fips → USPS abbrev; enforce year window
@@ -65,12 +67,14 @@ def emit_state_shipments_json(cfg: Config) -> Path:
             raise SchemaValidationError(
                 f"state_shipments_by_year: unknown state_fips={state_fips!r}"
             )
-        rows.append({
-            "state": FIPS_STATE_MAP[state_fips],
-            "year": int(r["year"]),
-            "pills": int(r["pills"] or 0),
-            "pills_per_capita": float(r["pills_per_capita"] or 0),
-        })
+        rows.append(
+            {
+                "state": FIPS_STATE_MAP[state_fips],
+                "year": int(r["year"]),
+                "pills": int(r["pills"] or 0),
+                "pills_per_capita": float(r["pills_per_capita"] or 0),
+            }
+        )
     _validate(rows, "state-shipments-by-year")
     out = cfg.emit_dir / "state-shipments-by-year.json"
     _write_json(out, rows)
@@ -123,16 +127,20 @@ def emit_dea_enforcement_json(cfg: Config) -> Path:
                 # remaining clearly-synthetic; in real data the URL is a DOJ
                 # press release.
                 url = "https://openarcos.org/unknown"
-            notable.append({
-                "title": a["title"],
-                "url": url,
-                "target": a.get("target"),
-            })
-        rows.append({
-            "year": int(r["year"]),
-            "action_count": int(r["action_count"]),
-            "notable_actions": notable,
-        })
+            notable.append(
+                {
+                    "title": a["title"],
+                    "url": url,
+                    "target": a.get("target"),
+                }
+            )
+        rows.append(
+            {
+                "year": int(r["year"]),
+                "action_count": int(r["action_count"]),
+                "notable_actions": notable,
+            }
+        )
     _validate(rows, "dea-enforcement-actions")
     out = cfg.emit_dir / "dea-enforcement-actions.json"
     _write_json(out, rows)
@@ -147,15 +155,7 @@ def emit_search_index_json(cfg: Config) -> Path:
         t = r["type"]
         # Schema uses `name` (not `label`). Map accordingly.
         base: dict = {"type": t, "id": r["id"], "name": r["label"]}
-        if t == "county":
-            base["fips"] = r["fips"]
-            if r.get("state"):
-                base["state"] = r["state"]
-        elif t == "city":
-            base["fips"] = r["fips"]
-            if r.get("state"):
-                base["state"] = r["state"]
-        elif t == "zip":
+        if t == "county" or t == "city" or t == "zip":
             base["fips"] = r["fips"]
             if r.get("state"):
                 base["state"] = r["state"]
@@ -176,6 +176,7 @@ def emit_search_index_json(cfg: Config) -> Path:
 
 # ---------- Parquet emitters ----------
 
+
 def _validate_parquet_as_json(df: pl.DataFrame, schema_name: str) -> None:
     """Materialise parquet rows as dicts and validate against JSON Schema."""
     # polars.Schema → JSON is straightforward because our schemas only use simple types
@@ -187,12 +188,14 @@ def emit_county_shipments_parquet(cfg: Config) -> Path:
     src = cfg.agg_dir / "county_shipments_by_year.parquet"
     df = pl.read_parquet(src)
     # Ensure exact column set and types per schema (pills must be integer)
-    df = df.select([
-        pl.col("fips").cast(pl.Utf8),
-        pl.col("year").cast(pl.Int64),
-        pl.col("pills").cast(pl.Int64),
-        pl.col("pills_per_capita").cast(pl.Float64),
-    ])
+    df = df.select(
+        [
+            pl.col("fips").cast(pl.Utf8),
+            pl.col("year").cast(pl.Int64),
+            pl.col("pills").cast(pl.Int64),
+            pl.col("pills_per_capita").cast(pl.Float64),
+        ]
+    )
     _validate_parquet_as_json(df, "county-shipments-by-year")
     out = cfg.emit_dir / "county-shipments-by-year.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -203,13 +206,15 @@ def emit_county_shipments_parquet(cfg: Config) -> Path:
 
 def emit_top_pharmacies_parquet(cfg: Config) -> Path:
     src = cfg.agg_dir / "top_pharmacies.parquet"
-    df = pl.read_parquet(src).select([
-        pl.col("pharmacy_id").cast(pl.Utf8),
-        pl.col("name").cast(pl.Utf8),
-        pl.col("address").cast(pl.Utf8),
-        pl.col("fips").cast(pl.Utf8),
-        pl.col("total_pills").cast(pl.Int64),
-    ])
+    df = pl.read_parquet(src).select(
+        [
+            pl.col("pharmacy_id").cast(pl.Utf8),
+            pl.col("name").cast(pl.Utf8),
+            pl.col("address").cast(pl.Utf8),
+            pl.col("fips").cast(pl.Utf8),
+            pl.col("total_pills").cast(pl.Int64),
+        ]
+    )
     _validate_parquet_as_json(df, "top-pharmacies")
     out = cfg.emit_dir / "top-pharmacies.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -220,12 +225,14 @@ def emit_top_pharmacies_parquet(cfg: Config) -> Path:
 
 def emit_cdc_overdose_parquet(cfg: Config) -> Path:
     src = cfg.agg_dir / "cdc_overdose_by_county_year.parquet"
-    df = pl.read_parquet(src).select([
-        pl.col("fips").cast(pl.Utf8),
-        pl.col("year").cast(pl.Int64),
-        pl.col("deaths").cast(pl.Int64),
-        pl.col("suppressed").cast(pl.Boolean),
-    ])
+    df = pl.read_parquet(src).select(
+        [
+            pl.col("fips").cast(pl.Utf8),
+            pl.col("year").cast(pl.Int64),
+            pl.col("deaths").cast(pl.Int64),
+            pl.col("suppressed").cast(pl.Boolean),
+        ]
+    )
     _validate_parquet_as_json(df, "cdc-overdose-by-county-year")
     out = cfg.emit_dir / "cdc-overdose-by-county-year.parquet"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -235,6 +242,7 @@ def emit_cdc_overdose_parquet(cfg: Config) -> Path:
 
 
 # ---------- Full runner ----------
+
 
 def emit_all(cfg: Config) -> list[Path]:
     """Run every emitter in dependency order. Returns paths of all emitted files."""

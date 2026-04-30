@@ -20,8 +20,9 @@ def test_build_request_xml_contains_years():
 def test_fetch_returns_xml():
     def handler(req: httpx.Request) -> httpx.Response:
         assert req.method == "POST"
-        return httpx.Response(200, content=FIXTURE.read_bytes(),
-                               headers={"content-type": "text/xml"})
+        return httpx.Response(
+            200, content=FIXTURE.read_bytes(), headers={"content-type": "text/xml"}
+        )
 
     client = CDCWonderClient(transport=httpx.MockTransport(handler))
     body = client.fetch(state_fips="54", years=[2012, 2013, 2014])

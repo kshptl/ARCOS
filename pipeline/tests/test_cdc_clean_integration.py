@@ -1,7 +1,7 @@
 """CLI clean: ingests raw CDC XMLs and emits data/clean/cdc.parquet."""
 
-from pathlib import Path
 import shutil
+from pathlib import Path
 
 import polars as pl
 from typer.testing import CliRunner

@@ -1,10 +1,10 @@
 """Tests for master.parquet construction."""
+
 from __future__ import annotations
 
 from pathlib import Path
 
 import polars as pl
-import pytest
 
 from openarcos_pipeline.config import Config
 from openarcos_pipeline.join import build_master
@@ -21,25 +21,31 @@ def _write_clean_inputs(clean_dir: Path) -> None:
     """
     clean_dir.mkdir(parents=True, exist_ok=True)
 
-    pl.DataFrame({
-        "fips": ["54059", "51720", "21119"],
-        "name": ["Mingo County", "Norton city", "Knott County"],
-        "state": ["WV", "VA", "KY"],
-        "pop": [25764, 3892, 16232],
-    }).write_parquet(clean_dir / "county_metadata.parquet")
+    pl.DataFrame(
+        {
+            "fips": ["54059", "51720", "21119"],
+            "name": ["Mingo County", "Norton city", "Knott County"],
+            "state": ["WV", "VA", "KY"],
+            "pop": [25764, 3892, 16232],
+        }
+    ).write_parquet(clean_dir / "county_metadata.parquet")
 
-    pl.DataFrame({
-        "fips":  ["54059", "54059", "54059", "21119", "21119", "21119"],
-        "year":  [  2011 ,   2012 ,   2013 ,   2011 ,   2012 ,   2013 ],
-        "pills": [4_000_000, 6_000_000, 5_000_000, 1_500_000, 2_100_000, 1_900_000],
-    }).write_parquet(clean_dir / "wapo_county.parquet")
+    pl.DataFrame(
+        {
+            "fips": ["54059", "54059", "54059", "21119", "21119", "21119"],
+            "year": [2011, 2012, 2013, 2011, 2012, 2013],
+            "pills": [4_000_000, 6_000_000, 5_000_000, 1_500_000, 2_100_000, 1_900_000],
+        }
+    ).write_parquet(clean_dir / "wapo_county.parquet")
 
-    pl.DataFrame({
-        "fips":       ["54059", "54059", "54059", "21119", "21119", "21119"],
-        "year":       [  2011 ,   2012 ,   2013 ,   2011 ,   2012 ,   2013 ],
-        "deaths":     [    42 ,     55 ,     61 ,   None ,   None ,   None ],
-        "suppressed": [ False ,  False ,  False ,   True ,   True ,   True ],
-    }).write_parquet(clean_dir / "cdc_overdose.parquet")
+    pl.DataFrame(
+        {
+            "fips": ["54059", "54059", "54059", "21119", "21119", "21119"],
+            "year": [2011, 2012, 2013, 2011, 2012, 2013],
+            "deaths": [42, 55, 61, None, None, None],
+            "suppressed": [False, False, False, True, True, True],
+        }
+    ).write_parquet(clean_dir / "cdc_overdose.parquet")
 
 
 def test_build_master_produces_full_grid(tmp_path):

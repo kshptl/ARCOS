@@ -7,10 +7,11 @@ County metadata provides the canonical FIPS universe; CROSS JOIN with the
 requested year range produces the full grid. Each clean parquet LEFT JOINs
 into the grid, preserving nulls where a source lacks coverage.
 """
+
 from __future__ import annotations
 
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 import duckdb
 
@@ -94,9 +95,7 @@ def build_master(cfg: Config, years: Iterable[int]) -> Path:
 def _count_counties(meta_path: Path) -> int:
     conn = duckdb.connect()
     try:
-        (n,) = conn.execute(
-            f"SELECT COUNT(*) FROM read_parquet('{meta_path}')"
-        ).fetchone()
+        (n,) = conn.execute(f"SELECT COUNT(*) FROM read_parquet('{meta_path}')").fetchone()
         return int(n)
     finally:
         conn.close()

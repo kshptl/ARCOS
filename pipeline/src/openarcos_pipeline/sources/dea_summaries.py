@@ -35,9 +35,7 @@ def fetch_reports(
     out.mkdir(parents=True, exist_ok=True)
     years = years or sorted(DEA_ANNUAL_REPORTS)
 
-    with httpx.Client(
-        timeout=180.0, follow_redirects=True, transport=transport
-    ) as client:
+    with httpx.Client(timeout=180.0, follow_redirects=True, transport=transport) as client:
         for year in years:
             url = DEA_ANNUAL_REPORTS.get(year)
             if not url:
@@ -48,9 +46,7 @@ def fetch_reports(
             @retry(
                 stop=stop_after_attempt(4),
                 wait=wait_exponential_jitter(initial=1.0, max=15.0),
-                retry=retry_if_exception_type(
-                    (httpx.HTTPStatusError, httpx.TransportError)
-                ),
+                retry=retry_if_exception_type((httpx.HTTPStatusError, httpx.TransportError)),
                 reraise=True,
             )
             def _do() -> None:

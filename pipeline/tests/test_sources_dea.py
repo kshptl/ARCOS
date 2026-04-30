@@ -1,7 +1,5 @@
 """DEA summaries fetcher: downloads PDFs per pinned year→URL map."""
 
-from pathlib import Path
-
 import httpx
 
 from openarcos_pipeline.config import Config
@@ -25,6 +23,7 @@ def test_fetch_writes_pdfs(tmp_path, monkeypatch):
 
     def handler(req: httpx.Request) -> httpx.Response:
         return httpx.Response(200, content=b"%PDF-fake")
+
     transport = httpx.MockTransport(handler)
     fetch_reports(cfg, years=[2012, 2014], transport=transport)
     out = cfg.raw_dir / "dea"

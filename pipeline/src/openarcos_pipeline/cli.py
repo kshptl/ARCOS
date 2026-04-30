@@ -19,21 +19,25 @@ def _run_fetch(cfg, source: str = "all") -> None:
     if source in ("all", "wapo"):
         from openarcos_pipeline.sources.wapo_arcos import WapoClient
         from openarcos_pipeline.sources.wapo_runner import fetch_all
+
         with WapoClient() as client:
             fetch_all(client, cfg)
         log.info("wapo fetch complete")
     if source in ("all", "cdc"):
         from openarcos_pipeline.sources.cdc_runner import fetch_all_states
         from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient
+
         with CDCWonderClient() as cdc:
             fetch_all_states(cdc, cfg)
         log.info("cdc fetch complete")
     if source in ("all", "dea"):
         from openarcos_pipeline.sources.dea_summaries import fetch_reports
+
         fetch_reports(cfg)
         log.info("dea fetch complete")
     if source in ("all", "census"):
         from openarcos_pipeline.sources.census import fetch_popest
+
         fetch_popest(cfg)
         log.info("census fetch complete")
 
@@ -58,14 +62,13 @@ def _run_clean(cfg) -> None:
     census_csv = cfg.raw_dir / "census" / "co-est2019-alldata.csv"
     if census_csv.exists():
         from openarcos_pipeline.sources.census import clean_to_parquet as clean_census
+
         clean_census(cfg, census_csv)
 
     # CDC
     cdc_raw = cfg.raw_dir / "cdc"
     if cdc_raw.is_dir():
-        frames = [
-            parse_d76_response(p.read_text()) for p in sorted(cdc_raw.glob("*.xml"))
-        ]
+        frames = [parse_d76_response(p.read_text()) for p in sorted(cdc_raw.glob("*.xml"))]
         if frames:
             df = pl.concat(frames, how="vertical_relaxed")
             df.write_parquet(cfg.clean_dir / "cdc_overdose.parquet")
@@ -81,9 +84,7 @@ def _run_clean(cfg) -> None:
                 continue
             records.append(parse_annual_report(pdf, year=year))
         if records:
-            pl.DataFrame(records).write_parquet(
-                cfg.clean_dir / "dea_enforcement.parquet"
-            )
+            pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
 
     # WaPo — per-county fixtures named `{endpoint}_{state}_{county}.json`
     # Supported naming conventions (written by sources/wapo_runner.py):
@@ -106,16 +107,14 @@ def _run_clean(cfg) -> None:
             if stem.startswith("county_raw_") or stem.startswith("county_"):
                 tail = stem.split("_", 1)[1] if stem.startswith("county_") else ""
                 if stem.startswith("county_raw_"):
-                    tail = stem[len("county_raw_"):]
+                    tail = stem[len("county_raw_") :]
                 parts = tail.split("_", 1)
                 state = parts[0] if parts else ""
                 # Derive a FIPS from the data itself if present (first row).
                 fips = "00000"
                 if isinstance(data, list) and data:
                     fips = str(data[0].get("countyfips") or "00000")
-                county_frames.append(
-                    clean_county_raw(data, state=state, county_fips=fips)
-                )
+                county_frames.append(clean_county_raw(data, state=state, county_fips=fips))
             elif stem.startswith("distributors_"):
                 dist_frames.append(clean_distributors(data))
             elif stem.startswith("pharmacies_"):
@@ -200,7 +199,9 @@ def emit() -> None:
 
 @app.command(name="all")
 def all_cmd(
-    skip_fetch: bool = typer.Option(False, "--skip-fetch", help="Skip network fetching; use cached raw/"),
+    skip_fetch: bool = typer.Option(
+        False, "--skip-fetch", help="Skip network fetching; use cached raw/"
+    ),
     years_start: int = typer.Option(2006, "--years-start"),
     years_end: int = typer.Option(2020, "--years-end"),
 ) -> None:

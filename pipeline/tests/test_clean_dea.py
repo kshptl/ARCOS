@@ -2,8 +2,6 @@
 
 from pathlib import Path
 
-import polars as pl
-
 from openarcos_pipeline.clean.dea import parse_annual_report
 
 FIXTURE = Path(__file__).parent / "fixtures" / "dea" / "diversion_2012_sample.pdf"

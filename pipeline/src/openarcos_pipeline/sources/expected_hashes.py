@@ -16,8 +16,7 @@ from __future__ import annotations
 # real responses they MUST regenerate these values.
 EXPECTED_SIGNATURES: dict[str, str] = {
     "/v1/county_raw": (
-        "BUYER_COUNTY|BUYER_STATE|DOSAGE_UNIT|countyfips|"
-        "dosage_unit_per_cap|population|year"
+        "BUYER_COUNTY|BUYER_STATE|DOSAGE_UNIT|countyfips|dosage_unit_per_cap|population|year"
     ),
     "/v1/county_list": "BUYER_COUNTY|BUYER_STATE|countyfips",
     "/v1/combined_distributor_state_county": (

@@ -1,4 +1,5 @@
 """End-to-end: `openarcos all --skip-fetch` against seeded raw fixtures produces all 8 artifacts, all valid."""
+
 from __future__ import annotations
 
 import json
@@ -7,7 +8,6 @@ from pathlib import Path
 
 import jsonschema
 import polars as pl
-import pytest
 from typer.testing import CliRunner
 
 from openarcos_pipeline.cli import app
@@ -29,8 +29,10 @@ EXPECTED_OUTPUTS = {
 def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
     """Same seeding as test_e2e_through_aggregate."""
     (raw_dir / "census").mkdir(parents=True, exist_ok=True)
-    shutil.copy(fixtures_dir / "census" / "co-est2019-sample.csv",
-                raw_dir / "census" / "co-est2019-alldata.csv")
+    shutil.copy(
+        fixtures_dir / "census" / "co-est2019-sample.csv",
+        raw_dir / "census" / "co-est2019-alldata.csv",
+    )
     (raw_dir / "wapo").mkdir(parents=True, exist_ok=True)
     for src in (fixtures_dir / "wapo").glob("*.json"):
         if src.name.startswith(("county_", "distributors_", "pharmacies_")):
@@ -52,7 +54,9 @@ def test_all_skip_fetch_produces_valid_artifacts(tmp_path, fixtures_dir, monkeyp
     _seed_raw(data_root / "raw", fixtures_dir)
 
     runner = CliRunner()
-    result = runner.invoke(app, ["all", "--skip-fetch", "--years-start", "2011", "--years-end", "2013"])
+    result = runner.invoke(
+        app, ["all", "--skip-fetch", "--years-start", "2011", "--years-end", "2013"]
+    )
     assert result.exit_code == 0, result.stdout
 
     # All 8 expected files present

@@ -22,15 +22,11 @@ def _lower_columns(df: pl.DataFrame) -> pl.DataFrame:
     return df.rename(mapping) if mapping else df
 
 
-def clean_county_raw(
-    rows: list[dict[str, Any]], state: str, county_fips: str
-) -> pl.DataFrame:
+def clean_county_raw(rows: list[dict[str, Any]], state: str, county_fips: str) -> pl.DataFrame:
     """Raw county_raw rows → `{fips, year, pills}` DataFrame."""
     fips = normalize_fips(county_fips)
     if not rows:
-        return pl.DataFrame(
-            schema={"fips": pl.Utf8, "year": pl.Int64, "pills": pl.Int64}
-        )
+        return pl.DataFrame(schema={"fips": pl.Utf8, "year": pl.Int64, "pills": pl.Int64})
 
     df = _lower_columns(pl.DataFrame(rows))
     # Expect either `year` column or we derive from `transaction_date`.
@@ -43,9 +39,7 @@ def clean_county_raw(
     if pill_col is None:
         grouped = df.group_by("year").agg(pl.len().alias("pills"))
     else:
-        grouped = df.group_by("year").agg(
-            pl.col(pill_col).sum().cast(pl.Int64).alias("pills")
-        )
+        grouped = df.group_by("year").agg(pl.col(pill_col).sum().cast(pl.Int64).alias("pills"))
 
     return (
         grouped.with_columns(pl.lit(fips).alias("fips"))
@@ -58,9 +52,7 @@ def clean_county_raw(
 def clean_distributors(rows: list[dict[str, Any]]) -> pl.DataFrame:
     """Raw distributor rows → `{distributor, year, pills}` DataFrame."""
     if not rows:
-        return pl.DataFrame(
-            schema={"distributor": pl.Utf8, "year": pl.Int64, "pills": pl.Int64}
-        )
+        return pl.DataFrame(schema={"distributor": pl.Utf8, "year": pl.Int64, "pills": pl.Int64})
     df = _lower_columns(pl.DataFrame(rows))
     if "reporter_family" in df.columns and "distributor" not in df.columns:
         df = df.rename({"reporter_family": "distributor"})
@@ -109,8 +101,9 @@ def clean_pharmacies(rows: list[dict[str, Any]], county_fips: str) -> pl.DataFra
     # If no DEA number present, synthesize a stable id from name+address.
     if "pharmacy_id" not in df.columns:
         df = df.with_columns(
-            (pl.col("name").cast(pl.Utf8) + "|" + pl.col("address").cast(pl.Utf8))
-            .alias("pharmacy_id")
+            (pl.col("name").cast(pl.Utf8) + "|" + pl.col("address").cast(pl.Utf8)).alias(
+                "pharmacy_id"
+            )
         )
     # Pick the pill total column. Prefer `total_dosage_unit` (pharmacy rollup),
     # then `dosage_unit` (if rows are transaction-level), else row count.

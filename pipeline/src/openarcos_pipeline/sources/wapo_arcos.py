@@ -38,16 +38,14 @@ class WapoClient:
         max_retries: int = 5,
         transport: httpx.BaseTransport | None = None,
     ) -> None:
-        self._client = httpx.Client(
-            base_url=base_url, timeout=timeout, transport=transport
-        )
+        self._client = httpx.Client(base_url=base_url, timeout=timeout, transport=transport)
         self._key = key
         self._max_retries = max_retries
 
     def close(self) -> None:
         self._client.close()
 
-    def __enter__(self) -> "WapoClient":
+    def __enter__(self) -> WapoClient:
         return self
 
     def __exit__(self, *_exc: object) -> None:
@@ -91,15 +89,11 @@ class WapoClient:
     def county_raw(self, state: str, county: str) -> list[dict[str, Any]]:
         return self._get("/v1/county_raw", {"state": state, "county": county})
 
-    def distributors_for_county(
-        self, state: str, county: str
-    ) -> list[dict[str, Any]]:
+    def distributors_for_county(self, state: str, county: str) -> list[dict[str, Any]]:
         return self._get(
             "/v1/combined_distributor_state_county",
             {"state": state, "county": county},
         )
 
-    def pharmacies_for_county(
-        self, state: str, county: str
-    ) -> list[dict[str, Any]]:
+    def pharmacies_for_county(self, state: str, county: str) -> list[dict[str, Any]]:
         return self._get("/v1/pharmacy_raw", {"state": state, "county": county})

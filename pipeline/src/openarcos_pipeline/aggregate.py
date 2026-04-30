@@ -3,6 +3,7 @@
 Phase 8 stub: `run_single(cfg, name)` runs one SQL file. Full `run_all` lands
 in Task 46.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -20,19 +21,18 @@ SQL_DIR = Path(__file__).resolve().parents[2] / "sql"
 def _register_inputs(conn: duckdb.DuckDBPyConnection, cfg: Config) -> None:
     """Register every clean + joined parquet as a DuckDB view."""
     mapping = {
-        "master":            cfg.joined_dir / "master.parquet",
-        "county_metadata":   cfg.clean_dir / "county_metadata.parquet",
-        "wapo_county":       cfg.clean_dir / "wapo_county.parquet",
+        "master": cfg.joined_dir / "master.parquet",
+        "county_metadata": cfg.clean_dir / "county_metadata.parquet",
+        "wapo_county": cfg.clean_dir / "wapo_county.parquet",
         "wapo_distributors": cfg.clean_dir / "wapo_distributors.parquet",
-        "wapo_pharmacies":   cfg.clean_dir / "wapo_pharmacies.parquet",
-        "cdc_overdose":      cfg.clean_dir / "cdc_overdose.parquet",
-        "dea_enforcement":   cfg.clean_dir / "dea_enforcement.parquet",
+        "wapo_pharmacies": cfg.clean_dir / "wapo_pharmacies.parquet",
+        "cdc_overdose": cfg.clean_dir / "cdc_overdose.parquet",
+        "dea_enforcement": cfg.clean_dir / "dea_enforcement.parquet",
     }
     for view_name, path in mapping.items():
         if path.exists():
             conn.execute(
-                f"CREATE OR REPLACE VIEW {view_name} AS "
-                f"SELECT * FROM read_parquet('{path}')"
+                f"CREATE OR REPLACE VIEW {view_name} AS SELECT * FROM read_parquet('{path}')"
             )
 
 
@@ -47,9 +47,7 @@ def run_single(cfg: Config, name: str) -> Path:
     conn = duckdb.connect()
     try:
         _register_inputs(conn, cfg)
-        conn.execute(
-            f"COPY ({body}) TO '{out}' (FORMAT PARQUET, COMPRESSION ZSTD)"
-        )
+        conn.execute(f"COPY ({body}) TO '{out}' (FORMAT PARQUET, COMPRESSION ZSTD)")
     finally:
         conn.close()
     log.info("aggregate: %s → %s", name, out)
@@ -75,9 +73,7 @@ def run_all(cfg: Config) -> list[Path]:
             sql_path = SQL_DIR / f"{name}.sql"
             body = sql_path.read_text()
             out = cfg.agg_dir / f"{name}.parquet"
-            conn.execute(
-                f"COPY ({body}) TO '{out}' (FORMAT PARQUET, COMPRESSION ZSTD)"
-            )
+            conn.execute(f"COPY ({body}) TO '{out}' (FORMAT PARQUET, COMPRESSION ZSTD)")
             outputs.append(out)
             log.info("aggregate: %s → %s", name, out)
     finally:

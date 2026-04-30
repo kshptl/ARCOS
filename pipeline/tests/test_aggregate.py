@@ -1,4 +1,5 @@
 """Tests for Phase 8 SQL aggregations. Snapshot-based."""
+
 from __future__ import annotations
 
 import os
@@ -8,7 +9,6 @@ import polars as pl
 import pytest
 
 from openarcos_pipeline.aggregate import run_single
-
 
 SNAPSHOTS = Path(__file__).parent / "snapshots"
 
@@ -29,8 +29,7 @@ def _assert_snapshot(df: pl.DataFrame, snap: Path) -> None:
     expected = snap.read_text()
     if actual_csv != expected:
         pytest.fail(
-            f"Snapshot mismatch for {snap.name}\n"
-            f"--- expected\n{expected}\n--- actual\n{actual_csv}"
+            f"Snapshot mismatch for {snap.name}\n--- expected\n{expected}\n--- actual\n{actual_csv}"
         )
 
 
@@ -83,10 +82,12 @@ def test_dea_enforcement_passthrough(agg_master_parquet):
     df = pl.read_parquet(out).sort("year")
     # notable_actions is a list of structs — normalize to JSON strings for snapshotting
     df2 = df.with_columns(
-        pl.col("notable_actions").map_elements(
+        pl.col("notable_actions")
+        .map_elements(
             lambda v: str(v) if v is not None else "[]",
             return_dtype=pl.Utf8,
-        ).alias("notable_actions")
+        )
+        .alias("notable_actions")
     )
     _assert_snapshot(df2, SNAPSHOTS / "dea_enforcement.expected.csv")
 
@@ -109,6 +110,7 @@ def test_search_index(agg_master_parquet):
 def test_run_all_produces_all_artifacts(agg_master_parquet):
     cfg = agg_master_parquet
     from openarcos_pipeline.aggregate import discover_sql, run_all
+
     outputs = run_all(cfg)
     names = {p.stem for p in outputs}
     assert names == set(discover_sql())

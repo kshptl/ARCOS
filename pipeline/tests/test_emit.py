@@ -1,9 +1,9 @@
 """Tests for emit.py: JSON/Parquet emission + schema validation."""
+
 from __future__ import annotations
 
 import json
 import shutil
-from pathlib import Path
 
 import polars as pl
 import pytest
@@ -93,12 +93,14 @@ def test_emit_search_index_json(seeded_cfg):
 def test_emit_rejects_bad_shape(seeded_cfg):
     """If the source parquet has rows that violate the schema, emit must raise without writing."""
     # Corrupt the state_shipments agg by writing a row with an invalid state code
-    bad = pl.DataFrame({
-        "state_fips": ["QQ"],
-        "year": [2012],
-        "pills": [100.0],
-        "pills_per_capita": [0.1],
-    })
+    bad = pl.DataFrame(
+        {
+            "state_fips": ["QQ"],
+            "year": [2012],
+            "pills": [100.0],
+            "pills_per_capita": [0.1],
+        }
+    )
     bad.write_parquet(seeded_cfg.agg_dir / "state_shipments_by_year.parquet")
     with pytest.raises(SchemaValidationError):
         emit_state_shipments_json(seeded_cfg)
@@ -106,6 +108,7 @@ def test_emit_rejects_bad_shape(seeded_cfg):
 
 def test_emit_county_shipments_parquet(seeded_cfg):
     from openarcos_pipeline.emit import emit_county_shipments_parquet
+
     out = emit_county_shipments_parquet(seeded_cfg)
     df = pl.read_parquet(out)
     assert set(df.columns) == {"fips", "year", "pills", "pills_per_capita"}
@@ -114,6 +117,7 @@ def test_emit_county_shipments_parquet(seeded_cfg):
 
 def test_emit_top_pharmacies_parquet(seeded_cfg):
     from openarcos_pipeline.emit import emit_top_pharmacies_parquet
+
     out = emit_top_pharmacies_parquet(seeded_cfg)
     df = pl.read_parquet(out)
     assert set(df.columns) == {"pharmacy_id", "name", "address", "fips", "total_pills"}
@@ -121,6 +125,7 @@ def test_emit_top_pharmacies_parquet(seeded_cfg):
 
 def test_emit_cdc_overdose_parquet(seeded_cfg):
     from openarcos_pipeline.emit import emit_cdc_overdose_parquet
+
     out = emit_cdc_overdose_parquet(seeded_cfg)
     df = pl.read_parquet(out)
     assert set(df.columns) == {"fips", "year", "deaths", "suppressed"}
@@ -132,6 +137,7 @@ def test_emit_cdc_overdose_parquet(seeded_cfg):
 
 def test_emit_all_produces_eight_artifacts(seeded_cfg):
     from openarcos_pipeline.emit import emit_all
+
     outs = emit_all(seeded_cfg)
     # 5 JSON + 3 Parquet = 8 total
     names = {p.name for p in outs}

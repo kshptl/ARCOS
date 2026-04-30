@@ -4,6 +4,7 @@ Uses the pinned Population Estimates Program (PEP) 2010-2019 CSV. We take 2012
 estimates as the canonical per-capita denominator (middle of the ARCOS
 2006–2014 window). Source URL is pinned; file is small (~250 KB).
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -44,19 +45,24 @@ def parse_popest_csv(path: Path) -> pl.DataFrame:
         infer_schema_length=10000,
     )
     df = (
-        raw
-        .filter(pl.col("SUMLEV") == 50)  # county-level only (040 = state summary)
+        raw.filter(pl.col("SUMLEV") == 50)  # county-level only (040 = state summary)
         .filter(pl.col("POPESTIMATE2012").is_not_null())
-        .with_columns([
-            pl.col("STATE").cast(pl.Utf8).str.zfill(2).alias("_state_fips"),
-            pl.col("COUNTY").cast(pl.Utf8).str.zfill(3).alias("_county_fips"),
-        ])
-        .with_columns([
-            (pl.col("_state_fips") + pl.col("_county_fips")).alias("fips"),
-            pl.col("CTYNAME").alias("name"),
-            pl.col("_state_fips").map_elements(_state_abbrev, return_dtype=pl.Utf8).alias("state"),
-            pl.col("POPESTIMATE2012").cast(pl.Int64).alias("pop"),
-        ])
+        .with_columns(
+            [
+                pl.col("STATE").cast(pl.Utf8).str.zfill(2).alias("_state_fips"),
+                pl.col("COUNTY").cast(pl.Utf8).str.zfill(3).alias("_county_fips"),
+            ]
+        )
+        .with_columns(
+            [
+                (pl.col("_state_fips") + pl.col("_county_fips")).alias("fips"),
+                pl.col("CTYNAME").alias("name"),
+                pl.col("_state_fips")
+                .map_elements(_state_abbrev, return_dtype=pl.Utf8)
+                .alias("state"),
+                pl.col("POPESTIMATE2012").cast(pl.Int64).alias("pop"),
+            ]
+        )
         .select(["fips", "name", "state", "pop"])
     )
     log.info("census: loaded %d county rows", len(df))

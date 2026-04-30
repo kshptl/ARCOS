@@ -1,8 +1,5 @@
 """Config dataclass holds typed paths."""
 
-import os
-from pathlib import Path
-
 from openarcos_pipeline.config import Config
 
 

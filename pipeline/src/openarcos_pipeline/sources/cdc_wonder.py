@@ -17,8 +17,22 @@ log = get_logger("openarcos.sources.cdc")
 
 # ICD-10 codes for drug poisoning + intent categories (per spec §2).
 DRUG_POISONING_ICD10 = [
-    "X40", "X41", "X42", "X43", "X44", "X60", "X61", "X62",
-    "X63", "X64", "X85", "Y10", "Y11", "Y12", "Y13", "Y14",
+    "X40",
+    "X41",
+    "X42",
+    "X43",
+    "X44",
+    "X60",
+    "X61",
+    "X62",
+    "X63",
+    "X64",
+    "X85",
+    "Y10",
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y14",
 ]
 
 
@@ -57,15 +71,13 @@ class CDCWonderClient:
         transport: httpx.BaseTransport | None = None,
     ) -> None:
         self._url = url
-        self._client = httpx.Client(
-            timeout=timeout, follow_redirects=True, transport=transport
-        )
+        self._client = httpx.Client(timeout=timeout, follow_redirects=True, transport=transport)
         self._max_retries = max_retries
 
     def close(self) -> None:
         self._client.close()
 
-    def __enter__(self) -> "CDCWonderClient":
+    def __enter__(self) -> CDCWonderClient:
         return self
 
     def __exit__(self, *_exc: object) -> None:

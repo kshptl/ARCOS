@@ -1,11 +1,11 @@
 """End-to-end: fixture raw files → clean → join → aggregate. Exits 0 and writes every expected parquet."""
+
 from __future__ import annotations
 
 import shutil
 from pathlib import Path
 
 import polars as pl
-import pytest
 from typer.testing import CliRunner
 
 from openarcos_pipeline.aggregate import discover_sql
@@ -22,7 +22,11 @@ def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
     (raw_dir / "wapo").mkdir(parents=True, exist_ok=True)
     for src in (fixtures_dir / "wapo").glob("*.json"):
         # Canonicalise filenames so clean step picks them up
-        if src.name.startswith("county_") or src.name.startswith("distributors_") or src.name.startswith("pharmacies_"):
+        if (
+            src.name.startswith("county_")
+            or src.name.startswith("distributors_")
+            or src.name.startswith("pharmacies_")
+        ):
             shutil.copy(src, raw_dir / "wapo" / src.name)
 
     (raw_dir / "cdc").mkdir(parents=True, exist_ok=True)
