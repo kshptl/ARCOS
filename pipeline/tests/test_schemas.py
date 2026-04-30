@@ -30,3 +30,7 @@ def test_county_metadata_invalid_rejected():
     data = load_json(FIXTURES_DIR / "county-metadata.invalid.json")
     with pytest.raises(jsonschema.ValidationError):
         jsonschema.validate(data, schema)
+
+
+def test_state_shipments_sample_valid():
+    _validate("state-shipments-by-year", "state-shipments-by-year.sample.json")

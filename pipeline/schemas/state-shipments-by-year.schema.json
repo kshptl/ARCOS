@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/state-shipments-by-year.schema.json",
+  "title": "State-level shipments by year",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["state", "year", "pills", "pills_per_capita"],
+    "additionalProperties": false,
+    "properties": {
+      "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+      "year": {"type": "integer", "minimum": 2006, "maximum": 2014},
+      "pills": {"type": "integer", "minimum": 0},
+      "pills_per_capita": {"type": "number", "minimum": 0}
+    }
+  }
+}
