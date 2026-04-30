@@ -105,10 +105,6 @@ export default async function HomePage() {
           <Step id="act4">
             <p className="eyebrow">Act 4 — Aftermath</p>
             <h2>The counties left behind.</h2>
-            <p>
-              The pills came in waves; the deaths followed. These six counties carried some of the
-              heaviest per-capita shipments — and some of the steepest casualties.
-            </p>
             <p style={{ marginBlockStart: "var(--space-md)" }}>
               <Link href="/explorer" style={{ textDecoration: "none" }}>
                 <Button variant="primary">See your county →</Button>

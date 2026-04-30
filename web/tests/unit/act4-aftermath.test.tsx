@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ScrollyProgressContext } from "@/components/scrolly/progressContext";
@@ -204,5 +206,28 @@ describe("Act4Aftermath", () => {
       const offset = Number(path.style.strokeDashoffset || "0");
       expect(offset).toBe(0);
     }
+  });
+
+  it("does not render a chart title / title band text", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    expect(screen.queryByText(/heavily shipped counties/i)).toBeNull();
+    expect(screen.queryByText(/overdose deaths per year/i)).toBeNull();
+    expect(screen.queryByText(/six heavily shipped/i)).toBeNull();
+  });
+});
+
+describe("Act4 step caption (app/page.tsx)", () => {
+  it("does not render the 'pills came in waves' caption prose", () => {
+    const page = readFileSync(
+      resolve(__dirname, "../../app/page.tsx"),
+      "utf-8",
+    );
+    expect(page).not.toMatch(/pills came in waves/i);
+    expect(page).not.toMatch(/steepest casualties/i);
+    expect(page).not.toMatch(/heaviest per-capita shipments/i);
   });
 });

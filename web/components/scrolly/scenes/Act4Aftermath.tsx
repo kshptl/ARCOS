@@ -133,10 +133,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
   return (
     <div className={styles.act}>
       <div className={styles.actInner}>
-        <div className={styles.titleBand}>
-          Six heavily shipped counties — overdose deaths per year
-        </div>
-
         <div className={styles.gridMultiples}>
           {counties.map((c, i) => {
             const hasData = c.deaths.length > 0;
