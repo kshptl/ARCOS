@@ -1,34 +1,56 @@
-.PHONY: all fetch clean join aggregate emit test lint format help
+# pipeline/Makefile — openarcos ETL targets
+.PHONY: help install fetch clean join aggregate emit all test lint format snapshots ci-check
 
-UV := uv run
+YEARS_START ?= 2006
+YEARS_END   ?= 2014
 
 help:
-	@echo "Targets: fetch | clean | join | aggregate | emit | all | test | lint | format"
+	@echo "Targets:"
+	@echo "  install     uv sync (install deps + create .venv)"
+	@echo "  fetch       fetch all raw sources (live network)"
+	@echo "  clean       normalize raw → data/clean/"
+	@echo "  join        build data/joined/master.parquet"
+	@echo "  aggregate   run sql/ → data/agg/"
+	@echo "  emit        write data/agg/ → web/public/data/ (schema-validated)"
+	@echo "  all         skip-fetch variant: clean → join → aggregate → emit"
+	@echo "  test        pytest"
+	@echo "  lint        ruff check"
+	@echo "  format      ruff format"
+	@echo "  snapshots   regenerate golden snapshots (PYTEST_UPDATE_SNAPSHOTS=1)"
+	@echo "  ci-check    schema validation of committed web/public/data/"
 
-fetch:
-	$(UV) openarcos fetch
+install:
+	uv sync --extra dev
 
-clean:
-	$(UV) openarcos clean
+fetch: install
+	uv run openarcos fetch --source all
 
-join:
-	$(UV) openarcos join
+clean: install
+	uv run openarcos clean
 
-aggregate:
-	$(UV) openarcos aggregate
+join: install
+	uv run openarcos join
 
-emit:
-	$(UV) openarcos emit
+aggregate: install
+	uv run openarcos aggregate
 
-all: fetch clean join aggregate emit
+emit: install
+	uv run openarcos emit
 
-test:
-	$(UV) pytest -v
+all: install
+	uv run openarcos all --skip-fetch --years-start $(YEARS_START) --years-end $(YEARS_END)
 
-lint:
-	$(UV) ruff check src tests
-	$(UV) ruff format --check src tests
+test: install
+	uv run pytest -q
 
-format:
-	$(UV) ruff format src tests
-	$(UV) ruff check --fix src tests
+lint: install
+	uv run ruff check src tests
+
+format: install
+	uv run ruff format src tests
+
+snapshots: install
+	PYTEST_UPDATE_SNAPSHOTS=1 uv run pytest -q tests/test_aggregate.py
+
+ci-check: install
+	uv run python scripts/validate_web_data.py
