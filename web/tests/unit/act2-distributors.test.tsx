@@ -81,4 +81,38 @@ describe("Act2Distributors", () => {
     );
     expect(screen.getByTestId("act2-table")).toBeInTheDocument();
   });
+
+  it("series labels do not overlap y-axis tick labels (>= 8px horizontal gap)", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act2Distributors data={DATA} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    // Y-axis tick labels are anchored "end" — their right edge is at x,
+    // and they extend leftward. So their rightmost bound is x.
+    const yTickLabels = Array.from(svg!.querySelectorAll("text")).filter((t) => {
+      const content = t.textContent ?? "";
+      return /^[\d.]+%$/.test(content) && t.getAttribute("text-anchor") === "end";
+    });
+    expect(yTickLabels.length).toBeGreaterThan(0);
+    const yTickRightMax = Math.max(
+      ...yTickLabels.map((t) => Number(t.getAttribute("x") ?? "0")),
+    );
+
+    // Any series-associated labels (value + name) use text-anchor "start".
+    // Their LEFT edge is at x; they extend rightward. We require those whose
+    // x is near the plot area to be at least 8px to the right of yTickRightMax.
+    const startLabels = Array.from(svg!.querySelectorAll("text")).filter(
+      (t) => t.getAttribute("text-anchor") === "start",
+    );
+    for (const l of startLabels) {
+      const x = Number(l.getAttribute("x") ?? "0");
+      // Ignore far-right labels that are obviously clear (past the plot area).
+      // Only enforce for labels anywhere on the page: any start-anchored label
+      // must not sit within 8px of the y-axis tick column.
+      expect(x).toBeGreaterThanOrEqual(yTickRightMax + 8);
+    }
+  });
 });
