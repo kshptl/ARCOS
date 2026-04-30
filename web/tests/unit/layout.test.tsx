@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -21,6 +21,23 @@ describe("<Header>", () => {
   it("renders a SearchBox combobox in the header", () => {
     render(<Header />);
     expect(screen.getByRole("combobox")).toBeInTheDocument();
+  });
+
+  it("renders a hamburger toggle button with correct ARIA", () => {
+    render(<Header />);
+    const btn = screen.getByRole("button", { name: /open menu/i });
+    expect(btn).toBeInTheDocument();
+    expect(btn).toHaveAttribute("aria-expanded", "false");
+    expect(btn).toHaveAttribute("aria-controls");
+  });
+
+  it("toggles the mobile menu panel on click", () => {
+    render(<Header />);
+    const btn = screen.getByRole("button", { name: /open menu/i });
+    fireEvent.click(btn);
+    expect(btn).toHaveAttribute("aria-expanded", "true");
+    // Mobile nav should now be exposed
+    expect(screen.getByRole("navigation", { name: /primary mobile/i })).toBeInTheDocument();
   });
 });
 
