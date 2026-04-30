@@ -22,5 +22,16 @@
     "build-similar": "tsx scripts/build-similar-counties.ts",
     "prebuild": "pnpm validate-data",
     "lhci": "lhci autorun"
+  },
+  "dependencies": {
+    "next": "15",
+    "react": "19",
+    "react-dom": "19"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "~5.5"
   }
 }
