@@ -148,15 +148,67 @@ so OpenCode sessions on this workstation can talk to Cloudflare:
 
 - **`cloudflare-api`** — remote, `https://mcp.cloudflare.com/mcp`. Covers
   the entire Cloudflare API (~2500 endpoints across Pages, DNS, Workers,
-  R2, etc.) via two tools (`search` + `execute`) using Codemode. OAuth
-  required before first use: `opencode mcp auth cloudflare-api`. Needed
-  because openarcos.org is deployed on Cloudflare Pages (see
-  `docs/ops.md`).
+  R2, etc.) via two tools (`search` + `execute`) using Codemode. **Uses
+  an API token** (Bearer auth) instead of OAuth because this workstation
+  is SSH-accessed (no browser for the OAuth redirect). The config expects
+  `$CLOUDFLARE_API_TOKEN` to be set in the environment. Create the token
+  at <https://dash.cloudflare.com/profile/api-tokens> with scoped
+  permissions (see below) and export it before starting OpenCode.
 - **`cloudflare-docs`** — remote, `https://docs.mcp.cloudflare.com/mcp`.
   Token-efficient search over the Cloudflare developer docs. No auth
   needed. Useful when iterating on the Pages setup, `_headers` rules,
   or any CF product config.
 
+### Creating the API token
+
+On any machine with a browser (your laptop, not the WSL server):
+
+1. Go to <https://dash.cloudflare.com/profile/api-tokens>.
+2. Click **Create Token** → **Get started** under *Custom token*.
+3. Name: `openarcos-mcp-agent`.
+4. Permissions (click **Add more** between each):
+   - Account · Cloudflare Pages · Edit
+   - Zone · DNS · Edit
+   - Zone · Zone WAF · Edit (needed for Redirect Rules if you add them via the ruleset engine)
+   - Account · Account Analytics · Read *(optional — needed if you want the MCP to fetch traffic stats)*
+5. Account Resources: *Include* · *Specific account* · your account.
+6. Zone Resources: *Include* · *Specific zone* · `openarcos.org`.
+7. Optional TTL: set an expiry (e.g. 1 year) so a stale token eventually
+   fails loud instead of lingering.
+8. Create → copy the token (shown exactly once).
+
+### Storing the token on this workstation
+
+Add to `~/.bashrc` (or `~/.zshrc`), then re-source or open a new shell:
+
+```bash
+export CLOUDFLARE_API_TOKEN="<paste token here>"
+```
+
+Sanity check the token works before restarting OpenCode:
+
+```bash
+curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  https://api.cloudflare.com/client/v4/user/tokens/verify | jq
+# expect { "result": { "status": "active", ... }, "success": true, ... }
+```
+
+Then restart OpenCode. `opencode mcp list` should show
+`cloudflare-api ✓ connected`.
+
+### Rotating the token
+
+If the token leaks or needs replacement:
+
+1. Revoke it in the CF dashboard.
+2. Create a new one (same permissions).
+3. Update `CLOUDFLARE_API_TOKEN` in your shell rc.
+4. Restart OpenCode.
+
+No change to `opencode.json` needed — the config reads the env var at
+startup.
+
 These live in the user-level config (not in this repo), so collaborators
 replicate by adding the same two entries under the `mcp` key of their
-`~/.config/opencode/opencode.json`.
+`~/.config/opencode/opencode.json`, creating their own API token, and
+exporting it as `$CLOUDFLARE_API_TOKEN`.
