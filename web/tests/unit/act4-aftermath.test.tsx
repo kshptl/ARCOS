@@ -38,7 +38,30 @@ describe("Act4Aftermath", () => {
         <Act4Aftermath counties={COUNTIES} />
       </ScrollyProgressContext.Provider>,
     );
-    expect(screen.getByText(/Mingo, WV/)).toBeInTheDocument();
-    expect(screen.getByText(/Kanawha, WV/)).toBeInTheDocument();
+    // Name and 2-letter state are now rendered in separate elements within
+    // the card (display font + muted eyebrow, respectively).
+    expect(screen.getByText(/^Mingo$/)).toBeInTheDocument();
+    expect(screen.getByText(/^Kanawha$/)).toBeInTheDocument();
+    const wvLabels = screen.getAllByText(/^WV$/);
+    expect(wvLabels.length).toBeGreaterThan(0);
+  });
+
+  it("wraps each card in a link to /county/<fips>", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const mingoLink = screen.getByRole("link", { name: /Mingo/i });
+    expect(mingoLink).toHaveAttribute("href", "/county/54059");
+  });
+
+  it("marks peak point on each sparkline with ≥2 data points", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    expect(screen.getAllByTestId("spark-peak").length).toBe(6);
   });
 });
