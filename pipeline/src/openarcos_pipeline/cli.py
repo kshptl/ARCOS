@@ -38,8 +38,24 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
 
 @app.command()
 def clean() -> None:
-    """Normalize raw data into canonical schemas."""
-    log.info("clean: not yet implemented")
+    """Normalize raw data into canonical parquet."""
+    import polars as pl
+
+    from openarcos_pipeline.clean.cdc import parse_d76_response
+    from openarcos_pipeline.config import Config
+
+    cfg = Config.from_env()
+    cfg.clean_dir.mkdir(parents=True, exist_ok=True)
+    cdc_raw = cfg.raw_dir / "cdc"
+    if cdc_raw.is_dir():
+        frames = []
+        for xml_file in sorted(cdc_raw.glob("*.xml")):
+            frames.append(parse_d76_response(xml_file.read_text()))
+        if frames:
+            df = pl.concat(frames, how="vertical_relaxed")
+            df.write_parquet(cfg.clean_dir / "cdc_overdose.parquet")
+            log.info("cdc clean: wrote", extra={"rows": len(df)})
+    # wapo + dea clean wired in Tasks 34/37
     raise typer.Exit(0)
 
 
