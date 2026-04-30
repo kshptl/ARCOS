@@ -28,3 +28,28 @@
   color: var(--text-muted);
   font-size: var(--type-caption);
 }
+
+@media (max-width: 640px) {
+  /*
+   * Turn the table itself into a horizontally scrollable block so wide
+   * columns don't force the viewport to scroll on mobile. A right-edge
+   * gradient fade hints that the table overflows.
+   */
+  .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    background: linear-gradient(to right, transparent 80%, var(--canvas) 100%);
+    background-attachment: local;
+  }
+  .table thead,
+  .table tbody {
+    display: table;
+    width: max-content;
+    min-width: 100%;
+  }
+  .table tr {
+    display: table-row;
+  }
+}
