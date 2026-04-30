@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DistributorsPanel } from "./DistributorsPanel";
+import { PharmaciesPanel } from "./PharmaciesPanel";
 import { Tabs } from "./Tabs";
 import { loadDistributorsAggregated } from "@/lib/data/loadTopDistributors";
 import styles from "./page.module.css";
@@ -32,7 +33,7 @@ export default async function RankingsPage() {
           {
             key: "pharmacies",
             label: "Pharmacies",
-            panel: <p>(populated in Task 42)</p>,
+            panel: <PharmaciesPanel />,
           },
         ]}
       />
