@@ -4,6 +4,17 @@ import { deathsColorScale, pillsColorScale } from "../colorScales";
 
 export type MapMetric = "pills" | "pills_per_capita" | "deaths";
 
+// Stable, module-level polygon accessor. Geometry never changes once loaded,
+// so this function must keep a fixed identity across renders — otherwise
+// Deck.gl detects a new accessor and re-uploads the full polygon buffer to
+// the GPU on every year-slider tick (~3100 counties × hundreds of vertices).
+function polygonAccessor(f: Feature): number[][][] | number[][] {
+  const g = f.geometry;
+  if (g.type === "Polygon") return g.coordinates;
+  if (g.type === "MultiPolygon") return g.coordinates[0] ?? [];
+  return [];
+}
+
 export interface BuildCountyLayerPropsArgs {
   featureCollection: FeatureCollection<Geometry, { name?: string }>;
   valueByFips: Map<string, number>;
@@ -45,12 +56,7 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     stroked: true,
     filled: true,
     extruded: false,
-    getPolygon: (f) => {
-      const g = f.geometry;
-      if (g.type === "Polygon") return g.coordinates;
-      if (g.type === "MultiPolygon") return g.coordinates[0] ?? [];
-      return [];
-    },
+    getPolygon: polygonAccessor,
     getFillColor: (f) => {
       const id = String(f.id ?? "");
       const val = valueByFips.get(id);
