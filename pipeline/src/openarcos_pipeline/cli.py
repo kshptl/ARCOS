@@ -107,6 +107,9 @@ def clean() -> None:
             data = json.loads(f.read_text())
             # Accept both `county_raw_{ST}_{County}.json` (from wapo_runner) and
             # `county_{ST}_{FIPS}.json` / `county_{YEAR}_{FIPS}.json` (test fixtures).
+            # Skip `county_list_*.json` — those are county enumerations, not shipments.
+            if stem.startswith("county_list_"):
+                continue
             if stem.startswith("county_raw_") or stem.startswith("county_"):
                 tail = stem.split("_", 1)[1] if stem.startswith("county_") else ""
                 if stem.startswith("county_raw_"):
@@ -162,8 +165,13 @@ def join(
 
 @app.command()
 def aggregate() -> None:
-    """Run sql/*.sql viewpoint queries."""
-    log.info("aggregate: not yet implemented")
+    """Run every SQL aggregation in sql/ against the pipeline inputs."""
+    from openarcos_pipeline.aggregate import run_all
+    from openarcos_pipeline.config import Config
+
+    cfg = Config.from_env()
+    outputs = run_all(cfg)
+    log.info("aggregate complete: %d artifacts", len(outputs))
     raise typer.Exit(0)
 
 
