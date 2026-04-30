@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BigNumeral } from "@/components/brand/BigNumeral";
 import { ScrollyErrorBoundary } from "@/components/errors/ScrollyErrorBoundary";
 import { ScrollyStage } from "@/components/scrolly/ScrollyStage";
+import { Step } from "@/components/scrolly/Step";
 import {
   act1Summary,
   act2Summary,
@@ -59,7 +60,7 @@ export default async function HomePage() {
           ariaLabel="Act 1: the scale of shipments from 2006 to 2014, peaking at about 9.6 billion pills in 2010."
           dataSummary={act1Summary(data.act1)}
         >
-          <article style={{ maxWidth: "40ch", padding: "var(--space-xl) 0" }}>
+          <Step id="act1">
             <p className="eyebrow">Act 1 — Scale</p>
             <h2>76 billion pills.</h2>
             <p>
@@ -67,7 +68,7 @@ export default async function HomePage() {
               {Math.round(data.act1.totalPills / 1e9)} billion doses of oxycodone and hydrocodone to
               the DEA. The curve rises through 2010 and then turns.
             </p>
-          </article>
+          </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
 
@@ -77,14 +78,14 @@ export default async function HomePage() {
           ariaLabel="Act 2: three distributors handled more than 80 percent of shipments across the period."
           dataSummary={act2Summary(data.act2)}
         >
-          <article style={{ maxWidth: "40ch", padding: "var(--space-xl) 0" }}>
+          <Step id="act2">
             <p className="eyebrow">Act 2 — Distributors</p>
             <h2>Three companies.</h2>
             <p>
               McKesson, Cardinal Health, and AmerisourceBergen together moved most of the pills.
               Their share shifted, but the trio stayed on top.
             </p>
-          </article>
+          </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
 
@@ -94,14 +95,14 @@ export default async function HomePage() {
           ariaLabel="Act 3: enforcement actions from the DEA Diversion Control Division climb from 2010 to 2013."
           dataSummary={act3Summary(data.act3)}
         >
-          <article style={{ maxWidth: "40ch", padding: "var(--space-xl) 0" }}>
+          <Step id="act3">
             <p className="eyebrow">Act 3 — Enforcement</p>
             <h2>The regulators catch up.</h2>
             <p>
               Enforcement actions from the DEA Diversion Control Division climbed through 2012–2013
               as the scale of the problem became impossible to ignore.
             </p>
-          </article>
+          </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
 
@@ -111,7 +112,7 @@ export default async function HomePage() {
           ariaLabel="Act 4: six hard-hit counties where overdose death counts climbed through the ARCOS window."
           dataSummary={act4Summary(data.act4)}
         >
-          <article style={{ maxWidth: "40ch", padding: "var(--space-xl) 0" }}>
+          <Step id="act4">
             <p className="eyebrow">Act 4 — Aftermath</p>
             <h2>The counties left behind.</h2>
             <p>
@@ -121,7 +122,7 @@ export default async function HomePage() {
             <p style={{ marginBlockStart: "var(--space-md)" }}>
               <Link href="/explorer">See your county →</Link>
             </p>
-          </article>
+          </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
     </>
