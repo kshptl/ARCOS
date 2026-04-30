@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 280000,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 70.0,
+    "population": 4000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 308000,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 77.2,
+    "population": 3988,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 338800,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 85.2,
+    "population": 3976,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 372680,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 94.0,
+    "population": 3964,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 409948,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 103.7,
+    "population": 3952,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 450942,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 114.5,
+    "population": 3940,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 414867,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 105.6,
+    "population": 3928,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 381677,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 97.5,
+    "population": 3916,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "NORTON",
+    "BUYER_STATE": "VA",
+    "DOSAGE_UNIT": 351143,
+    "countyfips": "51720",
+    "dosage_unit_per_cap": 89.9,
+    "population": 3905,
+    "year": 2014
+  }
+]

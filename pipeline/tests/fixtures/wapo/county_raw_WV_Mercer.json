@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4600000,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 73.0,
+    "population": 63000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4830000,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 76.9,
+    "population": 62811,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 5071500,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 81.0,
+    "population": 62622,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 5325075,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 85.3,
+    "population": 62434,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 5591328,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 89.8,
+    "population": 62247,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 5870895,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 94.6,
+    "population": 62060,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 5401223,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 87.3,
+    "population": 61874,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4969125,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 80.6,
+    "population": 61688,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "MERCER",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4571595,
+    "countyfips": "54055",
+    "dosage_unit_per_cap": 74.3,
+    "population": 61503,
+    "year": 2014
+  }
+]

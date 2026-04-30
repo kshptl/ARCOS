@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 4900000,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 75.4,
+    "population": 65000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5096000,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 78.6,
+    "population": 64805,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5299840,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 82.0,
+    "population": 64610,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5511833,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 85.6,
+    "population": 64416,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5732306,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 89.3,
+    "population": 64223,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5961599,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 93.1,
+    "population": 64030,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5484671,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 85.9,
+    "population": 63838,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 5045897,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 79.3,
+    "population": 63647,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "PIKE",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 4642225,
+    "countyfips": "21195",
+    "dosage_unit_per_cap": 73.2,
+    "population": 63456,
+    "year": 2014
+  }
+]

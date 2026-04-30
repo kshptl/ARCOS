@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3300000,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 71.0,
+    "population": 46500,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3432000,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 74.0,
+    "population": 46360,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3569280,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 77.2,
+    "population": 46221,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3712051,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 80.6,
+    "population": 46082,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3860533,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 84.0,
+    "population": 45944,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4014954,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 87.7,
+    "population": 45806,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3693758,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 80.9,
+    "population": 45669,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3398257,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 74.6,
+    "population": 45532,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "FAYETTE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3126396,
+    "countyfips": "54019",
+    "dosage_unit_per_cap": 68.9,
+    "population": 45395,
+    "year": 2014
+  }
+]

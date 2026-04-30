@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2900000,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 80.6,
+    "population": 36000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3103000,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 86.5,
+    "population": 35892,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3320210,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 92.8,
+    "population": 35784,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3552624,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 99.6,
+    "population": 35676,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3801308,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 106.9,
+    "population": 35569,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 4067400,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 114.7,
+    "population": 35463,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3742008,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 105.8,
+    "population": 35356,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3442647,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 97.7,
+    "population": 35250,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "LOGAN",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 3167235,
+    "countyfips": "54045",
+    "dosage_unit_per_cap": 90.1,
+    "population": 35145,
+    "year": 2014
+  }
+]

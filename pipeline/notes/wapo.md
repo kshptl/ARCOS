@@ -71,3 +71,22 @@ These hashes pin the hand-authored fixtures so CI catches unintended edits:
 - `county_list_wv.json`: sha256=bd63dc788ad929b7859baa4964377247c3ade03ac20b1a4d1150366a3d2a9dd0
 
 Regenerate via: `sha256sum pipeline/tests/fixtures/wapo/*.json`
+
+## 10-county fixture set (SYNTHETIC — Task 22)
+
+The plan's Task 22 asks to record `/v1/county_raw` per county for:
+Mingo WV (54059), Norton VA (51720), Cabell WV (54011), Logan WV (54045),
+Boone WV (54005), Fayette WV (54019), Mercer WV (54055), Floyd KY (21071),
+Pike KY (21195), Martin KY (21159).
+
+These were also hand-generated for the same network-unavailable reason
+described above, using a simple pattern (rising dosage-per-capita through
+2011, declining post-DEA-actions through 2014). Populations are rough
+Census estimates but the per-year dosage numbers are NOT actual WaPo data.
+
+Files: `county_raw_{state}_{county}.json` in `tests/fixtures/wapo/`.
+
+Downstream tests only assert structural properties (columns present,
+non-negative pill counts, FIPS round-trip) so the fabricated numbers are
+acceptable for exercising the pipeline. **Do not publish artifacts built
+from these fixtures as real openarcos.org data.**

@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 7500000,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 78.1,
+    "population": 96000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 7950000,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 83.1,
+    "population": 95712,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 8427000,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 88.3,
+    "population": 95424,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 8932620,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 93.9,
+    "population": 95138,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 9468577,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 99.8,
+    "population": 94853,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 10036691,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 106.1,
+    "population": 94568,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 9233756,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 97.9,
+    "population": 94284,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 8495055,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 90.4,
+    "population": 94002,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "CABELL",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 7815451,
+    "countyfips": "54011",
+    "dosage_unit_per_cap": 83.4,
+    "population": 93720,
+    "year": 2014
+  }
+]

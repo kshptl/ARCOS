@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 1780000,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 74.2,
+    "population": 24000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 1886800,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 78.9,
+    "population": 23928,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2000008,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 83.8,
+    "population": 23856,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2120008,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 89.1,
+    "population": 23784,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2247208,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 94.8,
+    "population": 23713,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2382041,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 100.8,
+    "population": 23642,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2191478,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 93.0,
+    "population": 23571,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 2016159,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 85.8,
+    "population": 23500,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "BOONE",
+    "BUYER_STATE": "WV",
+    "DOSAGE_UNIT": 1854867,
+    "countyfips": "54005",
+    "dosage_unit_per_cap": 79.2,
+    "population": 23430,
+    "year": 2014
+  }
+]

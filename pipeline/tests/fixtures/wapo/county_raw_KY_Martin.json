@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 980000,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 78.4,
+    "population": 12500,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1058400,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 84.9,
+    "population": 12462,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1143072,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 92.0,
+    "population": 12425,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1234517,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 99.7,
+    "population": 12387,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1333279,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 108.0,
+    "population": 12350,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1439941,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 116.9,
+    "population": 12313,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1324746,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 107.9,
+    "population": 12276,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1218766,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 99.6,
+    "population": 12239,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "MARTIN",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 1121265,
+    "countyfips": "21159",
+    "dosage_unit_per_cap": 91.9,
+    "population": 12203,
+    "year": 2014
+  }
+]

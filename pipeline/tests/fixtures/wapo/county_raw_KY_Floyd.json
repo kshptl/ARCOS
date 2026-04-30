@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3100000,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 77.5,
+    "population": 40000,
+    "year": 2006
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3255000,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 81.6,
+    "population": 39880,
+    "year": 2007
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3417750,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 86.0,
+    "population": 39760,
+    "year": 2008
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3588637,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 90.5,
+    "population": 39641,
+    "year": 2009
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3768069,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 95.3,
+    "population": 39522,
+    "year": 2010
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3956472,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 100.4,
+    "population": 39403,
+    "year": 2011
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3639955,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 92.7,
+    "population": 39285,
+    "year": 2012
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3348758,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 85.5,
+    "population": 39167,
+    "year": 2013
+  },
+  {
+    "BUYER_COUNTY": "FLOYD",
+    "BUYER_STATE": "KY",
+    "DOSAGE_UNIT": 3080857,
+    "countyfips": "21071",
+    "dosage_unit_per_cap": 78.9,
+    "population": 39050,
+    "year": 2014
+  }
+]
