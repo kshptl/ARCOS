@@ -39,23 +39,93 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
 @app.command()
 def clean() -> None:
     """Normalize raw data into canonical parquet."""
+    import json
+
     import polars as pl
 
     from openarcos_pipeline.clean.cdc import parse_d76_response
+    from openarcos_pipeline.clean.dea import parse_annual_report
+    from openarcos_pipeline.clean.wapo import (
+        clean_county_raw,
+        clean_distributors,
+        clean_pharmacies,
+    )
     from openarcos_pipeline.config import Config
 
     cfg = Config.from_env()
     cfg.clean_dir.mkdir(parents=True, exist_ok=True)
+
+    # CDC
     cdc_raw = cfg.raw_dir / "cdc"
     if cdc_raw.is_dir():
-        frames = []
-        for xml_file in sorted(cdc_raw.glob("*.xml")):
-            frames.append(parse_d76_response(xml_file.read_text()))
+        frames = [
+            parse_d76_response(p.read_text()) for p in sorted(cdc_raw.glob("*.xml"))
+        ]
         if frames:
             df = pl.concat(frames, how="vertical_relaxed")
             df.write_parquet(cfg.clean_dir / "cdc_overdose.parquet")
-            log.info("cdc clean: wrote", extra={"rows": len(df)})
-    # wapo + dea clean wired in Tasks 34/37
+
+    # DEA
+    dea_raw = cfg.raw_dir / "dea"
+    if dea_raw.is_dir():
+        records = []
+        for pdf in sorted(dea_raw.glob("*.pdf")):
+            try:
+                year = int(pdf.stem)
+            except ValueError:
+                continue
+            records.append(parse_annual_report(pdf, year=year))
+        if records:
+            pl.DataFrame(records).write_parquet(
+                cfg.clean_dir / "dea_enforcement.parquet"
+            )
+
+    # WaPo — per-county fixtures named `{endpoint}_{state}_{county}.json`
+    # Supported naming conventions (written by sources/wapo_runner.py):
+    #   county_raw_{ST}_{County}.json
+    #   distributors_{ST}_{County}.json
+    #   pharmacies_{ST}_{County}.json
+    wapo_raw = cfg.raw_dir / "wapo"
+    if wapo_raw.is_dir():
+        county_frames: list[pl.DataFrame] = []
+        dist_frames: list[pl.DataFrame] = []
+        pharm_frames: list[pl.DataFrame] = []
+        for f in sorted(wapo_raw.glob("*.json")):
+            stem = f.stem
+            data = json.loads(f.read_text())
+            if stem.startswith("county_raw_"):
+                tail = stem[len("county_raw_"):]
+                parts = tail.split("_", 1)
+                state = parts[0] if parts else ""
+                # Derive a FIPS from the data itself if present (first row).
+                fips = "00000"
+                if isinstance(data, list) and data:
+                    fips = str(data[0].get("countyfips") or "00000")
+                county_frames.append(
+                    clean_county_raw(data, state=state, county_fips=fips)
+                )
+            elif stem.startswith("distributors_"):
+                dist_frames.append(clean_distributors(data))
+            elif stem.startswith("pharmacies_"):
+                fips = "00000"
+                if isinstance(data, list) and data:
+                    fips = str(data[0].get("countyfips") or "00000")
+                pharm_frames.append(clean_pharmacies(data, county_fips=fips))
+
+        if county_frames:
+            pl.concat(county_frames, how="vertical_relaxed").write_parquet(
+                cfg.clean_dir / "wapo_county.parquet"
+            )
+        if dist_frames:
+            pl.concat(dist_frames, how="vertical_relaxed").write_parquet(
+                cfg.clean_dir / "wapo_distributors.parquet"
+            )
+        if pharm_frames:
+            pl.concat(pharm_frames, how="vertical_relaxed").write_parquet(
+                cfg.clean_dir / "wapo_pharmacies.parquet"
+            )
+
+    log.info("clean complete")
     raise typer.Exit(0)
 
 
