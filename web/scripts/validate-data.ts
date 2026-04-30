@@ -70,7 +70,7 @@ export async function validateArtifact(args: ValidateArtifactArgs): Promise<Vali
  * top-level import of this script chains into the runtime's CJS
  * resolver (even via the `../lib/data/parquet.js` helper) which then
  * fails with `ERR_PACKAGE_PATH_NOT_EXPORTED`. Dynamic import sidesteps
- * that codepath — see also `build-county-ranks.ts` which uses the same
+ * that codepath — see also `build-county-ranks.mts` which uses the same
  * pattern.
  */
 async function loadArtifact(dataPath: string): Promise<unknown> {

@@ -1,6 +1,8 @@
+#!/usr/bin/env tsx
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parquetRead } from "hyparquet";
 
 interface CountyShipmentRow {
   fips: string;
@@ -41,25 +43,60 @@ function popBand(pop: number): string {
   return "1m+";
 }
 
-async function readParquetSafe<T>(p: string): Promise<T[]> {
-  try {
-    const buf = await fs.readFile(p);
-    if (buf.byteLength === 0) return [];
-    const mod = await import("../lib/data/parquet.js");
-    return await mod.readParquetRows<T>(buf);
-  } catch {
-    return [];
+function bufToArrayBuffer(buf: Buffer): ArrayBuffer {
+  const ab = new ArrayBuffer(buf.byteLength);
+  new Uint8Array(ab).set(buf);
+  return ab;
+}
+
+function coerceBigInts(row: Record<string, unknown>): Record<string, unknown> {
+  for (const key in row) {
+    const value = row[key];
+    if (typeof value === "bigint") row[key] = Number(value);
   }
+  return row;
+}
+
+/**
+ * Read parquet rows from an on-disk file. Returns [] for missing/empty files
+ * (so a fresh checkout without pipeline output still builds), but propagates
+ * any other read/parse error — we previously swallowed those, which silently
+ * produced a ranks file full of nulls (see commit history for C1).
+ */
+async function readParquet<T>(p: string): Promise<T[]> {
+  let buf: Buffer;
+  try {
+    buf = await fs.readFile(p);
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") return [];
+    throw err;
+  }
+  if (buf.byteLength === 0) return [];
+  const file = bufToArrayBuffer(buf);
+  const rows: T[] = [];
+  await new Promise<void>((resolve, reject) => {
+    parquetRead({
+      file,
+      rowFormat: "object",
+      onComplete: (data) => {
+        for (const row of data as Record<string, unknown>[]) {
+          rows.push(coerceBigInts(row) as T);
+        }
+        resolve();
+      },
+    }).catch(reject);
+  });
+  return rows;
 }
 
 async function main() {
   const root = path.resolve(process.cwd(), "public/data");
   const metaRaw = await fs.readFile(path.join(root, "county-metadata.json"), "utf-8");
   const meta: CountyMetaRow[] = JSON.parse(metaRaw);
-  const shipments = await readParquetSafe<CountyShipmentRow>(
+  const shipments = await readParquet<CountyShipmentRow>(
     path.join(root, "county-shipments-by-year.parquet"),
   );
-  const overdose = await readParquetSafe<CDCRow>(
+  const overdose = await readParquet<CDCRow>(
     path.join(root, "cdc-overdose-by-county-year.parquet"),
   );
 
