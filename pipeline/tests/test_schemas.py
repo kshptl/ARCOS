@@ -38,3 +38,31 @@ def test_state_shipments_sample_valid():
 
 def test_county_shipments_sample_valid():
     _validate("county-shipments-by-year", "county-shipments-by-year.sample.json")
+
+
+def test_top_distributors_sample_valid():
+    _validate("top-distributors-by-year", "top-distributors-by-year.sample.json")
+
+
+def test_top_pharmacies_sample_valid():
+    _validate("top-pharmacies", "top-pharmacies.sample.json")
+
+
+def test_dea_enforcement_sample_valid():
+    _validate("dea-enforcement-actions", "dea-enforcement-actions.sample.json")
+
+
+def test_cdc_overdose_sample_valid():
+    _validate("cdc-overdose-by-county-year", "cdc-overdose-by-county-year.sample.json")
+
+
+def test_cdc_overdose_suppressed_with_deaths_rejected():
+    """A row claiming suppressed=true with deaths set must be rejected."""
+    schema = load_json(SCHEMAS_DIR / "cdc-overdose-by-county-year.schema.json")
+    bad = [{"fips": "54059", "year": 2003, "deaths": 5, "suppressed": True}]
+    with pytest.raises(jsonschema.ValidationError):
+        jsonschema.validate(bad, schema)
+
+
+def test_search_index_sample_valid():
+    _validate("search-index", "search-index.sample.json")

@@ -1,0 +1,7 @@
+[
+  {"type": "county", "id": "54059", "name": "Mingo County", "state": "WV", "fips": "54059"},
+  {"type": "city", "id": "city:WV:Williamson", "name": "Williamson", "state": "WV", "fips": "54059"},
+  {"type": "zip", "id": "25661", "name": "25661", "state": "WV", "fips": "54059"},
+  {"type": "distributor", "id": "dist:mckesson", "name": "McKesson Corporation"},
+  {"type": "pharmacy", "id": "FB9876543", "name": "SAV-RITE PHARMACY #1", "address": "KERMIT, WV 25674", "fips": "54059"}
+]
