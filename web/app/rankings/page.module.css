@@ -1,0 +1,19 @@
+.root {
+  padding: var(--space-2xl) 0;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--type-display-lg);
+  line-height: var(--leading-tight);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.lede {
+  max-width: 56ch;
+  color: var(--text-muted);
+}
