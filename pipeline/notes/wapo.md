@@ -5,23 +5,56 @@
 **Auth:** `?key=WaPo` (public; per https://github.com/wpinvestigative/arcos-api README)
 **Rate limit:** documented ~1 req/s; batch with 0.25s sleep.
 
-## !! SYNTHETIC FIXTURE NOTICE !!
+## !! SYNTHETIC FIXTURE NOTICE — AND: API APPEARS OFFLINE !!
 
-**The live API probe could NOT be executed in this environment** because
-outbound network egress is blocked (DNS resolution fails for
-`arcos-api.ext.nile.works`). Running `notebooks/01-wapo-api-probe.py`
-yields `httpx.ConnectError: [Errno -2] Name or service not known`.
+**The live API probe could NOT be executed in this environment** — and
+independent DNS verification (Google DNS-over-HTTPS resolver at
+`https://dns.google/resolve?name=arcos-api.ext.nile.works&type=A`)
+confirms that the API host is **globally unreachable**, not just
+blocked from this sandbox:
 
-As documented in the plan's spike-handling rules, the fixtures under
-`pipeline/tests/fixtures/wapo/` were **hand-authored** to match the
-documented response shapes of the WaPo ARCOS API (R package
-`arcos` by The Washington Post), not captured from a live response.
+```
+arcos-api.ext.nile.works.  CNAME  nile-alpine1-vulcanlbext-45415112.us-east-1.elb.amazonaws.com.
+nile-alpine1-vulcanlbext-45415112.us-east-1.elb.amazonaws.com.  -> NXDOMAIN (Status 3)
+```
 
-**Before the first production run**, a maintainer with network access
-MUST re-run `notebooks/01-wapo-api-probe.py` and overwrite these
-fixtures with real captured JSON, then re-run
-`pytest tests/test_fetcher_hash.py` to regenerate hash signatures in
-`tests/test_fetcher_hash.py`.
+The AWS ELB backing the WaPo ARCOS API has been deleted. The parent
+domain `nile.works` has SOA records but no A records for
+`arcos-api.ext.*`. This means **the API is currently down for all
+callers** (as of 2026-04-30), not just this sandbox. It was last
+observed working publicly around 2019–2021 per WaPo reporting, but
+the public mirror is no longer being maintained by nile.works.
+
+Consequences for the pipeline:
+- `build-data.yml` CI that calls `WapoClient.county_raw(...)` will
+  fail with `httpx.ConnectError` at the fetch step for every county.
+- There is no known alternate HTTPS endpoint. The raw CSV data WaPo
+  published (see <https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/#download-resources>)
+  is still downloadable as per-year zipped TSVs from S3-backed
+  `arcos.s3.amazonaws.com` URLs, but **the shape is totally different
+  from the API response** — it's a 130GB raw transaction log, not the
+  aggregated `/v1/county_raw` shape our fixtures match.
+- Before any production run, the maintainers must choose between:
+  (a) standing up a self-hosted copy of the `arcos-api` server
+      (the repo provides `docker-compose up` per the README) and
+      pointing `BASE_URL` at it, OR
+  (b) switching the fetcher to consume the raw TSV release and
+      re-implementing county aggregation ourselves (substantial
+      new work; not just fixture regeneration).
+
+Fixtures under `pipeline/tests/fixtures/wapo/` are **hand-authored**
+to match the documented response shapes of the WaPo ARCOS API
+(R package `arcos` by The Washington Post), not captured from a
+live response. They remain useful for driving the downstream
+clean/join/agg test suite but are NOT suitable for publishing as
+openarcos.org artifacts.
+
+**Before the first production run**, a maintainer MUST either
+(a) stand up the self-hosted `arcos-api` Docker image and re-run
+`notebooks/01-wapo-api-probe.py` against `http://localhost:8000`,
+overwriting these fixtures, or (b) retarget to the raw TSV
+release and rewrite the fetcher. Afterwards, re-run
+`pytest tests/test_sources_wapo.py` to regenerate hashes.
 
 Fixtures labelled as synthetic-representative; they MUST reproduce
 the schema faithfully enough to drive the downstream clean/join/agg
