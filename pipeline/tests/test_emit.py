@@ -102,3 +102,48 @@ def test_emit_rejects_bad_shape(seeded_cfg):
     bad.write_parquet(seeded_cfg.agg_dir / "state_shipments_by_year.parquet")
     with pytest.raises(SchemaValidationError):
         emit_state_shipments_json(seeded_cfg)
+
+
+def test_emit_county_shipments_parquet(seeded_cfg):
+    from openarcos_pipeline.emit import emit_county_shipments_parquet
+    out = emit_county_shipments_parquet(seeded_cfg)
+    df = pl.read_parquet(out)
+    assert set(df.columns) == {"fips", "year", "pills", "pills_per_capita"}
+    assert df.height > 0
+
+
+def test_emit_top_pharmacies_parquet(seeded_cfg):
+    from openarcos_pipeline.emit import emit_top_pharmacies_parquet
+    out = emit_top_pharmacies_parquet(seeded_cfg)
+    df = pl.read_parquet(out)
+    assert set(df.columns) == {"pharmacy_id", "name", "address", "fips", "total_pills"}
+
+
+def test_emit_cdc_overdose_parquet(seeded_cfg):
+    from openarcos_pipeline.emit import emit_cdc_overdose_parquet
+    out = emit_cdc_overdose_parquet(seeded_cfg)
+    df = pl.read_parquet(out)
+    assert set(df.columns) == {"fips", "year", "deaths", "suppressed"}
+    # Suppression invariants preserved
+    for r in df.to_dicts():
+        if r["suppressed"]:
+            assert r["deaths"] is None
+
+
+def test_emit_all_produces_eight_artifacts(seeded_cfg):
+    from openarcos_pipeline.emit import emit_all
+    outs = emit_all(seeded_cfg)
+    # 5 JSON + 3 Parquet = 8 total
+    names = {p.name for p in outs}
+    assert names == {
+        "county-metadata.json",
+        "state-shipments-by-year.json",
+        "top-distributors-by-year.json",
+        "dea-enforcement-actions.json",
+        "search-index.json",
+        "county-shipments-by-year.parquet",
+        "top-pharmacies.parquet",
+        "cdc-overdose-by-county-year.parquet",
+    }
+    for p in outs:
+        assert p.stat().st_size > 0

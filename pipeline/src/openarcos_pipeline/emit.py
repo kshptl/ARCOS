@@ -172,3 +172,82 @@ def emit_search_index_json(cfg: Config) -> Path:
     _write_json(out, rows)
     log.info("emit: %s (%d rows, %d bytes)", out.name, len(rows), out.stat().st_size)
     return out
+
+
+# ---------- Parquet emitters ----------
+
+def _validate_parquet_as_json(df: pl.DataFrame, schema_name: str) -> None:
+    """Materialise parquet rows as dicts and validate against JSON Schema."""
+    # polars.Schema → JSON is straightforward because our schemas only use simple types
+    rows = df.to_dicts()
+    _validate(rows, schema_name)
+
+
+def emit_county_shipments_parquet(cfg: Config) -> Path:
+    src = cfg.agg_dir / "county_shipments_by_year.parquet"
+    df = pl.read_parquet(src)
+    # Ensure exact column set and types per schema (pills must be integer)
+    df = df.select([
+        pl.col("fips").cast(pl.Utf8),
+        pl.col("year").cast(pl.Int64),
+        pl.col("pills").cast(pl.Int64),
+        pl.col("pills_per_capita").cast(pl.Float64),
+    ])
+    _validate_parquet_as_json(df, "county-shipments-by-year")
+    out = cfg.emit_dir / "county-shipments-by-year.parquet"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.write_parquet(out, compression="zstd")
+    log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
+    return out
+
+
+def emit_top_pharmacies_parquet(cfg: Config) -> Path:
+    src = cfg.agg_dir / "top_pharmacies.parquet"
+    df = pl.read_parquet(src).select([
+        pl.col("pharmacy_id").cast(pl.Utf8),
+        pl.col("name").cast(pl.Utf8),
+        pl.col("address").cast(pl.Utf8),
+        pl.col("fips").cast(pl.Utf8),
+        pl.col("total_pills").cast(pl.Int64),
+    ])
+    _validate_parquet_as_json(df, "top-pharmacies")
+    out = cfg.emit_dir / "top-pharmacies.parquet"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.write_parquet(out, compression="zstd")
+    log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
+    return out
+
+
+def emit_cdc_overdose_parquet(cfg: Config) -> Path:
+    src = cfg.agg_dir / "cdc_overdose_by_county_year.parquet"
+    df = pl.read_parquet(src).select([
+        pl.col("fips").cast(pl.Utf8),
+        pl.col("year").cast(pl.Int64),
+        pl.col("deaths").cast(pl.Int64),
+        pl.col("suppressed").cast(pl.Boolean),
+    ])
+    _validate_parquet_as_json(df, "cdc-overdose-by-county-year")
+    out = cfg.emit_dir / "cdc-overdose-by-county-year.parquet"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.write_parquet(out, compression="zstd")
+    log.info("emit: %s (%d rows, %d bytes)", out.name, len(df), out.stat().st_size)
+    return out
+
+
+# ---------- Full runner ----------
+
+def emit_all(cfg: Config) -> list[Path]:
+    """Run every emitter in dependency order. Returns paths of all emitted files."""
+    cfg.emit_dir.mkdir(parents=True, exist_ok=True)
+    outs = [
+        emit_county_metadata_json(cfg),
+        emit_state_shipments_json(cfg),
+        emit_top_distributors_json(cfg),
+        emit_dea_enforcement_json(cfg),
+        emit_search_index_json(cfg),
+        emit_county_shipments_parquet(cfg),
+        emit_top_pharmacies_parquet(cfg),
+        emit_cdc_overdose_parquet(cfg),
+    ]
+    log.info("emit: complete, %d artifacts in %s", len(outs), cfg.emit_dir)
+    return outs
