@@ -63,10 +63,10 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       onHover: (info) => onCountyHover?.(String(info.object?.id ?? '') || null, info.object ?? null),
       onClick: (info) => onCountyClick?.(String(info.object?.id ?? '') || null, info.object ?? null),
     });
-    const layersOut: PolygonLayer[] = [new PolygonLayer(countyProps)];
+    const layersOut: PolygonLayer[] = [new PolygonLayer(countyProps as unknown as ConstructorParameters<typeof PolygonLayer>[0])];
     if (states) {
       const stateProps = buildStateLayerProps({ featureCollection: states });
-      layersOut.push(new PolygonLayer(stateProps));
+      layersOut.push(new PolygonLayer(stateProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]));
     }
     return layersOut;
   }, [counties, states, valueByFips, metric, domain, onCountyHover, onCountyClick]);
