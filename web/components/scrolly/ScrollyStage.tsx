@@ -1,9 +1,10 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import styles from './ScrollyStage.module.css';
 import { useScrollProgress } from './useScrollProgress';
+import { useReducedMotion } from './useReducedMotion';
 import { ScrollyProgressContext } from './progressContext';
+import styles from './ScrollyStage.module.css';
 
 export interface ScrollyStageProps {
   canvas: ReactNode;
@@ -14,6 +15,8 @@ export interface ScrollyStageProps {
 
 export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: ScrollyStageProps) {
   const { progress, ref } = useScrollProgress();
+  const reduced = useReducedMotion();
+  const effective = reduced ? 1 : progress;
 
   return (
     <section
@@ -21,18 +24,19 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
       role="region"
       aria-label={ariaLabel}
       className={styles.stage}
+      data-reduced={reduced ? 'true' : 'false'}
     >
-      <ScrollyProgressContext.Provider value={progress}>
-        <div className={styles.sticky} aria-hidden="true">
+      <ScrollyProgressContext.Provider value={effective}>
+        <div className={styles.sticky} aria-hidden={reduced ? 'false' : 'true'}>
           {canvas}
         </div>
         <div className={styles.steps}>{children}</div>
-        {dataSummary && (
+        {dataSummary ? (
           <details className={styles.details}>
             <summary>Show data</summary>
             {dataSummary}
           </details>
-        )}
+        ) : null}
       </ScrollyProgressContext.Provider>
     </section>
   );
