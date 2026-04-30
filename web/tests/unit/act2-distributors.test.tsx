@@ -126,9 +126,7 @@ describe("Act2Distributors", () => {
       return /^[\d.]+%$/.test(content) && t.getAttribute("text-anchor") === "end";
     });
     expect(yTickLabels.length).toBeGreaterThan(0);
-    const yTickRightMax = Math.max(
-      ...yTickLabels.map((t) => Number(t.getAttribute("x") ?? "0")),
-    );
+    const yTickRightMax = Math.max(...yTickLabels.map((t) => Number(t.getAttribute("x") ?? "0")));
     // Any start-anchored series label (value or distributor name) must sit
     // at least 8px to the right of the y-axis tick column.
     const startLabels = Array.from(svg!.querySelectorAll("text")).filter(
@@ -138,5 +136,19 @@ describe("Act2Distributors", () => {
       const x = Number(l.getAttribute("x") ?? "0");
       expect(x).toBeGreaterThanOrEqual(yTickRightMax + 8);
     }
+  });
+
+  it("uses an enlarged chart viewBox (>= 640 x >= 400)", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act2Distributors data={DATA} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    const viewBox = svg!.getAttribute("viewBox") ?? "0 0 0 0";
+    const [, , wStr, hStr] = viewBox.split(" ");
+    expect(Number(wStr)).toBeGreaterThanOrEqual(640);
+    expect(Number(hStr)).toBeGreaterThanOrEqual(400);
   });
 });
