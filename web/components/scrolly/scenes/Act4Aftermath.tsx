@@ -85,7 +85,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
     1,
     ...counties.flatMap((c) => (c.deaths.length > 0 ? [Math.max(...c.deaths)] : [])),
   );
-  const maxLen = Math.max(0, ...counties.map((c) => c.deaths.length));
   // The underlying CDC death series runs 2003–2022; the first year in the
   // array is the earliest year present. We don't have year metadata per
   // county here, so we only show the peak-year offset ("yr +N") as a hint.
@@ -160,13 +159,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
             );
           })}
         </div>
-
-        {maxLen > 1 && (
-          <p className={styles.subCaption}>
-            All six sparklines share the same y-scale (max {formatFull(globalMax)}); counties with
-            flatter lines shipped fewer pills per capita or had suppressed death counts.
-          </p>
-        )}
       </div>
     </div>
   );

@@ -70,4 +70,16 @@ describe("Act4Aftermath", () => {
     );
     expect(screen.getAllByTestId("spark-peak").length).toBe(6);
   });
+
+  it("does not render sparkline / flatter-lines explanatory caption", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    expect(screen.queryByText(/flatter lines/i)).toBeNull();
+    expect(screen.queryByText(/sparklines/i)).toBeNull();
+    expect(screen.queryByText(/same y-scale/i)).toBeNull();
+    expect(screen.queryByText(/suppressed death counts/i)).toBeNull();
+  });
 });
