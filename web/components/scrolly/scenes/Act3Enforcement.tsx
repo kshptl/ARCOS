@@ -12,10 +12,11 @@ export interface Act3EnforcementProps {
 
 const VIEW_W = 520;
 const VIEW_H = 300;
-const PAD_LEFT = 52;
+const PAD_LEFT = 64;
 const PAD_RIGHT = 24;
 const PAD_TOP = 60;
 const PAD_BOTTOM = 52;
+const AXIS_LABEL_OFFSET = 14;
 
 const FULL_YEAR_RANGE: number[] = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const INFLECTION_START = 2012;
@@ -95,7 +96,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                   strokeDasharray={t === 0 ? "" : "2 3"}
                   strokeWidth={t === 0 ? 1 : 0.6}
                 />
-                <text className={styles.axisLabel} x={PAD_LEFT - 6} y={y + 3} textAnchor="end">
+                <text className={styles.axisLabel} x={PAD_LEFT - AXIS_LABEL_OFFSET} y={y + 3} textAnchor="end">
                   {formatTickValue(t, "integer")}
                 </text>
               </g>

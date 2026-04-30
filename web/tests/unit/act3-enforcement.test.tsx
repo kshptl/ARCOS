@@ -49,4 +49,39 @@ describe("Act3Enforcement", () => {
     );
     expect(screen.getByTestId("act3-table")).toBeInTheDocument();
   });
+
+  it("places leftmost bar clear of y-axis tick labels (>=12px gap)", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    // y-axis tick text elements are anchored at the end of the gridline (i.e.
+    // their x attribute sits at the rightmost edge of the label column).
+    const tickTexts = Array.from(svg!.querySelectorAll("text")).filter(
+      (t) => t.getAttribute("text-anchor") === "end",
+    );
+    expect(tickTexts.length).toBeGreaterThan(0);
+    const rightmostTickX = Math.max(
+      ...tickTexts.map((t) => Number(t.getAttribute("x") ?? 0)),
+    );
+    // Check both bar rects AND placeholder line ticks — the 2006 year has no
+    // data in the fixture and renders as a <line> at x = PAD_LEFT.
+    const tickEls = Array.from(
+      svg!.querySelectorAll('[data-testid="timeline-tick"]'),
+    );
+    expect(tickEls.length).toBeGreaterThan(0);
+    const leftmostTickX = Math.min(
+      ...tickEls.map((el) => {
+        if (el.tagName.toLowerCase() === "rect") {
+          return Number(el.getAttribute("x") ?? 0);
+        }
+        // line: use x1 (== x2 for vertical placeholder)
+        return Number(el.getAttribute("x1") ?? 0);
+      }),
+    );
+    expect(leftmostTickX - rightmostTickX).toBeGreaterThanOrEqual(12);
+  });
 });
