@@ -1,0 +1,82 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - "pipeline/**"
+      - ".github/workflows/ci.yml"
+      - "Makefile"
+  push:
+    branches: [main]
+    paths:
+      - "pipeline/**"
+      - ".github/workflows/ci.yml"
+      - "Makefile"
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pipeline:
+    name: pipeline (lint + test)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up uv + Python 3.12
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: "pipeline/uv.lock"
+
+      - name: Install dependencies
+        run: uv sync --frozen --extra dev
+
+      - name: Lint
+        run: uv run ruff check src tests
+
+      - name: Format check
+        run: uv run ruff format --check src tests
+
+      - name: Test
+        env:
+          OPENARCOS_ENV: ci
+        run: uv run pytest -q --cov=openarcos_pipeline --cov-report=term-missing
+
+  schema-gate:
+    name: schema gate (web/public/data)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up uv + Python 3.12
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: "pipeline/uv.lock"
+
+      - name: Install pipeline deps (for jsonschema + polars)
+        working-directory: pipeline
+        run: uv sync --frozen --extra dev
+
+      - name: Check for data files
+        id: data
+        run: |
+          if compgen -G "web/public/data/*.json" > /dev/null || compgen -G "web/public/data/*.parquet" > /dev/null; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate emitted data against schemas
+        if: steps.data.outputs.present == 'true'
+        working-directory: pipeline
+        run: uv run python scripts/validate_web_data.py
