@@ -24,7 +24,7 @@ const METRIC_LABELS: Record<MapMetric, string> = {
 
 export function Filters({ year, metric, years, onChange }: FiltersProps) {
   return (
-    <div className={styles.root} role="group" aria-label="Filters">
+    <fieldset className={styles.root} aria-label="Filters">
       <label className={styles.field}>
         <span className={styles.label}>Year</span>
         <select
@@ -55,6 +55,6 @@ export function Filters({ year, metric, years, onChange }: FiltersProps) {
           ))}
         </select>
       </label>
-    </div>
+    </fieldset>
   );
 }

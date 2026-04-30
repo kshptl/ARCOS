@@ -80,7 +80,7 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
   const label = ariaLabel ?? `County map of ${metric}${year ? `, ${year}` : ""}`;
 
   return (
-    <figure role="figure" aria-label={label} className={styles.root} style={{ width, height }}>
+    <figure aria-label={label} className={styles.root} style={{ width, height }}>
       <DeckGL
         initialViewState={initialViewState}
         controller={true}

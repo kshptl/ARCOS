@@ -8,7 +8,7 @@ export interface WebGLFallbackProps {
 
 export function WebGLFallback({ counties, reason }: WebGLFallbackProps) {
   return (
-    <figure role="figure" aria-label="Static county list fallback" className={styles.root}>
+    <figure aria-label="Static county list fallback" className={styles.root}>
       <div role="alert" className={styles.notice}>
         {reason} Use the keyboard-navigable list below or enable WebGL for the full map.
       </div>

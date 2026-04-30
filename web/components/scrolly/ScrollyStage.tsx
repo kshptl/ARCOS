@@ -21,7 +21,6 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
   return (
     <section
       ref={ref as unknown as React.Ref<HTMLElement>}
-      role="region"
       aria-label={ariaLabel}
       className={styles.stage}
       data-reduced={reduced ? "true" : "false"}

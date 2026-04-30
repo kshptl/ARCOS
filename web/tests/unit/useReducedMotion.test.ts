@@ -19,7 +19,9 @@ function installMatchMedia(initial: boolean) {
     mq,
     fire(matches: boolean) {
       mq.matches = matches;
-      listeners.forEach((cb) => cb({ matches }));
+      listeners.forEach((cb) => {
+        cb({ matches });
+      });
     },
   };
 }
