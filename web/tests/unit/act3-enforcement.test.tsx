@@ -20,13 +20,16 @@ const ACTIONS = [
 ];
 
 describe("Act3Enforcement", () => {
-  it("renders timeline ticks for each year", () => {
+  it("renders timeline ticks across a continuous 2006–2014 year axis", () => {
     render(
       <ScrollyProgressContext.Provider value={0.5}>
         <Act3Enforcement actions={ACTIONS} />
       </ScrollyProgressContext.Provider>,
     );
-    expect(screen.getAllByTestId("timeline-tick")).toHaveLength(5);
+    // Act 3 now renders a dense year axis (2006–2014 = 9 years) with a
+    // bar-or-placeholder per year, not just per supplied data point.
+    const ticks = screen.getAllByTestId("timeline-tick");
+    expect(ticks.length).toBeGreaterThanOrEqual(9);
   });
 
   it("highlights 2012-14 inflection when progress > 0.5", () => {
