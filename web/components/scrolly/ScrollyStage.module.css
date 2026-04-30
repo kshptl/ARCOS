@@ -1,0 +1,54 @@
+.stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(24ch, 40ch);
+  gap: var(--space-lg);
+  min-height: 350vh;
+  padding: var(--space-lg) 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 10vh;
+  height: 80vh;
+  align-self: start;
+  background: var(--canvas-shade);
+  border: 1px solid var(--rule);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40vh;
+  padding-top: 20vh;
+  padding-bottom: 40vh;
+}
+
+.details {
+  grid-column: 1 / -1;
+  margin-top: var(--space-lg);
+  font-family: var(--font-body);
+  color: var(--text-muted);
+}
+
+.details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  padding: var(--space-xs) 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky { position: relative; top: auto; height: auto; min-height: 60vh; }
+  .stage { min-height: auto; }
+  .steps { gap: var(--space-xl); padding: var(--space-md) 0; }
+}
+
+@media (max-width: 720px) {
+  .stage { grid-template-columns: 1fr; }
+  .sticky { position: relative; top: auto; height: 50vh; }
+  .steps { gap: var(--space-xl); padding: var(--space-md) 0; }
+}
