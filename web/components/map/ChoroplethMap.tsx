@@ -68,12 +68,10 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       // Only wire picking handlers when the parent actually listens, so
       // countyLayer can keep pickable=false and skip gl.readPixels.
       onHover: onCountyHover
-        ? (info) =>
-            onCountyHover(String(info.object?.id ?? "") || null, info.object ?? null)
+        ? (info) => onCountyHover(String(info.object?.id ?? "") || null, info.object ?? null)
         : undefined,
       onClick: onCountyClick
-        ? (info) =>
-            onCountyClick(String(info.object?.id ?? "") || null, info.object ?? null)
+        ? (info) => onCountyClick(String(info.object?.id ?? "") || null, info.object ?? null)
         : undefined,
     });
     const layersOut: PolygonLayer[] = [
