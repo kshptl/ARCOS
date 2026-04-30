@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/county-distributors.schema.json",
+  "title": "Per-county top distributors (keyed by 5-digit FIPS)",
+  "description": "For each county, up to 10 distributors ranked by total pills shipped into that county across all years. Aggregated from wapo_distributors_by_county in sql/county_top_distributors.sql.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": ["distributor", "pills", "share_pct"],
+      "additionalProperties": false,
+      "properties": {
+        "distributor": {"type": "string", "minLength": 1},
+        "pills": {"type": "integer", "minimum": 0},
+        "share_pct": {"type": "number", "minimum": 0, "maximum": 100}
+      }
+    }
+  }
+}

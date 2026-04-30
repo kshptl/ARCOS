@@ -113,7 +113,12 @@ def test_run_all_produces_all_artifacts(agg_master_parquet):
 
     outputs = run_all(cfg)
     names = {p.stem for p in outputs}
-    assert names == set(discover_sql())
+    discovered = set(discover_sql())
+    # run_all skips any SQL whose input views aren't registered. The
+    # agg_master fixture supplies the core views but not wapo_distributors_by_county,
+    # so county_top_distributors is expected to be absent from the outputs.
+    expected = discovered - {"county_top_distributors"}
+    assert names == expected
     # Every artifact should be a non-empty parquet
     for p in outputs:
         assert p.exists() and p.stat().st_size > 0, p

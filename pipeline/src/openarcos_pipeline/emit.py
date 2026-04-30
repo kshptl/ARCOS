@@ -113,6 +113,37 @@ def emit_top_distributors_json(cfg: Config) -> Path:
     return out
 
 
+def emit_county_distributors_json(cfg: Config) -> Path | None:
+    """Emit county-distributors.json keyed by FIPS.
+
+    Reads the aggregate produced by sql/county_top_distributors.sql. If that
+    aggregate doesn't exist (pipeline not run with the per-county breakdown
+    source present — e.g. synthetic fixtures without distributors_*.json
+    for a given county), returns None without writing the file. The web
+    loader already handles a missing file gracefully.
+    """
+    src = cfg.agg_dir / "county_top_distributors.parquet"
+    if not src.exists():
+        log.info("emit: county-distributors.json skipped (%s missing)", src.name)
+        return None
+    df = pl.read_parquet(src)
+    by_fips: dict[str, list[dict[str, object]]] = {}
+    for r in df.iter_rows(named=True):
+        fips = str(r["fips"])
+        by_fips.setdefault(fips, []).append(
+            {
+                "distributor": r["distributor"],
+                "pills": int(r["pills"]),
+                "share_pct": float(r["share_pct"] or 0),
+            }
+        )
+    _validate(by_fips, "county-distributors")
+    out = cfg.emit_dir / "county-distributors.json"
+    _write_json(out, by_fips)
+    log.info("emit: %s (%d counties)", out.name, len(by_fips))
+    return out
+
+
 def emit_dea_enforcement_json(cfg: Config) -> Path:
     df = pl.read_parquet(cfg.agg_dir / "dea_enforcement.parquet")
     rows = []
@@ -249,7 +280,7 @@ def emit_cdc_overdose_parquet(cfg: Config) -> Path:
 def emit_all(cfg: Config) -> list[Path]:
     """Run every emitter in dependency order. Returns paths of all emitted files."""
     cfg.emit_dir.mkdir(parents=True, exist_ok=True)
-    outs = [
+    outs: list[Path] = [
         emit_county_metadata_json(cfg),
         emit_state_shipments_json(cfg),
         emit_top_distributors_json(cfg),
@@ -259,5 +290,10 @@ def emit_all(cfg: Config) -> list[Path]:
         emit_top_pharmacies_parquet(cfg),
         emit_cdc_overdose_parquet(cfg),
     ]
+    # county-distributors is optional — skipped when the per-county aggregate
+    # isn't present (tests with minimal fixtures, for example).
+    county_dist = emit_county_distributors_json(cfg)
+    if county_dist is not None:
+        outs.append(county_dist)
     log.info("emit: complete, %d artifacts in %s", len(outs), cfg.emit_dir)
     return outs

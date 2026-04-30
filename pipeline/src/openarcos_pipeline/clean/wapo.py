@@ -50,7 +50,12 @@ def clean_county_raw(rows: list[dict[str, Any]], state: str, county_fips: str) -
 
 
 def clean_distributors(rows: list[dict[str, Any]]) -> pl.DataFrame:
-    """Raw distributor rows → `{distributor, year, pills}` DataFrame."""
+    """Raw distributor rows → `{distributor, year, pills}` DataFrame.
+
+    This is the national-aggregate view used for /rankings. For per-county
+    distributor breakdowns (feeding /county/[fips] pages), see
+    `clean_distributors_by_county` which preserves the countyfips column.
+    """
     if not rows:
         return pl.DataFrame(schema={"distributor": pl.Utf8, "year": pl.Int64, "pills": pl.Int64})
     df = _lower_columns(pl.DataFrame(rows))
@@ -73,6 +78,53 @@ def clean_distributors(rows: list[dict[str, Any]]) -> pl.DataFrame:
         grouped.select(["distributor", "year", "pills"])
         .with_columns(pl.col("year").cast(pl.Int64))
         .sort(["year", "distributor"])
+    )
+
+
+def clean_distributors_by_county(rows: list[dict[str, Any]]) -> pl.DataFrame:
+    """Raw distributor rows → `{fips, distributor, year, pills}` DataFrame.
+
+    Identical to :func:`clean_distributors` except the countyfips column is
+    preserved and the group-by includes it. Used by the county_top_distributors
+    aggregate + county-distributors emitter so each /county/[fips] page can
+    list "top distributors into this county" alongside the national ranking.
+    Rows without a countyfips are dropped (can't attribute them to a page).
+    """
+    empty = pl.DataFrame(
+        schema={
+            "fips": pl.Utf8,
+            "distributor": pl.Utf8,
+            "year": pl.Int64,
+            "pills": pl.Int64,
+        }
+    )
+    if not rows:
+        return empty
+    df = _lower_columns(pl.DataFrame(rows))
+    if "countyfips" not in df.columns:
+        return empty
+    if "reporter_family" in df.columns and "distributor" not in df.columns:
+        df = df.rename({"reporter_family": "distributor"})
+    elif "reporter" in df.columns and "distributor" not in df.columns:
+        df = df.rename({"reporter": "distributor"})
+    if "year" not in df.columns and "transaction_date" in df.columns:
+        df = df.with_columns(
+            pl.col("transaction_date").str.slice(0, 4).cast(pl.Int64).alias("year")
+        )
+    df = df.with_columns(pl.col("countyfips").cast(pl.Utf8).alias("fips")).filter(
+        pl.col("fips").is_not_null()
+    )
+    pill_col = "dosage_unit" if "dosage_unit" in df.columns else None
+    if pill_col is None:
+        grouped = df.group_by(["fips", "distributor", "year"]).agg(pl.len().alias("pills"))
+    else:
+        grouped = df.group_by(["fips", "distributor", "year"]).agg(
+            pl.col(pill_col).sum().cast(pl.Int64).alias("pills")
+        )
+    return (
+        grouped.select(["fips", "distributor", "year", "pills"])
+        .with_columns(pl.col("year").cast(pl.Int64))
+        .sort(["fips", "year", "distributor"])
     )
 
 

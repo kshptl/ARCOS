@@ -53,6 +53,7 @@ def _run_clean(cfg) -> None:
     from openarcos_pipeline.clean.wapo import (
         clean_county_raw,
         clean_distributors,
+        clean_distributors_by_county,
         clean_pharmacies,
     )
 
@@ -95,6 +96,7 @@ def _run_clean(cfg) -> None:
     if wapo_raw.is_dir():
         county_frames: list[pl.DataFrame] = []
         dist_frames: list[pl.DataFrame] = []
+        dist_by_county_frames: list[pl.DataFrame] = []
         pharm_frames: list[pl.DataFrame] = []
         for f in sorted(wapo_raw.glob("*.json")):
             stem = f.stem
@@ -117,6 +119,7 @@ def _run_clean(cfg) -> None:
                 county_frames.append(clean_county_raw(data, state=state, county_fips=fips))
             elif stem.startswith("distributors_"):
                 dist_frames.append(clean_distributors(data))
+                dist_by_county_frames.append(clean_distributors_by_county(data))
             elif stem.startswith("pharmacies_"):
                 fips = "00000"
                 if isinstance(data, list) and data:
@@ -130,6 +133,10 @@ def _run_clean(cfg) -> None:
         if dist_frames:
             pl.concat(dist_frames, how="vertical_relaxed").write_parquet(
                 cfg.clean_dir / "wapo_distributors.parquet"
+            )
+        if dist_by_county_frames:
+            pl.concat(dist_by_county_frames, how="vertical_relaxed").write_parquet(
+                cfg.clean_dir / "wapo_distributors_by_county.parquet"
             )
         if pharm_frames:
             pl.concat(pharm_frames, how="vertical_relaxed").write_parquet(
