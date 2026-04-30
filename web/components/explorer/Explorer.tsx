@@ -42,8 +42,15 @@ export function Explorer({ counties }: ExplorerProps) {
   useEffect(() => {
     const el = mapAreaRef.current;
     if (!el) return;
+    let lastApplied = -1;
     const update = (rawWidth: number) => {
       const clamped = Math.max(MAP_MIN_WIDTH, Math.min(MAP_MAX_WIDTH, rawWidth));
+      // Guard against no-op updates. ResizeObserver can fire on every layout
+      // pass (including ones triggered by our own render), so without this
+      // guard each observed entry schedules a React render that schedules
+      // another layout pass — cheap but avoidable work during slider drags.
+      if (clamped === lastApplied) return;
+      lastApplied = clamped;
       setMapWidth(clamped);
     };
     // Initial measure.
