@@ -33,7 +33,9 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
             fetch_all_states(cdc, cfg)
         log.info("cdc fetch complete")
     if source in ("all", "dea"):
-        log.info("dea fetch: not yet implemented (see Task 32)")
+        from openarcos_pipeline.sources.dea_summaries import fetch_reports
+        fetch_reports(cfg)
+        log.info("dea fetch complete")
 
 
 @app.command()
