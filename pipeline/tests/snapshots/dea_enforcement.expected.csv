@@ -1,0 +1,15 @@
+year,action_count,notable_actions
+2011,1203,"shape: (1,)
+Series: '' [struct[3]]
+[
+	{""United States v. Cardinal Health"",""https://example.org/1"",null}
+]"
+2012,1428,"shape: (1,)
+Series: '' [struct[3]]
+[
+	{""Operation Pill Nation"",""https://example.org/2"",null}
+]"
+2013,1109,"shape: (0,)
+Series: '' [struct[3]]
+[
+]"

@@ -75,3 +75,17 @@ def test_cdc_overdose_preserves_suppressed(agg_master_parquet):
         else:
             assert isinstance(r["deaths"], int) and r["deaths"] >= 10, f"bad unsuppressed row: {r}"
     _assert_snapshot(df, SNAPSHOTS / "cdc_overdose_by_county_year.expected.csv")
+
+
+def test_dea_enforcement_passthrough(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "dea_enforcement")
+    df = pl.read_parquet(out).sort("year")
+    # notable_actions is a list of structs — normalize to JSON strings for snapshotting
+    df2 = df.with_columns(
+        pl.col("notable_actions").map_elements(
+            lambda v: str(v) if v is not None else "[]",
+            return_dtype=pl.Utf8,
+        ).alias("notable_actions")
+    )
+    _assert_snapshot(df2, SNAPSHOTS / "dea_enforcement.expected.csv")
