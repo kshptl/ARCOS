@@ -93,27 +93,62 @@ function pickAct1(state: StateShip[]): {
   return { totalPills: total, yearly };
 }
 
-function pickAct2(top: TopDist[]): {
-  rows: { distributor: string; start: number; end: number; emphasized: boolean }[];
-} {
-  if (top.length === 0) return { rows: [] };
-  const years = top.map((r) => r.year).sort((a, b) => a - b);
-  const startYear = years[0];
-  const endYear = years[years.length - 1];
-  if (startYear === undefined || endYear === undefined) return { rows: [] };
-  const dists = new Set(top.map((r) => r.distributor));
-  const rows = Array.from(dists).map((distributor) => {
-    const start =
-      top.find((r) => r.distributor === distributor && r.year === startYear)?.share_pct ?? 0;
-    const end =
-      top.find((r) => r.distributor === distributor && r.year === endYear)?.share_pct ?? 0;
-    return { distributor, start, end, emphasized: false };
-  });
-  rows.sort((a, b) => b.end - a.end);
-  rows.slice(0, 3).forEach((r) => {
-    r.emphasized = true;
-  });
-  return { rows };
+export type Act2Series = {
+  distributor: string;
+  sharesByYear: number[];
+  emphasized: boolean;
+};
+
+export type Act2Output = {
+  years: number[];
+  series: Act2Series[];
+  otherAggregate: { sharesByYear: number[] };
+};
+
+/**
+ * Pivot per-year distributor shares into a multi-year chart shape.
+ *
+ * Strategy:
+ *   - Extract a sorted list of every year seen in the input.
+ *   - Build per-distributor shares indexed by that year list (missing → 0).
+ *   - Pick the top-3 distributors by LAST year's share as the emphasized series.
+ *   - Aggregate every non-emphasized distributor into `otherAggregate`
+ *     (sum of remaining shares at each year — typically the long tail).
+ */
+export function buildAct2(top: TopDist[]): Act2Output {
+  if (top.length === 0) {
+    return { years: [], series: [], otherAggregate: { sharesByYear: [] } };
+  }
+  const years = Array.from(new Set(top.map((r) => r.year))).sort((a, b) => a - b);
+  const distNames = Array.from(new Set(top.map((r) => r.distributor)));
+  // Build: distributor → (year → share_pct)
+  const shareLookup = new Map<string, Map<number, number>>();
+  for (const r of top) {
+    const m = shareLookup.get(r.distributor) ?? new Map<number, number>();
+    m.set(r.year, r.share_pct);
+    shareLookup.set(r.distributor, m);
+  }
+  const sharesByDistributor: { distributor: string; sharesByYear: number[] }[] = distNames.map(
+    (distributor) => {
+      const m = shareLookup.get(distributor) ?? new Map<number, number>();
+      return { distributor, sharesByYear: years.map((y) => m.get(y) ?? 0) };
+    },
+  );
+  const lastIdx = years.length - 1;
+  const ranked = [...sharesByDistributor].sort(
+    (a, b) => (b.sharesByYear[lastIdx] ?? 0) - (a.sharesByYear[lastIdx] ?? 0),
+  );
+  const topThree = ranked.slice(0, 3);
+  const rest = ranked.slice(3);
+  const series: Act2Series[] = topThree.map((s) => ({
+    distributor: s.distributor,
+    sharesByYear: s.sharesByYear,
+    emphasized: true,
+  }));
+  const otherShares = years.map((_, i) =>
+    rest.reduce((sum, s) => sum + (s.sharesByYear[i] ?? 0), 0),
+  );
+  return { years, series, otherAggregate: { sharesByYear: otherShares } };
 }
 
 function pickAct3(actions: DEA[]): { actions: DEA[] } {
@@ -182,7 +217,7 @@ async function main() {
 
   const out = {
     act1: pickAct1(state),
-    act2: pickAct2(top),
+    act2: buildAct2(top),
     act3: pickAct3(dea),
     act4: buildAct4(meta, cdc),
   };

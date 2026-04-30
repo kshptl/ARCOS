@@ -67,7 +67,7 @@ export default async function HomePage() {
 
       <ScrollyErrorBoundary label="act-2">
         <ScrollyStage
-          canvas={<Act2Distributors rows={data.act2.rows} />}
+          canvas={<Act2Distributors data={data.act2} />}
           ariaLabel="Act 2: three distributors handled more than 80 percent of shipments across the period."
         >
           <Step id="act2">

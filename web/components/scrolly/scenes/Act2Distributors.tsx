@@ -1,27 +1,21 @@
 "use client";
 
+import type { Act2Data } from "@/lib/data/loadScrollyData";
 import { formatPercent } from "@/lib/format/percent";
 import { useScrollyProgress } from "../progressContext";
 import { formatTickValue, niceTicks } from "./axes";
 import styles from "./scenes.module.css";
 
-export interface DistributorSlopeRow {
-  distributor: string;
-  start: number;
-  end: number;
-  emphasized: boolean;
-}
-
 export interface Act2DistributorsProps {
-  rows: DistributorSlopeRow[];
+  data: Act2Data;
 }
 
-const VIEW_W = 520;
-const VIEW_H = 320;
-const PAD_LEFT = 56;
-const PAD_RIGHT = 170;
-const PAD_TOP = 48;
-const PAD_BOTTOM = 48;
+const VIEW_W = 720;
+const VIEW_H = 440;
+const PAD_LEFT = 64;
+const PAD_RIGHT = 200;
+const PAD_TOP = 40;
+const PAD_BOTTOM = 56;
 
 /**
  * Shorten long distributor names for the right-side callout label without
@@ -33,36 +27,42 @@ function shortenName(name: string): string {
     .replace(/\b(corporation|corp|company|co|inc|incorporated|drug|wholesale)\b\.?/g, "")
     .replace(/\s+/g, " ")
     .trim();
-  // Title-case each word
   return lower.replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-export function Act2Distributors({ rows }: Act2DistributorsProps) {
+export function Act2Distributors({ data }: Act2DistributorsProps) {
   const progress = useScrollyProgress();
-  const allValues = rows.flatMap((r) => [r.start, r.end]);
+  const { years, series, otherAggregate } = data;
+
+  const allValues = [...series.flatMap((s) => s.sharesByYear), ...otherAggregate.sharesByYear];
   const dataMax = Math.max(...allValues, 1);
   const yTicks = niceTicks(0, dataMax, 4);
   const yMax = yTicks[yTicks.length - 1] ?? dataMax;
-
-  const sortedByRank = [...rows].sort((a, b) => b.end - a.end);
-  const visibleCount = Math.max(1, Math.ceil(sortedByRank.length * progress));
 
   const plotW = VIEW_W - PAD_LEFT - PAD_RIGHT;
   const plotH = VIEW_H - PAD_TOP - PAD_BOTTOM;
   const xLeft = PAD_LEFT;
   const xRight = PAD_LEFT + plotW;
+  const xScale = (i: number) =>
+    years.length <= 1 ? xLeft : xLeft + (i / (years.length - 1)) * plotW;
   const yScale = (v: number) => PAD_TOP + plotH - (v / yMax) * plotH;
+
+  // Progressive reveal: at progress=0 show the first year only, at progress=1
+  // show all years. Always show ≥ 2 points for line continuity where possible.
+  const revealIdx = Math.max(1, Math.ceil(years.length * Math.max(0.1, progress)));
+  const visibleYears = years.slice(0, revealIdx);
+
+  const pointsFor = (sharesByYear: number[]) =>
+    visibleYears.map((_, i) => `${xScale(i)},${yScale(sharesByYear[i] ?? 0)}`).join(" ");
 
   return (
     <div className={styles.act}>
       <div className={styles.actInner}>
-        <div className={styles.titleBand}>Oxy + hydro market share, 2006 → 2014</div>
-
         <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className={styles.chart} aria-hidden="true">
           {/* y-axis title */}
           <text
             className={styles.axisTitle}
-            transform={`translate(12 ${PAD_TOP + plotH / 2}) rotate(-90)`}
+            transform={`translate(16 ${PAD_TOP + plotH / 2}) rotate(-90)`}
             textAnchor="middle"
           >
             Share of pills shipped
@@ -82,14 +82,19 @@ export function Act2Distributors({ rows }: Act2DistributorsProps) {
                   strokeDasharray={t === 0 ? "" : "2 3"}
                   strokeWidth={t === 0 ? 1 : 0.6}
                 />
-                <text className={styles.axisLabel} x={xLeft - 6} y={y + 3} textAnchor="end">
+                <text
+                  className={`${styles.axisLabel} ${styles.act2YTick}`}
+                  x={xLeft - 10}
+                  y={y + 3}
+                  textAnchor="end"
+                >
                   {formatTickValue(t, "percent")}
                 </text>
               </g>
             );
           })}
 
-          {/* vertical anchors for 2006 / 2014 */}
+          {/* left y-axis rule */}
           <line
             x1={xLeft}
             x2={xLeft}
@@ -98,105 +103,115 @@ export function Act2Distributors({ rows }: Act2DistributorsProps) {
             stroke="var(--ink)"
             strokeWidth={1}
           />
-          <line
-            x1={xRight}
-            x2={xRight}
-            y1={PAD_TOP}
-            y2={PAD_TOP + plotH}
-            stroke="var(--ink)"
-            strokeWidth={1}
-          />
 
-          {/* x-axis labels */}
-          <text className={styles.axisTitle} x={xLeft} y={PAD_TOP + plotH + 22} textAnchor="middle">
-            2006 share
-          </text>
+          {/* x-axis tick labels (one per year) */}
+          {years.map((year, i) => (
+            <text
+              key={year}
+              className={styles.axisLabel}
+              x={xScale(i)}
+              y={PAD_TOP + plotH + 18}
+              textAnchor="middle"
+            >
+              {year}
+            </text>
+          ))}
           <text
             className={styles.axisTitle}
-            x={xRight}
-            y={PAD_TOP + plotH + 22}
+            x={xLeft + plotW / 2}
+            y={PAD_TOP + plotH + 40}
             textAnchor="middle"
           >
-            2014 share
+            Year
           </text>
 
-          {/* Render in sortedByRank order so that top-3 emphasized lines
-              (highest end share) appear first in the DOM. Non-emphasized
-              rows are drawn muted to recede visually. */}
-          {sortedByRank.slice(0, visibleCount).map((r) => {
-            const y1 = yScale(r.start);
-            const y2 = yScale(r.end);
-            if (!r.emphasized) {
-              return (
-                <g key={r.distributor}>
-                  <line
-                    data-testid="slope-line"
-                    x1={xLeft}
-                    y1={y1}
-                    x2={xRight}
-                    y2={y2}
-                    stroke="var(--text-muted)"
-                    strokeWidth={1}
-                    opacity={0.35}
-                  />
-                  <circle cx={xLeft} cy={y1} r={2} fill="var(--text-muted)" opacity={0.4} />
-                  <circle cx={xRight} cy={y2} r={2} fill="var(--text-muted)" opacity={0.4} />
-                </g>
-              );
-            }
+          {/* Other aggregate line (drawn first so it sits behind emphasized). */}
+          {otherAggregate.sharesByYear.length > 0 && (
+            <g>
+              <polyline
+                data-testid="act2-other"
+                id="act2-other"
+                points={pointsFor(otherAggregate.sharesByYear)}
+                fill="none"
+                stroke="var(--text-muted)"
+                strokeWidth={1.5}
+                opacity={0.4}
+              />
+              {visibleYears.length > 0 && (
+                <text
+                  className={styles.act2OtherLabel}
+                  x={xScale(visibleYears.length - 1) + 10}
+                  y={yScale(otherAggregate.sharesByYear[visibleYears.length - 1] ?? 0) + 4}
+                  textAnchor="start"
+                >
+                  Other
+                </text>
+              )}
+            </g>
+          )}
+
+          {/* Top-3 emphasized series: polyline + per-year dots + right-side label. */}
+          {series.map((s) => {
+            const lastShare = s.sharesByYear[visibleYears.length - 1] ?? 0;
+            const labelX = xScale(visibleYears.length - 1) + 10;
+            const labelY = yScale(lastShare);
             return (
-              <g key={r.distributor}>
-                <line
-                  data-testid="slope-line"
-                  x1={xLeft}
-                  y1={y1}
-                  x2={xRight}
-                  y2={y2}
+              <g key={s.distributor}>
+                <polyline
+                  data-testid="act2-series-line"
+                  points={pointsFor(s.sharesByYear)}
+                  fill="none"
                   stroke="var(--accent-hot)"
                   strokeWidth={2.5}
                 />
-                <circle cx={xLeft} cy={y1} r={3.5} fill="var(--accent-hot)" />
-                <circle cx={xRight} cy={y2} r={3.5} fill="var(--accent-hot)" />
-                {/* Left value label */}
-                <text className={styles.slopeValue} x={xLeft - 6} y={y1 - 6} textAnchor="end">
-                  {formatPercent(r.start)}
+                {visibleYears.map((year, i) => (
+                  <circle
+                    key={year}
+                    data-testid="act2-series-dot"
+                    cx={xScale(i)}
+                    cy={yScale(s.sharesByYear[i] ?? 0)}
+                    r={3}
+                    fill="var(--accent-hot)"
+                  />
+                ))}
+                {/* End-of-line value + name label */}
+                <text className={styles.slopeValue} x={labelX} y={labelY - 4} textAnchor="start">
+                  {formatPercent(lastShare)}
                 </text>
-                {/* Right value label */}
-                <text className={styles.slopeValue} x={xRight + 8} y={y2 - 4} textAnchor="start">
-                  {formatPercent(r.end)}
-                </text>
-                {/* Right company label */}
-                <text className={styles.slopeLabel} x={xRight + 8} y={y2 + 10} textAnchor="start">
-                  {shortenName(r.distributor)}
+                <text className={styles.slopeLabel} x={labelX} y={labelY + 12} textAnchor="start">
+                  {shortenName(s.distributor)}
                 </text>
               </g>
             );
           })}
         </svg>
-
-        <p className={styles.subCaption}>
-          Three distributors — McKesson, Cardinal Health, and AmerisourceBergen — shipped the bulk
-          of opioid pain pills.
-        </p>
       </div>
 
       <table data-testid="act2-table" className={styles.dataTable}>
-        <caption>Act 2 — top distributors market share 2006 → 2014</caption>
+        <caption>Act 2 — top distributors market share by year</caption>
         <thead>
           <tr>
             <th>Distributor</th>
-            <th>2006</th>
-            <th>2014</th>
+            {years.map((y) => (
+              <th key={y}>{y}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
-          {rows.map((r) => (
-            <tr key={r.distributor}>
-              <td>{r.distributor}</td>
-              <td>{formatPercent(r.start)}</td>
-              <td>{formatPercent(r.end)}</td>
+          {series.map((s) => (
+            <tr key={s.distributor}>
+              <td>{s.distributor}</td>
+              {s.sharesByYear.map((v, i) => (
+                <td key={years[i] ?? i}>{formatPercent(v)}</td>
+              ))}
             </tr>
           ))}
+          <tr>
+            <td>Other (aggregate)</td>
+            {otherAggregate.sharesByYear.map((v, i) => (
+              <td key={years[i] ?? i}>{formatPercent(v)}</td>
+            ))}
+          </tr>
         </tbody>
       </table>
     </div>

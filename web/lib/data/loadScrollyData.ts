@@ -2,16 +2,28 @@ import { readFile as defaultReadFile } from "node:fs/promises";
 import path from "node:path";
 import type { DEAEnforcementAction } from "./schemas";
 
+export type Act2Series = {
+  distributor: string;
+  sharesByYear: number[];
+  emphasized: boolean;
+};
+
+export type Act2Data = {
+  years: number[];
+  series: Act2Series[];
+  otherAggregate: { sharesByYear: number[] };
+};
+
 export type ScrollyData = {
   act1: { totalPills: number; yearly: { year: number; pills: number }[] };
-  act2: { rows: { distributor: string; start: number; end: number; emphasized: boolean }[] };
+  act2: Act2Data;
   act3: { actions: DEAEnforcementAction[] };
   act4: { counties: { fips: string; name: string; state: string; deaths: number[] }[] };
 };
 
 const EMPTY: ScrollyData = {
   act1: { totalPills: 0, yearly: [] },
-  act2: { rows: [] },
+  act2: { years: [], series: [], otherAggregate: { sharesByYear: [] } },
   act3: { actions: [] },
   act4: { counties: [] },
 };
