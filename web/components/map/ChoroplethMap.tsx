@@ -60,6 +60,11 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       valueByFips,
       metric,
       domain,
+      // Primitive key that uniquely identifies the current value slice.
+      // Used as the sole data-mutation signal for Deck.gl's
+      // updateTriggers.getFillColor; avoids passing Map references that
+      // churn identity on every parent render.
+      colorKey: `${metric}-${year ?? ""}-${domain.domainMin}-${domain.domainMax}`,
       onHover: (info) =>
         onCountyHover?.(String(info.object?.id ?? "") || null, info.object ?? null),
       onClick: (info) =>
@@ -75,7 +80,7 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       );
     }
     return layersOut;
-  }, [counties, states, valueByFips, metric, domain, onCountyHover, onCountyClick]);
+  }, [counties, states, valueByFips, metric, domain, year, onCountyHover, onCountyClick]);
 
   const label = ariaLabel ?? `County map of ${metric}${year ? `, ${year}` : ""}`;
 

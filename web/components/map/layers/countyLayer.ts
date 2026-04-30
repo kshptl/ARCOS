@@ -20,6 +20,13 @@ export interface BuildCountyLayerPropsArgs {
   valueByFips: Map<string, number>;
   metric: MapMetric;
   domain: ScaleDomain;
+  /**
+   * Primitive key that identifies the current value slice (e.g. `${metric}-${year}`).
+   * Used as the updateTrigger for getFillColor so Deck.gl only re-runs the
+   * color accessor when the underlying values actually change, not on every
+   * Map reference churn from the parent.
+   */
+  colorKey?: string | number;
   onHover?: (info: { object?: Feature | null }) => void;
   onClick?: (info: { object?: Feature | null }) => void;
 }
@@ -46,7 +53,7 @@ function scaleFor(metric: MapMetric): (v: number | null | undefined, d: ScaleDom
 }
 
 export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonLayerProps {
-  const { featureCollection, valueByFips, metric, domain } = args;
+  const { featureCollection, valueByFips, metric, domain, colorKey } = args;
   const colorFn = scaleFor(metric);
 
   return {
@@ -68,7 +75,10 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     onHover: args.onHover,
     onClick: args.onClick,
     updateTriggers: {
-      getFillColor: [metric, domain.domainMin, domain.domainMax, valueByFips],
+      // Primitive keys only — Deck.gl shallow-compares this array.
+      // Passing a Map reference here would invalidate on every parent
+      // render even when the data has not actually changed.
+      getFillColor: [metric, domain.domainMin, domain.domainMax, colorKey ?? ""],
     },
   };
 }
