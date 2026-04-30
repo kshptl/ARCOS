@@ -19,6 +19,12 @@ interface SparkGeom {
   peakX: number;
   peakY: number;
   peakIndex: number;
+  firstX: number;
+  firstY: number;
+  lastX: number;
+  lastY: number;
+  firstValue: number;
+  lastValue: number;
   min: number;
   max: number;
   width: number;
@@ -45,6 +51,12 @@ function buildSpark(
       peakX: cx,
       peakY: cy,
       peakIndex: 0,
+      firstX: cx,
+      firstY: cy,
+      lastX: cx,
+      lastY: cy,
+      firstValue: values[0] as number,
+      lastValue: values[0] as number,
       min,
       max,
       width,
@@ -59,11 +71,18 @@ function buildSpark(
   const path = values
     .map((v, i) => `${i === 0 ? "M" : "L"}${(i * step).toFixed(1)},${y(v).toFixed(1)}`)
     .join(" ");
+  const lastIdx = values.length - 1;
   return {
     path,
     peakX: peakIndex * step,
     peakY: y(values[peakIndex] as number),
     peakIndex,
+    firstX: 0,
+    firstY: y(values[0] as number),
+    lastX: lastIdx * step,
+    lastY: y(values[lastIdx] as number),
+    firstValue: values[0] as number,
+    lastValue: values[lastIdx] as number,
     min,
     max,
     width,
@@ -132,6 +151,29 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                           fill="var(--accent-hot)"
                         />
                       </g>
+                    )}
+                    {/* Endpoint value labels: first + last */}
+                    {spark && (
+                      <>
+                        <text
+                          data-testid="spark-endpoint"
+                          className={styles.multipleEndpoint}
+                          x={Math.min(spark.firstX + 2, SPARK_W - 2)}
+                          y={Math.max(spark.firstY - 3, 8)}
+                          textAnchor="start"
+                        >
+                          {spark.firstValue}
+                        </text>
+                        <text
+                          data-testid="spark-endpoint"
+                          className={styles.multipleEndpoint}
+                          x={Math.max(spark.lastX - 2, 2)}
+                          y={Math.max(spark.lastY - 3, 8)}
+                          textAnchor="end"
+                        >
+                          {spark.lastValue}
+                        </text>
+                      </>
                     )}
                   </svg>
                 </a>

@@ -101,4 +101,24 @@ describe("Act4Aftermath", () => {
       expect(caps.length).toBeLessThanOrEqual(1);
     }
   });
+
+  it("renders first + last death-count values on each sparkline as SVG text", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    expect(figures).toHaveLength(6);
+    for (let i = 0; i < figures.length; i++) {
+      const fig = figures[i]!;
+      const county = COUNTIES[i]!;
+      const labels = fig.querySelectorAll('[data-testid="spark-endpoint"]');
+      expect(labels.length).toBe(2);
+      const first = labels[0] as SVGTextElement;
+      const last = labels[1] as SVGTextElement;
+      expect(first.textContent).toBe(String(county.deaths[0]));
+      expect(last.textContent).toBe(String(county.deaths[county.deaths.length - 1]));
+    }
+  });
 });

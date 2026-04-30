@@ -154,6 +154,17 @@
   fill: var(--text);
 }
 
+.act2OtherLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  fill: var(--text-muted);
+  font-style: italic;
+}
+
+.act2YTick {
+  /* tiny extra hint used for test targeting / future tweaks */
+}
+
 /* ---------- Act 3: enforcement timeline ---------- */
 
 .notableCallout {
@@ -235,6 +246,14 @@
 
 .multipleSpark circle {
   fill: var(--accent-hot);
+}
+
+.multipleEndpoint {
+  font-family: var(--font-body);
+  font-size: 8px;
+  fill: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
 }
 
 /* ---------- CTA (kept from original) ---------- */
