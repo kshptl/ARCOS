@@ -57,6 +57,71 @@ the amended `implementer-prompt.md` is reachable from the override
 directory (the skill tool reports the SKILL.md's dirname as base
 directory; relative refs in the SKILL.md must resolve there).
 
+## User-level config: enabling subagent nesting
+
+Plan-execution sessions dispatch `@build` as a subagent (via the superpowers
+`subagent-driven-development` workflow). Those `build` subagents in turn want
+to dispatch _their own_ reviewer subagents (two-stage spec-reviewer /
+code-quality-reviewer pattern). Without the config below they cannot: the
+`task` tool is gated by `permission.task`, and by default `build` running as
+a subagent has no task permission. Empirically confirmed across 6+ Plan
+sessions — zero child sessions ever spawned under implementer subagents.
+
+Required edit to `~/.config/opencode/opencode.json` (NOT in this repo —
+must be replicated per workstation):
+
+```json
+"agent": {
+  "explore":  { "disable": true  },
+  "general":  { "disable": false },
+  "build":    { "permission": { "task": "allow" } }
+}
+```
+
+What each line does:
+
+- `general.disable: false` — re-enables the built-in `general` subagent so
+  `build` has a general-purpose target to dispatch to. (Was previously
+  `true` in this workstation's config.)
+- `build.permission.task: "allow"` — grants the `build` agent the `task`
+  tool. Per OpenCode's agent docs, `permission.task` gates access to the
+  `task` tool itself. This permission applies to the `build` agent whether
+  it is running as the primary agent OR as a subagent, so a nested
+  `@build` can now dispatch further subagents.
+
+### Smoke test (run in a future session)
+
+From a fresh OpenCode session on `main` agent `build`:
+
+1. `@build` a trivial task: _"Dispatch a `general` subagent to echo hello
+   and return its output."_
+2. Watch the session tree. A **child** session should appear under the
+   `build` subagent session. That child is the `general` subagent call.
+3. If no child session appears and the outer `build` says it cannot call
+   `task`, the config did not apply — restart OpenCode (the config is
+   read at startup) and retry.
+
+Alternatively, inspect the OpenCode session DB after running a real Plan
+execution:
+
+```bash
+# path varies per install; adjust as needed
+sqlite3 ~/.local/share/opencode/sessions.db \
+  "select id, parent_id, agent from sessions order by created_at desc limit 20;"
+```
+
+Previously, rows with `agent=build` and non-null `parent_id` had zero
+descendant rows. After this change, a Plan execution that uses the
+two-stage reviewer pattern should produce `parent_id` chains three deep
+(primary → build-implementer → build-reviewer/general).
+
+### Collaborator note
+
+This change lives only in `~/.config/opencode/opencode.json` on this
+workstation. It is not committable to the repo. Anyone else running these
+Plans must apply the same edit on their machine or the reviewer stages
+will silently no-op.
+
 ## Updating superpowers
 
 If superpowers is updated upstream and the base skill content changes
