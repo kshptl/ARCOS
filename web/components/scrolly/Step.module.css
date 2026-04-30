@@ -12,3 +12,30 @@
   font-size: var(--type-heading-sm);
   margin: 0 0 var(--space-xs) 0;
 }
+
+/*
+ * On viewports wide enough for the two-column layout, pin the text article
+ * so it stays visible while its parent ScrollyStage is being scrolled. The
+ * canvas on the other column uses the same `top: 10vh` so both columns move
+ * together. Multiple Steps within one stage each pin for the span of their
+ * own flow position, then naturally unstick as the next sibling rolls up.
+ */
+@media (min-width: 721px) {
+  .step {
+    position: sticky;
+    top: 10vh;
+    align-self: start;
+  }
+}
+
+/*
+ * Respect reduced-motion: do not pin; let the article flow naturally so
+ * users who prefer reduced motion are not surprised by fixed-position text.
+ * This mirrors the reduced-motion override on .sticky in ScrollyStage.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .step {
+    position: static;
+    top: auto;
+  }
+}
