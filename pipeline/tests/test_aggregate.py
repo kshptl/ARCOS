@@ -53,3 +53,10 @@ def test_top_distributors_by_year(agg_master_parquet):
     out = run_single(cfg, "top_distributors_by_year")
     df = pl.read_parquet(out).sort(["year", "pills"], descending=[False, True])
     _assert_snapshot(df, SNAPSHOTS / "top_distributors_by_year.expected.csv")
+
+
+def test_top_pharmacies(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "top_pharmacies")
+    df = pl.read_parquet(out).sort("total_pills", descending=True)
+    _assert_snapshot(df, SNAPSHOTS / "top_pharmacies.expected.csv")
