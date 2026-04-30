@@ -36,6 +36,10 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
         from openarcos_pipeline.sources.dea_summaries import fetch_reports
         fetch_reports(cfg)
         log.info("dea fetch complete")
+    if source in ("all", "census"):
+        from openarcos_pipeline.sources.census import fetch_popest
+        fetch_popest(cfg)
+        log.info("census fetch complete")
 
 
 @app.command()
@@ -56,6 +60,12 @@ def clean() -> None:
 
     cfg = Config.from_env()
     cfg.clean_dir.mkdir(parents=True, exist_ok=True)
+
+    # Census — runs first so the joined grid has county metadata.
+    census_csv = cfg.raw_dir / "census" / "co-est2019-alldata.csv"
+    if census_csv.exists():
+        from openarcos_pipeline.sources.census import clean_to_parquet as clean_census
+        clean_census(cfg, census_csv)
 
     # CDC
     cdc_raw = cfg.raw_dir / "cdc"
@@ -95,8 +105,12 @@ def clean() -> None:
         for f in sorted(wapo_raw.glob("*.json")):
             stem = f.stem
             data = json.loads(f.read_text())
-            if stem.startswith("county_raw_"):
-                tail = stem[len("county_raw_"):]
+            # Accept both `county_raw_{ST}_{County}.json` (from wapo_runner) and
+            # `county_{ST}_{FIPS}.json` / `county_{YEAR}_{FIPS}.json` (test fixtures).
+            if stem.startswith("county_raw_") or stem.startswith("county_"):
+                tail = stem.split("_", 1)[1] if stem.startswith("county_") else ""
+                if stem.startswith("county_raw_"):
+                    tail = stem[len("county_raw_"):]
                 parts = tail.split("_", 1)
                 state = parts[0] if parts else ""
                 # Derive a FIPS from the data itself if present (first row).
@@ -132,9 +146,17 @@ def clean() -> None:
 
 
 @app.command()
-def join() -> None:
+def join(
+    years_start: int = typer.Option(2006, "--years-start"),
+    years_end: int = typer.Option(2020, "--years-end"),
+) -> None:
     """Build FIPS × year master parquet."""
-    log.info("join: not yet implemented")
+    from openarcos_pipeline.config import Config
+    from openarcos_pipeline.join import build_master
+
+    cfg = Config.from_env()
+    out = build_master(cfg, years=range(years_start, years_end + 1))
+    log.info("join complete: %s", out)
     raise typer.Exit(0)
 
 
