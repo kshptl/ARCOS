@@ -32,7 +32,7 @@ function toArrayBuffer(src: ParquetSource): ArrayBuffer {
  * Read all (or some) rows from a parquet payload as an array of typed records.
  * Streams internally; materialises the projected rows to memory.
  */
-export async function readParquetRows<T extends Record<string, unknown>>(
+export async function readParquetRows<T>(
   source: ParquetSource,
   options: ReadOptions = {},
 ): Promise<T[]> {
@@ -59,7 +59,7 @@ export async function readParquetRows<T extends Record<string, unknown>>(
  * callback so the explorer UI can render a loading bar for the ~5–10 MB
  * county-shipments parquet.
  */
-export async function fetchParquetRows<T extends Record<string, unknown>>(
+export async function fetchParquetRows<T>(
   url: string,
   opts: ReadOptions & { onProgress?: (bytes: number, total: number) => void } = {},
 ): Promise<T[]> {
