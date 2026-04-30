@@ -4,7 +4,7 @@ import { Explorer } from "@/components/explorer/Explorer";
 import { loadCountyMeta } from "@/lib/data/loadCountyMeta";
 
 export const metadata: Metadata = {
-  title: "Explorer — openarcos",
+  title: "Explorer",
   description: "Interactive choropleth of US county-level opioid shipments 2006–2014.",
 };
 
