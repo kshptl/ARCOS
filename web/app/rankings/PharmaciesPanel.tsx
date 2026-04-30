@@ -6,7 +6,21 @@ import { formatCompact } from "@/lib/format/number";
 import styles from "./PharmaciesPanel.module.css";
 import { usePharmacyPages } from "./usePharmacyPages";
 
-export function PharmaciesPanel() {
+export type CountyLabels = Record<string, { name: string; state: string }>;
+
+/**
+ * Render the pharmacy's county as "Name, ST" by resolving r.fips through
+ * the countyLabels map (passed from the server-rendered page, built from
+ * county-metadata.json at build time). Falls back to the bare FIPS if the
+ * metadata map doesn't know the code — better than an em-dash because the
+ * FIPS still points at a working county page.
+ */
+function countyLinkText(fips: string, labels: CountyLabels): string {
+  const hit = labels[fips];
+  return hit ? `${hit.name}, ${hit.state}` : fips;
+}
+
+export function PharmaciesPanel({ countyLabels = {} }: { countyLabels?: CountyLabels }) {
   const { status, error, rows, total, hasMore, loadMore } = usePharmacyPages();
 
   if (status === "error") {
@@ -48,7 +62,9 @@ export function PharmaciesPanel() {
               <td>{r.address}</td>
               <td>
                 {r.fips ? (
-                  <Link href={`/county/${r.fips}` as `/county/${string}`}>{r.fips}</Link>
+                  <Link href={`/county/${r.fips}` as `/county/${string}`}>
+                    {countyLinkText(r.fips, countyLabels)}
+                  </Link>
                 ) : (
                   "—"
                 )}

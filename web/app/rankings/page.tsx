@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { loadCountyMeta } from "@/lib/data/loadCountyMeta";
 import { loadDistributorsAggregated } from "@/lib/data/loadTopDistributors";
 import { DistributorsPanel } from "./DistributorsPanel";
 import { PharmaciesPanel } from "./PharmaciesPanel";
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
 
 export default async function RankingsPage() {
   const distributors = await loadDistributorsAggregated();
+  const counties = await loadCountyMeta();
+  // Flatten the county metadata into a plain object so it can cross the
+  // server/client boundary — Maps aren't serializable as Next props. Only
+  // the fields the pharmacies table renders (name, state) are carried.
+  const countyLabels: Record<string, { name: string; state: string }> = {};
+  for (const c of counties) countyLabels[c.fips] = { name: c.name, state: c.state };
   return (
     <div className={`${styles.root} container`}>
       <header className={styles.header}>
@@ -33,7 +40,7 @@ export default async function RankingsPage() {
           {
             key: "pharmacies",
             label: "Pharmacies",
-            panel: <PharmaciesPanel />,
+            panel: <PharmaciesPanel countyLabels={countyLabels} />,
           },
         ]}
       />

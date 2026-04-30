@@ -37,4 +37,18 @@ describe("PharmaciesPanel", () => {
     await waitFor(() => expect(screen.getByText("Pharmacy 100")).toBeInTheDocument());
     expect(screen.getByText(/showing all 150 pharmacies/i)).toBeInTheDocument();
   });
+
+  it("renders resolved 'Name, ST' text for the county link when countyLabels is provided", async () => {
+    render(<PharmaciesPanel countyLabels={{ "54059": { name: "Mingo County", state: "WV" } }} />);
+    const links = await screen.findAllByRole("link", { name: /Mingo County, WV/i });
+    expect(links.length).toBeGreaterThan(0);
+    expect(links[0]).toHaveAttribute("href", "/county/54059");
+  });
+
+  it("falls back to the bare FIPS when metadata has no entry for the pharmacy's county", async () => {
+    render(<PharmaciesPanel countyLabels={{}} />);
+    const links = await screen.findAllByRole("link", { name: "54059" });
+    expect(links.length).toBeGreaterThan(0);
+    expect(links[0]).toHaveAttribute("href", "/county/54059");
+  });
 });
