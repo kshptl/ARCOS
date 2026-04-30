@@ -15,14 +15,21 @@ from openarcos_pipeline.log import get_logger
 
 log = get_logger("openarcos.sources.dea")
 
-# Pinned URLs; update this map when adding new years. Values filled from spike (Task 31).
-# NOTE: current URLs are placeholders because the DEA Diversion site could not
-# be resolved to the real annual-report PDFs during the Task 31 spike; see
-# pipeline/notes/dea.md. A maintainer with browser access MUST overwrite these
-# before the first production fetch.
+# Pinned URLs; update this map when adding new years.
+#
+# DEA ANNUAL REPORT URLs ARE CURRENTLY UNRESOLVED — see pipeline/notes/dea.md.
+# The deadiversion.usdoj.gov annual-report paths the spec assumed (2012, 2014)
+# no longer exist, and Wayback Machine has no archive for those URLs. A
+# maintainer must decide which substitute source to use (monthly Diversion
+# News PDFs, DEA.gov press releases, Federal Register notices, etc.) and
+# populate this dict with real URLs.
+#
+# Until then we keep the map EMPTY and fail loudly in fetch_reports() rather
+# than emit placeholder "REPLACE_WITH_*" URLs that would quietly 404 in
+# production.
 DEA_ANNUAL_REPORTS: dict[int, str] = {
-    2012: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2012_URL.pdf",
-    2014: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2014_URL.pdf",
+    # 2012: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2012_URL.pdf",
+    # 2014: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2014_URL.pdf",
 }
 
 
@@ -33,6 +40,18 @@ def fetch_reports(
 ) -> None:
     out = cfg.raw_dir / "dea"
     out.mkdir(parents=True, exist_ok=True)
+
+    if not DEA_ANNUAL_REPORTS:
+        # Loud-fail: do not silently no-op. An empty map means the upstream
+        # source is unresolved; see pipeline/notes/dea.md for the maintainer
+        # decision required before this fetcher can run.
+        raise RuntimeError(
+            "DEA source requires maintainer decision per notes/dea.md "
+            "(DEA_ANNUAL_REPORTS is empty; committed PDF fixtures under "
+            "pipeline/data/raw/dea/ may be used to continue the pipeline "
+            "past this step)."
+        )
+
     years = years or sorted(DEA_ANNUAL_REPORTS)
 
     with httpx.Client(timeout=180.0, follow_redirects=True, transport=transport) as client:

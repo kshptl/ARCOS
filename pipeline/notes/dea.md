@@ -52,6 +52,21 @@ Per the plan's spike-handling rules, we kept:
    extract text from them.
 2. `notebooks/03-dea-probe.py` with placeholder `REPLACE_WITH_…` URLs.
 
+### Current fetcher behavior (2026-04-30)
+
+`DEA_ANNUAL_REPORTS` in
+`pipeline/src/openarcos_pipeline/sources/dea_summaries.py` is
+**intentionally empty** — we removed the `REPLACE_WITH_*` placeholders
+so the production fetcher loud-fails rather than silently 404ing.
+Calling `fetch_reports(cfg)` with the empty map raises `RuntimeError`
+with a message pointing here. This forces a maintainer to make the
+decision in "Path forward" below before the DEA source goes live
+in production.
+
+The rest of the pipeline (clean/aggregate/emit) can still run against
+the committed synthetic PDFs under `pipeline/data/raw/dea/` via
+`openarcos all --skip-fetch`, which is what the e2e tests do.
+
 ### Path forward for a maintainer
 
 1. **Decide what DEA data is actually desired.** The spec says
