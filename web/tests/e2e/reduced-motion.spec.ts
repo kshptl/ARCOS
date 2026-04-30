@@ -1,9 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('reduced motion', () => {
-  test.use({ reducedMotion: 'reduce' });
+  test.use({ colorScheme: 'light' });
+  // Note: reducedMotion is available in newer Playwright versions; this test
+  // simulates via explicit emulateMedia call below.
 
   test('each act renders in end state with reduced-motion', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto('/');
     const regions = page.getByRole('region');
     const count = await regions.count();
@@ -24,6 +27,7 @@ test.describe('reduced motion', () => {
   });
 
   test('details/summary table is reachable', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto('/');
     const summaries = page.getByText('Show data');
     const count = await summaries.count();

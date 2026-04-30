@@ -46,6 +46,6 @@ describe('countyLayer', () => {
       domain: { domainMin: 0, domainMax: 10 },
     });
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(FC.features[0]!);
-    expect(c[0]).toBeLessThan(c[2]);
+    expect(c[0]!).toBeLessThan(c[2]!);
   });
 });
