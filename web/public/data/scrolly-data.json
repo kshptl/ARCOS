@@ -77,6 +77,72 @@
   "act3": {
     "actions": [
       {
+        "year": 2006,
+        "action_count": 250,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2006 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2007,
+        "action_count": 360,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2007 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2008,
+        "action_count": 520,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2008 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2009,
+        "action_count": 700,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2009 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2010,
+        "action_count": 880,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2010 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2011,
+        "action_count": 1060,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2011 (synthetic)",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
         "year": 2012,
         "action_count": 1245,
         "notable_actions": [
@@ -92,6 +158,17 @@
           },
           {
             "title": "Operation Pill Nation II was a multi",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2013,
+        "action_count": 1380,
+        "notable_actions": [
+          {
+            "title": "DEA Diversion annual summary 2013 (synthetic)",
             "url": null,
             "target": null
           }

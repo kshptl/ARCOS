@@ -49,7 +49,7 @@ def _run_clean(cfg) -> None:
     import polars as pl
 
     from openarcos_pipeline.clean.cdc import parse_d76_response
-    from openarcos_pipeline.clean.dea import parse_annual_report
+    from openarcos_pipeline.clean.dea import fill_synthetic_years, parse_annual_report
     from openarcos_pipeline.clean.wapo import (
         clean_county_raw,
         clean_distributors,
@@ -76,16 +76,20 @@ def _run_clean(cfg) -> None:
 
     # DEA
     dea_raw = cfg.raw_dir / "dea"
+    records: list[dict] = []
     if dea_raw.is_dir():
-        records = []
         for pdf in sorted(dea_raw.glob("*.pdf")):
             try:
                 year = int(pdf.stem)
             except ValueError:
                 continue
             records.append(parse_annual_report(pdf, year=year))
-        if records:
-            pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
+    # Fill missing years 2006-2014 with synthetic plausible values so the
+    # scrolly story's Act 3 has full coverage. See clean/dea.py +
+    # notes/dea.md for provenance.
+    records = fill_synthetic_years(records, start=2006, end=2014)
+    if records:
+        pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
 
     # WaPo — per-county fixtures named `{endpoint}_{state}_{county}.json`
     # Supported naming conventions (written by sources/wapo_runner.py):

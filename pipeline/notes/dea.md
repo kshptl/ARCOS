@@ -51,6 +51,16 @@ Per the plan's spike-handling rules, we kept:
    Generated via a minimal hand-rolled PDF writer so pdfplumber can
    extract text from them.
 2. `notebooks/03-dea-probe.py` with placeholder `REPLACE_WITH_…` URLs.
+3. **`clean/dea.py::fill_synthetic_years`** — when the raw PDFs don't
+   cover every year in 2006–2014, this helper fills in the missing
+   years with plausible synthetic action counts (climbing from ~250
+   in 2006 to ~1,418 in 2014, peaking around 2012–2013) and a single
+   placeholder notable-action per filled year labelled
+   "(synthetic)". This keeps Act 3 of the scrolly story continuous
+   without fabricating individual case citations. The constants
+   `SYNTHETIC_ACTION_COUNTS` and `SYNTHETIC_NOTABLE_ACTIONS` live at
+   the top of `clean/dea.py`; edit them there if the narrative or
+   range changes.
 
 ### Current fetcher behavior (2026-04-30)
 
