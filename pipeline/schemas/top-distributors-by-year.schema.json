@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/top-distributors-by-year.schema.json",
+  "title": "Top distributors by year (market-share rankings)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["distributor", "year", "pills", "share_pct"],
+    "additionalProperties": false,
+    "properties": {
+      "distributor": {"type": "string", "minLength": 1},
+      "year": {"type": "integer", "minimum": 2006, "maximum": 2014},
+      "pills": {"type": "integer", "minimum": 0},
+      "share_pct": {"type": "number", "minimum": 0, "maximum": 100}
+    }
+  }
+}
