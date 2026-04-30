@@ -139,3 +139,24 @@ committed. Keep this list current when you deviate on purpose.
   Next 15 promoted `typedRoutes` out of `experimental`. The plan's sample
   config shows `experimental: { typedRoutes: true }` but `web/next.config.mjs`
   correctly uses the top-level `typedRoutes: true`. Do not "fix" this back.
+
+## Installed MCP servers
+
+In addition to `playwright` (inherited from the user's baseline config),
+the following MCP servers are registered in `~/.config/opencode/opencode.json`
+so OpenCode sessions on this workstation can talk to Cloudflare:
+
+- **`cloudflare-api`** — remote, `https://mcp.cloudflare.com/mcp`. Covers
+  the entire Cloudflare API (~2500 endpoints across Pages, DNS, Workers,
+  R2, etc.) via two tools (`search` + `execute`) using Codemode. OAuth
+  required before first use: `opencode mcp auth cloudflare-api`. Needed
+  because openarcos.org is deployed on Cloudflare Pages (see
+  `docs/ops.md`).
+- **`cloudflare-docs`** — remote, `https://docs.mcp.cloudflare.com/mcp`.
+  Token-efficient search over the Cloudflare developer docs. No auth
+  needed. Useful when iterating on the Pages setup, `_headers` rules,
+  or any CF product config.
+
+These live in the user-level config (not in this repo), so collaborators
+replicate by adding the same two entries under the `mcp` key of their
+`~/.config/opencode/opencode.json`.
