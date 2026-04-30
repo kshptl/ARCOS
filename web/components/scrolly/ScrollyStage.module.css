@@ -7,11 +7,24 @@
   padding: var(--space-lg) 0;
 }
 
+/*
+ * The sticky wrapper is a positioning context for both the canvas and the
+ * data-toggle pill. overflow:visible lets the expanded "Show data" panel
+ * spill past the canvas bounds; the inner .canvas div preserves the clipping
+ * scenes expect.
+ */
 .sticky {
   position: sticky;
   top: 10vh;
   height: 80vh;
   align-self: start;
+  overflow: visible;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: var(--canvas-shade);
   border: 1px solid var(--rule);
   display: grid;
@@ -27,28 +40,110 @@
   padding-bottom: 40vh;
 }
 
+/*
+ * The "Show data" toggle lives inside the sticky wrapper so it is visible
+ * at every scroll position within the act. Position it absolutely in the
+ * bottom-right corner of the canvas; z-index keeps it above the canvas
+ * paint.
+ */
 .details {
-  grid-column: 1 / -1;
-  margin-top: var(--space-lg);
+  position: absolute;
+  right: var(--space-sm);
+  bottom: var(--space-sm);
+  z-index: 2;
   font-family: var(--font-body);
-  color: var(--text-muted);
+  color: var(--text);
+  max-width: calc(100% - 2 * var(--space-sm));
 }
 
+.summary,
 .details summary {
   cursor: pointer;
   font-weight: 600;
-  color: var(--text);
-  padding: var(--space-xs) 0;
+  font-size: var(--type-body-sm);
+  padding: var(--space-2xs) var(--space-sm);
+  background: var(--canvas);
+  border: 1px solid var(--rule);
+  border-radius: 9999px;
+  list-style: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.summary::-webkit-details-marker,
+.details summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:focus-visible,
+.details summary:focus-visible {
+  outline: 2px solid var(--accent, currentColor);
+  outline-offset: 2px;
+}
+
+/*
+ * When the details is open, the panel expands above the summary pill. Cap
+ * the height and make it scroll so long tables do not overflow the viewport
+ * or cause layout shift on the rest of the page.
+ */
+.detailsPanel {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + var(--space-2xs));
+  width: min(480px, 90vw);
+  max-height: 60vh;
+  overflow: auto;
+  padding: var(--space-sm);
+  background: var(--canvas);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--text) 15%, transparent);
+  color: var(--text-muted);
+  font-size: var(--type-body-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sticky { position: relative; top: auto; height: auto; min-height: 60vh; }
-  .stage { min-height: auto; }
-  .steps { gap: var(--space-xl); padding: var(--space-md) 0; }
+  .sticky {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 60vh;
+  }
+  .stage {
+    min-height: auto;
+  }
+  .steps {
+    gap: var(--space-xl);
+    padding: var(--space-md) 0;
+  }
+  /*
+   * With the sticky canvas unpinned, the data toggle can sit inline beneath
+   * the canvas rather than floating over it. Reset absolute positioning so
+   * the expand/collapse happens inline without an animated transition.
+   */
+  .details {
+    position: static;
+    margin-top: var(--space-sm);
+  }
+  .detailsPanel {
+    position: static;
+    width: auto;
+    max-height: none;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 720px) {
-  .stage { grid-template-columns: 1fr; }
-  .sticky { position: relative; top: auto; height: 50vh; }
-  .steps { gap: var(--space-xl); padding: var(--space-md) 0; }
+  .stage {
+    grid-template-columns: 1fr;
+  }
+  .sticky {
+    position: relative;
+    top: auto;
+    height: 50vh;
+  }
+  .steps {
+    gap: var(--space-xl);
+    padding: var(--space-md) 0;
+  }
 }

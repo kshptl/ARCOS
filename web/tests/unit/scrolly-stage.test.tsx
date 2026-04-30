@@ -69,4 +69,38 @@ describe("ScrollyStage", () => {
     // CSS-module scoped classname contains the unscoped name
     expect(article?.className).toMatch(/step/);
   });
+
+  /*
+   * Bug 2: the "Show data" <summary> must live INSIDE the sticky canvas
+   * wrapper (not below it as a grid row) so it is always visible during the
+   * act's scroll range. We assert the summary and the canvas share a common
+   * ancestor that is a direct child of the <section> (i.e. the sticky div).
+   */
+  it("renders the data toggle inside the sticky canvas container", () => {
+    const { container } = render(
+      <ScrollyStage
+        canvas={<div data-testid="canvas-inner">canvas</div>}
+        ariaLabel="act"
+        dataSummary={<table data-testid="t" />}
+      >
+        <div>step</div>
+      </ScrollyStage>,
+    );
+    const summary = screen.getByText(/show data/i);
+    const canvas = screen.getByTestId("canvas-inner");
+    const section = container.querySelector("section");
+    expect(section).not.toBeNull();
+    const children = section ? Array.from(section.children) : [];
+    const stickyLike = children.find((c) => c.contains(summary) && c.contains(canvas));
+    expect(stickyLike).toBeDefined();
+  });
+
+  it("omits the data toggle when no dataSummary is supplied", () => {
+    render(
+      <ScrollyStage canvas={<div />} ariaLabel="act">
+        <div>step</div>
+      </ScrollyStage>,
+    );
+    expect(screen.queryByText(/show data/i)).toBeNull();
+  });
 });
