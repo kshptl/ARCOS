@@ -19,6 +19,12 @@ const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
 const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
 
+// Shared empty map reused across renders so that currentValues keeps a
+// stable identity while data is loading — otherwise every Explorer render
+// produces a fresh Map instance, invalidating downstream memoization
+// (domain, layer rebuild, etc).
+const EMPTY_VALUES: Map<string, number> = new Map();
+
 interface ExplorerProps {
   counties: CountyMetadata[];
 }
@@ -85,7 +91,7 @@ export function Explorer({ counties }: ExplorerProps) {
   }, []);
 
   const currentValues = useMemo(
-    () => valuesByYear.get(urlState.year) ?? new Map<string, number>(),
+    () => valuesByYear.get(urlState.year) ?? EMPTY_VALUES,
     [valuesByYear, urlState.year],
   );
 
