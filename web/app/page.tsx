@@ -110,7 +110,9 @@ export default async function HomePage() {
               heaviest per-capita shipments — and some of the steepest casualties.
             </p>
             <p style={{ marginBlockStart: "var(--space-md)" }}>
-              <Link href="/explorer">See your county →</Link>
+              <Link href="/explorer" style={{ textDecoration: "none" }}>
+                <Button variant="primary">See your county →</Button>
+              </Link>
             </p>
           </Step>
         </ScrollyStage>

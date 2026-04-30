@@ -22,14 +22,20 @@ describe("Act4Aftermath", () => {
     expect(screen.getAllByTestId("small-multiple")).toHaveLength(6);
   });
 
-  it("renders a CTA link to /explorer", () => {
+  it("does not render a /explorer CTA inside the canvas (it lives in the step)", () => {
     render(
       <ScrollyProgressContext.Provider value={1}>
         <Act4Aftermath counties={COUNTIES} />
       </ScrollyProgressContext.Provider>,
     );
-    const cta = screen.getByRole("link", { name: /See your county/i });
-    expect(cta).toHaveAttribute("href", "/explorer");
+    // The canvas is marked inert during scroll, so the CTA must live in
+    // the Step article (rendered separately in app/page.tsx), never inside
+    // Act4Aftermath itself.
+    const exploreLinks = screen
+      .queryAllByRole("link")
+      .filter((a) => a.getAttribute("href") === "/explorer");
+    expect(exploreLinks).toHaveLength(0);
+    expect(screen.queryByText(/^See your county/i)).toBeNull();
   });
 
   it("includes county-label for each multiple", () => {

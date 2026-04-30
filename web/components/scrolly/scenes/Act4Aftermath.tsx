@@ -167,11 +167,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
             flatter lines shipped fewer pills per capita or had suppressed death counts.
           </p>
         )}
-
-        <p className={styles.ctaLede}>Every county has its own story. Find yours.</p>
-        <a href="/explorer" className={styles.cta}>
-          See your county →
-        </a>
       </div>
     </div>
   );
