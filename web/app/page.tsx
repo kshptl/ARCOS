@@ -85,10 +85,6 @@ export default async function HomePage() {
           <Step id="act3">
             <p className="eyebrow">Act 3 — Enforcement</p>
             <h2>The regulators catch up.</h2>
-            <p>
-              Enforcement actions from the DEA Diversion Control Division climbed through 2012–2013
-              as the scale of the problem became impossible to ignore.
-            </p>
           </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>

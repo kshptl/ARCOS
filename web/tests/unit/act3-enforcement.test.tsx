@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { ScrollyProgressContext } from "@/components/scrolly/progressContext";
@@ -39,9 +41,9 @@ describe("Act3Enforcement", () => {
       </ScrollyProgressContext.Provider>,
     );
     expect(container.querySelector('[data-testid="inflection-zoom"]')).toBeNull();
-    const svgText = Array.from(
-      container.querySelectorAll("svg text"),
-    ).map((t) => t.textContent ?? "");
+    const svgText = Array.from(container.querySelectorAll("svg text")).map(
+      (t) => t.textContent ?? "",
+    );
     for (const s of svgText) {
       expect(s).not.toMatch(/Inflection/i);
     }
@@ -70,14 +72,10 @@ describe("Act3Enforcement", () => {
       (t) => t.getAttribute("text-anchor") === "end",
     );
     expect(tickTexts.length).toBeGreaterThan(0);
-    const rightmostTickX = Math.max(
-      ...tickTexts.map((t) => Number(t.getAttribute("x") ?? 0)),
-    );
+    const rightmostTickX = Math.max(...tickTexts.map((t) => Number(t.getAttribute("x") ?? 0)));
     // Check both bar rects AND placeholder line ticks — the 2006 year has no
     // data in the fixture and renders as a <line> at x = PAD_LEFT.
-    const tickEls = Array.from(
-      svg!.querySelectorAll('[data-testid="timeline-tick"]'),
-    );
+    const tickEls = Array.from(svg!.querySelectorAll('[data-testid="timeline-tick"]'));
     expect(tickEls.length).toBeGreaterThan(0);
     const leftmostTickX = Math.min(
       ...tickEls.map((el) => {
@@ -104,7 +102,10 @@ describe("Act3Enforcement", () => {
     const chartWidth = Number(wStr);
     // Inspect the x-axis baseline which spans (PAD_LEFT, PAD_LEFT + plotW)
     const baseline = Array.from(svg!.querySelectorAll("line")).find(
-      (l) => l.getAttribute("x1") && l.getAttribute("x2") && l.getAttribute("y1") === l.getAttribute("y2"),
+      (l) =>
+        l.getAttribute("x1") &&
+        l.getAttribute("x2") &&
+        l.getAttribute("y1") === l.getAttribute("y2"),
     );
     expect(baseline).toBeTruthy();
     const plotLeft = Number(baseline!.getAttribute("x1"));
@@ -113,9 +114,7 @@ describe("Act3Enforcement", () => {
     expect(plotRight).toBeLessThan(chartWidth);
 
     // All data-bar rects must be fully inside (plotLeft, plotRight).
-    const bars = Array.from(
-      svg!.querySelectorAll('rect[data-testid="timeline-tick"]'),
-    );
+    const bars = Array.from(svg!.querySelectorAll('rect[data-testid="timeline-tick"]'));
     for (const b of bars) {
       const x = Number(b.getAttribute("x"));
       const w = Number(b.getAttribute("width"));
@@ -123,9 +122,7 @@ describe("Act3Enforcement", () => {
       expect(x + w).toBeLessThanOrEqual(plotRight);
     }
     // Placeholder <line> ticks must also be inside [plotLeft, plotRight].
-    const lineTicks = Array.from(
-      svg!.querySelectorAll('line[data-testid="timeline-tick"]'),
-    );
+    const lineTicks = Array.from(svg!.querySelectorAll('line[data-testid="timeline-tick"]'));
     for (const l of lineTicks) {
       const x1 = Number(l.getAttribute("x1"));
       expect(x1).toBeGreaterThanOrEqual(plotLeft);
@@ -168,12 +165,26 @@ describe("Act3Enforcement", () => {
     );
     const svg = container.querySelector("svg");
     expect(svg).not.toBeNull();
-    const svgText = Array.from(svg!.querySelectorAll("text")).map(
-      (t) => t.textContent ?? "",
-    );
+    const svgText = Array.from(svg!.querySelectorAll("text")).map((t) => t.textContent ?? "");
     for (const s of svgText) {
       expect(s).not.toMatch(/Operation X/);
       expect(s).not.toMatch(/Operation Y/);
     }
+  });
+
+  it("Act 3 step article has no caption paragraph beyond the headline", () => {
+    // The Act 3 <Step> lives in app/page.tsx. We assert at the file-content
+    // level that the legacy caption prose has been removed.
+    const pagePath = resolve(__dirname, "../../app/page.tsx");
+    const src = readFileSync(pagePath, "utf8");
+    // Locate the Act 3 <Step id="act3"> ... </Step> block.
+    const match = src.match(/<Step id="act3">[\s\S]*?<\/Step>/);
+    expect(match, "Act 3 <Step> block not found").toBeTruthy();
+    const block = match![0];
+    // Caption prose like "Enforcement actions from the DEA Diversion Control
+    // Division climbed..." must no longer be present.
+    expect(block).not.toMatch(/Diversion Control Division/);
+    expect(block).not.toMatch(/impossible to ignore/);
+    expect(block).not.toMatch(/scale of the problem/);
   });
 });

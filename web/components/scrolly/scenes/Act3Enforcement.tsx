@@ -77,7 +77,12 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                   strokeDasharray={t === 0 ? "" : "2 3"}
                   strokeWidth={t === 0 ? 1 : 0.6}
                 />
-                <text className={styles.axisLabel} x={PAD_LEFT - AXIS_LABEL_OFFSET} y={y + 3} textAnchor="end">
+                <text
+                  className={styles.axisLabel}
+                  x={PAD_LEFT - AXIS_LABEL_OFFSET}
+                  y={y + 3}
+                  textAnchor="end"
+                >
                   {formatTickValue(t, "integer")}
                 </text>
               </g>
