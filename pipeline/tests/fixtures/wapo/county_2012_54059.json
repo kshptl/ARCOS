@@ -1,0 +1,83 @@
+[
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2006,
+    "DOSAGE_UNIT": 1680250,
+    "population": 27324,
+    "dosage_unit_per_cap": 61.5
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2007,
+    "DOSAGE_UNIT": 1910510,
+    "population": 27203,
+    "dosage_unit_per_cap": 70.2
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2008,
+    "DOSAGE_UNIT": 2040855,
+    "population": 27094,
+    "dosage_unit_per_cap": 75.3
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2009,
+    "DOSAGE_UNIT": 2100120,
+    "population": 26801,
+    "dosage_unit_per_cap": 78.4
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2010,
+    "DOSAGE_UNIT": 2315990,
+    "population": 26539,
+    "dosage_unit_per_cap": 87.3
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2011,
+    "DOSAGE_UNIT": 2189450,
+    "population": 26392,
+    "dosage_unit_per_cap": 82.9
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2012,
+    "DOSAGE_UNIT": 1980333,
+    "population": 26171,
+    "dosage_unit_per_cap": 75.7
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2013,
+    "DOSAGE_UNIT": 1710500,
+    "population": 25925,
+    "dosage_unit_per_cap": 65.9
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "year": 2014,
+    "DOSAGE_UNIT": 1502000,
+    "population": 25610,
+    "dosage_unit_per_cap": 58.6
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "BUYER_NAME": "TUG VALLEY PHARMACY",
+    "BUYER_ADDRESS1": "100 MAIN ST",
+    "BUYER_CITY": "WILLIAMSON",
+    "BUYER_STATE": "WV",
+    "BUYER_COUNTY": "MINGO",
+    "countyfips": "54059",
+    "total_dosage_unit": 3201980,
+    "years": "2006-2014"
+  },
+  {
+    "BUYER_NAME": "HURLEY DRUG COMPANY",
+    "BUYER_ADDRESS1": "22 E 2ND AVE",
+    "BUYER_CITY": "WILLIAMSON",
+    "BUYER_STATE": "WV",
+    "BUYER_COUNTY": "MINGO",
+    "countyfips": "54059",
+    "total_dosage_unit": 2819400,
+    "years": "2006-2014"
+  },
+  {
+    "BUYER_NAME": "FAMILY DISCOUNT PHARMACY",
+    "BUYER_ADDRESS1": "300 E 3RD AVE",
+    "BUYER_CITY": "WILLIAMSON",
+    "BUYER_STATE": "WV",
+    "BUYER_COUNTY": "MINGO",
+    "countyfips": "54059",
+    "total_dosage_unit": 1512030,
+    "years": "2006-2014"
+  },
+  {
+    "BUYER_NAME": "B & K PHARMACY",
+    "BUYER_ADDRESS1": "PO BOX 123",
+    "BUYER_CITY": "KERMIT",
+    "BUYER_STATE": "WV",
+    "BUYER_COUNTY": "MINGO",
+    "countyfips": "54059",
+    "total_dosage_unit": 905775,
+    "years": "2008-2014"
+  },
+  {
+    "BUYER_NAME": "MINGO CENTRAL PHARMACY",
+    "BUYER_ADDRESS1": "25 CENTRAL AVE",
+    "BUYER_CITY": "MATEWAN",
+    "BUYER_STATE": "WV",
+    "BUYER_COUNTY": "MINGO",
+    "countyfips": "54059",
+    "total_dosage_unit": 498250,
+    "years": "2006-2014"
+  }
+]

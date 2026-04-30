@@ -1,0 +1,42 @@
+[
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "REPORTER": "MCKESSON CORPORATION",
+    "year": 2012,
+    "DOSAGE_UNIT": 750120
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "REPORTER": "CARDINAL HEALTH",
+    "year": 2012,
+    "DOSAGE_UNIT": 512400
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "REPORTER": "AMERISOURCEBERGEN DRUG CORPORATION",
+    "year": 2012,
+    "DOSAGE_UNIT": 408003
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "REPORTER": "H.D. SMITH WHOLESALE DRUG CO",
+    "year": 2012,
+    "DOSAGE_UNIT": 201050
+  },
+  {
+    "BUYER_COUNTY": "MINGO",
+    "BUYER_STATE": "WV",
+    "countyfips": "54059",
+    "REPORTER": "MIAMI-LUKEN INC",
+    "year": 2012,
+    "DOSAGE_UNIT": 108760
+  }
+]
