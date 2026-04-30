@@ -172,3 +172,6 @@ pipeline/.pytest_cache/
 pipeline/.ruff_cache/
 pipeline/htmlcov/
 pipeline/.coverage
+
+# git worktrees
+.worktrees/
