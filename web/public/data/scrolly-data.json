@@ -1,52 +1,139 @@
 {
   "act1": {
-    "totalPills": 76000000000,
+    "totalPills": 30681346,
     "yearly": [
-      { "year": 2006, "pills": 8400000000 },
-      { "year": 2007, "pills": 8900000000 },
-      { "year": 2008, "pills": 9200000000 },
-      { "year": 2009, "pills": 9400000000 },
-      { "year": 2010, "pills": 9600000000 },
-      { "year": 2011, "pills": 9500000000 },
-      { "year": 2012, "pills": 8900000000 },
-      { "year": 2013, "pills": 7800000000 },
-      { "year": 2014, "pills": 6900000000 }
+      {
+        "year": 2011,
+        "pills": 11154554
+      },
+      {
+        "year": 2012,
+        "pills": 10228229
+      },
+      {
+        "year": 2013,
+        "pills": 9298563
+      }
     ]
   },
   "act2": {
     "rows": [
-      { "distributor": "McKesson", "start": 38.2, "end": 34.1, "emphasized": true },
-      { "distributor": "Cardinal", "start": 25.9, "end": 22.7, "emphasized": true },
-      { "distributor": "AmerisourceBergen", "start": 16.0, "end": 19.4, "emphasized": true },
-      { "distributor": "CVS", "start": 4.1, "end": 4.5, "emphasized": false },
-      { "distributor": "Walgreens", "start": 3.6, "end": 4.2, "emphasized": false },
-      { "distributor": "Walmart", "start": 2.5, "end": 2.9, "emphasized": false },
-      { "distributor": "H.D. Smith", "start": 2.1, "end": 2.0, "emphasized": false },
-      { "distributor": "Anda", "start": 1.4, "end": 1.5, "emphasized": false },
-      { "distributor": "Miami-Luken", "start": 0.8, "end": 0.4, "emphasized": false },
-      { "distributor": "Other", "start": 5.4, "end": 8.3, "emphasized": false }
+      {
+        "distributor": "MCKESSON CORPORATION",
+        "start": 37.87847801354621,
+        "end": 37.87847801354621,
+        "emphasized": true
+      },
+      {
+        "distributor": "CARDINAL HEALTH",
+        "start": 25.87443626905172,
+        "end": 25.87443626905172,
+        "emphasized": true
+      },
+      {
+        "distributor": "AMERISOURCEBERGEN DRUG CORPORATION",
+        "start": 20.602747113742993,
+        "end": 20.602747113742993,
+        "emphasized": true
+      },
+      {
+        "distributor": "H.D. SMITH WHOLESALE DRUG CO",
+        "start": 10.152332966223357,
+        "end": 10.152332966223357,
+        "emphasized": false
+      },
+      {
+        "distributor": "MIAMI-LUKEN INC",
+        "start": 5.4920056374357245,
+        "end": 5.4920056374357245,
+        "emphasized": false
+      }
     ]
   },
   "act3": {
     "actions": [
-      { "year": 2007, "action_count": 18, "notable_actions": [{ "title": "Cardinal Health MOA", "url": "" }] },
-      { "year": 2008, "action_count": 22, "notable_actions": [] },
-      { "year": 2009, "action_count": 27, "notable_actions": [] },
-      { "year": 2010, "action_count": 32, "notable_actions": [] },
-      { "year": 2011, "action_count": 34, "notable_actions": [] },
-      { "year": 2012, "action_count": 41, "notable_actions": [{ "title": "CVS Sanford FL", "url": "" }] },
-      { "year": 2013, "action_count": 47, "notable_actions": [{ "title": "Walgreens $80M", "url": "" }] },
-      { "year": 2014, "action_count": 45, "notable_actions": [] }
+      {
+        "year": 2012,
+        "action_count": 1245,
+        "notable_actions": [
+          {
+            "title": "United States v. Florida Pain Relief Centers",
+            "url": null,
+            "target": null
+          },
+          {
+            "title": "United States v. Tug Valley Pharmacy",
+            "url": null,
+            "target": null
+          },
+          {
+            "title": "Operation Pill Nation II was a multi",
+            "url": null,
+            "target": null
+          }
+        ]
+      },
+      {
+        "year": 2014,
+        "action_count": 1418,
+        "notable_actions": [
+          {
+            "title": "United States v. Appalachian Wholesale",
+            "url": null,
+            "target": null
+          },
+          {
+            "title": "United States v. Mingo Family Pharmacy",
+            "url": null,
+            "target": null
+          },
+          {
+            "title": "Operation Supply Chain targeted large distributor diversion",
+            "url": null,
+            "target": null
+          }
+        ]
+      }
     ]
   },
   "act4": {
     "counties": [
-      { "fips": "54059", "name": "Mingo", "state": "WV", "deaths": [5, 7, 9, 12, 16, 18, 22, 25, 28] },
-      { "fips": "51720", "name": "Norton", "state": "VA", "deaths": [2, 3, 5, 7, 8, 9, 11, 13, 14] },
-      { "fips": "54011", "name": "Cabell", "state": "WV", "deaths": [12, 18, 25, 34, 44, 52, 61, 68, 75] },
-      { "fips": "54045", "name": "Logan", "state": "WV", "deaths": [7, 10, 14, 17, 21, 26, 29, 32, 36] },
-      { "fips": "21071", "name": "Floyd", "state": "KY", "deaths": [6, 8, 11, 15, 19, 22, 26, 29, 33] },
-      { "fips": "21195", "name": "Pike", "state": "KY", "deaths": [11, 14, 19, 23, 28, 33, 38, 44, 49] }
+      {
+        "fips": "54059",
+        "name": "54059",
+        "state": "",
+        "deaths": []
+      },
+      {
+        "fips": "51720",
+        "name": "51720",
+        "state": "",
+        "deaths": []
+      },
+      {
+        "fips": "54011",
+        "name": "54011",
+        "state": "",
+        "deaths": []
+      },
+      {
+        "fips": "54045",
+        "name": "54045",
+        "state": "",
+        "deaths": []
+      },
+      {
+        "fips": "21071",
+        "name": "21071",
+        "state": "",
+        "deaths": []
+      },
+      {
+        "fips": "21195",
+        "name": "21195",
+        "state": "",
+        "deaths": []
+      }
     ]
   }
 }
