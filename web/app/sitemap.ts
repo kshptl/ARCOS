@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { loadAllFips } from "@/lib/data/loadCountyMeta";
 
+export const dynamic = "force-static";
+
 const STATIC_ROUTES: Array<{
   path: string;
   priority: number;

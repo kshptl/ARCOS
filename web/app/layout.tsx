@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { Plausible } from "@/lib/analytics/Plausible";
+import { SentryBootstrap } from "@/lib/analytics/SentryBootstrap";
 import { bodyFont, displayFont } from "@/lib/fonts";
 import "./globals.css";
 
@@ -25,6 +27,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body>
+        <SentryBootstrap />
+        <Plausible />
         <Header />
         <main>{children}</main>
         <Footer buildDate={BUILD_DATE} />
