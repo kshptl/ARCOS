@@ -10,7 +10,6 @@ export interface SparklineProps {
 
 export function Sparkline(props: SparklineProps): ReactElement {
   const { values, width = 100, height = 24, ariaLabel } = props;
-  const path = toPath(values, width, height);
   return (
     <svg
       className={styles.sparkline}
@@ -21,20 +20,28 @@ export function Sparkline(props: SparklineProps): ReactElement {
       aria-label={ariaLabel}
     >
       <title>{ariaLabel}</title>
-      {path && <path d={path} />}
+      {renderMarks(values, width, height)}
     </svg>
   );
 }
 
-function toPath(values: number[], width: number, height: number): string | null {
-  if (values.length < 2) return null;
+function renderMarks(values: number[], width: number, height: number): ReactElement | null {
+  if (values.length === 0) return null;
+  if (values.length === 1) {
+    // Single-point data (e.g. one year of distributor share): draw a centered
+    // dot so the cell isn't visually empty. Without this, short/sparse data
+    // from the pipeline renders as a blank SVG.
+    const cx = width / 2;
+    const cy = height / 2;
+    return <circle cx={cx} cy={cy} r={1.5} />;
+  }
   const min = Math.min(...values);
   const max = Math.max(...values);
   const span = max - min || 1;
   const step = width / (values.length - 1);
   const y = (v: number) => height - ((v - min) / span) * (height - 2) - 1;
-  const pts = values.map(
-    (v, i) => `${i === 0 ? "M" : "L"}${(i * step).toFixed(1)},${y(v).toFixed(1)}`,
-  );
-  return pts.join(" ");
+  const d = values
+    .map((v, i) => `${i === 0 ? "M" : "L"}${(i * step).toFixed(1)},${y(v).toFixed(1)}`)
+    .join(" ");
+  return <path d={d} />;
 }
