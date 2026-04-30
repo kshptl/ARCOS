@@ -1,53 +1,40 @@
 import { act, renderHook, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import {
-  resetSearchIndexCache,
-  useSearchIndex,
-} from "@/components/search/useSearchIndex";
+import { resetSearchIndexCache, useSearchIndex } from "@/components/search/useSearchIndex";
 
 const FIXTURE = [
   {
     type: "county",
     id: "54059",
-    label: "Mingo County",
-    sublabel: "WV",
+    name: "Mingo County",
     fips: "54059",
     state: "WV",
-    total_pills: 123456,
   },
   {
     type: "city",
     id: "city:54:williamson",
-    label: "Williamson",
-    sublabel: "WV",
+    name: "Williamson",
     fips: "54059",
     state: "WV",
-    total_pills: 0,
   },
   {
     type: "distributor",
     id: "distributor:mckesson",
-    label: "McKesson",
-    sublabel: "distributor",
-    total_pills: 999,
+    name: "McKesson",
   },
   {
     type: "pharmacy",
     id: "pharmacy:1",
-    label: "Tug Valley Pharmacy",
-    sublabel: "Williamson, WV",
+    name: "Tug Valley Pharmacy",
     fips: "54059",
-    state: "WV",
-    total_pills: 5000,
+    address: "Williamson, WV",
   },
   {
     type: "zip",
     id: "zip:25661",
-    label: "25661",
-    sublabel: "Williamson, WV",
+    name: "25661",
     fips: "54059",
     state: "WV",
-    total_pills: 0,
   },
 ];
 
@@ -113,9 +100,7 @@ describe("useSearchIndex", () => {
     await waitFor(() => expect(result.current.status).toBe("error"));
     expect(result.current.error?.message).toContain("network down");
 
-    fetchMock.mockResolvedValueOnce(
-      new Response(JSON.stringify(FIXTURE), { status: 200 }),
-    );
+    fetchMock.mockResolvedValueOnce(new Response(JSON.stringify(FIXTURE), { status: 200 }));
     await act(async () => {
       await result.current.load();
     });

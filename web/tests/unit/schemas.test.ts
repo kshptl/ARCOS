@@ -95,18 +95,14 @@ describe("schemas mirror", () => {
     const county: SearchIndexEntry = {
       type: "county",
       id: "54059",
-      label: "Mingo County, WV",
-      sublabel: "26,839 people",
+      name: "Mingo County",
       fips: "54059",
       state: "WV",
-      total_pills: 50_000_000,
     };
     const distributor: SearchIndexEntry = {
       type: "distributor",
       id: "mckesson-corp",
-      label: "McKesson Corp",
-      sublabel: "Top distributor",
-      total_pills: 10_000_000_000,
+      name: "McKesson Corp",
     };
     expect(county.type).toBe("county");
     expect(distributor.type).toBe("distributor");

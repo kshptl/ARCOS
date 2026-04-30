@@ -9,11 +9,7 @@ export async function generateStaticParams() {
   return fips.map((f) => ({ fips: f }));
 }
 
-export default async function CountyPage({
-  params,
-}: {
-  params: Promise<{ fips: string }>;
-}) {
+export default async function CountyPage({ params }: { params: Promise<{ fips: string }> }) {
   const { fips } = await params;
   const meta = await loadCountyMetaByFips(fips);
   if (!meta) notFound();

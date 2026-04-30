@@ -31,20 +31,11 @@ export interface UseSearchIndexResult {
 function buildMini(entries: SearchIndexEntry[]): MiniSearch<SearchIndexEntry> {
   const mini = new MiniSearch<SearchIndexEntry>({
     idField: "id",
-    fields: ["label", "sublabel"],
-    storeFields: [
-      "type",
-      "id",
-      "label",
-      "sublabel",
-      "fips",
-      "state",
-      "total_pills",
-    ],
+    fields: ["name"],
+    storeFields: ["type", "id", "name", "fips", "state", "address"],
     searchOptions: {
       prefix: true,
       fuzzy: 0.2,
-      boost: { label: 2 },
     },
   });
   mini.addAll(entries);
@@ -72,9 +63,7 @@ function writeSession(entries: SearchIndexEntry[]): void {
 }
 
 export function useSearchIndex(): UseSearchIndexResult {
-  const [status, setStatus] = useState<SearchIndexStatus>(
-    cachedEntries ? "ready" : "idle",
-  );
+  const [status, setStatus] = useState<SearchIndexStatus>(cachedEntries ? "ready" : "idle");
   const [error, setError] = useState<Error | null>(null);
   const mountedRef = useRef(true);
 
@@ -141,9 +130,7 @@ export function useSearchIndex(): UseSearchIndexResult {
     if (!cachedMini || !query.trim()) return [];
     const limit = opts?.limit ?? 25;
     const hits = cachedMini.search(query, { combineWith: "AND" });
-    const byId = new Map<string, SearchIndexEntry>(
-      (cachedEntries ?? []).map((e) => [e.id, e]),
-    );
+    const byId = new Map<string, SearchIndexEntry>((cachedEntries ?? []).map((e) => [e.id, e]));
     const out: SearchIndexEntry[] = [];
     for (const hit of hits) {
       const entry = byId.get(String(hit.id));

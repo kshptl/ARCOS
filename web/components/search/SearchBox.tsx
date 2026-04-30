@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { type KeyboardEvent, useEffect, useId, useMemo, useRef, useState } from "react";
-import { useSearchIndex } from "./useSearchIndex";
 import type { SearchIndexEntry } from "@/lib/data/schemas";
 import styles from "./SearchBox.module.css";
+import { useSearchIndex } from "./useSearchIndex";
 
 const GROUP_DEFS: Array<{
   key: "places" | "distributors" | "pharmacies";
@@ -28,6 +28,16 @@ function groupResults(
   })).filter((g) => g.items.length > 0);
 }
 
+function sublabelFor(entry: SearchIndexEntry): string | null {
+  if (entry.type === "county" || entry.type === "city" || entry.type === "zip") {
+    return entry.state ?? null;
+  }
+  if (entry.type === "pharmacy") {
+    return entry.address ?? null;
+  }
+  return null;
+}
+
 function hrefFor(entry: SearchIndexEntry): string {
   if (entry.type === "county" && entry.fips) return `/county/${entry.fips}`;
   if (entry.type === "city" && entry.fips) return `/county/${entry.fips}`;
@@ -41,7 +51,9 @@ function hrefFor(entry: SearchIndexEntry): string {
 
 export function SearchBox({
   placeholder = "Search counties, distributors, pharmacies…",
-}: { placeholder?: string }) {
+}: {
+  placeholder?: string;
+}) {
   const listboxId = useId();
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
@@ -103,15 +115,11 @@ export function SearchBox({
         aria-expanded={open}
         aria-controls={listboxId}
         aria-autocomplete="list"
-        aria-activedescendant={
-          activeIdx >= 0 ? `${listboxId}-opt-${activeIdx}` : undefined
-        }
+        aria-activedescendant={activeIdx >= 0 ? `${listboxId}-opt-${activeIdx}` : undefined}
       />
       {open && (
         <div id={listboxId} role="listbox" className={styles.panel}>
-          {status === "loading" && (
-            <div className={styles.status}>Loading search index…</div>
-          )}
+          {status === "loading" && <div className={styles.status}>Loading search index…</div>}
           {status === "error" && (
             <div className={styles.status}>
               Search index failed to load.{" "}
@@ -130,6 +138,7 @@ export function SearchBox({
                 <div className={styles.groupHeader}>{g.label}</div>
                 {g.items.map((entry) => {
                   const idx = flat.indexOf(entry);
+                  const sub = sublabelFor(entry);
                   return (
                     <Link
                       key={entry.id}
@@ -140,10 +149,8 @@ export function SearchBox({
                       className={styles.item}
                       href={hrefFor(entry) as `/${string}`}
                     >
-                      <span className={styles.itemLabel}>{entry.label}</span>
-                      {entry.sublabel && (
-                        <span className={styles.itemSub}>{entry.sublabel}</span>
-                      )}
+                      <span className={styles.itemLabel}>{entry.name}</span>
+                      {sub && <span className={styles.itemSub}>{sub}</span>}
                     </Link>
                   );
                 })}

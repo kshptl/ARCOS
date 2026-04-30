@@ -86,27 +86,26 @@ export interface CDCOverdoseByCountyYear {
 /** Common fields across all search-index entry types */
 interface SearchIndexBase {
   id: string;
-  label: string;
-  sublabel: string;
-  total_pills: number;
+  name: string;
 }
 
 export interface SearchIndexCounty extends SearchIndexBase {
   type: "county";
   fips: string;
-  state: string;
+  state?: string;
 }
 
 export interface SearchIndexCity extends SearchIndexBase {
   type: "city";
   fips: string;
-  state: string;
+  state?: string;
 }
 
 export interface SearchIndexZip extends SearchIndexBase {
   type: "zip";
+  /** ZIP code, matches id */
   fips: string;
-  state: string;
+  state?: string;
 }
 
 export interface SearchIndexDistributor extends SearchIndexBase {
@@ -115,8 +114,8 @@ export interface SearchIndexDistributor extends SearchIndexBase {
 
 export interface SearchIndexPharmacy extends SearchIndexBase {
   type: "pharmacy";
+  address?: string;
   fips: string;
-  state: string;
 }
 
 export type SearchIndexEntry =
