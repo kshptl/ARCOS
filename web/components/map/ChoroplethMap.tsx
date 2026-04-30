@@ -8,7 +8,6 @@ import styles from "./ChoroplethMap.module.css";
 import type { ScaleDomain } from "./colorScales";
 import { buildCountyLayerProps, type MapMetric } from "./layers/countyLayer";
 import { buildStateLayerProps } from "./layers/stateLayer";
-
 export interface ChoroplethMapProps {
   counties: FeatureCollection<Geometry, { name?: string }>;
   states?: FeatureCollection<Geometry, { name?: string }>;
@@ -55,6 +54,11 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
   } = props;
 
   const layers = useMemo(() => {
+    const t0 =
+      process.env.NODE_ENV === "development" && typeof performance !== "undefined"
+        ? performance.now()
+        : 0;
+
     const countyProps = buildCountyLayerProps({
       featureCollection: counties,
       valueByFips,
@@ -83,6 +87,20 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
         new PolygonLayer(stateProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
       );
     }
+
+    if (process.env.NODE_ENV === "development" && typeof performance !== "undefined") {
+      const dt = performance.now() - t0;
+      // Gate on a reasonable threshold so we do not spam the console on
+      // no-op renders.
+      if (dt > 1) {
+        // eslint-disable-next-line no-console
+        console.debug(
+          `[ChoroplethMap] layers rebuilt in ${dt.toFixed(1)}ms ` +
+            `(year=${year ?? "?"}, metric=${metric}, counties=${counties.features.length})`,
+        );
+      }
+    }
+
     return layersOut;
   }, [counties, states, valueByFips, metric, domain, year, onCountyHover, onCountyClick]);
 
