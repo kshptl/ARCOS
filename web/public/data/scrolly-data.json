@@ -100,14 +100,17 @@
     "counties": [
       {
         "fips": "54059",
-        "name": "54059",
-        "state": "",
-        "deaths": []
+        "name": "Mingo County",
+        "state": "WV",
+        "deaths": [
+          0,
+          15
+        ]
       },
       {
         "fips": "51720",
-        "name": "51720",
-        "state": "",
+        "name": "Norton city",
+        "state": "VA",
         "deaths": []
       },
       {
@@ -130,8 +133,8 @@
       },
       {
         "fips": "21195",
-        "name": "21195",
-        "state": "",
+        "name": "Pike County",
+        "state": "KY",
         "deaths": []
       }
     ]
