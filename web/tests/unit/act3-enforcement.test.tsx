@@ -126,4 +126,17 @@ describe("Act3Enforcement", () => {
       expect(x1).toBeLessThanOrEqual(plotRight);
     }
   });
+
+  it("does not render the standalone chart title", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    // The on-chart title band used to read "DEA enforcement actions per year".
+    // It should no longer exist as a visible heading above the chart. The
+    // hidden data-table caption is allowed to retain its label.
+    const titleBands = container.querySelectorAll('[class*="titleBand"]');
+    expect(titleBands.length).toBe(0);
+  });
 });

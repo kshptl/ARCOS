@@ -78,8 +78,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
   return (
     <div className={styles.act}>
       <div className={styles.actInner}>
-        <div className={styles.titleBand}>DEA enforcement actions per year</div>
-
         <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className={styles.chart} aria-hidden="true">
           {/* y-axis title */}
           <text
