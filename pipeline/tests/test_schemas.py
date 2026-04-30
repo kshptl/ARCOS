@@ -34,3 +34,7 @@ def test_county_metadata_invalid_rejected():
 
 def test_state_shipments_sample_valid():
     _validate("state-shipments-by-year", "state-shipments-by-year.sample.json")
+
+
+def test_county_shipments_sample_valid():
+    _validate("county-shipments-by-year", "county-shipments-by-year.sample.json")
