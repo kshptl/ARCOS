@@ -48,4 +48,9 @@ describe("/ (not-found)", () => {
       .filter((a) => a.getAttribute("href") === "/explorer");
     expect(explorerLinks.length).toBeGreaterThan(0);
   });
+
+  it("exports metadata with a dedicated title", async () => {
+    const { metadata } = await import("@/app/not-found");
+    expect((metadata as { title?: string }).title).toBe("County not found");
+  });
 });

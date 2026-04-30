@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { MethodologyFooter } from "@/components/layout/MethodologyFooter";
 import { SearchBox } from "@/components/search/SearchBox";
 import { Eyebrow, Lede } from "@/components/ui/Typography";
 import styles from "./not-found.module.css";
+
+export const metadata: Metadata = {
+  title: "County not found",
+};
 
 export default function NotFound() {
   return (
