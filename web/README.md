@@ -53,7 +53,7 @@ Lighthouse CI (`.lighthouserc.json`) enforces, as errors, against a
 
 Thresholds are deliberately loose relative to production because
 Lighthouse emulates a mid-tier mobile device with 4× CPU throttling;
-Vercel's CDN + real hardware will score materially higher. The asserts
+Cloudflare Pages' CDN + real hardware will score materially higher. The asserts
 exist to catch regressions (a new heavy dep, a blocking script, a
 contrast failure), not to prove we hit a specific end-user LCP.
 

@@ -29,8 +29,29 @@ function toArrayBuffer(src: ParquetSource): ArrayBuffer {
 }
 
 /**
+ * Coerce BigInt values to Number inside a parsed parquet row.
+ *
+ * hyparquet returns Int64 columns as BigInt. The pipeline emits Int64 for
+ * `pills`, `total_pills`, `deaths`, and `year`. All these fit comfortably in
+ * JavaScript's safe-integer range (max ~10B), and downstream code treats them
+ * as Number (arithmetic, JSON, chart scales). Coercing at load keeps every
+ * call site simple at the cost of a narrow loss-of-precision risk above
+ * 2^53-1 — acceptable for this project's value ranges.
+ */
+function coerceBigInts(row: Record<string, unknown>): Record<string, unknown> {
+  for (const key in row) {
+    const value = row[key];
+    if (typeof value === "bigint") {
+      row[key] = Number(value);
+    }
+  }
+  return row;
+}
+
+/**
  * Read all (or some) rows from a parquet payload as an array of typed records.
- * Streams internally; materialises the projected rows to memory.
+ * Streams internally; materialises the projected rows to memory. BigInt
+ * columns are coerced to Number — see `coerceBigInts` docstring.
  */
 export async function readParquetRows<T>(
   source: ParquetSource,
@@ -46,7 +67,9 @@ export async function readParquetRows<T>(
       rowEnd: options.rowEnd,
       rowFormat: "object",
       onComplete: (data) => {
-        for (const row of data as T[]) rows.push(row);
+        for (const row of data as Record<string, unknown>[]) {
+          rows.push(coerceBigInts(row) as T);
+        }
         resolve();
       },
     }).catch(reject);

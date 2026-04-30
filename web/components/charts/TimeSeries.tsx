@@ -1,5 +1,7 @@
+"use client";
+
 import * as Plot from "@observablehq/plot";
-import type { ReactElement } from "react";
+import { type ReactElement, useEffect, useRef } from "react";
 import styles from "./charts.module.css";
 import { rowsToTable, summarizeTrend } from "./helpers";
 
@@ -37,53 +39,48 @@ export function TimeSeries<T extends Record<string, unknown>>(
         )
       : "";
 
-  const chart =
-    data.length > 0
-      ? Plot.plot({
-          width,
-          height,
-          marginLeft: 56,
-          marginBottom: 36,
-          x: { label: String(x), tickFormat: "d", grid: false },
-          y: {
-            label: String(y),
-            grid: true,
-            nice: true,
-          },
-          marks: [
-            series
-              ? Plot.line(data, { x, y, stroke: series, strokeWidth: 1.8 })
-              : Plot.line(data, {
-                  x,
-                  y,
-                  stroke: color ?? "var(--accent-cool)",
-                  strokeWidth: 2,
-                }),
-            Plot.dot(data, { x, y, fill: "currentColor", r: 2.5 }),
-          ],
-        })
-      : null;
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!chartRef.current || data.length === 0) return;
+    const chart = Plot.plot({
+      width,
+      height,
+      marginLeft: 56,
+      marginBottom: 36,
+      x: { label: String(x), tickFormat: "d", grid: false },
+      y: {
+        label: String(y),
+        grid: true,
+        nice: true,
+      },
+      marks: [
+        series
+          ? Plot.line(data, { x, y, stroke: series, strokeWidth: 1.8 })
+          : Plot.line(data, {
+              x,
+              y,
+              stroke: color ?? "var(--accent-cool)",
+              strokeWidth: 2,
+            }),
+        Plot.dot(data, { x, y, fill: "currentColor", r: 2.5 }),
+      ],
+    });
+    const node = chartRef.current;
+    node.replaceChildren(chart);
+    return () => {
+      chart.remove();
+    };
+  }, [data, x, y, series, width, height, color]);
 
   return (
     <figure aria-label={`${ariaLabel}. ${summary}`} className={styles.root}>
-      {chart && <PlotRender plot={chart} />}
+      <div ref={chartRef} aria-hidden="true" style={{ minHeight: height }} />
       <details className={styles.details}>
         <summary>Show data</summary>
         <DataTable rows={data} columns={columns} />
       </details>
     </figure>
-  );
-}
-
-function PlotRender({ plot }: { plot: SVGSVGElement | HTMLElement }): ReactElement {
-  // Plot returns an SVGSVGElement; Next RSC serialises via outerHTML.
-  const html = plot.outerHTML;
-  return (
-    <div
-      aria-hidden="true"
-      // biome-ignore lint/security/noDangerouslySetInnerHtml: Observable Plot returns raw SVG
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
   );
 }
 
