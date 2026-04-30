@@ -1,0 +1,29 @@
+.root {
+  position: relative;
+  display: inline-block;
+}
+.trigger {
+  cursor: help;
+  text-decoration: underline dotted;
+}
+.content {
+  position: absolute;
+  bottom: calc(100% + var(--space-xs));
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--canvas);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--type-caption);
+  white-space: nowrap;
+  z-index: var(--z-tooltip);
+  box-shadow: var(--shadow-soft);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+.root:hover .content,
+.root:focus-within .content {
+  opacity: 1;
+}

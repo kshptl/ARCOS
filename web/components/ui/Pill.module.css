@@ -1,0 +1,15 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2xs) var(--space-sm);
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: var(--type-caption);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+.neutral { color: var(--text-muted); }
+.hot     { color: var(--accent-hot); }
+.cool    { color: var(--accent-cool); }
