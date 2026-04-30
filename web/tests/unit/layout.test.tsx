@@ -17,6 +17,11 @@ describe("<Header>", () => {
     render(<Header search={<input placeholder="search counties" />} />);
     expect(screen.getByPlaceholderText(/search counties/i)).toBeInTheDocument();
   });
+
+  it("renders a SearchBox combobox in the header", () => {
+    render(<Header />);
+    expect(screen.getByRole("combobox")).toBeInTheDocument();
+  });
 });
 
 describe("<Footer>", () => {
