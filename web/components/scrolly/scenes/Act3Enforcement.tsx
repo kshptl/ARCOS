@@ -17,6 +17,10 @@ const PAD_RIGHT = 24;
 const PAD_TOP = 60;
 const PAD_BOTTOM = 52;
 const AXIS_LABEL_OFFSET = 14;
+const BAR_WIDTH = 28;
+// Half a bar plus a couple of pixels of breathing room keeps the leftmost and
+// rightmost bars fully inside the plot rectangle.
+const BAR_PADDING = BAR_WIDTH / 2 + 2;
 
 const FULL_YEAR_RANGE: number[] = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const INFLECTION_START = 2012;
@@ -50,13 +54,17 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
 
   const plotW = VIEW_W - PAD_LEFT - PAD_RIGHT;
   const plotH = VIEW_H - PAD_TOP - PAD_BOTTOM;
+  // Band-scale pattern: place the first/last bars one BAR_PADDING inside the
+  // plot rectangle so they never overflow the plotting area.
+  const innerW = Math.max(0, plotW - 2 * BAR_PADDING);
+  const denom = Math.max(1, years.length - 1);
+  const step = innerW / denom;
   const xFor = (year: number): number => {
     const idx = year - minYear;
-    const denom = Math.max(1, years.length - 1);
-    return PAD_LEFT + (idx / denom) * plotW;
+    return PAD_LEFT + BAR_PADDING + idx * step;
   };
   const yScale = (v: number) => PAD_TOP + plotH - (v / yMax) * plotH;
-  const barWidth = Math.min(28, plotW / Math.max(1, years.length) - 6);
+  const barWidth = Math.min(BAR_WIDTH, step - 6);
 
   // Notable-action callout positions alternate up/down to avoid collisions.
   const callouts = actions

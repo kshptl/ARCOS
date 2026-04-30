@@ -84,4 +84,46 @@ describe("Act3Enforcement", () => {
     );
     expect(leftmostTickX - rightmostTickX).toBeGreaterThanOrEqual(12);
   });
+
+  it("keeps all bars and tick placeholders within the plot rectangle", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const svg = container.querySelector("svg");
+    expect(svg).not.toBeNull();
+    const viewBox = svg!.getAttribute("viewBox") ?? "0 0 520 300";
+    const [, , wStr] = viewBox.split(" ");
+    const chartWidth = Number(wStr);
+    // Inspect the x-axis baseline which spans (PAD_LEFT, PAD_LEFT + plotW)
+    const baseline = Array.from(svg!.querySelectorAll("line")).find(
+      (l) => l.getAttribute("x1") && l.getAttribute("x2") && l.getAttribute("y1") === l.getAttribute("y2"),
+    );
+    expect(baseline).toBeTruthy();
+    const plotLeft = Number(baseline!.getAttribute("x1"));
+    const plotRight = Number(baseline!.getAttribute("x2"));
+    expect(plotLeft).toBeGreaterThan(0);
+    expect(plotRight).toBeLessThan(chartWidth);
+
+    // All data-bar rects must be fully inside (plotLeft, plotRight).
+    const bars = Array.from(
+      svg!.querySelectorAll('rect[data-testid="timeline-tick"]'),
+    );
+    for (const b of bars) {
+      const x = Number(b.getAttribute("x"));
+      const w = Number(b.getAttribute("width"));
+      expect(x).toBeGreaterThanOrEqual(plotLeft);
+      expect(x + w).toBeLessThanOrEqual(plotRight);
+    }
+    // Placeholder <line> ticks must also be inside [plotLeft, plotRight].
+    const lineTicks = Array.from(
+      svg!.querySelectorAll('line[data-testid="timeline-tick"]'),
+    );
+    for (const l of lineTicks) {
+      const x1 = Number(l.getAttribute("x1"));
+      expect(x1).toBeGreaterThanOrEqual(plotLeft);
+      expect(x1).toBeLessThanOrEqual(plotRight);
+    }
+  });
 });
