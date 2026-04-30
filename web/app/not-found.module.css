@@ -1,0 +1,38 @@
+.root {
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+  padding: var(--space-3xl) 0;
+}
+
+.article {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.article h1 {
+  font-size: var(--type-h1);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.article section {
+  margin-top: var(--space-xl);
+}
+
+.article h2 {
+  font-size: var(--type-h3);
+  margin-bottom: var(--space-sm);
+}
+
+.searchContainer {
+  margin-top: var(--space-lg);
+}
+
+.links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-md);
+  font-family: var(--font-display);
+}
