@@ -115,6 +115,32 @@ describe("Act1Scale", () => {
     expect(screen.getByTestId("act1-peak-callout")).toBeInTheDocument();
   });
 
+  it("peak annotation text sits at least 16px above the peak bar's value label", () => {
+    // Single-year fixture keeps geometry trivial: the only bar is the peak
+    // bar, and its value label is drawn directly above it.
+    const yearly = [{ year: 2010, pills: 10_000_000_000 }];
+    renderWithProgress(1, yearly, 10_000_000_000);
+
+    // The peak callout <g> contains a <text> for the "Peak: ..." label.
+    const callout = screen.getByTestId("act1-peak-callout");
+    const peakText = callout.querySelector("text");
+    expect(peakText).not.toBeNull();
+    const peakY = Number.parseFloat(peakText!.getAttribute("y") ?? "NaN");
+
+    // The value-above-bar label is the <text> drawn with the barLabel class
+    // for the peak bar. With only one bar, find the first <text> whose y
+    // sits just above the bar rectangle.
+    const bar = document.querySelector('[data-testid="act1-bar"]');
+    expect(bar).not.toBeNull();
+    const barY = Number.parseFloat(bar!.getAttribute("y") ?? "NaN");
+    // The bar value label is rendered at bar.y - 6 in the component.
+    const valueLabelY = barY - 6;
+
+    // SVG y grows downward, so "above" means smaller y. Peak label should
+    // be at least 16px higher than the value label.
+    expect(valueLabelY - peakY).toBeGreaterThanOrEqual(16);
+  });
+
   describe("count-up numeral always shows one decimal", () => {
     const DECIMAL_RE = /^\d+\.\d[KMB]?$/;
     const cases: Array<[string, number]> = [

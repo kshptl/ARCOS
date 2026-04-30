@@ -196,7 +196,11 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
               if (peakBp < 0.6) return null;
               const cx = PLOT_LEFT + slotW * (peakIdx + 0.5);
               const barTopY = PLOT_TOP + plotH - (peak.pills / yMax) * plotH;
-              const labelY = Math.max(PLOT_TOP - 6, barTopY - 28);
+              // Offset the callout high enough to clear the per-bar value
+              // label (which sits at barTopY - 6 with ~11px glyphs). 44px
+              // gives a full line of air between the two, even when the
+              // peak bar tops out near the plot ceiling.
+              const labelY = barTopY - 44;
               const opacity = Math.min(1, (peakBp - 0.6) / 0.4);
               return (
                 <g data-testid="act1-peak-callout" opacity={opacity}>
