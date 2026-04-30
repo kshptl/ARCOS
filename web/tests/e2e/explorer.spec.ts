@@ -23,7 +23,7 @@ test.describe("/explorer", () => {
     const firstLink = page.locator('aside[aria-label="Browse counties"] a').first();
     const count = await firstLink.count();
     if (count === 0) {
-      // Empty county-meta.json fixture: no counties to click.
+      // Empty county-metadata.json fixture: no counties to click.
       test.skip();
     }
     const href = await firstLink.getAttribute("href");
