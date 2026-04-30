@@ -6,7 +6,7 @@
   /* palette */
   --ink: #1a1a1a;
   --ink-80: #1a1a1acc;
-  --ink-60: #1a1a1a99;
+  --ink-60: #1a1a1aaa; /* 67% alpha → 5.34:1 contrast on --canvas, passes WCAG AA */
   --ink-40: #1a1a1a66;
   --canvas: #f5ecd7;
   --canvas-warm: #f0e3c4;

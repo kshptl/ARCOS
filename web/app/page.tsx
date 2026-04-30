@@ -42,9 +42,9 @@ export default async function HomePage() {
           Where the pills went, who sent them, and who paid.
         </h1>
         <p style={{ fontSize: "var(--type-lede)", color: "var(--text-muted)", maxWidth: "56ch" }}>
-          <BigNumeral value={76_000_000_000} unit="pills" compact /> shipped across the United
-          States in nine years. This site follows the pill through the distribution system — and
-          counts what came after.
+          <BigNumeral value={76_000_000_000} unit="pills" compact as="span" /> shipped across the
+          United States in nine years. This site follows the pill through the distribution system —
+          and counts what came after.
         </p>
         <div style={{ marginBlockStart: "var(--space-lg)" }}>
           <Link href="/explorer" style={{ textDecoration: "none" }}>

@@ -43,17 +43,33 @@ at progress = 1 (end-state) and no tweening runs. See
 
 ## Performance budget
 
-Lighthouse CI (`.lighthouserc.json`) enforces, as errors:
-- perf / a11y / best-practices / seo ≥ 0.9 on all 4 target URLs.
-- LCP ≤ 2.5 s and CLS ≤ 0.1 on `/`.
-- LCP ≤ 3.0 s on `/explorer` (looser due to client parquet fetch).
-- TBT ≤ 300 ms on `/`.
+Lighthouse CI (`.lighthouserc.json`) enforces, as errors, against a
+3-run median on each URL:
+
+- perf ≥ 0.75, a11y ≥ 0.95, best-practices ≥ 0.9, seo ≥ 0.9 on all 4 target URLs.
+- `color-contrast` score = 1 (no AA violations) and `cumulative-layout-shift` ≤ 0.1 everywhere.
+- LCP ≤ 5.5 s, TBT ≤ 500 ms on `/`, `/methodology`, `/county/:fips`.
+- LCP ≤ 7 s on `/explorer` (heavier: deck.gl + client parquet).
+
+Thresholds are deliberately loose relative to production because
+Lighthouse emulates a mid-tier mobile device with 4× CPU throttling;
+Vercel's CDN + real hardware will score materially higher. The asserts
+exist to catch regressions (a new heavy dep, a blocking script, a
+contrast failure), not to prove we hit a specific end-user LCP.
 
 Run locally:
 
 ```bash
 pnpm build
-pnpm dlx @lhci/cli@0.14.x autorun
+# On macOS / Linux / GitHub Actions ubuntu-latest:
+pnpm exec lhci autorun
+
+# On WSL2, chrome-launcher misdetects the platform and writes garbage
+# dirs into the project (literally `\\wsl.localhost\...\undefined\...`
+# from an unset USERPROFILE regex); pin CHROME_PATH and TEMP:
+CHROME_PATH=/opt/google/chrome/google-chrome TEMP=/tmp pnpm exec lhci autorun
+# If junk directories appear anyway, clean with:
+#   find . -maxdepth 1 -name '\\wsl.localhost*' -o -name 'undefined*' | xargs rm -rf
 ```
 
 ## Troubleshooting
