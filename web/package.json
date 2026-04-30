@@ -38,6 +38,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "~5",
+    "ajv": "~8",
+    "ajv-formats": "~3",
     "jsdom": "~25",
     "tsx": "~4",
     "typescript": "~5.5",
