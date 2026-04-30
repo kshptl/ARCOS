@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { DistributorsPanel } from "./DistributorsPanel";
 import { Tabs } from "./Tabs";
+import { loadDistributorsAggregated } from "@/lib/data/loadTopDistributors";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -8,7 +10,8 @@ export const metadata: Metadata = {
     "Top distributors and top pharmacies by prescription opioid pills shipped (2006–2014).",
 };
 
-export default function RankingsPage() {
+export default async function RankingsPage() {
+  const distributors = await loadDistributorsAggregated();
   return (
     <div className={`${styles.root} container`}>
       <header className={styles.header}>
@@ -24,7 +27,7 @@ export default function RankingsPage() {
           {
             key: "distributors",
             label: "Distributors",
-            panel: <p>(populated in Task 41)</p>,
+            panel: <DistributorsPanel rows={distributors} />,
           },
           {
             key: "pharmacies",
