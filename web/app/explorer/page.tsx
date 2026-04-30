@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Explorer } from '@/components/explorer/Explorer';
+import { ExplorerErrorBoundary } from '@/components/errors/ExplorerErrorBoundary';
 import { loadCountyMeta } from '@/lib/data/loadCountyMeta';
 
 export const metadata: Metadata = {
@@ -9,5 +10,9 @@ export const metadata: Metadata = {
 
 export default async function ExplorerPage() {
   const counties = await loadCountyMeta();
-  return <Explorer counties={counties} />;
+  return (
+    <ExplorerErrorBoundary>
+      <Explorer counties={counties} />
+    </ExplorerErrorBoundary>
+  );
 }
