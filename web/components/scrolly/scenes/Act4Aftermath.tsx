@@ -1,6 +1,7 @@
 "use client";
 
 import { useScrollyProgress } from "../progressContext";
+import { useReducedMotion } from "../useReducedMotion";
 import styles from "./scenes.module.css";
 
 export interface Act4County {
@@ -25,10 +26,15 @@ interface SparkGeom {
   lastY: number;
   firstValue: number;
   lastValue: number;
+  length: number;
   min: number;
   max: number;
   width: number;
   height: number;
+}
+
+function clamp01(n: number) {
+  return n < 0 ? 0 : n > 1 ? 1 : n;
 }
 
 function buildSpark(
@@ -57,6 +63,7 @@ function buildSpark(
       lastY: cy,
       firstValue: values[0] as number,
       lastValue: values[0] as number,
+      length: 0,
       min,
       max,
       width,
@@ -68,8 +75,18 @@ function buildSpark(
   for (let i = 1; i < values.length; i++) {
     if ((values[i] as number) > (values[peakIndex] as number)) peakIndex = i;
   }
-  const path = values
-    .map((v, i) => `${i === 0 ? "M" : "L"}${(i * step).toFixed(1)},${y(v).toFixed(1)}`)
+  // Compute points + total polyline length.
+  const points: Array<[number, number]> = values.map(
+    (v, i) => [i * step, y(v)] as [number, number],
+  );
+  let length = 0;
+  for (let i = 1; i < points.length; i++) {
+    const [ax, ay] = points[i - 1] as [number, number];
+    const [bx, by] = points[i] as [number, number];
+    length += Math.hypot(bx - ax, by - ay);
+  }
+  const path = points
+    .map(([px, py], i) => `${i === 0 ? "M" : "L"}${px.toFixed(1)},${py.toFixed(1)}`)
     .join(" ");
   const lastIdx = values.length - 1;
   return {
@@ -83,6 +100,7 @@ function buildSpark(
     lastY: y(values[lastIdx] as number),
     firstValue: values[0] as number,
     lastValue: values[lastIdx] as number,
+    length,
     min,
     max,
     width,
@@ -93,9 +111,17 @@ function buildSpark(
 const SPARK_W = 160;
 const SPARK_H = 36;
 
+// Reveal timing constants. With 6 cards:
+//   - card i fades in over [i*CARD_STAGGER, i*CARD_STAGGER + CARD_DUR]
+//   - CARD_STAGGER=0.05, CARD_DUR=0.25 → all cards fully visible by progress=0.5
+//   - line i starts drawing LINE_DELAY after card i's fade-in starts, ends at progress=1
+const CARD_STAGGER = 0.05;
+const CARD_DUR = 0.25;
+const LINE_DELAY = 0.1;
+
 export function Act4Aftermath({ counties }: Act4AftermathProps) {
   const progress = useScrollyProgress();
-  const opacity = Math.min(1, progress * 2);
+  const reducedMotion = useReducedMotion();
 
   // Shared x-axis: find the longest series length. Synthetic fixtures may have
   // 0, 1, or many points; we scale each county into a shared year span.
@@ -103,9 +129,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
     1,
     ...counties.flatMap((c) => (c.deaths.length > 0 ? [Math.max(...c.deaths)] : [])),
   );
-  // The underlying CDC death series runs 2003–2022; the first year in the
-  // array is the earliest year present. We don't have year metadata per
-  // county here, so we only show the peak-year offset ("yr +N") as a hint.
 
   return (
     <div className={styles.act}>
@@ -114,12 +137,32 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
           Six heavily shipped counties — overdose deaths per year
         </div>
 
-        <div className={styles.gridMultiples} style={{ opacity }}>
-          {counties.map((c) => {
+        <div className={styles.gridMultiples}>
+          {counties.map((c, i) => {
             const hasData = c.deaths.length > 0;
             const spark = hasData ? buildSpark(c.deaths, SPARK_W, SPARK_H, globalMax) : null;
+
+            // Per-card reveal progress (0..1).
+            const cardT = reducedMotion
+              ? 1
+              : clamp01((progress - i * CARD_STAGGER) / CARD_DUR);
+            // Per-line draw progress (0..1). Line starts LINE_DELAY after its
+            // card begins fading in; completes at progress=1.
+            const lineStart = i * CARD_STAGGER + LINE_DELAY;
+            const lineT = reducedMotion
+              ? 1
+              : clamp01((progress - lineStart) / (1 - lineStart));
+
+            const lineLen = spark?.length ?? 0;
+            const dashOffset = lineLen * (1 - lineT);
+
             return (
-              <figure key={c.fips} data-testid="small-multiple" className={styles.multiple}>
+              <figure
+                key={c.fips}
+                data-testid="small-multiple"
+                className={styles.multiple}
+                style={{ opacity: cardT }}
+              >
                 <a href={`/county/${c.fips}`} className={styles.multipleLink}>
                   <figcaption className={styles.multipleName}>{c.name}</figcaption>
                   <span className={styles.multipleState}>{c.state || "—"}</span>
@@ -140,7 +183,16 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       stroke="var(--ink-40)"
                       strokeWidth={0.5}
                     />
-                    {spark && <path d={spark.path} />}
+                    {spark && (
+                      <path
+                        data-testid="spark-line"
+                        d={spark.path}
+                        style={{
+                          strokeDasharray: lineLen,
+                          strokeDashoffset: dashOffset,
+                        }}
+                      />
+                    )}
                     {/* Peak marker */}
                     {spark && c.deaths.length > 1 && (
                       <g data-testid="spark-peak">

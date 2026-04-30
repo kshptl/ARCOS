@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ScrollyProgressContext } from "@/components/scrolly/progressContext";
 import { Act4Aftermath } from "@/components/scrolly/scenes/Act4Aftermath";
 
@@ -11,6 +11,25 @@ const COUNTIES = [
   { fips: "21195", name: "Pike", state: "KY", deaths: [7, 9, 11, 13, 15, 19] },
   { fips: "54039", name: "Kanawha", state: "WV", deaths: [20, 25, 30, 35, 40, 50] },
 ];
+
+function stubMatchMedia(reduced: boolean) {
+  vi.stubGlobal(
+    "matchMedia",
+    vi.fn(() => ({
+      matches: reduced,
+      addEventListener: vi.fn(),
+      removeEventListener: vi.fn(),
+    })),
+  );
+}
+
+beforeEach(() => {
+  stubMatchMedia(false);
+});
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
 
 describe("Act4Aftermath", () => {
   it("renders 6 small-multiple sparklines", () => {
@@ -119,6 +138,71 @@ describe("Act4Aftermath", () => {
       const last = labels[1] as SVGTextElement;
       expect(first.textContent).toBe(String(county.deaths[0]));
       expect(last.textContent).toBe(String(county.deaths[county.deaths.length - 1]));
+    }
+  });
+
+  it("at progress=0.1, first cards are visible and last cards are still hidden", () => {
+    render(
+      <ScrollyProgressContext.Provider value={0.1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    const op = (el: Element) => Number((el as HTMLElement).style.opacity || "1");
+    expect(op(figures[0]!)).toBeGreaterThan(0);
+    expect(op(figures[1]!)).toBeGreaterThan(0);
+    expect(op(figures[4]!)).toBeLessThanOrEqual(0.01);
+    expect(op(figures[5]!)).toBeLessThanOrEqual(0.01);
+  });
+
+  it("at progress=0.5, all cards are fully visible and sparklines are partially drawn", () => {
+    render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    for (const fig of figures) {
+      const opacity = Number((fig as HTMLElement).style.opacity || "1");
+      expect(opacity).toBe(1);
+    }
+    // At least the last card's line should still be partially drawn.
+    const lastPath = figures[5]!.querySelector("path[data-testid='spark-line']") as SVGPathElement;
+    expect(lastPath).toBeTruthy();
+    const offset = Number(lastPath.style.strokeDashoffset || "0");
+    expect(offset).toBeGreaterThan(0);
+  });
+
+  it("at progress=1, all cards opacity=1 and all sparklines fully drawn (dashoffset=0)", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    for (const fig of figures) {
+      const opacity = Number((fig as HTMLElement).style.opacity || "1");
+      expect(opacity).toBe(1);
+      const path = fig.querySelector("path[data-testid='spark-line']") as SVGPathElement;
+      const offset = Number(path.style.strokeDashoffset || "0");
+      expect(offset).toBe(0);
+    }
+  });
+
+  it("with prefers-reduced-motion, all cards opacity=1 and lines fully drawn regardless of progress", () => {
+    stubMatchMedia(true);
+    render(
+      <ScrollyProgressContext.Provider value={0}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    for (const fig of figures) {
+      const opacity = Number((fig as HTMLElement).style.opacity || "1");
+      expect(opacity).toBe(1);
+      const path = fig.querySelector("path[data-testid='spark-line']") as SVGPathElement;
+      const offset = Number(path.style.strokeDashoffset || "0");
+      expect(offset).toBe(0);
     }
   });
 });
