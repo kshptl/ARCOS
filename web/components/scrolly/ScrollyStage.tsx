@@ -26,7 +26,20 @@ export function ScrollyStage({ canvas, children, ariaLabel, dataSummary }: Scrol
       data-reduced={reduced ? "true" : "false"}
     >
       <ScrollyProgressContext.Provider value={effective}>
-        <div className={styles.sticky} aria-hidden={reduced ? "false" : "true"}>
+        {/*
+         * When motion is enabled, the sticky canvas is a purely visual layer:
+         * Act 4 duplicates its county links into the <details> data summary
+         * below, and the Explorer + Rankings pages list every county. Mark
+         * it both aria-hidden (for AT) and inert (to remove its focusable
+         * descendants from the tab order) so axe's aria-hidden-focus rule is
+         * satisfied. When reduced motion is on, the canvas is the only view,
+         * so it must remain both visible to AT and focusable.
+         */}
+        <div
+          className={styles.sticky}
+          aria-hidden={reduced ? "false" : "true"}
+          inert={reduced ? undefined : true}
+        >
           {canvas}
         </div>
         <div className={styles.steps}>{children}</div>
