@@ -5,9 +5,7 @@ import { TopDistributors } from "@/components/county/TopDistributors";
 describe("TopDistributors", () => {
   it("renders a Bar chart when data is present", () => {
     render(
-      <TopDistributors
-        rows={[{ distributor: "McKesson", pills: 500_000_000, share_pct: 30 }]}
-      />,
+      <TopDistributors rows={[{ distributor: "McKesson", pills: 500_000_000, share_pct: 30 }]} />,
     );
     expect(screen.getByRole("figure")).toBeInTheDocument();
   });

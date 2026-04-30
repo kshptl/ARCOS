@@ -3,15 +3,9 @@ import type { CountyMetadata } from "@/lib/data/schemas";
 import { formatOrdinal } from "@/lib/format/number";
 import styles from "./RankCallouts.module.css";
 
-export function RankCallouts({
-  meta: _meta,
-  ranks,
-}: {
-  meta: CountyMetadata;
-  ranks: CountyRanks;
-}) {
+export function RankCallouts({ meta: _meta, ranks }: { meta: CountyMetadata; ranks: CountyRanks }) {
   return (
-    <div className={styles.grid} aria-label="Rank callouts">
+    <section className={styles.grid} aria-label="Rank callouts">
       <div className={styles.card}>
         <span className={styles.label}>Nationally</span>
         <span className={styles.rank}>
@@ -45,6 +39,6 @@ export function RankCallouts({
             : "suppressed or unavailable"}
         </span>
       </div>
-    </div>
+    </section>
   );
 }

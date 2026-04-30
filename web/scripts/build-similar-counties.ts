@@ -1,7 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { readParquetRows } from "@/lib/data/parquet";
 
 interface CountyMetaRow {
   fips: string;
@@ -23,7 +22,8 @@ async function main() {
   try {
     const buf = await fs.readFile(path.join(root, "county-shipments-by-year.parquet"));
     if (buf.byteLength > 0) {
-      const shipments = await readParquetRows<ShipmentRow>(buf);
+      const mod = await import("../lib/data/parquet.js");
+      const shipments = await mod.readParquetRows<ShipmentRow>(buf);
       for (const r of shipments) {
         totals.set(r.fips, (totals.get(r.fips) ?? 0) + r.pills);
       }

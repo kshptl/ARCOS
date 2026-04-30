@@ -13,9 +13,7 @@ export function TopPharmacies({ rows }: { rows: TopPharmacy[] }) {
   }
   return (
     <table className={styles.table}>
-      <caption className="visually-hidden">
-        Top pharmacies by pills shipped 2006–2014
-      </caption>
+      <caption className="visually-hidden">Top pharmacies by pills shipped 2006–2014</caption>
       <thead>
         <tr>
           <th scope="col">Rank</th>

@@ -1,17 +1,11 @@
 import { BigNumeral } from "@/components/brand/BigNumeral";
-import type { CountyBundle } from "@/lib/data/loadCountyBundle";
 import { computeCountyHeroStats } from "@/lib/data/countyHeroStats";
+import type { CountyBundle } from "@/lib/data/loadCountyBundle";
 import type { CountyMetadata } from "@/lib/data/schemas";
 import { formatCompact, formatFull } from "@/lib/format/number";
 import styles from "./Hero.module.css";
 
-export function Hero({
-  meta,
-  bundle,
-}: {
-  meta: CountyMetadata;
-  bundle: CountyBundle;
-}) {
+export function Hero({ meta, bundle }: { meta: CountyMetadata; bundle: CountyBundle }) {
   const stats = computeCountyHeroStats(meta, bundle.shipments);
   return (
     <div className={styles.root}>

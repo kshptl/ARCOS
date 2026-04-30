@@ -14,10 +14,7 @@ function medianByYear(rows: StateShipmentsByYear[]): Map<number, number> {
   for (const [year, arr] of byYear) {
     arr.sort((a, b) => a - b);
     const mid = Math.floor(arr.length / 2);
-    const value =
-      arr.length % 2
-        ? (arr[mid] ?? 0)
-        : ((arr[mid - 1] ?? 0) + (arr[mid] ?? 0)) / 2;
+    const value = arr.length % 2 ? (arr[mid] ?? 0) : ((arr[mid - 1] ?? 0) + (arr[mid] ?? 0)) / 2;
     out.set(year, value);
   }
   return out;
@@ -64,17 +61,11 @@ export function CountyTimeSeries({
       />
       <div className={styles.legend} aria-hidden="true">
         <span>
-          <span
-            className={styles.swatch}
-            style={{ background: "var(--accent-hot)" }}
-          />
+          <span className={styles.swatch} style={{ background: "var(--accent-hot)" }} />
           {meta.name}
         </span>
         <span>
-          <span
-            className={styles.swatch}
-            style={{ background: "var(--accent-cool)" }}
-          />
+          <span className={styles.swatch} style={{ background: "var(--accent-cool)" }} />
           {meta.state} state avg
         </span>
         <span>

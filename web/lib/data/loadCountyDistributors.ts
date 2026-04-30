@@ -13,9 +13,7 @@ export function resetCountyDistributorsCache(): void {
   cache = null;
 }
 
-export async function loadCountyDistributors(
-  fips: string,
-): Promise<CountyDistributorRow[]> {
+export async function loadCountyDistributors(fips: string): Promise<CountyDistributorRow[]> {
   if (!cache) {
     const file = path.resolve(process.cwd(), "public/data/county-distributors.json");
     try {

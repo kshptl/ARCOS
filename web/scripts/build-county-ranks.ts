@@ -1,7 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { readParquetRows } from "@/lib/data/parquet";
 
 interface CountyShipmentRow {
   fips: string;
@@ -46,7 +45,8 @@ async function readParquetSafe<T>(p: string): Promise<T[]> {
   try {
     const buf = await fs.readFile(p);
     if (buf.byteLength === 0) return [];
-    return await readParquetRows<T>(buf);
+    const mod = await import("../lib/data/parquet.js");
+    return await mod.readParquetRows<T>(buf);
   } catch {
     return [];
   }
