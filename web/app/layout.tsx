@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { bodyFont, displayFont } from "@/lib/fonts";
+import "./globals.css";
 
 export const metadata = {
   title: "openarcos",
