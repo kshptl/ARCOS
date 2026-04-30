@@ -139,15 +139,11 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
             const spark = hasData ? buildSpark(c.deaths, SPARK_W, SPARK_H, globalMax) : null;
 
             // Per-card reveal progress (0..1).
-            const cardT = reducedMotion
-              ? 1
-              : clamp01((progress - i * CARD_STAGGER) / CARD_DUR);
+            const cardT = reducedMotion ? 1 : clamp01((progress - i * CARD_STAGGER) / CARD_DUR);
             // Per-line draw progress (0..1). Line starts LINE_DELAY after its
             // card begins fading in; completes at progress=1.
             const lineStart = i * CARD_STAGGER + LINE_DELAY;
-            const lineT = reducedMotion
-              ? 1
-              : clamp01((progress - lineStart) / (1 - lineStart));
+            const lineT = reducedMotion ? 1 : clamp01((progress - lineStart) / (1 - lineStart));
 
             const lineLen = spark?.length ?? 0;
             const dashOffset = lineLen * (1 - lineT);

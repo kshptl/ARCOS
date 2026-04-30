@@ -222,10 +222,7 @@ describe("Act4Aftermath", () => {
 
 describe("Act4 step caption (app/page.tsx)", () => {
   it("does not render the 'pills came in waves' caption prose", () => {
-    const page = readFileSync(
-      resolve(__dirname, "../../app/page.tsx"),
-      "utf-8",
-    );
+    const page = readFileSync(resolve(__dirname, "../../app/page.tsx"), "utf-8");
     expect(page).not.toMatch(/pills came in waves/i);
     expect(page).not.toMatch(/steepest casualties/i);
     expect(page).not.toMatch(/heaviest per-capita shipments/i);
