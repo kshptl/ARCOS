@@ -128,3 +128,14 @@ If superpowers is updated upstream and the base skill content changes
 substantively, re-copy `SKILL.md` and the reviewer prompts from
 `~/.cache/opencode/packages/superpowers@.../node_modules/superpowers/skills/subagent-driven-development/`
 and re-apply the amendment to `implementer-prompt.md`.
+
+## Known deviations from the web-core plan
+
+These are intentional differences between the written plan at
+`docs/superpowers/plans/2026-04-29-openarcos-web-core.md` and the code as
+committed. Keep this list current when you deviate on purpose.
+
+- **`typedRoutes` is a top-level Next config option, not `experimental`.**
+  Next 15 promoted `typedRoutes` out of `experimental`. The plan's sample
+  config shows `experimental: { typedRoutes: true }` but `web/next.config.mjs`
+  correctly uses the top-level `typedRoutes: true`. Do not "fix" this back.
