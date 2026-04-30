@@ -1,6 +1,5 @@
 "use client";
 
-import { formatFull } from "@/lib/format/number";
 import { useScrollyProgress } from "../progressContext";
 import styles from "./scenes.module.css";
 
@@ -100,10 +99,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
           {counties.map((c) => {
             const hasData = c.deaths.length > 0;
             const spark = hasData ? buildSpark(c.deaths, SPARK_W, SPARK_H, globalMax) : null;
-            const last = c.deaths[c.deaths.length - 1];
-            const rangeLabel = hasData
-              ? `${formatFull(spark?.min ?? 0)} → ${formatFull(spark?.max ?? 0)}`
-              : "No data";
             return (
               <figure key={c.fips} data-testid="small-multiple" className={styles.multiple}>
                 <a href={`/county/${c.fips}`} className={styles.multipleLink}>
@@ -139,21 +134,6 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       </g>
                     )}
                   </svg>
-                  <span className={styles.multipleRange}>
-                    {rangeLabel}
-                    {spark && c.deaths.length > 1 && (
-                      <>
-                        {" · peak yr +"}
-                        {spark.peakIndex}
-                      </>
-                    )}
-                    {last !== undefined && c.deaths.length > 0 && (
-                      <>
-                        {" · latest "}
-                        <span className={styles.multValue}>{formatFull(last)}</span>
-                      </>
-                    )}
-                  </span>
                 </a>
               </figure>
             );

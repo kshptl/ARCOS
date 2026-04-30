@@ -82,4 +82,23 @@ describe("Act4Aftermath", () => {
     expect(screen.queryByText(/same y-scale/i)).toBeNull();
     expect(screen.queryByText(/suppressed death counts/i)).toBeNull();
   });
+
+  it("does not render per-card captions beyond county name + state", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    // No range/peak/latest caption strings
+    expect(screen.queryByText(/peak yr/i)).toBeNull();
+    expect(screen.queryByText(/latest/i)).toBeNull();
+    expect(screen.queryByText(/→/)).toBeNull();
+    expect(screen.queryByText(/max /i)).toBeNull();
+    // The only figcaption per figure should be the county name
+    const figures = screen.getAllByTestId("small-multiple");
+    for (const fig of figures) {
+      const caps = fig.querySelectorAll("figcaption");
+      expect(caps.length).toBeLessThanOrEqual(1);
+    }
+  });
 });

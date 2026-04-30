@@ -221,13 +221,6 @@
   color: var(--text-muted);
 }
 
-.multipleRange {
-  font-family: var(--font-body);
-  font-size: 10px;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
 .multipleSpark {
   display: block;
   width: 100%;
