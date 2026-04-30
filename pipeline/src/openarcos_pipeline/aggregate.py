@@ -54,3 +54,32 @@ def run_single(cfg: Config, name: str) -> Path:
         conn.close()
     log.info("aggregate: %s → %s", name, out)
     return out
+
+
+def discover_sql(sql_dir: Path = SQL_DIR) -> list[str]:
+    """Return sorted list of aggregation names from sql/*.sql files."""
+    return sorted(p.stem for p in sql_dir.glob("*.sql"))
+
+
+def run_all(cfg: Config) -> list[Path]:
+    """Run every sql/*.sql against the pipeline inputs. Returns output paths."""
+    names = discover_sql()
+    if not names:
+        raise RuntimeError(f"No SQL files found in {SQL_DIR}")
+    cfg.agg_dir.mkdir(parents=True, exist_ok=True)
+    outputs = []
+    conn = duckdb.connect()
+    try:
+        _register_inputs(conn, cfg)
+        for name in names:
+            sql_path = SQL_DIR / f"{name}.sql"
+            body = sql_path.read_text()
+            out = cfg.agg_dir / f"{name}.parquet"
+            conn.execute(
+                f"COPY ({body}) TO '{out}' (FORMAT PARQUET, COMPRESSION ZSTD)"
+            )
+            outputs.append(out)
+            log.info("aggregate: %s → %s", name, out)
+    finally:
+        conn.close()
+    return outputs

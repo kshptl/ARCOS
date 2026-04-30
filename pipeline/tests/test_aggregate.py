@@ -104,3 +104,14 @@ def test_search_index(agg_master_parquet):
         {"county", "city", "zip", "distributor", "pharmacy"}
     )
     _assert_snapshot(df, SNAPSHOTS / "search_index.expected.csv")
+
+
+def test_run_all_produces_all_artifacts(agg_master_parquet):
+    cfg = agg_master_parquet
+    from openarcos_pipeline.aggregate import discover_sql, run_all
+    outputs = run_all(cfg)
+    names = {p.stem for p in outputs}
+    assert names == set(discover_sql())
+    # Every artifact should be a non-empty parquet
+    for p in outputs:
+        assert p.exists() and p.stat().st_size > 0, p
