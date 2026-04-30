@@ -12,3 +12,6 @@ pnpm build      # validates data + SSG export
 pnpm test       # vitest
 pnpm e2e        # playwright
 ```
+
+## Deployment
+See [../docs/ops.md](../docs/ops.md).
