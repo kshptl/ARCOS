@@ -34,4 +34,14 @@ describe("Act1Scale", () => {
     renderWithProgress(0.5);
     expect(screen.getByTestId("act1-yearly-table")).toBeInTheDocument();
   });
+
+  it("shows a peak callout at the peak year when bars are fully revealed", () => {
+    renderWithProgress(1);
+    expect(screen.getByTestId("act1-peak-callout")).toBeInTheDocument();
+  });
+
+  it("shows the sub-caption about distributors", () => {
+    renderWithProgress(0.5);
+    expect(screen.getByText(/distributors to pharmacies/i)).toBeInTheDocument();
+  });
 });

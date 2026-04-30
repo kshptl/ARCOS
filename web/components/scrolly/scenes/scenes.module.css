@@ -1,3 +1,5 @@
+/* ---------- act shell ---------- */
+
 .act {
   width: 100%;
   height: 100%;
@@ -5,7 +7,28 @@
   place-items: center;
   padding: var(--space-md);
   color: var(--text);
+  background: var(--canvas-warm);
+  font-variant-numeric: tabular-nums;
 }
+
+.actInner {
+  width: min(92%, 560px);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.titleBand {
+  font-family: var(--font-display);
+  font-size: var(--type-heading-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: var(--space-2xs);
+  line-height: 1.2;
+}
+
+/* ---------- Act 1: big stat + unified bar chart ---------- */
 
 .bigStat {
   display: grid;
@@ -24,7 +47,7 @@
 
 .count {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(2.6rem, 9vw, 5.5rem);
   line-height: 1;
   color: var(--accent-hot);
   font-variant-numeric: tabular-nums;
@@ -36,59 +59,199 @@
   color: var(--text-muted);
 }
 
-.bars {
-  width: min(80%, 500px);
-  height: auto;
-  margin-top: var(--space-md);
+.subCaption {
+  font-family: var(--font-body);
+  font-size: var(--type-body-sm);
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
 }
 
-.dataTable {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+.tickerLine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xs) var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--type-body-sm);
+  color: var(--text);
+  min-height: 1.5em;
 }
+
+.tickerEntry {
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.tickerEntry strong {
+  color: var(--accent-hot);
+  font-weight: 600;
+}
+
+/* ---------- generic chart surface ---------- */
+
+.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.axisLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  fill: var(--text-muted);
+}
+
+.axisTitle {
+  font-family: var(--font-display);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  fill: var(--text);
+}
+
+.barLabel {
+  font-family: var(--font-display);
+  font-size: 11px;
+  fill: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.yearLabel {
+  font-family: var(--font-display);
+  font-size: 13px;
+  fill: var(--text);
+  font-weight: 600;
+}
+
+.calloutLabel {
+  font-family: var(--font-display);
+  font-size: 10px;
+  fill: var(--accent-hot);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Act 2: slope chart ---------- */
+
+.slopeLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--text);
+}
+
+.slopeLabelMuted {
+  font-family: var(--font-body);
+  font-size: 10px;
+  fill: var(--text-muted);
+}
+
+.slopeValue {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  fill: var(--text);
+}
+
+/* ---------- Act 3: enforcement timeline ---------- */
+
+.notableCallout {
+  font-family: var(--font-body);
+  font-size: 9px;
+  fill: var(--text);
+}
+
+.inflectionLabel {
+  font-family: var(--font-display);
+  font-size: 10px;
+  fill: var(--accent-hot);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Act 4: small multiples ---------- */
 
 .gridMultiples {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-md);
-  width: min(90%, 640px);
+  gap: var(--space-sm);
+  width: 100%;
   transition: opacity 200ms ease;
 }
 
 .multiple {
   display: grid;
-  gap: var(--space-2xs);
+  gap: var(--space-3xs, 4px);
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--ink-40, color-mix(in srgb, var(--ink) 25%, transparent));
+  background: color-mix(in srgb, var(--canvas) 60%, transparent);
   font-family: var(--font-body);
   font-size: var(--type-body-sm);
+  margin: 0;
+  transition: border-color 150ms ease, background 150ms ease;
 }
 
-.multiple figcaption a {
+.multipleLink {
+  display: grid;
+  gap: var(--space-3xs, 4px);
   color: var(--text);
   text-decoration: none;
+}
+
+.multiple:hover,
+.multiple:focus-within {
+  border-color: var(--ink);
+  background: var(--canvas);
+}
+
+.multipleName {
+  font-family: var(--font-display);
+  font-size: var(--type-body);
   font-weight: 600;
+  color: var(--text);
+  line-height: 1.15;
 }
 
-.multiple figcaption a:hover,
-.multiple figcaption a:focus-visible {
-  text-decoration: underline;
-  color: var(--accent-hot);
+.multipleState {
+  font-family: var(--font-body);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
 }
 
-.multValue {
-  color: var(--accent-hot);
+.multipleRange {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-muted);
   font-variant-numeric: tabular-nums;
 }
+
+.multipleSpark {
+  display: block;
+  width: 100%;
+  height: 36px;
+}
+
+.multipleSpark path {
+  fill: none;
+  stroke: var(--accent-hot);
+  stroke-width: 1.5;
+}
+
+.multipleSpark circle {
+  fill: var(--accent-hot);
+}
+
+/* ---------- CTA (kept from original) ---------- */
 
 .ctaLede {
   font-family: var(--font-body);
   font-size: var(--type-heading-sm);
   text-align: center;
   color: var(--text);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
 }
 
 .cta {
@@ -101,6 +264,7 @@
   text-decoration: none;
   border-radius: 4px;
   margin-top: var(--space-sm);
+  justify-self: center;
 }
 
 .cta:hover,
@@ -108,6 +272,25 @@
   background: var(--accent-hot);
 }
 
+/* ---------- a11y fallback table ---------- */
+
+.dataTable {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .multiple,
+  .gridMultiples {
+    transition: none;
+  }
+}
+
 @media (max-width: 720px) {
   .gridMultiples { grid-template-columns: repeat(2, 1fr); }
+  .count { font-size: clamp(2.2rem, 12vw, 4rem); }
 }
