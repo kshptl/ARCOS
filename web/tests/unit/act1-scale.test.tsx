@@ -110,9 +110,34 @@ describe("Act1Scale", () => {
     expect(heightsAt95).toEqual(heightsAt80);
   });
 
-  it("peak annotation is visible at progress >= 0.5", () => {
+  it("peak annotation is not visible until bars settle", () => {
+    // A1.3: during the build phase (progress < 0.8), neither the peak bar
+    // highlight nor the peak annotation should be shown — the reader is
+    // still taking in the rising bars.
     renderWithProgress(0.5);
+    expect(screen.queryByTestId("act1-peak-callout")).not.toBeInTheDocument();
+    const bars = Array.from(document.querySelectorAll('[data-testid="act1-bar"]'));
+    for (const bar of bars) {
+      const fill = bar.getAttribute("fill") ?? "";
+      expect(fill).not.toMatch(/accent-hot/);
+    }
+  });
+
+  it("peak bar becomes accent-hot and callout appears exactly at progress=0.8", () => {
+    renderWithProgress(0.8);
     expect(screen.getByTestId("act1-peak-callout")).toBeInTheDocument();
+    const bars = Array.from(document.querySelectorAll('[data-testid="act1-bar"]'));
+    const hotBars = bars.filter((b) => (b.getAttribute("fill") ?? "").includes("accent-hot"));
+    // Exactly one bar — the peak bar — should be highlighted.
+    expect(hotBars).toHaveLength(1);
+  });
+
+  it("peak bar stays highlighted at progress=0.95", () => {
+    renderWithProgress(0.95);
+    expect(screen.getByTestId("act1-peak-callout")).toBeInTheDocument();
+    const bars = Array.from(document.querySelectorAll('[data-testid="act1-bar"]'));
+    const hotBars = bars.filter((b) => (b.getAttribute("fill") ?? "").includes("accent-hot"));
+    expect(hotBars).toHaveLength(1);
   });
 
   it("peak annotation text sits at least 16px above the peak bar's value label", () => {

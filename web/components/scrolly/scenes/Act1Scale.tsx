@@ -78,6 +78,13 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
   const slotW = plotW / n;
   const barWidth = Math.min(52, slotW * 0.55);
 
+  // A1.3: the peak bar's orange highlight and the peak annotation are
+  // deferred until the full timeline has built (i.e., we've entered the
+  // settled phase at progress >= 0.8). During the build phase the reader
+  // watches bars rise in neutral ink; only once every bar is up does the
+  // peak get called out.
+  const showPeak = progress >= 0.8;
+
   const yScale = (v: number) => PLOT_TOP + plotH - (v / yMax) * plotH;
 
   // Ticker entries reveal one per year, in step with the bars.
@@ -152,6 +159,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
             const h = fullH * bp;
             const y = PLOT_TOP + plotH - h;
             const isPeak = peak !== null && d.year === peak.year;
+            const isHighlighted = isPeak && showPeak;
             return (
               <g key={d.year}>
                 <rect
@@ -160,7 +168,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
                   y={y}
                   width={barWidth}
                   height={h}
-                  fill={isPeak ? "var(--accent-hot)" : "var(--ink-60)"}
+                  fill={isHighlighted ? "var(--accent-hot)" : "var(--ink-60)"}
                 />
                 {/* value label above bar — fades in once the bar is mostly up */}
                 {bp > 0.5 && (
@@ -187,13 +195,12 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
             );
           })}
 
-          {/* Peak annotation — appears once the peak bar itself is mostly up. */}
-          {peak &&
+          {/* Peak annotation — only after the whole timeline is built. */}
+          {showPeak &&
+            peak &&
             (() => {
               const peakIdx = sorted.findIndex((d) => d.year === peak.year);
               if (peakIdx < 0) return null;
-              const peakBp = barProgress[peakIdx] ?? 0;
-              if (peakBp < 0.6) return null;
               const cx = PLOT_LEFT + slotW * (peakIdx + 0.5);
               const barTopY = PLOT_TOP + plotH - (peak.pills / yMax) * plotH;
               // Offset the callout high enough to clear the per-bar value
@@ -201,9 +208,8 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
               // gives a full line of air between the two, even when the
               // peak bar tops out near the plot ceiling.
               const labelY = barTopY - 44;
-              const opacity = Math.min(1, (peakBp - 0.6) / 0.4);
               return (
-                <g data-testid="act1-peak-callout" opacity={opacity}>
+                <g data-testid="act1-peak-callout">
                   <line
                     x1={cx}
                     y1={labelY + 4}
