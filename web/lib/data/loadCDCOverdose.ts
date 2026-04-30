@@ -1,8 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { readParquetRows } from "@/lib/data/parquet";
-import { normalizeFips } from "@/lib/geo/fips";
 import type { CDCOverdoseByCountyYear } from "@/lib/data/schemas";
+import { normalizeFips } from "@/lib/geo/fips";
 
 const DATA_PATH = path.join(process.cwd(), "public", "data", "cdc-overdose-by-county-year.parquet");
 
@@ -40,9 +40,7 @@ export async function loadCDCOverdose(): Promise<CDCOverdoseByCountyYear[]> {
   return cache;
 }
 
-export async function loadCDCOverdoseByFips(
-  fips: string,
-): Promise<CDCOverdoseByCountyYear[]> {
+export async function loadCDCOverdoseByFips(fips: string): Promise<CDCOverdoseByCountyYear[]> {
   await loadCDCOverdose();
   return byFips?.get(normalizeFips(fips)) ?? [];
 }

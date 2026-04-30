@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const readFileMock = vi.fn();
 
@@ -14,16 +14,13 @@ vi.mock("node:fs/promises", async (importOriginal) => {
   };
 });
 
-import {
-  loadStateShipments,
-  resetStateShipmentsCache,
-} from "@/lib/data/loadStateShipments";
+import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
+import { loadStateShipments, resetStateShipmentsCache } from "@/lib/data/loadStateShipments";
 import {
   loadTopDistributors,
   loadTopDistributorsByYear,
   resetTopDistributorsCache,
 } from "@/lib/data/loadTopDistributors";
-import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
 
 describe("loadStateShipments", () => {
   beforeEach(() => {
@@ -64,9 +61,7 @@ describe("loadTopDistributors", () => {
 
   it("returns full array via loadTopDistributors", async () => {
     readFileMock.mockResolvedValueOnce(
-      JSON.stringify([
-        { distributor: "McKesson", year: 2012, pills: 5e9, share_pct: 40 },
-      ]),
+      JSON.stringify([{ distributor: "McKesson", year: 2012, pills: 5e9, share_pct: 40 }]),
     );
     const rows = await loadTopDistributors();
     expect(rows).toHaveLength(1);
@@ -78,9 +73,7 @@ describe("loadCountyBundle", () => {
     const bundle = await loadCountyBundle("54059", {
       overrides: {
         meta: { fips: "54059", name: "Mingo County", state: "WV", pop: 26839 },
-        shipments: [
-          { fips: "54059", year: 2012, pills: 5_000_000, pills_per_capita: 186.3 },
-        ],
+        shipments: [{ fips: "54059", year: 2012, pills: 5_000_000, pills_per_capita: 186.3 }],
         overdose: [{ fips: "54059", year: 2012, deaths: 42, suppressed: false }],
         pharmacies: [],
       },

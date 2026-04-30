@@ -47,11 +47,7 @@ export function Footer({ buildDate }: Props) {
               <Link href="/about">About</Link>
             </li>
             <li>
-              <a
-                href="https://github.com/openarcos/openarcos"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://github.com/openarcos/openarcos" target="_blank" rel="noreferrer">
                 GitHub
               </a>
             </li>
@@ -60,8 +56,8 @@ export function Footer({ buildDate }: Props) {
         <section className={styles.group}>
           <h2>About</h2>
           <p>
-            openarcos.org — a journalist-grade analysis of the DEA ARCOS dataset. Not a news
-            outlet; not affiliated with any publisher. All data is public.
+            openarcos.org — a journalist-grade analysis of the DEA ARCOS dataset. Not a news outlet;
+            not affiliated with any publisher. All data is public.
           </p>
         </section>
         <div className={styles.meta}>

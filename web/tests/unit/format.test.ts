@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+import { formatISODate, formatYearRange } from "@/lib/format/date";
 import { formatCompact, formatFull, formatOrdinal } from "@/lib/format/number";
 import { formatPercent } from "@/lib/format/percent";
-import { formatYearRange, formatISODate } from "@/lib/format/date";
 
 describe("formatCompact", () => {
   it("formats thousands", () => {

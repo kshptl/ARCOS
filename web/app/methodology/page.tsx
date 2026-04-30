@@ -41,8 +41,8 @@ export default function Methodology() {
           <Eyebrow>Methodology</Eyebrow>
           <h1>How this site is built</h1>
           <p className={styles.lede}>
-            openarcos is a static site assembled from three public datasets. Everything
-            below — sources, cleaning, joins, caveats — is reproducible from the repo at{" "}
+            openarcos is a static site assembled from three public datasets. Everything below —
+            sources, cleaning, joins, caveats — is reproducible from the repo at{" "}
             <a href="https://github.com/anomalyco/opencode">GitHub</a>.
           </p>
         </header>
@@ -69,9 +69,9 @@ export default function Methodology() {
             <dt>CDC WONDER</dt>
             <dd>
               Overdose deaths by county-year via the D76 multiple-cause-of-death dataset.{" "}
-              <a href="https://wonder.cdc.gov/mcd.html">View at wonder.cdc.gov</a>. Cells
-              with fewer than 10 deaths are suppressed per CDC rules; we preserve this as
-              a boolean flag rather than a zero.
+              <a href="https://wonder.cdc.gov/mcd.html">View at wonder.cdc.gov</a>. Cells with fewer
+              than 10 deaths are suppressed per CDC rules; we preserve this as a boolean flag rather
+              than a zero.
             </dd>
           </dl>
         </section>
@@ -79,10 +79,9 @@ export default function Methodology() {
         <section id="joins">
           <h2>Joins</h2>
           <p>
-            The pipeline builds a canonical <code>FIPS × year</code> grid from Census PEP
-            population estimates, then LEFT JOINs each cleaned source. The result lives at{" "}
-            <code>data/joined/master.parquet</code> and is the input to every emitted
-            artifact.
+            The pipeline builds a canonical <code>FIPS × year</code> grid from Census PEP population
+            estimates, then LEFT JOINs each cleaned source. The result lives at{" "}
+            <code>data/joined/master.parquet</code> and is the input to every emitted artifact.
           </p>
         </section>
 
@@ -91,16 +90,16 @@ export default function Methodology() {
           <ul>
             <li>ARCOS covers 2006–2014 only. Later years are not in this dataset.</li>
             <li>
-              CDC suppression hides cells with fewer than 10 deaths in a county-year — the
-              map shows these as "suppressed," not zero.
+              CDC suppression hides cells with fewer than 10 deaths in a county-year — the map shows
+              these as "suppressed," not zero.
             </li>
             <li>
-              Pill counts are in DEA "dosage units," not individual pills; a 100mg tablet
-              counts as one unit regardless of strength.
+              Pill counts are in DEA "dosage units," not individual pills; a 100mg tablet counts as
+              one unit regardless of strength.
             </li>
             <li>
-              DEA enforcement totals are scraped from annual PDFs; our counts are
-              approximate and may diverge from DEA's internal tallies.
+              DEA enforcement totals are scraped from annual PDFs; our counts are approximate and
+              may diverge from DEA's internal tallies.
             </li>
           </ul>
         </section>
@@ -109,8 +108,7 @@ export default function Methodology() {
           <h2>Licenses</h2>
           <ul>
             <li>
-              Code: Apache 2.0 —{" "}
-              <Link href="/methodology">View license</Link>
+              Code: Apache 2.0 — <Link href="/methodology">View license</Link>
             </li>
             <li>
               Fonts: SIL OFL 1.1 (Space Grotesk, Inter) —{" "}
@@ -123,9 +121,8 @@ export default function Methodology() {
         <section id="access-dates">
           <h2>Access dates</h2>
           <p>
-            The data bundle is refreshed weekly by{" "}
-            <code>.github/workflows/build-data.yml</code>. The build date is stamped in
-            the site footer.
+            The data bundle is refreshed weekly by <code>.github/workflows/build-data.yml</code>.
+            The build date is stamped in the site footer.
           </p>
         </section>
 

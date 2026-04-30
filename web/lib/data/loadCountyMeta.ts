@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { normalizeFips } from "@/lib/geo/fips";
 import type { CountyMetadata } from "@/lib/data/schemas";
+import { normalizeFips } from "@/lib/geo/fips";
 
 /**
  * Build-time loader for county-metadata.json. Reads directly from

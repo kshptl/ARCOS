@@ -1,12 +1,12 @@
+import { loadCDCOverdoseByFips } from "@/lib/data/loadCDCOverdose";
 import { loadCountyMetaByFips } from "@/lib/data/loadCountyMeta";
 import { loadCountyShipmentsByFips } from "@/lib/data/loadCountyShipments";
 import { loadTopPharmaciesByFips } from "@/lib/data/loadTopPharmacies";
-import { loadCDCOverdoseByFips } from "@/lib/data/loadCDCOverdose";
 import type {
+  CDCOverdoseByCountyYear,
   CountyMetadata,
   CountyShipmentsByYear,
   TopPharmacy,
-  CDCOverdoseByCountyYear,
 } from "@/lib/data/schemas";
 
 export interface CountyBundle {

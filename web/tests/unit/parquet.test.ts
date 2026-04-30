@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
-import { readParquetRows } from "@/lib/data/parquet";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { describe, expect, it } from "vitest";
+import { readParquetRows } from "@/lib/data/parquet";
 
 describe("parquet wrapper", () => {
   it("reads all rows from a tiny parquet file in Node", async () => {

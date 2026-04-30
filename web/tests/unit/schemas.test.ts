@@ -1,13 +1,13 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 import type {
+  CDCOverdoseByCountyYear,
   CountyMetadata,
-  StateShipmentsByYear,
   CountyShipmentsByYear,
+  DEAEnforcementAction,
+  SearchIndexEntry,
+  StateShipmentsByYear,
   TopDistributorsByYear,
   TopPharmacy,
-  DEAEnforcementAction,
-  CDCOverdoseByCountyYear,
-  SearchIndexEntry,
 } from "@/lib/data/schemas";
 import { ARTIFACT_NAMES } from "@/lib/data/schemas";
 

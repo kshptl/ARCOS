@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/font/local", () => ({
   default: () => ({ variable: "--mock-font", className: "mock" }),

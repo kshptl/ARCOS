@@ -1,8 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { readParquetRows } from "@/lib/data/parquet";
-import { normalizeFips } from "@/lib/geo/fips";
 import type { TopPharmacy } from "@/lib/data/schemas";
+import { normalizeFips } from "@/lib/geo/fips";
 
 const DATA_PATH = path.join(process.cwd(), "public", "data", "top-pharmacies.parquet");
 

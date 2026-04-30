@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BigNumeral } from "@/components/brand/BigNumeral";
-import { Eyebrow, Lede } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
+import { Eyebrow, Lede } from "@/components/ui/Typography";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -15,10 +15,9 @@ export default function Home() {
           and who paid.
         </h1>
         <Lede>
-          The DEA's ARCOS database tracks every prescription opioid shipped across the
-          United States. This site lets you walk through what it shows — from the 76
-          billion pills that flowed between 2006 and 2014 to the counties that buried
-          their neighbors.
+          The DEA's ARCOS database tracks every prescription opioid shipped across the United
+          States. This site lets you walk through what it shows — from the 76 billion pills that
+          flowed between 2006 and 2014 to the counties that buried their neighbors.
         </Lede>
 
         <div className={styles.numeral}>
@@ -30,8 +29,8 @@ export default function Home() {
             <Button variant="primary">Open the explorer →</Button>
           </Link>
           <p className={styles.ctaNote}>
-            The full scrollytelling narrative is coming in the next release. In the
-            meantime, explore the data directly.
+            The full scrollytelling narrative is coming in the next release. In the meantime,
+            explore the data directly.
           </p>
         </div>
       </div>

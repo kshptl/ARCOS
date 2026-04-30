@@ -20,8 +20,7 @@ const FULL_FORMATTER = new Intl.NumberFormat("en-US");
 
 export function BigNumeral({ value, unit, compact = false, tone = "default", ariaLabel }: Props) {
   const display = compact ? COMPACT_FORMATTER.format(value) : FULL_FORMATTER.format(value);
-  const toneClass =
-    tone === "hot" ? styles.accentHot : tone === "cool" ? styles.accentCool : "";
+  const toneClass = tone === "hot" ? styles.accentHot : tone === "cool" ? styles.accentCool : "";
   return (
     <figure
       className={`${styles.root} ${toneClass}`}

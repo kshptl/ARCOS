@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+import { FIPS_STATE_MAP, isValidFips, normalizeFips, stateFromFips } from "@/lib/geo/fips";
 import cases from "../fixtures/fips_cases.json";
-import { normalizeFips, isValidFips, stateFromFips, FIPS_STATE_MAP } from "@/lib/geo/fips";
 
 type NormalizeCase = { in: string | number; out: string };
 type StateCase = { fips: string; state: string };

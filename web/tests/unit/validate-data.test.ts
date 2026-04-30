@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
-import { validateArtifact, validateAllArtifacts } from "@/scripts/validate-data";
 import path from "node:path";
+import { describe, expect, it } from "vitest";
+import { validateAllArtifacts, validateArtifact } from "@/scripts/validate-data";
 
 const FIXTURE_DIR = path.join(__dirname, "..", "fixtures", "validate-data");
 const SCHEMA_DIR = path.join(__dirname, "..", "..", "..", "pipeline", "schemas");

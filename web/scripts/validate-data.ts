@@ -1,9 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import type { ErrorObject, ValidateFunction } from "ajv";
 import Ajv from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import type { ValidateFunction, ErrorObject } from "ajv";
 
 export interface ValidateArtifactArgs {
   schemaDir: string;
@@ -33,10 +33,7 @@ function getAjv(schemaDir: string): Ajv {
   return ajv;
 }
 
-async function loadSchema(
-  schemaDir: string,
-  artifactName: string,
-): Promise<ValidateFunction> {
+async function loadSchema(schemaDir: string, artifactName: string): Promise<ValidateFunction> {
   const schemaPath = path.join(schemaDir, `${artifactName}.schema.json`);
   const raw = await fs.readFile(schemaPath, "utf8");
   const schema = JSON.parse(raw);
@@ -46,9 +43,7 @@ async function loadSchema(
   return ajv.compile(schema);
 }
 
-export async function validateArtifact(
-  args: ValidateArtifactArgs,
-): Promise<ValidateResult> {
+export async function validateArtifact(args: ValidateArtifactArgs): Promise<ValidateResult> {
   const { schemaDir, dataPath, artifactName } = args;
   const validate = await loadSchema(schemaDir, artifactName);
   const raw = await fs.readFile(dataPath, "utf8");
@@ -58,7 +53,7 @@ export async function validateArtifact(
     file: path.basename(dataPath),
     artifactName,
     ok: Boolean(ok),
-    errors: ok ? [] : validate.errors ?? [],
+    errors: ok ? [] : (validate.errors ?? []),
   };
 }
 
@@ -67,9 +62,7 @@ export interface ValidateAllArgs {
   dataDir: string;
 }
 
-export async function validateAllArtifacts(
-  args: ValidateAllArgs,
-): Promise<ValidateResult[]> {
+export async function validateAllArtifacts(args: ValidateAllArgs): Promise<ValidateResult[]> {
   const { schemaDir, dataDir } = args;
   const entries = await fs.readdir(dataDir);
   const results: ValidateResult[] = [];
@@ -88,18 +81,13 @@ export async function validateAllArtifacts(
   return results;
 }
 
-async function findArtifactMatch(
-  schemaDir: string,
-  stem: string,
-): Promise<string | null> {
+async function findArtifactMatch(schemaDir: string, stem: string): Promise<string | null> {
   const schemas = await fs.readdir(schemaDir);
   const names = schemas
     .filter((f) => f.endsWith(".schema.json"))
     .map((f) => f.replace(/\.schema\.json$/, ""));
   if (names.includes(stem)) return stem;
-  const match = names
-    .filter((n) => stem.startsWith(n))
-    .sort((a, b) => b.length - a.length)[0];
+  const match = names.filter((n) => stem.startsWith(n)).sort((a, b) => b.length - a.length)[0];
   return match ?? null;
 }
 
