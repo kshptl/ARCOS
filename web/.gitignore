@@ -1,0 +1,23 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# next
+.next/
+out/
+*.tsbuildinfo
+
+# test artifacts
+coverage/
+playwright-report/
+test-results/
+.lighthouseci/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# editor
+.vscode/
+.idea/

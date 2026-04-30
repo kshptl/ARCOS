@@ -1,0 +1,26 @@
+{
+  "name": "openarcos-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "openarcos.org static site — journalist-grade analysis of ARCOS pill distribution",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "validate-data": "tsx scripts/validate-data.ts",
+    "build-similar": "tsx scripts/build-similar-counties.ts",
+    "prebuild": "pnpm validate-data",
+    "lhci": "lhci autorun"
+  }
+}
