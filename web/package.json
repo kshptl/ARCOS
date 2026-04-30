@@ -20,7 +20,8 @@
     "e2e:ui": "playwright test --ui",
     "validate-data": "tsx scripts/validate-data.ts",
     "build-similar": "tsx scripts/build-similar-counties.ts",
-    "prebuild": "pnpm validate-data",
+    "build-ranks": "tsx scripts/build-county-ranks.ts",
+    "prebuild": "pnpm validate-data && pnpm build-ranks && pnpm build-similar",
     "lhci": "lhci autorun"
   },
   "dependencies": {
