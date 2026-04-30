@@ -27,7 +27,11 @@ def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> Non
             fetch_all(client, cfg)
         log.info("wapo fetch complete")
     if source in ("all", "cdc"):
-        log.info("cdc fetch: not yet implemented (see Task 26)")
+        from openarcos_pipeline.sources.cdc_runner import fetch_all_states
+        from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient
+        with CDCWonderClient() as cdc:
+            fetch_all_states(cdc, cfg)
+        log.info("cdc fetch complete")
     if source in ("all", "dea"):
         log.info("dea fetch: not yet implemented (see Task 32)")
 
