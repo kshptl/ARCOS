@@ -515,6 +515,10 @@ git commit -m "spike: scrolly-stage findings documented"
 
 ---
 
+**Phase 1 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-int-phase-1-done`.
+
+---
+
 ## Phase 2 — Map Primitives (Tasks 6–12)
 
 These components are shared across `/explorer` (Phase 3) and homepage acts (Phase 4). Build them once, test them in isolation.
@@ -1779,6 +1783,10 @@ git commit -m "web: useWebGLSupport hook + detectWebGL helper"
 
 ---
 
+**Phase 2 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-int-phase-2-done`.
+
+---
+
 ## Phase 3 — /explorer (Tasks 13–19)
 
 Replaces the Plan 2 stub with a live interactive map. Because Deck.gl needs the browser, the page shell is a server component that renders a client wrapper (`<Explorer />`) which hydrates on mount, streams data, and handles filter state.
@@ -2947,6 +2955,10 @@ Expected: PASS, 4/4. If topology fetch fails in test env due to no network, the 
 git add web/tests/e2e/explorer.spec.ts
 git commit -m "web: Explorer E2E (slider + filters + fallback)"
 ```
+
+---
+
+**Phase 3 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-int-phase-3-done`.
 
 ---
 
@@ -5375,6 +5387,10 @@ git commit -m "web: e2e scrolly scroll-through + CTA"
 
 ---
 
+**Phase 4 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-int-phase-4-done`.
+
+---
+
 ## Phase 5 — Polish + perf enforcement (Tasks 33–38)
 
 ### Task 33 — Tighten Lighthouse CI: perf → error on all target routes
@@ -5846,6 +5862,38 @@ git tag --list | grep web-interactive-v1
 ```
 
 Expected: tag listed; recent commits include the Phase 1–5 work.
+
+---
+
+**Phase 5 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-int-phase-5-done`.
+
+---
+
+### Task 39: Final verification sweep
+
+Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
+
+**Files:** none (audit only)
+
+- [ ] **Step 1:** Full local matrix. Run from the repo root:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
+
+- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 4:** Commit a no-op marker if nothing broke:
+
+```bash
+git commit --allow-empty -m "chore: final verification sweep clean"
+```
 
 ---
 

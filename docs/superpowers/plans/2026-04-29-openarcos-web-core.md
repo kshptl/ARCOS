@@ -849,6 +849,10 @@ No commit needed — Phase 1 is done.
 
 ---
 
+**Phase 1 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-1-done`.
+
+---
+
 ## Phase 2 — Design system & tokens (tasks 9–14)
 
 Bold Poster = editorial static-poster aesthetic. Canvas `#f5ecd7`, ink `#1a1a1a`, accent-hot `#c23b20`, accent-cool `#2a5f7a`. Type scale is aggressive (display ramps to 96px). All numerics use `font-variant-numeric: tabular-nums`. Dark mode is scoped to `/methodology` and `/about` only (spec §5).
@@ -2123,6 +2127,10 @@ Expected: both succeed.
 git add web/components/layout/ web/tests/unit/layout.test.tsx web/app/layout.tsx
 git commit -m "web: Header/Footer/MethodologyFooter wired into app layout"
 ```
+
+---
+
+**Phase 2 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-2-done`.
 
 ---
 
@@ -3824,6 +3832,12 @@ git add web/lib/data/ web/tests/unit/loaders.test.ts
 git commit -m "web: data loaders for all seven pipeline artifacts"
 ```
 
+---
+
+**Phase 3 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-3-done`.
+
+---
+
 ## Phase 4 — Static content pages (tasks 23–28)
 
 Landing pages that don't need data munging: methodology, about, home stub, explorer stub. Dark-mode is scoped to `/methodology` and `/about` only via a `data-theme="dark"` attribute on those route segments.
@@ -4768,6 +4782,12 @@ Expected:
 git add web/app/explorer/ web/tests/unit/explorer-stub.test.tsx
 git commit -m "web: explorer stub with fallback county list"
 ```
+
+---
+
+**Phase 4 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-4-done`.
+
+---
 
 ## Phase 5 — Small charts (tasks 29–34)
 
@@ -6447,7 +6467,7 @@ git commit -m "web: e2e smoke for search → county navigation"
 
 ---
 
-**Phase 6 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-6-done`.
+**Phase 6 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-6-done`.
 
 ---
 
@@ -7275,7 +7295,7 @@ git commit -m "web: e2e for rankings tab switching + anchor id"
 
 ---
 
-**Phase 7 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-7-done`.
+**Phase 7 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-7-done`.
 
 ---
 
@@ -8744,7 +8764,7 @@ git commit -m "web: add SimilarCounties component + county E2E"
 
 ---
 
-**Phase 8 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e`. Optional tag `web-phase-8-done`.
+**Phase 8 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-8-done`.
 
 ---
 
@@ -9412,6 +9432,38 @@ Expected: `pipeline`, `web`, `lighthouse` jobs all green.
 ```bash
 git tag -a web-core-v1 -m "openarcos web-core implementation complete"
 git push origin web-core-v1
+```
+
+---
+
+**Phase 10 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-10-done`.
+
+---
+
+### Task 61: Final verification sweep
+
+Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
+
+**Files:** none (audit only)
+
+- [ ] **Step 1:** Full local matrix. Run from the repo root:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
+
+- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 4:** Commit a no-op marker if nothing broke:
+
+```bash
+git commit --allow-empty -m "chore: final verification sweep clean"
 ```
 
 ---

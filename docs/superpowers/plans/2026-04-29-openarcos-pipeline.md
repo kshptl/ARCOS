@@ -424,6 +424,18 @@ git commit -m "pipeline: first smoke test verifies imports"
 
 ---
 
+### Phase 1 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 2 — JSON Schemas (9 tasks)
 
 Schemas are the load-bearing interface between `/pipeline` and `/web`. Each schema is a JSON Schema Draft 2020-12 document. Each task: write schema + write a valid fixture + test the fixture validates + test an *invalid* fixture fails.
@@ -1107,6 +1119,18 @@ git commit -m "pipeline: freeze schema contract v1 + enforce fixture-per-schema"
 
 ---
 
+### Phase 2 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 3 — Common utilities (4 tasks)
 
 ### Task 15: FIPS normalization utilities
@@ -1620,6 +1644,18 @@ cd /home/kush/ARCOS
 git add pipeline/src/openarcos_pipeline/cli.py pipeline/tests/test_cli.py
 git commit -m "pipeline: CLI skeleton with placeholder subcommands"
 ```
+
+---
+
+### Phase 3 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
 
 ---
 
@@ -2464,6 +2500,18 @@ git commit -m "pipeline: wapo fetch runner wired into CLI"
 
 ---
 
+### Phase 4 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 5 — CDC WONDER source (6 tasks)
 
 **Risk:** CDC WONDER has no public REST API. The underlying form at `https://wonder.cdc.gov/controller/datarequest/D76` accepts a multi-parameter POST that mimics the form submission. The spec flags this as "known hard" (§9). Task 25 is a spike.
@@ -3134,6 +3182,18 @@ git commit -m "pipeline: clean command ingests raw CDC XML into parquet"
 
 ---
 
+### Phase 5 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 6 — DEA Diversion summaries (5 tasks)
 
 ### Task 31: SPIKE — identify DEA Diversion annual-report URLs
@@ -3676,6 +3736,20 @@ cd /home/kush/ARCOS
 git add pipeline/src/openarcos_pipeline/cli.py
 git commit -m "pipeline: dea fetch wired into CLI"
 ```
+
+---
+
+### Phase 6 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
 
 ## Phase 7 — County metadata + Join (tasks 36–38)
 
@@ -4257,6 +4331,18 @@ Expected: all green, with the count including all prior Phase 1–6 tests plus t
 git add pipeline/src/openarcos_pipeline/cli.py pipeline/tests/test_cli_join.py
 git commit -m "pipeline: wire join into CLI and add end-to-end clean→join test"
 ```
+
+---
+
+### Phase 7 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
 
 ---
 
@@ -5206,6 +5292,18 @@ git commit -m "pipeline: wire aggregate into CLI"
 
 ---
 
+### Phase 8 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 9 — Emit (tasks 49–53)
 
 `emit.py` is the pipeline's contract boundary with `/web`. It reads from `data/agg/` and the clean county-metadata parquet, transforms each aggregation into the exact shape declared by its JSON Schema, validates against that schema, and only then writes to `web/public/data/`. Validation must run **before** the file is written so a failing pipeline leaves the last good file intact.
@@ -5907,6 +6005,18 @@ git commit -m "web: reserve web/public/data as pipeline emission target"
 
 ---
 
+### Phase 9 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
 ## Phase 10 — CI + Deploy (tasks 54–58)
 
 The pipeline now produces every artifact in §4. Phase 10 wires it into Make + GitHub Actions so `make all` is the canonical local workflow and a weekly cron keeps `web/public/data/` current against live sources.
@@ -6587,6 +6697,46 @@ git push origin main
 ```
 
 Expected: push succeeds; GitHub Actions `CI` workflow fires on the push and completes green.
+
+---
+
+### Phase 10 gate
+
+After every task in this phase, run the full verification matrix:
+
+```bash
+cd pipeline && make lint && make test
+```
+
+All checks must pass before starting the next phase. If any check fails, fix before proceeding; do not rely on the merge or a later phase to catch it.
+
+---
+
+### Task 59: Final verification sweep
+
+Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
+
+**Files:** none (audit only)
+
+- [ ] **Step 1:** Full local matrix. Run from the repo root:
+
+```bash
+cd pipeline && make lint && make test && make all
+```
+
+- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
+
+- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
+
+```bash
+cd pipeline && make lint && make test && make all
+```
+
+- [ ] **Step 4:** Commit a no-op marker if nothing broke:
+
+```bash
+git commit --allow-empty -m "chore: final verification sweep clean"
+```
 
 ---
 
