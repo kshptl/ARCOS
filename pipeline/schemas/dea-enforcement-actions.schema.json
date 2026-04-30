@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/dea-enforcement-actions.schema.json",
+  "title": "DEA Diversion Control annual enforcement summary",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["year", "action_count", "notable_actions"],
+    "additionalProperties": false,
+    "properties": {
+      "year": {"type": "integer", "minimum": 2000, "maximum": 2025},
+      "action_count": {"type": "integer", "minimum": 0},
+      "notable_actions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["title", "url"],
+          "additionalProperties": false,
+          "properties": {
+            "title": {"type": "string", "minLength": 1},
+            "url": {"type": "string", "format": "uri"},
+            "target": {"type": ["string", "null"]}
+          }
+        }
+      }
+    }
+  }
+}
