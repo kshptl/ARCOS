@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/county-metadata.schema.json",
+  "title": "County metadata",
+  "description": "One row per US county. Populations are mid-ACS 5-year estimates.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["fips", "name", "state", "pop"],
+    "additionalProperties": false,
+    "properties": {
+      "fips": {"type": "string", "pattern": "^[0-9]{5}$"},
+      "name": {"type": "string", "minLength": 1},
+      "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+      "pop": {"type": "integer", "minimum": 0}
+    }
+  }
+}
