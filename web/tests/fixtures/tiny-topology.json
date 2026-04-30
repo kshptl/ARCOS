@@ -1,0 +1,19 @@
+{
+  "type": "Topology",
+  "arcs": [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]],
+  "transform": { "scale": [1, 1], "translate": [0, 0] },
+  "objects": {
+    "counties": {
+      "type": "GeometryCollection",
+      "geometries": [
+        { "type": "Polygon", "arcs": [[0]], "id": "54059", "properties": { "name": "Mingo" } }
+      ]
+    },
+    "states": {
+      "type": "GeometryCollection",
+      "geometries": [
+        { "type": "Polygon", "arcs": [[0]], "id": "54", "properties": { "name": "West Virginia" } }
+      ]
+    }
+  }
+}

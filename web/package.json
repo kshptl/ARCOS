@@ -44,6 +44,7 @@
     "@testing-library/user-event": "~14",
     "@types/d3-interpolate": "~3",
     "@types/d3-scale": "~4",
+    "@types/geojson": "^7946.0.16",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
