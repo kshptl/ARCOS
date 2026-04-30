@@ -61,10 +61,14 @@ export function SearchBox({
   const inputRef = useRef<HTMLInputElement>(null);
   const { status, error, search, load } = useSearchIndex();
 
-  const groups = useMemo(
-    () => (query.trim() ? groupResults(search(query, { limit: 30 })) : []),
-    [query, search],
-  );
+  const groups = useMemo(() => {
+    // `search` reads from a module-level cache that populates asynchronously
+    // after `load()`. Reading `status` here ensures the memo recomputes once
+    // entries become available (status: "loading" → "ready"); otherwise stale
+    // empty results would persist because `query` and `search` are stable.
+    if (status !== "ready") return [];
+    return query.trim() ? groupResults(search(query, { limit: 30 })) : [];
+  }, [query, search, status]);
   const flat = useMemo(() => groups.flatMap((g) => g.items), [groups]);
 
   const onFocus = () => {
