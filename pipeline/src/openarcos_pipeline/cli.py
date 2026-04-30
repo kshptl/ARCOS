@@ -16,8 +16,20 @@ log = get_logger("openarcos.cli")
 @app.command()
 def fetch(source: str = typer.Option("all", help="Source name or 'all'")) -> None:
     """Download raw source data."""
-    log.info("fetch: not yet implemented", extra={"source": source})
-    raise typer.Exit(0)
+    from openarcos_pipeline.config import Config
+    from openarcos_pipeline.sources.wapo_arcos import WapoClient
+    from openarcos_pipeline.sources.wapo_runner import fetch_all
+
+    cfg = Config.from_env()
+    cfg.ensure_dirs()
+    if source in ("all", "wapo"):
+        with WapoClient() as client:
+            fetch_all(client, cfg)
+        log.info("wapo fetch complete")
+    if source in ("all", "cdc"):
+        log.info("cdc fetch: not yet implemented (see Task 26)")
+    if source in ("all", "dea"):
+        log.info("dea fetch: not yet implemented (see Task 32)")
 
 
 @app.command()
