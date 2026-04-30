@@ -75,7 +75,7 @@ submission; the set above is a scaffold.
 
 ## Content hashes (SYNTHETIC, not production)
 
-- `wv_2012_2014.xml`: sha256=2ef8abf77c30a392def354158953298828406cc77d6cc24f242105e839440893
+- `wv_2012_2014.xml`: sha256=f07c2fcfb5cdf69d4e774e7a41f939db3ef432cd1225c07172326412f60beaea
 - `wv_2012_2014_request.xml`: sha256=acd8725b5b3bb6508881eca183b3531b2d2edeff56488a87fdd22eb99f604365
 
 Regenerate via: `sha256sum pipeline/tests/fixtures/cdc/*.xml`
