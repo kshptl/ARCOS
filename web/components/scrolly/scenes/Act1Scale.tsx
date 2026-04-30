@@ -24,10 +24,6 @@ const PLOT_BOTTOM = 46;
 
 export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
   const progress = useScrollyProgress();
-  // 0–0.55: count-up.  0.55–1: bars reveal.
-  const countT = Math.min(1, progress / 0.55);
-  const currentCount = Math.round(totalPills * countT);
-  const barsT = Math.max(0, Math.min(1, (progress - 0.5) / 0.5));
 
   const sorted = [...yearly].sort((a, b) => a.year - b.year);
   const peak = sorted.reduce<YearlyTotal | null>(
@@ -35,21 +31,41 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
     null,
   );
 
+  // Phase 1 (0.0 – 0.8): build phase. Both the numeral and the bars advance
+  // on a single shared timeline. Year k's bar starts rising when buildT
+  // crosses (k-1)/N and completes at k/N. The numeral counts up to the
+  // running cumulative total using the same schedule, so the two feel tied.
+  // Phase 2 (0.8 – 1.0): settled phase. Everything is at full value and
+  // nothing animates, giving the reader time to take in the whole graphic.
+  const buildT = Math.min(1, Math.max(0, progress / 0.8));
+  const n = Math.max(1, sorted.length);
+
+  // Per-bar fractional height progress, from the shared schedule.
+  const barProgress = sorted.map((_, i) => {
+    const start = i / n;
+    const end = (i + 1) / n;
+    if (buildT >= end) return 1;
+    if (buildT <= start) return 0;
+    return (buildT - start) / (end - start);
+  });
+
+  // Cumulative count driven by the same schedule so the numeral reaches
+  // full total exactly when the last bar tops out.
+  const currentCount = sorted.reduce((acc, d, i) => acc + d.pills * (barProgress[i] ?? 0), 0);
+
   const maxPills = Math.max(...sorted.map((d) => d.pills), 1);
   const yTicks = niceTicks(0, maxPills, 4);
   const yMax = yTicks[yTicks.length - 1] ?? maxPills;
 
   const plotW = VIEW_W - PLOT_LEFT - PLOT_RIGHT;
   const plotH = VIEW_H - PLOT_TOP - PLOT_BOTTOM;
-  const n = Math.max(1, sorted.length);
   const slotW = plotW / n;
   const barWidth = Math.min(52, slotW * 0.55);
 
   const yScale = (v: number) => PLOT_TOP + plotH - (v / yMax) * plotH;
 
-  // Progressive ticker entries during count-up. Reveal one per year as countT
-  // advances, so the viewer sees the scale accumulate year-by-year.
-  const tickerRevealed = Math.min(sorted.length, Math.ceil(countT * sorted.length));
+  // Ticker entries reveal one per year, in step with the bars.
+  const tickerRevealed = Math.min(sorted.length, Math.ceil(buildT * sorted.length));
   const tickerEntries = sorted.slice(0, tickerRevealed);
 
   return (
@@ -60,7 +76,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
         <div className={styles.bigStat}>
           <span className={styles.eyebrow}>Total pills shipped</span>
           <span data-testid="act1-count" className={`${styles.count} numeric`} aria-live="polite">
-            {progress >= 1 ? formatFull(totalPills) : formatCompact(currentCount)}
+            {buildT >= 1 ? formatFull(totalPills) : formatCompact(currentCount)}
           </span>
           <span className={styles.unit}>pills</span>
           <p className={styles.subCaption}>Shipped from distributors to pharmacies nationwide</p>
@@ -78,7 +94,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
         <svg
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           className={styles.chart}
-          style={{ opacity: Math.max(0.15, barsT) }}
+          style={{ opacity: Math.max(0.15, Math.min(1, buildT * 2)) }}
           aria-hidden="true"
         >
           {/* y-axis title */}
@@ -116,26 +132,28 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
             const cx = PLOT_LEFT + slotW * (i + 0.5);
             const x = cx - barWidth / 2;
             const fullH = (d.pills / yMax) * plotH;
-            const h = fullH * barsT;
+            const bp = barProgress[i] ?? 0;
+            const h = fullH * bp;
             const y = PLOT_TOP + plotH - h;
             const isPeak = peak !== null && d.year === peak.year;
             return (
               <g key={d.year}>
                 <rect
+                  data-testid="act1-bar"
                   x={x}
                   y={y}
                   width={barWidth}
                   height={h}
                   fill={isPeak ? "var(--accent-hot)" : "var(--ink-60)"}
                 />
-                {/* value label above bar */}
-                {barsT > 0.25 && (
+                {/* value label above bar — fades in once the bar is mostly up */}
+                {bp > 0.5 && (
                   <text
                     className={styles.barLabel}
                     x={cx}
                     y={y - 6}
                     textAnchor="middle"
-                    opacity={Math.min(1, (barsT - 0.25) / 0.25)}
+                    opacity={Math.min(1, (bp - 0.5) / 0.5)}
                   >
                     {formatCompact(d.pills)}
                   </text>
@@ -153,37 +171,37 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
             );
           })}
 
-          {/* Peak annotation */}
-          {peak && barsT > 0.6 && (
-            <g data-testid="act1-peak-callout" opacity={Math.min(1, (barsT - 0.6) / 0.4)}>
-              {(() => {
-                const i = sorted.findIndex((d) => d.year === peak.year);
-                if (i < 0) return null;
-                const cx = PLOT_LEFT + slotW * (i + 0.5);
-                const barTopY = PLOT_TOP + plotH - (peak.pills / yMax) * plotH;
-                const labelY = Math.max(PLOT_TOP - 6, barTopY - 28);
-                return (
-                  <>
-                    <line
-                      x1={cx}
-                      y1={labelY + 4}
-                      x2={cx}
-                      y2={barTopY - 4}
-                      stroke="var(--accent-hot)"
-                      strokeWidth={1.5}
-                    />
-                    <polygon
-                      points={`${cx - 4},${barTopY - 8} ${cx + 4},${barTopY - 8} ${cx},${barTopY - 2}`}
-                      fill="var(--accent-hot)"
-                    />
-                    <text className={styles.calloutLabel} x={cx} y={labelY} textAnchor="middle">
-                      Peak: {formatCompact(peak.pills)}
-                    </text>
-                  </>
-                );
-              })()}
-            </g>
-          )}
+          {/* Peak annotation — appears once the peak bar itself is mostly up. */}
+          {peak &&
+            (() => {
+              const peakIdx = sorted.findIndex((d) => d.year === peak.year);
+              if (peakIdx < 0) return null;
+              const peakBp = barProgress[peakIdx] ?? 0;
+              if (peakBp < 0.6) return null;
+              const cx = PLOT_LEFT + slotW * (peakIdx + 0.5);
+              const barTopY = PLOT_TOP + plotH - (peak.pills / yMax) * plotH;
+              const labelY = Math.max(PLOT_TOP - 6, barTopY - 28);
+              const opacity = Math.min(1, (peakBp - 0.6) / 0.4);
+              return (
+                <g data-testid="act1-peak-callout" opacity={opacity}>
+                  <line
+                    x1={cx}
+                    y1={labelY + 4}
+                    x2={cx}
+                    y2={barTopY - 4}
+                    stroke="var(--accent-hot)"
+                    strokeWidth={1.5}
+                  />
+                  <polygon
+                    points={`${cx - 4},${barTopY - 8} ${cx + 4},${barTopY - 8} ${cx},${barTopY - 2}`}
+                    fill="var(--accent-hot)"
+                  />
+                  <text className={styles.calloutLabel} x={cx} y={labelY} textAnchor="middle">
+                    Peak: {formatCompact(peak.pills)}
+                  </text>
+                </g>
+              );
+            })()}
 
           {/* baseline axis line (on top of bars so it crisps the bottom edge) */}
           <line
