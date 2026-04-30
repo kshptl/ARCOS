@@ -62,7 +62,12 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
 
       <div className={styles.heroGrid}>
         <Hero meta={meta} bundle={bundle} />
-        <RankCallouts meta={meta} ranks={ranks} suppressed={heroStats.suppressed} />
+        <RankCallouts
+          meta={meta}
+          ranks={ranks}
+          suppressed={heroStats.suppressed}
+          hasSimilarPeers={similar.length > 0}
+        />
       </div>
 
       <section className={styles.section}>

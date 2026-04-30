@@ -63,4 +63,26 @@ describe("RankCallouts", () => {
     expect(screen.queryByText("2nd")).toBeNull();
     expect(screen.getByText("5th")).toBeInTheDocument();
   });
+
+  it("hides the peer-rank callout when there are no similar peers", () => {
+    render(
+      <RankCallouts
+        meta={{ fips: "54059", name: "Mingo", state: "WV", pop: 22999 }}
+        ranks={{
+          fips: "54059",
+          national_rank: 2,
+          national_total: 4,
+          peer_rank: 1,
+          peer_size: 2,
+          overdose_rank: 1,
+          overdose_total: 10,
+        }}
+        hasSimilarPeers={false}
+      />,
+    );
+    // National rank still rendered; peer-rank shows em-dash with "no comparable peers".
+    expect(screen.getByText("2nd")).toBeInTheDocument();
+    expect(screen.queryByText("1st")).not.toBeNull(); // overdose_rank 1 still rendered as 1st
+    expect(screen.getByText(/no comparable peers/i)).toBeInTheDocument();
+  });
 });

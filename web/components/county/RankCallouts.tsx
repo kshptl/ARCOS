@@ -9,17 +9,28 @@ import styles from "./RankCallouts.module.css";
  * when `suppressed` is true — a suppressed county's apparent rank is
  * based on zero pills and misleads readers about ARCOS-source data
  * being unavailable.
+ *
+ * `hasSimilarPeers=false` also forces the peer-rank card to em-dash so
+ * it can't disagree with the SimilarCounties section (e.g. hero
+ * claiming "1st of 2 similar-population counties" while SimilarCounties
+ * reports none available). The two components read from different
+ * artifacts — county-ranks.json (population-band bucket) and
+ * similar-counties.json (state neighbours) — so we treat an empty
+ * similar-counties set as ground truth for "no comparable peers".
  */
 export function RankCallouts({
   meta: _meta,
   ranks,
   suppressed = false,
+  hasSimilarPeers = true,
 }: {
   meta: CountyMetadata;
   ranks: CountyRanks;
   suppressed?: boolean;
+  hasSimilarPeers?: boolean;
 }) {
   const hideShipmentRank = suppressed;
+  const hidePeerRank = hideShipmentRank || !hasSimilarPeers;
   return (
     <section className={styles.grid} aria-label="Rank callouts">
       <div className={styles.card}>
@@ -38,14 +49,14 @@ export function RankCallouts({
       <div className={styles.card}>
         <span className={styles.label}>Among peers</span>
         <span className={styles.rank}>
-          {!hideShipmentRank && ranks.peer_rank > 0 ? formatOrdinal(ranks.peer_rank) : "—"}
+          {!hidePeerRank && ranks.peer_rank > 0 ? formatOrdinal(ranks.peer_rank) : "—"}
         </span>
         <span className={styles.of}>
-          {!hideShipmentRank && ranks.peer_rank > 0
+          {!hidePeerRank && ranks.peer_rank > 0
             ? `of ${ranks.peer_size} counties with similar population`
             : hideShipmentRank
               ? "suppressed or unavailable"
-              : "insufficient data"}
+              : "no comparable peers"}
         </span>
       </div>
       <div className={styles.card}>
