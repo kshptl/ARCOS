@@ -9373,7 +9373,35 @@ git diff --cached --quiet || git commit -m "chore: mark woff2 as binary for git"
 
 ---
 
-### Task 59 — Final verification + push
+### Task 59: Final verification sweep
+
+Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
+
+**Files:** none (audit only)
+
+- [ ] **Step 1:** Full local matrix. Run from the repo root:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
+
+- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
+
+```bash
+cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
+```
+
+- [ ] **Step 4:** Commit a no-op marker if nothing broke:
+
+```bash
+git commit --allow-empty -m "chore: final verification sweep clean"
+```
+
+---
+
+### Task 60 — Final verification + push
 
 - [ ] **Step 1: Full local loop**
 
@@ -9420,34 +9448,6 @@ git push origin web-core-v1
 ---
 
 **Phase 10 gate:** `pnpm lint && pnpm typecheck && pnpm test && pnpm build`. Optional tag `web-phase-10-done`.
-
----
-
-### Task 60: Final verification sweep
-
-Before marking the plan DONE, run the full local verification matrix and fix any issues surfaced. This catches cross-task regressions that per-phase gates missed (e.g. a later task subtly broke an earlier one's test).
-
-**Files:** none (audit only)
-
-- [ ] **Step 1:** Full local matrix. Run from the repo root:
-
-```bash
-cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
-```
-
-- [ ] **Step 2:** Investigate and fix any failures. Commit each fix separately with message `fix(sweep): <one-line-description>`.
-
-- [ ] **Step 3:** Re-run the full matrix. All checks must pass before moving on:
-
-```bash
-cd web && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm e2e
-```
-
-- [ ] **Step 4:** Commit a no-op marker if nothing broke:
-
-```bash
-git commit --allow-empty -m "chore: final verification sweep clean"
-```
 
 ---
 
