@@ -44,9 +44,13 @@ describe("Act1Scale", () => {
     expect(value.textContent?.replace(/[,\s]/g, "")).toMatch(/^0(\.0)?$/);
   });
 
-  it("at progress=1, displays the full total", () => {
+  it("at progress=1, displays the full total in one-decimal compact notation", () => {
     renderWithProgress(1);
-    expect(countText()).toMatch(/76B|76,000,000,000|74,000,000,000/);
+    // User spec: numeral always uses one-decimal compact notation, even in
+    // the settled phase. Total is ~76B across the fixture so we expect
+    // something like "76.0B" (never "76,000,000,000").
+    expect(countText()).toMatch(/^\d+\.\d[KMB]$/);
+    expect(countText()).not.toMatch(/,/);
   });
 
   it("renders yearly data table for a11y fallback", () => {
@@ -97,8 +101,8 @@ describe("Act1Scale", () => {
     const heights = barHeights();
     // All bars should be fully raised.
     expect(heights.every((h) => h > 60)).toBe(true);
-    // Count should be at the full total.
-    expect(countText()).toMatch(/76B|76,000,000,000|74,000,000,000/);
+    // Count should be at the full total in one-decimal compact notation.
+    expect(countText()).toMatch(/^\d+\.\d[KMB]$/);
   });
 
   it("at progress=0.95, nothing has moved since 0.8 (settled phase)", () => {
@@ -208,6 +212,25 @@ describe("Act1Scale", () => {
       const text = screen.getByTestId("act1-count").textContent ?? "";
       // Expect "20.0B" not "20B".
       expect(text).toMatch(/^\d+\.\d[KMB]$/);
+    });
+
+    it.each([
+      0.5, 0.8, 0.95, 1.0,
+    ])("at progress=%s the settled numeral stays in one-decimal compact notation", (p) => {
+      // User spec: the total pills shipped number should ALWAYS have 1
+      // decimal, including during the settled phase (progress >= 0.8).
+      // Previously the component switched to formatFull (e.g.
+      // "228,623,838") at buildT >= 1. We want "228.6M" at every phase.
+      const yearly = [{ year: 2010, pills: 228_623_838 }];
+      renderWithProgress(p, yearly, 228_623_838);
+      const text = screen.getByTestId("act1-count").textContent ?? "";
+      // Exactly one fraction digit + compact suffix (K, M, or B). A bare
+      // "228.6" with no suffix is also acceptable for very small totals,
+      // so allow optional suffix.
+      expect(text).toMatch(/^\d+\.\d[KMB]?$/);
+      // And explicitly: must not contain a thousands-separator comma,
+      // which would indicate formatFull slipped back in.
+      expect(text).not.toMatch(/,/);
     });
   });
 });

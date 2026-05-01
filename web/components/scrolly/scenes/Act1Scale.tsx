@@ -38,7 +38,7 @@ const PLOT_RIGHT = 24;
 const PLOT_TOP = 44;
 const PLOT_BOTTOM = 46;
 
-export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
+export function Act1Scale({ yearly }: Act1ScaleProps) {
   const progress = useScrollyProgress();
 
   const sorted = [...yearly].sort((a, b) => a.year - b.year);
@@ -99,7 +99,7 @@ export function Act1Scale({ totalPills, yearly }: Act1ScaleProps) {
         <div className={styles.bigStat}>
           <span className={styles.eyebrow}>Total pills shipped</span>
           <span data-testid="act1-count" className={`${styles.count} numeric`} aria-live="polite">
-            {buildT >= 1 ? formatFull(totalPills) : formatAct1Count(currentCount)}
+            {formatAct1Count(currentCount)}
           </span>
           <span className={styles.unit}>pills</span>
           <p className={styles.subCaption}>Shipped from distributors to pharmacies nationwide</p>
