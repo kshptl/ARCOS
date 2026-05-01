@@ -1,0 +1,24 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2006"	"2006"	12	96318	"Unreliable"
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2010"	"2010"	20	104169	19.2
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2010"	"2010"	14	26839	"Unreliable"
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2012"	"2012"	21	26513	79.2
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2014"	"2014"	70	95869	73.0
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2010"	"2010"	"Suppressed"	9154	"Suppressed"
+	"West Virginia"	"54"	"Hamlin, WV"	"54043"	"2010"	"2010"	"Missing"	21720	"Not Applicable"
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64); Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: West Virginia (54)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: True"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 4:42:00 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death 1999-2020 on CDC WONDER Online Database, released in 2021."
