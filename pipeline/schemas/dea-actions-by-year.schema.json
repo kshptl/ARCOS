@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/dea-actions-by-year.schema.json",
+  "title": "DEA Federal Register registrant-action counts by year",
+  "description": "Annual counts of DEA Federal Register NOTICE documents classified as registrant administrative actions, 2006-2014. Source: federalregister.gov/api/v1. See pipeline/notes/dea-investigation-2026-05-01.md for methodology.",
+  "type": "object",
+  "required": ["years", "methodology", "source", "fetched_at"],
+  "additionalProperties": false,
+  "properties": {
+    "years": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["year", "total", "by_type"],
+        "additionalProperties": false,
+        "properties": {
+          "year": {"type": "integer", "minimum": 2000, "maximum": 2025},
+          "total": {"type": "integer", "minimum": 0},
+          "by_type": {
+            "type": "object",
+            "additionalProperties": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    },
+    "methodology": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "minLength": 1},
+    "fetched_at": {"type": "string", "format": "date-time"}
+  }
+}

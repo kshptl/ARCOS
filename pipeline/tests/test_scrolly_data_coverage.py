@@ -49,9 +49,8 @@ def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
     for src in (fixtures_dir / "cdc").glob("*.xml"):
         shutil.copy(src, raw_dir / "cdc" / src.name)
     (raw_dir / "dea").mkdir(parents=True, exist_ok=True)
-    for src in (fixtures_dir / "dea").glob("*.pdf"):
-        stem = src.stem.replace("diversion_", "").replace("_sample", "")
-        shutil.copy(src, raw_dir / "dea" / f"{stem}.pdf")
+    for src in (fixtures_dir / "dea").glob("fr_notices_*.json"):
+        shutil.copy(src, raw_dir / "dea" / src.name)
 
 
 def _run_full_pipeline(tmp_path: Path, fixtures_dir: Path, monkeypatch) -> Path:

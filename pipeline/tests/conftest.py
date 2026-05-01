@@ -89,6 +89,11 @@ def agg_master_parquet(tmp_path_factory):
         {
             "year": [2011, 2012, 2013],
             "action_count": [1203, 1428, 1109],
+            "by_type": [
+                {"FINAL_ORDER_REVOCATION": 800, "OTHER_REGISTRANT_ACTION": 403},
+                {"FINAL_ORDER_REVOCATION": 900, "OTHER_REGISTRANT_ACTION": 528},
+                {"FINAL_ORDER_REVOCATION": 700, "OTHER_REGISTRANT_ACTION": 409},
+            ],
             "notable_actions": [
                 [
                     {

@@ -49,7 +49,11 @@ def _run_clean(cfg) -> None:
     import polars as pl
 
     from openarcos_pipeline.clean.cdc import parse_d76_response
-    from openarcos_pipeline.clean.dea import fill_synthetic_years, parse_annual_report
+    from openarcos_pipeline.clean.dea import (
+        ActionType,
+        build_artifact,
+        classify_notices,
+    )
     from openarcos_pipeline.clean.wapo import (
         clean_county_raw,
         clean_distributors,
@@ -74,22 +78,112 @@ def _run_clean(cfg) -> None:
             df = pl.concat(frames, how="vertical_relaxed")
             df.write_parquet(cfg.clean_dir / "cdc_overdose.parquet")
 
-    # DEA
+    # DEA — Federal Register NOTICES, classified into registrant actions.
+    # Reads cached FR payloads from data/raw/dea/fr_notices_<year>.json
+    # (written by sources.dea_summaries.fetch_reports).
     dea_raw = cfg.raw_dir / "dea"
-    records: list[dict] = []
+    all_notices: list[dict] = []
+    years: list[int] = []
     if dea_raw.is_dir():
-        for pdf in sorted(dea_raw.glob("*.pdf")):
+        for path in sorted(dea_raw.glob("fr_notices_*.json")):
+            stem = path.stem  # fr_notices_YYYY
             try:
-                year = int(pdf.stem)
+                year = int(stem.split("_")[-1])
             except ValueError:
                 continue
-            records.append(parse_annual_report(pdf, year=year))
-    # Fill missing years 2006-2014 with synthetic plausible values so the
-    # scrolly story's Act 3 has full coverage. See clean/dea.py +
-    # notes/dea.md for provenance.
-    records = fill_synthetic_years(records, start=2006, end=2014)
-    if records:
-        pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
+            years.append(year)
+            body = json.loads(path.read_text())
+            all_notices.extend(body.get("results") or [])
+
+    if all_notices:
+        year_range = range(min([*years, 2006]), max([*years, 2014]) + 1)
+
+        classified = classify_notices(all_notices)
+
+        # Per-document audit trail (committed to git).
+        audit_path = dea_raw / "fr_notices_all_classified.json"
+        dea_raw.mkdir(parents=True, exist_ok=True)
+        audit_path.write_text(json.dumps(classified, indent=2))
+
+        # Tooltip-ready per-year artifact (committed to git under
+        # data/processed/). Includes methodology and source provenance.
+        processed_dir = cfg.data_root / "processed"
+        processed_dir.mkdir(parents=True, exist_ok=True)
+        artifact = build_artifact(classified, years=year_range)
+        (processed_dir / "dea_actions_by_year.json").write_text(
+            json.dumps(artifact, indent=2)
+        )
+
+        # Consumer-facing parquet: year, action_count, by_type,
+        # notable_actions. Notable actions pick 3 representative notices
+        # per year preferring IMMEDIATE_SUSPENSION and
+        # FINAL_ORDER_REVOCATION with live html_urls.
+        classified_by_year: dict[int, list[dict]] = {}
+        seen_docs: set[str] = set()
+        for doc in classified:
+            docnum = doc.get("document_number")
+            if docnum and docnum in seen_docs:
+                continue
+            if docnum:
+                seen_docs.add(docnum)
+            if doc.get("action_type") == ActionType.NON_ACTION.value:
+                continue
+            pd_str = doc.get("publication_date") or ""
+            try:
+                y = int(pd_str[:4])
+            except ValueError:
+                continue
+            classified_by_year.setdefault(y, []).append(doc)
+
+        def _notable_for(year: int) -> list[dict]:
+            docs = classified_by_year.get(year, [])
+            priority = {
+                ActionType.IMMEDIATE_SUSPENSION.value: 0,
+                ActionType.FINAL_ORDER_REVOCATION.value: 1,
+                ActionType.SETTLEMENT.value: 2,
+                ActionType.ORDER_TO_SHOW_CAUSE.value: 3,
+                ActionType.ADMONITION.value: 4,
+                ActionType.OTHER_REGISTRANT_ACTION.value: 5,
+            }
+            # Prefer opioid-relevant items within each priority bucket.
+            ranked = sorted(
+                docs,
+                key=lambda d: (
+                    priority.get(d.get("action_type"), 99),
+                    0 if d.get("opioid_relevant") else 1,
+                    d.get("publication_date") or "",
+                ),
+            )
+            return [
+                {
+                    "title": d.get("title") or "",
+                    "url": d.get("html_url"),
+                    "target": None,
+                }
+                for d in ranked[:3]
+            ]
+
+        records: list[dict] = []
+        for entry in artifact["years"]:
+            y = entry["year"]
+            # Preserve the full type taxonomy as keys so the parquet
+            # by_type struct has a stable schema every year — this
+            # avoids Polars' "struct with no child field" error when a
+            # year happens to have zero of some action type.
+            full_by_type: dict[str, int] = {t.value: 0 for t in ActionType if t is not ActionType.NON_ACTION}
+            for k, v in entry["by_type"].items():
+                full_by_type[k] = v
+            records.append(
+                {
+                    "year": y,
+                    "action_count": entry["total"],
+                    "by_type": full_by_type,
+                    "notable_actions": _notable_for(y),
+                }
+            )
+
+        if records:
+            pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
 
     # WaPo — per-county fixtures named `{endpoint}_{state}_{county}.json`
     # Supported naming conventions (written by sources/wapo_runner.py):

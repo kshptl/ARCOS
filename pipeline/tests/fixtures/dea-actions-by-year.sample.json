@@ -1,0 +1,21 @@
+{
+  "years": [
+    {
+      "year": 2006,
+      "total": 32,
+      "by_type": {
+        "FINAL_ORDER_REVOCATION": 16,
+        "IMMEDIATE_SUSPENSION": 1,
+        "OTHER_REGISTRANT_ACTION": 15
+      }
+    },
+    {
+      "year": 2007,
+      "total": 0,
+      "by_type": {}
+    }
+  ],
+  "methodology": "Counts reflect Federal Register publication date, not date of underlying misconduct. Deduped by document_number. Registrant actions only (scheduling/quota/importer/manufacturer/info-collection notices excluded). Administrative scope only; criminal prosecutions not included. See pipeline/notes/dea-investigation-2026-05-01.md.",
+  "source": "Federal Register API (federalregister.gov/api/v1)",
+  "fetched_at": "2026-05-01T12:00:00+00:00"
+}

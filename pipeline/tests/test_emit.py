@@ -76,8 +76,17 @@ def test_emit_dea_enforcement_json(seeded_cfg):
     out = emit_dea_enforcement_json(seeded_cfg)
     data = json.loads(out.read_text())
     for row in data:
-        assert set(row.keys()) == {"year", "action_count", "notable_actions"}
+        # `by_type` is optional per the schema; `notable_actions`,
+        # `action_count`, and `year` are required.
+        assert {"year", "action_count", "notable_actions"}.issubset(row.keys())
+        assert row.keys() <= {"year", "action_count", "notable_actions", "by_type"}
         assert isinstance(row["notable_actions"], list)
+        if "by_type" in row:
+            assert isinstance(row["by_type"], dict)
+            for k, v in row["by_type"].items():
+                assert isinstance(k, str)
+                assert isinstance(v, int)
+                assert v >= 0
         for action in row["notable_actions"]:
             assert "title" in action
             # url is optional (null or omitted) rather than fabricated.
@@ -118,6 +127,11 @@ def test_emit_dea_enforcement_preserves_null_url(tmp_path, agg_master_parquet):
         {
             "year": [2011, 2012, 2013],
             "action_count": [100, 200, 300],
+            "by_type": [
+                {"FINAL_ORDER_REVOCATION": 50, "OTHER_REGISTRANT_ACTION": 50},
+                {"FINAL_ORDER_REVOCATION": 100, "OTHER_REGISTRANT_ACTION": 100},
+                {"FINAL_ORDER_REVOCATION": 150, "OTHER_REGISTRANT_ACTION": 150},
+            ],
             "notable_actions": [
                 [{"title": "Cardinal Health MOA", "url": "", "target": None}],
                 [{"title": "Operation X", "url": None, "target": None}],

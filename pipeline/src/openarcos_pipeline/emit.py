@@ -149,12 +149,12 @@ def emit_dea_enforcement_json(cfg: Config) -> Path:
     rows = []
     for r in df.iter_rows(named=True):
         actions = r["notable_actions"] or []
-        # If the source record has no real URL (the DEA summary parser often
-        # can't recover a per-case link), emit url=null. We must never
-        # fabricate a citation URL — a fake URL masquerading as a real one
-        # is a trust violation. See notes/dea.md and the schema
-        # dea-enforcement-actions.schema.json where `url` is optional and
-        # nullable.
+        # If the source record has no real URL, emit url=null. We must
+        # never fabricate a citation URL — a fake URL masquerading as a
+        # real one is a trust violation. See
+        # notes/dea-investigation-2026-05-01.md and the schema
+        # dea-enforcement-actions.schema.json where `url` is optional
+        # and nullable.
         notable = []
         for a in actions:
             url = a.get("url")
@@ -167,13 +167,17 @@ def emit_dea_enforcement_json(cfg: Config) -> Path:
                     "target": a.get("target"),
                 }
             )
-        rows.append(
-            {
-                "year": int(r["year"]),
-                "action_count": int(r["action_count"]),
-                "notable_actions": notable,
-            }
-        )
+        row: dict[str, object] = {
+            "year": int(r["year"]),
+            "action_count": int(r["action_count"]),
+            "notable_actions": notable,
+        }
+        # `by_type` is optional in the schema; emit when present so
+        # consumers (Act 3 tooltip) can show the action-type breakdown.
+        by_type = r.get("by_type")
+        if by_type:
+            row["by_type"] = {str(k): int(v) for k, v in dict(by_type).items()}
+        rows.append(row)
     _validate(rows, "dea-enforcement-actions")
     out = cfg.emit_dir / "dea-enforcement-actions.json"
     _write_json(out, rows)

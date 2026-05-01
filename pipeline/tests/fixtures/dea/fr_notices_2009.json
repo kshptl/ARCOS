@@ -1,0 +1,20 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "title": "Example Pharmacy 2009; Revocation of Registration",
+      "publication_date": "2009-06-15",
+      "document_number": "2009-FIX-R",
+      "toc_subject": "Revocations of Registrations:",
+      "html_url": "https://www.federalregister.gov/documents/2009-FIX-R"
+    },
+    {
+      "title": "Bulk Manufacturer of Controlled Substances Application 2009",
+      "publication_date": "2009-03-10",
+      "document_number": "2009-FIX-N",
+      "toc_subject": "Bulk Manufacturers of Controlled Substances; Applications:",
+      "html_url": "https://www.federalregister.gov/documents/2009-FIX-N"
+    }
+  ],
+  "next_page_url": null
+}

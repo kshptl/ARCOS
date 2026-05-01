@@ -8,7 +8,10 @@ pipeline/notes/dea-investigation-2026-05-01.md.
 
 from __future__ import annotations
 
+import datetime as dt
 import re
+from collections import defaultdict
+from collections.abc import Iterable
 from enum import StrEnum
 from typing import Any
 
@@ -189,6 +192,138 @@ def classify_notice(
     # Unknown title — treat as NON_ACTION. We prefer undercounting to
     # sweeping arbitrary DEA notices into the total.
     return ActionType.NON_ACTION, title, False
+
+
+# --------------------------------------------------------------------------
+# Aggregation
+# --------------------------------------------------------------------------
+
+METHODOLOGY = (
+    "Counts reflect Federal Register publication date, not date of underlying "
+    "misconduct. Each FR Notice with a title/TOC-subject matching a "
+    "registrant-action disposition is counted once (deduped by "
+    "document_number). Scheduling, quota, importer/manufacturer registration, "
+    "and information-collection notices are excluded. Administrative scope "
+    "only — criminal prosecutions are tracked separately and not included "
+    "here. See pipeline/notes/dea-investigation-2026-05-01.md."
+)
+
+
+def _parse_year(doc: dict[str, Any]) -> int | None:
+    pd = doc.get("publication_date") or ""
+    try:
+        return int(pd[:4])
+    except (ValueError, TypeError):
+        return None
+
+
+def classify_notices(
+    notices: Iterable[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Classify every notice and attach ``action_type`` / ``opioid_relevant``.
+
+    Returns a list of dicts passing through ``title``,
+    ``publication_date``, ``document_number``, ``toc_subject``,
+    ``html_url``, plus two added fields ``action_type`` (the
+    :class:`ActionType` enum value as a string) and
+    ``opioid_relevant`` (bool).
+    """
+    classified: list[dict[str, Any]] = []
+    for n in notices:
+        title = n.get("title") or ""
+        toc = n.get("toc_subject")
+        action, _, opioid = classify_notice(title, toc)
+        classified.append(
+            {
+                "title": title,
+                "publication_date": n.get("publication_date"),
+                "document_number": n.get("document_number"),
+                "toc_subject": toc,
+                "html_url": n.get("html_url"),
+                "action_type": action.value,
+                "opioid_relevant": opioid,
+            }
+        )
+    return classified
+
+
+def aggregate_by_year(
+    classified: Iterable[dict[str, Any]],
+) -> dict[int, dict[str, Any]]:
+    """Aggregate classified notices into per-year totals + by_type breakdown.
+
+    * Dedupes by ``document_number`` (first-seen wins).
+    * Excludes ``NON_ACTION`` items from ``total`` and ``by_type``.
+    * Returns ``{year: {"total": N, "by_type": {ActionType: N, ...}}}``.
+      (by_type keys are :class:`ActionType` enum values for internal use.)
+    """
+    seen: set[str] = set()
+    by_year: dict[int, dict[str, Any]] = defaultdict(
+        lambda: {"total": 0, "by_type": defaultdict(int)}
+    )
+
+    for doc in classified:
+        docnum = doc.get("document_number")
+        if docnum and docnum in seen:
+            continue
+        if docnum:
+            seen.add(docnum)
+
+        year = _parse_year(doc)
+        if year is None:
+            continue
+
+        action_str = doc.get("action_type")
+        try:
+            action = ActionType(action_str)
+        except ValueError:
+            continue
+        if action is ActionType.NON_ACTION:
+            continue
+
+        slot = by_year[year]
+        slot["total"] += 1
+        slot["by_type"][action] += 1
+
+    # Resolve defaultdicts so callers don't get surprise writes.
+    return {
+        y: {"total": v["total"], "by_type": dict(v["by_type"])}
+        for y, v in by_year.items()
+    }
+
+
+def build_artifact(
+    classified: Iterable[dict[str, Any]],
+    years: Iterable[int],
+    *,
+    fetched_at: dt.datetime | None = None,
+) -> dict[str, Any]:
+    """Build the ``dea_actions_by_year.json`` artifact payload.
+
+    Years missing from the aggregated data are emitted with
+    ``total=0, by_type={}`` so the series is dense across the
+    requested range.
+    """
+    years_list = sorted(set(years))
+    by_year = aggregate_by_year(classified)
+    out_years: list[dict[str, Any]] = []
+    for y in years_list:
+        slot = by_year.get(y, {"total": 0, "by_type": {}})
+        out_years.append(
+            {
+                "year": y,
+                "total": slot["total"],
+                "by_type": {k.value: v for k, v in slot["by_type"].items()},
+            }
+        )
+
+    fetched = fetched_at or dt.datetime.now(tz=dt.UTC)
+    return {
+        "years": out_years,
+        "methodology": METHODOLOGY,
+        "source": "Federal Register API (federalregister.gov/api/v1)",
+        "fetched_at": fetched.isoformat(),
+    }
 
 
 # --------------------------------------------------------------------------

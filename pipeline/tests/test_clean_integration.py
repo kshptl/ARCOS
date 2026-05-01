@@ -23,8 +23,8 @@ def test_clean_produces_all_parquets(tmp_path, monkeypatch):
 
     (cfg.raw_dir / "dea").mkdir(parents=True, exist_ok=True)
     shutil.copy(
-        FIX / "dea" / "diversion_2012_sample.pdf",
-        cfg.raw_dir / "dea" / "2012.pdf",
+        FIX / "dea" / "fr_notices_2012.json",
+        cfg.raw_dir / "dea" / "fr_notices_2012.json",
     )
 
     (cfg.raw_dir / "wapo").mkdir(parents=True, exist_ok=True)

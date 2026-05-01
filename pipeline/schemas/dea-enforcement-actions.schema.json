@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://openarcos.org/schemas/dea-enforcement-actions.schema.json",
-  "title": "DEA Diversion Control annual enforcement summary",
+  "title": "DEA Federal Register registrant-action annual summary",
+  "description": "Annual counts of DEA Federal Register NOTICE documents classified as registrant administrative actions, 2006-2014. `action_count` is the dedupe'd total registrant actions (revocations, ISOs, settlements, admonitions, OTSCs, other registrant actions). NON_ACTION items (scheduling, quotas, importer/manufacturer registrations, info collections) are excluded. `by_type` gives the per-action-type breakdown used for tooltips; `notable_actions` surfaces a small set of representative FR notices with live links. Source: federalregister.gov/api/v1. See pipeline/notes/dea-investigation-2026-05-01.md.",
   "type": "array",
   "items": {
     "type": "object",
@@ -10,6 +11,10 @@
     "properties": {
       "year": {"type": "integer", "minimum": 2000, "maximum": 2025},
       "action_count": {"type": "integer", "minimum": 0},
+      "by_type": {
+        "type": "object",
+        "additionalProperties": {"type": "integer", "minimum": 0}
+      },
       "notable_actions": {
         "type": "array",
         "items": {
