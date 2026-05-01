@@ -1,6 +1,19 @@
-"""DEA Diversion annual report fetcher."""
+"""DEA administrative enforcement actions — Federal Register fetcher.
+
+Replaces the prior synthetic PDF-based source. Pulls DEA NOTICE-type
+documents from the Federal Register API (documents.json) one year at a
+time, follows pagination, and caches the raw JSON per year under
+``data/raw/dea/fr_notices_<year>.json`` for auditability.
+
+Source: https://www.federalregister.gov/developers/documentation/api/v1/
+
+See pipeline/notes/dea-investigation-2026-05-01.md for methodology.
+"""
 
 from __future__ import annotations
+
+import json
+from typing import Any
 
 import httpx
 from tenacity import (
@@ -15,22 +28,107 @@ from openarcos_pipeline.log import get_logger
 
 log = get_logger("openarcos.sources.dea")
 
-# Pinned URLs; update this map when adding new years.
-#
-# DEA ANNUAL REPORT URLs ARE CURRENTLY UNRESOLVED — see pipeline/notes/dea.md.
-# The deadiversion.usdoj.gov annual-report paths the spec assumed (2012, 2014)
-# no longer exist, and Wayback Machine has no archive for those URLs. A
-# maintainer must decide which substitute source to use (monthly Diversion
-# News PDFs, DEA.gov press releases, Federal Register notices, etc.) and
-# populate this dict with real URLs.
-#
-# Until then we keep the map EMPTY and fail loudly in fetch_reports() rather
-# than emit placeholder "REPLACE_WITH_*" URLs that would quietly 404 in
-# production.
-DEA_ANNUAL_REPORTS: dict[int, str] = {
-    # 2012: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2012_URL.pdf",
-    # 2014: "https://www.deadiversion.usdoj.gov/REPLACE_WITH_2014_URL.pdf",
-}
+FR_API = "https://www.federalregister.gov/api/v1/documents.json"
+TARGET_YEARS = tuple(range(2006, 2015))
+
+# Fields we ask the FR API to return for each document. Keeping the set
+# small reduces payload size and keeps the cached JSON readable.
+FR_FIELDS: tuple[str, ...] = (
+    "title",
+    "publication_date",
+    "document_number",
+    "toc_subject",
+    "html_url",
+)
+
+
+class _RetryableError(Exception):
+    """Raised from the inner fetch to signal tenacity a retry is warranted.
+
+    We wrap httpx.Response.raise_for_status() so that 5xx and transport
+    errors are retried, but 4xx errors are re-raised immediately.
+    """
+
+
+def _build_params(year: int) -> list[tuple[str, str]]:
+    """Build query params as a list of (key, value) tuples.
+
+    The FR API expects repeated keys like ``fields[]`` and
+    ``conditions[agencies][]`` — httpx preserves insertion order when
+    given a list of tuples.
+    """
+    params: list[tuple[str, str]] = [
+        ("conditions[agencies][]", "drug-enforcement-administration"),
+        ("conditions[publication_date][year]", str(year)),
+        ("conditions[type][]", "NOTICE"),
+        ("per_page", "1000"),
+    ]
+    for f in FR_FIELDS:
+        params.append(("fields[]", f))
+    return params
+
+
+def _fetch_url(
+    client: httpx.Client,
+    url: str,
+    params: list[tuple[str, str]] | None = None,
+) -> dict[str, Any]:
+    """Fetch a single FR API URL, retrying on transport / 5xx errors only.
+
+    A 4xx response raises immediately (no retry) — it signals a malformed
+    request, not a transient network condition.
+    """
+
+    @retry(
+        stop=stop_after_attempt(4),
+        wait=wait_exponential_jitter(initial=1.0, max=15.0),
+        retry=retry_if_exception_type((_RetryableError, httpx.TransportError)),
+        reraise=True,
+    )
+    def _do() -> dict[str, Any]:
+        resp = client.get(url, params=params)
+        if 500 <= resp.status_code < 600:
+            # Transient; allow tenacity to retry.
+            raise _RetryableError(f"{resp.status_code} from {url}")
+        resp.raise_for_status()
+        return resp.json()
+
+    return _do()
+
+
+def fetch_year_notices(
+    cfg: Config,
+    year: int,
+    transport: httpx.BaseTransport | None = None,
+) -> dict[str, Any]:
+    """Fetch every DEA NOTICE published in ``year`` from the Federal Register.
+
+    Returns a dict of shape ``{"results": [...], "count": N}`` with all
+    pages concatenated. Also writes the combined body to
+    ``cfg.raw_dir/dea/fr_notices_<year>.json`` for audit / offline
+    replay.
+    """
+    out_dir = cfg.raw_dir / "dea"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    log.info("dea.fr GET year", extra={"year": year})
+    all_results: list[dict[str, Any]] = []
+    next_url: str | None = FR_API
+    params: list[tuple[str, str]] | None = _build_params(year)
+
+    with httpx.Client(timeout=60.0, follow_redirects=True, transport=transport) as client:
+        while next_url is not None:
+            body = _fetch_url(client, next_url, params=params)
+            results = body.get("results") or []
+            all_results.extend(results)
+            next_url = body.get("next_page_url")
+            # Subsequent pages include their own query string; clear params
+            # so we don't double-apply filters.
+            params = None
+
+    combined = {"count": len(all_results), "results": all_results}
+    (out_dir / f"fr_notices_{year}.json").write_text(json.dumps(combined, indent=2))
+    return combined
 
 
 def fetch_reports(
@@ -38,40 +136,12 @@ def fetch_reports(
     years: list[int] | None = None,
     transport: httpx.BaseTransport | None = None,
 ) -> None:
-    out = cfg.raw_dir / "dea"
-    out.mkdir(parents=True, exist_ok=True)
+    """Fetch Federal Register DEA notices for every year in the target range.
 
-    if not DEA_ANNUAL_REPORTS:
-        # Loud-fail: do not silently no-op. An empty map means the upstream
-        # source is unresolved; see pipeline/notes/dea.md for the maintainer
-        # decision required before this fetcher can run.
-        raise RuntimeError(
-            "DEA source requires maintainer decision per notes/dea.md "
-            "(DEA_ANNUAL_REPORTS is empty; committed PDF fixtures under "
-            "pipeline/data/raw/dea/ may be used to continue the pipeline "
-            "past this step)."
-        )
-
-    years = years or sorted(DEA_ANNUAL_REPORTS)
-
-    with httpx.Client(timeout=180.0, follow_redirects=True, transport=transport) as client:
-        for year in years:
-            url = DEA_ANNUAL_REPORTS.get(year)
-            if not url:
-                log.warning("dea: no URL for year", extra={"year": year})
-                continue
-            dest = out / f"{year}.pdf"
-
-            @retry(
-                stop=stop_after_attempt(4),
-                wait=wait_exponential_jitter(initial=1.0, max=15.0),
-                retry=retry_if_exception_type((httpx.HTTPStatusError, httpx.TransportError)),
-                reraise=True,
-            )
-            def _do() -> None:
-                log.info("dea GET", extra={"year": year, "url": url})
-                resp = client.get(url)
-                resp.raise_for_status()
-                dest.write_bytes(resp.content)
-
-            _do()
+    This is the entry point wired into the pipeline CLI (``openarcos
+    fetch --source dea``). Writes one raw JSON file per year under
+    ``data/raw/dea/``.
+    """
+    years = years or list(TARGET_YEARS)
+    for year in years:
+        fetch_year_notices(cfg, year=year, transport=transport)
