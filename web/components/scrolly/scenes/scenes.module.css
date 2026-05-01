@@ -132,6 +132,19 @@
   letter-spacing: 0.06em;
 }
 
+.annotation {
+  font-family: var(--font-body);
+  font-size: 10px;
+  fill: var(--text-muted);
+}
+
+.annotationStrong {
+  font-family: var(--font-display);
+  font-size: 10px;
+  fill: var(--text);
+  font-weight: 600;
+}
+
 /* ---------- Act 2: slope chart ---------- */
 
 .slopeLabel {

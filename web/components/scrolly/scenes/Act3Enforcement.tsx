@@ -149,6 +149,68 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             stroke="var(--ink)"
             strokeWidth={1}
           />
+
+          {/* 2011 peak annotation */}
+          {(() => {
+            const peak = byYear.get(2011);
+            if (!peak) return null;
+            const cx = xFor(2011);
+            const barTopY = PAD_TOP + plotH - (peak.action_count / yMax) * plotH;
+            // Sit just above the per-bar value label (value label is at
+            // barTopY - 5, ~11px glyphs). 36px of lift gives a clean gap.
+            const labelY = Math.max(PAD_TOP + 12, barTopY - 36);
+            return (
+              <g data-testid="act3-annotation-2011">
+                <line
+                  x1={cx}
+                  y1={labelY + 4}
+                  x2={cx}
+                  y2={barTopY - 18}
+                  stroke="var(--ink-60)"
+                  strokeWidth={0.75}
+                />
+                <text
+                  className={styles.annotationStrong}
+                  x={cx}
+                  y={labelY}
+                  textAnchor="middle"
+                >
+                  Peak: 69 actions
+                </text>
+                <text
+                  className={styles.annotation}
+                  x={cx}
+                  y={labelY + 12}
+                  textAnchor="middle"
+                >
+                  pharmacy-chain crackdowns begin
+                </text>
+              </g>
+            );
+          })()}
+
+          {/* 2013 industry-pushback annotation on the declining slope */}
+          {(() => {
+            const mark = byYear.get(2013);
+            if (!mark) return null;
+            const cx = xFor(2013);
+            const barTopY = PAD_TOP + plotH - (mark.action_count / yMax) * plotH;
+            // Place muted text below the 2013 bar value, above the x-axis
+            // tick labels (which sit at PAD_TOP + plotH + 14).
+            const labelY = Math.min(PAD_TOP + plotH - 6, barTopY + 20);
+            return (
+              <g data-testid="act3-annotation-2013">
+                <text
+                  className={styles.annotation}
+                  x={cx}
+                  y={labelY}
+                  textAnchor="middle"
+                >
+                  Industry pushback intensifies
+                </text>
+              </g>
+            );
+          })()}
         </svg>
       </div>
 

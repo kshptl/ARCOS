@@ -21,6 +21,20 @@ const ACTIONS = [
   { year: 2014, action_count: 520, notable_actions: [] },
 ];
 
+// Mirrors the real shape of pipeline/data/processed/dea_actions_by_year.json
+// — baseline 2006-2010, 2011 peak at 69, decline back to baseline by 2014.
+const ACTIONS_FULL = [
+  { year: 2006, action_count: 32, notable_actions: [] },
+  { year: 2007, action_count: 40, notable_actions: [] },
+  { year: 2008, action_count: 22, notable_actions: [] },
+  { year: 2009, action_count: 22, notable_actions: [] },
+  { year: 2010, action_count: 25, notable_actions: [] },
+  { year: 2011, action_count: 69, notable_actions: [] },
+  { year: 2012, action_count: 42, notable_actions: [] },
+  { year: 2013, action_count: 31, notable_actions: [] },
+  { year: 2014, action_count: 20, notable_actions: [] },
+];
+
 describe("Act3Enforcement", () => {
   it("renders timeline ticks across a continuous 2006–2014 year axis", () => {
     render(
@@ -218,6 +232,30 @@ describe("Act3Enforcement", () => {
     // Step D — 2014 decline + 2016 law.
     expect(combined).toMatch(/Ensuring Patient Access/);
     expect(combined).toMatch(/2016/);
+  });
+
+  it("renders a 2011 peak annotation citing the 69-action high", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS_FULL} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const anno = container.querySelector('[data-testid="act3-annotation-2011"]');
+    expect(anno).not.toBeNull();
+    expect(anno?.textContent ?? "").toMatch(/Peak/i);
+    expect(anno?.textContent ?? "").toMatch(/69/);
+    expect(anno?.textContent ?? "").toMatch(/pharmacy-chain/i);
+  });
+
+  it("renders a 2013 industry-pushback annotation on the declining slope", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS_FULL} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const anno = container.querySelector('[data-testid="act3-annotation-2013"]');
+    expect(anno).not.toBeNull();
+    expect(anno?.textContent ?? "").toMatch(/Industry pushback/i);
   });
 
   it("data-table caption reflects the Federal Register publication metric", () => {
