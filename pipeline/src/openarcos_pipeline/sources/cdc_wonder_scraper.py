@@ -50,6 +50,7 @@ from __future__ import annotations
 import contextlib
 import csv
 import io
+import os
 import time
 from collections.abc import Callable, Iterable
 from dataclasses import dataclass
@@ -299,17 +300,30 @@ class CDCWonderScraper:
     def _live_drive_form(
         self, page: Any, state_fips: str, years: Iterable[int]
     ) -> tuple[str, str]:
-        """Real Playwright UI flow."""
+        """Real Playwright UI flow.
+
+        We call the WONDER-provided JS helper ``add()`` to transfer
+        selections from each Finder ``F_*`` listbox into the matching
+        ``V_*`` textarea. Setting ``V_*`` textarea values directly
+        doesn't work — the server re-renders the form with the textarea
+        cleared, because a plain textarea write doesn't flip the finder
+        state the server expects.
+        """
         year_list = list(years)
         page.goto(self._config.landing_url, timeout=self._config.nav_timeout_ms)
 
-        # I-Agree gateway
+        # I-Agree gateway.
         page.click('input[value="I Agree"]', timeout=self._config.nav_timeout_ms)
-        page.wait_for_selector("form", timeout=self._config.nav_timeout_ms)
+        page.wait_for_selector(
+            'input[name="action-Send"]', timeout=self._config.nav_timeout_ms
+        )
+        page.wait_for_function(
+            "typeof add === 'function'", timeout=self._config.nav_timeout_ms
+        )
 
         # Set group-by variables. Use evaluate to set select values
-        # directly and dispatch change events (the onchange handlers
-        # refresh the dependent option lists).
+        # directly and dispatch change events so WONDER's onchange
+        # handlers refresh the dependent option lists.
         page.evaluate(
             """
             ({b1, b2, b3}) => {
@@ -331,92 +345,245 @@ class CDCWonderScraper:
             },
         )
 
-        # Switch states + years + causes into advanced-entry mode, then
-        # set textarea values directly.
+        # Select the state in F_D76.V9 and call add('D76.V9').
         page.evaluate(
             """
-            ({state_fips, years}) => {
-              const setHidden = (name, value) => {
-                const el = document.querySelector(`input[name="${name}"]`);
-                if (el) { el.value = value; }
-              };
-              // Advanced mode flags.
-              setHidden('O_V9_fmode', 'fadv');
-              setHidden('O_V1_fmode', 'fadv');
-              setHidden('O_V25_fmode', 'fadv');
-
-              const setTextarea = (name, value) => {
-                const el = document.querySelector(`textarea[name="${name}"]`);
-                if (el) { el.value = value; }
-              };
-              setTextarea('V_D76.V9', state_fips);
-              setTextarea('V_D76.V1', years.join('\\n'));
+            ({state_fips}) => {
+              const f = document.querySelector('select[name="F_D76.V9"]');
+              if (!f) throw new Error('F_D76.V9 missing');
+              for (const opt of f.options) {
+                opt.selected = (opt.value === state_fips);
+              }
+              // add() is a page-scoped helper that moves selected F_*
+              // options into the V_* textarea in the format the server
+              // expects ("<code> (Label)"). It also flips the hidden
+              // O_*_fmode input as needed.
+              add('D76.V9');
             }
             """,
-            {"state_fips": state_fips, "years": year_list},
+            {"state_fips": state_fips},
         )
 
-        # Select drug/alcohol induced causes (O_ucd radio) and D1-D4.
+        # Select years in F_D76.V1 and call add('D76.V1').
+        page.evaluate(
+            """
+            ({years}) => {
+              const f = document.querySelector('select[name="F_D76.V1"]');
+              if (!f) throw new Error('F_D76.V1 missing');
+              const want = new Set(years.map(String));
+              for (const opt of f.options) {
+                opt.selected = want.has(opt.value);
+              }
+              add('D76.V1');
+            }
+            """,
+            {"years": [str(y) for y in year_list]},
+        )
+
+        # Select the drug/alcohol induced causes group: O_ucd = D76.V25
+        # radio, then pick D1-D4 in F_D76.V25 and add them.
         page.evaluate(
             """
             () => {
               const radio = document.querySelector('input[name="O_ucd"][value="D76.V25"]');
-              if (radio) { radio.checked = true; radio.dispatchEvent(new Event('change', {bubbles: true})); }
-              const ta = document.querySelector('textarea[name="V_D76.V25"]');
-              if (ta) { ta.value = 'D1\\nD2\\nD3\\nD4'; }
+              if (radio) {
+                radio.checked = true;
+                radio.dispatchEvent(new Event('change', {bubbles: true}));
+                radio.dispatchEvent(new Event('click', {bubbles: true}));
+              }
+              const f = document.querySelector('select[name="F_D76.V25"]');
+              if (!f) throw new Error('F_D76.V25 missing');
+              const want = new Set(['D1','D2','D3','D4']);
+              for (const opt of f.options) {
+                opt.selected = want.has(opt.value);
+              }
+              add('D76.V25');
             }
             """
         )
 
-        # Ensure "Show Suppressed" is on so we can see the suppression
-        # flag in the TSV (not just silently drop those cells).
+        # Show suppressed + show zeros + hide totals.
         page.evaluate(
             """
             () => {
-              const cb = document.querySelector('input[name="O_show_suppressed"]');
-              if (cb) { cb.checked = true; }
-              const cb2 = document.querySelector('input[name="O_show_zeros"]');
-              if (cb2) { cb2.checked = true; }
-              const cb3 = document.querySelector('input[name="O_show_totals"]');
-              if (cb3) { cb3.checked = false; }
+              const set = (name, val) => {
+                const el = document.querySelector(`input[name="${name}"]`);
+                if (el) el.checked = !!val;
+              };
+              set('O_show_suppressed', true);
+              set('O_show_zeros', true);
+              set('O_show_totals', false);
             }
             """
         )
 
-        # Submit the query.
-        page.click(
-            'input[name="action-Send"]',
-            timeout=self._config.nav_timeout_ms,
+        # Submit the query. WONDER has duplicate "action-Send" buttons;
+        # we trigger the form submit through the helper ``submitSet``
+        # that the page's own buttons invoke (``onclick="submitSet(this)"``).
+        # Use the header submit-button1 which is always rendered.
+
+        # Diagnostic: verify V_* textareas are populated before submit.
+        # Failure here means our evaluate() calls didn't stick (likely a
+        # selector mismatch after a WONDER form-layout change). We check
+        # with a hard error because silent submission of an empty form
+        # is the top single cause of the server bouncing us back to the
+        # Request Form 500 pages in this investigation.
+        pre_submit = page.evaluate(
+            """
+            () => ({
+              v9: (document.querySelector('textarea[name="V_D76.V9"]') || {}).value || '',
+              v1: (document.querySelector('textarea[name="V_D76.V1"]') || {}).value || '',
+              v25: (document.querySelector('textarea[name="V_D76.V25"]') || {}).value || '',
+              o_ucd: (document.querySelector('input[name="O_ucd"]:checked') || {}).value || '',
+              b1: (document.querySelector('select[name="B_1"]') || {}).value || '',
+              b2: (document.querySelector('select[name="B_2"]') || {}).value || '',
+              b3: (document.querySelector('select[name="B_3"]') || {}).value || '',
+            })
+            """
         )
-        page.wait_for_load_state("load", timeout=self._config.query_timeout_ms)
+        log.debug("cdc wonder pre-submit state", extra={"state": state_fips, **pre_submit})
+        if not pre_submit.get("v9") or not pre_submit.get("v1") or not pre_submit.get("v25"):
+            raise ScrapeError(f"pre-submit form not populated: {pre_submit}")
+
+        # Submit. We inject a hidden ``action-Send=Send`` input and then
+        # call ``form.submit()`` directly. Clicking the visible Send
+        # button is intermittent in Playwright (the ``#submit-button1``
+        # selector, ``locator.first.click()``, and ``.click()`` on an
+        # ``input[name="action-Send"]`` locator all occasionally return
+        # without firing the form's submit flow — we suspect a timing
+        # race between WONDER's onclick handler and Playwright's default
+        # click sequence). Direct form submission is deterministic and
+        # the server treats it identically to a button click.
+        page.evaluate(
+            """
+            () => {
+              const form = document.getElementById('wonderform');
+              if (!form) throw new Error('data request form (#wonderform) missing');
+              let hidden = form.querySelector(
+                'input[type="hidden"][name="action-Send"]'
+              );
+              if (!hidden) {
+                hidden = document.createElement('input');
+                hidden.type = 'hidden';
+                hidden.name = 'action-Send';
+                hidden.value = 'Send';
+                form.appendChild(hidden);
+              }
+              form.submit();
+            }
+            """
+        )
+
+        # WONDER's submit POSTs the form; the server processes the
+        # query (may take 20-60s for a full-state × 9-year query) and
+        # responds with the Results Form HTML. We poll for the title
+        # transition AND for the ``action-Export`` Download button,
+        # which is the canonical signal that the Results DOM is fully
+        # rendered. Waiting for title alone is insufficient — the
+        # attribute is set before the form body is appended, and our
+        # follow-up form.submit() then runs against a partial DOM.
+        try:
+            page.wait_for_function(
+                "document.title.includes('Results Form') "
+                "|| document.title.includes('WONDER Message') "
+                "|| document.body.innerText.includes('Processing Error') "
+                "|| document.body.innerText.includes('System Busy')",
+                timeout=self._config.query_timeout_ms,
+            )
+            if "Results Form" in (page.title() or ""):
+                page.wait_for_selector(
+                    'input[name="action-Export"]',
+                    state="attached",
+                    timeout=self._config.nav_timeout_ms,
+                )
+        except Exception:
+            # Post-submit title didn't transition. Capture diagnostic
+            # page content before raising so we can tell whether we hit
+            # a soft rate-limit, a malformed form echo, or a processing
+            # interstitial that needs a longer wait.
+            if os.environ.get("OPENARCOS_SCRAPER_DEBUG"):
+                dbg = Path(os.environ["OPENARCOS_SCRAPER_DEBUG"])
+                dbg.mkdir(parents=True, exist_ok=True)
+                with contextlib.suppress(Exception):
+                    (dbg / f"{state_fips}_wait_timeout.html").write_text(
+                        page.content()
+                    )
+                    (dbg / f"{state_fips}_wait_timeout.title").write_text(
+                        page.title() or ""
+                    )
+            raise
 
         # Session expiry / error detection.
         title = page.title().strip().lower()
         if "session" in title and "expired" in title:
             raise SessionExpiredError(f"Results page title: {title!r}")
-
         results_html = page.content()
         if "Your session has timed out" in results_html:
             raise SessionExpiredError("session timed-out banner in results page")
-        if 'class="error-messages"' in results_html and "stage=request" in results_html:
-            # Form echo: the POST was rejected.
-            raise ScrapeError(f"Results page contains error-messages for {state_fips}")
+        # If we're still on the Request Form after Send, the submission
+        # was rejected by server-side validation.
+        if "Request Form" in (page.title() or ""):
+            if os.environ.get("OPENARCOS_SCRAPER_DEBUG"):
+                dbg = Path(os.environ["OPENARCOS_SCRAPER_DEBUG"])
+                dbg.mkdir(parents=True, exist_ok=True)
+                (dbg / f"{state_fips}_post_send.html").write_text(results_html)
+                log.warning("scraper debug HTML → %s", dbg)
+            raise ScrapeError(
+                f"WONDER re-rendered the Request Form for state {state_fips} "
+                "— server validation likely failed"
+            )
 
-        # Export TSV. WONDER's Export button ships a new POST with
-        # `action-Export=Export` and `O_export-format=tsv`; the response
-        # is a text file download.
+        # Export TSV. On the Results page there is an explicit
+        # ``action-Export`` Download button; clicking it with the export
+        # format select set to ``tsv`` triggers a file download.
+        if os.environ.get("OPENARCOS_SCRAPER_DEBUG"):
+            dbg = Path(os.environ["OPENARCOS_SCRAPER_DEBUG"])
+            dbg.mkdir(parents=True, exist_ok=True)
+            (dbg / f"{state_fips}_pre_export.html").write_text(results_html)
+
         page.evaluate(
             """
             () => {
               const sel = document.querySelector('select[name="O_export-format"]');
-              if (sel) { sel.value = 'tsv'; }
+              if (sel) {
+                sel.value = 'tsv';
+                sel.dispatchEvent(new Event('change', {bubbles: true}));
+              }
+              // Some Results Form variants render an
+              // ``O_change_action-Send-Export Results`` checkbox; others
+              // expose an ``action-Export`` submit button directly. We
+              // satisfy either path by ticking the checkbox if it
+              // exists.
+              const cb = document.querySelector('input[name="O_change_action-Send-Export Results"]');
+              if (cb) { cb.checked = true; cb.dispatchEvent(new Event('change', {bubbles: true})); }
             }
             """
         )
-
-        # expect_download captures the download as a Playwright Download.
+        # Trigger the Export download via form.submit() with an injected
+        # ``action-Export=Export`` hidden input. Same reasoning as the
+        # Send submit above.
         with page.expect_download(timeout=self._config.query_timeout_ms) as dl_info:
-            page.click('input[name="action-Export"]', timeout=self._config.nav_timeout_ms)
+            page.evaluate(
+                """
+                () => {
+                  const form = document.getElementById('wonderform');
+                  if (!form) throw new Error('data request form (#wonderform) missing');
+                  // Remove any prior action-* hidden inputs we added.
+                  for (const n of ['action-Send','action-Export']) {
+                    const el = form.querySelector(
+                      `input[type="hidden"][name="${n}"]`
+                    );
+                    if (el) el.remove();
+                  }
+                  const hidden = document.createElement('input');
+                  hidden.type = 'hidden';
+                  hidden.name = 'action-Export';
+                  hidden.value = 'Export';
+                  form.appendChild(hidden);
+                  form.submit();
+                }
+                """
+            )
         download = dl_info.value
         path = download.path()
         tsv = Path(path).read_text() if path else ""
