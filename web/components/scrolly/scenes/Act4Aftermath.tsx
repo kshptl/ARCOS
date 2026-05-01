@@ -113,11 +113,21 @@ const SPARK_H = 36;
 
 // Reveal timing constants. With 6 cards:
 //   - card i fades in over [i*CARD_STAGGER, i*CARD_STAGGER + CARD_DUR]
-//   - CARD_STAGGER=0.05, CARD_DUR=0.25 → all cards fully visible by progress=0.5
-//   - line i starts drawing LINE_DELAY after card i's fade-in starts, ends at progress=1
+//   - CARD_STAGGER=0.05, CARD_DUR=0.25 → all cards fully visible by p=0.5
+//   - line i starts drawing LINE_DELAY after card i's fade-in starts, ends
+//     when the remapped schedule reaches p=1
+// Note: the inputs are a remapped progress `p` (see below), not raw
+// scroll progress.
 const CARD_STAGGER = 0.05;
 const CARD_DUR = 0.25;
 const LINE_DELAY = 0.1;
+// Act 4 is the last ScrollyStage on the page, so users never reach
+// raw scroll progress = 1.0 while its sticky canvas is on screen — the
+// document ends before then. Empirically the achievable max is ~0.82.
+// We remap raw progress so the schedule hits p=1 at scroll progress
+// 0.75, giving the reader time to see the fully-drawn lines before the
+// canvas scrolls away.
+const PROGRESS_COMPLETE_AT = 0.75;
 
 export function Act4Aftermath({ counties }: Act4AftermathProps) {
   const progress = useScrollyProgress();
@@ -130,6 +140,10 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
     ...counties.flatMap((c) => (c.deaths.length > 0 ? [Math.max(...c.deaths)] : [])),
   );
 
+  // Remap raw scroll progress onto the animation's [0..1] timeline so all
+  // stagger + line-draw animations complete by PROGRESS_COMPLETE_AT.
+  const p = Math.min(progress / PROGRESS_COMPLETE_AT, 1);
+
   return (
     <div className={styles.act}>
       <div className={styles.actInner}>
@@ -138,12 +152,13 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
             const hasData = c.deaths.length > 0;
             const spark = hasData ? buildSpark(c.deaths, SPARK_W, SPARK_H, globalMax) : null;
 
-            // Per-card reveal progress (0..1).
-            const cardT = reducedMotion ? 1 : clamp01((progress - i * CARD_STAGGER) / CARD_DUR);
+            // Per-card reveal progress (0..1), keyed off the remapped p.
+            const cardT = reducedMotion ? 1 : clamp01((p - i * CARD_STAGGER) / CARD_DUR);
             // Per-line draw progress (0..1). Line starts LINE_DELAY after its
-            // card begins fading in; completes at progress=1.
+            // card begins fading in; completes when p reaches 1 (which
+            // corresponds to actual scroll progress = PROGRESS_COMPLETE_AT).
             const lineStart = i * CARD_STAGGER + LINE_DELAY;
-            const lineT = reducedMotion ? 1 : clamp01((progress - lineStart) / (1 - lineStart));
+            const lineT = reducedMotion ? 1 : clamp01((p - lineStart) / (1 - lineStart));
 
             const lineLen = spark?.length ?? 0;
             const dashOffset = lineLen * (1 - lineT);

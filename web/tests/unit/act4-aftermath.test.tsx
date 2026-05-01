@@ -191,6 +191,30 @@ describe("Act4Aftermath", () => {
     }
   });
 
+  it("at progress=0.75, all cards are fully visible and sparklines fully drawn", () => {
+    // Act 4 is the last ScrollyStage on the page, so users never reach
+    // progress=1.0 while its sticky canvas is on screen — the document
+    // ends before then. The per-card animation schedule must complete by
+    // progress ~0.75 so the settled state is visible within the user's
+    // achievable scroll range.
+    render(
+      <ScrollyProgressContext.Provider value={0.75}>
+        <Act4Aftermath counties={COUNTIES} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const figures = screen.getAllByTestId("small-multiple");
+    expect(figures).toHaveLength(6);
+    for (const fig of figures) {
+      const opacity = Number((fig as HTMLElement).style.opacity || "1");
+      expect(opacity).toBe(1);
+      const path = fig.querySelector("path[data-testid='spark-line']") as SVGPathElement;
+      const offset = Number(path.style.strokeDashoffset || "0");
+      // Allow a tiny fp tolerance — the schedule should hit exactly 0 at
+      // p=0.75 but we accept <= 0.01 for float rounding.
+      expect(offset).toBeLessThanOrEqual(0.01);
+    }
+  });
+
   it("with prefers-reduced-motion, all cards opacity=1 and lines fully drawn regardless of progress", () => {
     stubMatchMedia(true);
     render(
