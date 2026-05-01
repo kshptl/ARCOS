@@ -172,20 +172,52 @@ describe("Act3Enforcement", () => {
     }
   });
 
-  it("Act 3 step article has no caption paragraph beyond the headline", () => {
-    // The Act 3 <Step> lives in app/page.tsx. We assert at the file-content
-    // level that the legacy caption prose has been removed.
+  it("Act 3 step articles do not carry legacy monotonic-scale-up prose", () => {
+    // The Act 3 <Step>s live in app/page.tsx. We assert at the file-content
+    // level that legacy monotonic scale-up prose has been removed.
     const pagePath = resolve(__dirname, "../../app/page.tsx");
     const src = readFileSync(pagePath, "utf8");
-    // Locate the Act 3 <Step id="act3"> ... </Step> block.
-    const match = src.match(/<Step id="act3">[\s\S]*?<\/Step>/);
-    expect(match, "Act 3 <Step> block not found").toBeTruthy();
-    const block = match![0];
-    // Caption prose like "Enforcement actions from the DEA Diversion Control
-    // Division climbed..." must no longer be present.
-    expect(block).not.toMatch(/Diversion Control Division/);
-    expect(block).not.toMatch(/impossible to ignore/);
-    expect(block).not.toMatch(/scale of the problem/);
+    // Locate all Act 3 <Step id="act3..."> ... </Step> blocks.
+    const matches = src.match(/<Step id="act3[^"]*">[\s\S]*?<\/Step>/g);
+    expect(matches, "Act 3 <Step> blocks not found").toBeTruthy();
+    const combined = (matches ?? []).join("\n");
+    // Prose that implies a monotonic scale-up or the old synthetic narrative
+    // must no longer appear anywhere in the Act 3 step articles.
+    expect(combined).not.toMatch(/Diversion Control Division/);
+    expect(combined).not.toMatch(/impossible to ignore/);
+    expect(combined).not.toMatch(/scale of the problem/);
+    expect(combined).not.toMatch(/regulators catch up/i);
+    expect(combined).not.toMatch(/federal enforcement scaled up/i);
+    expect(combined).not.toMatch(/scaling up/i);
+    expect(combined).not.toMatch(/clustering around 2012/i);
+    expect(combined).not.toMatch(/early 2010s/i);
+  });
+
+  it("Act 3 step articles tell the peak-then-retreat story", () => {
+    // Assert at file-content level that the four new step captions are
+    // present in app/page.tsx. We pick an anchor phrase from each caption.
+    const pagePath = resolve(__dirname, "../../app/page.tsx");
+    const src = readFileSync(pagePath, "utf8");
+    const matches = src.match(/<Step id="act3[^"]*">[\s\S]*?<\/Step>/g);
+    expect(matches, "Act 3 <Step> blocks not found").toBeTruthy();
+    const combined = (matches ?? []).join("\n");
+
+    // Step A — low baseline, late 2000s.
+    expect(combined).toMatch(/low baseline/i);
+    expect(combined).toMatch(/20 to 40/);
+    // Step B — 2011 peak.
+    expect(combined).toMatch(/69/);
+    expect(combined).toMatch(/pharmacy-chain/i);
+    // Step C — 2012-2013 shift: landmark settlements, fewer total actions.
+    expect(combined).toMatch(/\$34M/);
+    expect(combined).toMatch(/\$80M/);
+    expect(combined).toMatch(/\$22M/);
+    expect(combined).toMatch(/Cardinal Health/);
+    expect(combined).toMatch(/Walgreens/);
+    expect(combined).toMatch(/CVS/);
+    // Step D — 2014 decline + 2016 law.
+    expect(combined).toMatch(/Ensuring Patient Access/);
+    expect(combined).toMatch(/2016/);
   });
 
   it("data-table caption reflects the Federal Register publication metric", () => {

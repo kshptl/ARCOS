@@ -82,9 +82,38 @@ export default async function HomePage() {
           canvas={<Act3Enforcement actions={data.act3.actions} />}
           ariaLabel="Act 3: DEA Final Orders and registrant administrative actions published in the Federal Register, 2006 through 2014."
         >
-          <Step id="act3">
+          <Step id="act3-baseline">
             <p className="eyebrow">Act 3 — Enforcement</p>
-            <h2>The regulators catch up.</h2>
+            <h2>A quiet baseline.</h2>
+            <p>
+              Through the late 2000s, DEA administrative enforcement against opioid registrants ran
+              at a low baseline — about 20 to 40 federal registrant actions per year, published in
+              the Federal Register and aimed mostly at individual rogue prescribers.
+            </p>
+          </Step>
+          <Step id="act3-peak">
+            <h2>2011: the agency spikes.</h2>
+            <p>
+              By 2011, as the 76-billion-pill shipment scale became impossible to miss inside the
+              agency, DEA registrant actions nearly tripled — 69 Federal Register dispositions in a
+              single year — marking the start of the pharmacy-chain crackdowns.
+            </p>
+          </Step>
+          <Step id="act3-settlements">
+            <h2>Headlines over headcount.</h2>
+            <p>
+              The agency shifted tactics. Landmark settlements — Cardinal Health $34M, Walgreens
+              $80M, CVS $22M — produced headlines but fewer total actions. The numbers drop; the
+              dollar stakes rise.
+            </p>
+          </Step>
+          <Step id="act3-retreat">
+            <h2>Pressure from above.</h2>
+            <p>
+              Then the industry pushed back. A 2016 law — the Ensuring Patient Access and Effective
+              Drug Enforcement Act — would strip DEA's power to freeze suspicious shipments. By
+              2014, the end of our window, total actions had already fallen back below 2007 levels.
+            </p>
           </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
