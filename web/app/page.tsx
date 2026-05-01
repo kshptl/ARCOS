@@ -80,7 +80,7 @@ export default async function HomePage() {
       <ScrollyErrorBoundary label="act-3">
         <ScrollyStage
           canvas={<Act3Enforcement actions={data.act3.actions} />}
-          ariaLabel="Act 3: enforcement actions from the DEA Diversion Control Division climb from 2010 to 2013."
+          ariaLabel="Act 3: DEA Final Orders and registrant administrative actions published in the Federal Register, 2006 through 2014."
         >
           <Step id="act3">
             <p className="eyebrow">Act 3 — Enforcement</p>

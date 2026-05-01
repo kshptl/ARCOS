@@ -71,7 +71,16 @@ export interface DEANotableAction {
 
 export interface DEAEnforcementAction {
   year: number;
+  /** Total registrant administrative actions (revocations, ISOs, settlements,
+   *  admonitions, OTSCs, other registrant actions) published in the Federal
+   *  Register in `year`. Scheduling / quota / registration-applications are
+   *  excluded. See pipeline/notes/dea-investigation-2026-05-01.md. */
   action_count: number;
+  /** Optional per-action-type breakdown, keyed by the pipeline ActionType
+   *  enum values (FINAL_ORDER_REVOCATION, IMMEDIATE_SUSPENSION, SETTLEMENT,
+   *  ORDER_TO_SHOW_CAUSE, ADMONITION, OTHER_REGISTRANT_ACTION). Absent when
+   *  upstream didn't provide a breakdown. */
+  by_type?: Record<string, number>;
   notable_actions: DEANotableAction[];
 }
 

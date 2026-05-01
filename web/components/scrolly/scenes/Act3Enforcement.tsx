@@ -153,7 +153,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
       </div>
 
       <table data-testid="act3-table" className={styles.dataTable}>
-        <caption>Act 3 — DEA enforcement actions per year</caption>
+        <caption>Act 3 — DEA Final Orders &amp; Registrant Actions Published</caption>
         <thead>
           <tr>
             <th>Year</th>

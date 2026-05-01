@@ -188,6 +188,21 @@ describe("Act3Enforcement", () => {
     expect(block).not.toMatch(/scale of the problem/);
   });
 
+  it("data-table caption reflects the Federal Register publication metric", () => {
+    // The data-table caption is the user-visible label for the chart (the
+    // on-canvas title band was removed earlier). It must describe the real
+    // metric — Federal Register final orders / registrant actions published
+    // — not the vague prior wording "enforcement actions per year".
+    render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    const table = screen.getByTestId("act3-table");
+    const caption = table.querySelector("caption");
+    expect(caption?.textContent ?? "").toMatch(/Final Orders.*Registrant Actions.*Published/i);
+  });
+
   it("does not render the residual 'Federal enforcement scaled up' subCaption inside the canvas", () => {
     // A <p class="subCaption"> beneath the SVG was surviving in the Act 3
     // scene after the step caption was removed. User asked for the canvas

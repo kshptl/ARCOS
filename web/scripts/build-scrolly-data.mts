@@ -16,6 +16,7 @@ type TopDist = { distributor: string; year: number; pills: number; share_pct: nu
 type DEA = {
   year: number;
   action_count: number;
+  by_type?: Record<string, number>;
   notable_actions: { title: string; url?: string }[];
 };
 type CountyMeta = { fips: string; name: string; state: string; pop: number };
