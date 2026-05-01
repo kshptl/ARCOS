@@ -150,11 +150,6 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             strokeWidth={1}
           />
         </svg>
-
-        <p className={styles.subCaption}>
-          Federal enforcement scaled up through the early 2010s, with DEA actions clustering around
-          2012–2014.
-        </p>
       </div>
 
       <table data-testid="act3-table" className={styles.dataTable}>

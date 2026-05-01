@@ -187,4 +187,24 @@ describe("Act3Enforcement", () => {
     expect(block).not.toMatch(/impossible to ignore/);
     expect(block).not.toMatch(/scale of the problem/);
   });
+
+  it("does not render the residual 'Federal enforcement scaled up' subCaption inside the canvas", () => {
+    // A <p class="subCaption"> beneath the SVG was surviving in the Act 3
+    // scene after the step caption was removed. User asked for the canvas
+    // to be title/caption/callout-free; assert there are no paragraphs
+    // rendered inside the Act 3 scene, and none of the old caption text is
+    // present.
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.5}>
+        <Act3Enforcement actions={ACTIONS} />
+      </ScrollyProgressContext.Provider>,
+    );
+    // No <p> element anywhere in the Act 3 scene.
+    expect(container.querySelectorAll("p").length).toBe(0);
+    // No class name containing "subCaption" on any element.
+    expect(container.querySelectorAll('[class*="subCaption"]').length).toBe(0);
+    // Canvas-level caption prose must be gone.
+    expect(container.textContent ?? "").not.toMatch(/Federal enforcement/);
+    expect(container.textContent ?? "").not.toMatch(/clustering around 2012/);
+  });
 });
