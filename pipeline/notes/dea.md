@@ -46,6 +46,33 @@ collections, public meetings — are classified `NON_ACTION` and
   because each uses a slightly different definition. Publishing the
   definition explicitly is the whole point.
 
+## Publication-year caveat
+
+The series is indexed by **Federal Register publication year**, which
+is the year the DEA's disposition becomes a public document. It is
+*not* the year of the underlying conduct, the year the registrant
+was first suspended, or the year an administrative proceeding was
+initiated. Three practical consequences:
+
+1. **Lag.** A 2011 Immediate Suspension Order against a pharmacy
+   often does not produce a Final Order published in the Federal
+   Register until 2012 or 2013. The published-actions timeline
+   therefore trails the enforcement-activity timeline by roughly
+   6–24 months.
+2. **Title-convention break at 2011.** Before 2011 the Federal
+   Register used granular titles (e.g. "Final Order Revocation of
+   Registration", "Order to Show Cause"). From 2011 onward the
+   agency increasingly consolidated dispositions under the umbrella
+   "Decision and Order" title. Post-2011 `by_type` breakdowns are
+   therefore coarser than pre-2011 ones; the *total* count per year
+   is unaffected, but the internal composition is less granular.
+3. **Scope.** Criminal prosecutions proceed through DOJ, not DEA's
+   administrative track, and do not appear in the Federal Register
+   as DEA notices. Headline civil settlements with distributors
+   (Cardinal Health, McKesson, AmerisourceBergen) are DOJ-Civil
+   actions and are likewise **not** in this series, even though
+   they are direct responses to the same misconduct.
+
 ## Files
 
 Under `pipeline/data/`:
