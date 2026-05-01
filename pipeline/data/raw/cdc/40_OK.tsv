@@ -1,0 +1,750 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2006"	"2006"	Suppressed	22215	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2007"	"2007"	Suppressed	22345	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2008"	"2008"	0	22346	Unreliable
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2009"	"2009"	Suppressed	22477	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2010"	"2010"	Suppressed	22683	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2011"	"2011"	Suppressed	22612	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2012"	"2012"	Suppressed	22286	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2013"	"2013"	Suppressed	22194	Suppressed
+	"Oklahoma"	"40"	"Adair County, OK"	"40001"	"2014"	"2014"	Suppressed	22186	Suppressed
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2006"	"2006"	Suppressed	5639	Suppressed
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2007"	"2007"	0	5618	Unreliable
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2008"	"2008"	0	5618	Unreliable
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2009"	"2009"	0	5585	Unreliable
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2010"	"2010"	Suppressed	5642	Suppressed
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2011"	"2011"	Suppressed	5662	Suppressed
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2012"	"2012"	Suppressed	5666	Suppressed
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2013"	"2013"	0	5847	Unreliable
+	"Oklahoma"	"40"	"Alfalfa County, OK"	"40003"	"2014"	"2014"	0	5790	Unreliable
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2006"	"2006"	Suppressed	14013	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2007"	"2007"	Suppressed	14118	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2008"	"2008"	Suppressed	14220	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2009"	"2009"	Suppressed	14155	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2010"	"2010"	Suppressed	14182	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2011"	"2011"	Suppressed	14206	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2012"	"2012"	Suppressed	14007	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2013"	"2013"	Suppressed	13898	Suppressed
+	"Oklahoma"	"40"	"Atoka County, OK"	"40005"	"2014"	"2014"	Suppressed	13796	Suppressed
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2006"	"2006"	0	5514	Unreliable
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2007"	"2007"	0	5571	Unreliable
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2008"	"2008"	0	5521	Unreliable
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2009"	"2009"	Suppressed	5562	Suppressed
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2010"	"2010"	Suppressed	5636	Suppressed
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2011"	"2011"	Suppressed	5624	Suppressed
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2012"	"2012"	0	5591	Unreliable
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2013"	"2013"	0	5566	Unreliable
+	"Oklahoma"	"40"	"Beaver County, OK"	"40007"	"2014"	"2014"	Suppressed	5486	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2006"	"2006"	Suppressed	20040	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2007"	"2007"	Suppressed	21855	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2008"	"2008"	Suppressed	22817	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2009"	"2009"	Suppressed	22369	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2010"	"2010"	Suppressed	22119	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2011"	"2011"	Suppressed	22288	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2012"	"2012"	Suppressed	23081	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2013"	"2013"	Suppressed	23637	Suppressed
+	"Oklahoma"	"40"	"Beckham County, OK"	"40009"	"2014"	"2014"	Suppressed	23691	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2006"	"2006"	0	11965	Unreliable
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2007"	"2007"	0	12010	Unreliable
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2008"	"2008"	Suppressed	12019	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2009"	"2009"	Suppressed	11896	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2010"	"2010"	Suppressed	11943	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2011"	"2011"	Suppressed	9780	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2012"	"2012"	Suppressed	9785	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2013"	"2013"	Suppressed	9720	Suppressed
+	"Oklahoma"	"40"	"Blaine County, OK"	"40011"	"2014"	"2014"	Suppressed	9917	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2006"	"2006"	Suppressed	39739	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2007"	"2007"	Suppressed	40350	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2008"	"2008"	12	41453	Unreliable
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2009"	"2009"	Suppressed	41859	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2010"	"2010"	Suppressed	42416	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2011"	"2011"	11	43089	Unreliable
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2012"	"2012"	12	43399	Unreliable
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2013"	"2013"	Suppressed	44244	Suppressed
+	"Oklahoma"	"40"	"Bryan County, OK"	"40013"	"2014"	"2014"	Suppressed	44486	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2006"	"2006"	Suppressed	29087	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2007"	"2007"	Suppressed	27932	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2008"	"2008"	Suppressed	28612	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2009"	"2009"	Suppressed	29459	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2010"	"2010"	Suppressed	29600	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2011"	"2011"	Suppressed	29537	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2012"	"2012"	Suppressed	29678	Suppressed
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2013"	"2013"	11	29594	Unreliable
+	"Oklahoma"	"40"	"Caddo County, OK"	"40015"	"2014"	"2014"	Suppressed	29317	Suppressed
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2006"	"2006"	Suppressed	102876	Suppressed
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2007"	"2007"	12	106804	Unreliable
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2008"	"2008"	Suppressed	109969	Suppressed
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2009"	"2009"	10	113186	Unreliable
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2010"	"2010"	14	115541	Unreliable
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2011"	"2011"	20	119492	16.7
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2012"	"2012"	16	122560	Unreliable
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2013"	"2013"	19	126123	Unreliable
+	"Oklahoma"	"40"	"Canadian County, OK"	"40017"	"2014"	"2014"	18	129582	Unreliable
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2006"	"2006"	11	46430	Unreliable
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2007"	"2007"	Suppressed	46582	Suppressed
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2008"	"2008"	Suppressed	46910	Suppressed
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2009"	"2009"	11	47421	Unreliable
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2010"	"2010"	16	47557	Unreliable
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2011"	"2011"	20	48096	41.6
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2012"	"2012"	21	48085	43.7
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2013"	"2013"	15	48491	Unreliable
+	"Oklahoma"	"40"	"Carter County, OK"	"40019"	"2014"	"2014"	17	48821	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2006"	"2006"	13	45517	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2007"	"2007"	10	45546	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2008"	"2008"	10	46217	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2009"	"2009"	11	46492	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2010"	"2010"	10	46987	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2011"	"2011"	Suppressed	47845	Suppressed
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2012"	"2012"	Suppressed	48150	Suppressed
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2013"	"2013"	13	48017	Unreliable
+	"Oklahoma"	"40"	"Cherokee County, OK"	"40021"	"2014"	"2014"	15	48341	Unreliable
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2006"	"2006"	Suppressed	15277	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2007"	"2007"	Suppressed	15210	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2008"	"2008"	Suppressed	15112	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2009"	"2009"	Suppressed	15127	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2010"	"2010"	Suppressed	15205	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2011"	"2011"	Suppressed	15250	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2012"	"2012"	Suppressed	15182	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2013"	"2013"	Suppressed	15045	Suppressed
+	"Oklahoma"	"40"	"Choctaw County, OK"	"40023"	"2014"	"2014"	Suppressed	15161	Suppressed
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2006"	"2006"	0	2572	Unreliable
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2007"	"2007"	Suppressed	2530	Suppressed
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2008"	"2008"	0	2449	Unreliable
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2009"	"2009"	0	2495	Unreliable
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2010"	"2010"	0	2475	Unreliable
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2011"	"2011"	0	2487	Unreliable
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2012"	"2012"	Suppressed	2385	Suppressed
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2013"	"2013"	Suppressed	2335	Suppressed
+	"Oklahoma"	"40"	"Cimarron County, OK"	"40025"	"2014"	"2014"	Suppressed	2294	Suppressed
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2006"	"2006"	29	237257	12.2
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2007"	"2007"	32	241409	13.3
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2008"	"2008"	36	246790	14.6
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2009"	"2009"	48	251803	19.1
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2010"	"2010"	41	255755	16.0
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2011"	"2011"	37	261281	14.2
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2012"	"2012"	50	265638	18.8
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2013"	"2013"	50	269340	18.6
+	"Oklahoma"	"40"	"Cleveland County, OK"	"40027"	"2014"	"2014"	40	269908	14.8
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2006"	"2006"	Suppressed	5671	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2007"	"2007"	Suppressed	5718	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2008"	"2008"	0	5745	Unreliable
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2009"	"2009"	Suppressed	5962	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2010"	"2010"	Suppressed	5925	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2011"	"2011"	Suppressed	5928	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2012"	"2012"	Suppressed	5963	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2013"	"2013"	Suppressed	5867	Suppressed
+	"Oklahoma"	"40"	"Coal County, OK"	"40029"	"2014"	"2014"	0	5807	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2006"	"2006"	10	116653	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2007"	"2007"	18	119534	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2008"	"2008"	Suppressed	118001	Suppressed
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2009"	"2009"	12	119952	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2010"	"2010"	14	124098	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2011"	"2011"	14	125815	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2012"	"2012"	10	126390	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2013"	"2013"	14	124937	Unreliable
+	"Oklahoma"	"40"	"Comanche County, OK"	"40031"	"2014"	"2014"	32	125033	25.6
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2006"	"2006"	Suppressed	6327	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2007"	"2007"	Suppressed	6280	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2008"	"2008"	0	6165	Unreliable
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2009"	"2009"	Suppressed	6179	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2010"	"2010"	Suppressed	6193	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2011"	"2011"	Suppressed	6179	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2012"	"2012"	Suppressed	6155	Suppressed
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2013"	"2013"	0	6152	Unreliable
+	"Oklahoma"	"40"	"Cotton County, OK"	"40033"	"2014"	"2014"	0	6150	Unreliable
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2006"	"2006"	Suppressed	14881	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2007"	"2007"	Suppressed	14978	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2008"	"2008"	Suppressed	14910	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2009"	"2009"	Suppressed	14914	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2010"	"2010"	Suppressed	15029	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2011"	"2011"	Suppressed	15073	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2012"	"2012"	Suppressed	14748	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2013"	"2013"	Suppressed	14672	Suppressed
+	"Oklahoma"	"40"	"Craig County, OK"	"40035"	"2014"	"2014"	Suppressed	14582	Suppressed
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2006"	"2006"	22	67791	32.5
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2007"	"2007"	14	68292	Unreliable
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2008"	"2008"	18	68817	Unreliable
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2009"	"2009"	19	69535	Unreliable
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2010"	"2010"	21	69967	30.0
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2011"	"2011"	20	70467	28.4
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2012"	"2012"	11	70651	Unreliable
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2013"	"2013"	15	70470	Unreliable
+	"Oklahoma"	"40"	"Creek County, OK"	"40037"	"2014"	"2014"	21	70632	29.7
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2006"	"2006"	Suppressed	26148	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2007"	"2007"	Suppressed	26356	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2008"	"2008"	Suppressed	26816	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2009"	"2009"	Suppressed	27284	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2010"	"2010"	Suppressed	27469	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2011"	"2011"	Suppressed	27750	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2012"	"2012"	Suppressed	28536	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2013"	"2013"	Suppressed	29377	Suppressed
+	"Oklahoma"	"40"	"Custer County, OK"	"40039"	"2014"	"2014"	Suppressed	29500	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2006"	"2006"	Suppressed	40266	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2007"	"2007"	Suppressed	40984	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2008"	"2008"	Suppressed	41018	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2009"	"2009"	11	41290	Unreliable
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2010"	"2010"	Suppressed	41487	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2011"	"2011"	Suppressed	41633	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2012"	"2012"	11	41441	Unreliable
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2013"	"2013"	Suppressed	41377	Suppressed
+	"Oklahoma"	"40"	"Delaware County, OK"	"40041"	"2014"	"2014"	13	41446	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2006"	"2006"	0	4621	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2007"	"2007"	Suppressed	4660	Suppressed
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2008"	"2008"	0	4737	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2009"	"2009"	0	4770	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2010"	"2010"	0	4810	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2011"	"2011"	0	4867	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2012"	"2012"	0	4783	Unreliable
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2013"	"2013"	Suppressed	4844	Suppressed
+	"Oklahoma"	"40"	"Dewey County, OK"	"40043"	"2014"	"2014"	Suppressed	4914	Suppressed
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2006"	"2006"	0	3898	Unreliable
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2007"	"2007"	Suppressed	3982	Suppressed
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2008"	"2008"	0	4043	Unreliable
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2009"	"2009"	Suppressed	4127	Suppressed
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2010"	"2010"	0	4151	Unreliable
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2011"	"2011"	0	4051	Unreliable
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2012"	"2012"	0	4104	Unreliable
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2013"	"2013"	Suppressed	4170	Suppressed
+	"Oklahoma"	"40"	"Ellis County, OK"	"40045"	"2014"	"2014"	Suppressed	4150	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2006"	"2006"	Suppressed	57723	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2007"	"2007"	Suppressed	58153	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2008"	"2008"	Suppressed	58845	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2009"	"2009"	10	59989	Unreliable
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2010"	"2010"	Suppressed	60580	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2011"	"2011"	11	60670	Unreliable
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2012"	"2012"	Suppressed	61189	Suppressed
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2013"	"2013"	14	62267	Unreliable
+	"Oklahoma"	"40"	"Garfield County, OK"	"40047"	"2014"	"2014"	10	63091	Unreliable
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2006"	"2006"	Suppressed	27249	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2007"	"2007"	Suppressed	27399	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2008"	"2008"	Suppressed	27529	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2009"	"2009"	Suppressed	27582	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2010"	"2010"	Suppressed	27576	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2011"	"2011"	Suppressed	27452	Suppressed
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2012"	"2012"	10	27297	Unreliable
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2013"	"2013"	10	27334	Unreliable
+	"Oklahoma"	"40"	"Garvin County, OK"	"40049"	"2014"	"2014"	Suppressed	27561	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2006"	"2006"	Suppressed	50462	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2007"	"2007"	Suppressed	50931	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2008"	"2008"	Suppressed	51621	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2009"	"2009"	16	52231	Unreliable
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2010"	"2010"	Suppressed	52431	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2011"	"2011"	Suppressed	53020	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2012"	"2012"	20	53118	37.7
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2013"	"2013"	Suppressed	53685	Suppressed
+	"Oklahoma"	"40"	"Grady County, OK"	"40051"	"2014"	"2014"	12	53854	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2006"	"2006"	0	4645	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2007"	"2007"	0	4633	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2008"	"2008"	0	4598	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2009"	"2009"	0	4484	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2010"	"2010"	0	4527	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2011"	"2011"	0	4585	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2012"	"2012"	0	4516	Unreliable
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2013"	"2013"	Suppressed	4528	Suppressed
+	"Oklahoma"	"40"	"Grant County, OK"	"40053"	"2014"	"2014"	0	4501	Unreliable
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2006"	"2006"	Suppressed	6048	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2007"	"2007"	Suppressed	6160	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2008"	"2008"	Suppressed	6200	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2009"	"2009"	0	6273	Unreliable
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2010"	"2010"	Suppressed	6239	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2011"	"2011"	Suppressed	6125	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2012"	"2012"	Suppressed	6082	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2013"	"2013"	Suppressed	6171	Suppressed
+	"Oklahoma"	"40"	"Greer County, OK"	"40055"	"2014"	"2014"	Suppressed	6151	Suppressed
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2006"	"2006"	Suppressed	2915	Suppressed
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2007"	"2007"	Suppressed	2829	Suppressed
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2008"	"2008"	0	2827	Unreliable
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2009"	"2009"	0	2861	Unreliable
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2010"	"2010"	0	2922	Unreliable
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2011"	"2011"	Suppressed	2919	Suppressed
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2012"	"2012"	0	2906	Unreliable
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2013"	"2013"	0	2869	Unreliable
+	"Oklahoma"	"40"	"Harmon County, OK"	"40057"	"2014"	"2014"	0	2798	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2006"	"2006"	0	3527	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2007"	"2007"	0	3522	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2008"	"2008"	0	3645	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2009"	"2009"	Suppressed	3654	Suppressed
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2010"	"2010"	0	3685	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2011"	"2011"	Suppressed	3695	Suppressed
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2012"	"2012"	0	3676	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2013"	"2013"	0	3813	Unreliable
+	"Oklahoma"	"40"	"Harper County, OK"	"40059"	"2014"	"2014"	0	3812	Unreliable
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2006"	"2006"	Suppressed	12329	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2007"	"2007"	Suppressed	12411	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2008"	"2008"	Suppressed	12620	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2009"	"2009"	Suppressed	12772	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2010"	"2010"	Suppressed	12769	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2011"	"2011"	Suppressed	12810	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2012"	"2012"	Suppressed	12938	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2013"	"2013"	Suppressed	13052	Suppressed
+	"Oklahoma"	"40"	"Haskell County, OK"	"40061"	"2014"	"2014"	Suppressed	12896	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2006"	"2006"	Suppressed	13450	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2007"	"2007"	Suppressed	13456	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2008"	"2008"	Suppressed	13397	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2009"	"2009"	Suppressed	13705	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2010"	"2010"	Suppressed	14003	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2011"	"2011"	0	13843	Unreliable
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2012"	"2012"	Suppressed	13836	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2013"	"2013"	Suppressed	13823	Suppressed
+	"Oklahoma"	"40"	"Hughes County, OK"	"40063"	"2014"	"2014"	Suppressed	13806	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2006"	"2006"	0	26805	Unreliable
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2007"	"2007"	Suppressed	26335	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2008"	"2008"	Suppressed	26038	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2009"	"2009"	0	26256	Unreliable
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2010"	"2010"	Suppressed	26446	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2011"	"2011"	Suppressed	26447	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2012"	"2012"	Suppressed	26237	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2013"	"2013"	Suppressed	26088	Suppressed
+	"Oklahoma"	"40"	"Jackson County, OK"	"40065"	"2014"	"2014"	Suppressed	25998	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2006"	"2006"	Suppressed	6418	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2007"	"2007"	0	6385	Unreliable
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2008"	"2008"	0	6408	Unreliable
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2009"	"2009"	Suppressed	6521	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2010"	"2010"	Suppressed	6472	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2011"	"2011"	Suppressed	6506	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2012"	"2012"	Suppressed	6377	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2013"	"2013"	Suppressed	6432	Suppressed
+	"Oklahoma"	"40"	"Jefferson County, OK"	"40067"	"2014"	"2014"	Suppressed	6292	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2006"	"2006"	Suppressed	10709	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2007"	"2007"	Suppressed	10779	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2008"	"2008"	0	10772	Unreliable
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2009"	"2009"	Suppressed	10838	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2010"	"2010"	Suppressed	10957	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2011"	"2011"	Suppressed	11139	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2012"	"2012"	Suppressed	11003	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2013"	"2013"	Suppressed	10990	Suppressed
+	"Oklahoma"	"40"	"Johnston County, OK"	"40069"	"2014"	"2014"	Suppressed	11103	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2006"	"2006"	Suppressed	46220	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2007"	"2007"	Suppressed	46461	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2008"	"2008"	Suppressed	46410	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2009"	"2009"	Suppressed	46814	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2010"	"2010"	10	46562	Unreliable
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2011"	"2011"	Suppressed	46159	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2012"	"2012"	Suppressed	45831	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2013"	"2013"	Suppressed	45633	Suppressed
+	"Oklahoma"	"40"	"Kay County, OK"	"40071"	"2014"	"2014"	Suppressed	45478	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2006"	"2006"	0	14464	Unreliable
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2007"	"2007"	Suppressed	14705	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2008"	"2008"	0	14748	Unreliable
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2009"	"2009"	Suppressed	14901	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2010"	"2010"	Suppressed	15034	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2011"	"2011"	Suppressed	15213	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2012"	"2012"	Suppressed	15005	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2013"	"2013"	Suppressed	15276	Suppressed
+	"Oklahoma"	"40"	"Kingfisher County, OK"	"40073"	"2014"	"2014"	0	15532	Unreliable
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2006"	"2006"	Suppressed	9756	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2007"	"2007"	0	9543	Unreliable
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2008"	"2008"	Suppressed	9518	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2009"	"2009"	Suppressed	9445	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2010"	"2010"	Suppressed	9446	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2011"	"2011"	Suppressed	9416	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2012"	"2012"	0	9310	Unreliable
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2013"	"2013"	Suppressed	9341	Suppressed
+	"Oklahoma"	"40"	"Kiowa County, OK"	"40075"	"2014"	"2014"	Suppressed	9336	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2006"	"2006"	Suppressed	10841	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2007"	"2007"	Suppressed	10875	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2008"	"2008"	Suppressed	11068	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2009"	"2009"	Suppressed	11155	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2010"	"2010"	Suppressed	11154	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2011"	"2011"	Suppressed	11155	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2012"	"2012"	Suppressed	11019	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2013"	"2013"	Suppressed	10775	Suppressed
+	"Oklahoma"	"40"	"Latimer County, OK"	"40077"	"2014"	"2014"	0	10693	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2006"	"2006"	Suppressed	49209	Suppressed
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2007"	"2007"	12	49589	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2008"	"2008"	12	49802	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2009"	"2009"	10	49989	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2010"	"2010"	Suppressed	50384	Suppressed
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2011"	"2011"	16	50628	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2012"	"2012"	11	49873	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2013"	"2013"	13	49774	Unreliable
+	"Oklahoma"	"40"	"Le Flore County, OK"	"40079"	"2014"	"2014"	11	49761	Unreliable
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2006"	"2006"	Suppressed	33441	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2007"	"2007"	Suppressed	33636	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2008"	"2008"	Suppressed	33710	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2009"	"2009"	Suppressed	34027	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2010"	"2010"	Suppressed	34273	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2011"	"2011"	Suppressed	34155	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2012"	"2012"	Suppressed	34189	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2013"	"2013"	Suppressed	34351	Suppressed
+	"Oklahoma"	"40"	"Lincoln County, OK"	"40081"	"2014"	"2014"	Suppressed	34619	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2006"	"2006"	Suppressed	37060	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2007"	"2007"	Suppressed	38709	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2008"	"2008"	Suppressed	39964	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2009"	"2009"	Suppressed	41116	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2010"	"2010"	Suppressed	41848	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2011"	"2011"	Suppressed	42499	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2012"	"2012"	Suppressed	43666	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2013"	"2013"	Suppressed	44422	Suppressed
+	"Oklahoma"	"40"	"Logan County, OK"	"40083"	"2014"	"2014"	Suppressed	45276	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2006"	"2006"	Suppressed	9207	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2007"	"2007"	Suppressed	9252	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2008"	"2008"	Suppressed	9291	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2009"	"2009"	Suppressed	9340	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2010"	"2010"	Suppressed	9423	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2011"	"2011"	Suppressed	9386	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2012"	"2012"	0	9558	Unreliable
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2013"	"2013"	Suppressed	9742	Suppressed
+	"Oklahoma"	"40"	"Love County, OK"	"40085"	"2014"	"2014"	Suppressed	9773	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2006"	"2006"	Suppressed	31419	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2007"	"2007"	Suppressed	32470	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2008"	"2008"	Suppressed	33107	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2009"	"2009"	Suppressed	33822	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2010"	"2010"	Suppressed	34506	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2011"	"2011"	Suppressed	35235	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2012"	"2012"	10	35613	Unreliable
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2013"	"2013"	Suppressed	36511	Suppressed
+	"Oklahoma"	"40"	"McClain County, OK"	"40087"	"2014"	"2014"	Suppressed	37313	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2006"	"2006"	Suppressed	33198	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2007"	"2007"	12	33128	Unreliable
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2008"	"2008"	Suppressed	33112	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2009"	"2009"	12	33002	Unreliable
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2010"	"2010"	Suppressed	33151	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2011"	"2011"	Suppressed	33195	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2012"	"2012"	10	33203	Unreliable
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2013"	"2013"	Suppressed	33065	Suppressed
+	"Oklahoma"	"40"	"McCurtain County, OK"	"40089"	"2014"	"2014"	Suppressed	33050	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2006"	"2006"	Suppressed	19730	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2007"	"2007"	Suppressed	19952	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2008"	"2008"	Suppressed	19952	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2009"	"2009"	Suppressed	20160	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2010"	"2010"	Suppressed	20252	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2011"	"2011"	Suppressed	20360	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2012"	"2012"	Suppressed	20584	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2013"	"2013"	Suppressed	20493	Suppressed
+	"Oklahoma"	"40"	"McIntosh County, OK"	"40091"	"2014"	"2014"	Suppressed	20088	Suppressed
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2006"	"2006"	0	7449	Unreliable
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2007"	"2007"	Suppressed	7465	Suppressed
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2008"	"2008"	0	7456	Unreliable
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2009"	"2009"	Suppressed	7557	Suppressed
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2010"	"2010"	Suppressed	7527	Suppressed
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2011"	"2011"	0	7657	Unreliable
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2012"	"2012"	0	7683	Unreliable
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2013"	"2013"	0	7683	Unreliable
+	"Oklahoma"	"40"	"Major County, OK"	"40093"	"2014"	"2014"	0	7750	Unreliable
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2006"	"2006"	0	14988	Unreliable
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2007"	"2007"	0	15318	Unreliable
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2008"	"2008"	Suppressed	15482	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2009"	"2009"	Suppressed	15652	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2010"	"2010"	Suppressed	15840	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2011"	"2011"	Suppressed	16049	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2012"	"2012"	Suppressed	15957	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2013"	"2013"	Suppressed	15988	Suppressed
+	"Oklahoma"	"40"	"Marshall County, OK"	"40095"	"2014"	"2014"	Suppressed	16182	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2006"	"2006"	Suppressed	40107	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2007"	"2007"	Suppressed	40569	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2008"	"2008"	12	40984	Unreliable
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2009"	"2009"	Suppressed	41093	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2010"	"2010"	13	41259	Unreliable
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2011"	"2011"	Suppressed	41389	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2012"	"2012"	Suppressed	41168	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2013"	"2013"	Suppressed	40804	Suppressed
+	"Oklahoma"	"40"	"Mayes County, OK"	"40097"	"2014"	"2014"	10	40816	Unreliable
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2006"	"2006"	Suppressed	12969	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2007"	"2007"	Suppressed	12966	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2008"	"2008"	Suppressed	13144	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2009"	"2009"	Suppressed	13373	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2010"	"2010"	Suppressed	13488	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2011"	"2011"	Suppressed	13571	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2012"	"2012"	Suppressed	13663	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2013"	"2013"	Suppressed	13712	Suppressed
+	"Oklahoma"	"40"	"Murray County, OK"	"40099"	"2014"	"2014"	Suppressed	13803	Suppressed
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2006"	"2006"	10	69958	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2007"	"2007"	15	70119	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2008"	"2008"	17	70050	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2009"	"2009"	16	70677	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2010"	"2010"	16	70990	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2011"	"2011"	16	71003	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2012"	"2012"	13	70596	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2013"	"2013"	16	70303	Unreliable
+	"Oklahoma"	"40"	"Muskogee County, OK"	"40101"	"2014"	"2014"	30	69966	42.9
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2006"	"2006"	Suppressed	11462	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2007"	"2007"	Suppressed	11460	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2008"	"2008"	Suppressed	11537	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2009"	"2009"	Suppressed	11536	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2010"	"2010"	0	11561	Unreliable
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2011"	"2011"	0	11578	Unreliable
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2012"	"2012"	Suppressed	11522	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2013"	"2013"	Suppressed	11446	Suppressed
+	"Oklahoma"	"40"	"Noble County, OK"	"40103"	"2014"	"2014"	Suppressed	11494	Suppressed
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2006"	"2006"	0	10705	Unreliable
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2007"	"2007"	Suppressed	10771	Suppressed
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2008"	"2008"	0	10788	Unreliable
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2009"	"2009"	Suppressed	10595	Suppressed
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2010"	"2010"	Suppressed	10536	Suppressed
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2011"	"2011"	0	10629	Unreliable
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2012"	"2012"	Suppressed	10611	Suppressed
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2013"	"2013"	0	10555	Unreliable
+	"Oklahoma"	"40"	"Nowata County, OK"	"40105"	"2014"	"2014"	0	10524	Unreliable
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2006"	"2006"	Suppressed	11895	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2007"	"2007"	Suppressed	11981	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2008"	"2008"	0	12008	Unreliable
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2009"	"2009"	Suppressed	12094	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2010"	"2010"	Suppressed	12191	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2011"	"2011"	0	12348	Unreliable
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2012"	"2012"	Suppressed	12358	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2013"	"2013"	Suppressed	12377	Suppressed
+	"Oklahoma"	"40"	"Okfuskee County, OK"	"40107"	"2014"	"2014"	Suppressed	12186	Suppressed
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2006"	"2006"	105	690153	15.2
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2007"	"2007"	139	695706	20.0
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2008"	"2008"	108	701484	15.4
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2009"	"2009"	118	711595	16.6
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2010"	"2010"	153	718633	21.3
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2011"	"2011"	142	732371	19.4
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2012"	"2012"	179	741781	24.1
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2013"	"2013"	173	755245	22.9
+	"Oklahoma"	"40"	"Oklahoma County, OK"	"40109"	"2014"	"2014"	161	766215	21.0
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2006"	"2006"	11	39426	Unreliable
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2007"	"2007"	Suppressed	39552	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2008"	"2008"	Suppressed	39379	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2009"	"2009"	Suppressed	39817	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2010"	"2010"	Suppressed	40069	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2011"	"2011"	Suppressed	39937	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2012"	"2012"	11	39625	Unreliable
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2013"	"2013"	Suppressed	39438	Suppressed
+	"Oklahoma"	"40"	"Okmulgee County, OK"	"40111"	"2014"	"2014"	Suppressed	39095	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2006"	"2006"	Suppressed	46576	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2007"	"2007"	Suppressed	47185	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2008"	"2008"	Suppressed	47336	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2009"	"2009"	Suppressed	47445	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2010"	"2010"	Suppressed	47472	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2011"	"2011"	Suppressed	47425	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2012"	"2012"	Suppressed	47917	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2013"	"2013"	Suppressed	47987	Suppressed
+	"Oklahoma"	"40"	"Osage County, OK"	"40113"	"2014"	"2014"	Suppressed	47981	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2006"	"2006"	Suppressed	32971	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2007"	"2007"	Suppressed	32441	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2008"	"2008"	Suppressed	31838	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2009"	"2009"	Suppressed	31883	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2010"	"2010"	Suppressed	31848	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2011"	"2011"	Suppressed	31860	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2012"	"2012"	10	32236	Unreliable
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2013"	"2013"	Suppressed	32245	Suppressed
+	"Oklahoma"	"40"	"Ottawa County, OK"	"40115"	"2014"	"2014"	Suppressed	32105	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2006"	"2006"	Suppressed	16625	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2007"	"2007"	Suppressed	16611	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2008"	"2008"	Suppressed	16447	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2009"	"2009"	Suppressed	16559	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2010"	"2010"	Suppressed	16577	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2011"	"2011"	Suppressed	16730	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2012"	"2012"	Suppressed	16474	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2013"	"2013"	Suppressed	16513	Suppressed
+	"Oklahoma"	"40"	"Pawnee County, OK"	"40117"	"2014"	"2014"	Suppressed	16401	Suppressed
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2006"	"2006"	Suppressed	74964	Suppressed
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2007"	"2007"	Suppressed	74164	Suppressed
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2008"	"2008"	Suppressed	75000	Suppressed
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2009"	"2009"	13	76859	Unreliable
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2010"	"2010"	Suppressed	77350	Suppressed
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2011"	"2011"	11	77988	Unreliable
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2012"	"2012"	10	78399	Unreliable
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2013"	"2013"	10	79066	Unreliable
+	"Oklahoma"	"40"	"Payne County, OK"	"40119"	"2014"	"2014"	Suppressed	80264	Suppressed
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2006"	"2006"	Suppressed	44831	Suppressed
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2007"	"2007"	Suppressed	45062	Suppressed
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2008"	"2008"	Suppressed	45450	Suppressed
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2009"	"2009"	14	45887	Unreliable
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2010"	"2010"	Suppressed	45837	Suppressed
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2011"	"2011"	10	45625	Unreliable
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2012"	"2012"	15	45048	Unreliable
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2013"	"2013"	14	44703	Unreliable
+	"Oklahoma"	"40"	"Pittsburg County, OK"	"40121"	"2014"	"2014"	16	44626	Unreliable
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2006"	"2006"	Suppressed	35525	Suppressed
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2007"	"2007"	Suppressed	36157	Suppressed
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2008"	"2008"	Suppressed	36687	Suppressed
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2009"	"2009"	18	37283	Unreliable
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2010"	"2010"	11	37492	Unreliable
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2011"	"2011"	18	37799	Unreliable
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2012"	"2012"	Suppressed	37958	Suppressed
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2013"	"2013"	Suppressed	37992	Suppressed
+	"Oklahoma"	"40"	"Pontotoc County, OK"	"40123"	"2014"	"2014"	Suppressed	38005	Suppressed
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2006"	"2006"	17	67696	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2007"	"2007"	15	68698	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2008"	"2008"	14	68752	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2009"	"2009"	24	69002	34.8
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2010"	"2010"	Suppressed	69442	Suppressed
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2011"	"2011"	18	70280	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2012"	"2012"	12	70760	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2013"	"2013"	17	71158	Unreliable
+	"Oklahoma"	"40"	"Pottawatomie County, OK"	"40125"	"2014"	"2014"	10	71811	Unreliable
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2006"	"2006"	Suppressed	11389	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2007"	"2007"	Suppressed	11468	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2008"	"2008"	Suppressed	11493	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2009"	"2009"	Suppressed	11574	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2010"	"2010"	Suppressed	11572	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2011"	"2011"	Suppressed	11478	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2012"	"2012"	Suppressed	11205	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2013"	"2013"	Suppressed	11233	Suppressed
+	"Oklahoma"	"40"	"Pushmataha County, OK"	"40127"	"2014"	"2014"	0	11125	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2006"	"2006"	0	3387	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2007"	"2007"	0	3438	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2008"	"2008"	0	3557	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2009"	"2009"	0	3615	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2010"	"2010"	0	3647	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2011"	"2011"	0	3702	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2012"	"2012"	0	3774	Unreliable
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2013"	"2013"	Suppressed	3743	Suppressed
+	"Oklahoma"	"40"	"Roger Mills County, OK"	"40129"	"2014"	"2014"	0	3761	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2006"	"2006"	11	82234	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2007"	"2007"	13	84030	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2008"	"2008"	12	85390	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2009"	"2009"	13	86577	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2010"	"2010"	10	86905	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2011"	"2011"	12	87706	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2012"	"2012"	Suppressed	88367	Suppressed
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2013"	"2013"	11	89044	Unreliable
+	"Oklahoma"	"40"	"Rogers County, OK"	"40131"	"2014"	"2014"	13	89815	Unreliable
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2006"	"2006"	Suppressed	24997	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2007"	"2007"	Suppressed	25030	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2008"	"2008"	Suppressed	25198	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2009"	"2009"	Suppressed	25428	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2010"	"2010"	Suppressed	25482	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2011"	"2011"	Suppressed	25292	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2012"	"2012"	Suppressed	25450	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2013"	"2013"	Suppressed	25426	Suppressed
+	"Oklahoma"	"40"	"Seminole County, OK"	"40133"	"2014"	"2014"	Suppressed	25421	Suppressed
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2006"	"2006"	10	41248	Unreliable
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2007"	"2007"	Suppressed	41560	Suppressed
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2008"	"2008"	Suppressed	41825	Suppressed
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2009"	"2009"	15	42208	Unreliable
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2010"	"2010"	13	42391	Unreliable
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2011"	"2011"	Suppressed	42341	Suppressed
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2012"	"2012"	Suppressed	41398	Suppressed
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2013"	"2013"	17	41218	Unreliable
+	"Oklahoma"	"40"	"Sequoyah County, OK"	"40135"	"2014"	"2014"	15	41358	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2006"	"2006"	Suppressed	43670	Suppressed
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2007"	"2007"	10	44196	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2008"	"2008"	Suppressed	44508	Suppressed
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2009"	"2009"	Suppressed	44799	Suppressed
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2010"	"2010"	13	45048	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2011"	"2011"	11	45197	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2012"	"2012"	17	44779	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2013"	"2013"	11	44919	Unreliable
+	"Oklahoma"	"40"	"Stephens County, OK"	"40137"	"2014"	"2014"	13	44493	Unreliable
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2006"	"2006"	Suppressed	19361	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2007"	"2007"	Suppressed	19258	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2008"	"2008"	Suppressed	19539	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2009"	"2009"	Suppressed	20128	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2010"	"2010"	Suppressed	20640	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2011"	"2011"	Suppressed	21312	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2012"	"2012"	Suppressed	21498	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2013"	"2013"	Suppressed	22081	Suppressed
+	"Oklahoma"	"40"	"Texas County, OK"	"40139"	"2014"	"2014"	Suppressed	21853	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2006"	"2006"	Suppressed	8394	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2007"	"2007"	0	8271	Unreliable
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2008"	"2008"	0	8112	Unreliable
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2009"	"2009"	Suppressed	8016	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2010"	"2010"	Suppressed	7992	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2011"	"2011"	Suppressed	8061	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2012"	"2012"	Suppressed	7822	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2013"	"2013"	Suppressed	7711	Suppressed
+	"Oklahoma"	"40"	"Tillman County, OK"	"40141"	"2014"	"2014"	Suppressed	7628	Suppressed
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2006"	"2006"	114	575014	19.8
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2007"	"2007"	146	582094	25.1
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2008"	"2008"	119	588510	20.2
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2009"	"2009"	146	597748	24.4
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2010"	"2010"	141	603403	23.4
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2011"	"2011"	112	610599	18.3
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2012"	"2012"	120	613816	19.5
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2013"	"2013"	122	622409	19.6
+	"Oklahoma"	"40"	"Tulsa County, OK"	"40143"	"2014"	"2014"	119	629598	18.9
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2006"	"2006"	15	66345	Unreliable
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2007"	"2007"	20	68677	29.1
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2008"	"2008"	10	70646	Unreliable
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2009"	"2009"	15	72143	Unreliable
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2010"	"2010"	22	73085	30.1
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2011"	"2011"	13	74098	Unreliable
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2012"	"2012"	15	75030	Unreliable
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2013"	"2013"	20	75700	26.4
+	"Oklahoma"	"40"	"Wagoner County, OK"	"40145"	"2014"	"2014"	20	75702	26.4
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2006"	"2006"	11	49216	Unreliable
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2007"	"2007"	Suppressed	50038	Suppressed
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2008"	"2008"	Suppressed	50641	Suppressed
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2009"	"2009"	10	50754	Unreliable
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2010"	"2010"	Suppressed	50976	Suppressed
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2011"	"2011"	13	51476	Unreliable
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2012"	"2012"	Suppressed	51633	Suppressed
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2013"	"2013"	Suppressed	51577	Suppressed
+	"Oklahoma"	"40"	"Washington County, OK"	"40147"	"2014"	"2014"	11	51937	Unreliable
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2006"	"2006"	Suppressed	11422	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2007"	"2007"	Suppressed	11555	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2008"	"2008"	Suppressed	11595	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2009"	"2009"	Suppressed	11664	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2010"	"2010"	Suppressed	11629	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2011"	"2011"	Suppressed	11574	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2012"	"2012"	0	11622	Unreliable
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2013"	"2013"	Suppressed	11678	Suppressed
+	"Oklahoma"	"40"	"Washita County, OK"	"40149"	"2014"	"2014"	Suppressed	11547	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2006"	"2006"	0	8550	Unreliable
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2007"	"2007"	Suppressed	8593	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2008"	"2008"	Suppressed	8533	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2009"	"2009"	Suppressed	8708	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2010"	"2010"	0	8878	Unreliable
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2011"	"2011"	Suppressed	8775	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2012"	"2012"	Suppressed	8832	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2013"	"2013"	Suppressed	9041	Suppressed
+	"Oklahoma"	"40"	"Woods County, OK"	"40151"	"2014"	"2014"	0	9288	Unreliable
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2006"	"2006"	Suppressed	19341	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2007"	"2007"	0	19939	Unreliable
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2008"	"2008"	Suppressed	20120	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2009"	"2009"	Suppressed	20467	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2010"	"2010"	Suppressed	20081	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2011"	"2011"	Suppressed	20034	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2012"	"2012"	Suppressed	20548	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2013"	"2013"	Suppressed	21221	Suppressed
+	"Oklahoma"	"40"	"Woodward County, OK"	"40153"	"2014"	"2014"	Suppressed	21529	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Oklahoma (40)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:40:24 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:40:24 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

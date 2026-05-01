@@ -1,0 +1,651 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2006"	"2006"	0	2775	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2007"	"2007"	0	2745	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2008"	"2008"	0	2750	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2009"	"2009"	0	2712	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2010"	"2010"	0	2710	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2011"	"2011"	0	2694	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2012"	"2012"	0	2742	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2013"	"2013"	0	2720	Unreliable
+	"South Dakota"	"46"	"Aurora County, SD"	"46003"	"2014"	"2014"	Suppressed	2745	Suppressed
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2006"	"2006"	0	16149	Unreliable
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2007"	"2007"	0	16489	Unreliable
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2008"	"2008"	0	16810	Unreliable
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2009"	"2009"	0	17288	Unreliable
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2010"	"2010"	Suppressed	17398	Suppressed
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2011"	"2011"	Suppressed	17550	Suppressed
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2012"	"2012"	0	17753	Unreliable
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2013"	"2013"	Suppressed	18080	Suppressed
+	"South Dakota"	"46"	"Beadle County, SD"	"46005"	"2014"	"2014"	Suppressed	18169	Suppressed
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2006"	"2006"	0	3475	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2007"	"2007"	0	3466	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2008"	"2008"	0	3429	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2009"	"2009"	0	3397	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2010"	"2010"	0	3431	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2011"	"2011"	0	3441	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2012"	"2012"	0	3436	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2013"	"2013"	0	3452	Unreliable
+	"South Dakota"	"46"	"Bennett County, SD"	"46007"	"2014"	"2014"	0	3430	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2006"	"2006"	0	7174	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2007"	"2007"	0	7060	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2008"	"2008"	0	7040	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2009"	"2009"	0	7049	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2010"	"2010"	Suppressed	7070	Suppressed
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2011"	"2011"	0	6983	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2012"	"2012"	Suppressed	7029	Suppressed
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2013"	"2013"	0	7046	Unreliable
+	"South Dakota"	"46"	"Bon Homme County, SD"	"46009"	"2014"	"2014"	0	7023	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2006"	"2006"	Suppressed	30323	Suppressed
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2007"	"2007"	0	30831	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2008"	"2008"	0	31363	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2009"	"2009"	0	31729	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2010"	"2010"	0	31965	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2011"	"2011"	0	32226	Unreliable
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2012"	"2012"	Suppressed	32629	Suppressed
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2013"	"2013"	Suppressed	32968	Suppressed
+	"South Dakota"	"46"	"Brookings County, SD"	"46011"	"2014"	"2014"	Suppressed	33314	Suppressed
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2006"	"2006"	0	35561	Unreliable
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2007"	"2007"	0	35821	Unreliable
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2008"	"2008"	0	35865	Unreliable
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2009"	"2009"	0	36181	Unreliable
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2010"	"2010"	0	36531	Unreliable
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2011"	"2011"	Suppressed	36822	Suppressed
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2012"	"2012"	Suppressed	37331	Suppressed
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2013"	"2013"	Suppressed	37907	Suppressed
+	"South Dakota"	"46"	"Brown County, SD"	"46013"	"2014"	"2014"	Suppressed	38408	Suppressed
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2006"	"2006"	0	4991	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2007"	"2007"	0	5079	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2008"	"2008"	0	5112	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2009"	"2009"	0	5184	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2010"	"2010"	0	5255	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2011"	"2011"	Suppressed	5283	Suppressed
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2012"	"2012"	0	5293	Unreliable
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2013"	"2013"	Suppressed	5366	Suppressed
+	"South Dakota"	"46"	"Brule County, SD"	"46015"	"2014"	"2014"	Suppressed	5309	Suppressed
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2006"	"2006"	0	1973	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2007"	"2007"	0	1937	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2008"	"2008"	Suppressed	1956	Suppressed
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2009"	"2009"	0	1858	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2010"	"2010"	0	1912	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2011"	"2011"	0	1988	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2012"	"2012"	0	2020	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2013"	"2013"	0	2024	Unreliable
+	"South Dakota"	"46"	"Buffalo County, SD"	"46017"	"2014"	"2014"	0	2077	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2006"	"2006"	0	9517	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2007"	"2007"	Suppressed	9817	Suppressed
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2008"	"2008"	Suppressed	9977	Suppressed
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2009"	"2009"	0	9989	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2010"	"2010"	0	10110	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2011"	"2011"	Suppressed	10259	Suppressed
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2012"	"2012"	0	10228	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2013"	"2013"	0	10330	Unreliable
+	"South Dakota"	"46"	"Butte County, SD"	"46019"	"2014"	"2014"	Suppressed	10298	Suppressed
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2006"	"2006"	0	1533	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2007"	"2007"	0	1474	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2008"	"2008"	0	1456	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2009"	"2009"	0	1454	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2010"	"2010"	0	1466	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2011"	"2011"	0	1427	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2012"	"2012"	Suppressed	1396	Suppressed
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2013"	"2013"	0	1334	Unreliable
+	"South Dakota"	"46"	"Campbell County, SD"	"46021"	"2014"	"2014"	0	1386	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2006"	"2006"	0	9110	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2007"	"2007"	0	9034	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2008"	"2008"	Suppressed	9009	Suppressed
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2009"	"2009"	0	9079	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2010"	"2010"	0	9129	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2011"	"2011"	0	9208	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2012"	"2012"	0	9216	Unreliable
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2013"	"2013"	Suppressed	9241	Suppressed
+	"South Dakota"	"46"	"Charles Mix County, SD"	"46023"	"2014"	"2014"	Suppressed	9287	Suppressed
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2006"	"2006"	0	3713	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2007"	"2007"	0	3711	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2008"	"2008"	0	3714	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2009"	"2009"	0	3688	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2010"	"2010"	0	3691	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2011"	"2011"	0	3628	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2012"	"2012"	0	3585	Unreliable
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2013"	"2013"	Suppressed	3610	Suppressed
+	"South Dakota"	"46"	"Clark County, SD"	"46025"	"2014"	"2014"	0	3645	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2006"	"2006"	0	13627	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2007"	"2007"	0	13785	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2008"	"2008"	0	13959	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2009"	"2009"	0	13846	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2010"	"2010"	Suppressed	13864	Suppressed
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2011"	"2011"	Suppressed	14051	Suppressed
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2012"	"2012"	Suppressed	14131	Suppressed
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2013"	"2013"	0	13935	Unreliable
+	"South Dakota"	"46"	"Clay County, SD"	"46027"	"2014"	"2014"	0	13932	Unreliable
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2006"	"2006"	Suppressed	26754	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2007"	"2007"	0	27036	Unreliable
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2008"	"2008"	0	27043	Unreliable
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2009"	"2009"	Suppressed	27137	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2010"	"2010"	Suppressed	27227	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2011"	"2011"	Suppressed	27442	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2012"	"2012"	Suppressed	27606	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2013"	"2013"	Suppressed	27853	Suppressed
+	"South Dakota"	"46"	"Codington County, SD"	"46029"	"2014"	"2014"	0	27938	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2006"	"2006"	0	4041	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2007"	"2007"	Suppressed	4118	Suppressed
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2008"	"2008"	0	4051	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2009"	"2009"	0	3983	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2010"	"2010"	0	4050	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2011"	"2011"	Suppressed	4022	Suppressed
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2012"	"2012"	0	4077	Unreliable
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2013"	"2013"	Suppressed	4215	Suppressed
+	"South Dakota"	"46"	"Corson County, SD"	"46031"	"2014"	"2014"	0	4182	Unreliable
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2006"	"2006"	0	7992	Unreliable
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2007"	"2007"	0	8028	Unreliable
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2008"	"2008"	Suppressed	8060	Suppressed
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2009"	"2009"	Suppressed	8095	Suppressed
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2010"	"2010"	0	8216	Unreliable
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2011"	"2011"	Suppressed	8338	Suppressed
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2012"	"2012"	Suppressed	8339	Suppressed
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2013"	"2013"	0	8468	Unreliable
+	"South Dakota"	"46"	"Custer County, SD"	"46033"	"2014"	"2014"	Suppressed	8445	Suppressed
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2006"	"2006"	Suppressed	19404	Suppressed
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2007"	"2007"	0	19351	Unreliable
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2008"	"2008"	0	19318	Unreliable
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2009"	"2009"	0	19377	Unreliable
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2010"	"2010"	0	19504	Unreliable
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2011"	"2011"	Suppressed	19651	Suppressed
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2012"	"2012"	Suppressed	19769	Suppressed
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2013"	"2013"	Suppressed	19823	Suppressed
+	"South Dakota"	"46"	"Davison County, SD"	"46035"	"2014"	"2014"	Suppressed	19885	Suppressed
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2006"	"2006"	0	5805	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2007"	"2007"	0	5752	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2008"	"2008"	0	5638	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2009"	"2009"	0	5653	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2010"	"2010"	0	5710	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2011"	"2011"	0	5741	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2012"	"2012"	0	5613	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2013"	"2013"	0	5596	Unreliable
+	"South Dakota"	"46"	"Day County, SD"	"46037"	"2014"	"2014"	0	5588	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2006"	"2006"	Suppressed	4394	Suppressed
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2007"	"2007"	0	4344	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2008"	"2008"	0	4394	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2009"	"2009"	Suppressed	4379	Suppressed
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2010"	"2010"	Suppressed	4364	Suppressed
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2011"	"2011"	0	4359	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2012"	"2012"	0	4380	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2013"	"2013"	0	4320	Unreliable
+	"South Dakota"	"46"	"Deuel County, SD"	"46039"	"2014"	"2014"	0	4312	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2006"	"2006"	0	5537	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2007"	"2007"	Suppressed	5402	Suppressed
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2008"	"2008"	0	5245	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2009"	"2009"	0	5252	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2010"	"2010"	0	5301	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2011"	"2011"	0	5421	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2012"	"2012"	Suppressed	5538	Suppressed
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2013"	"2013"	0	5586	Unreliable
+	"South Dakota"	"46"	"Dewey County, SD"	"46041"	"2014"	"2014"	Suppressed	5662	Suppressed
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2006"	"2006"	0	3131	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2007"	"2007"	0	3080	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2008"	"2008"	0	3006	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2009"	"2009"	0	3017	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2010"	"2010"	0	3002	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2011"	"2011"	0	2972	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2012"	"2012"	0	2970	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2013"	"2013"	0	3023	Unreliable
+	"South Dakota"	"46"	"Douglas County, SD"	"46043"	"2014"	"2014"	0	2973	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2006"	"2006"	0	4043	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2007"	"2007"	0	4026	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2008"	"2008"	0	4050	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2009"	"2009"	0	4038	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2010"	"2010"	0	4071	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2011"	"2011"	0	4056	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2012"	"2012"	0	4026	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2013"	"2013"	0	4041	Unreliable
+	"South Dakota"	"46"	"Edmunds County, SD"	"46045"	"2014"	"2014"	0	3983	Unreliable
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2006"	"2006"	Suppressed	7108	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2007"	"2007"	Suppressed	7083	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2008"	"2008"	Suppressed	7032	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2009"	"2009"	Suppressed	7056	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2010"	"2010"	0	7094	Unreliable
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2011"	"2011"	Suppressed	6981	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2012"	"2012"	0	6971	Unreliable
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2013"	"2013"	Suppressed	6839	Suppressed
+	"South Dakota"	"46"	"Fall River County, SD"	"46047"	"2014"	"2014"	Suppressed	6845	Suppressed
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2006"	"2006"	0	2398	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2007"	"2007"	0	2406	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2008"	"2008"	0	2415	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2009"	"2009"	0	2349	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2010"	"2010"	0	2364	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2011"	"2011"	0	2367	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2012"	"2012"	0	2377	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2013"	"2013"	0	2386	Unreliable
+	"South Dakota"	"46"	"Faulk County, SD"	"46049"	"2014"	"2014"	Suppressed	2357	Suppressed
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2006"	"2006"	Suppressed	7410	Suppressed
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2007"	"2007"	0	7401	Unreliable
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2008"	"2008"	0	7389	Unreliable
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2009"	"2009"	0	7369	Unreliable
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2010"	"2010"	0	7356	Unreliable
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2011"	"2011"	Suppressed	7250	Suppressed
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2012"	"2012"	0	7259	Unreliable
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2013"	"2013"	Suppressed	7281	Suppressed
+	"South Dakota"	"46"	"Grant County, SD"	"46051"	"2014"	"2014"	0	7241	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2006"	"2006"	0	4311	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2007"	"2007"	Suppressed	4267	Suppressed
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2008"	"2008"	0	4254	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2009"	"2009"	0	4260	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2010"	"2010"	0	4271	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2011"	"2011"	0	4216	Unreliable
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2012"	"2012"	Suppressed	4265	Suppressed
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2013"	"2013"	Suppressed	4242	Suppressed
+	"South Dakota"	"46"	"Gregory County, SD"	"46053"	"2014"	"2014"	0	4217	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2006"	"2006"	0	1984	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2007"	"2007"	0	1957	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2008"	"2008"	0	1945	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2009"	"2009"	0	1953	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2010"	"2010"	0	1937	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2011"	"2011"	0	1907	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2012"	"2012"	0	1939	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2013"	"2013"	0	1894	Unreliable
+	"South Dakota"	"46"	"Haakon County, SD"	"46055"	"2014"	"2014"	0	1847	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2006"	"2006"	0	5595	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2007"	"2007"	0	5696	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2008"	"2008"	0	5753	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2009"	"2009"	0	5843	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2010"	"2010"	0	5903	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2011"	"2011"	0	5978	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2012"	"2012"	0	5918	Unreliable
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2013"	"2013"	Suppressed	5961	Suppressed
+	"South Dakota"	"46"	"Hamlin County, SD"	"46057"	"2014"	"2014"	0	5989	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2006"	"2006"	0	3390	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2007"	"2007"	0	3389	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2008"	"2008"	0	3396	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2009"	"2009"	0	3399	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2010"	"2010"	0	3431	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2011"	"2011"	0	3423	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2012"	"2012"	0	3388	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2013"	"2013"	0	3391	Unreliable
+	"South Dakota"	"46"	"Hand County, SD"	"46059"	"2014"	"2014"	0	3345	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2006"	"2006"	0	3414	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2007"	"2007"	0	3417	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2008"	"2008"	Suppressed	3399	Suppressed
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2009"	"2009"	0	3345	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2010"	"2010"	0	3331	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2011"	"2011"	0	3376	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2012"	"2012"	Suppressed	3377	Suppressed
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2013"	"2013"	0	3405	Unreliable
+	"South Dakota"	"46"	"Hanson County, SD"	"46061"	"2014"	"2014"	0	3419	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2006"	"2006"	0	1278	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2007"	"2007"	0	1274	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2008"	"2008"	0	1252	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2009"	"2009"	0	1263	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2010"	"2010"	0	1255	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2011"	"2011"	0	1269	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2012"	"2012"	0	1316	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2013"	"2013"	0	1262	Unreliable
+	"South Dakota"	"46"	"Harding County, SD"	"46063"	"2014"	"2014"	Suppressed	1250	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2006"	"2006"	Suppressed	16717	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2007"	"2007"	0	16788	Unreliable
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2008"	"2008"	Suppressed	16690	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2009"	"2009"	Suppressed	16867	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2010"	"2010"	0	17022	Unreliable
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2011"	"2011"	Suppressed	17292	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2012"	"2012"	Suppressed	17450	Suppressed
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2013"	"2013"	0	17508	Unreliable
+	"South Dakota"	"46"	"Hughes County, SD"	"46065"	"2014"	"2014"	Suppressed	17642	Suppressed
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2006"	"2006"	0	7471	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2007"	"2007"	0	7436	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2008"	"2008"	0	7363	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2009"	"2009"	0	7325	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2010"	"2010"	0	7343	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2011"	"2011"	0	7257	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2012"	"2012"	0	7187	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2013"	"2013"	0	7145	Unreliable
+	"South Dakota"	"46"	"Hutchinson County, SD"	"46067"	"2014"	"2014"	0	7200	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2006"	"2006"	0	1531	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2007"	"2007"	0	1467	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2008"	"2008"	0	1430	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2009"	"2009"	0	1420	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2010"	"2010"	0	1420	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2011"	"2011"	0	1394	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2012"	"2012"	0	1437	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2013"	"2013"	0	1391	Unreliable
+	"South Dakota"	"46"	"Hyde County, SD"	"46069"	"2014"	"2014"	0	1396	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2006"	"2006"	0	2976	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2007"	"2007"	0	3008	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2008"	"2008"	0	2950	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2009"	"2009"	0	2982	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2010"	"2010"	0	3031	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2011"	"2011"	0	3169	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2012"	"2012"	0	3191	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2013"	"2013"	0	3216	Unreliable
+	"South Dakota"	"46"	"Jackson County, SD"	"46071"	"2014"	"2014"	0	3274	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2006"	"2006"	0	2059	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2007"	"2007"	0	2006	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2008"	"2008"	0	2023	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2009"	"2009"	0	2019	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2010"	"2010"	0	2071	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2011"	"2011"	0	2085	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2012"	"2012"	Suppressed	2047	Suppressed
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2013"	"2013"	0	2066	Unreliable
+	"South Dakota"	"46"	"Jerauld County, SD"	"46073"	"2014"	"2014"	0	2007	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2006"	"2006"	0	1046	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2007"	"2007"	0	1014	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2008"	"2008"	0	976	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2009"	"2009"	0	990	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2010"	"2010"	0	1006	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2011"	"2011"	0	1003	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2012"	"2012"	0	1013	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2013"	"2013"	0	1001	Unreliable
+	"South Dakota"	"46"	"Jones County, SD"	"46075"	"2014"	"2014"	0	975	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2006"	"2006"	0	5228	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2007"	"2007"	0	5177	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2008"	"2008"	0	5142	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2009"	"2009"	0	5146	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2010"	"2010"	0	5148	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2011"	"2011"	0	5179	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2012"	"2012"	0	5220	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2013"	"2013"	0	5065	Unreliable
+	"South Dakota"	"46"	"Kingsbury County, SD"	"46077"	"2014"	"2014"	0	5075	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2006"	"2006"	0	10659	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2007"	"2007"	0	10920	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2008"	"2008"	0	11119	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2009"	"2009"	0	11084	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2010"	"2010"	0	11200	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2011"	"2011"	Suppressed	11567	Suppressed
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2012"	"2012"	0	11771	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2013"	"2013"	0	12055	Unreliable
+	"South Dakota"	"46"	"Lake County, SD"	"46079"	"2014"	"2014"	Suppressed	12368	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2006"	"2006"	Suppressed	23172	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2007"	"2007"	Suppressed	23543	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2008"	"2008"	Suppressed	23659	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2009"	"2009"	Suppressed	23781	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2010"	"2010"	0	24097	Unreliable
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2011"	"2011"	Suppressed	24312	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2012"	"2012"	0	24397	Unreliable
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2013"	"2013"	Suppressed	24910	Suppressed
+	"South Dakota"	"46"	"Lawrence County, SD"	"46081"	"2014"	"2014"	Suppressed	24657	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2006"	"2006"	0	36885	Unreliable
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2007"	"2007"	0	39260	Unreliable
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2008"	"2008"	Suppressed	41590	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2009"	"2009"	Suppressed	43522	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2010"	"2010"	Suppressed	44828	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2011"	"2011"	Suppressed	46793	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2012"	"2012"	Suppressed	48296	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2013"	"2013"	Suppressed	49858	Suppressed
+	"South Dakota"	"46"	"Lincoln County, SD"	"46083"	"2014"	"2014"	Suppressed	51548	Suppressed
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2006"	"2006"	0	3754	Unreliable
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2007"	"2007"	Suppressed	3765	Suppressed
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2008"	"2008"	Suppressed	3669	Suppressed
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2009"	"2009"	0	3723	Unreliable
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2010"	"2010"	0	3755	Unreliable
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2011"	"2011"	Suppressed	3806	Suppressed
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2012"	"2012"	0	3789	Unreliable
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2013"	"2013"	0	3892	Unreliable
+	"South Dakota"	"46"	"Lyman County, SD"	"46085"	"2014"	"2014"	0	3877	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2006"	"2006"	0	5679	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2007"	"2007"	0	5699	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2008"	"2008"	0	5598	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2009"	"2009"	0	5592	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2010"	"2010"	0	5618	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2011"	"2011"	0	5556	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2012"	"2012"	0	5610	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2013"	"2013"	0	5654	Unreliable
+	"South Dakota"	"46"	"McCook County, SD"	"46087"	"2014"	"2014"	0	5649	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2006"	"2006"	0	2571	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2007"	"2007"	0	2518	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2008"	"2008"	0	2517	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2009"	"2009"	0	2469	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2010"	"2010"	0	2459	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2011"	"2011"	0	2452	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2012"	"2012"	0	2439	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2013"	"2013"	0	2457	Unreliable
+	"South Dakota"	"46"	"McPherson County, SD"	"46089"	"2014"	"2014"	0	2429	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2006"	"2006"	0	4616	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2007"	"2007"	0	4591	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2008"	"2008"	Suppressed	4618	Suppressed
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2009"	"2009"	0	4608	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2010"	"2010"	0	4656	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2011"	"2011"	0	4597	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2012"	"2012"	Suppressed	4671	Suppressed
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2013"	"2013"	0	4763	Unreliable
+	"South Dakota"	"46"	"Marshall County, SD"	"46091"	"2014"	"2014"	0	4683	Unreliable
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2006"	"2006"	Suppressed	25085	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2007"	"2007"	Suppressed	24995	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2008"	"2008"	Suppressed	24931	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2009"	"2009"	Suppressed	25314	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2010"	"2010"	0	25434	Unreliable
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2011"	"2011"	Suppressed	25546	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2012"	"2012"	Suppressed	26052	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2013"	"2013"	Suppressed	27202	Suppressed
+	"South Dakota"	"46"	"Meade County, SD"	"46093"	"2014"	"2014"	0	26951	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2006"	"2006"	0	2030	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2007"	"2007"	0	2040	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2008"	"2008"	0	2000	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2009"	"2009"	0	2041	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2010"	"2010"	0	2048	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2011"	"2011"	0	2067	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2012"	"2012"	0	2101	Unreliable
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2013"	"2013"	Suppressed	2081	Suppressed
+	"South Dakota"	"46"	"Mellette County, SD"	"46095"	"2014"	"2014"	0	2100	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2006"	"2006"	0	2474	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2007"	"2007"	0	2420	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2008"	"2008"	0	2372	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2009"	"2009"	0	2407	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2010"	"2010"	0	2389	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2011"	"2011"	0	2359	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2012"	"2012"	0	2326	Unreliable
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2013"	"2013"	Suppressed	2333	Suppressed
+	"South Dakota"	"46"	"Miner County, SD"	"46097"	"2014"	"2014"	0	2316	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2006"	"2006"	Suppressed	160630	Suppressed
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2007"	"2007"	13	163577	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2008"	"2008"	16	166320	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2009"	"2009"	10	168482	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2010"	"2010"	18	169468	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2011"	"2011"	13	171752	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2012"	"2012"	Suppressed	175037	Suppressed
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2013"	"2013"	15	179640	Unreliable
+	"South Dakota"	"46"	"Minnehaha County, SD"	"46099"	"2014"	"2014"	17	182882	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2006"	"2006"	0	6537	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2007"	"2007"	0	6570	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2008"	"2008"	Suppressed	6501	Suppressed
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2009"	"2009"	0	6449	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2010"	"2010"	Suppressed	6486	Suppressed
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2011"	"2011"	0	6475	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2012"	"2012"	0	6446	Unreliable
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2013"	"2013"	Suppressed	6404	Suppressed
+	"South Dakota"	"46"	"Moody County, SD"	"46101"	"2014"	"2014"	0	6367	Unreliable
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2006"	"2006"	11	94394	Unreliable
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2007"	"2007"	Suppressed	95895	Suppressed
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2008"	"2008"	11	98128	Unreliable
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2009"	"2009"	18	99845	Unreliable
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2010"	"2010"	12	100948	Unreliable
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2011"	"2011"	Suppressed	102815	Suppressed
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2012"	"2012"	Suppressed	104347	Suppressed
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2013"	"2013"	Suppressed	105761	Suppressed
+	"South Dakota"	"46"	"Pennington County, SD"	"46103"	"2014"	"2014"	Suppressed	108242	Suppressed
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2006"	"2006"	0	2977	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2007"	"2007"	0	2963	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2008"	"2008"	0	2936	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2009"	"2009"	Suppressed	2943	Suppressed
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2010"	"2010"	0	2982	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2011"	"2011"	0	3001	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2012"	"2012"	Suppressed	3037	Suppressed
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2013"	"2013"	0	3037	Unreliable
+	"South Dakota"	"46"	"Perkins County, SD"	"46105"	"2014"	"2014"	0	3033	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2006"	"2006"	0	2413	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2007"	"2007"	0	2351	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2008"	"2008"	0	2285	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2009"	"2009"	0	2283	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2010"	"2010"	0	2329	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2011"	"2011"	0	2364	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2012"	"2012"	0	2359	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2013"	"2013"	0	2394	Unreliable
+	"South Dakota"	"46"	"Potter County, SD"	"46107"	"2014"	"2014"	0	2340	Unreliable
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2006"	"2006"	Suppressed	9977	Suppressed
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2007"	"2007"	Suppressed	9986	Suppressed
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2008"	"2008"	Suppressed	9997	Suppressed
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2009"	"2009"	Suppressed	10013	Suppressed
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2010"	"2010"	0	10149	Unreliable
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2011"	"2011"	0	10286	Unreliable
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2012"	"2012"	0	10303	Unreliable
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2013"	"2013"	0	10251	Unreliable
+	"South Dakota"	"46"	"Roberts County, SD"	"46109"	"2014"	"2014"	Suppressed	10374	Suppressed
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2006"	"2006"	0	2410	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2007"	"2007"	0	2395	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2008"	"2008"	0	2374	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2009"	"2009"	0	2367	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2010"	"2010"	0	2355	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2011"	"2011"	0	2392	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2012"	"2012"	0	2324	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2013"	"2013"	0	2324	Unreliable
+	"South Dakota"	"46"	"Sanborn County, SD"	"46111"	"2014"	"2014"	0	2336	Unreliable
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2006"	"2006"	Suppressed	13404	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2007"	"2007"	Suppressed	13345	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2008"	"2008"	Suppressed	13368	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2009"	"2009"	0	13425	Unreliable
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2010"	"2010"	Suppressed	13586	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2011"	"2011"	Suppressed	13928	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2012"	"2012"	0	14059	Unreliable
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2013"	"2013"	Suppressed	14118	Suppressed
+	"South Dakota"	"46"	"Shannon County, SD"	"46113"	"2014"	"2014"	Suppressed	14218	Suppressed
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2006"	"2006"	Suppressed	6714	Suppressed
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2007"	"2007"	0	6562	Unreliable
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2008"	"2008"	0	6472	Unreliable
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2009"	"2009"	0	6435	Unreliable
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2010"	"2010"	Suppressed	6415	Suppressed
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2011"	"2011"	Suppressed	6470	Suppressed
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2012"	"2012"	Suppressed	6611	Suppressed
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2013"	"2013"	0	6610	Unreliable
+	"South Dakota"	"46"	"Spink County, SD"	"46115"	"2014"	"2014"	0	6598	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2006"	"2006"	0	2845	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2007"	"2007"	0	2886	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2008"	"2008"	0	2864	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2009"	"2009"	0	2906	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2010"	"2010"	0	2966	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2011"	"2011"	0	3002	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2012"	"2012"	0	2969	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2013"	"2013"	0	2981	Unreliable
+	"South Dakota"	"46"	"Stanley County, SD"	"46117"	"2014"	"2014"	0	2983	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2006"	"2006"	0	1422	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2007"	"2007"	0	1436	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2008"	"2008"	0	1375	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2009"	"2009"	0	1367	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2010"	"2010"	0	1373	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2011"	"2011"	0	1375	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2012"	"2012"	0	1427	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2013"	"2013"	0	1437	Unreliable
+	"South Dakota"	"46"	"Sully County, SD"	"46119"	"2014"	"2014"	0	1438	Unreliable
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2006"	"2006"	Suppressed	9505	Suppressed
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2007"	"2007"	0	9631	Unreliable
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2008"	"2008"	Suppressed	9559	Suppressed
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2009"	"2009"	Suppressed	9521	Suppressed
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2010"	"2010"	0	9612	Unreliable
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2011"	"2011"	0	9822	Unreliable
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2012"	"2012"	Suppressed	9942	Suppressed
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2013"	"2013"	Suppressed	9982	Suppressed
+	"South Dakota"	"46"	"Todd County, SD"	"46121"	"2014"	"2014"	Suppressed	9882	Suppressed
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2006"	"2006"	0	5964	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2007"	"2007"	0	5800	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2008"	"2008"	Suppressed	5671	Suppressed
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2009"	"2009"	0	5636	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2010"	"2010"	0	5644	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2011"	"2011"	Suppressed	5615	Suppressed
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2012"	"2012"	0	5485	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2013"	"2013"	0	5498	Unreliable
+	"South Dakota"	"46"	"Tripp County, SD"	"46123"	"2014"	"2014"	0	5512	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2006"	"2006"	0	8382	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2007"	"2007"	0	8407	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2008"	"2008"	0	8379	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2009"	"2009"	0	8317	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2010"	"2010"	0	8347	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2011"	"2011"	0	8332	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2012"	"2012"	0	8308	Unreliable
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2013"	"2013"	Suppressed	8361	Suppressed
+	"South Dakota"	"46"	"Turner County, SD"	"46125"	"2014"	"2014"	0	8272	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2006"	"2006"	Suppressed	13388	Suppressed
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2007"	"2007"	0	13672	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2008"	"2008"	Suppressed	13825	Suppressed
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2009"	"2009"	0	14127	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2010"	"2010"	Suppressed	14399	Suppressed
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2011"	"2011"	0	14651	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2012"	"2012"	0	14855	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2013"	"2013"	0	14829	Unreliable
+	"South Dakota"	"46"	"Union County, SD"	"46127"	"2014"	"2014"	Suppressed	15029	Suppressed
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2006"	"2006"	0	5469	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2007"	"2007"	0	5379	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2008"	"2008"	0	5368	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2009"	"2009"	0	5371	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2010"	"2010"	0	5438	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2011"	"2011"	0	5575	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2012"	"2012"	0	5459	Unreliable
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2013"	"2013"	Suppressed	5524	Suppressed
+	"South Dakota"	"46"	"Walworth County, SD"	"46129"	"2014"	"2014"	0	5511	Unreliable
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2006"	"2006"	0	21957	Unreliable
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2007"	"2007"	0	22064	Unreliable
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2008"	"2008"	Suppressed	22267	Suppressed
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2009"	"2009"	Suppressed	22331	Suppressed
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2010"	"2010"	Suppressed	22438	Suppressed
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2011"	"2011"	Suppressed	22612	Suppressed
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2012"	"2012"	Suppressed	22603	Suppressed
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2013"	"2013"	0	22696	Unreliable
+	"South Dakota"	"46"	"Yankton County, SD"	"46135"	"2014"	"2014"	Suppressed	22684	Suppressed
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2006"	"2006"	0	2782	Unreliable
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2007"	"2007"	Suppressed	2781	Suppressed
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2008"	"2008"	Suppressed	2708	Suppressed
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2009"	"2009"	0	2737	Unreliable
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2010"	"2010"	0	2801	Unreliable
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2011"	"2011"	Suppressed	2852	Suppressed
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2012"	"2012"	0	2869	Unreliable
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2013"	"2013"	0	2834	Unreliable
+	"South Dakota"	"46"	"Ziebach County, SD"	"46137"	"2014"	"2014"	0	2826	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: South Dakota (46)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:42:12 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:42:12 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

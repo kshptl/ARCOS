@@ -1,0 +1,467 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2006"	"2006"	Suppressed	25821	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2007"	"2007"	Suppressed	25745	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2008"	"2008"	0	25699	Unreliable
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2009"	"2009"	0	25614	Unreliable
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2010"	"2010"	Suppressed	25417	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2011"	"2011"	Suppressed	25161	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2012"	"2012"	Suppressed	25101	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2013"	"2013"	Suppressed	25007	Suppressed
+	"South Carolina"	"45"	"Abbeville County, SC"	"45001"	"2014"	"2014"	0	24965	Unreliable
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2006"	"2006"	27	152577	17.7
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2007"	"2007"	21	154814	13.6
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2008"	"2008"	23	156896	14.7
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2009"	"2009"	24	158499	15.1
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2010"	"2010"	27	160099	16.9
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2011"	"2011"	24	160682	14.9
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2012"	"2012"	32	162812	19.7
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2013"	"2013"	32	164176	19.5
+	"South Carolina"	"45"	"Aiken County, SC"	"45003"	"2014"	"2014"	30	164753	18.2
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2006"	"2006"	Suppressed	10882	Suppressed
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2007"	"2007"	0	10787	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2008"	"2008"	Suppressed	10803	Suppressed
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2009"	"2009"	0	10619	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2010"	"2010"	0	10419	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2011"	"2011"	0	10181	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2012"	"2012"	0	9988	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2013"	"2013"	0	9839	Unreliable
+	"South Carolina"	"45"	"Allendale County, SC"	"45005"	"2014"	"2014"	0	9695	Unreliable
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2006"	"2006"	27	178579	15.1
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2007"	"2007"	27	181543	14.9
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2008"	"2008"	32	184520	17.3
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2009"	"2009"	42	186544	22.5
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2010"	"2010"	37	187126	19.8
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2011"	"2011"	34	188488	18.0
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2012"	"2012"	30	189355	15.8
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2013"	"2013"	36	190641	18.9
+	"South Carolina"	"45"	"Anderson County, SC"	"45007"	"2014"	"2014"	37	192810	19.2
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2006"	"2006"	0	16392	Unreliable
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2007"	"2007"	0	16226	Unreliable
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2008"	"2008"	Suppressed	16104	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2009"	"2009"	Suppressed	16022	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2010"	"2010"	Suppressed	15987	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2011"	"2011"	Suppressed	15975	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2012"	"2012"	Suppressed	15763	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2013"	"2013"	Suppressed	15430	Suppressed
+	"South Carolina"	"45"	"Bamberg County, SC"	"45009"	"2014"	"2014"	Suppressed	15182	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2006"	"2006"	Suppressed	22886	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2007"	"2007"	Suppressed	22851	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2008"	"2008"	Suppressed	22761	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2009"	"2009"	Suppressed	22611	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2010"	"2010"	Suppressed	22621	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2011"	"2011"	Suppressed	22358	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2012"	"2012"	Suppressed	22212	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2013"	"2013"	Suppressed	22119	Suppressed
+	"South Carolina"	"45"	"Barnwell County, SC"	"45011"	"2014"	"2014"	Suppressed	21959	Suppressed
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2006"	"2006"	13	147213	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2007"	"2007"	12	151411	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2008"	"2008"	13	156399	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2009"	"2009"	14	159737	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2010"	"2010"	15	162233	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2011"	"2011"	17	164684	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2012"	"2012"	13	168049	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2013"	"2013"	17	171838	Unreliable
+	"South Carolina"	"45"	"Beaufort County, SC"	"45013"	"2014"	"2014"	13	175852	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2006"	"2006"	14	159501	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2007"	"2007"	12	164913	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2008"	"2008"	16	171099	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2009"	"2009"	13	175092	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2010"	"2010"	25	177843	14.1
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2011"	"2011"	19	183525	Unreliable
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2012"	"2012"	28	189781	14.8
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2013"	"2013"	28	194020	14.4
+	"South Carolina"	"45"	"Berkeley County, SC"	"45015"	"2014"	"2014"	26	198205	13.1
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2006"	"2006"	Suppressed	15229	Suppressed
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2007"	"2007"	Suppressed	15260	Suppressed
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2008"	"2008"	0	15175	Unreliable
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2009"	"2009"	0	15268	Unreliable
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2010"	"2010"	Suppressed	15175	Suppressed
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2011"	"2011"	0	15145	Unreliable
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2012"	"2012"	0	14910	Unreliable
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2013"	"2013"	Suppressed	15055	Suppressed
+	"South Carolina"	"45"	"Calhoun County, SC"	"45017"	"2014"	"2014"	0	14878	Unreliable
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2006"	"2006"	34	334826	10.2
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2007"	"2007"	49	337147	14.5
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2008"	"2008"	41	341921	12.0
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2009"	"2009"	46	346795	13.3
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2010"	"2010"	60	350209	17.1
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2011"	"2011"	55	357704	15.4
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2012"	"2012"	37	365162	10.1
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2013"	"2013"	44	372803	11.8
+	"South Carolina"	"45"	"Charleston County, SC"	"45019"	"2014"	"2014"	57	381015	15.0
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2006"	"2006"	10	54166	Unreliable
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2007"	"2007"	Suppressed	54467	Suppressed
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2008"	"2008"	Suppressed	54981	Suppressed
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2009"	"2009"	Suppressed	55149	Suppressed
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2010"	"2010"	10	55342	Unreliable
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2011"	"2011"	Suppressed	55540	Suppressed
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2012"	"2012"	13	55662	Unreliable
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2013"	"2013"	Suppressed	55885	Suppressed
+	"South Carolina"	"45"	"Cherokee County, SC"	"45021"	"2014"	"2014"	Suppressed	56024	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2006"	"2006"	Suppressed	33222	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2007"	"2007"	Suppressed	33247	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2008"	"2008"	Suppressed	33454	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2009"	"2009"	Suppressed	33210	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2010"	"2010"	Suppressed	33140	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2011"	"2011"	Suppressed	32916	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2012"	"2012"	Suppressed	32546	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2013"	"2013"	Suppressed	32578	Suppressed
+	"South Carolina"	"45"	"Chester County, SC"	"45023"	"2014"	"2014"	Suppressed	32337	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2006"	"2006"	Suppressed	45103	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2007"	"2007"	10	45708	Unreliable
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2008"	"2008"	Suppressed	46319	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2009"	"2009"	Suppressed	46638	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2010"	"2010"	Suppressed	46734	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2011"	"2011"	Suppressed	46557	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2012"	"2012"	Suppressed	46103	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2013"	"2013"	Suppressed	46197	Suppressed
+	"South Carolina"	"45"	"Chesterfield County, SC"	"45025"	"2014"	"2014"	Suppressed	46125	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2006"	"2006"	Suppressed	34094	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2007"	"2007"	Suppressed	34250	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2008"	"2008"	Suppressed	34875	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2009"	"2009"	Suppressed	34942	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2010"	"2010"	Suppressed	34971	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2011"	"2011"	Suppressed	34726	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2012"	"2012"	Suppressed	34357	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2013"	"2013"	Suppressed	34355	Suppressed
+	"South Carolina"	"45"	"Clarendon County, SC"	"45027"	"2014"	"2014"	Suppressed	34113	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2006"	"2006"	Suppressed	38608	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2007"	"2007"	Suppressed	38765	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2008"	"2008"	Suppressed	39014	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2009"	"2009"	Suppressed	38864	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2010"	"2010"	10	38892	Unreliable
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2011"	"2011"	Suppressed	38611	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2012"	"2012"	Suppressed	38153	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2013"	"2013"	Suppressed	37788	Suppressed
+	"South Carolina"	"45"	"Colleton County, SC"	"45029"	"2014"	"2014"	Suppressed	37771	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2006"	"2006"	11	68424	Unreliable
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2007"	"2007"	Suppressed	68489	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2008"	"2008"	Suppressed	68773	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2009"	"2009"	Suppressed	68705	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2010"	"2010"	Suppressed	68681	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2011"	"2011"	Suppressed	68299	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2012"	"2012"	Suppressed	68139	Suppressed
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2013"	"2013"	14	67935	Unreliable
+	"South Carolina"	"45"	"Darlington County, SC"	"45031"	"2014"	"2014"	Suppressed	67799	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2006"	"2006"	Suppressed	31373	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2007"	"2007"	Suppressed	31433	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2008"	"2008"	Suppressed	31585	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2009"	"2009"	Suppressed	31817	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2010"	"2010"	Suppressed	32062	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2011"	"2011"	Suppressed	31758	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2012"	"2012"	0	31446	Unreliable
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2013"	"2013"	Suppressed	31229	Suppressed
+	"South Carolina"	"45"	"Dillon County, SC"	"45033"	"2014"	"2014"	Suppressed	31127	Suppressed
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2006"	"2006"	Suppressed	120136	Suppressed
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2007"	"2007"	Suppressed	126324	Suppressed
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2008"	"2008"	16	130593	Unreliable
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2009"	"2009"	Suppressed	133560	Suppressed
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2010"	"2010"	11	136555	Unreliable
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2011"	"2011"	14	140892	Unreliable
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2012"	"2012"	17	142496	Unreliable
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2013"	"2013"	15	145397	Unreliable
+	"South Carolina"	"45"	"Dorchester County, SC"	"45035"	"2014"	"2014"	15	148469	Unreliable
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2006"	"2006"	Suppressed	26135	Suppressed
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2007"	"2007"	Suppressed	26493	Suppressed
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2008"	"2008"	Suppressed	26774	Suppressed
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2009"	"2009"	Suppressed	27032	Suppressed
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2010"	"2010"	0	26985	Unreliable
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2011"	"2011"	Suppressed	26670	Suppressed
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2012"	"2012"	0	26347	Unreliable
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2013"	"2013"	0	26436	Unreliable
+	"South Carolina"	"45"	"Edgefield County, SC"	"45037"	"2014"	"2014"	Suppressed	26553	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2006"	"2006"	Suppressed	24177	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2007"	"2007"	0	23917	Unreliable
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2008"	"2008"	0	24131	Unreliable
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2009"	"2009"	Suppressed	24084	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2010"	"2010"	Suppressed	23956	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2011"	"2011"	Suppressed	23571	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2012"	"2012"	Suppressed	23363	Suppressed
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2013"	"2013"	0	23109	Unreliable
+	"South Carolina"	"45"	"Fairfield County, SC"	"45039"	"2014"	"2014"	Suppressed	22976	Suppressed
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2006"	"2006"	17	132489	Unreliable
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2007"	"2007"	Suppressed	133757	Suppressed
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2008"	"2008"	Suppressed	135032	Suppressed
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2009"	"2009"	11	136120	Unreliable
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2010"	"2010"	17	136885	Unreliable
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2011"	"2011"	14	137862	Unreliable
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2012"	"2012"	Suppressed	137948	Suppressed
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2013"	"2013"	20	138326	14.5
+	"South Carolina"	"45"	"Florence County, SC"	"45041"	"2014"	"2014"	20	139231	14.4
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2006"	"2006"	Suppressed	59821	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2007"	"2007"	14	60277	Unreliable
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2008"	"2008"	Suppressed	60621	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2009"	"2009"	Suppressed	60369	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2010"	"2010"	Suppressed	60158	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2011"	"2011"	Suppressed	59991	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2012"	"2012"	Suppressed	60189	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2013"	"2013"	Suppressed	60440	Suppressed
+	"South Carolina"	"45"	"Georgetown County, SC"	"45043"	"2014"	"2014"	12	60773	Unreliable
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2006"	"2006"	76	415957	18.3
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2007"	"2007"	81	427970	18.9
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2008"	"2008"	79	438742	18.0
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2009"	"2009"	70	446655	15.7
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2010"	"2010"	78	451225	17.3
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2011"	"2011"	71	461299	15.4
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2012"	"2012"	75	467605	16.0
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2013"	"2013"	68	474266	14.3
+	"South Carolina"	"45"	"Greenville County, SC"	"45045"	"2014"	"2014"	83	482752	17.2
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2006"	"2006"	Suppressed	68091	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2007"	"2007"	Suppressed	68198	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2008"	"2008"	13	68862	Unreliable
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2009"	"2009"	Suppressed	69598	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2010"	"2010"	Suppressed	69661	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2011"	"2011"	Suppressed	69835	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2012"	"2012"	Suppressed	69756	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2013"	"2013"	Suppressed	69723	Suppressed
+	"South Carolina"	"45"	"Greenwood County, SC"	"45047"	"2014"	"2014"	13	69520	Unreliable
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2006"	"2006"	Suppressed	21104	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2007"	"2007"	Suppressed	21295	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2008"	"2008"	Suppressed	21212	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2009"	"2009"	Suppressed	21205	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2010"	"2010"	0	21090	Unreliable
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2011"	"2011"	Suppressed	20821	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2012"	"2012"	Suppressed	20726	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2013"	"2013"	Suppressed	20408	Suppressed
+	"South Carolina"	"45"	"Hampton County, SC"	"45049"	"2014"	"2014"	0	20405	Unreliable
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2006"	"2006"	35	242194	14.5
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2007"	"2007"	33	252464	13.1
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2008"	"2008"	38	260609	14.6
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2009"	"2009"	40	265640	15.1
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2010"	"2010"	46	269291	17.1
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2011"	"2011"	30	276340	10.9
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2012"	"2012"	35	282285	12.4
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2013"	"2013"	38	289650	13.1
+	"South Carolina"	"45"	"Horry County, SC"	"45051"	"2014"	"2014"	63	298832	21.1
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2006"	"2006"	Suppressed	22406	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2007"	"2007"	Suppressed	22971	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2008"	"2008"	Suppressed	23620	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2009"	"2009"	Suppressed	24234	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2010"	"2010"	Suppressed	24777	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2011"	"2011"	0	25195	Unreliable
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2012"	"2012"	Suppressed	25833	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2013"	"2013"	Suppressed	26629	Suppressed
+	"South Carolina"	"45"	"Jasper County, SC"	"45053"	"2014"	"2014"	Suppressed	27170	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2006"	"2006"	Suppressed	58060	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2007"	"2007"	Suppressed	59380	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2008"	"2008"	Suppressed	60395	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2009"	"2009"	Suppressed	61143	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2010"	"2010"	10	61697	Unreliable
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2011"	"2011"	Suppressed	62273	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2012"	"2012"	12	62343	Unreliable
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2013"	"2013"	Suppressed	62516	Suppressed
+	"South Carolina"	"45"	"Kershaw County, SC"	"45055"	"2014"	"2014"	Suppressed	63161	Suppressed
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2006"	"2006"	12	66992	Unreliable
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2007"	"2007"	Suppressed	69504	Suppressed
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2008"	"2008"	Suppressed	72733	Suppressed
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2009"	"2009"	12	75394	Unreliable
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2010"	"2010"	16	76652	Unreliable
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2011"	"2011"	12	77908	Unreliable
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2012"	"2012"	Suppressed	79089	Suppressed
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2013"	"2013"	12	80458	Unreliable
+	"South Carolina"	"45"	"Lancaster County, SC"	"45057"	"2014"	"2014"	Suppressed	83160	Suppressed
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2006"	"2006"	Suppressed	67388	Suppressed
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2007"	"2007"	10	67172	Unreliable
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2008"	"2008"	15	67173	Unreliable
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2009"	"2009"	Suppressed	66897	Suppressed
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2010"	"2010"	12	66537	Unreliable
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2011"	"2011"	Suppressed	66528	Suppressed
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2012"	"2012"	Suppressed	66223	Suppressed
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2013"	"2013"	18	66229	Unreliable
+	"South Carolina"	"45"	"Laurens County, SC"	"45059"	"2014"	"2014"	Suppressed	66533	Suppressed
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2006"	"2006"	0	20001	Unreliable
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2007"	"2007"	Suppressed	19836	Suppressed
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2008"	"2008"	0	19697	Unreliable
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2009"	"2009"	Suppressed	19352	Suppressed
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2010"	"2010"	0	19220	Unreliable
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2011"	"2011"	Suppressed	18976	Suppressed
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2012"	"2012"	0	18654	Unreliable
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2013"	"2013"	0	18347	Unreliable
+	"South Carolina"	"45"	"Lee County, SC"	"45061"	"2014"	"2014"	0	18343	Unreliable
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2006"	"2006"	37	241219	15.3
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2007"	"2007"	35	246461	14.2
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2008"	"2008"	18	252747	Unreliable
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2009"	"2009"	29	258983	11.2
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2010"	"2010"	45	262391	17.1
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2011"	"2011"	44	267129	16.5
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2012"	"2012"	35	270406	12.9
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2013"	"2013"	49	273752	17.9
+	"South Carolina"	"45"	"Lexington County, SC"	"45063"	"2014"	"2014"	53	277888	19.1
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2006"	"2006"	0	10166	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2007"	"2007"	Suppressed	10162	Suppressed
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2008"	"2008"	0	10224	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2009"	"2009"	0	10235	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2010"	"2010"	0	10233	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2011"	"2011"	Suppressed	10035	Suppressed
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2012"	"2012"	0	9943	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2013"	"2013"	0	9947	Unreliable
+	"South Carolina"	"45"	"McCormick County, SC"	"45065"	"2014"	"2014"	Suppressed	9846	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2006"	"2006"	Suppressed	33994	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2007"	"2007"	Suppressed	33842	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2008"	"2008"	Suppressed	33724	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2009"	"2009"	Suppressed	33277	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2010"	"2010"	0	33062	Unreliable
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2011"	"2011"	Suppressed	32846	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2012"	"2012"	Suppressed	32457	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2013"	"2013"	Suppressed	32072	Suppressed
+	"South Carolina"	"45"	"Marion County, SC"	"45067"	"2014"	"2014"	Suppressed	31933	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2006"	"2006"	Suppressed	29199	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2007"	"2007"	Suppressed	29221	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2008"	"2008"	Suppressed	29079	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2009"	"2009"	Suppressed	29189	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2010"	"2010"	0	28933	Unreliable
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2011"	"2011"	Suppressed	28509	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2012"	"2012"	Suppressed	28145	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2013"	"2013"	Suppressed	28003	Suppressed
+	"South Carolina"	"45"	"Marlboro County, SC"	"45069"	"2014"	"2014"	0	27924	Unreliable
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2006"	"2006"	Suppressed	36746	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2007"	"2007"	Suppressed	37061	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2008"	"2008"	Suppressed	37192	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2009"	"2009"	Suppressed	37413	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2010"	"2010"	Suppressed	37508	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2011"	"2011"	Suppressed	37721	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2012"	"2012"	0	37576	Unreliable
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2013"	"2013"	Suppressed	37521	Suppressed
+	"South Carolina"	"45"	"Newberry County, SC"	"45071"	"2014"	"2014"	Suppressed	37783	Suppressed
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2006"	"2006"	15	71490	Unreliable
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2007"	"2007"	19	72407	Unreliable
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2008"	"2008"	20	73089	27.4
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2009"	"2009"	15	73829	Unreliable
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2010"	"2010"	19	74273	Unreliable
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2011"	"2011"	21	74418	28.2
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2012"	"2012"	21	74627	28.1
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2013"	"2013"	12	75045	Unreliable
+	"South Carolina"	"45"	"Oconee County, SC"	"45073"	"2014"	"2014"	20	75192	26.6
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2006"	"2006"	Suppressed	91761	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2007"	"2007"	Suppressed	92626	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2008"	"2008"	Suppressed	92886	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2009"	"2009"	Suppressed	92755	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2010"	"2010"	10	92501	Unreliable
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2011"	"2011"	Suppressed	91910	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2012"	"2012"	Suppressed	91476	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2013"	"2013"	Suppressed	90942	Suppressed
+	"South Carolina"	"45"	"Orangeburg County, SC"	"45075"	"2014"	"2014"	Suppressed	90090	Suppressed
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2006"	"2006"	28	115570	24.2
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2007"	"2007"	23	116815	19.7
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2008"	"2008"	21	118330	17.7
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2009"	"2009"	38	119183	31.9
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2010"	"2010"	36	119224	30.2
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2011"	"2011"	32	119574	26.8
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2012"	"2012"	32	119670	26.7
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2013"	"2013"	32	119829	26.7
+	"South Carolina"	"45"	"Pickens County, SC"	"45077"	"2014"	"2014"	39	120368	32.4
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2006"	"2006"	29	357096	8.1
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2007"	"2007"	25	366111	6.8
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2008"	"2008"	32	373789	8.6
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2009"	"2009"	36	380245	9.5
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2010"	"2010"	54	384504	14.0
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2011"	"2011"	37	389116	9.5
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2012"	"2012"	38	393830	9.6
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2013"	"2013"	28	399256	7.0
+	"South Carolina"	"45"	"Richland County, SC"	"45079"	"2014"	"2014"	48	401566	12.0
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2006"	"2006"	Suppressed	19310	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2007"	"2007"	Suppressed	19417	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2008"	"2008"	Suppressed	19503	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2009"	"2009"	Suppressed	19677	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2010"	"2010"	0	19875	Unreliable
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2011"	"2011"	Suppressed	19882	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2012"	"2012"	Suppressed	19893	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2013"	"2013"	Suppressed	20091	Suppressed
+	"South Carolina"	"45"	"Saluda County, SC"	"45081"	"2014"	"2014"	Suppressed	20026	Suppressed
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2006"	"2006"	64	268898	23.8
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2007"	"2007"	48	274215	17.5
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2008"	"2008"	67	279673	24.0
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2009"	"2009"	73	283335	25.8
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2010"	"2010"	56	284307	19.7
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2011"	"2011"	60	286868	20.9
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2012"	"2012"	36	288745	12.5
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2013"	"2013"	38	290969	13.1
+	"South Carolina"	"45"	"Spartanburg County, SC"	"45083"	"2014"	"2014"	44	293542	15.0
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2006"	"2006"	Suppressed	105953	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2007"	"2007"	Suppressed	106014	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2008"	"2008"	Suppressed	106463	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2009"	"2009"	Suppressed	107004	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2010"	"2010"	Suppressed	107456	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2011"	"2011"	Suppressed	107460	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2012"	"2012"	Suppressed	108052	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2013"	"2013"	Suppressed	108123	Suppressed
+	"South Carolina"	"45"	"Sumter County, SC"	"45085"	"2014"	"2014"	Suppressed	107919	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2006"	"2006"	0	29248	Unreliable
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2007"	"2007"	Suppressed	29060	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2008"	"2008"	Suppressed	29172	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2009"	"2009"	Suppressed	29100	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2010"	"2010"	0	28961	Unreliable
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2011"	"2011"	Suppressed	28679	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2012"	"2012"	Suppressed	28252	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2013"	"2013"	Suppressed	28030	Suppressed
+	"South Carolina"	"45"	"Union County, SC"	"45087"	"2014"	"2014"	Suppressed	27876	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2006"	"2006"	Suppressed	35458	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2007"	"2007"	Suppressed	35444	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2008"	"2008"	Suppressed	35090	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2009"	"2009"	Suppressed	34622	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2010"	"2010"	Suppressed	34423	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2011"	"2011"	Suppressed	34084	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2012"	"2012"	0	33620	Unreliable
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2013"	"2013"	Suppressed	33067	Suppressed
+	"South Carolina"	"45"	"Williamsburg County, SC"	"45089"	"2014"	"2014"	Suppressed	32695	Suppressed
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2006"	"2006"	16	197892	Unreliable
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2007"	"2007"	20	208640	9.6
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2008"	"2008"	26	217463	12.0
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2009"	"2009"	28	223616	12.5
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2010"	"2010"	25	226073	11.1
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2011"	"2011"	31	230528	13.4
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2012"	"2012"	37	234635	15.8
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2013"	"2013"	37	239363	15.5
+	"South Carolina"	"45"	"York County, SC"	"45091"	"2014"	"2014"	34	245346	13.9
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: South Carolina (45)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:41:53 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:41:53 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

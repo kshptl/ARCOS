@@ -1,0 +1,350 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2006"	"2006"	171	628632	27.2
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2007"	"2007"	189	638978	29.6
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2008"	"2008"	219	646879	33.9
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2009"	"2009"	173	655279	26.4
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2010"	"2010"	186	662564	28.1
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2011"	"2011"	206	670968	30.7
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2012"	"2012"	194	673460	28.8
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2013"	"2013"	151	674221	22.4
+	"New Mexico"	"35"	"Bernalillo County, NM"	"35001"	"2014"	"2014"	198	675551	29.3
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2006"	"2006"	0	3573	Unreliable
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2007"	"2007"	Suppressed	3638	Suppressed
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2008"	"2008"	0	3631	Unreliable
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2009"	"2009"	0	3689	Unreliable
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2010"	"2010"	0	3725	Unreliable
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2011"	"2011"	Suppressed	3733	Suppressed
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2012"	"2012"	Suppressed	3658	Suppressed
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2013"	"2013"	0	3607	Unreliable
+	"New Mexico"	"35"	"Catron County, NM"	"35003"	"2014"	"2014"	Suppressed	3556	Suppressed
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2006"	"2006"	18	62486	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2007"	"2007"	12	63587	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2008"	"2008"	12	64378	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2009"	"2009"	16	65110	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2010"	"2010"	Suppressed	65645	Suppressed
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2011"	"2011"	19	65890	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2012"	"2012"	12	65784	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2013"	"2013"	18	65823	Unreliable
+	"New Mexico"	"35"	"Chaves County, NM"	"35005"	"2014"	"2014"	Suppressed	65878	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2006"	"2006"	Suppressed	27032	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2007"	"2007"	Suppressed	27258	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2008"	"2008"	Suppressed	27259	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2009"	"2009"	Suppressed	27097	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2010"	"2010"	Suppressed	27213	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2011"	"2011"	Suppressed	27658	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2012"	"2012"	Suppressed	27334	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2013"	"2013"	Suppressed	27335	Suppressed
+	"New Mexico"	"35"	"Cibola County, NM"	"35006"	"2014"	"2014"	Suppressed	27349	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2006"	"2006"	Suppressed	13982	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2007"	"2007"	Suppressed	13933	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2008"	"2008"	Suppressed	13764	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2009"	"2009"	Suppressed	13731	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2010"	"2010"	Suppressed	13750	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2011"	"2011"	Suppressed	13640	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2012"	"2012"	Suppressed	13223	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2013"	"2013"	Suppressed	13094	Suppressed
+	"New Mexico"	"35"	"Colfax County, NM"	"35007"	"2014"	"2014"	Suppressed	12680	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2006"	"2006"	Suppressed	47018	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2007"	"2007"	Suppressed	46588	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2008"	"2008"	Suppressed	45512	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2009"	"2009"	Suppressed	46555	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2010"	"2010"	Suppressed	48376	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2011"	"2011"	Suppressed	49649	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2012"	"2012"	Suppressed	49938	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2013"	"2013"	Suppressed	50598	Suppressed
+	"New Mexico"	"35"	"Curry County, NM"	"35009"	"2014"	"2014"	Suppressed	50969	Suppressed
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2006"	"2006"	0	1994	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2007"	"2007"	Suppressed	1995	Suppressed
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2008"	"2008"	0	2000	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2009"	"2009"	0	2002	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2010"	"2010"	0	2022	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2011"	"2011"	0	1945	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2012"	"2012"	0	1927	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2013"	"2013"	0	1907	Unreliable
+	"New Mexico"	"35"	"DeBaca County, NM"	"35011"	"2014"	"2014"	Suppressed	1825	Suppressed
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2006"	"2006"	30	193701	15.5
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2007"	"2007"	30	197853	15.2
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2008"	"2008"	34	200855	16.9
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2009"	"2009"	34	205401	16.6
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2010"	"2010"	40	209233	19.1
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2011"	"2011"	36	213598	16.9
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2012"	"2012"	38	214445	17.7
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2013"	"2013"	29	213460	13.6
+	"New Mexico"	"35"	"Dona Ana County, NM"	"35013"	"2014"	"2014"	37	213676	17.3
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2006"	"2006"	13	51366	Unreliable
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2007"	"2007"	13	51923	Unreliable
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2008"	"2008"	16	52566	Unreliable
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2009"	"2009"	16	53578	Unreliable
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2010"	"2010"	20	53829	37.2
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2011"	"2011"	Suppressed	54152	Suppressed
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2012"	"2012"	10	54419	Unreliable
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2013"	"2013"	Suppressed	55471	Suppressed
+	"New Mexico"	"35"	"Eddy County, NM"	"35015"	"2014"	"2014"	16	56395	Unreliable
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2006"	"2006"	Suppressed	29503	Suppressed
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2007"	"2007"	Suppressed	29841	Suppressed
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2008"	"2008"	13	29921	Unreliable
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2009"	"2009"	11	29865	Unreliable
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2010"	"2010"	Suppressed	29514	Suppressed
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2011"	"2011"	Suppressed	29380	Suppressed
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2012"	"2012"	Suppressed	29388	Suppressed
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2013"	"2013"	10	29328	Unreliable
+	"New Mexico"	"35"	"Grant County, NM"	"35017"	"2014"	"2014"	Suppressed	29096	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2006"	"2006"	Suppressed	4701	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2007"	"2007"	0	4759	Unreliable
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2008"	"2008"	Suppressed	4701	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2009"	"2009"	0	4637	Unreliable
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2010"	"2010"	Suppressed	4687	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2011"	"2011"	0	4619	Unreliable
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2012"	"2012"	Suppressed	4603	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2013"	"2013"	Suppressed	4551	Suppressed
+	"New Mexico"	"35"	"Guadalupe County, NM"	"35019"	"2014"	"2014"	Suppressed	4468	Suppressed
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2006"	"2006"	0	749	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2007"	"2007"	0	732	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2008"	"2008"	0	690	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2009"	"2009"	0	700	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2010"	"2010"	0	695	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2011"	"2011"	0	704	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2012"	"2012"	0	707	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2013"	"2013"	0	693	Unreliable
+	"New Mexico"	"35"	"Harding County, NM"	"35021"	"2014"	"2014"	0	683	Unreliable
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2006"	"2006"	0	4921	Unreliable
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2007"	"2007"	Suppressed	5005	Suppressed
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2008"	"2008"	Suppressed	5022	Suppressed
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2009"	"2009"	Suppressed	5019	Suppressed
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2010"	"2010"	0	4894	Unreliable
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2011"	"2011"	Suppressed	4861	Suppressed
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2012"	"2012"	0	4794	Unreliable
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2013"	"2013"	Suppressed	4654	Suppressed
+	"New Mexico"	"35"	"Hidalgo County, NM"	"35023"	"2014"	"2014"	Suppressed	4560	Suppressed
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2006"	"2006"	Suppressed	59541	Suppressed
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2007"	"2007"	14	61058	Unreliable
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2008"	"2008"	10	62737	Unreliable
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2009"	"2009"	Suppressed	64483	Suppressed
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2010"	"2010"	12	64727	Unreliable
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2011"	"2011"	15	65423	Unreliable
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2012"	"2012"	Suppressed	66338	Suppressed
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2013"	"2013"	14	68062	Unreliable
+	"New Mexico"	"35"	"Lea County, NM"	"35025"	"2014"	"2014"	11	69999	Unreliable
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2006"	"2006"	Suppressed	20588	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2007"	"2007"	Suppressed	20442	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2008"	"2008"	Suppressed	20458	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2009"	"2009"	Suppressed	20521	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2010"	"2010"	Suppressed	20497	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2011"	"2011"	Suppressed	20454	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2012"	"2012"	Suppressed	20309	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2013"	"2013"	Suppressed	20105	Suppressed
+	"New Mexico"	"35"	"Lincoln County, NM"	"35027"	"2014"	"2014"	Suppressed	19706	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2006"	"2006"	0	18477	Unreliable
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2007"	"2007"	Suppressed	18281	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2008"	"2008"	Suppressed	17924	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2009"	"2009"	Suppressed	17742	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2010"	"2010"	Suppressed	17950	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2011"	"2011"	Suppressed	18222	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2012"	"2012"	Suppressed	18159	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2013"	"2013"	Suppressed	17798	Suppressed
+	"New Mexico"	"35"	"Los Alamos County, NM"	"35028"	"2014"	"2014"	Suppressed	17682	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2006"	"2006"	Suppressed	25303	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2007"	"2007"	Suppressed	25328	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2008"	"2008"	Suppressed	25375	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2009"	"2009"	0	25119	Unreliable
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2010"	"2010"	Suppressed	25095	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2011"	"2011"	Suppressed	25281	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2012"	"2012"	Suppressed	25041	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2013"	"2013"	Suppressed	24659	Suppressed
+	"New Mexico"	"35"	"Luna County, NM"	"35029"	"2014"	"2014"	Suppressed	24673	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2006"	"2006"	Suppressed	70541	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2007"	"2007"	Suppressed	69959	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2008"	"2008"	11	70449	Unreliable
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2009"	"2009"	Suppressed	70567	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2010"	"2010"	10	71492	Unreliable
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2011"	"2011"	Suppressed	73664	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2012"	"2012"	Suppressed	73016	Suppressed
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2013"	"2013"	11	73308	Unreliable
+	"New Mexico"	"35"	"McKinley County, NM"	"35031"	"2014"	"2014"	Suppressed	74098	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2006"	"2006"	Suppressed	4992	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2007"	"2007"	0	4964	Unreliable
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2008"	"2008"	Suppressed	4909	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2009"	"2009"	0	4859	Unreliable
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2010"	"2010"	Suppressed	4881	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2011"	"2011"	Suppressed	4773	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2012"	"2012"	Suppressed	4705	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2013"	"2013"	Suppressed	4704	Suppressed
+	"New Mexico"	"35"	"Mora County, NM"	"35033"	"2014"	"2014"	Suppressed	4592	Suppressed
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2006"	"2006"	14	62200	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2007"	"2007"	12	62466	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2008"	"2008"	13	62498	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2009"	"2009"	15	62462	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2010"	"2010"	13	63797	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2011"	"2011"	14	65703	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2012"	"2012"	15	66041	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2013"	"2013"	10	65616	Unreliable
+	"New Mexico"	"35"	"Otero County, NM"	"35035"	"2014"	"2014"	16	65082	Unreliable
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2006"	"2006"	Suppressed	9036	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2007"	"2007"	0	8996	Unreliable
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2008"	"2008"	Suppressed	8978	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2009"	"2009"	Suppressed	8920	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2010"	"2010"	Suppressed	9041	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2011"	"2011"	Suppressed	9026	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2012"	"2012"	Suppressed	8769	Suppressed
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2013"	"2013"	0	8662	Unreliable
+	"New Mexico"	"35"	"Quay County, NM"	"35037"	"2014"	"2014"	Suppressed	8501	Suppressed
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2006"	"2006"	20	40335	49.6
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2007"	"2007"	20	40268	49.7
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2008"	"2008"	29	40008	72.5
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2009"	"2009"	20	40023	50.0
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2010"	"2010"	19	40246	Unreliable
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2011"	"2011"	29	40446	71.7
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2012"	"2012"	32	40318	79.4
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2013"	"2013"	30	40072	74.9
+	"New Mexico"	"35"	"Rio Arriba County, NM"	"35039"	"2014"	"2014"	40	39777	100.6
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2006"	"2006"	Suppressed	19186	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2007"	"2007"	Suppressed	19359	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2008"	"2008"	Suppressed	19074	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2009"	"2009"	0	19192	Unreliable
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2010"	"2010"	Suppressed	19846	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2011"	"2011"	0	20446	Unreliable
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2012"	"2012"	Suppressed	20419	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2013"	"2013"	Suppressed	19955	Suppressed
+	"New Mexico"	"35"	"Roosevelt County, NM"	"35041"	"2014"	"2014"	Suppressed	19536	Suppressed
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2006"	"2006"	15	114231	Unreliable
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2007"	"2007"	19	120401	Unreliable
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2008"	"2008"	24	125368	19.1
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2009"	"2009"	22	128985	17.1
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2010"	"2010"	19	131561	Unreliable
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2011"	"2011"	28	134259	20.9
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2012"	"2012"	24	135588	17.7
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2013"	"2013"	25	136575	18.3
+	"New Mexico"	"35"	"Sandoval County, NM"	"35043"	"2014"	"2014"	35	137608	25.4
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2006"	"2006"	14	125028	Unreliable
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2007"	"2007"	22	126149	17.4
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2008"	"2008"	18	126905	Unreliable
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2009"	"2009"	25	129359	19.3
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2010"	"2010"	19	130044	Unreliable
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2011"	"2011"	21	128200	16.4
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2012"	"2012"	28	128529	21.8
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2013"	"2013"	19	126503	Unreliable
+	"New Mexico"	"35"	"San Juan County, NM"	"35045"	"2014"	"2014"	22	123785	17.8
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2006"	"2006"	Suppressed	29388	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2007"	"2007"	Suppressed	29259	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2008"	"2008"	Suppressed	29234	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2009"	"2009"	Suppressed	29336	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2010"	"2010"	Suppressed	29393	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2011"	"2011"	13	29301	Unreliable
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2012"	"2012"	12	28891	Unreliable
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2013"	"2013"	Suppressed	28541	Suppressed
+	"New Mexico"	"35"	"San Miguel County, NM"	"35047"	"2014"	"2014"	12	28239	Unreliable
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2006"	"2006"	25	138786	18.0
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2007"	"2007"	31	140210	22.1
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2008"	"2008"	39	141704	27.5
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2009"	"2009"	24	143205	16.8
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2010"	"2010"	33	144170	22.9
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2011"	"2011"	42	145648	28.8
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2012"	"2012"	38	146375	26.0
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2013"	"2013"	47	147423	31.9
+	"New Mexico"	"35"	"Santa Fe County, NM"	"35049"	"2014"	"2014"	46	148164	31.0
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2006"	"2006"	0	11997	Unreliable
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2007"	"2007"	Suppressed	11812	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2008"	"2008"	Suppressed	11914	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2009"	"2009"	Suppressed	11940	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2010"	"2010"	Suppressed	11988	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2011"	"2011"	Suppressed	11943	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2012"	"2012"	Suppressed	11895	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2013"	"2013"	Suppressed	11572	Suppressed
+	"New Mexico"	"35"	"Sierra County, NM"	"35051"	"2014"	"2014"	Suppressed	11325	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2006"	"2006"	Suppressed	18081	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2007"	"2007"	Suppressed	17995	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2008"	"2008"	Suppressed	17966	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2009"	"2009"	Suppressed	17927	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2010"	"2010"	Suppressed	17866	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2011"	"2011"	Suppressed	17873	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2012"	"2012"	Suppressed	17603	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2013"	"2013"	Suppressed	17584	Suppressed
+	"New Mexico"	"35"	"Socorro County, NM"	"35053"	"2014"	"2014"	Suppressed	17310	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2006"	"2006"	Suppressed	32170	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2007"	"2007"	10	32485	Unreliable
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2008"	"2008"	10	32467	Unreliable
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2009"	"2009"	Suppressed	32792	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2010"	"2010"	Suppressed	32937	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2011"	"2011"	Suppressed	32917	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2012"	"2012"	14	32779	Unreliable
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2013"	"2013"	Suppressed	33035	Suppressed
+	"New Mexico"	"35"	"Taos County, NM"	"35055"	"2014"	"2014"	Suppressed	33084	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2006"	"2006"	Suppressed	16728	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2007"	"2007"	Suppressed	16559	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2008"	"2008"	Suppressed	16257	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2009"	"2009"	Suppressed	16414	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2010"	"2010"	Suppressed	16383	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2011"	"2011"	Suppressed	16345	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2012"	"2012"	Suppressed	16021	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2013"	"2013"	Suppressed	15717	Suppressed
+	"New Mexico"	"35"	"Torrance County, NM"	"35057"	"2014"	"2014"	Suppressed	15611	Suppressed
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2006"	"2006"	Suppressed	4210	Suppressed
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2007"	"2007"	0	4286	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2008"	"2008"	0	4380	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2009"	"2009"	Suppressed	4523	Suppressed
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2010"	"2010"	0	4549	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2011"	"2011"	0	4433	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2012"	"2012"	0	4431	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2013"	"2013"	0	4370	Unreliable
+	"New Mexico"	"35"	"Union County, NM"	"35059"	"2014"	"2014"	Suppressed	4297	Suppressed
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2006"	"2006"	25	71661	34.9
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2007"	"2007"	24	73703	32.6
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2008"	"2008"	15	74879	Unreliable
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2009"	"2009"	18	75770	Unreliable
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2010"	"2010"	22	76569	28.7
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2011"	"2011"	24	77070	31.1
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2012"	"2012"	13	76631	Unreliable
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2013"	"2013"	22	76284	28.8
+	"New Mexico"	"35"	"Valencia County, NM"	"35061"	"2014"	"2014"	20	75817	26.4
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: New Mexico (35)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:38:36 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:38:36 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

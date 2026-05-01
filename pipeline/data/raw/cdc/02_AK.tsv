@@ -1,0 +1,358 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2006"	"2006"	0	2794	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2007"	"2007"	0	3012	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2008"	"2008"	0	2991	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2009"	"2009"	0	3084	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2010"	"2010"	Suppressed	3141	Suppressed
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2011"	"2011"	0	3172	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2012"	"2012"	Suppressed	3161	Suppressed
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2013"	"2013"	0	3092	Unreliable
+	"Alaska"	"02"	"Aleutians East Borough, AK"	"02013"	"2014"	"2014"	0	3360	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2006"	"2006"	0	5658	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2007"	"2007"	Suppressed	5466	Suppressed
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2008"	"2008"	0	5393	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2009"	"2009"	0	5537	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2010"	"2010"	0	5561	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2011"	"2011"	0	5504	Unreliable
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2012"	"2012"	Suppressed	5547	Suppressed
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2013"	"2013"	Suppressed	5511	Suppressed
+	"Alaska"	"02"	"Aleutians West Census Area, AK"	"02016"	"2014"	"2014"	Suppressed	5750	Suppressed
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2006"	"2006"	29	280085	10.4
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2007"	"2007"	44	278792	15.8
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2008"	"2008"	60	281554	21.3
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2009"	"2009"	59	287677	20.5
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2010"	"2010"	38	291826	13.0
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2011"	"2011"	52	295570	17.6
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2012"	"2012"	62	298610	20.8
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2013"	"2013"	49	300950	16.3
+	"Alaska"	"02"	"Anchorage Borough, AK"	"02020"	"2014"	"2014"	58	301010	19.3
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2006"	"2006"	Suppressed	16755	Suppressed
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2007"	"2007"	Suppressed	16723	Suppressed
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2008"	"2008"	Suppressed	16762	Suppressed
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2009"	"2009"	Suppressed	16860	Suppressed
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2010"	"2010"	0	17013	Unreliable
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2011"	"2011"	0	17416	Unreliable
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2012"	"2012"	Suppressed	17746	Suppressed
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2013"	"2013"	0	17758	Unreliable
+	"Alaska"	"02"	"Bethel Census Area, AK"	"02050"	"2014"	"2014"	0	17868	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2006"	"2006"	0	1111	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2007"	"2007"	0	1076	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2008"	"2008"	Suppressed	1040	Suppressed
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2009"	"2009"	0	976	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2010"	"2010"	0	997	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2011"	"2011"	0	1030	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2012"	"2012"	0	991	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2013"	"2013"	0	960	Unreliable
+	"Alaska"	"02"	"Bristol Bay Borough, AK"	"02060"	"2014"	"2014"	0	957	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2006"	"2006"	0	1837	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2007"	"2007"	0	1803	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2008"	"2008"	0	1803	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2009"	"2009"	0	1817	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2010"	"2010"	0	1826	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2011"	"2011"	0	1855	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2012"	"2012"	0	1875	Unreliable
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2013"	"2013"	Suppressed	1867	Suppressed
+	"Alaska"	"02"	"Denali Borough, AK"	"02068"	"2014"	"2014"	Suppressed	1921	Suppressed
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2006"	"2006"	0	4833	Unreliable
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2007"	"2007"	0	4832	Unreliable
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2008"	"2008"	0	4769	Unreliable
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2009"	"2009"	0	4776	Unreliable
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2010"	"2010"	Suppressed	4847	Suppressed
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2011"	"2011"	Suppressed	4975	Suppressed
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2012"	"2012"	0	5034	Unreliable
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2013"	"2013"	Suppressed	5010	Suppressed
+	"Alaska"	"02"	"Dillingham Census Area, AK"	"02070"	"2014"	"2014"	Suppressed	4988	Suppressed
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2006"	"2006"	Suppressed	90545	Suppressed
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2007"	"2007"	Suppressed	93545	Suppressed
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2008"	"2008"	14	94552	Unreliable
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2009"	"2009"	20	95238	21.0
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2010"	"2010"	10	97581	Unreliable
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2011"	"2011"	10	99192	Unreliable
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2012"	"2012"	10	100272	Unreliable
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2013"	"2013"	12	100436	Unreliable
+	"Alaska"	"02"	"Fairbanks North Star Borough, AK"	"02090"	"2014"	"2014"	17	99357	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2006"	"2006"	Suppressed	2300	Suppressed
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2007"	"2007"	0	2379	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2008"	"2008"	0	2404	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2009"	"2009"	Suppressed	2486	Suppressed
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2010"	"2010"	0	2508	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2011"	"2011"	0	2554	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2012"	"2012"	0	2552	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2013"	"2013"	0	2592	Unreliable
+	"Alaska"	"02"	"Haines Borough, AK"	"02100"	"2014"	"2014"	0	2566	Unreliable
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2006"	"2006"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2007"	"2007"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2008"	"2008"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2009"	"2009"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2010"	"2010"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2011"	"2011"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2012"	"2012"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2013"	"2013"	Missing	Missing	Missing
+	"Alaska"	"02"	"Hoonah-Angoon Census Area, AK"	"02105"	"2014"	"2014"	Suppressed	2082	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2006"	"2006"	Suppressed	30808	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2007"	"2007"	Suppressed	30682	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2008"	"2008"	Suppressed	31110	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2009"	"2009"	Suppressed	30857	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2010"	"2010"	Suppressed	31275	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2011"	"2011"	Suppressed	32164	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2012"	"2012"	Suppressed	32556	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2013"	"2013"	Suppressed	32660	Suppressed
+	"Alaska"	"02"	"Juneau Borough, AK"	"02110"	"2014"	"2014"	Suppressed	32406	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2006"	"2006"	Suppressed	52253	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2007"	"2007"	Suppressed	53272	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2008"	"2008"	10	53655	Unreliable
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2009"	"2009"	14	54796	Unreliable
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2010"	"2010"	Suppressed	55400	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2011"	"2011"	Suppressed	56293	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2012"	"2012"	12	56900	Unreliable
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2013"	"2013"	Suppressed	57147	Suppressed
+	"Alaska"	"02"	"Kenai Peninsula Borough, AK"	"02122"	"2014"	"2014"	10	57477	Unreliable
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2006"	"2006"	0	13492	Unreliable
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2007"	"2007"	0	13341	Unreliable
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2008"	"2008"	Suppressed	13326	Suppressed
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2009"	"2009"	Suppressed	13294	Suppressed
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2010"	"2010"	0	13477	Unreliable
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2011"	"2011"	Suppressed	13593	Suppressed
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2012"	"2012"	Suppressed	13779	Suppressed
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2013"	"2013"	Suppressed	13729	Suppressed
+	"Alaska"	"02"	"Ketchikan Gateway Borough, AK"	"02130"	"2014"	"2014"	Suppressed	13787	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2006"	"2006"	Suppressed	13184	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2007"	"2007"	0	13159	Unreliable
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2008"	"2008"	Suppressed	13262	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2009"	"2009"	Suppressed	13505	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2010"	"2010"	Suppressed	13592	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2011"	"2011"	Suppressed	13872	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2012"	"2012"	Suppressed	14239	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2013"	"2013"	Suppressed	14135	Suppressed
+	"Alaska"	"02"	"Kodiak Island Borough, AK"	"02150"	"2014"	"2014"	Suppressed	13986	Suppressed
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2006"	"2006"	0	1624	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2007"	"2007"	0	1629	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2008"	"2008"	0	1606	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2009"	"2009"	Suppressed	1612	Suppressed
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2010"	"2010"	0	1631	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2011"	"2011"	0	1668	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2012"	"2012"	0	1654	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2013"	"2013"	0	1648	Unreliable
+	"Alaska"	"02"	"Lake and Peninsula Borough, AK"	"02164"	"2014"	"2014"	0	1631	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2006"	"2006"	13	78633	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2007"	"2007"	10	81402	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2008"	"2008"	20	84079	23.8
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2009"	"2009"	19	86885	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2010"	"2010"	10	88995	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2011"	"2011"	19	91946	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2012"	"2012"	24	93925	25.6
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2013"	"2013"	12	95192	Unreliable
+	"Alaska"	"02"	"Matanuska-Susitna Borough, AK"	"02170"	"2014"	"2014"	19	97882	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2006"	"2006"	Suppressed	9235	Suppressed
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2007"	"2007"	0	9246	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2008"	"2008"	0	9231	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2009"	"2009"	Suppressed	9313	Suppressed
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2010"	"2010"	0	9492	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2011"	"2011"	0	9856	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2012"	"2012"	Suppressed	9915	Suppressed
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2013"	"2013"	0	9892	Unreliable
+	"Alaska"	"02"	"Nome Census Area, AK"	"02180"	"2014"	"2014"	Suppressed	9817	Suppressed
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2006"	"2006"	0	8315	Unreliable
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2007"	"2007"	Suppressed	8519	Suppressed
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2008"	"2008"	0	8841	Unreliable
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2009"	"2009"	0	9105	Unreliable
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2010"	"2010"	0	9430	Unreliable
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2011"	"2011"	0	9503	Unreliable
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2012"	"2012"	Suppressed	9643	Suppressed
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2013"	"2013"	Suppressed	9686	Suppressed
+	"Alaska"	"02"	"North Slope Borough, AK"	"02185"	"2014"	"2014"	0	9703	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2006"	"2006"	0	7467	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2007"	"2007"	0	7440	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2008"	"2008"	Suppressed	7466	Suppressed
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2009"	"2009"	0	7467	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2010"	"2010"	0	7523	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2011"	"2011"	0	7733	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2012"	"2012"	0	7810	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2013"	"2013"	0	7685	Unreliable
+	"Alaska"	"02"	"Northwest Arctic Borough, AK"	"02188"	"2014"	"2014"	0	7717	Unreliable
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2006"	"2006"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2007"	"2007"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2008"	"2008"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2009"	"2009"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2010"	"2010"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2011"	"2011"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2012"	"2012"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2013"	"2013"	Missing	Missing	Missing
+	"Alaska"	"02"	"Petersburg Borough/Census Area, AK"	"02195"	"2014"	"2014"	0	3160	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2006"	"2006"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2007"	"2007"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2008"	"2008"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2009"	"2009"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2010"	"2010"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2011"	"2011"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2012"	"2012"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2013"	"2013"	Missing	Missing	Missing
+	"Alaska"	"02"	"Prince of Wales-Hyder Census Area, AK"	"02198"	"2014"	"2014"	Suppressed	6396	Suppressed
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2006"	"2006"	Suppressed	5574	Suppressed
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2007"	"2007"	0	5457	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2008"	"2008"	Suppressed	5448	Suppressed
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2009"	"2009"	0	5465	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2010"	"2010"	0	5559	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2011"	"2011"	0	5737	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2012"	"2012"	Suppressed	5751	Suppressed
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2013"	"2013"	0	5786	Unreliable
+	"Alaska"	"02"	"Prince of Wales-Outer Ketchikan Census Area, AK"	"02201"	"2014"	"2014"	Missing	Missing	Missing
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2006"	"2006"	0	9046	Unreliable
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2007"	"2007"	Suppressed	8851	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2008"	"2008"	Suppressed	8835	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2009"	"2009"	Suppressed	8844	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2010"	"2010"	Suppressed	8881	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2011"	"2011"	0	8952	Unreliable
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2012"	"2012"	Suppressed	9046	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2013"	"2013"	Suppressed	9020	Suppressed
+	"Alaska"	"02"	"Sitka Borough, AK"	"02220"	"2014"	"2014"	Suppressed	8900	Suppressed
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2006"	"2006"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2007"	"2007"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2008"	"2008"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2009"	"2009"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2010"	"2010"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2011"	"2011"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2012"	"2012"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2013"	"2013"	Missing	Missing	Missing
+	"Alaska"	"02"	"Skagway Municipality, AK"	"02230"	"2014"	"2014"	0	1036	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2006"	"2006"	Suppressed	3217	Suppressed
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2007"	"2007"	0	3197	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2008"	"2008"	0	3192	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2009"	"2009"	0	3119	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2010"	"2010"	0	3118	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2011"	"2011"	0	3047	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2012"	"2012"	0	3088	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2013"	"2013"	0	3140	Unreliable
+	"Alaska"	"02"	"Skagway-Hoonah-Angoon Census Area, AK"	"02232"	"2014"	"2014"	Missing	Missing	Missing
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2006"	"2006"	Suppressed	6817	Suppressed
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2007"	"2007"	0	6945	Unreliable
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2008"	"2008"	Suppressed	6904	Suppressed
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2009"	"2009"	0	6955	Unreliable
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2010"	"2010"	Suppressed	7029	Suppressed
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2011"	"2011"	Suppressed	7132	Suppressed
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2012"	"2012"	0	7144	Unreliable
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2013"	"2013"	Suppressed	6985	Suppressed
+	"Alaska"	"02"	"Southeast Fairbanks Census Area, AK"	"02240"	"2014"	"2014"	0	6931	Unreliable
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2006"	"2006"	Suppressed	9828	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2007"	"2007"	Suppressed	9572	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2008"	"2008"	Suppressed	9458	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2009"	"2009"	Suppressed	9492	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2010"	"2010"	Suppressed	9636	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2011"	"2011"	Suppressed	9770	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2012"	"2012"	0	9717	Unreliable
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2013"	"2013"	Suppressed	9763	Suppressed
+	"Alaska"	"02"	"Valdez-Cordova Census Area, AK"	"02261"	"2014"	"2014"	Suppressed	9488	Suppressed
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2006"	"2006"	Suppressed	7292	Suppressed
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2007"	"2007"	0	7372	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2008"	"2008"	Suppressed	7392	Suppressed
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2009"	"2009"	0	7469	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2010"	"2010"	0	7459	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2011"	"2011"	0	7662	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2012"	"2012"	0	7809	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2013"	"2013"	0	7977	Unreliable
+	"Alaska"	"02"	"Wade Hampton Census Area, AK"	"02270"	"2014"	"2014"	0	8010	Unreliable
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2006"	"2006"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2007"	"2007"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2008"	"2008"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2009"	"2009"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2010"	"2010"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2011"	"2011"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2012"	"2012"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2013"	"2013"	Missing	Missing	Missing
+	"Alaska"	"02"	"Wrangell City and Borough, AK"	"02275"	"2014"	"2014"	0	2364	Unreliable
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2006"	"2006"	Suppressed	6195	Suppressed
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2007"	"2007"	0	6220	Unreliable
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2008"	"2008"	Suppressed	6170	Suppressed
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2009"	"2009"	Suppressed	6106	Suppressed
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2010"	"2010"	Suppressed	6184	Suppressed
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2011"	"2011"	0	6220	Unreliable
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2012"	"2012"	0	6247	Unreliable
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2013"	"2013"	0	6174	Unreliable
+	"Alaska"	"02"	"Wrangell-Petersburg Census Area, AK"	"02280"	"2014"	"2014"	Missing	Missing	Missing
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2006"	"2006"	0	642	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2007"	"2007"	0	656	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2008"	"2008"	0	627	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2009"	"2009"	0	665	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2010"	"2010"	0	662	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2011"	"2011"	0	646	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2012"	"2012"	0	668	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2013"	"2013"	0	642	Unreliable
+	"Alaska"	"02"	"Yakutat Borough, AK"	"02282"	"2014"	"2014"	0	635	Unreliable
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2006"	"2006"	Suppressed	5762	Suppressed
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2007"	"2007"	0	5712	Unreliable
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2008"	"2008"	Suppressed	5585	Suppressed
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2009"	"2009"	Suppressed	5495	Suppressed
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2010"	"2010"	Suppressed	5588	Suppressed
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2011"	"2011"	Suppressed	5656	Suppressed
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2012"	"2012"	0	5770	Unreliable
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2013"	"2013"	0	5695	Unreliable
+	"Alaska"	"02"	"Yukon-Koyukuk Census Area, AK"	"02290"	"2014"	"2014"	0	5547	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Alaska (02)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:09:42 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:09:42 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Footnotes:
+"1. Data are not available for this area for all of the requested years. See Caveats below for more information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data for Prince of Wales-Hyder Census Area, AK (FIPS code 02198), Hoonah-Angoon Census Area, AK (FIPS code 02105), Skagway"
+"Municipality, AK (FIPS code 02230), Petersburg Borough/Census Area, AK (FIPS code 02195) and Wrangell City and Borough, AK (FIPS"
+"code 02275) are only available for 2014 and later; for computational purposes, counts and population estimates for 2013 and"
+"earlier are set to zero. Thus, counts and rates shown in multi-year requests for this entity do not include any data for years"
+"before 2014, only data for 2014 and later. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Alaska2014."
+"3. Data for Prince of Wales-Outer Ketchikan Census Area, AK (FIPS code 02201), Skagway-Hoonah-Angoon Census Area, AK (FIPS code"
+"02232) and Wrangell-Petersburg Census Area, AK (FIPS code 02280) are only available for 2013 and earlier; for computational"
+"purposes, counts and population estimates for 2014 and later are set to zero. Thus, counts and rates shown in multi-year"
+"requests for this entity do not include any data for years after 2013, only data for 2013 and earlier. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Alaska2014."
+"4. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"5. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"6. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

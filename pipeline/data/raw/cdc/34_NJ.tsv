@@ -1,0 +1,250 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2006"	"2006"	40	271759	14.7
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2007"	"2007"	34	272303	12.5
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2008"	"2008"	38	273014	13.9
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2009"	"2009"	14	274049	Unreliable
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2010"	"2010"	48	274549	17.5
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2011"	"2011"	59	274338	21.5
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2012"	"2012"	72	275422	26.1
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2013"	"2013"	70	275862	25.4
+	"New Jersey"	"34"	"Atlantic County, NJ"	"34001"	"2014"	"2014"	62	275209	22.5
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2006"	"2006"	49	889406	5.5
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2007"	"2007"	67	890817	7.5
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2008"	"2008"	62	895328	6.9
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2009"	"2009"	Suppressed	900319	Suppressed
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2010"	"2010"	56	905116	6.2
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2011"	"2011"	75	911004	8.2
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2012"	"2012"	79	918888	8.6
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2013"	"2013"	98	925328	10.6
+	"New Jersey"	"34"	"Bergen County, NJ"	"34003"	"2014"	"2014"	88	933572	9.4
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2006"	"2006"	52	448373	11.6
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2007"	"2007"	34	447560	7.6
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2008"	"2008"	38	446831	8.5
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2009"	"2009"	37	447391	8.3
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2010"	"2010"	52	448734	11.6
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2011"	"2011"	59	449576	13.1
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2012"	"2012"	77	451336	17.1
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2013"	"2013"	87	450838	19.3
+	"New Jersey"	"34"	"Burlington County, NJ"	"34005"	"2014"	"2014"	73	449722	16.2
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2006"	"2006"	143	513195	27.9
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2007"	"2007"	103	513546	20.1
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2008"	"2008"	89	513853	17.3
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2009"	"2009"	64	513668	12.5
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2010"	"2010"	98	513657	19.1
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2011"	"2011"	120	513241	23.4
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2012"	"2012"	129	513539	25.1
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2013"	"2013"	143	512854	27.9
+	"New Jersey"	"34"	"Camden County, NJ"	"34007"	"2014"	"2014"	130	511038	25.4
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2006"	"2006"	28	98695	28.4
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2007"	"2007"	Suppressed	97686	Suppressed
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2008"	"2008"	12	97550	Unreliable
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2009"	"2009"	Suppressed	97238	Suppressed
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2010"	"2010"	Suppressed	97265	Suppressed
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2011"	"2011"	15	96601	Unreliable
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2012"	"2012"	26	96304	27.0
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2013"	"2013"	33	95897	34.4
+	"New Jersey"	"34"	"Cape May County, NJ"	"34009"	"2014"	"2014"	17	95344	Unreliable
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2006"	"2006"	19	153371	Unreliable
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2007"	"2007"	11	154489	Unreliable
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2008"	"2008"	Suppressed	155738	Suppressed
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2009"	"2009"	Suppressed	156531	Suppressed
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2010"	"2010"	10	156898	Unreliable
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2011"	"2011"	15	157095	Unreliable
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2012"	"2012"	26	157785	16.5
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2013"	"2013"	25	157332	15.9
+	"New Jersey"	"34"	"Cumberland County, NJ"	"34011"	"2014"	"2014"	29	157389	18.4
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2006"	"2006"	96	781027	12.3
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2007"	"2007"	64	778996	8.2
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2008"	"2008"	56	778165	7.2
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2009"	"2009"	Suppressed	781943	Suppressed
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2010"	"2010"	77	783969	9.8
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2011"	"2011"	67	785137	8.5
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2012"	"2012"	97	787744	12.3
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2013"	"2013"	111	789565	14.1
+	"New Jersey"	"34"	"Essex County, NJ"	"34013"	"2014"	"2014"	94	795723	11.8
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2006"	"2006"	86	280015	30.7
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2007"	"2007"	49	284086	17.2
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2008"	"2008"	44	286072	15.4
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2009"	"2009"	31	287362	10.8
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2010"	"2010"	50	288288	17.3
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2011"	"2011"	59	289104	20.4
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2012"	"2012"	76	289586	26.2
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2013"	"2013"	83	290265	28.6
+	"New Jersey"	"34"	"Gloucester County, NJ"	"34015"	"2014"	"2014"	65	290951	22.3
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2006"	"2006"	42	613577	6.8
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2007"	"2007"	36	613637	5.9
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2008"	"2008"	44	619533	7.1
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2009"	"2009"	Suppressed	628572	Suppressed
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2010"	"2010"	40	634266	6.3
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2011"	"2011"	50	641224	7.8
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2012"	"2012"	71	652302	10.9
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2013"	"2013"	65	660282	9.8
+	"New Jersey"	"34"	"Hudson County, NJ"	"34017"	"2014"	"2014"	51	669115	7.6
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2006"	"2006"	Suppressed	128535	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2007"	"2007"	Suppressed	128568	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2008"	"2008"	12	128449	Unreliable
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2009"	"2009"	Suppressed	128364	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2010"	"2010"	Suppressed	128349	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2011"	"2011"	Suppressed	128038	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2012"	"2012"	Suppressed	127050	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2013"	"2013"	Suppressed	126250	Suppressed
+	"New Jersey"	"34"	"Hunterdon County, NJ"	"34019"	"2014"	"2014"	15	126067	Unreliable
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2006"	"2006"	10	362840	Unreliable
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2007"	"2007"	32	363088	8.8
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2008"	"2008"	16	364119	Unreliable
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2009"	"2009"	Suppressed	365388	Suppressed
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2010"	"2010"	38	366513	10.4
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2011"	"2011"	38	367063	10.4
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2012"	"2012"	36	368303	9.8
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2013"	"2013"	46	370414	12.4
+	"New Jersey"	"34"	"Mercer County, NJ"	"34021"	"2014"	"2014"	44	371537	11.8
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2006"	"2006"	46	786890	5.8
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2007"	"2007"	54	792137	6.8
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2008"	"2008"	59	799191	7.4
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2009"	"2009"	17	805204	Unreliable
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2010"	"2010"	61	809858	7.5
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2011"	"2011"	75	814217	9.2
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2012"	"2012"	100	823041	12.2
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2013"	"2013"	75	828919	9.0
+	"New Jersey"	"34"	"Middlesex County, NJ"	"34023"	"2014"	"2014"	116	836297	13.9
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2006"	"2006"	56	626934	8.9
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2007"	"2007"	50	626644	8.0
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2008"	"2008"	43	627348	6.9
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2009"	"2009"	11	628669	Unreliable
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2010"	"2010"	73	630380	11.6
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2011"	"2011"	96	631020	15.2
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2012"	"2012"	95	629384	15.1
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2013"	"2013"	78	629672	12.4
+	"New Jersey"	"34"	"Monmouth County, NJ"	"34025"	"2014"	"2014"	109	629279	17.3
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2006"	"2006"	27	487486	5.5
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2007"	"2007"	22	488355	4.5
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2008"	"2008"	37	489743	7.6
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2009"	"2009"	Suppressed	490779	Suppressed
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2010"	"2010"	45	492276	9.1
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2011"	"2011"	44	494976	8.9
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2012"	"2012"	55	497999	11.0
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2013"	"2013"	45	499397	9.0
+	"New Jersey"	"34"	"Morris County, NJ"	"34027"	"2014"	"2014"	53	499727	10.6
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2006"	"2006"	36	561302	6.4
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2007"	"2007"	62	565356	11.0
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2008"	"2008"	51	569485	9.0
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2009"	"2009"	Suppressed	573123	Suppressed
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2010"	"2010"	64	576567	11.1
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2011"	"2011"	84	579369	14.5
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2012"	"2012"	121	580470	20.8
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2013"	"2013"	146	583414	25.0
+	"New Jersey"	"34"	"Ocean County, NJ"	"34029"	"2014"	"2014"	133	586301	22.7
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2006"	"2006"	36	492730	7.3
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2007"	"2007"	30	492886	6.1
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2008"	"2008"	36	494904	7.3
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2009"	"2009"	Suppressed	498641	Suppressed
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2010"	"2010"	42	501226	8.4
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2011"	"2011"	43	502007	8.6
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2012"	"2012"	51	502885	10.1
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2013"	"2013"	63	505672	12.5
+	"New Jersey"	"34"	"Passaic County, NJ"	"34031"	"2014"	"2014"	51	508856	10.0
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2006"	"2006"	18	65831	Unreliable
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2007"	"2007"	11	65864	Unreliable
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2008"	"2008"	Suppressed	65974	Suppressed
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2009"	"2009"	Suppressed	66183	Suppressed
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2010"	"2010"	Suppressed	66083	Suppressed
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2011"	"2011"	15	65902	Unreliable
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2012"	"2012"	10	65774	Unreliable
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2013"	"2013"	Suppressed	65166	Suppressed
+	"New Jersey"	"34"	"Salem County, NJ"	"34033"	"2014"	"2014"	10	64715	Unreliable
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2006"	"2006"	18	314993	Unreliable
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2007"	"2007"	13	317128	Unreliable
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2008"	"2008"	13	318856	Unreliable
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2009"	"2009"	Suppressed	321564	Suppressed
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2010"	"2010"	17	323444	Unreliable
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2011"	"2011"	28	324893	8.6
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2012"	"2012"	23	327707	7.0
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2013"	"2013"	38	330585	11.5
+	"New Jersey"	"34"	"Somerset County, NJ"	"34035"	"2014"	"2014"	34	332568	10.2
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2006"	"2006"	10	150508	Unreliable
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2007"	"2007"	Suppressed	150600	Suppressed
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2008"	"2008"	Suppressed	150145	Suppressed
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2009"	"2009"	Suppressed	149487	Suppressed
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2010"	"2010"	23	149265	15.4
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2011"	"2011"	18	148517	Unreliable
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2012"	"2012"	20	147442	13.6
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2013"	"2013"	16	145992	Unreliable
+	"New Jersey"	"34"	"Sussex County, NJ"	"34037"	"2014"	"2014"	14	144909	Unreliable
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2006"	"2006"	22	525153	4.2
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2007"	"2007"	28	524960	5.3
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2008"	"2008"	26	527528	4.9
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2009"	"2009"	13	532434	Unreliable
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2010"	"2010"	38	536499	7.1
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2011"	"2011"	29	539494	5.4
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2012"	"2012"	39	543976	7.2
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2013"	"2013"	44	548256	8.0
+	"New Jersey"	"34"	"Union County, NJ"	"34039"	"2014"	"2014"	47	552939	8.5
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2006"	"2006"	Suppressed	109059	Suppressed
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2007"	"2007"	Suppressed	109179	Suppressed
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2008"	"2008"	Suppressed	109264	Suppressed
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2009"	"2009"	Suppressed	108693	Suppressed
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2010"	"2010"	15	108692	Unreliable
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2011"	"2011"	14	108339	Unreliable
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2012"	"2012"	12	107653	Unreliable
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2013"	"2013"	13	107379	Unreliable
+	"New Jersey"	"34"	"Warren County, NJ"	"34041"	"2014"	"2014"	18	106917	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: New Jersey (34)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:38:16 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:38:16 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"5. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

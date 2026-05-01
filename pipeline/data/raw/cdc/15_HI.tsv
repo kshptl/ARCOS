@@ -1,0 +1,98 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2006"	"2006"	14	173536	Unreliable
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2007"	"2007"	19	177733	Unreliable
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2008"	"2008"	25	181506	13.8
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2009"	"2009"	31	183629	16.9
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2010"	"2010"	19	185079	Unreliable
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2011"	"2011"	23	186738	12.3
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2012"	"2012"	18	189191	Unreliable
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2013"	"2013"	24	190821	12.6
+	"Hawaii"	"15"	"Hawaii County, HI"	"15001"	"2014"	"2014"	21	194190	10.8
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2006"	"2006"	64	926954	6.9
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2007"	"2007"	96	925335	10.4
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2008"	"2008"	87	933680	9.3
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2009"	"2009"	94	943177	10.0
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2010"	"2010"	107	953207	11.2
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2011"	"2011"	115	963607	11.9
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2012"	"2012"	103	976372	10.5
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2013"	"2013"	111	983429	11.3
+	"Hawaii"	"15"	"Honolulu County, HI"	"15003"	"2014"	"2014"	103	991788	10.4
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2006"	"2006"	0	109	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2007"	"2007"	0	105	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2008"	"2008"	0	99	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2009"	"2009"	0	93	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2010"	"2010"	0	90	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2011"	"2011"	0	90	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2012"	"2012"	0	90	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2013"	"2013"	0	90	Unreliable
+	"Hawaii"	"15"	"Kalawao County, HI"	"15005"	"2014"	"2014"	0	89	Unreliable
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2006"	"2006"	Suppressed	63465	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2007"	"2007"	10	64490	Unreliable
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2008"	"2008"	Suppressed	65603	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2009"	"2009"	Suppressed	66518	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2010"	"2010"	Suppressed	67091	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2011"	"2011"	Suppressed	67701	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2012"	"2012"	Suppressed	68434	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2013"	"2013"	Suppressed	69512	Suppressed
+	"Hawaii"	"15"	"Kauai County, HI"	"15007"	"2014"	"2014"	Suppressed	70475	Suppressed
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2006"	"2006"	Suppressed	145667	Suppressed
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2007"	"2007"	11	148012	Unreliable
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2008"	"2008"	Suppressed	151325	Suppressed
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2009"	"2009"	Suppressed	153300	Suppressed
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2010"	"2010"	20	154834	12.9
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2011"	"2011"	38	156674	24.3
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2012"	"2012"	29	158226	18.3
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2013"	"2013"	20	160202	12.5
+	"Hawaii"	"15"	"Maui County, HI"	"15009"	"2014"	"2014"	25	163019	15.3
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Hawaii (15)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:31:36 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:31:36 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

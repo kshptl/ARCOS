@@ -1,0 +1,705 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2006"	"2006"	Suppressed	21185	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2007"	"2007"	Suppressed	21156	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2008"	"2008"	Suppressed	21101	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2009"	"2009"	Suppressed	20930	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2010"	"2010"	Suppressed	20875	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2011"	"2011"	Suppressed	20733	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2012"	"2012"	Suppressed	20679	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2013"	"2013"	Suppressed	20480	Suppressed
+	"Wisconsin"	"55"	"Adams County, WI"	"55001"	"2014"	"2014"	Suppressed	20215	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2006"	"2006"	Suppressed	16408	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2007"	"2007"	Suppressed	16199	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2008"	"2008"	0	16145	Unreliable
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2009"	"2009"	Suppressed	16128	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2010"	"2010"	0	16157	Unreliable
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2011"	"2011"	Suppressed	16142	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2012"	"2012"	0	15992	Unreliable
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2013"	"2013"	Suppressed	16016	Suppressed
+	"Wisconsin"	"55"	"Ashland County, WI"	"55003"	"2014"	"2014"	Suppressed	16103	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2006"	"2006"	0	45968	Unreliable
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2007"	"2007"	Suppressed	45874	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2008"	"2008"	Suppressed	46009	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2009"	"2009"	Suppressed	45876	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2010"	"2010"	Suppressed	45870	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2011"	"2011"	Suppressed	45883	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2012"	"2012"	Suppressed	45733	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2013"	"2013"	Suppressed	45676	Suppressed
+	"Wisconsin"	"55"	"Barron County, WI"	"55005"	"2014"	"2014"	Suppressed	45455	Suppressed
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2006"	"2006"	0	15172	Unreliable
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2007"	"2007"	0	15255	Unreliable
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2008"	"2008"	Suppressed	15160	Suppressed
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2009"	"2009"	Suppressed	14981	Suppressed
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2010"	"2010"	0	15014	Unreliable
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2011"	"2011"	Suppressed	15099	Suppressed
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2012"	"2012"	0	15099	Unreliable
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2013"	"2013"	Suppressed	15156	Suppressed
+	"Wisconsin"	"55"	"Bayfield County, WI"	"55007"	"2014"	"2014"	Suppressed	14985	Suppressed
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2006"	"2006"	21	240191	8.7
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2007"	"2007"	22	242691	9.1
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2008"	"2008"	21	244016	8.6
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2009"	"2009"	25	246476	10.1
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2010"	"2010"	16	248007	Unreliable
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2011"	"2011"	28	251412	11.1
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2012"	"2012"	27	253032	10.7
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2013"	"2013"	29	254586	11.4
+	"Wisconsin"	"55"	"Brown County, WI"	"55009"	"2014"	"2014"	27	256670	10.5
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2006"	"2006"	Suppressed	13908	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2007"	"2007"	Suppressed	13885	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2008"	"2008"	Suppressed	13734	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2009"	"2009"	0	13618	Unreliable
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2010"	"2010"	Suppressed	13587	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2011"	"2011"	0	13539	Unreliable
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2012"	"2012"	Suppressed	13333	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2013"	"2013"	Suppressed	13357	Suppressed
+	"Wisconsin"	"55"	"Buffalo County, WI"	"55011"	"2014"	"2014"	Suppressed	13188	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2006"	"2006"	Suppressed	16056	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2007"	"2007"	Suppressed	15965	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2008"	"2008"	Suppressed	15696	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2009"	"2009"	Suppressed	15609	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2010"	"2010"	Suppressed	15457	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2011"	"2011"	Suppressed	15504	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2012"	"2012"	Suppressed	15382	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2013"	"2013"	Suppressed	15333	Suppressed
+	"Wisconsin"	"55"	"Burnett County, WI"	"55013"	"2014"	"2014"	Suppressed	15328	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2006"	"2006"	Suppressed	46809	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2007"	"2007"	Suppressed	47188	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2008"	"2008"	Suppressed	48014	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2009"	"2009"	Suppressed	48457	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2010"	"2010"	Suppressed	48971	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2011"	"2011"	0	49490	Unreliable
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2012"	"2012"	Suppressed	49634	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2013"	"2013"	Suppressed	49617	Suppressed
+	"Wisconsin"	"55"	"Calumet County, WI"	"55015"	"2014"	"2014"	Suppressed	49491	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2006"	"2006"	12	60271	Unreliable
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2007"	"2007"	Suppressed	61022	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2008"	"2008"	Suppressed	61524	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2009"	"2009"	Suppressed	61997	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2010"	"2010"	Suppressed	62415	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2011"	"2011"	Suppressed	62778	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2012"	"2012"	Suppressed	62922	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2013"	"2013"	Suppressed	63132	Suppressed
+	"Wisconsin"	"55"	"Chippewa County, WI"	"55017"	"2014"	"2014"	Suppressed	63460	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2006"	"2006"	Suppressed	34399	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2007"	"2007"	Suppressed	34435	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2008"	"2008"	Suppressed	34644	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2009"	"2009"	0	34589	Unreliable
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2010"	"2010"	0	34690	Unreliable
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2011"	"2011"	Suppressed	34742	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2012"	"2012"	0	34435	Unreliable
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2013"	"2013"	Suppressed	34615	Suppressed
+	"Wisconsin"	"55"	"Clark County, WI"	"55019"	"2014"	"2014"	Suppressed	34423	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2006"	"2006"	10	55820	Unreliable
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2007"	"2007"	Suppressed	56197	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2008"	"2008"	11	56362	Unreliable
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2009"	"2009"	Suppressed	56469	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2010"	"2010"	Suppressed	56833	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2011"	"2011"	Suppressed	56909	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2012"	"2012"	Suppressed	56539	Suppressed
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2013"	"2013"	14	56653	Unreliable
+	"Wisconsin"	"55"	"Columbia County, WI"	"55021"	"2014"	"2014"	Suppressed	56615	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2006"	"2006"	Suppressed	16953	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2007"	"2007"	Suppressed	16924	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2008"	"2008"	Suppressed	16808	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2009"	"2009"	Suppressed	16692	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2010"	"2010"	Suppressed	16644	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2011"	"2011"	Suppressed	16714	Suppressed
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2012"	"2012"	0	16560	Unreliable
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2013"	"2013"	0	16397	Unreliable
+	"Wisconsin"	"55"	"Crawford County, WI"	"55023"	"2014"	"2014"	Suppressed	16392	Suppressed
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2006"	"2006"	46	465018	9.9
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2007"	"2007"	44	471644	9.3
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2008"	"2008"	57	477791	11.9
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2009"	"2009"	50	484979	10.3
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2010"	"2010"	58	488073	11.9
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2011"	"2011"	79	495959	15.9
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2012"	"2012"	70	503523	13.9
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2013"	"2013"	88	509939	17.3
+	"Wisconsin"	"55"	"Dane County, WI"	"55025"	"2014"	"2014"	79	516284	15.3
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2006"	"2006"	Suppressed	89003	Suppressed
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2007"	"2007"	10	89007	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2008"	"2008"	11	89239	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2009"	"2009"	17	88677	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2010"	"2010"	12	88759	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2011"	"2011"	10	88661	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2012"	"2012"	Suppressed	88415	Suppressed
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2013"	"2013"	13	88344	Unreliable
+	"Wisconsin"	"55"	"Dodge County, WI"	"55027"	"2014"	"2014"	10	88574	Unreliable
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2006"	"2006"	0	28167	Unreliable
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2007"	"2007"	0	27957	Unreliable
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2008"	"2008"	Suppressed	28023	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2009"	"2009"	Suppressed	27919	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2010"	"2010"	Suppressed	27785	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2011"	"2011"	Suppressed	27820	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2012"	"2012"	Suppressed	27817	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2013"	"2013"	Suppressed	27896	Suppressed
+	"Wisconsin"	"55"	"Door County, WI"	"55029"	"2014"	"2014"	Suppressed	27766	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2006"	"2006"	Suppressed	43815	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2007"	"2007"	Suppressed	43710	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2008"	"2008"	Suppressed	43830	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2009"	"2009"	Suppressed	43998	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2010"	"2010"	Suppressed	44159	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2011"	"2011"	Suppressed	44105	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2012"	"2012"	Suppressed	43785	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2013"	"2013"	Suppressed	43887	Suppressed
+	"Wisconsin"	"55"	"Douglas County, WI"	"55031"	"2014"	"2014"	Suppressed	43698	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2006"	"2006"	Suppressed	42828	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2007"	"2007"	0	43148	Unreliable
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2008"	"2008"	Suppressed	43382	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2009"	"2009"	Suppressed	43570	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2010"	"2010"	Suppressed	43857	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2011"	"2011"	Suppressed	43971	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2012"	"2012"	Suppressed	44072	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2013"	"2013"	Suppressed	44122	Suppressed
+	"Wisconsin"	"55"	"Dunn County, WI"	"55033"	"2014"	"2014"	Suppressed	44305	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2006"	"2006"	11	95896	Unreliable
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2007"	"2007"	Suppressed	96632	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2008"	"2008"	Suppressed	97176	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2009"	"2009"	Suppressed	98274	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2010"	"2010"	Suppressed	98736	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2011"	"2011"	Suppressed	99879	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2012"	"2012"	Suppressed	100677	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2013"	"2013"	Suppressed	101438	Suppressed
+	"Wisconsin"	"55"	"Eau Claire County, WI"	"55035"	"2014"	"2014"	Suppressed	101564	Suppressed
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2006"	"2006"	0	4794	Unreliable
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2007"	"2007"	Suppressed	4682	Suppressed
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2008"	"2008"	0	4564	Unreliable
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2009"	"2009"	0	4494	Unreliable
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2010"	"2010"	0	4423	Unreliable
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2011"	"2011"	0	4440	Unreliable
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2012"	"2012"	Suppressed	4482	Suppressed
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2013"	"2013"	Suppressed	4520	Suppressed
+	"Wisconsin"	"55"	"Florence County, WI"	"55037"	"2014"	"2014"	0	4481	Unreliable
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2006"	"2006"	11	99920	Unreliable
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2007"	"2007"	Suppressed	100520	Suppressed
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2008"	"2008"	Suppressed	101122	Suppressed
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2009"	"2009"	Suppressed	101370	Suppressed
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2010"	"2010"	15	101633	Unreliable
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2011"	"2011"	Suppressed	102079	Suppressed
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2012"	"2012"	13	101843	Unreliable
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2013"	"2013"	Suppressed	101798	Suppressed
+	"Wisconsin"	"55"	"Fond du Lac County, WI"	"55039"	"2014"	"2014"	12	101759	Unreliable
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2006"	"2006"	Suppressed	9737	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2007"	"2007"	Suppressed	9639	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2008"	"2008"	Suppressed	9620	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2009"	"2009"	Suppressed	9396	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2010"	"2010"	Suppressed	9304	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2011"	"2011"	Suppressed	9236	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2012"	"2012"	Suppressed	9206	Suppressed
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2013"	"2013"	0	9126	Unreliable
+	"Wisconsin"	"55"	"Forest County, WI"	"55041"	"2014"	"2014"	Suppressed	9127	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2006"	"2006"	Suppressed	50051	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2007"	"2007"	Suppressed	50544	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2008"	"2008"	Suppressed	50834	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2009"	"2009"	Suppressed	50916	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2010"	"2010"	Suppressed	51208	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2011"	"2011"	Suppressed	51210	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2012"	"2012"	Suppressed	51087	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2013"	"2013"	Suppressed	51069	Suppressed
+	"Wisconsin"	"55"	"Grant County, WI"	"55043"	"2014"	"2014"	Suppressed	51829	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2006"	"2006"	Suppressed	35869	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2007"	"2007"	Suppressed	36234	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2008"	"2008"	Suppressed	36598	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2009"	"2009"	Suppressed	36672	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2010"	"2010"	Suppressed	36842	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2011"	"2011"	Suppressed	36891	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2012"	"2012"	Suppressed	36909	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2013"	"2013"	Suppressed	37090	Suppressed
+	"Wisconsin"	"55"	"Green County, WI"	"55045"	"2014"	"2014"	Suppressed	37063	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2006"	"2006"	Suppressed	19195	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2007"	"2007"	0	19144	Unreliable
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2008"	"2008"	Suppressed	19102	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2009"	"2009"	Suppressed	19056	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2010"	"2010"	Suppressed	19051	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2011"	"2011"	Suppressed	19094	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2012"	"2012"	0	19039	Unreliable
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2013"	"2013"	Suppressed	18959	Suppressed
+	"Wisconsin"	"55"	"Green Lake County, WI"	"55047"	"2014"	"2014"	Suppressed	18836	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2006"	"2006"	Suppressed	23589	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2007"	"2007"	Suppressed	23636	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2008"	"2008"	Suppressed	23701	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2009"	"2009"	0	23595	Unreliable
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2010"	"2010"	Suppressed	23687	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2011"	"2011"	Suppressed	23599	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2012"	"2012"	Suppressed	23807	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2013"	"2013"	Suppressed	23749	Suppressed
+	"Wisconsin"	"55"	"Iowa County, WI"	"55049"	"2014"	"2014"	Suppressed	23825	Suppressed
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2006"	"2006"	0	6236	Unreliable
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2007"	"2007"	Suppressed	6170	Suppressed
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2008"	"2008"	0	6101	Unreliable
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2009"	"2009"	Suppressed	5966	Suppressed
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2010"	"2010"	0	5916	Unreliable
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2011"	"2011"	0	5894	Unreliable
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2012"	"2012"	0	5934	Unreliable
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2013"	"2013"	Suppressed	5886	Suppressed
+	"Wisconsin"	"55"	"Iron County, WI"	"55051"	"2014"	"2014"	0	5917	Unreliable
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2006"	"2006"	Suppressed	20016	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2007"	"2007"	Suppressed	20227	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2008"	"2008"	Suppressed	20348	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2009"	"2009"	Suppressed	20372	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2010"	"2010"	Suppressed	20449	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2011"	"2011"	Suppressed	20565	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2012"	"2012"	Suppressed	20485	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2013"	"2013"	Suppressed	20644	Suppressed
+	"Wisconsin"	"55"	"Jackson County, WI"	"55053"	"2014"	"2014"	Suppressed	20652	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2006"	"2006"	Suppressed	81300	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2007"	"2007"	Suppressed	82276	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2008"	"2008"	10	83140	Unreliable
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2009"	"2009"	Suppressed	83480	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2010"	"2010"	Suppressed	83686	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2011"	"2011"	Suppressed	83943	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2012"	"2012"	Suppressed	84498	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2013"	"2013"	Suppressed	84509	Suppressed
+	"Wisconsin"	"55"	"Jefferson County, WI"	"55055"	"2014"	"2014"	14	84395	Unreliable
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2006"	"2006"	Suppressed	26695	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2007"	"2007"	Suppressed	26755	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2008"	"2008"	Suppressed	26825	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2009"	"2009"	Suppressed	26728	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2010"	"2010"	Suppressed	26664	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2011"	"2011"	Suppressed	26722	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2012"	"2012"	Suppressed	26631	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2013"	"2013"	Suppressed	26547	Suppressed
+	"Wisconsin"	"55"	"Juneau County, WI"	"55057"	"2014"	"2014"	Suppressed	26395	Suppressed
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2006"	"2006"	32	161607	19.8
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2007"	"2007"	35	163223	21.4
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2008"	"2008"	32	164636	19.4
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2009"	"2009"	34	165502	20.5
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2010"	"2010"	38	166426	22.8
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2011"	"2011"	29	167293	17.3
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2012"	"2012"	42	167936	25.0
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2013"	"2013"	46	167757	27.4
+	"Wisconsin"	"55"	"Kenosha County, WI"	"55059"	"2014"	"2014"	44	168068	26.2
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2006"	"2006"	Suppressed	20755	Suppressed
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2007"	"2007"	0	20694	Unreliable
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2008"	"2008"	0	20636	Unreliable
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2009"	"2009"	0	20555	Unreliable
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2010"	"2010"	0	20574	Unreliable
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2011"	"2011"	0	20589	Unreliable
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2012"	"2012"	Suppressed	20624	Suppressed
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2013"	"2013"	Suppressed	20505	Suppressed
+	"Wisconsin"	"55"	"Kewaunee County, WI"	"55061"	"2014"	"2014"	Suppressed	20444	Suppressed
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2006"	"2006"	Suppressed	110641	Suppressed
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2007"	"2007"	13	111798	Unreliable
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2008"	"2008"	Suppressed	112761	Suppressed
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2009"	"2009"	10	114021	Unreliable
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2010"	"2010"	14	114638	Unreliable
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2011"	"2011"	10	115572	Unreliable
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2012"	"2012"	Suppressed	116461	Suppressed
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2013"	"2013"	12	116713	Unreliable
+	"Wisconsin"	"55"	"La Crosse County, WI"	"55063"	"2014"	"2014"	Suppressed	118011	Suppressed
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2006"	"2006"	0	16785	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2007"	"2007"	0	16670	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2008"	"2008"	0	16768	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2009"	"2009"	Suppressed	16851	Suppressed
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2010"	"2010"	0	16836	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2011"	"2011"	0	16815	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2012"	"2012"	0	16853	Unreliable
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2013"	"2013"	Suppressed	16766	Suppressed
+	"Wisconsin"	"55"	"Lafayette County, WI"	"55065"	"2014"	"2014"	Suppressed	16853	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2006"	"2006"	0	20440	Unreliable
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2007"	"2007"	Suppressed	20379	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2008"	"2008"	Suppressed	20248	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2009"	"2009"	Suppressed	20086	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2010"	"2010"	Suppressed	19977	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2011"	"2011"	Suppressed	19786	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2012"	"2012"	Suppressed	19646	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2013"	"2013"	Suppressed	19575	Suppressed
+	"Wisconsin"	"55"	"Langlade County, WI"	"55067"	"2014"	"2014"	Suppressed	19410	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2006"	"2006"	Suppressed	29457	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2007"	"2007"	Suppressed	29272	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2008"	"2008"	0	29094	Unreliable
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2009"	"2009"	Suppressed	28833	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2010"	"2010"	Suppressed	28743	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2011"	"2011"	Suppressed	28602	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2012"	"2012"	Suppressed	28392	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2013"	"2013"	Suppressed	28684	Suppressed
+	"Wisconsin"	"55"	"Lincoln County, WI"	"55069"	"2014"	"2014"	Suppressed	28493	Suppressed
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2006"	"2006"	Suppressed	81869	Suppressed
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2007"	"2007"	10	81872	Unreliable
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2008"	"2008"	Suppressed	81698	Suppressed
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2009"	"2009"	10	81600	Unreliable
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2010"	"2010"	14	81442	Unreliable
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2011"	"2011"	Suppressed	80976	Suppressed
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2012"	"2012"	16	80671	Unreliable
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2013"	"2013"	11	80654	Unreliable
+	"Wisconsin"	"55"	"Manitowoc County, WI"	"55071"	"2014"	"2014"	15	80160	Unreliable
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2006"	"2006"	Suppressed	130516	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2007"	"2007"	Suppressed	131773	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2008"	"2008"	Suppressed	133036	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2009"	"2009"	Suppressed	133793	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2010"	"2010"	Suppressed	134063	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2011"	"2011"	Suppressed	134400	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2012"	"2012"	11	134735	Unreliable
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2013"	"2013"	Suppressed	135416	Suppressed
+	"Wisconsin"	"55"	"Marathon County, WI"	"55073"	"2014"	"2014"	Suppressed	135780	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2006"	"2006"	Suppressed	42389	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2007"	"2007"	Suppressed	42190	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2008"	"2008"	Suppressed	42019	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2009"	"2009"	Suppressed	41792	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2010"	"2010"	Suppressed	41749	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2011"	"2011"	Suppressed	41656	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2012"	"2012"	Suppressed	41563	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2013"	"2013"	Suppressed	41610	Suppressed
+	"Wisconsin"	"55"	"Marinette County, WI"	"55075"	"2014"	"2014"	Suppressed	41298	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2006"	"2006"	Suppressed	15437	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2007"	"2007"	Suppressed	15395	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2008"	"2008"	Suppressed	15485	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2009"	"2009"	Suppressed	15405	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2010"	"2010"	Suppressed	15404	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2011"	"2011"	Suppressed	15439	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2012"	"2012"	Suppressed	15205	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2013"	"2013"	Suppressed	15176	Suppressed
+	"Wisconsin"	"55"	"Marquette County, WI"	"55077"	"2014"	"2014"	Suppressed	15050	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2006"	"2006"	0	4312	Unreliable
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2007"	"2007"	Suppressed	4293	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2008"	"2008"	Suppressed	4214	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2009"	"2009"	Suppressed	4191	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2010"	"2010"	0	4232	Unreliable
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2011"	"2011"	Suppressed	4348	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2012"	"2012"	0	4340	Unreliable
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2013"	"2013"	Suppressed	4317	Suppressed
+	"Wisconsin"	"55"	"Menominee County, WI"	"55078"	"2014"	"2014"	Suppressed	4522	Suppressed
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2006"	"2006"	194	930263	20.9
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2007"	"2007"	190	931453	20.4
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2008"	"2008"	186	934752	19.9
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2009"	"2009"	173	942668	18.4
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2010"	"2010"	164	947735	17.3
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2011"	"2011"	191	952532	20.1
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2012"	"2012"	181	955205	18.9
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2013"	"2013"	234	956023	24.5
+	"Wisconsin"	"55"	"Milwaukee County, WI"	"55079"	"2014"	"2014"	249	956406	26.0
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2006"	"2006"	Suppressed	43208	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2007"	"2007"	Suppressed	43729	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2008"	"2008"	Suppressed	44157	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2009"	"2009"	Suppressed	44437	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2010"	"2010"	Suppressed	44673	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2011"	"2011"	Suppressed	45050	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2012"	"2012"	Suppressed	45100	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2013"	"2013"	Suppressed	45298	Suppressed
+	"Wisconsin"	"55"	"Monroe County, WI"	"55081"	"2014"	"2014"	10	45379	Unreliable
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2006"	"2006"	0	37756	Unreliable
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2007"	"2007"	Suppressed	37805	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2008"	"2008"	Suppressed	37816	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2009"	"2009"	Suppressed	37655	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2010"	"2010"	Suppressed	37660	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2011"	"2011"	Suppressed	37468	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2012"	"2012"	Suppressed	37442	Suppressed
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2013"	"2013"	0	37318	Unreliable
+	"Wisconsin"	"55"	"Oconto County, WI"	"55083"	"2014"	"2014"	Suppressed	37417	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2006"	"2006"	Suppressed	36746	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2007"	"2007"	Suppressed	36553	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2008"	"2008"	Suppressed	36500	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2009"	"2009"	Suppressed	36175	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2010"	"2010"	Suppressed	35998	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2011"	"2011"	Suppressed	35801	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2012"	"2012"	Suppressed	35714	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2013"	"2013"	Suppressed	35689	Suppressed
+	"Wisconsin"	"55"	"Oneida County, WI"	"55085"	"2014"	"2014"	Suppressed	35563	Suppressed
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2006"	"2006"	Suppressed	171632	Suppressed
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2007"	"2007"	Suppressed	173180	Suppressed
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2008"	"2008"	Suppressed	174388	Suppressed
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2009"	"2009"	10	176175	Unreliable
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2010"	"2010"	13	176695	Unreliable
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2011"	"2011"	11	177913	Unreliable
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2012"	"2012"	13	178816	Unreliable
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2013"	"2013"	13	180345	Unreliable
+	"Wisconsin"	"55"	"Outagamie County, WI"	"55087"	"2014"	"2014"	14	182006	Unreliable
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2006"	"2006"	Suppressed	85362	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2007"	"2007"	Suppressed	85597	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2008"	"2008"	Suppressed	85994	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2009"	"2009"	Suppressed	86409	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2010"	"2010"	Suppressed	86395	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2011"	"2011"	Suppressed	86568	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2012"	"2012"	Suppressed	86823	Suppressed
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2013"	"2013"	11	87054	Unreliable
+	"Wisconsin"	"55"	"Ozaukee County, WI"	"55089"	"2014"	"2014"	11	87470	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2006"	"2006"	0	7540	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2007"	"2007"	0	7557	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2008"	"2008"	0	7545	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2009"	"2009"	0	7480	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2010"	"2010"	0	7469	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2011"	"2011"	0	7412	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2012"	"2012"	0	7390	Unreliable
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2013"	"2013"	Suppressed	7360	Suppressed
+	"Wisconsin"	"55"	"Pepin County, WI"	"55091"	"2014"	"2014"	0	7335	Unreliable
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2006"	"2006"	Suppressed	39915	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2007"	"2007"	Suppressed	40238	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2008"	"2008"	Suppressed	40758	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2009"	"2009"	Suppressed	40613	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2010"	"2010"	Suppressed	41019	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2011"	"2011"	Suppressed	40862	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2012"	"2012"	Suppressed	40814	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2013"	"2013"	Suppressed	40976	Suppressed
+	"Wisconsin"	"55"	"Pierce County, WI"	"55093"	"2014"	"2014"	Suppressed	40958	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2006"	"2006"	Suppressed	44367	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2007"	"2007"	Suppressed	44318	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2008"	"2008"	Suppressed	44331	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2009"	"2009"	Suppressed	44376	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2010"	"2010"	Suppressed	44205	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2011"	"2011"	Suppressed	44040	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2012"	"2012"	Suppressed	43610	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2013"	"2013"	Suppressed	43476	Suppressed
+	"Wisconsin"	"55"	"Polk County, WI"	"55095"	"2014"	"2014"	Suppressed	43437	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2006"	"2006"	Suppressed	68481	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2007"	"2007"	10	69133	Unreliable
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2008"	"2008"	Suppressed	69641	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2009"	"2009"	Suppressed	69876	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2010"	"2010"	Suppressed	70019	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2011"	"2011"	Suppressed	70084	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2012"	"2012"	Suppressed	70433	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2013"	"2013"	Suppressed	70380	Suppressed
+	"Wisconsin"	"55"	"Portage County, WI"	"55097"	"2014"	"2014"	Suppressed	70482	Suppressed
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2006"	"2006"	Suppressed	14882	Suppressed
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2007"	"2007"	0	14561	Unreliable
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2008"	"2008"	Suppressed	14411	Suppressed
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2009"	"2009"	0	14297	Unreliable
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2010"	"2010"	0	14159	Unreliable
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2011"	"2011"	0	13994	Unreliable
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2012"	"2012"	Suppressed	13869	Suppressed
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2013"	"2013"	0	13802	Unreliable
+	"Wisconsin"	"55"	"Price County, WI"	"55099"	"2014"	"2014"	0	13675	Unreliable
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2006"	"2006"	21	193915	10.8
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2007"	"2007"	19	194395	Unreliable
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2008"	"2008"	24	194730	12.3
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2009"	"2009"	18	195130	Unreliable
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2010"	"2010"	18	195408	Unreliable
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2011"	"2011"	19	195388	Unreliable
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2012"	"2012"	28	194797	14.4
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2013"	"2013"	37	195041	19.0
+	"Wisconsin"	"55"	"Racine County, WI"	"55101"	"2014"	"2014"	46	195163	23.6
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2006"	"2006"	0	18299	Unreliable
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2007"	"2007"	Suppressed	18428	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2008"	"2008"	Suppressed	18205	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2009"	"2009"	Suppressed	18112	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2010"	"2010"	Suppressed	18021	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2011"	"2011"	Suppressed	17983	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2012"	"2012"	Suppressed	17818	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2013"	"2013"	Suppressed	17717	Suppressed
+	"Wisconsin"	"55"	"Richland County, WI"	"55103"	"2014"	"2014"	Suppressed	17662	Suppressed
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2006"	"2006"	22	158538	13.9
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2007"	"2007"	27	159912	16.9
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2008"	"2008"	14	160647	Unreliable
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2009"	"2009"	17	160411	Unreliable
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2010"	"2010"	24	160331	15.0
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2011"	"2011"	32	160092	20.0
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2012"	"2012"	25	160418	15.6
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2013"	"2013"	32	160739	19.9
+	"Wisconsin"	"55"	"Rock County, WI"	"55105"	"2014"	"2014"	31	161188	19.2
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2006"	"2006"	Suppressed	14945	Suppressed
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2007"	"2007"	Suppressed	14890	Suppressed
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2008"	"2008"	Suppressed	14884	Suppressed
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2009"	"2009"	0	14841	Unreliable
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2010"	"2010"	0	14755	Unreliable
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2011"	"2011"	Suppressed	14621	Suppressed
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2012"	"2012"	0	14316	Unreliable
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2013"	"2013"	Suppressed	14395	Suppressed
+	"Wisconsin"	"55"	"Rusk County, WI"	"55107"	"2014"	"2014"	Suppressed	14333	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2006"	"2006"	Suppressed	79784	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2007"	"2007"	Suppressed	81708	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2008"	"2008"	Suppressed	83192	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2009"	"2009"	0	84055	Unreliable
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2010"	"2010"	Suppressed	84345	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2011"	"2011"	Suppressed	84922	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2012"	"2012"	Suppressed	85242	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2013"	"2013"	Suppressed	85930	Suppressed
+	"Wisconsin"	"55"	"St. Croix County, WI"	"55109"	"2014"	"2014"	Suppressed	86759	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2006"	"2006"	Suppressed	59580	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2007"	"2007"	Suppressed	60389	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2008"	"2008"	Suppressed	61231	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2009"	"2009"	10	61562	Unreliable
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2010"	"2010"	Suppressed	61976	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2011"	"2011"	15	62290	Unreliable
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2012"	"2012"	Suppressed	62597	Suppressed
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2013"	"2013"	10	63162	Unreliable
+	"Wisconsin"	"55"	"Sauk County, WI"	"55111"	"2014"	"2014"	Suppressed	63379	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2006"	"2006"	Suppressed	16624	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2007"	"2007"	Suppressed	16674	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2008"	"2008"	Suppressed	16650	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2009"	"2009"	Suppressed	16559	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2010"	"2010"	Suppressed	16557	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2011"	"2011"	Suppressed	16596	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2012"	"2012"	Suppressed	16581	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2013"	"2013"	Suppressed	16513	Suppressed
+	"Wisconsin"	"55"	"Sawyer County, WI"	"55113"	"2014"	"2014"	Suppressed	16437	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2006"	"2006"	Suppressed	41639	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2007"	"2007"	Suppressed	41829	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2008"	"2008"	Suppressed	41894	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2009"	"2009"	Suppressed	41889	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2010"	"2010"	Suppressed	41949	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2011"	"2011"	Suppressed	41754	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2012"	"2012"	Suppressed	41607	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2013"	"2013"	Suppressed	41643	Suppressed
+	"Wisconsin"	"55"	"Shawano County, WI"	"55115"	"2014"	"2014"	Suppressed	41579	Suppressed
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2006"	"2006"	Suppressed	114775	Suppressed
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2007"	"2007"	11	115178	Unreliable
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2008"	"2008"	Suppressed	115652	Suppressed
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2009"	"2009"	16	115562	Unreliable
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2010"	"2010"	Suppressed	115507	Suppressed
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2011"	"2011"	18	115149	Unreliable
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2012"	"2012"	Suppressed	115009	Suppressed
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2013"	"2013"	13	114922	Unreliable
+	"Wisconsin"	"55"	"Sheboygan County, WI"	"55117"	"2014"	"2014"	10	115290	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2006"	"2006"	0	20394	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2007"	"2007"	0	20473	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2008"	"2008"	0	20577	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2009"	"2009"	0	20697	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2010"	"2010"	0	20689	Unreliable
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2011"	"2011"	Suppressed	20661	Suppressed
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2012"	"2012"	Suppressed	20486	Suppressed
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2013"	"2013"	Suppressed	20610	Suppressed
+	"Wisconsin"	"55"	"Taylor County, WI"	"55119"	"2014"	"2014"	0	20540	Unreliable
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2006"	"2006"	Suppressed	28286	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2007"	"2007"	Suppressed	28396	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2008"	"2008"	Suppressed	28452	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2009"	"2009"	Suppressed	28627	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2010"	"2010"	Suppressed	28816	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2011"	"2011"	Suppressed	29001	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2012"	"2012"	Suppressed	29297	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2013"	"2013"	Suppressed	29582	Suppressed
+	"Wisconsin"	"55"	"Trempealeau County, WI"	"55121"	"2014"	"2014"	Suppressed	29509	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2006"	"2006"	Suppressed	29123	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2007"	"2007"	Suppressed	29313	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2008"	"2008"	0	29431	Unreliable
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2009"	"2009"	Suppressed	29659	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2010"	"2010"	Suppressed	29773	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2011"	"2011"	0	29954	Unreliable
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2012"	"2012"	Suppressed	30260	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2013"	"2013"	Suppressed	30329	Suppressed
+	"Wisconsin"	"55"	"Vernon County, WI"	"55123"	"2014"	"2014"	Suppressed	30362	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2006"	"2006"	Suppressed	22064	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2007"	"2007"	Suppressed	21997	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2008"	"2008"	Suppressed	21767	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2009"	"2009"	Suppressed	21524	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2010"	"2010"	Suppressed	21430	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2011"	"2011"	Suppressed	21442	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2012"	"2012"	Suppressed	21338	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2013"	"2013"	Suppressed	21368	Suppressed
+	"Wisconsin"	"55"	"Vilas County, WI"	"55125"	"2014"	"2014"	Suppressed	21398	Suppressed
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2006"	"2006"	Suppressed	101026	Suppressed
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2007"	"2007"	14	101449	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2008"	"2008"	Suppressed	101916	Suppressed
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2009"	"2009"	19	102077	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2010"	"2010"	16	102228	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2011"	"2011"	14	102931	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2012"	"2012"	14	102851	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2013"	"2013"	17	102945	Unreliable
+	"Wisconsin"	"55"	"Walworth County, WI"	"55127"	"2014"	"2014"	14	103527	Unreliable
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2006"	"2006"	Suppressed	16098	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2007"	"2007"	Suppressed	16038	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2008"	"2008"	Suppressed	16003	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2009"	"2009"	Suppressed	15947	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2010"	"2010"	Suppressed	15911	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2011"	"2011"	0	15912	Unreliable
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2012"	"2012"	0	15826	Unreliable
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2013"	"2013"	Suppressed	15686	Suppressed
+	"Wisconsin"	"55"	"Washburn County, WI"	"55129"	"2014"	"2014"	Suppressed	15694	Suppressed
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2006"	"2006"	Suppressed	127483	Suppressed
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2007"	"2007"	14	129203	Unreliable
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2008"	"2008"	Suppressed	130795	Suppressed
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2009"	"2009"	10	131579	Unreliable
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2010"	"2010"	13	131887	Unreliable
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2011"	"2011"	14	132386	Unreliable
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2012"	"2012"	15	132661	Unreliable
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2013"	"2013"	22	132739	16.6
+	"Wisconsin"	"55"	"Washington County, WI"	"55131"	"2014"	"2014"	20	133251	15.0
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2006"	"2006"	28	380799	7.4
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2007"	"2007"	36	384239	9.4
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2008"	"2008"	37	386691	9.6
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2009"	"2009"	30	388957	7.7
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2010"	"2010"	49	389891	12.6
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2011"	"2011"	50	390730	12.8
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2012"	"2012"	48	392292	12.2
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2013"	"2013"	47	393843	11.9
+	"Wisconsin"	"55"	"Waukesha County, WI"	"55133"	"2014"	"2014"	51	395118	12.9
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2006"	"2006"	Suppressed	52634	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2007"	"2007"	Suppressed	52677	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2008"	"2008"	Suppressed	52593	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2009"	"2009"	Suppressed	52392	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2010"	"2010"	Suppressed	52410	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2011"	"2011"	Suppressed	52682	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2012"	"2012"	Suppressed	52131	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2013"	"2013"	Suppressed	52285	Suppressed
+	"Wisconsin"	"55"	"Waupaca County, WI"	"55135"	"2014"	"2014"	Suppressed	52066	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2006"	"2006"	Suppressed	24690	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2007"	"2007"	0	24686	Unreliable
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2008"	"2008"	Suppressed	24760	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2009"	"2009"	Suppressed	24554	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2010"	"2010"	0	24496	Unreliable
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2011"	"2011"	Suppressed	24576	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2012"	"2012"	0	24461	Unreliable
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2013"	"2013"	Suppressed	24329	Suppressed
+	"Wisconsin"	"55"	"Waushara County, WI"	"55137"	"2014"	"2014"	Suppressed	24178	Suppressed
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2006"	"2006"	17	162727	Unreliable
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2007"	"2007"	26	164037	15.9
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2008"	"2008"	14	164910	Unreliable
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2009"	"2009"	19	166429	Unreliable
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2010"	"2010"	16	166994	Unreliable
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2011"	"2011"	26	167699	15.5
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2012"	"2012"	26	168794	15.4
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2013"	"2013"	17	169541	Unreliable
+	"Wisconsin"	"55"	"Winnebago County, WI"	"55139"	"2014"	"2014"	27	169511	15.9
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2006"	"2006"	Suppressed	74603	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2007"	"2007"	Suppressed	74465	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2008"	"2008"	Suppressed	74519	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2009"	"2009"	Suppressed	74627	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2010"	"2010"	10	74749	Unreliable
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2011"	"2011"	Suppressed	74785	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2012"	"2012"	Suppressed	74424	Suppressed
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2013"	"2013"	10	73959	Unreliable
+	"Wisconsin"	"55"	"Wood County, WI"	"55141"	"2014"	"2014"	Suppressed	73608	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Wisconsin (55)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:44:48 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:44:48 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

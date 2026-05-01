@@ -1,0 +1,948 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2006"	"2006"	0	7924	Unreliable
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2007"	"2007"	0	7871	Unreliable
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2008"	"2008"	Suppressed	7747	Suppressed
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2009"	"2009"	0	7676	Unreliable
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2010"	"2010"	Suppressed	7682	Suppressed
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2011"	"2011"	0	7527	Unreliable
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2012"	"2012"	0	7481	Unreliable
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2013"	"2013"	Suppressed	7472	Suppressed
+	"Iowa"	"19"	"Adair County, IA"	"19001"	"2014"	"2014"	Suppressed	7454	Suppressed
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2006"	"2006"	Suppressed	4224	Suppressed
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2007"	"2007"	0	4195	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2008"	"2008"	0	4151	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2009"	"2009"	Suppressed	4047	Suppressed
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2010"	"2010"	0	4029	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2011"	"2011"	0	4004	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2012"	"2012"	0	3911	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2013"	"2013"	0	3894	Unreliable
+	"Iowa"	"19"	"Adams County, IA"	"19003"	"2014"	"2014"	0	3875	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2006"	"2006"	Suppressed	14378	Suppressed
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2007"	"2007"	0	14335	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2008"	"2008"	0	14325	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2009"	"2009"	0	14263	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2010"	"2010"	0	14330	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2011"	"2011"	Suppressed	14274	Suppressed
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2012"	"2012"	0	14237	Unreliable
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2013"	"2013"	Suppressed	14169	Suppressed
+	"Iowa"	"19"	"Allamakee County, IA"	"19005"	"2014"	"2014"	Suppressed	14038	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2006"	"2006"	Suppressed	13319	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2007"	"2007"	Suppressed	13105	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2008"	"2008"	Suppressed	12950	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2009"	"2009"	Suppressed	12896	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2010"	"2010"	Suppressed	12887	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2011"	"2011"	Suppressed	12797	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2012"	"2012"	Suppressed	12700	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2013"	"2013"	Suppressed	12692	Suppressed
+	"Iowa"	"19"	"Appanoose County, IA"	"19007"	"2014"	"2014"	Suppressed	12661	Suppressed
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2006"	"2006"	0	6265	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2007"	"2007"	0	6222	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2008"	"2008"	0	6200	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2009"	"2009"	0	6136	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2010"	"2010"	0	6119	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2011"	"2011"	0	6034	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2012"	"2012"	0	5910	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2013"	"2013"	0	5873	Unreliable
+	"Iowa"	"19"	"Audubon County, IA"	"19009"	"2014"	"2014"	0	5794	Unreliable
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2006"	"2006"	Suppressed	26137	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2007"	"2007"	Suppressed	26066	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2008"	"2008"	Suppressed	26097	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2009"	"2009"	0	26117	Unreliable
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2010"	"2010"	Suppressed	26076	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2011"	"2011"	Suppressed	26092	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2012"	"2012"	Suppressed	25827	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2013"	"2013"	Suppressed	25699	Suppressed
+	"Iowa"	"19"	"Benton County, IA"	"19011"	"2014"	"2014"	0	25680	Unreliable
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2006"	"2006"	Suppressed	127486	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2007"	"2007"	Suppressed	127756	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2008"	"2008"	Suppressed	129203	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2009"	"2009"	Suppressed	130595	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2010"	"2010"	11	131090	Unreliable
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2011"	"2011"	Suppressed	131549	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2012"	"2012"	Suppressed	131820	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2013"	"2013"	Suppressed	132546	Suppressed
+	"Iowa"	"19"	"Black Hawk County, IA"	"19013"	"2014"	"2014"	Suppressed	132897	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2006"	"2006"	Suppressed	26471	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2007"	"2007"	Suppressed	26553	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2008"	"2008"	Suppressed	26454	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2009"	"2009"	Suppressed	26360	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2010"	"2010"	Suppressed	26306	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2011"	"2011"	Suppressed	26255	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2012"	"2012"	Suppressed	26195	Suppressed
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2013"	"2013"	0	26364	Unreliable
+	"Iowa"	"19"	"Boone County, IA"	"19015"	"2014"	"2014"	Suppressed	26433	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2006"	"2006"	Suppressed	24054	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2007"	"2007"	0	24237	Unreliable
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2008"	"2008"	Suppressed	24162	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2009"	"2009"	Suppressed	24183	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2010"	"2010"	Suppressed	24276	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2011"	"2011"	Suppressed	24281	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2012"	"2012"	Suppressed	24479	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2013"	"2013"	Suppressed	24624	Suppressed
+	"Iowa"	"19"	"Bremer County, IA"	"19017"	"2014"	"2014"	0	24721	Unreliable
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2006"	"2006"	0	20957	Unreliable
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2007"	"2007"	Suppressed	21069	Suppressed
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2008"	"2008"	0	21154	Unreliable
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2009"	"2009"	0	21016	Unreliable
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2010"	"2010"	Suppressed	20958	Suppressed
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2011"	"2011"	Suppressed	20923	Suppressed
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2012"	"2012"	Suppressed	20942	Suppressed
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2013"	"2013"	Suppressed	20976	Suppressed
+	"Iowa"	"19"	"Buchanan County, IA"	"19019"	"2014"	"2014"	0	21038	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2006"	"2006"	0	19909	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2007"	"2007"	0	19798	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2008"	"2008"	0	19855	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2009"	"2009"	Suppressed	20004	Suppressed
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2010"	"2010"	0	20260	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2011"	"2011"	0	20406	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2012"	"2012"	0	20592	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2013"	"2013"	0	20567	Unreliable
+	"Iowa"	"19"	"Buena Vista County, IA"	"19021"	"2014"	"2014"	Suppressed	20578	Suppressed
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2006"	"2006"	0	14931	Unreliable
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2007"	"2007"	0	14961	Unreliable
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2008"	"2008"	Suppressed	14957	Suppressed
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2009"	"2009"	0	14699	Unreliable
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2010"	"2010"	0	14867	Unreliable
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2011"	"2011"	Suppressed	14939	Suppressed
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2012"	"2012"	Suppressed	14986	Suppressed
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2013"	"2013"	0	15021	Unreliable
+	"Iowa"	"19"	"Butler County, IA"	"19023"	"2014"	"2014"	0	15006	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2006"	"2006"	0	10093	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2007"	"2007"	0	9947	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2008"	"2008"	Suppressed	9845	Suppressed
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2009"	"2009"	0	9684	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2010"	"2010"	Suppressed	9670	Suppressed
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2011"	"2011"	0	9626	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2012"	"2012"	0	9909	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2013"	"2013"	0	9926	Unreliable
+	"Iowa"	"19"	"Calhoun County, IA"	"19025"	"2014"	"2014"	0	9866	Unreliable
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2006"	"2006"	Suppressed	20832	Suppressed
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2007"	"2007"	0	20869	Unreliable
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2008"	"2008"	Suppressed	20742	Suppressed
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2009"	"2009"	Suppressed	20743	Suppressed
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2010"	"2010"	Suppressed	20816	Suppressed
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2011"	"2011"	0	20861	Unreliable
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2012"	"2012"	0	20631	Unreliable
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2013"	"2013"	Suppressed	20598	Suppressed
+	"Iowa"	"19"	"Carroll County, IA"	"19027"	"2014"	"2014"	0	20562	Unreliable
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2006"	"2006"	0	14021	Unreliable
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2007"	"2007"	0	13988	Unreliable
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2008"	"2008"	0	13935	Unreliable
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2009"	"2009"	Suppressed	13949	Suppressed
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2010"	"2010"	Suppressed	13956	Suppressed
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2011"	"2011"	Suppressed	13817	Suppressed
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2012"	"2012"	Suppressed	13723	Suppressed
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2013"	"2013"	Suppressed	13598	Suppressed
+	"Iowa"	"19"	"Cass County, IA"	"19029"	"2014"	"2014"	0	13448	Unreliable
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2006"	"2006"	Suppressed	18332	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2007"	"2007"	Suppressed	18321	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2008"	"2008"	Suppressed	18460	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2009"	"2009"	0	18458	Unreliable
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2010"	"2010"	Suppressed	18499	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2011"	"2011"	Suppressed	18400	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2012"	"2012"	Suppressed	18416	Suppressed
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2013"	"2013"	0	18393	Unreliable
+	"Iowa"	"19"	"Cedar County, IA"	"19031"	"2014"	"2014"	0	18411	Unreliable
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2006"	"2006"	Suppressed	44531	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2007"	"2007"	Suppressed	44461	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2008"	"2008"	Suppressed	44285	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2009"	"2009"	Suppressed	44239	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2010"	"2010"	Suppressed	44151	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2011"	"2011"	Suppressed	43938	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2012"	"2012"	Suppressed	43788	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2013"	"2013"	Suppressed	43575	Suppressed
+	"Iowa"	"19"	"Cerro Gordo County, IA"	"19033"	"2014"	"2014"	10	43254	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2006"	"2006"	0	12215	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2007"	"2007"	0	12152	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2008"	"2008"	0	12014	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2009"	"2009"	0	11953	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2010"	"2010"	Suppressed	12072	Suppressed
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2011"	"2011"	0	12069	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2012"	"2012"	Suppressed	11946	Suppressed
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2013"	"2013"	0	11945	Unreliable
+	"Iowa"	"19"	"Cherokee County, IA"	"19035"	"2014"	"2014"	0	11836	Unreliable
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2006"	"2006"	0	12603	Unreliable
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2007"	"2007"	0	12540	Unreliable
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2008"	"2008"	0	12471	Unreliable
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2009"	"2009"	Suppressed	12465	Suppressed
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2010"	"2010"	Suppressed	12439	Suppressed
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2011"	"2011"	0	12449	Unreliable
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2012"	"2012"	Suppressed	12276	Suppressed
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2013"	"2013"	Suppressed	12321	Suppressed
+	"Iowa"	"19"	"Chickasaw County, IA"	"19037"	"2014"	"2014"	0	12264	Unreliable
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2006"	"2006"	0	9196	Unreliable
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2007"	"2007"	0	9149	Unreliable
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2008"	"2008"	0	9217	Unreliable
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2009"	"2009"	Suppressed	9228	Suppressed
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2010"	"2010"	Suppressed	9286	Suppressed
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2011"	"2011"	0	9356	Unreliable
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2012"	"2012"	Suppressed	9370	Suppressed
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2013"	"2013"	Suppressed	9325	Suppressed
+	"Iowa"	"19"	"Clarke County, IA"	"19039"	"2014"	"2014"	Suppressed	9217	Suppressed
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2006"	"2006"	Suppressed	16812	Suppressed
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2007"	"2007"	0	16725	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2008"	"2008"	0	16697	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2009"	"2009"	0	16708	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2010"	"2010"	0	16667	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2011"	"2011"	Suppressed	16590	Suppressed
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2012"	"2012"	0	16599	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2013"	"2013"	0	16491	Unreliable
+	"Iowa"	"19"	"Clay County, IA"	"19041"	"2014"	"2014"	0	16515	Unreliable
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2006"	"2006"	Suppressed	18272	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2007"	"2007"	Suppressed	18259	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2008"	"2008"	Suppressed	18209	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2009"	"2009"	Suppressed	18185	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2010"	"2010"	Suppressed	18129	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2011"	"2011"	0	18014	Unreliable
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2012"	"2012"	Suppressed	17835	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2013"	"2013"	Suppressed	17773	Suppressed
+	"Iowa"	"19"	"Clayton County, IA"	"19043"	"2014"	"2014"	Suppressed	17692	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2006"	"2006"	Suppressed	49487	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2007"	"2007"	Suppressed	49342	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2008"	"2008"	Suppressed	49303	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2009"	"2009"	Suppressed	49147	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2010"	"2010"	Suppressed	49116	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2011"	"2011"	Suppressed	49015	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2012"	"2012"	Suppressed	48717	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2013"	"2013"	Suppressed	48420	Suppressed
+	"Iowa"	"19"	"Clinton County, IA"	"19045"	"2014"	"2014"	Suppressed	48051	Suppressed
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2006"	"2006"	0	16868	Unreliable
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2007"	"2007"	Suppressed	16931	Suppressed
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2008"	"2008"	Suppressed	16881	Suppressed
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2009"	"2009"	0	16944	Unreliable
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2010"	"2010"	0	17096	Unreliable
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2011"	"2011"	Suppressed	17277	Suppressed
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2012"	"2012"	0	17309	Unreliable
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2013"	"2013"	0	17434	Unreliable
+	"Iowa"	"19"	"Crawford County, IA"	"19047"	"2014"	"2014"	Suppressed	17228	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2006"	"2006"	Suppressed	56158	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2007"	"2007"	Suppressed	59164	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2008"	"2008"	Suppressed	62144	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2009"	"2009"	Suppressed	64489	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2010"	"2010"	Suppressed	66135	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2011"	"2011"	Suppressed	69444	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2012"	"2012"	Suppressed	71967	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2013"	"2013"	Suppressed	74641	Suppressed
+	"Iowa"	"19"	"Dallas County, IA"	"19049"	"2014"	"2014"	Suppressed	77400	Suppressed
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2006"	"2006"	0	8619	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2007"	"2007"	0	8676	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2008"	"2008"	0	8675	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2009"	"2009"	Suppressed	8701	Suppressed
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2010"	"2010"	Suppressed	8753	Suppressed
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2011"	"2011"	0	8787	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2012"	"2012"	0	8689	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2013"	"2013"	0	8791	Unreliable
+	"Iowa"	"19"	"Davis County, IA"	"19051"	"2014"	"2014"	Suppressed	8781	Suppressed
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2006"	"2006"	0	8576	Unreliable
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2007"	"2007"	0	8569	Unreliable
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2008"	"2008"	0	8457	Unreliable
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2009"	"2009"	Suppressed	8506	Suppressed
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2010"	"2010"	Suppressed	8457	Suppressed
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2011"	"2011"	Suppressed	8284	Suppressed
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2012"	"2012"	0	8253	Unreliable
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2013"	"2013"	0	8136	Unreliable
+	"Iowa"	"19"	"Decatur County, IA"	"19053"	"2014"	"2014"	0	8263	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2006"	"2006"	0	17957	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2007"	"2007"	Suppressed	17981	Suppressed
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2008"	"2008"	0	17840	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2009"	"2009"	0	17755	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2010"	"2010"	Suppressed	17764	Suppressed
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2011"	"2011"	0	17658	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2012"	"2012"	0	17574	Unreliable
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2013"	"2013"	Suppressed	17534	Suppressed
+	"Iowa"	"19"	"Delaware County, IA"	"19055"	"2014"	"2014"	Suppressed	17398	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2006"	"2006"	Suppressed	40192	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2007"	"2007"	Suppressed	40206	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2008"	"2008"	Suppressed	40235	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2009"	"2009"	Suppressed	40379	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2010"	"2010"	Suppressed	40325	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2011"	"2011"	Suppressed	40169	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2012"	"2012"	Suppressed	40340	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2013"	"2013"	Suppressed	40480	Suppressed
+	"Iowa"	"19"	"Des Moines County, IA"	"19057"	"2014"	"2014"	Suppressed	40255	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2006"	"2006"	0	16667	Unreliable
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2007"	"2007"	0	16634	Unreliable
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2008"	"2008"	Suppressed	16690	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2009"	"2009"	Suppressed	16666	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2010"	"2010"	Suppressed	16667	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2011"	"2011"	0	16899	Unreliable
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2012"	"2012"	Suppressed	16972	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2013"	"2013"	Suppressed	16955	Suppressed
+	"Iowa"	"19"	"Dickinson County, IA"	"19059"	"2014"	"2014"	0	16935	Unreliable
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2006"	"2006"	Suppressed	91258	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2007"	"2007"	Suppressed	92130	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2008"	"2008"	Suppressed	92519	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2009"	"2009"	Suppressed	92948	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2010"	"2010"	Suppressed	93653	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2011"	"2011"	Suppressed	94648	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2012"	"2012"	Suppressed	95097	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2013"	"2013"	Suppressed	95697	Suppressed
+	"Iowa"	"19"	"Dubuque County, IA"	"19061"	"2014"	"2014"	Suppressed	96370	Suppressed
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2006"	"2006"	0	10437	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2007"	"2007"	0	10417	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2008"	"2008"	0	10448	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2009"	"2009"	0	10361	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2010"	"2010"	0	10302	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2011"	"2011"	0	10104	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2012"	"2012"	0	10120	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2013"	"2013"	0	9996	Unreliable
+	"Iowa"	"19"	"Emmet County, IA"	"19063"	"2014"	"2014"	Suppressed	9990	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2006"	"2006"	0	21265	Unreliable
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2007"	"2007"	0	21005	Unreliable
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2008"	"2008"	Suppressed	20910	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2009"	"2009"	0	20939	Unreliable
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2010"	"2010"	Suppressed	20880	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2011"	"2011"	Suppressed	20973	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2012"	"2012"	Suppressed	20793	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2013"	"2013"	Suppressed	20502	Suppressed
+	"Iowa"	"19"	"Fayette County, IA"	"19065"	"2014"	"2014"	Suppressed	20343	Suppressed
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2006"	"2006"	Suppressed	16586	Suppressed
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2007"	"2007"	0	16497	Unreliable
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2008"	"2008"	0	16331	Unreliable
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2009"	"2009"	0	16248	Unreliable
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2010"	"2010"	Suppressed	16303	Suppressed
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2011"	"2011"	0	16070	Unreliable
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2012"	"2012"	0	16056	Unreliable
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2013"	"2013"	Suppressed	16092	Suppressed
+	"Iowa"	"19"	"Floyd County, IA"	"19067"	"2014"	"2014"	0	16077	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2006"	"2006"	0	10699	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2007"	"2007"	0	10759	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2008"	"2008"	0	10690	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2009"	"2009"	0	10656	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2010"	"2010"	0	10680	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2011"	"2011"	0	10730	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2012"	"2012"	Suppressed	10554	Suppressed
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2013"	"2013"	0	10548	Unreliable
+	"Iowa"	"19"	"Franklin County, IA"	"19069"	"2014"	"2014"	0	10436	Unreliable
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2006"	"2006"	Suppressed	7622	Suppressed
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2007"	"2007"	Suppressed	7642	Suppressed
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2008"	"2008"	0	7489	Unreliable
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2009"	"2009"	Suppressed	7453	Suppressed
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2010"	"2010"	0	7441	Unreliable
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2011"	"2011"	Suppressed	7367	Suppressed
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2012"	"2012"	0	7147	Unreliable
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2013"	"2013"	0	7080	Unreliable
+	"Iowa"	"19"	"Fremont County, IA"	"19071"	"2014"	"2014"	Suppressed	7022	Suppressed
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2006"	"2006"	0	9611	Unreliable
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2007"	"2007"	0	9548	Unreliable
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2008"	"2008"	Suppressed	9415	Suppressed
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2009"	"2009"	0	9329	Unreliable
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2010"	"2010"	Suppressed	9336	Suppressed
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2011"	"2011"	Suppressed	9285	Suppressed
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2012"	"2012"	Suppressed	9153	Suppressed
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2013"	"2013"	0	9139	Unreliable
+	"Iowa"	"19"	"Greene County, IA"	"19073"	"2014"	"2014"	0	9200	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2006"	"2006"	0	12436	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2007"	"2007"	Suppressed	12317	Suppressed
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2008"	"2008"	0	12359	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2009"	"2009"	0	12447	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2010"	"2010"	0	12453	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2011"	"2011"	0	12459	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2012"	"2012"	0	12448	Unreliable
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2013"	"2013"	Suppressed	12314	Suppressed
+	"Iowa"	"19"	"Grundy County, IA"	"19075"	"2014"	"2014"	Suppressed	12375	Suppressed
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2006"	"2006"	0	11150	Unreliable
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2007"	"2007"	0	11116	Unreliable
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2008"	"2008"	0	11038	Unreliable
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2009"	"2009"	Suppressed	10939	Suppressed
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2010"	"2010"	0	10954	Unreliable
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2011"	"2011"	Suppressed	10901	Suppressed
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2012"	"2012"	Suppressed	10777	Suppressed
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2013"	"2013"	0	10687	Unreliable
+	"Iowa"	"19"	"Guthrie County, IA"	"19077"	"2014"	"2014"	Suppressed	10722	Suppressed
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2006"	"2006"	Suppressed	16144	Suppressed
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2007"	"2007"	0	15987	Unreliable
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2008"	"2008"	Suppressed	15863	Suppressed
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2009"	"2009"	Suppressed	15739	Suppressed
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2010"	"2010"	0	15673	Unreliable
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2011"	"2011"	0	15538	Unreliable
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2012"	"2012"	Suppressed	15344	Suppressed
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2013"	"2013"	0	15312	Unreliable
+	"Iowa"	"19"	"Hamilton County, IA"	"19079"	"2014"	"2014"	0	15117	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2006"	"2006"	0	11729	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2007"	"2007"	0	11580	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2008"	"2008"	Suppressed	11525	Suppressed
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2009"	"2009"	0	11371	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2010"	"2010"	0	11341	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2011"	"2011"	Suppressed	11287	Suppressed
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2012"	"2012"	0	11134	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2013"	"2013"	0	11094	Unreliable
+	"Iowa"	"19"	"Hancock County, IA"	"19081"	"2014"	"2014"	0	11027	Unreliable
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2006"	"2006"	0	17893	Unreliable
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2007"	"2007"	Suppressed	17789	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2008"	"2008"	Suppressed	17690	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2009"	"2009"	Suppressed	17535	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2010"	"2010"	Suppressed	17534	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2011"	"2011"	Suppressed	17426	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2012"	"2012"	Suppressed	17302	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2013"	"2013"	Suppressed	17441	Suppressed
+	"Iowa"	"19"	"Hardin County, IA"	"19083"	"2014"	"2014"	0	17311	Unreliable
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2006"	"2006"	Suppressed	15346	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2007"	"2007"	Suppressed	15177	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2008"	"2008"	0	14946	Unreliable
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2009"	"2009"	Suppressed	14972	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2010"	"2010"	Suppressed	14928	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2011"	"2011"	Suppressed	14828	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2012"	"2012"	Suppressed	14548	Suppressed
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2013"	"2013"	0	14431	Unreliable
+	"Iowa"	"19"	"Harrison County, IA"	"19085"	"2014"	"2014"	Suppressed	14324	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2006"	"2006"	Suppressed	20326	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2007"	"2007"	Suppressed	20359	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2008"	"2008"	Suppressed	20307	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2009"	"2009"	Suppressed	20202	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2010"	"2010"	Suppressed	20145	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2011"	"2011"	Suppressed	20284	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2012"	"2012"	0	20236	Unreliable
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2013"	"2013"	Suppressed	20222	Suppressed
+	"Iowa"	"19"	"Henry County, IA"	"19087"	"2014"	"2014"	Suppressed	20217	Suppressed
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2006"	"2006"	0	9664	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2007"	"2007"	0	9636	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2008"	"2008"	0	9625	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2009"	"2009"	0	9568	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2010"	"2010"	0	9566	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2011"	"2011"	Suppressed	9565	Suppressed
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2012"	"2012"	0	9563	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2013"	"2013"	0	9526	Unreliable
+	"Iowa"	"19"	"Howard County, IA"	"19089"	"2014"	"2014"	0	9449	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2006"	"2006"	0	10038	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2007"	"2007"	Suppressed	9935	Suppressed
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2008"	"2008"	0	9911	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2009"	"2009"	0	9843	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2010"	"2010"	Suppressed	9815	Suppressed
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2011"	"2011"	0	9802	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2012"	"2012"	Suppressed	9729	Suppressed
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2013"	"2013"	0	9688	Unreliable
+	"Iowa"	"19"	"Humboldt County, IA"	"19091"	"2014"	"2014"	Suppressed	9640	Suppressed
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2006"	"2006"	Suppressed	7247	Suppressed
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2007"	"2007"	0	7228	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2008"	"2008"	0	7215	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2009"	"2009"	0	7090	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2010"	"2010"	Suppressed	7089	Suppressed
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2011"	"2011"	0	7086	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2012"	"2012"	0	7108	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2013"	"2013"	0	7141	Unreliable
+	"Iowa"	"19"	"Ida County, IA"	"19093"	"2014"	"2014"	0	7042	Unreliable
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2006"	"2006"	Suppressed	16391	Suppressed
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2007"	"2007"	Suppressed	16308	Suppressed
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2008"	"2008"	0	16337	Unreliable
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2009"	"2009"	Suppressed	16406	Suppressed
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2010"	"2010"	Suppressed	16355	Suppressed
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2011"	"2011"	0	16320	Unreliable
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2012"	"2012"	0	16189	Unreliable
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2013"	"2013"	0	16330	Unreliable
+	"Iowa"	"19"	"Iowa County, IA"	"19095"	"2014"	"2014"	0	16375	Unreliable
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2006"	"2006"	0	20092	Unreliable
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2007"	"2007"	Suppressed	20015	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2008"	"2008"	Suppressed	19919	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2009"	"2009"	Suppressed	19841	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2010"	"2010"	Suppressed	19848	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2011"	"2011"	Suppressed	19796	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2012"	"2012"	Suppressed	19712	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2013"	"2013"	Suppressed	19587	Suppressed
+	"Iowa"	"19"	"Jackson County, IA"	"19097"	"2014"	"2014"	Suppressed	19482	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2006"	"2006"	Suppressed	37288	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2007"	"2007"	Suppressed	37167	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2008"	"2008"	Suppressed	37103	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2009"	"2009"	Suppressed	36879	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2010"	"2010"	Suppressed	36842	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2011"	"2011"	Suppressed	36547	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2012"	"2012"	Suppressed	36602	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2013"	"2013"	Suppressed	36641	Suppressed
+	"Iowa"	"19"	"Jasper County, IA"	"19099"	"2014"	"2014"	Suppressed	36872	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2006"	"2006"	Suppressed	16401	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2007"	"2007"	Suppressed	16600	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2008"	"2008"	Suppressed	16607	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2009"	"2009"	0	16782	Unreliable
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2010"	"2010"	0	16843	Unreliable
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2011"	"2011"	Suppressed	16815	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2012"	"2012"	Suppressed	16867	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2013"	"2013"	Suppressed	16810	Suppressed
+	"Iowa"	"19"	"Jefferson County, IA"	"19101"	"2014"	"2014"	Suppressed	17325	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2006"	"2006"	Suppressed	122226	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2007"	"2007"	Suppressed	124541	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2008"	"2008"	Suppressed	127113	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2009"	"2009"	Suppressed	129864	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2010"	"2010"	Suppressed	130882	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2011"	"2011"	Suppressed	133038	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2012"	"2012"	13	136317	Unreliable
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2013"	"2013"	Suppressed	139155	Suppressed
+	"Iowa"	"19"	"Johnson County, IA"	"19103"	"2014"	"2014"	21	142287	14.8
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2006"	"2006"	Suppressed	20678	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2007"	"2007"	Suppressed	20803	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2008"	"2008"	Suppressed	20848	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2009"	"2009"	0	20562	Unreliable
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2010"	"2010"	Suppressed	20638	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2011"	"2011"	0	20608	Unreliable
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2012"	"2012"	Suppressed	20639	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2013"	"2013"	Suppressed	20611	Suppressed
+	"Iowa"	"19"	"Jones County, IA"	"19105"	"2014"	"2014"	Suppressed	20454	Suppressed
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2006"	"2006"	Suppressed	10713	Suppressed
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2007"	"2007"	Suppressed	10688	Suppressed
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2008"	"2008"	0	10620	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2009"	"2009"	0	10552	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2010"	"2010"	0	10511	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2011"	"2011"	0	10378	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2012"	"2012"	0	10374	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2013"	"2013"	0	10329	Unreliable
+	"Iowa"	"19"	"Keokuk County, IA"	"19107"	"2014"	"2014"	Suppressed	10231	Suppressed
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2006"	"2006"	Suppressed	16045	Suppressed
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2007"	"2007"	0	15878	Unreliable
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2008"	"2008"	Suppressed	15685	Suppressed
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2009"	"2009"	Suppressed	15630	Suppressed
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2010"	"2010"	0	15543	Unreliable
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2011"	"2011"	0	15396	Unreliable
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2012"	"2012"	0	15346	Unreliable
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2013"	"2013"	0	15321	Unreliable
+	"Iowa"	"19"	"Kossuth County, IA"	"19109"	"2014"	"2014"	0	15222	Unreliable
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2006"	"2006"	Suppressed	36291	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2007"	"2007"	Suppressed	36130	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2008"	"2008"	Suppressed	35819	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2009"	"2009"	0	35856	Unreliable
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2010"	"2010"	Suppressed	35862	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2011"	"2011"	Suppressed	35621	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2012"	"2012"	Suppressed	35617	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2013"	"2013"	Suppressed	35682	Suppressed
+	"Iowa"	"19"	"Lee County, IA"	"19111"	"2014"	"2014"	Suppressed	35286	Suppressed
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2006"	"2006"	13	202709	Unreliable
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2007"	"2007"	20	205840	9.7
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2008"	"2008"	13	208558	Unreliable
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2009"	"2009"	19	210217	Unreliable
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2010"	"2010"	20	211226	9.5
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2011"	"2011"	22	213875	10.3
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2012"	"2012"	21	215295	9.8
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2013"	"2013"	23	216111	10.6
+	"Iowa"	"19"	"Linn County, IA"	"19113"	"2014"	"2014"	30	217751	13.8
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2006"	"2006"	Suppressed	11904	Suppressed
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2007"	"2007"	Suppressed	11892	Suppressed
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2008"	"2008"	Suppressed	11830	Suppressed
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2009"	"2009"	0	11416	Unreliable
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2010"	"2010"	0	11387	Unreliable
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2011"	"2011"	Suppressed	11369	Suppressed
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2012"	"2012"	0	11278	Unreliable
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2013"	"2013"	Suppressed	11282	Suppressed
+	"Iowa"	"19"	"Louisa County, IA"	"19115"	"2014"	"2014"	Suppressed	11161	Suppressed
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2006"	"2006"	0	9331	Unreliable
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2007"	"2007"	0	9280	Unreliable
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2008"	"2008"	0	9137	Unreliable
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2009"	"2009"	Suppressed	8948	Suppressed
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2010"	"2010"	Suppressed	8898	Suppressed
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2011"	"2011"	Suppressed	8847	Suppressed
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2012"	"2012"	0	8760	Unreliable
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2013"	"2013"	Suppressed	8746	Suppressed
+	"Iowa"	"19"	"Lucas County, IA"	"19117"	"2014"	"2014"	0	8701	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2006"	"2006"	0	11604	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2007"	"2007"	0	11536	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2008"	"2008"	0	11545	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2009"	"2009"	0	11557	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2010"	"2010"	Suppressed	11581	Suppressed
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2011"	"2011"	0	11670	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2012"	"2012"	0	11757	Unreliable
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2013"	"2013"	Suppressed	11712	Suppressed
+	"Iowa"	"19"	"Lyon County, IA"	"19119"	"2014"	"2014"	0	11683	Unreliable
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2006"	"2006"	0	15262	Unreliable
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2007"	"2007"	Suppressed	15418	Suppressed
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2008"	"2008"	Suppressed	15517	Suppressed
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2009"	"2009"	0	15510	Unreliable
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2010"	"2010"	Suppressed	15679	Suppressed
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2011"	"2011"	Suppressed	15779	Suppressed
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2012"	"2012"	0	15654	Unreliable
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2013"	"2013"	Suppressed	15448	Suppressed
+	"Iowa"	"19"	"Madison County, IA"	"19121"	"2014"	"2014"	0	15609	Unreliable
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2006"	"2006"	Suppressed	22298	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2007"	"2007"	Suppressed	22388	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2008"	"2008"	0	22483	Unreliable
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2009"	"2009"	Suppressed	22364	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2010"	"2010"	Suppressed	22381	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2011"	"2011"	Suppressed	22530	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2012"	"2012"	Suppressed	22443	Suppressed
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2013"	"2013"	0	22417	Unreliable
+	"Iowa"	"19"	"Mahaska County, IA"	"19123"	"2014"	"2014"	Suppressed	22370	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2006"	"2006"	Suppressed	33396	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2007"	"2007"	Suppressed	33279	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2008"	"2008"	Suppressed	33515	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2009"	"2009"	Suppressed	33468	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2010"	"2010"	Suppressed	33309	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2011"	"2011"	Suppressed	33335	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2012"	"2012"	Suppressed	33419	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2013"	"2013"	Suppressed	33252	Suppressed
+	"Iowa"	"19"	"Marion County, IA"	"19125"	"2014"	"2014"	Suppressed	33365	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2006"	"2006"	Suppressed	39601	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2007"	"2007"	0	39875	Unreliable
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2008"	"2008"	0	40151	Unreliable
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2009"	"2009"	Suppressed	40280	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2010"	"2010"	Suppressed	40648	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2011"	"2011"	Suppressed	40980	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2012"	"2012"	Suppressed	40857	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2013"	"2013"	Suppressed	40994	Suppressed
+	"Iowa"	"19"	"Marshall County, IA"	"19127"	"2014"	"2014"	Suppressed	40866	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2006"	"2006"	Suppressed	15214	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2007"	"2007"	Suppressed	15239	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2008"	"2008"	Suppressed	15214	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2009"	"2009"	Suppressed	15056	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2010"	"2010"	Suppressed	15059	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2011"	"2011"	0	14992	Unreliable
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2012"	"2012"	Suppressed	14837	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2013"	"2013"	Suppressed	14896	Suppressed
+	"Iowa"	"19"	"Mills County, IA"	"19129"	"2014"	"2014"	Suppressed	14831	Suppressed
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2006"	"2006"	0	10836	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2007"	"2007"	Suppressed	10812	Suppressed
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2008"	"2008"	0	10815	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2009"	"2009"	0	10763	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2010"	"2010"	0	10776	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2011"	"2011"	0	10783	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2012"	"2012"	Suppressed	10725	Suppressed
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2013"	"2013"	0	10709	Unreliable
+	"Iowa"	"19"	"Mitchell County, IA"	"19131"	"2014"	"2014"	0	10779	Unreliable
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2006"	"2006"	Suppressed	9479	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2007"	"2007"	Suppressed	9423	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2008"	"2008"	0	9350	Unreliable
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2009"	"2009"	Suppressed	9247	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2010"	"2010"	Suppressed	9243	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2011"	"2011"	Suppressed	9239	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2012"	"2012"	Suppressed	9124	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2013"	"2013"	Suppressed	9121	Suppressed
+	"Iowa"	"19"	"Monona County, IA"	"19133"	"2014"	"2014"	Suppressed	8996	Suppressed
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2006"	"2006"	Suppressed	7911	Suppressed
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2007"	"2007"	Suppressed	7877	Suppressed
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2008"	"2008"	0	7904	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2009"	"2009"	0	7924	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2010"	"2010"	0	7970	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2011"	"2011"	0	8056	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2012"	"2012"	0	8063	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2013"	"2013"	0	8012	Unreliable
+	"Iowa"	"19"	"Monroe County, IA"	"19135"	"2014"	"2014"	Suppressed	8001	Suppressed
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2006"	"2006"	Suppressed	11179	Suppressed
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2007"	"2007"	Suppressed	10981	Suppressed
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2008"	"2008"	Suppressed	10823	Suppressed
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2009"	"2009"	Suppressed	10803	Suppressed
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2010"	"2010"	0	10740	Unreliable
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2011"	"2011"	0	10640	Unreliable
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2012"	"2012"	0	10566	Unreliable
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2013"	"2013"	0	10424	Unreliable
+	"Iowa"	"19"	"Montgomery County, IA"	"19137"	"2014"	"2014"	0	10421	Unreliable
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2006"	"2006"	Suppressed	42145	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2007"	"2007"	Suppressed	42325	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2008"	"2008"	Suppressed	42515	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2009"	"2009"	Suppressed	42783	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2010"	"2010"	Suppressed	42745	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2011"	"2011"	Suppressed	42815	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2012"	"2012"	Suppressed	42879	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2013"	"2013"	Suppressed	42836	Suppressed
+	"Iowa"	"19"	"Muscatine County, IA"	"19139"	"2014"	"2014"	Suppressed	42903	Suppressed
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2006"	"2006"	0	14558	Unreliable
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2007"	"2007"	0	14421	Unreliable
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2008"	"2008"	Suppressed	14332	Suppressed
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2009"	"2009"	0	14412	Unreliable
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2010"	"2010"	Suppressed	14398	Suppressed
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2011"	"2011"	0	14210	Unreliable
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2012"	"2012"	Suppressed	14172	Suppressed
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2013"	"2013"	0	14044	Unreliable
+	"Iowa"	"19"	"O'Brien County, IA"	"19141"	"2014"	"2014"	0	14056	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2006"	"2006"	0	6713	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2007"	"2007"	Suppressed	6600	Suppressed
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2008"	"2008"	Suppressed	6617	Suppressed
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2009"	"2009"	0	6509	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2010"	"2010"	0	6462	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2011"	"2011"	0	6357	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2012"	"2012"	0	6193	Unreliable
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2013"	"2013"	Suppressed	6211	Suppressed
+	"Iowa"	"19"	"Osceola County, IA"	"19143"	"2014"	"2014"	Suppressed	6218	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2006"	"2006"	0	16331	Unreliable
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2007"	"2007"	0	16256	Unreliable
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2008"	"2008"	Suppressed	16083	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2009"	"2009"	Suppressed	15885	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2010"	"2010"	Suppressed	15932	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2011"	"2011"	Suppressed	15987	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2012"	"2012"	0	15713	Unreliable
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2013"	"2013"	Suppressed	15713	Suppressed
+	"Iowa"	"19"	"Page County, IA"	"19145"	"2014"	"2014"	0	15496	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2006"	"2006"	0	9586	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2007"	"2007"	0	9577	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2008"	"2008"	0	9486	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2009"	"2009"	0	9510	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2010"	"2010"	0	9421	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2011"	"2011"	Suppressed	9419	Suppressed
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2012"	"2012"	0	9275	Unreliable
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2013"	"2013"	Suppressed	9185	Suppressed
+	"Iowa"	"19"	"Palo Alto County, IA"	"19147"	"2014"	"2014"	0	9099	Unreliable
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2006"	"2006"	0	24982	Unreliable
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2007"	"2007"	0	24886	Unreliable
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2008"	"2008"	0	24898	Unreliable
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2009"	"2009"	Suppressed	24904	Suppressed
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2010"	"2010"	0	24986	Unreliable
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2011"	"2011"	Suppressed	24896	Suppressed
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2012"	"2012"	Suppressed	24907	Suppressed
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2013"	"2013"	Suppressed	24957	Suppressed
+	"Iowa"	"19"	"Plymouth County, IA"	"19149"	"2014"	"2014"	Suppressed	24874	Suppressed
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2006"	"2006"	0	7694	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2007"	"2007"	Suppressed	7667	Suppressed
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2008"	"2008"	0	7510	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2009"	"2009"	0	7395	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2010"	"2010"	0	7310	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2011"	"2011"	0	7180	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2012"	"2012"	Suppressed	7150	Suppressed
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2013"	"2013"	0	7154	Unreliable
+	"Iowa"	"19"	"Pocahontas County, IA"	"19151"	"2014"	"2014"	0	7138	Unreliable
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2006"	"2006"	39	405990	9.6
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2007"	"2007"	48	413024	11.6
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2008"	"2008"	42	419495	10.0
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2009"	"2009"	45	425737	10.6
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2010"	"2010"	49	430640	11.4
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2011"	"2011"	57	437399	13.0
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2012"	"2012"	59	443710	13.3
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2013"	"2013"	57	451677	12.6
+	"Iowa"	"19"	"Polk County, IA"	"19153"	"2014"	"2014"	48	459862	10.4
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2006"	"2006"	Suppressed	90867	Suppressed
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2007"	"2007"	10	91239	Unreliable
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2008"	"2008"	Suppressed	91781	Suppressed
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2009"	"2009"	Suppressed	92395	Suppressed
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2010"	"2010"	Suppressed	93158	Suppressed
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2011"	"2011"	11	93518	Unreliable
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2012"	"2012"	13	92913	Unreliable
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2013"	"2013"	12	92728	Unreliable
+	"Iowa"	"19"	"Pottawattamie County, IA"	"19155"	"2014"	"2014"	11	93128	Unreliable
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2006"	"2006"	0	19053	Unreliable
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2007"	"2007"	Suppressed	19140	Suppressed
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2008"	"2008"	Suppressed	19025	Suppressed
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2009"	"2009"	0	18958	Unreliable
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2010"	"2010"	Suppressed	18914	Suppressed
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2011"	"2011"	0	18804	Unreliable
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2012"	"2012"	Suppressed	18736	Suppressed
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2013"	"2013"	Suppressed	18601	Suppressed
+	"Iowa"	"19"	"Poweshiek County, IA"	"19157"	"2014"	"2014"	Suppressed	18668	Suppressed
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2006"	"2006"	0	5230	Unreliable
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2007"	"2007"	0	5201	Unreliable
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2008"	"2008"	Suppressed	5164	Suppressed
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2009"	"2009"	0	5119	Unreliable
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2010"	"2010"	Suppressed	5131	Suppressed
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2011"	"2011"	Suppressed	5119	Suppressed
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2012"	"2012"	0	5096	Unreliable
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2013"	"2013"	0	5072	Unreliable
+	"Iowa"	"19"	"Ringgold County, IA"	"19159"	"2014"	"2014"	0	5051	Unreliable
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2006"	"2006"	0	10707	Unreliable
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2007"	"2007"	Suppressed	10532	Suppressed
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2008"	"2008"	0	10475	Unreliable
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2009"	"2009"	0	10342	Unreliable
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2010"	"2010"	Suppressed	10350	Suppressed
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2011"	"2011"	Suppressed	10241	Suppressed
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2012"	"2012"	Suppressed	10153	Suppressed
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2013"	"2013"	Suppressed	10071	Suppressed
+	"Iowa"	"19"	"Sac County, IA"	"19161"	"2014"	"2014"	0	10035	Unreliable
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2006"	"2006"	18	159597	Unreliable
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2007"	"2007"	19	160077	Unreliable
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2008"	"2008"	22	161824	13.6
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2009"	"2009"	17	163582	Unreliable
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2010"	"2010"	17	165224	Unreliable
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2011"	"2011"	28	167095	16.8
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2012"	"2012"	28	168799	16.6
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2013"	"2013"	40	170385	23.5
+	"Iowa"	"19"	"Scott County, IA"	"19163"	"2014"	"2014"	17	171387	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2006"	"2006"	0	12480	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2007"	"2007"	0	12496	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2008"	"2008"	Suppressed	12338	Suppressed
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2009"	"2009"	0	12165	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2010"	"2010"	Suppressed	12167	Suppressed
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2011"	"2011"	0	12039	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2012"	"2012"	Suppressed	12069	Suppressed
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2013"	"2013"	0	11961	Unreliable
+	"Iowa"	"19"	"Shelby County, IA"	"19165"	"2014"	"2014"	Suppressed	11948	Suppressed
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2006"	"2006"	0	33077	Unreliable
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2007"	"2007"	Suppressed	33150	Suppressed
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2008"	"2008"	Suppressed	33364	Suppressed
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2009"	"2009"	Suppressed	33587	Suppressed
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2010"	"2010"	0	33704	Unreliable
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2011"	"2011"	0	33900	Unreliable
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2012"	"2012"	0	34268	Unreliable
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2013"	"2013"	0	34547	Unreliable
+	"Iowa"	"19"	"Sioux County, IA"	"19167"	"2014"	"2014"	0	34681	Unreliable
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2006"	"2006"	Suppressed	84739	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2007"	"2007"	Suppressed	86540	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2008"	"2008"	Suppressed	87831	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2009"	"2009"	Suppressed	89285	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2010"	"2010"	Suppressed	89542	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2011"	"2011"	Suppressed	89663	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2012"	"2012"	Suppressed	91140	Suppressed
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2013"	"2013"	10	92406	Unreliable
+	"Iowa"	"19"	"Story County, IA"	"19169"	"2014"	"2014"	Suppressed	94073	Suppressed
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2006"	"2006"	Suppressed	18149	Suppressed
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2007"	"2007"	0	18064	Unreliable
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2008"	"2008"	0	17986	Unreliable
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2009"	"2009"	0	17833	Unreliable
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2010"	"2010"	Suppressed	17767	Suppressed
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2011"	"2011"	Suppressed	17695	Suppressed
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2012"	"2012"	Suppressed	17536	Suppressed
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2013"	"2013"	0	17576	Unreliable
+	"Iowa"	"19"	"Tama County, IA"	"19171"	"2014"	"2014"	Suppressed	17451	Suppressed
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2006"	"2006"	0	6557	Unreliable
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2007"	"2007"	0	6448	Unreliable
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2008"	"2008"	0	6348	Unreliable
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2009"	"2009"	0	6355	Unreliable
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2010"	"2010"	0	6317	Unreliable
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2011"	"2011"	Suppressed	6305	Suppressed
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2012"	"2012"	Suppressed	6208	Suppressed
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2013"	"2013"	Suppressed	6161	Suppressed
+	"Iowa"	"19"	"Taylor County, IA"	"19173"	"2014"	"2014"	0	6143	Unreliable
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2006"	"2006"	0	12225	Unreliable
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2007"	"2007"	Suppressed	12319	Suppressed
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2008"	"2008"	Suppressed	12447	Suppressed
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2009"	"2009"	0	12527	Unreliable
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2010"	"2010"	Suppressed	12534	Suppressed
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2011"	"2011"	0	12545	Unreliable
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2012"	"2012"	Suppressed	12594	Suppressed
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2013"	"2013"	Suppressed	12583	Suppressed
+	"Iowa"	"19"	"Union County, IA"	"19175"	"2014"	"2014"	Suppressed	12516	Suppressed
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2006"	"2006"	0	7660	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2007"	"2007"	Suppressed	7690	Suppressed
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2008"	"2008"	Suppressed	7699	Suppressed
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2009"	"2009"	0	7628	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2010"	"2010"	0	7570	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2011"	"2011"	0	7510	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2012"	"2012"	0	7449	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2013"	"2013"	0	7436	Unreliable
+	"Iowa"	"19"	"Van Buren County, IA"	"19177"	"2014"	"2014"	0	7468	Unreliable
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2006"	"2006"	Suppressed	35776	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2007"	"2007"	Suppressed	35458	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2008"	"2008"	Suppressed	35381	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2009"	"2009"	Suppressed	35481	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2010"	"2010"	Suppressed	35625	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2011"	"2011"	Suppressed	35421	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2012"	"2012"	Suppressed	35366	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2013"	"2013"	Suppressed	35391	Suppressed
+	"Iowa"	"19"	"Wapello County, IA"	"19179"	"2014"	"2014"	Suppressed	35212	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2006"	"2006"	Suppressed	44178	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2007"	"2007"	0	44868	Unreliable
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2008"	"2008"	Suppressed	45450	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2009"	"2009"	Suppressed	45926	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2010"	"2010"	Suppressed	46225	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2011"	"2011"	Suppressed	46732	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2012"	"2012"	Suppressed	46891	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2013"	"2013"	Suppressed	47336	Suppressed
+	"Iowa"	"19"	"Warren County, IA"	"19181"	"2014"	"2014"	Suppressed	47956	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2006"	"2006"	Suppressed	21472	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2007"	"2007"	Suppressed	21588	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2008"	"2008"	Suppressed	21686	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2009"	"2009"	Suppressed	21692	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2010"	"2010"	0	21704	Unreliable
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2011"	"2011"	0	21855	Unreliable
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2012"	"2012"	Suppressed	21914	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2013"	"2013"	Suppressed	22015	Suppressed
+	"Iowa"	"19"	"Washington County, IA"	"19183"	"2014"	"2014"	Suppressed	22070	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2006"	"2006"	0	6478	Unreliable
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2007"	"2007"	Suppressed	6376	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2008"	"2008"	Suppressed	6373	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2009"	"2009"	Suppressed	6393	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2010"	"2010"	0	6403	Unreliable
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2011"	"2011"	0	6309	Unreliable
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2012"	"2012"	Suppressed	6344	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2013"	"2013"	Suppressed	6402	Suppressed
+	"Iowa"	"19"	"Wayne County, IA"	"19185"	"2014"	"2014"	0	6395	Unreliable
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2006"	"2006"	Suppressed	38534	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2007"	"2007"	Suppressed	38393	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2008"	"2008"	Suppressed	38273	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2009"	"2009"	Suppressed	38316	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2010"	"2010"	10	38013	Unreliable
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2011"	"2011"	Suppressed	37660	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2012"	"2012"	Suppressed	37273	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2013"	"2013"	Suppressed	37044	Suppressed
+	"Iowa"	"19"	"Webster County, IA"	"19187"	"2014"	"2014"	Suppressed	36955	Suppressed
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2006"	"2006"	0	11138	Unreliable
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2007"	"2007"	Suppressed	10986	Suppressed
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2008"	"2008"	0	10927	Unreliable
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2009"	"2009"	0	10917	Unreliable
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2010"	"2010"	Suppressed	10866	Suppressed
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2011"	"2011"	0	10789	Unreliable
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2012"	"2012"	0	10600	Unreliable
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2013"	"2013"	Suppressed	10554	Suppressed
+	"Iowa"	"19"	"Winnebago County, IA"	"19189"	"2014"	"2014"	0	10559	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2006"	"2006"	0	21012	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2007"	"2007"	0	21078	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2008"	"2008"	0	20980	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2009"	"2009"	0	21025	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2010"	"2010"	Suppressed	21056	Suppressed
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2011"	"2011"	0	21024	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2012"	"2012"	Suppressed	21061	Suppressed
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2013"	"2013"	0	20994	Unreliable
+	"Iowa"	"19"	"Winneshiek County, IA"	"19191"	"2014"	"2014"	Suppressed	20768	Suppressed
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2006"	"2006"	Suppressed	100693	Suppressed
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2007"	"2007"	12	100492	Unreliable
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2008"	"2008"	Suppressed	100910	Suppressed
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2009"	"2009"	Suppressed	101581	Suppressed
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2010"	"2010"	Suppressed	102172	Suppressed
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2011"	"2011"	10	102509	Unreliable
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2012"	"2012"	10	102323	Unreliable
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2013"	"2013"	16	102130	Unreliable
+	"Iowa"	"19"	"Woodbury County, IA"	"19193"	"2014"	"2014"	10	102271	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2006"	"2006"	0	7649	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2007"	"2007"	0	7655	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2008"	"2008"	0	7632	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2009"	"2009"	0	7610	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2010"	"2010"	Suppressed	7598	Suppressed
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2011"	"2011"	Suppressed	7544	Suppressed
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2012"	"2012"	0	7519	Unreliable
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2013"	"2013"	Suppressed	7541	Suppressed
+	"Iowa"	"19"	"Worth County, IA"	"19195"	"2014"	"2014"	0	7624	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2006"	"2006"	0	13588	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2007"	"2007"	Suppressed	13492	Suppressed
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2008"	"2008"	Suppressed	13375	Suppressed
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2009"	"2009"	0	13262	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2010"	"2010"	Suppressed	13229	Suppressed
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2011"	"2011"	0	13068	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2012"	"2012"	0	12991	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2013"	"2013"	0	12972	Unreliable
+	"Iowa"	"19"	"Wright County, IA"	"19197"	"2014"	"2014"	0	12840	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Iowa (19)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:32:58 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:32:58 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

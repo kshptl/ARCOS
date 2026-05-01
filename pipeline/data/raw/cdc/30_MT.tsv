@@ -1,0 +1,561 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2006"	"2006"	Suppressed	9012	Suppressed
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2007"	"2007"	0	9028	Unreliable
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2008"	"2008"	Suppressed	9166	Suppressed
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2009"	"2009"	Suppressed	9200	Suppressed
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2010"	"2010"	0	9246	Unreliable
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2011"	"2011"	Suppressed	9198	Suppressed
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2012"	"2012"	0	9346	Unreliable
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2013"	"2013"	0	9341	Unreliable
+	"Montana"	"30"	"Beaverhead County, MT"	"30001"	"2014"	"2014"	Suppressed	9345	Suppressed
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2006"	"2006"	Suppressed	12540	Suppressed
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2007"	"2007"	Suppressed	12549	Suppressed
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2008"	"2008"	0	12564	Unreliable
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2009"	"2009"	Suppressed	12747	Suppressed
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2010"	"2010"	0	12865	Unreliable
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2011"	"2011"	0	13093	Unreliable
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2012"	"2012"	0	13061	Unreliable
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2013"	"2013"	0	13042	Unreliable
+	"Montana"	"30"	"Big Horn County, MT"	"30003"	"2014"	"2014"	Suppressed	13282	Suppressed
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2006"	"2006"	0	6536	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2007"	"2007"	0	6472	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2008"	"2008"	Suppressed	6401	Suppressed
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2009"	"2009"	0	6445	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2010"	"2010"	0	6491	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2011"	"2011"	Suppressed	6565	Suppressed
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2012"	"2012"	0	6683	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2013"	"2013"	0	6604	Unreliable
+	"Montana"	"30"	"Blaine County, MT"	"30005"	"2014"	"2014"	Suppressed	6619	Suppressed
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2006"	"2006"	0	4958	Unreliable
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2007"	"2007"	Suppressed	5089	Suppressed
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2008"	"2008"	Suppressed	5261	Suppressed
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2009"	"2009"	0	5496	Unreliable
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2010"	"2010"	Suppressed	5612	Suppressed
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2011"	"2011"	0	5752	Unreliable
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2012"	"2012"	0	5756	Unreliable
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2013"	"2013"	0	5692	Unreliable
+	"Montana"	"30"	"Broadwater County, MT"	"30007"	"2014"	"2014"	Suppressed	5667	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2006"	"2006"	Suppressed	9916	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2007"	"2007"	Suppressed	9973	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2008"	"2008"	Suppressed	9965	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2009"	"2009"	0	10033	Unreliable
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2010"	"2010"	Suppressed	10078	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2011"	"2011"	Suppressed	10028	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2012"	"2012"	Suppressed	10127	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2013"	"2013"	Suppressed	10340	Suppressed
+	"Montana"	"30"	"Carbon County, MT"	"30009"	"2014"	"2014"	Suppressed	10399	Suppressed
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2006"	"2006"	0	1227	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2007"	"2007"	0	1216	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2008"	"2008"	0	1172	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2009"	"2009"	0	1180	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2010"	"2010"	0	1160	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2011"	"2011"	0	1152	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2012"	"2012"	0	1177	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2013"	"2013"	0	1174	Unreliable
+	"Montana"	"30"	"Carter County, MT"	"30011"	"2014"	"2014"	0	1169	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2006"	"2006"	Suppressed	79984	Suppressed
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2007"	"2007"	Suppressed	80099	Suppressed
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2008"	"2008"	14	80529	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2009"	"2009"	11	80680	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2010"	"2010"	12	81327	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2011"	"2011"	11	81837	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2012"	"2012"	Suppressed	81723	Suppressed
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2013"	"2013"	16	82384	Unreliable
+	"Montana"	"30"	"Cascade County, MT"	"30013"	"2014"	"2014"	Suppressed	82344	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2006"	"2006"	0	5709	Unreliable
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2007"	"2007"	Suppressed	5746	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2008"	"2008"	Suppressed	5774	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2009"	"2009"	Suppressed	5793	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2010"	"2010"	Suppressed	5813	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2011"	"2011"	0	5793	Unreliable
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2012"	"2012"	Suppressed	5904	Suppressed
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2013"	"2013"	0	5849	Unreliable
+	"Montana"	"30"	"Chouteau County, MT"	"30015"	"2014"	"2014"	Suppressed	5894	Suppressed
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2006"	"2006"	0	11395	Unreliable
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2007"	"2007"	Suppressed	11480	Suppressed
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2008"	"2008"	0	11515	Unreliable
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2009"	"2009"	Suppressed	11646	Suppressed
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2010"	"2010"	Suppressed	11699	Suppressed
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2011"	"2011"	Suppressed	11752	Suppressed
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2012"	"2012"	0	11888	Unreliable
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2013"	"2013"	0	11951	Unreliable
+	"Montana"	"30"	"Custer County, MT"	"30017"	"2014"	"2014"	Suppressed	12092	Suppressed
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2006"	"2006"	0	1748	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2007"	"2007"	0	1702	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2008"	"2008"	Suppressed	1704	Suppressed
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2009"	"2009"	0	1732	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2010"	"2010"	0	1751	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2011"	"2011"	0	1763	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2012"	"2012"	0	1786	Unreliable
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2013"	"2013"	Suppressed	1791	Suppressed
+	"Montana"	"30"	"Daniels County, MT"	"30019"	"2014"	"2014"	Suppressed	1793	Suppressed
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2006"	"2006"	0	8853	Unreliable
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2007"	"2007"	Suppressed	8944	Suppressed
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2008"	"2008"	0	8925	Unreliable
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2009"	"2009"	Suppressed	9008	Suppressed
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2010"	"2010"	Suppressed	8966	Suppressed
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2011"	"2011"	0	8989	Unreliable
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2012"	"2012"	Suppressed	9249	Suppressed
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2013"	"2013"	0	9445	Unreliable
+	"Montana"	"30"	"Dawson County, MT"	"30021"	"2014"	"2014"	Suppressed	9518	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2006"	"2006"	Suppressed	9180	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2007"	"2007"	Suppressed	9264	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2008"	"2008"	Suppressed	9351	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2009"	"2009"	Suppressed	9260	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2010"	"2010"	Suppressed	9298	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2011"	"2011"	Suppressed	9299	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2012"	"2012"	Suppressed	9227	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2013"	"2013"	Suppressed	9329	Suppressed
+	"Montana"	"30"	"Deer Lodge County, MT"	"30023"	"2014"	"2014"	Suppressed	9150	Suppressed
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2006"	"2006"	Suppressed	2722	Suppressed
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2007"	"2007"	0	2768	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2008"	"2008"	0	2807	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2009"	"2009"	0	2882	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2010"	"2010"	0	2890	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2011"	"2011"	0	2956	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2012"	"2012"	0	3024	Unreliable
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2013"	"2013"	Suppressed	3079	Suppressed
+	"Montana"	"30"	"Fallon County, MT"	"30025"	"2014"	"2014"	0	3108	Unreliable
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2006"	"2006"	0	11501	Unreliable
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2007"	"2007"	Suppressed	11463	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2008"	"2008"	Suppressed	11448	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2009"	"2009"	Suppressed	11571	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2010"	"2010"	Suppressed	11586	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2011"	"2011"	Suppressed	11506	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2012"	"2012"	Suppressed	11435	Suppressed
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2013"	"2013"	0	11501	Unreliable
+	"Montana"	"30"	"Fergus County, MT"	"30027"	"2014"	"2014"	0	11442	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2006"	"2006"	12	85759	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2007"	"2007"	13	88245	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2008"	"2008"	16	90260	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2009"	"2009"	Suppressed	90910	Suppressed
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2010"	"2010"	Suppressed	90928	Suppressed
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2011"	"2011"	Suppressed	91301	Suppressed
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2012"	"2012"	12	91633	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2013"	"2013"	18	93068	Unreliable
+	"Montana"	"30"	"Flathead County, MT"	"30029"	"2014"	"2014"	12	94924	Unreliable
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2006"	"2006"	Suppressed	83984	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2007"	"2007"	Suppressed	86620	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2008"	"2008"	Suppressed	88932	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2009"	"2009"	12	89187	Unreliable
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2010"	"2010"	Suppressed	89513	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2011"	"2011"	Suppressed	91377	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2012"	"2012"	Suppressed	92614	Suppressed
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2013"	"2013"	10	94720	Unreliable
+	"Montana"	"30"	"Gallatin County, MT"	"30031"	"2014"	"2014"	Suppressed	97308	Suppressed
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2006"	"2006"	0	1233	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2007"	"2007"	0	1234	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2008"	"2008"	0	1205	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2009"	"2009"	0	1240	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2010"	"2010"	0	1206	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2011"	"2011"	0	1251	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2012"	"2012"	0	1261	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2013"	"2013"	0	1290	Unreliable
+	"Montana"	"30"	"Garfield County, MT"	"30033"	"2014"	"2014"	0	1309	Unreliable
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2006"	"2006"	Suppressed	13250	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2007"	"2007"	0	13179	Unreliable
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2008"	"2008"	Suppressed	13109	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2009"	"2009"	Suppressed	13266	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2010"	"2010"	Suppressed	13399	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2011"	"2011"	Suppressed	13624	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2012"	"2012"	Suppressed	13711	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2013"	"2013"	Suppressed	13739	Suppressed
+	"Montana"	"30"	"Glacier County, MT"	"30035"	"2014"	"2014"	Suppressed	13696	Suppressed
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2006"	"2006"	0	973	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2007"	"2007"	0	964	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2008"	"2008"	0	890	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2009"	"2009"	0	897	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2010"	"2010"	0	884	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2011"	"2011"	0	865	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2012"	"2012"	0	839	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2013"	"2013"	0	859	Unreliable
+	"Montana"	"30"	"Golden Valley County, MT"	"30037"	"2014"	"2014"	0	852	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2006"	"2006"	0	3013	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2007"	"2007"	Suppressed	3039	Suppressed
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2008"	"2008"	0	3031	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2009"	"2009"	0	3057	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2010"	"2010"	0	3079	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2011"	"2011"	0	3068	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2012"	"2012"	0	3109	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2013"	"2013"	0	3138	Unreliable
+	"Montana"	"30"	"Granite County, MT"	"30039"	"2014"	"2014"	0	3209	Unreliable
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2006"	"2006"	Suppressed	15981	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2007"	"2007"	Suppressed	16031	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2008"	"2008"	Suppressed	15889	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2009"	"2009"	Suppressed	15981	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2010"	"2010"	Suppressed	16096	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2011"	"2011"	Suppressed	16397	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2012"	"2012"	Suppressed	16366	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2013"	"2013"	Suppressed	16568	Suppressed
+	"Montana"	"30"	"Hill County, MT"	"30041"	"2014"	"2014"	Suppressed	16596	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2006"	"2006"	0	10801	Unreliable
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2007"	"2007"	Suppressed	11040	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2008"	"2008"	0	11203	Unreliable
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2009"	"2009"	Suppressed	11364	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2010"	"2010"	Suppressed	11406	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2011"	"2011"	Suppressed	11381	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2012"	"2012"	Suppressed	11401	Suppressed
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2013"	"2013"	0	11512	Unreliable
+	"Montana"	"30"	"Jefferson County, MT"	"30043"	"2014"	"2014"	Suppressed	11558	Suppressed
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2006"	"2006"	0	2146	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2007"	"2007"	0	2083	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2008"	"2008"	0	2071	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2009"	"2009"	0	2076	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2010"	"2010"	0	2072	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2011"	"2011"	0	2004	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2012"	"2012"	0	2024	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2013"	"2013"	0	2016	Unreliable
+	"Montana"	"30"	"Judith Basin County, MT"	"30045"	"2014"	"2014"	0	1991	Unreliable
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2006"	"2006"	Suppressed	28283	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2007"	"2007"	Suppressed	28235	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2008"	"2008"	Suppressed	28515	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2009"	"2009"	Suppressed	28668	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2010"	"2010"	Suppressed	28746	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2011"	"2011"	Suppressed	28947	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2012"	"2012"	Suppressed	28986	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2013"	"2013"	Suppressed	29017	Suppressed
+	"Montana"	"30"	"Lake County, MT"	"30047"	"2014"	"2014"	Suppressed	29099	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2006"	"2006"	Suppressed	59529	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2007"	"2007"	Suppressed	60646	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2008"	"2008"	11	61747	Unreliable
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2009"	"2009"	Suppressed	62671	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2010"	"2010"	Suppressed	63395	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2011"	"2011"	16	64318	Unreliable
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2012"	"2012"	Suppressed	64876	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2013"	"2013"	Suppressed	65338	Suppressed
+	"Montana"	"30"	"Lewis and Clark County, MT"	"30049"	"2014"	"2014"	Suppressed	65856	Suppressed
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2006"	"2006"	Suppressed	2216	Suppressed
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2007"	"2007"	0	2236	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2008"	"2008"	0	2225	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2009"	"2009"	0	2283	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2010"	"2010"	0	2339	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2011"	"2011"	0	2402	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2012"	"2012"	0	2392	Unreliable
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2013"	"2013"	Suppressed	2369	Suppressed
+	"Montana"	"30"	"Liberty County, MT"	"30051"	"2014"	"2014"	0	2359	Unreliable
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2006"	"2006"	Suppressed	19228	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2007"	"2007"	Suppressed	19440	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2008"	"2008"	Suppressed	19541	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2009"	"2009"	Suppressed	19657	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2010"	"2010"	Suppressed	19687	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2011"	"2011"	Suppressed	19566	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2012"	"2012"	Suppressed	19491	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2013"	"2013"	Suppressed	19460	Suppressed
+	"Montana"	"30"	"Lincoln County, MT"	"30053"	"2014"	"2014"	0	19125	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2006"	"2006"	0	1765	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2007"	"2007"	0	1767	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2008"	"2008"	0	1720	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2009"	"2009"	0	1705	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2010"	"2010"	Suppressed	1734	Suppressed
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2011"	"2011"	0	1711	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2012"	"2012"	0	1701	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2013"	"2013"	0	1709	Unreliable
+	"Montana"	"30"	"McCone County, MT"	"30055"	"2014"	"2014"	0	1694	Unreliable
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2006"	"2006"	0	7343	Unreliable
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2007"	"2007"	Suppressed	7560	Suppressed
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2008"	"2008"	Suppressed	7674	Suppressed
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2009"	"2009"	Suppressed	7674	Suppressed
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2010"	"2010"	0	7691	Unreliable
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2011"	"2011"	Suppressed	7660	Suppressed
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2012"	"2012"	0	7733	Unreliable
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2013"	"2013"	0	7712	Unreliable
+	"Montana"	"30"	"Madison County, MT"	"30057"	"2014"	"2014"	Suppressed	7820	Suppressed
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2006"	"2006"	0	1923	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2007"	"2007"	0	1908	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2008"	"2008"	0	1893	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2009"	"2009"	0	1897	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2010"	"2010"	0	1891	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2011"	"2011"	0	1911	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2012"	"2012"	0	1924	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2013"	"2013"	0	1937	Unreliable
+	"Montana"	"30"	"Meagher County, MT"	"30059"	"2014"	"2014"	Suppressed	1853	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2006"	"2006"	Suppressed	4211	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2007"	"2007"	Suppressed	4156	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2008"	"2008"	0	4177	Unreliable
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2009"	"2009"	Suppressed	4200	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2010"	"2010"	Suppressed	4223	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2011"	"2011"	0	4208	Unreliable
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2012"	"2012"	Suppressed	4167	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2013"	"2013"	Suppressed	4275	Suppressed
+	"Montana"	"30"	"Mineral County, MT"	"30061"	"2014"	"2014"	Suppressed	4257	Suppressed
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2006"	"2006"	11	104372	Unreliable
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2007"	"2007"	20	106110	18.8
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2008"	"2008"	22	107747	20.4
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2009"	"2009"	20	108717	18.4
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2010"	"2010"	20	109299	18.3
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2011"	"2011"	11	110138	Unreliable
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2012"	"2012"	19	110977	Unreliable
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2013"	"2013"	18	111807	Unreliable
+	"Montana"	"30"	"Missoula County, MT"	"30063"	"2014"	"2014"	13	112684	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2006"	"2006"	Suppressed	4398	Suppressed
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2007"	"2007"	0	4394	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2008"	"2008"	0	4423	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2009"	"2009"	0	4478	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2010"	"2010"	0	4538	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2011"	"2011"	0	4701	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2012"	"2012"	Suppressed	4665	Suppressed
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2013"	"2013"	0	4629	Unreliable
+	"Montana"	"30"	"Musselshell County, MT"	"30065"	"2014"	"2014"	0	4589	Unreliable
+	"Montana"	"30"	"Park County, MT"	"30067"	"2006"	"2006"	Suppressed	15690	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2007"	"2007"	Suppressed	15828	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2008"	"2008"	Suppressed	15896	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2009"	"2009"	Suppressed	15738	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2010"	"2010"	Suppressed	15636	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2011"	"2011"	Suppressed	15469	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2012"	"2012"	Suppressed	15567	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2013"	"2013"	Suppressed	15682	Suppressed
+	"Montana"	"30"	"Park County, MT"	"30067"	"2014"	"2014"	Suppressed	15880	Suppressed
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2006"	"2006"	0	495	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2007"	"2007"	0	470	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2008"	"2008"	0	481	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2009"	"2009"	0	488	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2010"	"2010"	0	494	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2011"	"2011"	0	491	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2012"	"2012"	0	511	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2013"	"2013"	0	506	Unreliable
+	"Montana"	"30"	"Petroleum County, MT"	"30069"	"2014"	"2014"	0	485	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2006"	"2006"	0	4166	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2007"	"2007"	0	4193	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2008"	"2008"	0	4182	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2009"	"2009"	0	4242	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2010"	"2010"	0	4253	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2011"	"2011"	0	4250	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2012"	"2012"	Suppressed	4128	Suppressed
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2013"	"2013"	0	4179	Unreliable
+	"Montana"	"30"	"Phillips County, MT"	"30071"	"2014"	"2014"	0	4192	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2006"	"2006"	Suppressed	6172	Suppressed
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2007"	"2007"	0	6169	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2008"	"2008"	0	6117	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2009"	"2009"	0	6109	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2010"	"2010"	0	6153	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2011"	"2011"	0	6257	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2012"	"2012"	0	6165	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2013"	"2013"	0	6211	Unreliable
+	"Montana"	"30"	"Pondera County, MT"	"30073"	"2014"	"2014"	Suppressed	6219	Suppressed
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2006"	"2006"	0	1794	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2007"	"2007"	0	1761	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2008"	"2008"	0	1756	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2009"	"2009"	0	1738	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2010"	"2010"	0	1743	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2011"	"2011"	0	1738	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2012"	"2012"	Suppressed	1763	Suppressed
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2013"	"2013"	0	1748	Unreliable
+	"Montana"	"30"	"Powder River County, MT"	"30075"	"2014"	"2014"	Suppressed	1783	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2006"	"2006"	Suppressed	7115	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2007"	"2007"	0	7117	Unreliable
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2008"	"2008"	Suppressed	7036	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2009"	"2009"	0	7093	Unreliable
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2010"	"2010"	Suppressed	7027	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2011"	"2011"	Suppressed	7063	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2012"	"2012"	Suppressed	7096	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2013"	"2013"	Suppressed	6993	Suppressed
+	"Montana"	"30"	"Powell County, MT"	"30077"	"2014"	"2014"	Suppressed	6909	Suppressed
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2006"	"2006"	0	1098	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2007"	"2007"	Suppressed	1083	Suppressed
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2008"	"2008"	0	1123	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2009"	"2009"	0	1139	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2010"	"2010"	0	1179	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2011"	"2011"	0	1159	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2012"	"2012"	0	1157	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2013"	"2013"	0	1179	Unreliable
+	"Montana"	"30"	"Prairie County, MT"	"30079"	"2014"	"2014"	0	1148	Unreliable
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2006"	"2006"	Suppressed	39555	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2007"	"2007"	Suppressed	40023	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2008"	"2008"	Suppressed	40223	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2009"	"2009"	Suppressed	39956	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2010"	"2010"	Suppressed	40212	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2011"	"2011"	Suppressed	40450	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2012"	"2012"	Suppressed	40617	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2013"	"2013"	Suppressed	40823	Suppressed
+	"Montana"	"30"	"Ravalli County, MT"	"30081"	"2014"	"2014"	Suppressed	41030	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2006"	"2006"	0	9267	Unreliable
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2007"	"2007"	0	9356	Unreliable
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2008"	"2008"	0	9430	Unreliable
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2009"	"2009"	Suppressed	9679	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2010"	"2010"	Suppressed	9746	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2011"	"2011"	Suppressed	10128	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2012"	"2012"	Suppressed	10810	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2013"	"2013"	Suppressed	11214	Suppressed
+	"Montana"	"30"	"Richland County, MT"	"30083"	"2014"	"2014"	0	11576	Unreliable
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2006"	"2006"	Suppressed	10285	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2007"	"2007"	0	10166	Unreliable
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2008"	"2008"	Suppressed	10129	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2009"	"2009"	0	10334	Unreliable
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2010"	"2010"	Suppressed	10425	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2011"	"2011"	Suppressed	10527	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2012"	"2012"	Suppressed	10927	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2013"	"2013"	Suppressed	11125	Suppressed
+	"Montana"	"30"	"Roosevelt County, MT"	"30085"	"2014"	"2014"	Suppressed	11332	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2006"	"2006"	Suppressed	9057	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2007"	"2007"	Suppressed	9089	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2008"	"2008"	0	9095	Unreliable
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2009"	"2009"	Suppressed	9174	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2010"	"2010"	Suppressed	9233	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2011"	"2011"	Suppressed	9379	Suppressed
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2012"	"2012"	0	9396	Unreliable
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2013"	"2013"	0	9329	Unreliable
+	"Montana"	"30"	"Rosebud County, MT"	"30087"	"2014"	"2014"	0	9326	Unreliable
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2006"	"2006"	Suppressed	11178	Suppressed
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2007"	"2007"	0	11364	Unreliable
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2008"	"2008"	Suppressed	11433	Suppressed
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2009"	"2009"	0	11471	Unreliable
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2010"	"2010"	Suppressed	11413	Suppressed
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2011"	"2011"	Suppressed	11440	Suppressed
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2012"	"2012"	Suppressed	11408	Suppressed
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2013"	"2013"	0	11363	Unreliable
+	"Montana"	"30"	"Sanders County, MT"	"30089"	"2014"	"2014"	0	11364	Unreliable
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2006"	"2006"	0	3507	Unreliable
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2007"	"2007"	0	3469	Unreliable
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2008"	"2008"	Suppressed	3385	Suppressed
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2009"	"2009"	Suppressed	3387	Suppressed
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2010"	"2010"	0	3384	Unreliable
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2011"	"2011"	0	3460	Unreliable
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2012"	"2012"	Suppressed	3580	Suppressed
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2013"	"2013"	Suppressed	3668	Suppressed
+	"Montana"	"30"	"Sheridan County, MT"	"30091"	"2014"	"2014"	0	3696	Unreliable
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2006"	"2006"	Suppressed	33441	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2007"	"2007"	Suppressed	33489	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2008"	"2008"	Suppressed	33812	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2009"	"2009"	13	34008	Unreliable
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2010"	"2010"	Suppressed	34200	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2011"	"2011"	Suppressed	34383	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2012"	"2012"	Suppressed	34403	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2013"	"2013"	Suppressed	34523	Suppressed
+	"Montana"	"30"	"Silver Bow County, MT"	"30093"	"2014"	"2014"	Suppressed	34680	Suppressed
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2006"	"2006"	0	8659	Unreliable
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2007"	"2007"	0	8867	Unreliable
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2008"	"2008"	0	8945	Unreliable
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2009"	"2009"	Suppressed	9077	Suppressed
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2010"	"2010"	Suppressed	9117	Suppressed
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2011"	"2011"	Suppressed	9131	Suppressed
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2012"	"2012"	0	9195	Unreliable
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2013"	"2013"	Suppressed	9318	Suppressed
+	"Montana"	"30"	"Stillwater County, MT"	"30095"	"2014"	"2014"	Suppressed	9290	Suppressed
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2006"	"2006"	Suppressed	3697	Suppressed
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2007"	"2007"	0	3778	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2008"	"2008"	Suppressed	3755	Suppressed
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2009"	"2009"	0	3731	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2010"	"2010"	0	3651	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2011"	"2011"	0	3623	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2012"	"2012"	0	3605	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2013"	"2013"	0	3669	Unreliable
+	"Montana"	"30"	"Sweet Grass County, MT"	"30097"	"2014"	"2014"	0	3665	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2006"	"2006"	0	6110	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2007"	"2007"	Suppressed	6143	Suppressed
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2008"	"2008"	0	6143	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2009"	"2009"	0	6050	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2010"	"2010"	0	6073	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2011"	"2011"	0	6091	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2012"	"2012"	0	6053	Unreliable
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2013"	"2013"	Suppressed	6065	Suppressed
+	"Montana"	"30"	"Teton County, MT"	"30099"	"2014"	"2014"	Suppressed	6064	Suppressed
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2006"	"2006"	0	5085	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2007"	"2007"	0	4969	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2008"	"2008"	0	5079	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2009"	"2009"	Suppressed	5245	Suppressed
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2010"	"2010"	0	5324	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2011"	"2011"	0	5239	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2012"	"2012"	Suppressed	5220	Suppressed
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2013"	"2013"	0	5138	Unreliable
+	"Montana"	"30"	"Toole County, MT"	"30101"	"2014"	"2014"	0	5150	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2006"	"2006"	0	759	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2007"	"2007"	0	748	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2008"	"2008"	0	754	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2009"	"2009"	0	720	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2010"	"2010"	0	718	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2011"	"2011"	0	727	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2012"	"2012"	Suppressed	736	Suppressed
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2013"	"2013"	0	700	Unreliable
+	"Montana"	"30"	"Treasure County, MT"	"30103"	"2014"	"2014"	0	692	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2006"	"2006"	0	7272	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2007"	"2007"	0	7332	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2008"	"2008"	Suppressed	7415	Suppressed
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2009"	"2009"	0	7349	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2010"	"2010"	0	7369	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2011"	"2011"	0	7487	Unreliable
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2012"	"2012"	Suppressed	7505	Suppressed
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2013"	"2013"	Suppressed	7630	Suppressed
+	"Montana"	"30"	"Valley County, MT"	"30105"	"2014"	"2014"	Suppressed	7640	Suppressed
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2006"	"2006"	0	2035	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2007"	"2007"	0	2080	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2008"	"2008"	0	2151	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2009"	"2009"	0	2158	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2010"	"2010"	0	2168	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2011"	"2011"	0	2140	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2012"	"2012"	0	2104	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2013"	"2013"	0	2134	Unreliable
+	"Montana"	"30"	"Wheatland County, MT"	"30107"	"2014"	"2014"	0	2102	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2006"	"2006"	0	984	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2007"	"2007"	0	1014	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2008"	"2008"	0	986	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2009"	"2009"	0	1030	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2010"	"2010"	0	1017	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2011"	"2011"	0	985	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2012"	"2012"	0	1057	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2013"	"2013"	0	1121	Unreliable
+	"Montana"	"30"	"Wibaux County, MT"	"30109"	"2014"	"2014"	0	1121	Unreliable
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2006"	"2006"	15	139582	Unreliable
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2007"	"2007"	20	141518	14.1
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2008"	"2008"	14	144255	Unreliable
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2009"	"2009"	18	146465	Unreliable
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2010"	"2010"	25	147972	16.9
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2011"	"2011"	24	150069	16.0
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2012"	"2012"	21	151882	13.8
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2013"	"2013"	28	154162	18.2
+	"Montana"	"30"	"Yellowstone County, MT"	"30111"	"2014"	"2014"	21	155634	13.5
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Montana (30)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:36:59 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:36:59 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

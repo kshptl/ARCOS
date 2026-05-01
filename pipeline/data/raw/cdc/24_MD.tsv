@@ -1,0 +1,275 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2006"	"2006"	13	73980	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2007"	"2007"	10	74449	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2008"	"2008"	11	74638	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2009"	"2009"	Suppressed	75101	Suppressed
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2010"	"2010"	12	75087	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2011"	"2011"	16	74692	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2012"	"2012"	12	74012	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2013"	"2013"	16	73521	Unreliable
+	"Maryland"	"24"	"Allegany County, MD"	"24001"	"2014"	"2014"	12	72952	Unreliable
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2006"	"2006"	70	517698	13.5
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2007"	"2007"	79	520503	15.2
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2008"	"2008"	76	525304	14.5
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2009"	"2009"	81	532395	15.2
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2010"	"2010"	66	537656	12.3
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2011"	"2011"	85	544403	15.6
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2012"	"2012"	80	550488	14.5
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2013"	"2013"	97	555743	17.5
+	"Maryland"	"24"	"Anne Arundel County, MD"	"24003"	"2014"	"2014"	121	560133	21.6
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2006"	"2006"	138	793733	17.4
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2007"	"2007"	129	796073	16.2
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2008"	"2008"	133	798651	16.7
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2009"	"2009"	129	801808	16.1
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2010"	"2010"	129	805029	16.0
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2011"	"2011"	119	809941	14.7
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2012"	"2012"	159	817455	19.5
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2013"	"2013"	149	823015	18.1
+	"Maryland"	"24"	"Baltimore County, MD"	"24005"	"2014"	"2014"	189	826925	22.9
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2006"	"2006"	10	87043	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2007"	"2007"	14	87445	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2008"	"2008"	Suppressed	87788	Suppressed
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2009"	"2009"	13	88244	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2010"	"2010"	11	88737	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2011"	"2011"	15	89256	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2012"	"2012"	15	89628	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2013"	"2013"	19	90484	Unreliable
+	"Maryland"	"24"	"Calvert County, MD"	"24009"	"2014"	"2014"	21	90613	23.2
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2006"	"2006"	Suppressed	32214	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2007"	"2007"	Suppressed	32720	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2008"	"2008"	Suppressed	32983	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2009"	"2009"	Suppressed	33013	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2010"	"2010"	Suppressed	33066	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2011"	"2011"	13	32985	Unreliable
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2012"	"2012"	Suppressed	32718	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2013"	"2013"	Suppressed	32693	Suppressed
+	"Maryland"	"24"	"Caroline County, MD"	"24011"	"2014"	"2014"	11	32538	Unreliable
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2006"	"2006"	17	166950	Unreliable
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2007"	"2007"	22	167390	13.1
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2008"	"2008"	21	167433	12.5
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2009"	"2009"	24	167028	14.4
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2010"	"2010"	15	167134	Unreliable
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2011"	"2011"	17	167288	Unreliable
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2012"	"2012"	30	167217	17.9
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2013"	"2013"	37	167564	22.1
+	"Maryland"	"24"	"Carroll County, MD"	"24013"	"2014"	"2014"	35	167830	20.9
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2006"	"2006"	27	98821	27.3
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2007"	"2007"	30	99628	30.1
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2008"	"2008"	15	100232	Unreliable
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2009"	"2009"	21	100816	20.8
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2010"	"2010"	28	101108	27.7
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2011"	"2011"	33	101694	32.5
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2012"	"2012"	28	101696	27.5
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2013"	"2013"	25	101913	24.5
+	"Maryland"	"24"	"Cecil County, MD"	"24015"	"2014"	"2014"	36	102383	35.2
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2006"	"2006"	Suppressed	141164	Suppressed
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2007"	"2007"	12	142721	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2008"	"2008"	16	143783	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2009"	"2009"	14	144804	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2010"	"2010"	13	146551	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2011"	"2011"	18	149130	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2012"	"2012"	16	150592	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2013"	"2013"	15	152864	Unreliable
+	"Maryland"	"24"	"Charles County, MD"	"24017"	"2014"	"2014"	23	154747	14.9
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2006"	"2006"	Suppressed	31677	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2007"	"2007"	Suppressed	32172	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2008"	"2008"	Suppressed	32466	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2009"	"2009"	Suppressed	32470	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2010"	"2010"	Suppressed	32618	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2011"	"2011"	Suppressed	32640	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2012"	"2012"	Suppressed	32551	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2013"	"2013"	Suppressed	32660	Suppressed
+	"Maryland"	"24"	"Dorchester County, MD"	"24019"	"2014"	"2014"	Suppressed	32578	Suppressed
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2006"	"2006"	22	224211	9.8
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2007"	"2007"	18	227463	Unreliable
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2008"	"2008"	16	229286	Unreliable
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2009"	"2009"	22	230942	9.5
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2010"	"2010"	16	233385	Unreliable
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2011"	"2011"	30	236745	12.7
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2012"	"2012"	31	239582	12.9
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2013"	"2013"	37	241409	15.3
+	"Maryland"	"24"	"Frederick County, MD"	"24021"	"2014"	"2014"	43	243675	17.6
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2006"	"2006"	Suppressed	30147	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2007"	"2007"	0	30148	Unreliable
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2008"	"2008"	Suppressed	30222	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2009"	"2009"	Suppressed	30145	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2010"	"2010"	Suppressed	30097	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2011"	"2011"	Suppressed	30051	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2012"	"2012"	0	29854	Unreliable
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2013"	"2013"	Suppressed	29889	Suppressed
+	"Maryland"	"24"	"Garrett County, MD"	"24023"	"2014"	"2014"	Suppressed	29679	Suppressed
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2006"	"2006"	43	241163	17.8
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2007"	"2007"	34	241634	14.1
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2008"	"2008"	39	242779	16.1
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2009"	"2009"	35	243685	14.4
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2010"	"2010"	39	244826	15.9
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2011"	"2011"	41	246489	16.6
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2012"	"2012"	50	248622	20.1
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2013"	"2013"	46	249215	18.5
+	"Maryland"	"24"	"Harford County, MD"	"24025"	"2014"	"2014"	46	250105	18.4
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2006"	"2006"	15	271793	Unreliable
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2007"	"2007"	19	275196	Unreliable
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2008"	"2008"	16	278405	Unreliable
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2009"	"2009"	21	283061	7.4
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2010"	"2010"	14	287085	Unreliable
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2011"	"2011"	25	293142	8.5
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2012"	"2012"	30	299430	10.0
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2013"	"2013"	28	304580	9.2
+	"Maryland"	"24"	"Howard County, MD"	"24027"	"2014"	"2014"	20	309284	6.5
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2006"	"2006"	Suppressed	19786	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2007"	"2007"	Suppressed	19801	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2008"	"2008"	Suppressed	20150	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2009"	"2009"	Suppressed	20132	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2010"	"2010"	Suppressed	20197	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2011"	"2011"	Suppressed	20204	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2012"	"2012"	Suppressed	20191	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2013"	"2013"	Suppressed	19944	Suppressed
+	"Maryland"	"24"	"Kent County, MD"	"24029"	"2014"	"2014"	Suppressed	19820	Suppressed
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2006"	"2006"	43	926492	4.6
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2007"	"2007"	55	931694	5.9
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2008"	"2008"	51	942748	5.4
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2009"	"2009"	47	959013	4.9
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2010"	"2010"	32	971777	3.3
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2011"	"2011"	44	989794	4.4
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2012"	"2012"	57	1004709	5.7
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2013"	"2013"	56	1016677	5.5
+	"Maryland"	"24"	"Montgomery County, MD"	"24031"	"2014"	"2014"	73	1030447	7.1
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2006"	"2006"	38	852097	4.5
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2007"	"2007"	42	849916	4.9
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2008"	"2008"	52	850167	6.1
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2009"	"2009"	62	856161	7.2
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2010"	"2010"	51	863420	5.9
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2011"	"2011"	48	871233	5.5
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2012"	"2012"	58	881138	6.6
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2013"	"2013"	53	890081	6.0
+	"Maryland"	"24"	"Prince George's County, MD"	"24033"	"2014"	"2014"	67	904430	7.4
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2006"	"2006"	Suppressed	45716	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2007"	"2007"	Suppressed	46517	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2008"	"2008"	Suppressed	47063	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2009"	"2009"	Suppressed	47532	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2010"	"2010"	Suppressed	47798	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2011"	"2011"	Suppressed	48354	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2012"	"2012"	Suppressed	48595	Suppressed
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2013"	"2013"	10	48517	Unreliable
+	"Maryland"	"24"	"Queen Anne's County, MD"	"24035"	"2014"	"2014"	11	48804	Unreliable
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2006"	"2006"	Suppressed	98849	Suppressed
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2007"	"2007"	Suppressed	100599	Suppressed
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2008"	"2008"	11	101921	Unreliable
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2009"	"2009"	Suppressed	103273	Suppressed
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2010"	"2010"	15	105151	Unreliable
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2011"	"2011"	Suppressed	107484	Suppressed
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2012"	"2012"	11	108987	Unreliable
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2013"	"2013"	12	109633	Unreliable
+	"Maryland"	"24"	"St. Mary's County, MD"	"24037"	"2014"	"2014"	11	110382	Unreliable
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2006"	"2006"	Suppressed	26139	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2007"	"2007"	Suppressed	26534	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2008"	"2008"	Suppressed	26474	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2009"	"2009"	Suppressed	26425	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2010"	"2010"	Suppressed	26470	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2011"	"2011"	Suppressed	26339	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2012"	"2012"	Suppressed	26253	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2013"	"2013"	Suppressed	26273	Suppressed
+	"Maryland"	"24"	"Somerset County, MD"	"24039"	"2014"	"2014"	Suppressed	25859	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2006"	"2006"	Suppressed	37000	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2007"	"2007"	Suppressed	37167	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2008"	"2008"	Suppressed	37307	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2009"	"2009"	Suppressed	37496	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2010"	"2010"	Suppressed	37782	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2011"	"2011"	Suppressed	38025	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2012"	"2012"	Suppressed	38098	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2013"	"2013"	Suppressed	37931	Suppressed
+	"Maryland"	"24"	"Talbot County, MD"	"24041"	"2014"	"2014"	Suppressed	37643	Suppressed
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2006"	"2006"	20	144286	13.9
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2007"	"2007"	20	146173	13.7
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2008"	"2008"	21	146674	14.3
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2009"	"2009"	15	146953	Unreliable
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2010"	"2010"	18	147430	Unreliable
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2011"	"2011"	22	148203	14.8
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2012"	"2012"	27	149180	18.1
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2013"	"2013"	37	149588	24.7
+	"Maryland"	"24"	"Washington County, MD"	"24043"	"2014"	"2014"	46	149573	30.8
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2006"	"2006"	16	94621	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2007"	"2007"	Suppressed	96110	Suppressed
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2008"	"2008"	10	97111	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2009"	"2009"	16	98069	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2010"	"2010"	10	98733	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2011"	"2011"	13	99190	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2012"	"2012"	18	100647	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2013"	"2013"	11	100896	Unreliable
+	"Maryland"	"24"	"Wicomico County, MD"	"24045"	"2014"	"2014"	15	101539	Unreliable
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2006"	"2006"	10	50678	Unreliable
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2007"	"2007"	Suppressed	51049	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2008"	"2008"	12	51196	Unreliable
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2009"	"2009"	Suppressed	51313	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2010"	"2010"	Suppressed	51454	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2011"	"2011"	Suppressed	51514	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2012"	"2012"	Suppressed	51578	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2013"	"2013"	Suppressed	51620	Suppressed
+	"Maryland"	"24"	"Worcester County, MD"	"24047"	"2014"	"2014"	10	51675	Unreliable
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2006"	"2006"	241	621109	38.8
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2007"	"2007"	242	620306	39.0
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2008"	"2008"	155	620184	25.0
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2009"	"2009"	200	620509	32.2
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2010"	"2010"	145	620961	23.4
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2011"	"2011"	140	619493	22.6
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2012"	"2012"	178	621342	28.6
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2013"	"2013"	205	622104	33.0
+	"Maryland"	"24"	"Baltimore city, MD"	"24510"	"2014"	"2014"	263	622793	42.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Maryland (24)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:34:55 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:34:55 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are reported separately for Baltimore City (FIPS code 24510) and Baltimore county (FIPS code"
+"24005)."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"5. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

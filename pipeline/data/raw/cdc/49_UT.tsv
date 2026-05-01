@@ -1,0 +1,318 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2006"	"2006"	Suppressed	6281	Suppressed
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2007"	"2007"	Suppressed	6266	Suppressed
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2008"	"2008"	0	6413	Unreliable
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2009"	"2009"	Suppressed	6552	Suppressed
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2010"	"2010"	0	6629	Unreliable
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2011"	"2011"	0	6594	Unreliable
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2012"	"2012"	Suppressed	6501	Suppressed
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2013"	"2013"	Suppressed	6459	Suppressed
+	"Utah"	"49"	"Beaver County, UT"	"49001"	"2014"	"2014"	Suppressed	6461	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2006"	"2006"	Suppressed	45948	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2007"	"2007"	10	47193	Unreliable
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2008"	"2008"	Suppressed	48437	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2009"	"2009"	Suppressed	49372	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2010"	"2010"	Suppressed	49975	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2011"	"2011"	10	50290	Unreliable
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2012"	"2012"	Suppressed	50171	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2013"	"2013"	Suppressed	50794	Suppressed
+	"Utah"	"49"	"Box Elder County, UT"	"49003"	"2014"	"2014"	Suppressed	51518	Suppressed
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2006"	"2006"	Suppressed	101236	Suppressed
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2007"	"2007"	13	103624	Unreliable
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2008"	"2008"	12	106824	Unreliable
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2009"	"2009"	12	110291	Unreliable
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2010"	"2010"	Suppressed	112656	Suppressed
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2011"	"2011"	Suppressed	114699	Suppressed
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2012"	"2012"	17	115520	Unreliable
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2013"	"2013"	17	116909	Unreliable
+	"Utah"	"49"	"Cache County, UT"	"49005"	"2014"	"2014"	14	118343	Unreliable
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2006"	"2006"	Suppressed	20072	Suppressed
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2007"	"2007"	10	20554	Unreliable
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2008"	"2008"	Suppressed	20596	Suppressed
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2009"	"2009"	Suppressed	21143	Suppressed
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2010"	"2010"	Suppressed	21403	Suppressed
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2011"	"2011"	15	21318	Unreliable
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2012"	"2012"	Suppressed	21246	Suppressed
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2013"	"2013"	14	20988	Unreliable
+	"Utah"	"49"	"Carbon County, UT"	"49007"	"2014"	"2014"	11	20660	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2006"	"2006"	0	984	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2007"	"2007"	Suppressed	974	Suppressed
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2008"	"2008"	0	993	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2009"	"2009"	0	1037	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2010"	"2010"	0	1059	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2011"	"2011"	0	1156	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2012"	"2012"	0	1090	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2013"	"2013"	0	1127	Unreliable
+	"Utah"	"49"	"Daggett County, UT"	"49009"	"2014"	"2014"	0	1117	Unreliable
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2006"	"2006"	40	278800	14.3
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2007"	"2007"	49	288236	17.0
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2008"	"2008"	58	295801	19.6
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2009"	"2009"	45	301965	14.9
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2010"	"2010"	42	306479	13.7
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2011"	"2011"	31	311811	9.9
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2012"	"2012"	55	315809	17.4
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2013"	"2013"	45	322094	14.0
+	"Utah"	"49"	"Davis County, UT"	"49011"	"2014"	"2014"	51	329692	15.5
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2006"	"2006"	Suppressed	15823	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2007"	"2007"	Suppressed	16651	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2008"	"2008"	Suppressed	17412	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2009"	"2009"	Suppressed	18536	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2010"	"2010"	Suppressed	18607	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2011"	"2011"	Suppressed	18888	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2012"	"2012"	Suppressed	19244	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2013"	"2013"	Suppressed	20308	Suppressed
+	"Utah"	"49"	"Duchesne County, UT"	"49013"	"2014"	"2014"	Suppressed	20380	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2006"	"2006"	Suppressed	10445	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2007"	"2007"	Suppressed	10566	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2008"	"2008"	Suppressed	10740	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2009"	"2009"	Suppressed	10896	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2010"	"2010"	Suppressed	10976	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2011"	"2011"	Suppressed	10944	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2012"	"2012"	Suppressed	10933	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2013"	"2013"	Suppressed	10749	Suppressed
+	"Utah"	"49"	"Emery County, UT"	"49015"	"2014"	"2014"	Suppressed	10631	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2006"	"2006"	Suppressed	4670	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2007"	"2007"	0	4850	Unreliable
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2008"	"2008"	Suppressed	5010	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2009"	"2009"	0	5068	Unreliable
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2010"	"2010"	Suppressed	5172	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2011"	"2011"	0	5144	Unreliable
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2012"	"2012"	Suppressed	5095	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2013"	"2013"	Suppressed	5083	Suppressed
+	"Utah"	"49"	"Garfield County, UT"	"49017"	"2014"	"2014"	0	5024	Unreliable
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2006"	"2006"	Suppressed	8787	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2007"	"2007"	Suppressed	8838	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2008"	"2008"	Suppressed	8981	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2009"	"2009"	Suppressed	9034	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2010"	"2010"	Suppressed	9225	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2011"	"2011"	0	9325	Unreliable
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2012"	"2012"	Suppressed	9328	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2013"	"2013"	Suppressed	9360	Suppressed
+	"Utah"	"49"	"Grand County, UT"	"49019"	"2014"	"2014"	0	9429	Unreliable
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2006"	"2006"	Suppressed	42000	Suppressed
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2007"	"2007"	10	43645	Unreliable
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2008"	"2008"	Suppressed	44547	Suppressed
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2009"	"2009"	Suppressed	45693	Suppressed
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2010"	"2010"	Suppressed	46163	Suppressed
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2011"	"2011"	16	46740	Unreliable
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2012"	"2012"	11	46750	Unreliable
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2013"	"2013"	Suppressed	46780	Suppressed
+	"Utah"	"49"	"Iron County, UT"	"49021"	"2014"	"2014"	Suppressed	47269	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2006"	"2006"	Suppressed	9175	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2007"	"2007"	Suppressed	9607	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2008"	"2008"	Suppressed	10024	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2009"	"2009"	Suppressed	10209	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2010"	"2010"	Suppressed	10246	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2011"	"2011"	Suppressed	10335	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2012"	"2012"	Suppressed	10341	Suppressed
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2013"	"2013"	0	10348	Unreliable
+	"Utah"	"49"	"Juab County, UT"	"49023"	"2014"	"2014"	Suppressed	10486	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2006"	"2006"	Suppressed	6678	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2007"	"2007"	Suppressed	6778	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2008"	"2008"	Suppressed	6853	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2009"	"2009"	Suppressed	7001	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2010"	"2010"	0	7125	Unreliable
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2011"	"2011"	0	7257	Unreliable
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2012"	"2012"	Suppressed	7221	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2013"	"2013"	Suppressed	7260	Suppressed
+	"Utah"	"49"	"Kane County, UT"	"49025"	"2014"	"2014"	Suppressed	7254	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2006"	"2006"	Suppressed	11946	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2007"	"2007"	Suppressed	11954	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2008"	"2008"	Suppressed	12146	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2009"	"2009"	0	12343	Unreliable
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2010"	"2010"	Suppressed	12503	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2011"	"2011"	Suppressed	12645	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2012"	"2012"	Suppressed	12569	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2013"	"2013"	Suppressed	12662	Suppressed
+	"Utah"	"49"	"Millard County, UT"	"49027"	"2014"	"2014"	0	12606	Unreliable
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2006"	"2006"	Suppressed	8342	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2007"	"2007"	Suppressed	8771	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2008"	"2008"	Suppressed	9126	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2009"	"2009"	0	9318	Unreliable
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2010"	"2010"	Suppressed	9469	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2011"	"2011"	Suppressed	9685	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2012"	"2012"	0	9821	Unreliable
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2013"	"2013"	Suppressed	10173	Suppressed
+	"Utah"	"49"	"Morgan County, UT"	"49029"	"2014"	"2014"	Suppressed	10608	Suppressed
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2006"	"2006"	0	1429	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2007"	"2007"	0	1419	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2008"	"2008"	0	1511	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2009"	"2009"	0	1528	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2010"	"2010"	Suppressed	1556	Suppressed
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2011"	"2011"	Suppressed	1497	Suppressed
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2012"	"2012"	0	1524	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2013"	"2013"	0	1510	Unreliable
+	"Utah"	"49"	"Piute County, UT"	"49031"	"2014"	"2014"	0	1484	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2006"	"2006"	0	2035	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2007"	"2007"	0	2124	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2008"	"2008"	0	2227	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2009"	"2009"	0	2253	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2010"	"2010"	0	2264	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2011"	"2011"	0	2303	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2012"	"2012"	0	2267	Unreliable
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2013"	"2013"	Suppressed	2288	Suppressed
+	"Utah"	"49"	"Rich County, UT"	"49033"	"2014"	"2014"	0	2293	Unreliable
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2006"	"2006"	203	966798	21.0
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2007"	"2007"	218	983719	22.2
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2008"	"2008"	211	999553	21.1
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2009"	"2009"	215	1016795	21.1
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2010"	"2010"	168	1029655	16.3
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2011"	"2011"	214	1048985	20.4
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2012"	"2012"	248	1063842	23.3
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2013"	"2013"	262	1079721	24.3
+	"Utah"	"49"	"Salt Lake County, UT"	"49035"	"2014"	"2014"	264	1091742	24.2
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2006"	"2006"	0	13679	Unreliable
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2007"	"2007"	Suppressed	14028	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2008"	"2008"	Suppressed	14436	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2009"	"2009"	Suppressed	14514	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2010"	"2010"	Suppressed	14746	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2011"	"2011"	Suppressed	14825	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2012"	"2012"	Suppressed	14965	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2013"	"2013"	Suppressed	14973	Suppressed
+	"Utah"	"49"	"San Juan County, UT"	"49037"	"2014"	"2014"	Suppressed	15251	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2006"	"2006"	Suppressed	25051	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2007"	"2007"	Suppressed	25846	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2008"	"2008"	Suppressed	26959	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2009"	"2009"	Suppressed	27511	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2010"	"2010"	Suppressed	27822	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2011"	"2011"	Suppressed	27988	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2012"	"2012"	Suppressed	27906	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2013"	"2013"	Suppressed	28237	Suppressed
+	"Utah"	"49"	"Sanpete County, UT"	"49039"	"2014"	"2014"	Suppressed	28477	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2006"	"2006"	Suppressed	19844	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2007"	"2007"	Suppressed	20236	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2008"	"2008"	Suppressed	20599	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2009"	"2009"	Suppressed	20694	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2010"	"2010"	Suppressed	20802	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2011"	"2011"	Suppressed	20971	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2012"	"2012"	Suppressed	20784	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2013"	"2013"	Suppressed	20852	Suppressed
+	"Utah"	"49"	"Sevier County, UT"	"49041"	"2014"	"2014"	Suppressed	20773	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2006"	"2006"	Suppressed	34242	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2007"	"2007"	Suppressed	34647	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2008"	"2008"	Suppressed	35229	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2009"	"2009"	Suppressed	35838	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2010"	"2010"	Suppressed	36324	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2011"	"2011"	Suppressed	37594	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2012"	"2012"	Suppressed	38003	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2013"	"2013"	Suppressed	38486	Suppressed
+	"Utah"	"49"	"Summit County, UT"	"49043"	"2014"	"2014"	Suppressed	39105	Suppressed
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2006"	"2006"	Suppressed	51483	Suppressed
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2007"	"2007"	12	53821	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2008"	"2008"	12	55909	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2009"	"2009"	Suppressed	57218	Suppressed
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2010"	"2010"	10	58218	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2011"	"2011"	12	59326	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2012"	"2012"	11	59870	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2013"	"2013"	18	60762	Unreliable
+	"Utah"	"49"	"Tooele County, UT"	"49045"	"2014"	"2014"	24	61598	39.0
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2006"	"2006"	Suppressed	28662	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2007"	"2007"	Suppressed	29920	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2008"	"2008"	Suppressed	31009	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2009"	"2009"	Suppressed	32931	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2010"	"2010"	Suppressed	32588	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2011"	"2011"	Suppressed	33163	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2012"	"2012"	Suppressed	34524	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2013"	"2013"	Suppressed	35555	Suppressed
+	"Utah"	"49"	"Uintah County, UT"	"49047"	"2014"	"2014"	Suppressed	36867	Suppressed
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2006"	"2006"	79	448296	17.6
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2007"	"2007"	78	469574	16.6
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2008"	"2008"	55	487615	11.3
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2009"	"2009"	76	504801	15.1
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2010"	"2010"	75	516564	14.5
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2011"	"2011"	90	530499	17.0
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2012"	"2012"	96	540504	17.8
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2013"	"2013"	84	551891	15.2
+	"Utah"	"49"	"Utah County, UT"	"49049"	"2014"	"2014"	91	560974	16.2
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2006"	"2006"	Suppressed	20755	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2007"	"2007"	Suppressed	21413	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2008"	"2008"	Suppressed	22120	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2009"	"2009"	Suppressed	22886	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2010"	"2010"	0	23530	Unreliable
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2011"	"2011"	Suppressed	24417	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2012"	"2012"	Suppressed	25273	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2013"	"2013"	Suppressed	26437	Suppressed
+	"Utah"	"49"	"Wasatch County, UT"	"49051"	"2014"	"2014"	Suppressed	27714	Suppressed
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2006"	"2006"	16	126796	Unreliable
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2007"	"2007"	17	132277	Unreliable
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2008"	"2008"	20	135552	14.8
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2009"	"2009"	15	137088	Unreliable
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2010"	"2010"	23	138115	16.7
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2011"	"2011"	21	141666	14.8
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2012"	"2012"	36	144809	24.9
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2013"	"2013"	37	147800	25.0
+	"Utah"	"49"	"Washington County, UT"	"49053"	"2014"	"2014"	26	151948	17.1
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2006"	"2006"	Suppressed	2594	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2007"	"2007"	Suppressed	2648	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2008"	"2008"	Suppressed	2731	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2009"	"2009"	Suppressed	2788	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2010"	"2010"	0	2778	Unreliable
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2011"	"2011"	Suppressed	2737	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2012"	"2012"	0	2737	Unreliable
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2013"	"2013"	Suppressed	2747	Suppressed
+	"Utah"	"49"	"Wayne County, UT"	"49055"	"2014"	"2014"	0	2723	Unreliable
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2006"	"2006"	29	212656	13.6
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2007"	"2007"	55	217567	25.3
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2008"	"2008"	51	223676	22.8
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2009"	"2009"	52	228118	22.8
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2010"	"2010"	45	231236	19.5
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2011"	"2011"	59	234420	25.2
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2012"	"2012"	63	236640	26.6
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2013"	"2013"	45	238519	18.9
+	"Utah"	"49"	"Weber County, UT"	"49057"	"2014"	"2014"	61	240475	25.4
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Utah (49)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:43:14 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:43:14 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

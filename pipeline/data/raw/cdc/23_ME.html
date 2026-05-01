@@ -1,0 +1,1676 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html xmlns:xsljava="xalan://gov.cdc.wonder.util.XSLHelper" xmlns:wonder="http://wonder.cdc.gov" xmlns:math="http://exslt.org/math" xmlns:str="http://exslt.org/strings" xmlns:xalan="http://xml.apache.org/xalan" class="cdc-2022 theme-blue cdc-page-type-content cdc-tp5" lang="en-us"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Underlying Cause of Death, 1999-2020 Results Form</title><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#075290">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/templatepackage/4.0/assets/imgs/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/templatepackage/4.0/assets/imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/templatepackage/4.0/assets/imgs/favicon/favicon-16x16.png">
+<link rel="mask-icon" href="/templatepackage/4.0/assets/imgs/favicon/safari-pinned-tab.svg" color="#0056b3">
+<meta name="msapplication-TileColor" content="#0056b3">
+<meta name="theme-color" content="#0056b3">
+
+<link rel="stylesheet prefetch" href="/templatepackage/contrib/libs/bootstrap/latest/css/bootstrap.min.css?_=58548">
+<link rel="stylesheet prefetch" href="/templatepackage/4.0/assets/css/app.tp5.min.css?_=58548">
+<link rel="stylesheet" media="print" href="/templatepackage/4.0/assets/css/print.min.css?_=58548">
+
+<!-- @prismcss@ -->
+<script src="https://www.cdc.gov/JScript/metrics/topic_levels.js?_=58548"></script>
+<script src="https://www.cdc.gov/JScript/metrics/adobe/launch/b36c1852e229/2c674008a127/launch-04da70ea688d.min.js" async=""></script>
+
+<link rel="stylesheet" href="/t4_wonder_general.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_general.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_finder2.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_results.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/print.css?v=1.1" type="text/css" media="print">
+<link rel="stylesheet" href="/components/components.css" type="text/css">
+<!--[if lt IE 10]>
+	<link rel="stylesheet" href="/rr_ieold.css?v=1.1"/>
+<![endif]-->
+
+<script src="/wonder.js"></script>
+<script src="/finder.js"></script>
+<script src="/accordion.js"></script>
+<script src="/components/components.js"></script>
+<style>
+.lastrow td { padding-bottom: 10px !important; }
+</style>
+    <script language="javascript">
+
+var ocSections = [ 
+	new OCSection(1, 'close')
+];
+
+// put min/max values for all totals/zeros combinations for each numeric measure into this JS object for later use
+var measures = {
+
+	"D76.M1": {
+	"max": "1,484",
+	"min": "0",
+	"maxNtNz": "46",
+	"minNtNz": "10",
+	"maxNtWz": "46",
+	"minNtWz": "0",
+	"maxWtNz": "1,484",
+	"minWtNz": "10"
+	},
+	"D76.M2": {
+	"max": "11,954,890",
+	"min": "17,026",
+	"maxNtNz": "287,797",
+	"minNtNz": "17,026",
+	"maxNtWz": "287,797",
+	"minNtWz": "17,026",
+	"maxWtNz": "11,954,890",
+	"minWtNz": "17,026"
+	},
+	"D76.M3": {
+	"max": "21.9",
+	"min": "7.8",
+	"maxNtNz": "21.9",
+	"minNtNz": "7.9",
+	"maxNtWz": "21.9",
+	"minNtWz": "7.9",
+	"maxWtNz": "21.9",
+	"minWtNz": "7.8"
+	} 
+};
+
+
+
+// byvariable action for vaers ids, add input with vaers id for report
+function bvActionVaersID(vaersID) {
+
+	var form = document.getElementById('wonderform');
+	var input = document.createElement('input');
+	input.type = 'hidden';
+	input.name= 'vaers_report_id';
+	input.value = vaersID;
+	form.appendChild(input);
+}
+
+function clearGroups() {
+
+	for (var n = 2; n < 11; n++)
+		document.getElementById('group' + n).value = '';
+}
+
+function groupsCurrentSortBySet() {
+
+	var select = document.getElementById('tsort');
+	var index = select.selectedIndex;
+	var options = select.options;
+	for (var n = 0; n < options.length; n++) {
+		var divId = options[n].value.replace(',', '_');
+		if (n == index) {
+			groupsSetStartEndValues(options[n].value.split(',')[0], divId);
+			replaceClass(divId, 'displayoff', 'displayon');
+			var elem = document.getElementById(divId + 'S');
+			var text = elem == null ? 'n/a' : (elem.innerText || elem.textContent);
+			if (text == 'text')
+				text = 'n/a';
+			document.getElementById('group1').value = text;
+		}
+		else
+			replaceClass(divId, 'displayon', 'displayoff');
+	}
+}
+
+// set start/end values for current sort by measure using current totals/zeros settings
+function groupsSetStartEndValues(mcode, divId) {
+
+	// no start/end sections for byvariables or text variables
+	if (document.getElementById(divId + 'S') == null)
+		return;
+
+	var max = 0;
+	var min = 0;
+	var totals = document.form.O_show_totals.checked;
+	var zeros = document.form.O_show_zeros.checked;
+	if (totals && zeros) {
+		max = measures[mcode].max;
+		min = measures[mcode].min;
+	}
+	else if (totals && !zeros) {
+		max = measures[mcode].maxWtNz;
+		min = measures[mcode].minWtNz;
+	}
+	else if (!totals && zeros) {
+		max = measures[mcode].maxNtWz;
+		min = measures[mcode].minNtWz;
+	}
+	else {
+		max = measures[mcode].maxNtNz;
+		min = measures[mcode].minNtNz;
+	}
+
+	var asc = divId.indexOf('ASCEND') > -1;
+	var elem = document.getElementById(divId + 'S');
+	if (elem.innerText) 
+		elem.innerText = asc ? min : max;
+	if (elem.textContent)
+		elem.textContent = asc ? min : max;
+
+	elem = document.getElementById(divId + 'E');
+	if (elem.innerText) 
+		elem.innerText = asc ? max : min;
+	if (elem.textContent)
+		elem.textContent = asc ? max : min;
+}
+
+function measuresHide() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+
+	while (true) {
+		var found = false;
+		for (var n = 0; n < showOptions.length; n++) {
+			if (showOptions[n].selected) {
+				showSelect.remove(n);
+				found = true;
+			}
+		}
+		if (!found)
+			break;
+	}
+
+	if (showOptions.length > 0)
+		showOptions[0].selected = true;
+}
+
+function measuresShow() {
+
+	var allOptions = document.getElementById('measures-all').options;
+	var showOptions = document.getElementById('measures-show').options;
+
+	for (var n = 0; n < allOptions.length; n++) {
+		if (allOptions[n].selected)
+			measuresShowAdd(showOptions, allOptions[n]);
+	}
+}
+
+
+function measuresShowAdd(showOptions, option) {
+
+	for (var n = 0; n < showOptions.length; n++) {
+		if (showOptions[n].value == option.value) {
+			(option.text + ' is already in the "Measures Shown" box.');
+			return;
+		}
+	}
+
+	var newoption = new Option(option.text, option.value);
+	showOptions[showOptions.length] = newoption;
+
+}
+
+function measuresSortDown() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+	for (var n = showOptions.length - 2; n > -1; n--) {
+		if (!showOptions[n].selected)
+			continue;
+		// just swapping elements caused array to shorten by 1, need to make copy
+		var nextCopy = new Option(showOptions[n+1].text, showOptions[n+1].value);
+		var cur = showOptions[n];
+		showOptions[n] = nextCopy;
+		showOptions[n + 1] = cur;
+	}
+}
+
+function measuresSortUp() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+	for (var n = 1; n < showOptions.length; n++) {
+		if (!showOptions[n].selected)
+			continue;
+		// just swapping elements caused array to shorten by 1, need to make copy
+		var prevCopy = new Option(showOptions[n-1].text, showOptions[n-1].value);
+		var cur = showOptions[n];
+		showOptions[n] = prevCopy;
+		showOptions[n - 1] = cur;
+	}
+}
+
+function setFocus(elemId) {
+
+	var elem = document.getElementById(elemId);
+	if (elem != null) {
+		if (elemId = 'table-options')
+			optionsShow('results_table');
+		elem.scrollIntoView();
+		window.scrollBy(0, -80);
+	}
+}
+
+function validate() {
+
+	// get measures from the Measures Shown list
+	var showOptions = document.getElementById('measures-show').options;
+	var measures = '';
+
+	for (var n = 0; n < showOptions.length; n++) {
+		if (measures != '')
+			measures += ',';
+		measures += showOptions[n].value;
+	}
+
+	// if Change Table button clicked, perform validations, return false if any fail
+	// otherwise set O_results_table_options.value = 'off' so table isn't redisplayed and return true
+	if (submitGet() == 'action-Change Table') {
+		// get measure selected in the Sort By list
+		var sortSelect = document.getElementById('tsort');
+		var index = sortSelect.selectedIndex;
+		if (index == -1) {
+			('Please select an item in the "Sort By" list');
+			return false;
+		}
+		var sortOptions = sortSelect.options;
+		var sel = sortOptions[index].value;
+		var mcode = sel.split(',')[0];
+
+		// check that sort measure is also shown
+		if (mcode != 'byvar' && measures.indexOf(mcode) == -1) {
+			(sortOptions[index].text + '  is selected in the "Sort By" list but isn\'t in the "Measures Shown" list.'
+				+ '\n\nPlease alter your selections so the sort by measure is also shown.');
+			return false;
+		}
+
+		// if doing group breaks, make sure we're sorting by a measure
+//		if (document.form.O_groups.value == 'true') {
+		if (document.form.O_groups.checked) {
+			// points to an element containing start value for numeric measures, isn't there for non-numeric
+			var elem = document.getElementById(mcode + '_MEASURE_ASCENDS');
+			if (mcode == 'byvar' || elem == null) {
+				('A numeric measure must be selected in the "Sort By" list to break results into groups.');
+				return false;
+			}
+		}
+
+		document.form.O_results_table_options.value = 'off';
+	}
+	
+
+	// measures_list contains the complete list from the Measures Shown list, needed by Java code
+	// normally just selected items returned cause it's a select box
+	document.form.measures_list.value = measures;
+
+	return sendMsgSet();
+}
+
+</script>
+  </head>
+  <body onunload="sendMsgClear()">
+    <a name="Top"></a>	<div id="skipmenu">
+		<a class="skippy sr-only-focusable" href="#content">Skip directly to site content</a>
+		<a class="skippy sr-only-focusable" href="#share-nav">Skip directly to page options</a>
+		<a class="skippy d-none d-lg-block sr-only-focusable" href="#az-large">Skip directly to A-Z link</a>
+		<a class="skippy d-none d-md-block d-lg-none sr-only-focusable" href="#az-medium">Skip directly to A-Z link</a>
+		<a class="skippy d-md-none sr-only-focusable" href="#az-small">Skip directly to A-Z link</a>
+	</div>
+
+	<!-- (1) Global Alerts Area  -->
+
+<div class="cdc-header-official-notice container noindex">
+	<div class="cdc-header-official-notice-header d-flex">
+		<img src="/templatepackage/4.0/assets/imgs/uswds/us_flag_small.png" width="16" height="11" alt="U.S. flag">
+		<small class="ml-2">An official website of the United States government <button class="cdc-header-official-notice-header-btn">Here's how you know <span class="cdc-header-official-notice-header-icon x12 fill-p cdc-icon-arrow-down"></span></button></small>
+	</div>
+
+	<div class="cdc-header-official-notice-body row" style="display: none;">
+		<figure class="col-lg-6 d-flex">
+			<img class="cdc-header-official-notice-body-img" src="/templatepackage/4.0/assets/imgs/uswds/icon-dot-gov.svg" alt="Official icon" aria-hidden="true">
+			<figcaption class="cdc-header-official-notice-body-info ml-3">
+				<p class="cdc-header-official-notice-body-title mb-1"><strong>Official websites use .gov</strong></p>
+				<p>A .gov website belongs to an official government organization in the United States.</p>
+			</figcaption>
+		</figure>
+		<figure class="col-lg-6 d-flex">
+			<img class="cdc-header-official-notice-body-img" src="/templatepackage/4.0/assets/imgs/uswds/icon-https.svg" alt="Lock icon" aria-hidden="true">
+			<figcaption class="cdc-header-official-notice-body-info ml-3">
+				<p class="cdc-header-official-notice-body-title mb-1"><strong>Secure .gov websites use HTTPS</strong></p>
+				<p>A lock ( <span class="x16 fill-black cdc-icon-lock-alt-solid"></span> ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.</p>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+	<!-- (2) Intranet - Links Bar -->
+
+	<!-- (3) Header Bar -->
+	<div class="container-fluid header-wrapper">
+		<div class="container">
+			<header role="banner" aria-label="Header" class="pt-2 pb-2">
+				<div class="row"> 
+				<div class="col cdc-logo">
+<a href="https://www.cdc.gov/">
+	<span class="sr-only">Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People</span>
+	<img src="/templatepackage/4.0/assets/imgs/logo/logo-notext.svg" alt="CDC Logo" class="cdc-logo--desktop">
+	<img src="/templatepackage/4.0/assets/imgs/logo/logo-notext.svg" alt="CDC Logo" class="cdc-logo--mobile">
+</a>
+				</div>
+				<div class="col-3 col-xl-4 col-xxl-3 tp-search">
+<div class="headerSearch cdc-header-search">
+	<form accept-charset="UTF-8" action="https://search.cdc.gov/search/" class="cdc-header-search-form" method="get" autocomplete="off">
+
+		<!-- fallback mobile search -->
+		<button class="btn btn-primary dropdown-toggle no-toggle search-button ssi d-xl-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="search"><span>Search</span>
+			<i class="fi cdc-icon-magnify dropdown-menu-medium-search-icon x24" aria-hidden="true"></i>
+			<i class="fi cdc-icon-close dropdown-menu-medium-close-icon x24" aria-hidden="true"></i>
+		</button>
+
+		<div class="dropdown-menu dropdown-menu-right dropdown-menu-search dropdown-menu-medium-search">
+			<div class="input-group">
+				<input id="headerSearch" type="text" class="form-control" maxlength="300" placeholder="Search" aria-label="Search" name="query">
+				<span class="form-control-clear cdc-icon-close"></span>
+				<div class="input-group-append">
+					<button class="btn search-submit" type="button">
+						<span class="sr-only">Submit</span>
+						<i class="fi cdc-icon-magnify x24 search-submit" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="affiliate" value="cdc-main">
+	</form>
+</div>
+
+				</div>
+				</div>
+			</header>
+		</div>
+	</div>
+
+	<!-- (4) Intranet Global -->
+
+	<!-- (5 and 6) Site Title / Identity Area -->
+	<div class="container-fluid site-title">
+		<div class="container"> <div class="row"> <div class="col">
+			<div class="display-6 text-white fw-500 wontitle"><a href="/">CDC WONDER</a></div>
+			<div class="wontitle-menu"><a href="/wonder/help/faq.html">FAQs</a> <a href="/wonder/help/main.html">Help</a> <a href="/controller/datarequest?stage=contactus&amp;action=start">Contact Us</a> <a href="/controller/datarequest?stage=search&amp;action=current">WONDER Search</a></div>
+		</div> </div> </div>
+	</div>
+
+	<!-- (7) Mobile Nav -->
+	<nav role="navigation" aria-label="Mobile Nav" id="mobilenav" class="sticky-top">
+<div class="mobile-section-nav d-lg-none">
+	<div class="ct">
+		<!-- section nav area -->
+		<nav role="navigation" aria-label="Section Nav">
+
+			<div class="dropdown">
+				<button class="btn dropdown-toggle rounded-0 toggleMask" type="button" id="sectionNavButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="sr-only">Section Navigation</span>
+					<span class="mobile-title"></span>
+					<span id="svg-down" class="fi cdc-icon-arrow-down" aria-hidden="true"></span>
+				</button>
+
+				<div class="dropdown-menu w-100 rounded-0 m-0" id="mobileNav-dropdown" aria-labelledby="sectionNavButton">
+					<nav role="navigation" aria-label="Left Nav" id="leftnav">
+
+						<div class="list-group indicator-plus">
+							<ul></ul>
+						</div>
+						<a class="list-group-item mobile-section-nav-foot" href="#">
+							<span class="fi cdc-icon-home x24"></span>
+							<span class="mobile-foot-title">TP Docs Home</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+</div>
+	</nav>
+
+	<!-- (8 and 9) Breadcrumbs and Page Share Area  -->
+	<div class="container breadcrumb-share">
+		<div class="d-none d-lg-block">
+			<div class="row">
+				<!-- (8) Breadcrumbs Area -->
+				<div class="col-sm-9">  </div>
+				<!-- (9) Page Share -->
+				<div class="col-sm-3 page-share">
+<nav id="share-nav" class="page-share-wrapper" role="navigation" aria-label="Social Media">
+    <ul>
+        <li><a target="_blank" title="Share to Facebook" rel="noreferrer noopener" class="page-share-facebook metrics-share-facebook" href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">Facebook</span><span class="fi cdc-icon-fb-round"></span></a></li>
+        <li><a target="_blank" title="Share to Twitter" rel="noreferrer noopener" class="page-share-twitter metrics-share-twitter" href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-round"></span></a></li>
+        <li><a target="_blank" title="Share to LinkedIn" rel="noreferrer noopener" class="page-share-linkedin metrics-share-linkedin" href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin-round"></span></a></li>
+        <li><a target="_blank" title="Embed this Page" rel="noreferrer noopener" class="page-share-syndication metrics-share-syndicate" href="https://tools.cdc.gov/medialibrary/index.aspx#/sharecontent/https%3A%2F%2Fwww.cdc.gov%2Findex.htm"><span class="sr-only">Syndicate</span><span class="fi cdc-icon-syndication-round"></span></a></li>
+    </ul>
+</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Global Above Feature -->
+	<!-- (10) Feature Area -->
+	<div class="container-fluid feature-area"> </div>
+
+	<!-- Page Content Wrap (11 through 19) -->
+	<div class="container d-flex flex-wrap body-wrapper">
+
+		<!-- Content (13 through 19) -->
+		<main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
+			<!-- (13) Visual Element -->
+			<div class="row d-none d-md-block visual-element">	</div>
+			<!-- (14) Audience Identity -->
+			<div class="row audience-identity"> </div>
+
+			<!-- (17) Content Area -->
+			<div class="row">
+				<div class="col content"> 
+					<!-- (15) Page Title -->
+					<!-- (16) Page Language	-->
+					<!-- (17) Content Area -->
+<div class="wonder">
+      <form onsubmit="return validate()" method="post" action="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6" name="form" id="wonderform">
+        <input value="results" name="stage" type="hidden"><input value="on" name="O_javascript" type="hidden"><script language="javascript">document.form.O_javascript.value="on"</script><input value="" name="measures_list" type="hidden"><input value="off" name="O_results_table_options" type="hidden"><input value="off" name="O_results_table_api_options" type="hidden">
+        <table style="width:100%">
+          <tbody><tr>
+            <td>
+              <div class="title">
+                <h1>Underlying Cause of Death, 1999-2020 Results</h1>
+                <h2>Deaths occurring through 2020</h2><!--#include virtual="/message_request_forms.html" -->
+</div>
+              <a name="Options"></a>
+              <div class="rounded-tabs noprint" id="rounded-tabs">
+                <ul>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to see the request page" value="Request Form" name="tab-request" type="submit">
+                  </li>
+                  <li class="current">
+                    <input value="Results" type="button">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to create maps" value="Map" name="tab-map" type="submit">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to create charts" value="Chart" name="tab-chart" type="submit">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Information about this dataset" value="About" name="tab-about" type="submit">
+                  </li>
+                </ul>
+              </div>
+              <div class="wonder-content">
+                <div>
+                  <script language="javascript">
+	sendMsgInit();
+</script><div id="send-msg" class="displayoff"><div id="send-text">Processing Request, please wait for results...</div><div id="progress-bar" style="width:10px">&nbsp;</div><div style="width:10px">&nbsp;</div></div>
+                  <table class="top-utilities-bar noprint">
+                    <tbody><tr>
+                      <td>
+                        <table>
+                          <tbody><tr>
+                            <td><a title="List of links to related datasets" href="/deaths-by-underlying-cause.html" class="related">Underlying Cause of Death Data</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/ucd.html#" title="Complete information about this dataset">Dataset Documentation</a></td><td><a title="Link to other sources of data" href="http://www.cdc.gov/nchs/data_access/VitalStatsOnline.htm#Mortality_Multiple" target="_blank">
+	Other Data Access</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#" title="Information about the results page">Help for Results</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#print" title="Tips for printing">Printing Tips</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#export" title="Information about exporting WONDER query results data to a file">Help with Exports</a></td>
+                          </tr>
+                        </tbody></table>
+                      </td><td class="top-util-buttons"><input onclick="submitSet(this); saveRequest()" title="Save this page" value="Save" name="action-Save" type="submit" class="button2"><button style="margin-left:10px;" title="Export results to a file" onclick="toggleExportTypeOptions();" type="button" id="export-type-toggle" class="button2">Export</button>
+                        <div class="closed" id="export-format">
+                          <select name="O_export-format"><option value="xls">XLS (Export as Excel compatible)</option><option value="tsv">TSV (Export as Tab Separated Values)</option><option value="csv">CSV (Export as Comma Separated Values)</option></select><input title="Download" onclick="submitSet(this);" value="Download" name="action-Export" type="submit" class="button2">
+                        </div>
+                        <input title="Restore original results table and option values" onclick="submitSet(this);" value="Reset" name="action-Reset" type="submit" class="button2"></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td style="padding-top:0" nowrap="">
+                        <div id="quick-options-menu">
+                          <ul class="first">
+                            <li>Quick Options
+	<ul class="second">
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=toggle&amp;p=O_labels_quick&amp;v=false" title="Show fewer by-variable labels that span rows" onclick="sendMsgSet()">Show nested row labels</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=toggle&amp;p=O_show_totals&amp;v=true" title="Show all totals rows" onclick="sendMsgSet()">Show totals rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=toggle&amp;p=O_show_zeros&amp;v=false" title="Hide all zero rows" onclick="sendMsgSet()">Hide zero rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=toggle&amp;p=O_show_suppressed&amp;v=false" title="Hide suppressed rows" onclick="sendMsgSet()">Hide suppressed rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=toggle&amp;p=O_show_rank&amp;v=true" title="Show row numbers / rank" onclick="sendMsgSet()">Show row numbers</a>
+                                </li>
+                                <li class="disabled">Click measure name to hide it</li>
+                                <li class="disabled">Sort by a measure for groups</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <div class="options-menu">
+                            <a title="Show more options to modify the results table" onclick="optionsShow('results_table');" href="#Options" class="displayon" id="show-opt">More Options </a><a title="Hide the table options form" href="javascript:optionsHide('results_table');" class="displayoff" id="hide-opt">Hide Options </a>
+                          </div>
+                          <div class="options-menu">
+                            <a title="Show API options to generate the API form" onclick="optionsShowApi('api_form');" href="#API" class="displayon" id="show-opt-api"> API Options </a><a title="Hide the API options form" href="javascript:optionsHideApi('api_form');" class="displayoff" id="hide-opt-api">Hide API </a>
+                          </div>
+                        </div>
+                      </td><td align="right"><span class="noprint current">Top</span><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <div id="options-form" class="noprint displayoff">
+                    <div id="send-help">
+Make all desired selections and then click any <b>Change Table</b> button one time to see your changes.
+</div>
+                    <div class="response-options-border">
+                      <table class="req-form response-options">
+                        <tbody><tr>
+                          <td colspan="1" class="hd">
+                            <div title="Click to open this section" class="button2 oc-button oc-button-plus displayoff" id="oc-sect-open" onclick="openSection()">+</div>
+                            <div title="Click to close this section" class="button2 oc-button oc-button-minus displayoff" id="oc-sect-close" onclick="closeSection()">−</div>1. Table options:</td><td nowrap="" colspan="1" class="hd"><span><input title="Hide this options form" onclick="optionsHide('Change Table')" class="button2" value="X" name="" type="button"></span><span class="help"><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#options" title="Click for help on this section of the table options form">Help</a></span><span><input title="Change results table using options in this form" class="button2" onclick="submitSet(this)" value="Change Table" name="action-Change Table" type="submit" id="submit-button1"></span></td>
+                        </tr>
+                        <tr class="displayoff" id="oc-sect-note">
+                          <td class="oc-note" colspan="2"><input value="" id="oc-sect" name="O_oc-sect-results" type="hidden"></td>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px" class="firstcell lastcell" colspan="2"><span style="color:#000">Change any desired options and click the "Change Table" button.</span></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="TO_title">Title</label><input size="50" value="" maxlength="150" id="TO_title" name="O_title" type="text" style="margin-left:10px; margin-right:50px"><label for="O_precision">
+	Precision</label><select id="O_precision" name="O_precision" style="margin-left:4px">
+<option value="0">&nbsp;0&nbsp;</option>
+<option selected="" value="1">&nbsp;1&nbsp;</option>
+<option value="2">&nbsp;2&nbsp;</option>
+<option value="3">&nbsp;3&nbsp;</option>
+<option value="4">&nbsp;4&nbsp;</option>
+<option value="5">&nbsp;5&nbsp;</option>
+<option value="6">&nbsp;6&nbsp;</option>
+<option value="7">&nbsp;7&nbsp;</option>
+<option value="8">&nbsp;8&nbsp;</option>
+<option value="9">&nbsp;9&nbsp;</option></select></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="O_show_totals">
+	Show Totals</label><input value="true" id="O_show_totals" name="O_show_totals" type="checkbox" class="inline" onclick="groupsCurrentSortBySet();"><label style="margin-left:15px" for="O_show_zeros">
+	Show Zeros</label><input value="true" id="O_show_zeros" name="O_show_zeros" type="checkbox" class="inline" onclick="groupsCurrentSortBySet();" checked=""><label style="margin-left:15px" for="O_show_suppressed">
+		Show Suppressed</label><input value="true" id="O_show_suppressed" name="O_show_suppressed" type="checkbox" class="inline" checked=""><label style="margin-left:15px" for="O_show_rank">Show Row Numbers / Rank</label><input value="true" id="O_show_rank" name="O_show_rank" type="checkbox" class="inline"></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="O_labels_opt">
+	Show All Labels</label><input value="true" id="O_labels_opt" name="O_labels_opt" type="checkbox" style="margin-left:5px; margin-right:15px" checked=""><span class="normal">
+	(Displays every label on every row of the results table)</span></td>
+                        </tr>
+                        <tr class="lastrow">
+                          <td style="padding-top: 12px" class="firstcell lastcell" colspan="2">
+                            <table>
+                              <tbody><tr>
+                                <td><label for="tsort">Sort By</label>
+                                  <div style="padding-top: 2px">
+                                    <select onchange="groupsCurrentSortBySet()" size="5" id="tsort" name="tsort">
+<option value="byvar,BYVARIABLE" selected="">Group By variables</option>
+<option value="D76.M1,MEASURE_ASCEND">(asc) Deaths</option>
+<option value="D76.M1,MEASURE_DESCEND">(des) Deaths</option>
+<option value="D76.M2,MEASURE_ASCEND">(asc) Population</option>
+<option value="D76.M2,MEASURE_DESCEND">(des) Population</option>
+<option value="D76.M3,MEASURE_ASCEND">(asc) Crude Rate</option>
+<option value="D76.M3,MEASURE_DESCEND">(des) Crude Rate</option></select>
+                                  </div>
+                                </td><td style="padding-left:50px;">
+                                  <table cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                      <td style="padding-bottom:2px !important; white-space: nowrap" colspan="3">Available Measures</td><td style="padding-bottom:2px !important; white-space: nowrap" colspan="2">Measures Shown</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding-top:0 !important">
+                                        <div>
+                                          <select multiple="" size="3" id="measures-all">
+<option value="D76.M1" selected="">Deaths</option>
+<option value="D76.M2">Population</option>
+<option value="D76.M3">Crude Rate</option></select>
+                                        </div>
+                                      </td><td style="padding: 0 10px 0 3px; vertical-align:middle"><a title="Show selected measures" href="javascript:measuresShow()"><img alt="Show selected measures" class="lr-arrow2 noprint" src="/images/arrow-blue-rt.gif"></a></td><td style="padding: 0 3px 0 10px; vertical-align:middle"><a title="Hide selected measures" href="javascript:measuresHide()"><img alt="Hide selected measures" class="lr-arrow2 noprint" src="/images/arrow-blue-lf.gif"></a></td><td style="padding-top:0 !important">
+                                        <div>
+                                          <select multiple="" size="3" id="measures-show" name="measures_show">
+<option value="D76.M1" selected="">Deaths</option>
+<option value="D76.M2">Population</option>
+<option value="D76.M3">Crude Rate</option></select>
+                                        </div>
+                                      </td><td nowrap="" style="padding-left: 6px; vertical-align: middle"><a title="Move selected measures up" href="javascript:measuresSortUp()"><img alt="Move selected measures up" class="measure-updn noprint" src="/images/arrow-green-up.gif"></a><a title="Move selected measures down" href="javascript:measuresSortDown()"><img alt="Move selected measures down" class="measure-updn noprint" src="/images/arrow-green-dn.gif"></a></td><td style="vertical-align:middle; padding-left:10px" class="normal">
+		Rearrange measures order with the up and down arrows.</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="normal" colspan="6">
+	Use the right and left arrows to move measures into and out of the "Measures Shown" box.
+	</td>
+                                    </tr>
+                                  </tbody></table>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" class="hd">
+                            <div title="Click to open this section" class="button2 oc-button oc-button-plus displayoff" id="oc-sect1-open" onclick="openSection(1)">+</div>
+                            <div title="Click to close this section" class="button2 oc-button oc-button-minus displayoff" id="oc-sect1-close" onclick="closeSection(1)">−</div>2. Results groups:</td><td nowrap="" colspan="1" class="hd"><span class="help"><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#groups" title="Click for help on this section of the table options form">Help</a></span><span><input title="Change results table using options in this form" class="button2" onclick="submitSet(this)" value="Change Table" name="action-Change Table" type="submit"></span></td>
+                        </tr>
+                        <tr class="displayoff" id="oc-sect1-note">
+                          <td class="oc-note" colspan="2">Open to organize rows into groups.<input value="" id="oc-sect1" name="O_oc-sect1-results" type="hidden"></td>
+                        </tr>
+                        <tr id="oc-sect1-1" class="displayoff">
+                          <td style="padding-top:15px !important; padding-bottom:15px" class="firstcell lastcell" colspan="2">
+                            <div>
+	Check to divide results into groups
+	<input value="true" id="O_groups" name="O_groups" type="checkbox">
+                              <p></p>
+                              <span style="margin-left:20px" class="normal">• Pick a numeric measure in the "Sort By" list above to use for the groups.</span>
+                              <br>
+                              <span style="margin-left:20px" class="normal">• Use the "Show Totals" checkbox above to specify whether totals are included in the groups.</span>
+                              <br>
+                              <span style="margin-left:20px" class="normal">• Then specify break points using one of these methods:</span>
+                            </div>
+                            <div style="padding:8px 0 0 20px">
+                              <input checked="" onclick="toggleOptions('grp_std', 'grp_std,grp_custom',true)" value="grp_std" name="O_group_type" id="RO_group_typegrp_std" type="radio"><label for="RO_group_typegrp_std" style="margin-right:30px"><b>Standard break points methods</b></label><input value="grp_custom" onclick="toggleOptions('grp_custom', 'grp_std,grp_custom',true)" name="O_group_type" id="RO_group_typegrp_custom" type="radio"><label for="RO_group_typegrp_custom"><b>Specify custom break points</b></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="oc-sect1-2" class="displayoff">
+                          <td class="firstcell lastcell" colspan="2">
+                            <div id="grp_std">
+                              <label style="padding:0 8px 0 20px" for="O_groups_count">Number of groups</label><select id="O_groups_count" name="O_groups_count">
+<option value="2">&nbsp;Two&nbsp;</option>
+<option value="3">&nbsp;Three&nbsp;</option>
+<option selected="" value="4">&nbsp;Four&nbsp;</option>
+<option value="5">&nbsp;Five&nbsp;</option>
+<option value="6">&nbsp;Six&nbsp;</option>
+<option value="7">&nbsp;Seven&nbsp;</option>
+<option value="8">&nbsp;Eight&nbsp;</option>
+<option value="9">&nbsp;Nine&nbsp;</option>
+<option value="10">&nbsp;Ten&nbsp;</option></select><label style="padding:0 8px 0 35px" for="O_groups_methods">Breaks method</label><select id="O_groups_methods" name="O_groups_methods">
+<option selected="" value="QUANTILE">&nbsp;Quantile&nbsp;</option>
+<option value="EQUAL">&nbsp;Equal Interval&nbsp;</option></select>
+                            </div>
+                            <table id="grp_custom" cellpadding="0" cellspacing="0">
+                              <tbody><tr>
+                                <td style="padding-bottom:10px" class="normal" colspan="2"><b>Custom Groups:</b>
+                                  <br>Enter the value at which each group should start, up to 10 groups.
+		<br>Values must be between the Start and End values for the "Current Sort By selection".
+	</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table>
+                                    <tbody><tr>
+                                      <td style="padding-left:20px">
+                                        <table>
+                                          <tbody><tr>
+                                            <td>&nbsp;</td><td style="padding-left:6px">Start value</td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group1" class="disabled">Group 1</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="n/a" maxlength="15" size="10" id="group1" name="group1" type="text" disabled="" style="background:#ddd"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group2">Group 2</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group2" name="group2" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group3">Group 3</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group3" name="group3" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group4">Group 4</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group4" name="group4" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group5">Group 5</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group5" name="group5" type="text"></td>
+                                          </tr>
+                                        </tbody></table>
+                                      </td><td style="padding-left:40px; vertical-align:top;">
+                                        <table>
+                                          <tbody><tr>
+                                            <td>&nbsp;</td><td style="padding-left:6px">Start value</td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group6">Group 6</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group6" name="group6" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group7">Group 7</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group7" name="group7" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group8">Group 8</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group8" name="group8" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group9">Group 9</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group9" name="group9" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group10">Group 10</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group10" name="group10" type="text"></td>
+                                          </tr>
+                                        </tbody></table>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </td><td style="padding-left:50px">
+                                  <div class="normal" style="padding:2px 0 2px 0">
+                                    <b>Current Sort By selection:</b>
+                                  </div>
+                                  <div class="displayon cur-measure" id="byvar_BYVARIABLE">
+			Group By variables
+			<div class="cur-measure-list">Sort by a numeric measure to set custom group breaks.</div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M1_MEASURE_ASCEND">Deaths (ascending)<div class="cur-measure-list">Start value: <span id="D76.M1_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M1_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M1_MEASURE_DESCEND">Deaths (descending)<div class="cur-measure-list">Start value:  <span id="D76.M1_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M1_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M2_MEASURE_ASCEND">Population (ascending)<div class="cur-measure-list">Start value: <span id="D76.M2_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M2_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M2_MEASURE_DESCEND">Population (descending)<div class="cur-measure-list">Start value:  <span id="D76.M2_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M2_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M3_MEASURE_ASCEND">Crude Rate (ascending)<div class="cur-measure-list">Start value: <span id="D76.M3_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M3_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M3_MEASURE_DESCEND">Crude Rate (descending)<div class="cur-measure-list">Start value:  <span id="D76.M3_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M3_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div style="padding-top: 18px">
+                                    <input onclick="clearGroups()" style="font-size:90%; padding-bottom:2px" class="button2" value="Clear Values" type="button">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                          </td>
+                        </tr>
+                        <tr id="oc-sect1-3" class="lastrow displayoff">
+                          <td style="padding-top:12px" class="firstcell lastcell" colspan="2"><span style="color:#000;">Options for non-numeric cells:</span>
+                            <div style="margin: 6px 0 0 20px">
+                              <input checked="" value="false" name="O_show_flags_group" id="RO_show_flags_groupfalse" type="radio"><label for="RO_show_flags_groupfalse">
+		Hide non-numeric cells</label>
+                              <br>
+                              <input value="true" name="O_show_flags_group" id="RO_show_flags_grouptrue" type="radio"><label for="RO_show_flags_grouptrue">
+		Group non-numeric cells separately</label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                    <div class="footer-buttons">
+                      <input title="" onclick="submitSet(this);" class="button2" value="Change Table" name="action-Change Table" type="submit"><input title="Restore original option values in this form" onclick="submitSet(this);" class="button2" value="Reset" name="action-Reset" type="submit">
+                    </div>
+                    <table class="response-links noprint">
+                      <tbody><tr>
+                        <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                  <br>
+                  <div id="options-form-api" class="noprint displayoff">
+                    <div class="response-options-border">
+                      <table class="req-form response-options">
+                        <tbody><tr style="background-color:#75a9ed; color:#fff; font-size:15px; text-align:left; vertical-align:middle" class="firstrow">
+                          <th style="padding-left:7px" colspan="4"> API Options: </th>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px; font-size:13px" class="firstcell lastcell" colspan="2"><span style="color:#000">Select "Export API" to generate API request file.</span></td><td><input title="Generate API Form" onclick="submitSet(this);" value="Export API" name="action-Api" type="submit" class="button2"></td><td><a target="_blank" href="/wonder/help/wonder-api.html">More info</a></td>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px;font-size:13px" class="firstcell lastcell" colspan="2"><span style="color:#000">Select "Export Response" to create API response file for API request file.</span></td><td><input title="Generate API Form Response" onclick="submitSet(this);" value="Export Response" name="action-response" type="submit" class="button2"></td><td><a target="_blank" href="/wonder/help/wonder-api.html">More info</a></td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                  </div>
+                  <table class="response-form">
+                    <thead>
+                      <tr>
+                        <th style="padding: 3px 6px;">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th align="center">
+                                  <div style="text-align:center">State</div>
+                                </th><th class="up"><img alt="Results are sorted in by-variable order" title="Results are sorted in by-variable order" src="/images/arrow-red-dn.gif" class="sort-img1 noprint"></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px;">County</th><th style="padding: 3px 6px;">Year</th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=shiftm&amp;measure=D76.M1&amp;direction=right" onclick="sendMsgSet()"><img alt="Move this column one place to the right" title="Move this column one place to the right" src="/images/arrow-blue-rt.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=hide&amp;measure=D76.M1" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Deaths</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M1" onclick="sendMsgSet()"><img alt="Click to sort by Deaths ascending" title="Sort by Deaths ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M1" onclick="sendMsgSet()"><img alt="Click to sort by Deaths descending" title="Sort by Deaths descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=shiftm&amp;measure=D76.M2&amp;direction=right" onclick="sendMsgSet()"><img alt="Move this column one place to the right" title="Move this column one place to the right" src="/images/arrow-blue-rt.gif" class="lr-arrow noprint"></a><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=shiftm&amp;measure=D76.M2&amp;direction=left" onclick="sendMsgSet()"><img alt="Move this column one place to the left" title="Move this column one place to the left" src="/images/arrow-blue-lf.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=hide&amp;measure=D76.M2" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Population</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M2" onclick="sendMsgSet()"><img alt="Click to sort by Population ascending" title="Sort by Population ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M2" onclick="sendMsgSet()"><img alt="Click to sort by Population descending" title="Sort by Population descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=shiftm&amp;measure=D76.M3&amp;direction=left" onclick="sendMsgSet()"><img alt="Move this column one place to the left" title="Move this column one place to the left" src="/images/arrow-blue-lf.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=hide&amp;measure=D76.M3" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Crude Rate Per 100,000</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M3" onclick="sendMsgSet()"><img alt="Click to sort by Crude Rate Per 100,000 ascending" title="Sort by Crude Rate Per 100,000 ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=E4BD85D9A04AF33463C96ACF84F6?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M3" onclick="sendMsgSet()"><img alt="Click to sort by Crude Rate Per 100,000 descending" title="Sort by Crude Rate Per 100,000 descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2006</th><td>10</td><td>107,932</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2007</th><td>11</td><td>107,739</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2008</th><td>13</td><td>108,284</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2009</th><td>17</td><td>107,830</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2010</th><td>15</td><td>107,702</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2011</th><td>14</td><td>107,398</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2012</th><td>12</td><td>107,609</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2013</th><td>11</td><td>107,604</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Androscoggin County, ME (23001)</th><th>2014</th><td>23</td><td>107,440</td><td>21.4</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2006</th><td>Suppressed</td><td>72,827</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2007</th><td>Suppressed</td><td>72,711</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2008</th><td>Suppressed</td><td>72,542</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2009</th><td>Suppressed</td><td>72,258</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2010</th><td>Suppressed</td><td>71,870</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2011</th><td>14</td><td>71,482</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2012</th><td>Suppressed</td><td>70,868</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2013</th><td>Suppressed</td><td>70,055</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Aroostook County, ME (23003)</th><th>2014</th><td>Suppressed</td><td>69,447</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2006</th><td>22</td><td>277,084</td><td>7.9</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2007</th><td>38</td><td>278,781</td><td>13.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2008</th><td>41</td><td>280,681</td><td>14.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2009</th><td>38</td><td>281,969</td><td>13.5</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2010</th><td>28</td><td>281,674</td><td>9.9</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2011</th><td>27</td><td>282,401</td><td>9.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2012</th><td>42</td><td>283,921</td><td>14.8</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2013</th><td>46</td><td>285,456</td><td>16.1</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Cumberland County, ME (23005)</th><th>2014</th><td>44</td><td>287,797</td><td>15.3</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2006</th><td>0</td><td>30,528</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2007</th><td>Suppressed</td><td>30,596</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2008</th><td>Suppressed</td><td>30,652</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2009</th><td>Suppressed</td><td>30,779</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2010</th><td>Suppressed</td><td>30,768</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2011</th><td>Suppressed</td><td>30,746</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2012</th><td>Suppressed</td><td>30,630</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2013</th><td>Suppressed</td><td>30,495</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Franklin County, ME (23007)</th><th>2014</th><td>Suppressed</td><td>30,296</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2006</th><td>Suppressed</td><td>54,009</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2007</th><td>Suppressed</td><td>54,300</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2008</th><td>Suppressed</td><td>54,371</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2009</th><td>13</td><td>54,499</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2010</th><td>Suppressed</td><td>54,418</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2011</th><td>Suppressed</td><td>54,578</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2012</th><td>Suppressed</td><td>54,558</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2013</th><td>Suppressed</td><td>54,845</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Hancock County, ME (23009)</th><th>2014</th><td>11</td><td>54,696</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2006</th><td>22</td><td>121,508</td><td>18.1</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2007</th><td>16</td><td>121,741</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2008</th><td>14</td><td>122,147</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2009</th><td>10</td><td>122,084</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2010</th><td>15</td><td>122,151</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2011</th><td>16</td><td>121,935</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2012</th><td>14</td><td>121,853</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2013</th><td>19</td><td>121,164</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Kennebec County, ME (23011)</th><th>2014</th><td>20</td><td>121,112</td><td>16.5</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2006</th><td>Suppressed</td><td>40,417</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2007</th><td>Suppressed</td><td>40,297</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2008</th><td>Suppressed</td><td>40,225</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2009</th><td>Suppressed</td><td>39,924</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2010</th><td>Suppressed</td><td>39,736</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2011</th><td>Suppressed</td><td>39,708</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2012</th><td>Suppressed</td><td>39,668</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2013</th><td>Suppressed</td><td>39,550</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Knox County, ME (23013)</th><th>2014</th><td>Suppressed</td><td>39,676</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2006</th><td>Suppressed</td><td>34,904</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2007</th><td>Suppressed</td><td>34,899</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2008</th><td>Suppressed</td><td>34,768</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2009</th><td>Suppressed</td><td>34,627</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2010</th><td>Suppressed</td><td>34,457</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2011</th><td>Suppressed</td><td>34,224</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2012</th><td>Suppressed</td><td>34,180</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2013</th><td>Suppressed</td><td>34,088</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Lincoln County, ME (23015)</th><th>2014</th><td>Suppressed</td><td>34,170</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2006</th><td>Suppressed</td><td>57,556</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2007</th><td>12</td><td>57,966</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2008</th><td>Suppressed</td><td>58,138</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2009</th><td>Suppressed</td><td>57,923</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2010</th><td>Suppressed</td><td>57,833</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2011</th><td>Suppressed</td><td>57,695</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2012</th><td>Suppressed</td><td>57,481</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2013</th><td>Suppressed</td><td>57,277</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Oxford County, ME (23017)</th><th>2014</th><td>Suppressed</td><td>57,238</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2006</th><td>32</td><td>151,446</td><td>21.1</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2007</th><td>15</td><td>152,232</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2008</th><td>24</td><td>153,372</td><td>15.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2009</th><td>21</td><td>153,770</td><td>13.7</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2010</th><td>15</td><td>153,923</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2011</th><td>21</td><td>153,786</td><td>13.7</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2012</th><td>12</td><td>153,746</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2013</th><td>19</td><td>153,364</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Penobscot County, ME (23019)</th><th>2014</th><td>21</td><td>153,414</td><td>13.7</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2006</th><td>0</td><td>17,597</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2007</th><td>Suppressed</td><td>17,660</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2008</th><td>Suppressed</td><td>17,534</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2009</th><td>Suppressed</td><td>17,433</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2010</th><td>Suppressed</td><td>17,535</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2011</th><td>Suppressed</td><td>17,419</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2012</th><td>0</td><td>17,290</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2013</th><td>Suppressed</td><td>17,124</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Piscataquis County, ME (23021)</th><th>2014</th><td>Suppressed</td><td>17,026</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2006</th><td>Suppressed</td><td>35,895</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2007</th><td>Suppressed</td><td>35,890</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2008</th><td>Suppressed</td><td>35,860</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2009</th><td>0</td><td>35,567</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2010</th><td>Suppressed</td><td>35,293</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2011</th><td>Suppressed</td><td>35,207</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2012</th><td>Suppressed</td><td>35,191</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2013</th><td>Suppressed</td><td>35,013</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Sagadahoc County, ME (23023)</th><th>2014</th><td>Suppressed</td><td>35,045</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2006</th><td>Suppressed</td><td>52,195</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2007</th><td>Suppressed</td><td>52,459</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2008</th><td>Suppressed</td><td>52,316</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2009</th><td>Suppressed</td><td>52,104</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2010</th><td>Suppressed</td><td>52,228</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2011</th><td>Suppressed</td><td>52,028</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2012</th><td>Suppressed</td><td>51,910</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2013</th><td>Suppressed</td><td>51,706</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Somerset County, ME (23025)</th><th>2014</th><td>Suppressed</td><td>51,163</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2006</th><td>Suppressed</td><td>38,763</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2007</th><td>Suppressed</td><td>38,751</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2008</th><td>Suppressed</td><td>38,680</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2009</th><td>Suppressed</td><td>38,706</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2010</th><td>Suppressed</td><td>38,786</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2011</th><td>Suppressed</td><td>38,745</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2012</th><td>Suppressed</td><td>38,820</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2013</th><td>Suppressed</td><td>38,940</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Waldo County, ME (23027)</th><th>2014</th><td>Suppressed</td><td>39,051</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2006</th><td>Suppressed</td><td>33,323</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2007</th><td>Suppressed</td><td>33,424</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2008</th><td>Suppressed</td><td>33,289</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2009</th><td>Suppressed</td><td>32,925</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2010</th><td>Suppressed</td><td>32,856</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2011</th><td>Suppressed</td><td>32,637</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2012</th><td>Suppressed</td><td>32,462</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2013</th><td>Suppressed</td><td>32,190</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>Washington County, ME (23029)</th><th>2014</th><td>10</td><td>31,808</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2006</th><td>25</td><td>197,635</td><td>12.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2007</th><td>23</td><td>197,594</td><td>11.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2008</th><td>26</td><td>197,650</td><td>13.2</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2009</th><td>31</td><td>197,192</td><td>15.7</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2010</th><td>21</td><td>197,131</td><td>10.7</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2011</th><td>23</td><td>198,199</td><td>11.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2012</th><td>25</td><td>199,005</td><td>12.6</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2013</th><td>26</td><td>199,431</td><td>13.0</td>
+                      </tr>
+                      <tr>
+                        <th>Maine (23)</th><th>York County, ME (23031)</th><th>2014</th><td>44</td><td>200,710</td><td>21.9</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a name="Notes"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><span class="noprint current">Notes</span><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <a name="caveats"></a>
+                  <table class="response-notes caveats">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Notes:</th>
+                    </tr>
+                    <tr>
+                      <th>Caveats:</th><td>As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. <a href="/wonder/help/ucd.html#2014-Revision" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>Data are Suppressed when the data meet the criteria for confidentiality constraints. <a href="/wonder/help/ucd.html#Assurance of Confidentiality" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. <a href="/wonder/help/ucd.html#Unreliable" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>The population figures for year 2020 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2020 postcensal series released by NCHS on September 22, 2021.
+			The population figures for year 2019 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2019 postcensal series released by NCHS on July 9, 2020.
+			The population figures for year 2018 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2018 postcensal series released by NCHS on June 25, 2019.
+			The population figures for year 2017 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2017 postcensal series released by NCHS on June 27, 2018.
+			The population figures for year 2016 are bridged-race estimates of the July 1 resident population,
+			from the Vintage 2016 postcensal series released by NCHS on June 26, 2017.
+			The population figures for year 2015 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2015 postcensal series  
+			released by NCHS on June 28, 2016. 
+			The population figures for year 2014 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2014 postcensal series  
+			released by NCHS on June 30, 2015. 
+			The population figures for year 2013 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2013 postcensal series  
+			released by NCHS on June 26, 2014. 
+			The population figures for year 2012 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2012 postcensal series  
+			released by NCHS on June 13, 2013. 
+			The population figures for year 2011 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2011 postcensal series  
+			released by NCHS on July 18, 2012. 
+			Population figures for 2010 are April 1 Census counts. 
+			The population figures for years 2001 - 2009 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the revised intercensal county-level  2000 - 2009 series 
+			released by NCHS on October 26, 2012. 
+			Population figures 
+			for 2000 are April 1 Census counts. 
+			Population figures for 1999 are from the 
+			1990-1999 intercensal series of July 1 estimates. 
+			Population figures for the infant age groups are the number of live births. 
+			<br><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly 
+			from previously published reports, due to use of the population estimates which were 
+			available at the time of release.<p></p>The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the resident population that is under one year of age. <a href="/wonder/help/ucd.html#Age Group" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Help:</th><td>See <a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/ucd.html">Underlying Cause of Death, 1999-2020 Documentation</a> for more information.</td>
+                    </tr>
+                    <tr>
+                      <th>Query Date:</th><td>May 1, 2026 7:34:33 PM</td>
+                    </tr>
+                  </tbody></table>
+                  <a name="Citation"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><span class="noprint current">Citation</span><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-notes">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Suggested Citation:</th>
+                    </tr>
+                    <tr>
+                      <td>Centers for Disease Control and Prevention, National Center for Health Statistics. 
+		National Vital Statistics System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. 
+		Data are from the Multiple Cause of Death Files, 1999-2020, 
+		as compiled from data provided by the 57 vital statistics jurisdictions through the 
+		Vital Statistics Cooperative Program. 
+		Accessed at http://wonder.cdc.gov/ucd-icd10.html on 
+		May 1, 2026 7:34:33 PM</td>
+                    </tr>
+                  </tbody></table>
+                  <a name="Query Criteria"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><span class="noprint current">Query Criteria</span></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-notes query-description">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Query Criteria:</th>
+                    </tr>
+                    <tr>
+                      <th></th><td></td>
+                    </tr>
+                    <tr>
+                      <th>Drug/Alcohol Induced Causes:</th><td>Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64); Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)</td>
+                    </tr>
+                    <tr>
+                      <th>States:</th><td>Maine (23)</td>
+                    </tr>
+                    <tr>
+                      <th>Year/Month:</th><td>2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014</td>
+                    </tr>
+                    <tr>
+                      <th>Group By:</th><td>State; County; Year</td>
+                    </tr>
+                    <tr>
+                      <th>Show Totals:</th><td>False</td>
+                    </tr>
+                    <tr>
+                      <th>Show Zero Values:</th><td>True</td>
+                    </tr>
+                    <tr>
+                      <th>Show Suppressed:</th><td>True</td>
+                    </tr>
+                    <tr>
+                      <th>Calculate Rates Per:</th><td>100,000</td>
+                    </tr>
+                    <tr>
+                      <th>Rate Options:</th><td>Default intercensal populations for years 2001-2009 (except Infant Age Groups)</td>
+                    </tr>
+                  </tbody></table>
+                  <div style="margin-bottom: 15px"></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </form>
+    </div>				</div>
+			</div> <!-- END 17 CONTENT AREA -->
+
+			<!-- (19) Page Format -->
+			<!-- <div class="row"> <div class="col page-format">
+			</div> </div> -->
+			
+			<!-- (18) Persistent Content Area -->
+			<!-- <div class="row"> </div> -->
+
+			<!-- (20) Date Updated -->
+			<div class="row">
+				<!-- dynamic pages generated by xsl don't have a last modified date -->
+				<div class="col last-reviewed">
+				<div class="d-none d-lg-block content-source">Content source: <a href="/" class="td-none"> CDC WONDER </a></div>
+
+				</div>
+			</div>
+		</main>  <!-- END MAIN -->
+
+		<!-- (11, 12) Left Nav / Bottom Nav and Under Left Nav -->
+		
+	</div> <!-- END WRAPPER DIV OUTSIDE MAIN -->
+
+	<!-- (21, 22) Footer Area -->
+	<footer role="contentinfo" aria-label="Footer">
+
+		<!-- (21) Footer -->
+		<div class="container-fluid footer-wrapper">
+			<div class="container">
+ <div class="footer-2022">
+	<div class="footer-desktop">
+		<div class="row">
+			<div class="col-6 about">
+				<ul class="d-flex">
+					<li><a href="https://www.cdc.gov/about">About CDC</a></li>
+					<li><a href="https://www.cdc.gov/cdc-info/index.html">Contact Us</a></li>
+					<li><a href="tel:8002324636">800-232-4636</a></li>
+				</ul>
+			</div>
+			<div class="col-6 social">
+				<div class="d-flex flex-nowrap">
+					<a href="https://www.facebook.com/CDC" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-facebook-inverse"></span><span class="sr-only">Facebook</span></a>
+					<a href="https://twitter.com/CDCgov" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-twitter-inverse"></span><span class="sr-only">Twitter</span></a>
+					<a href="https://www.instagram.com/CDCgov/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-instagram-inverse"></span><span class="sr-only">Instagram</span></a>
+					<a href="https://www.linkedin.com/company/centers-for-disease-control-and-prevention" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-linkedin-inverse"></span><span class="sr-only">LinkedIn</span></a>
+					<a href="https://www.youtube.com/c/cdc/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-youtube-inverse"></span><span class="sr-only">Youtube</span></a>
+					<a href="https://www.pinterest.com/cdcgov/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-pinterest-inverse"></span><span class="sr-only">Pinterest</span></a>
+					<a href="https://www.snapchat.com/add/cdcgov" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-snapchat-inverse"></span><span class="sr-only">Snapchat</span></a>
+					<a href="https://tools.cdc.gov/medialibrary/index.aspx" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-rss-inverse" aria-hidden="true"></span><span class="sr-only">RSS</span></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-mobile" aria-label="Footer" role="contentinfo">
+		<ul class="accordion indicator-arrow mb-3" role="tablist" aria-busy="true">
+			<li class="card footer-mobile_contact" role="presentation">
+				<button role="tab" class="card-header tab collapsed" data-target="#footer-mobile-collapse-1" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-1">CONTACT CDC</button>
+				<div class="collapse" id="footer-mobile-collapse-1" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<address itemscope="itemscope" itemtype="https://schema.org/Organization">
+							<div class="row mt-2">
+								<div class="col-1">
+									<span aria-hidden="true" class="fi cdc-icon-desktop x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1"><a href="https://www.cdc.gov/cdc-info/index.html">Contact Us</a></span>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-1">
+									<span class="fi cdc-icon-phone x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1" itemprop="telephone">Call 800-232-4636</span>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-1">
+									<span class="fi cdc-icon-email x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1" itemprop="url"><a href="https://www.cdc.gov/cdc-info/index.html">Email Us</a></span>
+								</div>
+							</div>
+						</address>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_about" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-2" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-2">ABOUT CDC</button>
+				<div class="collapse" id="footer-mobile-collapse-2" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul>
+							<li><a href="https://www.cdc.gov/about">About CDC</a></li>
+							<li><a href="https://jobs.cdc.gov">Jobs</a></li>
+							<li><a href="https://www.cdc.gov/funding">Funding</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_policies" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-3" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-3">POLICIES</button>
+				<div class="collapse" id="footer-mobile-collapse-3" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul>
+							<li><a href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+							<li><a href="https://www.cdc.gov/Other/disclaimer.html">External Links</a></li>
+							<li><a href="https://www.cdc.gov/other/privacy.html">Privacy</a></li>
+							<li><a href="https://www.cdc.gov/Other/policies.html">Web Policies</a></li>
+							<li><a href="https://www.cdc.gov/foia">FOIA</a></li>
+							<li><a href="https://oig.hhs.gov">OIG</a></li>
+							<li><a href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+							<li><a href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+							<li><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+							<li><a href="https://archive.cdc.gov/">CDC Archive</a></li>
+							<li><a href="https://stacks.cdc.gov/ ">Public Health Publications</a></li>
+							<li><a href="https://hhs.gov/">HHS.gov</a></li>
+							<li><a href="https://www.usa.gov/">USA.gov</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_connect" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-4" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-4">CONNECT WITH US</button>
+				<div class="collapse" id="footer-mobile-collapse-4" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul class="bullet-list cc-4 lsp-out row">
+							<div class="col-12">
+								<li><a href="https://www.facebook.com/CDC" target="_blank" rel="noreferrer noopener"><span class="sr-only">Facebook</span><span class="fi cdc-icon-fb-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://twitter.com/CDCgov" target="_blank" rel="noreferrer noopener"><span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.instagram.com/CDCgov/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Instagram</span><span class="fi cdc-icon-ig-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.linkedin.com/company/centers-for-disease-control-and-prevention" target="_blank" rel="noreferrer noopener"><span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin-white x24" aria-hidden="true"></span></a></li>
+							</div>
+							<div class="col-12">
+								<li><a href="https://www.youtube.com/c/cdc/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Youtube</span><span class="fi cdc-icon-youtube-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.pinterest.com/cdcgov/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Pinterest</span><span class="fi cdc-icon-pinterest-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.snapchat.com/add/cdcgov" target="_blank" rel="noreferrer noopener"><span class="sr-only">Snapchat</span><span class="fi cdc-icon-snapchat x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://wwwn.cdc.gov/dcs/RequestForm.aspx"><span class="sr-only">Email</span><span class="fi cdc-icon-email x24" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_language" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-5" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-5">LANGUAGES</button>
+				<div class="collapse" id="footer-mobile-collapse-5" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul class="bullet-list cc-2 lsp-out">
+							<li lang="es"><a href="https://www.cdc.gov/other/language-assistance.html#Spanish" title="Spanish">Español</a></li>
+							<li lang="zh"><a href="https://www.cdc.gov/other/language-assistance.html#Chinese" title="Chinese">????</a></li>
+							<li lang="vi"><a href="https://www.cdc.gov/other/language-assistance.html#Vietnamese" title="Vietnamese">Ti?ng Vi?t</a></li>
+							<li lang="ko"><a href="https://www.cdc.gov/other/language-assistance.html#Korean" title="Korean">???</a></li>
+							<li lang="tl"><a href="https://www.cdc.gov/other/language-assistance.html#Tagalog" title="Tagalog">Tagalog</a></li>
+							<li lang="ru"><a href="https://www.cdc.gov/other/language-assistance.html#Russian" title="Russian">???????</a></li>
+							<li lang="ar"><a href="https://www.cdc.gov/other/language-assistance.html#Arabic" title="Arabic">???????</a></li>
+							<li lang="ht"><a href="https://www.cdc.gov/other/language-assistance.html#Haitian" title="Haitian">Kreyòl Ayisyen</a></li>
+							<li lang="fr"><a href="https://www.cdc.gov/other/language-assistance.html#French" title="French">Français</a></li>
+							<li lang="pl"><a href="https://www.cdc.gov/other/language-assistance.html#Polish" title="Polish">Polski</a></li>
+							<li lang="pt"><a href="https://www.cdc.gov/other/language-assistance.html#Portuguese" title="Portuguese">Português</a></li>
+							<li lang="it"><a href="https://www.cdc.gov/other/language-assistance.html#Italian" title="Italian">Italiano</a></li>
+							<li lang="de"><a href="https://www.cdc.gov/other/language-assistance.html#German" title="German">Deutsch</a></li>
+							<li lang="ja"><a href="https://www.cdc.gov/other/language-assistance.html#Japanese" title="Japanese">???</a></li>
+							<li lang="fa"><a href="https://www.cdc.gov/other/language-assistance.html#Farsi" title="Farsi">?????</a></li>
+							<li lang="en"><a href="https://www.cdc.gov/other/language-assistance.html#English" title="English">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+
+		<!-- (22) Sub-Footer -->
+		<div class="container-fluid agency-footer">
+			<div class="container">
+<div class="footer-2022 footer-agency row">
+	<div class="col">
+		<ul>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/Other/disclaimer.html">External Links</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/privacy.html">Privacy</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/Other/policies.html">Web Policies</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/foia">FOIA</a></li>
+			<li class="d-none d-md-block"><a href="https://oig.hhs.gov">OIG</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+			<li class="d-none d-md-block"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+			<li class="d-none d-md-block"><a href="https://archive.cdc.gov/">CDC Archive</a></li>
+			<li class="d-none d-md-block"><a href="https://stacks.cdc.gov/ ">Public Health Publications</a></li>
+			<li><a href="https://hhs.gov/">HHS.gov</a></li>
+			<li><a href="https://www.usa.gov/">USA.gov</a></li>
+		</ul>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- (23) Mobile Share Bar (Markup Only, Global Include) -->
+<!-- social media footer removed -->
+
+	<!-- Extra needed, hidden page markup (modals etc) -->
+
+
+
+	<!-- TEMPLATE SPECIFIC SCRIPTS -->
+<!-- social media footer removed -->
+<!--  include virtual="/templatepackage/4.0/includes/tp-docs-config-panel.html" -->
+<div id="metrics">
+    <!-- Google DAP inclusion -->
+    <script id="_fed_an_ua_tag" src="/JScript/metrics/google/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=CDC"></script></div></body></html>

@@ -1,0 +1,534 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2006"	"2006"	0	2366	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2007"	"2007"	0	2362	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2008"	"2008"	0	2343	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2009"	"2009"	0	2325	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2010"	"2010"	0	2343	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2011"	"2011"	0	2307	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2012"	"2012"	0	2311	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2013"	"2013"	0	2360	Unreliable
+	"North Dakota"	"38"	"Adams County, ND"	"38001"	"2014"	"2014"	0	2384	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2006"	"2006"	0	11106	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2007"	"2007"	Suppressed	11057	Suppressed
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2008"	"2008"	0	11027	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2009"	"2009"	0	11028	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2010"	"2010"	0	11066	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2011"	"2011"	0	11056	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2012"	"2012"	0	11015	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2013"	"2013"	0	11190	Unreliable
+	"North Dakota"	"38"	"Barnes County, ND"	"38003"	"2014"	"2014"	Suppressed	11144	Suppressed
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2006"	"2006"	Suppressed	6709	Suppressed
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2007"	"2007"	0	6683	Unreliable
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2008"	"2008"	Suppressed	6622	Suppressed
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2009"	"2009"	0	6609	Unreliable
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2010"	"2010"	0	6660	Unreliable
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2011"	"2011"	0	6723	Unreliable
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2012"	"2012"	Suppressed	6760	Suppressed
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2013"	"2013"	0	6877	Unreliable
+	"North Dakota"	"38"	"Benson County, ND"	"38005"	"2014"	"2014"	Suppressed	6833	Suppressed
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2006"	"2006"	0	741	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2007"	"2007"	0	762	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2008"	"2008"	0	768	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2009"	"2009"	0	796	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2010"	"2010"	0	783	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2011"	"2011"	0	816	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2012"	"2012"	0	905	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2013"	"2013"	0	874	Unreliable
+	"North Dakota"	"38"	"Billings County, ND"	"38007"	"2014"	"2014"	0	901	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2006"	"2006"	0	6526	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2007"	"2007"	0	6428	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2008"	"2008"	0	6370	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2009"	"2009"	0	6390	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2010"	"2010"	Suppressed	6429	Suppressed
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2011"	"2011"	0	6443	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2012"	"2012"	0	6579	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2013"	"2013"	0	6736	Unreliable
+	"North Dakota"	"38"	"Bottineau County, ND"	"38009"	"2014"	"2014"	0	6650	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2006"	"2006"	0	3020	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2007"	"2007"	0	3050	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2008"	"2008"	0	3158	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2009"	"2009"	0	3137	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2010"	"2010"	0	3151	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2011"	"2011"	0	3134	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2012"	"2012"	Suppressed	3202	Suppressed
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2013"	"2013"	0	3214	Unreliable
+	"North Dakota"	"38"	"Bowman County, ND"	"38011"	"2014"	"2014"	0	3247	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2006"	"2006"	0	1975	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2007"	"2007"	0	1933	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2008"	"2008"	0	1902	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2009"	"2009"	0	1962	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2010"	"2010"	0	1968	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2011"	"2011"	0	2033	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2012"	"2012"	0	2171	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2013"	"2013"	0	2306	Unreliable
+	"North Dakota"	"38"	"Burke County, ND"	"38013"	"2014"	"2014"	0	2245	Unreliable
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2006"	"2006"	Suppressed	75940	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2007"	"2007"	Suppressed	77473	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2008"	"2008"	Suppressed	78678	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2009"	"2009"	Suppressed	80122	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2010"	"2010"	Suppressed	81308	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2011"	"2011"	Suppressed	83145	Suppressed
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2012"	"2012"	0	85774	Unreliable
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2013"	"2013"	0	88457	Unreliable
+	"North Dakota"	"38"	"Burleigh County, ND"	"38015"	"2014"	"2014"	Suppressed	90503	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2006"	"2006"	Suppressed	138340	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2007"	"2007"	Suppressed	141316	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2008"	"2008"	Suppressed	144290	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2009"	"2009"	Suppressed	147872	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2010"	"2010"	Suppressed	149778	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2011"	"2011"	Suppressed	152368	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2012"	"2012"	Suppressed	156157	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2013"	"2013"	Suppressed	162829	Suppressed
+	"North Dakota"	"38"	"Cass County, ND"	"38017"	"2014"	"2014"	12	167005	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2006"	"2006"	0	4202	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2007"	"2007"	0	4056	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2008"	"2008"	Suppressed	4008	Suppressed
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2009"	"2009"	0	3975	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2010"	"2010"	0	3993	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2011"	"2011"	0	3939	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2012"	"2012"	0	3948	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2013"	"2013"	0	3896	Unreliable
+	"North Dakota"	"38"	"Cavalier County, ND"	"38019"	"2014"	"2014"	0	3855	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2006"	"2006"	0	5419	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2007"	"2007"	0	5412	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2008"	"2008"	0	5305	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2009"	"2009"	0	5269	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2010"	"2010"	0	5289	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2011"	"2011"	0	5317	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2012"	"2012"	0	5268	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2013"	"2013"	0	5248	Unreliable
+	"North Dakota"	"38"	"Dickey County, ND"	"38021"	"2014"	"2014"	0	5150	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2006"	"2006"	0	2083	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2007"	"2007"	0	2041	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2008"	"2008"	0	2022	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2009"	"2009"	0	2020	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2010"	"2010"	0	2071	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2011"	"2011"	0	2125	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2012"	"2012"	0	2228	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2013"	"2013"	0	2314	Unreliable
+	"North Dakota"	"38"	"Divide County, ND"	"38023"	"2014"	"2014"	0	2432	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2006"	"2006"	0	3432	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2007"	"2007"	0	3429	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2008"	"2008"	0	3470	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2009"	"2009"	0	3513	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2010"	"2010"	0	3536	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2011"	"2011"	0	3720	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2012"	"2012"	0	3967	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2013"	"2013"	0	4162	Unreliable
+	"North Dakota"	"38"	"Dunn County, ND"	"38025"	"2014"	"2014"	0	4399	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2006"	"2006"	0	2529	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2007"	"2007"	0	2503	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2008"	"2008"	0	2470	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2009"	"2009"	0	2393	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2010"	"2010"	0	2385	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2011"	"2011"	0	2380	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2012"	"2012"	0	2368	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2013"	"2013"	0	2404	Unreliable
+	"North Dakota"	"38"	"Eddy County, ND"	"38027"	"2014"	"2014"	0	2377	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2006"	"2006"	0	3748	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2007"	"2007"	0	3640	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2008"	"2008"	Suppressed	3588	Suppressed
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2009"	"2009"	0	3568	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2010"	"2010"	0	3550	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2011"	"2011"	0	3546	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2012"	"2012"	0	3491	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2013"	"2013"	0	3486	Unreliable
+	"North Dakota"	"38"	"Emmons County, ND"	"38029"	"2014"	"2014"	Suppressed	3422	Suppressed
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2006"	"2006"	0	3565	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2007"	"2007"	0	3500	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2008"	"2008"	0	3436	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2009"	"2009"	0	3319	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2010"	"2010"	0	3343	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2011"	"2011"	0	3341	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2012"	"2012"	0	3392	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2013"	"2013"	0	3366	Unreliable
+	"North Dakota"	"38"	"Foster County, ND"	"38031"	"2014"	"2014"	0	3362	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2006"	"2006"	0	1670	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2007"	"2007"	0	1670	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2008"	"2008"	0	1650	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2009"	"2009"	0	1657	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2010"	"2010"	0	1680	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2011"	"2011"	0	1752	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2012"	"2012"	0	1804	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2013"	"2013"	0	1823	Unreliable
+	"North Dakota"	"38"	"Golden Valley County, ND"	"38033"	"2014"	"2014"	0	1825	Unreliable
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2006"	"2006"	Suppressed	67096	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2007"	"2007"	Suppressed	66333	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2008"	"2008"	Suppressed	66917	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2009"	"2009"	Suppressed	66518	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2010"	"2010"	Suppressed	66861	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2011"	"2011"	Suppressed	66598	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2012"	"2012"	Suppressed	67472	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2013"	"2013"	Suppressed	69179	Suppressed
+	"North Dakota"	"38"	"Grand Forks County, ND"	"38035"	"2014"	"2014"	Suppressed	70138	Suppressed
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2006"	"2006"	0	2519	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2007"	"2007"	0	2478	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2008"	"2008"	0	2440	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2009"	"2009"	0	2399	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2010"	"2010"	0	2394	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2011"	"2011"	0	2337	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2012"	"2012"	0	2333	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2013"	"2013"	0	2377	Unreliable
+	"North Dakota"	"38"	"Grant County, ND"	"38037"	"2014"	"2014"	0	2361	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2006"	"2006"	0	2457	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2007"	"2007"	0	2430	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2008"	"2008"	0	2406	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2009"	"2009"	0	2420	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2010"	"2010"	0	2420	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2011"	"2011"	0	2372	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2012"	"2012"	0	2362	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2013"	"2013"	0	2296	Unreliable
+	"North Dakota"	"38"	"Griggs County, ND"	"38039"	"2014"	"2014"	0	2319	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2006"	"2006"	0	2577	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2007"	"2007"	0	2524	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2008"	"2008"	0	2479	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2009"	"2009"	0	2481	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2010"	"2010"	0	2477	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2011"	"2011"	0	2515	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2012"	"2012"	0	2553	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2013"	"2013"	0	2660	Unreliable
+	"North Dakota"	"38"	"Hettinger County, ND"	"38041"	"2014"	"2014"	0	2660	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2006"	"2006"	0	2509	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2007"	"2007"	0	2450	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2008"	"2008"	Suppressed	2419	Suppressed
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2009"	"2009"	0	2396	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2010"	"2010"	0	2435	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2011"	"2011"	0	2414	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2012"	"2012"	0	2426	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2013"	"2013"	0	2428	Unreliable
+	"North Dakota"	"38"	"Kidder County, ND"	"38043"	"2014"	"2014"	0	2424	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2006"	"2006"	0	4357	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2007"	"2007"	0	4320	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2008"	"2008"	0	4218	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2009"	"2009"	0	4142	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2010"	"2010"	0	4139	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2011"	"2011"	0	4105	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2012"	"2012"	0	4114	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2013"	"2013"	0	4166	Unreliable
+	"North Dakota"	"38"	"LaMoure County, ND"	"38045"	"2014"	"2014"	0	4149	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2006"	"2006"	0	2018	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2007"	"2007"	0	2023	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2008"	"2008"	0	2000	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2009"	"2009"	0	1970	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2010"	"2010"	0	1990	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2011"	"2011"	0	1985	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2012"	"2012"	0	1924	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2013"	"2013"	0	1946	Unreliable
+	"North Dakota"	"38"	"Logan County, ND"	"38047"	"2014"	"2014"	0	1944	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2006"	"2006"	0	5507	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2007"	"2007"	0	5370	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2008"	"2008"	0	5355	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2009"	"2009"	0	5373	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2010"	"2010"	0	5395	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2011"	"2011"	0	5505	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2012"	"2012"	0	5789	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2013"	"2013"	0	5922	Unreliable
+	"North Dakota"	"38"	"McHenry County, ND"	"38049"	"2014"	"2014"	0	5988	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2006"	"2006"	0	3080	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2007"	"2007"	0	2966	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2008"	"2008"	0	2911	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2009"	"2009"	0	2840	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2010"	"2010"	0	2809	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2011"	"2011"	0	2769	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2012"	"2012"	0	2751	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2013"	"2013"	0	2754	Unreliable
+	"North Dakota"	"38"	"McIntosh County, ND"	"38051"	"2014"	"2014"	Suppressed	2801	Suppressed
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2006"	"2006"	0	5727	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2007"	"2007"	0	5812	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2008"	"2008"	Suppressed	5908	Suppressed
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2009"	"2009"	0	6159	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2010"	"2010"	0	6360	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2011"	"2011"	0	7019	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2012"	"2012"	0	7987	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2013"	"2013"	0	9314	Unreliable
+	"North Dakota"	"38"	"McKenzie County, ND"	"38053"	"2014"	"2014"	Suppressed	10996	Suppressed
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2006"	"2006"	0	8767	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2007"	"2007"	0	8811	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2008"	"2008"	Suppressed	8883	Suppressed
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2009"	"2009"	0	8860	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2010"	"2010"	0	8962	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2011"	"2011"	Suppressed	9068	Suppressed
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2012"	"2012"	0	9309	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2013"	"2013"	0	9517	Unreliable
+	"North Dakota"	"38"	"McLean County, ND"	"38055"	"2014"	"2014"	0	9578	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2006"	"2006"	0	8309	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2007"	"2007"	0	8351	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2008"	"2008"	Suppressed	8295	Suppressed
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2009"	"2009"	0	8390	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2010"	"2010"	0	8424	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2011"	"2011"	0	8449	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2012"	"2012"	0	8486	Unreliable
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2013"	"2013"	Suppressed	8592	Suppressed
+	"North Dakota"	"38"	"Mercer County, ND"	"38057"	"2014"	"2014"	Suppressed	8746	Suppressed
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2006"	"2006"	0	25910	Unreliable
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2007"	"2007"	Suppressed	26310	Suppressed
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2008"	"2008"	Suppressed	26696	Suppressed
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2009"	"2009"	Suppressed	27043	Suppressed
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2010"	"2010"	0	27471	Unreliable
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2011"	"2011"	0	27734	Unreliable
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2012"	"2012"	0	28101	Unreliable
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2013"	"2013"	Suppressed	28990	Suppressed
+	"North Dakota"	"38"	"Morton County, ND"	"38059"	"2014"	"2014"	Suppressed	29822	Suppressed
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2006"	"2006"	0	6826	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2007"	"2007"	0	6991	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2008"	"2008"	0	7153	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2009"	"2009"	0	7439	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2010"	"2010"	0	7673	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2011"	"2011"	0	8097	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2012"	"2012"	Suppressed	8734	Suppressed
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2013"	"2013"	0	9376	Unreliable
+	"North Dakota"	"38"	"Mountrail County, ND"	"38061"	"2014"	"2014"	Suppressed	9782	Suppressed
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2006"	"2006"	0	3271	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2007"	"2007"	0	3222	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2008"	"2008"	0	3176	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2009"	"2009"	Suppressed	3130	Suppressed
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2010"	"2010"	0	3126	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2011"	"2011"	0	3057	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2012"	"2012"	0	3080	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2013"	"2013"	0	3095	Unreliable
+	"North Dakota"	"38"	"Nelson County, ND"	"38063"	"2014"	"2014"	0	3045	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2006"	"2006"	0	1863	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2007"	"2007"	Suppressed	1865	Suppressed
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2008"	"2008"	0	1836	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2009"	"2009"	0	1844	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2010"	"2010"	0	1846	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2011"	"2011"	0	1830	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2012"	"2012"	0	1838	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2013"	"2013"	0	1874	Unreliable
+	"North Dakota"	"38"	"Oliver County, ND"	"38065"	"2014"	"2014"	0	1850	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2006"	"2006"	0	7786	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2007"	"2007"	0	7585	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2008"	"2008"	Suppressed	7452	Suppressed
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2009"	"2009"	0	7407	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2010"	"2010"	0	7413	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2011"	"2011"	0	7342	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2012"	"2012"	0	7271	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2013"	"2013"	0	7181	Unreliable
+	"North Dakota"	"38"	"Pembina County, ND"	"38067"	"2014"	"2014"	Suppressed	7128	Suppressed
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2006"	"2006"	0	4394	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2007"	"2007"	0	4368	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2008"	"2008"	0	4372	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2009"	"2009"	0	4329	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2010"	"2010"	Suppressed	4357	Suppressed
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2011"	"2011"	0	4375	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2012"	"2012"	0	4457	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2013"	"2013"	0	4451	Unreliable
+	"North Dakota"	"38"	"Pierce County, ND"	"38069"	"2014"	"2014"	0	4404	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2006"	"2006"	0	11298	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2007"	"2007"	0	11320	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2008"	"2008"	0	11434	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2009"	"2009"	Suppressed	11328	Suppressed
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2010"	"2010"	Suppressed	11451	Suppressed
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2011"	"2011"	0	11452	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2012"	"2012"	0	11536	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2013"	"2013"	0	11554	Unreliable
+	"North Dakota"	"38"	"Ramsey County, ND"	"38071"	"2014"	"2014"	Suppressed	11564	Suppressed
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2006"	"2006"	0	5720	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2007"	"2007"	0	5766	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2008"	"2008"	0	5677	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2009"	"2009"	0	5521	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2010"	"2010"	0	5457	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2011"	"2011"	0	5403	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2012"	"2012"	0	5444	Unreliable
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2013"	"2013"	Suppressed	5516	Suppressed
+	"North Dakota"	"38"	"Ransom County, ND"	"38073"	"2014"	"2014"	0	5446	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2006"	"2006"	0	2499	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2007"	"2007"	0	2415	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2008"	"2008"	0	2387	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2009"	"2009"	0	2432	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2010"	"2010"	0	2470	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2011"	"2011"	0	2490	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2012"	"2012"	0	2559	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2013"	"2013"	0	2608	Unreliable
+	"North Dakota"	"38"	"Renville County, ND"	"38075"	"2014"	"2014"	0	2587	Unreliable
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2006"	"2006"	Suppressed	16869	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2007"	"2007"	0	16659	Unreliable
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2008"	"2008"	Suppressed	16488	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2009"	"2009"	Suppressed	16178	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2010"	"2010"	0	16321	Unreliable
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2011"	"2011"	Suppressed	16245	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2012"	"2012"	Suppressed	16217	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2013"	"2013"	Suppressed	16339	Suppressed
+	"North Dakota"	"38"	"Richland County, ND"	"38077"	"2014"	"2014"	0	16432	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2006"	"2006"	0	13625	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2007"	"2007"	0	13679	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2008"	"2008"	Suppressed	13744	Suppressed
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2009"	"2009"	Suppressed	13798	Suppressed
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2010"	"2010"	0	13937	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2011"	"2011"	0	14206	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2012"	"2012"	0	14382	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2013"	"2013"	0	14582	Unreliable
+	"North Dakota"	"38"	"Rolette County, ND"	"38079"	"2014"	"2014"	Suppressed	14616	Suppressed
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2006"	"2006"	0	4115	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2007"	"2007"	0	4057	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2008"	"2008"	0	3978	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2009"	"2009"	0	3901	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2010"	"2010"	0	3829	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2011"	"2011"	0	3798	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2012"	"2012"	0	3896	Unreliable
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2013"	"2013"	Suppressed	3890	Suppressed
+	"North Dakota"	"38"	"Sargent County, ND"	"38081"	"2014"	"2014"	0	3931	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2006"	"2006"	0	1435	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2007"	"2007"	0	1406	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2008"	"2008"	0	1351	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2009"	"2009"	0	1349	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2010"	"2010"	0	1321	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2011"	"2011"	0	1309	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2012"	"2012"	0	1266	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2013"	"2013"	0	1304	Unreliable
+	"North Dakota"	"38"	"Sheridan County, ND"	"38083"	"2014"	"2014"	0	1326	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2006"	"2006"	0	4148	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2007"	"2007"	0	4094	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2008"	"2008"	Suppressed	4072	Suppressed
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2009"	"2009"	0	4134	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2010"	"2010"	0	4153	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2011"	"2011"	0	4280	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2012"	"2012"	0	4347	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2013"	"2013"	0	4430	Unreliable
+	"North Dakota"	"38"	"Sioux County, ND"	"38085"	"2014"	"2014"	0	4422	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2006"	"2006"	0	744	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2007"	"2007"	0	711	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2008"	"2008"	0	730	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2009"	"2009"	0	718	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2010"	"2010"	0	727	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2011"	"2011"	0	718	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2012"	"2012"	0	758	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2013"	"2013"	0	761	Unreliable
+	"North Dakota"	"38"	"Slope County, ND"	"38087"	"2014"	"2014"	0	765	Unreliable
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2006"	"2006"	Suppressed	22770	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2007"	"2007"	Suppressed	23176	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2008"	"2008"	Suppressed	23375	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2009"	"2009"	Suppressed	23786	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2010"	"2010"	Suppressed	24199	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2011"	"2011"	0	25177	Unreliable
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2012"	"2012"	Suppressed	26771	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2013"	"2013"	Suppressed	28212	Suppressed
+	"North Dakota"	"38"	"Stark County, ND"	"38089"	"2014"	"2014"	Suppressed	30372	Suppressed
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2006"	"2006"	0	2026	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2007"	"2007"	0	1985	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2008"	"2008"	0	1960	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2009"	"2009"	Suppressed	1930	Suppressed
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2010"	"2010"	0	1975	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2011"	"2011"	0	1950	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2012"	"2012"	0	1989	Unreliable
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2013"	"2013"	Suppressed	1960	Suppressed
+	"North Dakota"	"38"	"Steele County, ND"	"38091"	"2014"	"2014"	0	1955	Unreliable
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2006"	"2006"	Suppressed	21115	Suppressed
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2007"	"2007"	0	20876	Unreliable
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2008"	"2008"	Suppressed	20812	Suppressed
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2009"	"2009"	Suppressed	21009	Suppressed
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2010"	"2010"	0	21100	Unreliable
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2011"	"2011"	Suppressed	21062	Suppressed
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2012"	"2012"	0	20934	Unreliable
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2013"	"2013"	0	21120	Unreliable
+	"North Dakota"	"38"	"Stutsman County, ND"	"38093"	"2014"	"2014"	Suppressed	21129	Suppressed
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2006"	"2006"	0	2408	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2007"	"2007"	Suppressed	2320	Suppressed
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2008"	"2008"	0	2234	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2009"	"2009"	0	2236	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2010"	"2010"	0	2246	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2011"	"2011"	Suppressed	2264	Suppressed
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2012"	"2012"	0	2318	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2013"	"2013"	0	2317	Unreliable
+	"North Dakota"	"38"	"Towner County, ND"	"38095"	"2014"	"2014"	0	2310	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2006"	"2006"	0	8249	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2007"	"2007"	Suppressed	8318	Suppressed
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2008"	"2008"	Suppressed	8157	Suppressed
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2009"	"2009"	Suppressed	8123	Suppressed
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2010"	"2010"	0	8121	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2011"	"2011"	0	8147	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2012"	"2012"	0	8072	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2013"	"2013"	0	8245	Unreliable
+	"North Dakota"	"38"	"Traill County, ND"	"38097"	"2014"	"2014"	0	8082	Unreliable
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2006"	"2006"	0	11501	Unreliable
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2007"	"2007"	Suppressed	11355	Suppressed
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2008"	"2008"	0	11296	Unreliable
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2009"	"2009"	Suppressed	11195	Suppressed
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2010"	"2010"	0	11119	Unreliable
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2011"	"2011"	0	11032	Unreliable
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2012"	"2012"	Suppressed	11046	Suppressed
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2013"	"2013"	Suppressed	11104	Suppressed
+	"North Dakota"	"38"	"Walsh County, ND"	"38099"	"2014"	"2014"	0	10970	Unreliable
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2006"	"2006"	0	58030	Unreliable
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2007"	"2007"	Suppressed	58297	Suppressed
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2008"	"2008"	Suppressed	58670	Suppressed
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2009"	"2009"	0	60213	Unreliable
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2010"	"2010"	0	61675	Unreliable
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2011"	"2011"	0	64072	Unreliable
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2012"	"2012"	Suppressed	64798	Suppressed
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2013"	"2013"	Suppressed	67990	Suppressed
+	"North Dakota"	"38"	"Ward County, ND"	"38101"	"2014"	"2014"	Suppressed	69384	Suppressed
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2006"	"2006"	0	4404	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2007"	"2007"	0	4317	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2008"	"2008"	0	4253	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2009"	"2009"	0	4202	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2010"	"2010"	0	4207	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2011"	"2011"	0	4237	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2012"	"2012"	0	4271	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2013"	"2013"	0	4206	Unreliable
+	"North Dakota"	"38"	"Wells County, ND"	"38103"	"2014"	"2014"	0	4192	Unreliable
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2006"	"2006"	Suppressed	20122	Suppressed
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2007"	"2007"	Suppressed	20547	Suppressed
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2008"	"2008"	0	20928	Unreliable
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2009"	"2009"	0	21820	Unreliable
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2010"	"2010"	Suppressed	22398	Suppressed
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2011"	"2011"	Suppressed	24374	Suppressed
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2012"	"2012"	Suppressed	26697	Suppressed
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2013"	"2013"	0	29595	Unreliable
+	"North Dakota"	"38"	"Williams County, ND"	"38105"	"2014"	"2014"	Suppressed	32130	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: North Dakota (38)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:39:42 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:39:42 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

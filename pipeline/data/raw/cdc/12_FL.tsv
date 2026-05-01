@@ -1,0 +1,660 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2006"	"2006"	13	239506	Unreliable
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2007"	"2007"	20	242685	8.2
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2008"	"2008"	19	244888	Unreliable
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2009"	"2009"	29	246657	11.8
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2010"	"2010"	25	247336	10.1
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2011"	"2011"	25	249365	10.0
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2012"	"2012"	23	251417	9.1
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2013"	"2013"	20	253451	7.9
+	"Florida"	"12"	"Alachua County, FL"	"12001"	"2014"	"2014"	22	256380	8.6
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2006"	"2006"	Suppressed	25571	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2007"	"2007"	10	26212	Unreliable
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2008"	"2008"	Suppressed	26725	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2009"	"2009"	Suppressed	27124	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2010"	"2010"	Suppressed	27115	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2011"	"2011"	Suppressed	27154	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2012"	"2012"	Suppressed	27086	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2013"	"2013"	Suppressed	27013	Suppressed
+	"Florida"	"12"	"Baker County, FL"	"12003"	"2014"	"2014"	Suppressed	27093	Suppressed
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2006"	"2006"	23	165644	13.9
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2007"	"2007"	34	165345	20.6
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2008"	"2008"	28	166267	16.8
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2009"	"2009"	23	167464	13.7
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2010"	"2010"	27	168852	16.0
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2011"	"2011"	12	169856	Unreliable
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2012"	"2012"	19	171903	Unreliable
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2013"	"2013"	20	174987	11.4
+	"Florida"	"12"	"Bay County, FL"	"12005"	"2014"	"2014"	30	178985	16.8
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2006"	"2006"	Suppressed	28506	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2007"	"2007"	Suppressed	28825	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2008"	"2008"	Suppressed	28961	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2009"	"2009"	Suppressed	28979	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2010"	"2010"	Suppressed	28520	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2011"	"2011"	Suppressed	28255	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2012"	"2012"	Suppressed	27049	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2013"	"2013"	Suppressed	26850	Suppressed
+	"Florida"	"12"	"Bradford County, FL"	"12007"	"2014"	"2014"	Suppressed	26702	Suppressed
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2006"	"2006"	107	535138	20.0
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2007"	"2007"	105	539719	19.5
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2008"	"2008"	125	542378	23.0
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2009"	"2009"	137	542109	25.3
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2010"	"2010"	137	543376	25.2
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2011"	"2011"	125	543566	23.0
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2012"	"2012"	115	547307	21.0
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2013"	"2013"	106	550823	19.2
+	"Florida"	"12"	"Brevard County, FL"	"12009"	"2014"	"2014"	111	556885	19.9
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2006"	"2006"	258	1739348	14.8
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2007"	"2007"	270	1720825	15.7
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2008"	"2008"	314	1723633	18.2
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2009"	"2009"	306	1733310	17.7
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2010"	"2010"	262	1748066	15.0
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2011"	"2011"	242	1780172	13.6
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2012"	"2012"	234	1815137	12.9
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2013"	"2013"	199	1838844	10.8
+	"Florida"	"12"	"Broward County, FL"	"12011"	"2014"	"2014"	220	1869235	11.8
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2006"	"2006"	Suppressed	13997	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2007"	"2007"	Suppressed	14222	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2008"	"2008"	0	14351	Unreliable
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2009"	"2009"	Suppressed	14692	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2010"	"2010"	Suppressed	14625	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2011"	"2011"	Suppressed	14750	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2012"	"2012"	Suppressed	14723	Suppressed
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2013"	"2013"	0	14682	Unreliable
+	"Florida"	"12"	"Calhoun County, FL"	"12013"	"2014"	"2014"	Suppressed	14532	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2006"	"2006"	Suppressed	157099	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2007"	"2007"	10	159742	Unreliable
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2008"	"2008"	Suppressed	160467	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2009"	"2009"	Suppressed	159629	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2010"	"2010"	11	159978	Unreliable
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2011"	"2011"	11	160511	Unreliable
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2012"	"2012"	Suppressed	162449	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2013"	"2013"	Suppressed	164736	Suppressed
+	"Florida"	"12"	"Charlotte County, FL"	"12015"	"2014"	"2014"	14	168474	Unreliable
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2006"	"2006"	31	137826	22.5
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2007"	"2007"	20	140974	14.2
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2008"	"2008"	30	142122	21.1
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2009"	"2009"	27	141381	19.1
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2010"	"2010"	34	141236	24.1
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2011"	"2011"	37	140031	26.4
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2012"	"2012"	41	139360	29.4
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2013"	"2013"	27	139271	19.4
+	"Florida"	"12"	"Citrus County, FL"	"12017"	"2014"	"2014"	26	139377	18.7
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2006"	"2006"	17	178339	Unreliable
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2007"	"2007"	30	184256	16.3
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2008"	"2008"	25	187289	13.3
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2009"	"2009"	39	189101	20.6
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2010"	"2010"	26	190865	13.6
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2011"	"2011"	27	192370	14.0
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2012"	"2012"	35	194345	18.0
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2013"	"2013"	38	196399	19.3
+	"Florida"	"12"	"Clay County, FL"	"12019"	"2014"	"2014"	29	199798	14.5
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2006"	"2006"	52	312621	16.6
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2007"	"2007"	38	314437	12.1
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2008"	"2008"	63	316641	19.9
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2009"	"2009"	54	318485	17.0
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2010"	"2010"	45	321520	14.0
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2011"	"2011"	44	328134	13.4
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2012"	"2012"	40	332427	12.0
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2013"	"2013"	34	339642	10.0
+	"Florida"	"12"	"Collier County, FL"	"12021"	"2014"	"2014"	48	348777	13.8
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2006"	"2006"	12	65890	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2007"	"2007"	Suppressed	66604	Suppressed
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2008"	"2008"	12	67318	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2009"	"2009"	11	67412	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2010"	"2010"	18	67531	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2011"	"2011"	Suppressed	67485	Suppressed
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2012"	"2012"	17	67966	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2013"	"2013"	13	67543	Unreliable
+	"Florida"	"12"	"Columbia County, FL"	"12023"	"2014"	"2014"	13	67857	Unreliable
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2006"	"2006"	Suppressed	34300	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2007"	"2007"	Suppressed	34537	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2008"	"2008"	Suppressed	34374	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2009"	"2009"	Suppressed	34592	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2010"	"2010"	0	34862	Unreliable
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2011"	"2011"	Suppressed	34894	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2012"	"2012"	Suppressed	34712	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2013"	"2013"	Suppressed	34517	Suppressed
+	"Florida"	"12"	"DeSoto County, FL"	"12027"	"2014"	"2014"	Suppressed	35012	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2006"	"2006"	Suppressed	15892	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2007"	"2007"	Suppressed	16083	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2008"	"2008"	Suppressed	16214	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2009"	"2009"	Suppressed	16403	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2010"	"2010"	Suppressed	16422	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2011"	"2011"	Suppressed	16486	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2012"	"2012"	Suppressed	16126	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2013"	"2013"	Suppressed	15940	Suppressed
+	"Florida"	"12"	"Dixie County, FL"	"12029"	"2014"	"2014"	Suppressed	15907	Suppressed
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2006"	"2006"	150	842098	17.8
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2007"	"2007"	143	851033	16.8
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2008"	"2008"	109	855437	12.7
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2009"	"2009"	137	859795	15.9
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2010"	"2010"	149	864263	17.2
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2011"	"2011"	149	870709	17.1
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2012"	"2012"	166	879602	18.9
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2013"	"2013"	143	885855	16.1
+	"Florida"	"12"	"Duval County, FL"	"12031"	"2014"	"2014"	148	897698	16.5
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2006"	"2006"	53	300395	17.6
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2007"	"2007"	37	297393	12.4
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2008"	"2008"	40	296854	13.5
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2009"	"2009"	24	297015	8.1
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2010"	"2010"	34	297619	11.4
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2011"	"2011"	34	299114	11.4
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2012"	"2012"	33	302715	10.9
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2013"	"2013"	25	305817	8.2
+	"Florida"	"12"	"Escambia County, FL"	"12033"	"2014"	"2014"	41	310659	13.2
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2006"	"2006"	Suppressed	84339	Suppressed
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2007"	"2007"	10	90516	Unreliable
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2008"	"2008"	Suppressed	93546	Suppressed
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2009"	"2009"	Suppressed	94700	Suppressed
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2010"	"2010"	13	95696	Unreliable
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2011"	"2011"	18	97376	Unreliable
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2012"	"2012"	12	98359	Unreliable
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2013"	"2013"	12	99956	Unreliable
+	"Florida"	"12"	"Flagler County, FL"	"12035"	"2014"	"2014"	14	102408	Unreliable
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2006"	"2006"	Suppressed	11308	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2007"	"2007"	Suppressed	11491	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2008"	"2008"	Suppressed	11484	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2009"	"2009"	0	11515	Unreliable
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2010"	"2010"	Suppressed	11549	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2011"	"2011"	Suppressed	11596	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2012"	"2012"	0	11686	Unreliable
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2013"	"2013"	Suppressed	11598	Suppressed
+	"Florida"	"12"	"Franklin County, FL"	"12037"	"2014"	"2014"	Suppressed	11815	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2006"	"2006"	Suppressed	45258	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2007"	"2007"	Suppressed	45867	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2008"	"2008"	Suppressed	46319	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2009"	"2009"	Suppressed	46264	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2010"	"2010"	Suppressed	46389	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2011"	"2011"	Suppressed	46151	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2012"	"2012"	Suppressed	46528	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2013"	"2013"	Suppressed	46194	Suppressed
+	"Florida"	"12"	"Gadsden County, FL"	"12039"	"2014"	"2014"	Suppressed	46281	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2006"	"2006"	Suppressed	16223	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2007"	"2007"	Suppressed	16610	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2008"	"2008"	Suppressed	16797	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2009"	"2009"	Suppressed	16829	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2010"	"2010"	0	16939	Unreliable
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2011"	"2011"	0	17004	Unreliable
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2012"	"2012"	Suppressed	16815	Suppressed
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2013"	"2013"	0	16931	Unreliable
+	"Florida"	"12"	"Gilchrist County, FL"	"12041"	"2014"	"2014"	Suppressed	16997	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2006"	"2006"	Suppressed	12297	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2007"	"2007"	Suppressed	12357	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2008"	"2008"	Suppressed	12752	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2009"	"2009"	Suppressed	12839	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2010"	"2010"	0	12884	Unreliable
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2011"	"2011"	Suppressed	12635	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2012"	"2012"	Suppressed	13107	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2013"	"2013"	Suppressed	13345	Suppressed
+	"Florida"	"12"	"Glades County, FL"	"12043"	"2014"	"2014"	Suppressed	13635	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2006"	"2006"	Suppressed	15856	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2007"	"2007"	Suppressed	15908	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2008"	"2008"	Suppressed	15851	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2009"	"2009"	0	15933	Unreliable
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2010"	"2010"	0	15863	Unreliable
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2011"	"2011"	Suppressed	15844	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2012"	"2012"	Suppressed	15718	Suppressed
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2013"	"2013"	0	15829	Unreliable
+	"Florida"	"12"	"Gulf County, FL"	"12045"	"2014"	"2014"	Suppressed	15944	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2006"	"2006"	0	14430	Unreliable
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2007"	"2007"	Suppressed	14589	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2008"	"2008"	Suppressed	14785	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2009"	"2009"	Suppressed	14930	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2010"	"2010"	Suppressed	14799	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2011"	"2011"	Suppressed	14671	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2012"	"2012"	0	14708	Unreliable
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2013"	"2013"	Suppressed	14354	Suppressed
+	"Florida"	"12"	"Hamilton County, FL"	"12047"	"2014"	"2014"	Suppressed	14048	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2006"	"2006"	Suppressed	27049	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2007"	"2007"	0	27489	Unreliable
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2008"	"2008"	Suppressed	27603	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2009"	"2009"	Suppressed	27661	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2010"	"2010"	Suppressed	27731	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2011"	"2011"	Suppressed	27887	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2012"	"2012"	Suppressed	27514	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2013"	"2013"	Suppressed	27519	Suppressed
+	"Florida"	"12"	"Hardee County, FL"	"12049"	"2014"	"2014"	Suppressed	27469	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2006"	"2006"	Suppressed	38776	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2007"	"2007"	Suppressed	39006	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2008"	"2008"	Suppressed	39177	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2009"	"2009"	Suppressed	39010	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2010"	"2010"	Suppressed	39140	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2011"	"2011"	0	39089	Unreliable
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2012"	"2012"	Suppressed	37447	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2013"	"2013"	Suppressed	37471	Suppressed
+	"Florida"	"12"	"Hendry County, FL"	"12051"	"2014"	"2014"	Suppressed	38505	Suppressed
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2006"	"2006"	29	164398	17.6
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2007"	"2007"	44	169891	25.9
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2008"	"2008"	50	172437	29.0
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2009"	"2009"	51	171950	29.7
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2010"	"2010"	57	172778	33.0
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2011"	"2011"	41	173094	23.7
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2012"	"2012"	31	173422	17.9
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2013"	"2013"	47	174441	26.9
+	"Florida"	"12"	"Hernando County, FL"	"12053"	"2014"	"2014"	27	175855	15.4
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2006"	"2006"	12	97788	Unreliable
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2007"	"2007"	Suppressed	99023	Suppressed
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2008"	"2008"	Suppressed	99568	Suppressed
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2009"	"2009"	13	98956	Unreliable
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2010"	"2010"	13	98786	Unreliable
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2011"	"2011"	21	98630	21.3
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2012"	"2012"	12	98128	Unreliable
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2013"	"2013"	19	97616	Unreliable
+	"Florida"	"12"	"Highlands County, FL"	"12055"	"2014"	"2014"	18	98236	Unreliable
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2006"	"2006"	186	1171826	15.9
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2007"	"2007"	258	1184686	21.8
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2008"	"2008"	246	1196773	20.6
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2009"	"2009"	273	1214050	22.5
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2010"	"2010"	263	1229226	21.4
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2011"	"2011"	245	1267775	19.3
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2012"	"2012"	190	1277746	14.9
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2013"	"2013"	167	1291578	12.9
+	"Florida"	"12"	"Hillsborough County, FL"	"12057"	"2014"	"2014"	163	1316298	12.4
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2006"	"2006"	Suppressed	19824	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2007"	"2007"	Suppressed	19991	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2008"	"2008"	Suppressed	20141	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2009"	"2009"	Suppressed	20147	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2010"	"2010"	Suppressed	19927	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2011"	"2011"	Suppressed	19873	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2012"	"2012"	Suppressed	19804	Suppressed
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2013"	"2013"	0	19717	Unreliable
+	"Florida"	"12"	"Holmes County, FL"	"12059"	"2014"	"2014"	Suppressed	19650	Suppressed
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2006"	"2006"	25	131463	19.0
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2007"	"2007"	25	134564	18.6
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2008"	"2008"	34	136277	24.9
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2009"	"2009"	32	137016	23.4
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2010"	"2010"	22	138028	15.9
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2011"	"2011"	25	138894	18.0
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2012"	"2012"	21	140567	14.9
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2013"	"2013"	15	141994	Unreliable
+	"Florida"	"12"	"Indian River County, FL"	"12061"	"2014"	"2014"	27	144755	18.7
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2006"	"2006"	Suppressed	48265	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2007"	"2007"	Suppressed	48368	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2008"	"2008"	0	50272	Unreliable
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2009"	"2009"	Suppressed	50064	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2010"	"2010"	Suppressed	49746	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2011"	"2011"	Suppressed	49292	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2012"	"2012"	Suppressed	48968	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2013"	"2013"	Suppressed	48922	Suppressed
+	"Florida"	"12"	"Jackson County, FL"	"12063"	"2014"	"2014"	Suppressed	48801	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2006"	"2006"	Suppressed	14461	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2007"	"2007"	Suppressed	14383	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2008"	"2008"	Suppressed	14606	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2009"	"2009"	0	14704	Unreliable
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2010"	"2010"	Suppressed	14761	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2011"	"2011"	0	14658	Unreliable
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2012"	"2012"	Suppressed	14256	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2013"	"2013"	Suppressed	14194	Suppressed
+	"Florida"	"12"	"Jefferson County, FL"	"12065"	"2014"	"2014"	0	14050	Unreliable
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2006"	"2006"	0	8341	Unreliable
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2007"	"2007"	Suppressed	8398	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2008"	"2008"	Suppressed	8465	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2009"	"2009"	Suppressed	8435	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2010"	"2010"	Suppressed	8870	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2011"	"2011"	Suppressed	8942	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2012"	"2012"	Suppressed	8804	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2013"	"2013"	Suppressed	8848	Suppressed
+	"Florida"	"12"	"Lafayette County, FL"	"12067"	"2014"	"2014"	Suppressed	8835	Suppressed
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2006"	"2006"	19	281329	Unreliable
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2007"	"2007"	21	289909	7.2
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2008"	"2008"	30	293654	10.2
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2009"	"2009"	35	295511	11.8
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2010"	"2010"	39	297052	13.1
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2011"	"2011"	43	301019	14.3
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2012"	"2012"	30	303186	9.9
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2013"	"2013"	31	308034	10.1
+	"Florida"	"12"	"Lake County, FL"	"12069"	"2014"	"2014"	40	315690	12.7
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2006"	"2006"	98	582678	16.8
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2007"	"2007"	99	604716	16.4
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2008"	"2008"	95	610984	15.5
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2009"	"2009"	95	612297	15.5
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2010"	"2010"	106	618754	17.1
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2011"	"2011"	96	631330	15.2
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2012"	"2012"	67	645293	10.4
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2013"	"2013"	61	661115	9.2
+	"Florida"	"12"	"Lee County, FL"	"12071"	"2014"	"2014"	86	679513	12.7
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2006"	"2006"	13	263076	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2007"	"2007"	15	268519	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2008"	"2008"	19	271130	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2009"	"2009"	11	273263	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2010"	"2010"	13	275487	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2011"	"2011"	15	277971	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2012"	"2012"	13	283769	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2013"	"2013"	15	281845	Unreliable
+	"Florida"	"12"	"Leon County, FL"	"12073"	"2014"	"2014"	18	283988	Unreliable
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2006"	"2006"	Suppressed	39447	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2007"	"2007"	Suppressed	40204	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2008"	"2008"	Suppressed	40809	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2009"	"2009"	Suppressed	40880	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2010"	"2010"	11	40801	Unreliable
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2011"	"2011"	Suppressed	40156	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2012"	"2012"	16	40025	Unreliable
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2013"	"2013"	Suppressed	39644	Suppressed
+	"Florida"	"12"	"Levy County, FL"	"12075"	"2014"	"2014"	Suppressed	39613	Suppressed
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2006"	"2006"	0	8011	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2007"	"2007"	0	8113	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2008"	"2008"	0	8323	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2009"	"2009"	0	8347	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2010"	"2010"	0	8365	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2011"	"2011"	0	8314	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2012"	"2012"	0	8276	Unreliable
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2013"	"2013"	Suppressed	8349	Suppressed
+	"Florida"	"12"	"Liberty County, FL"	"12077"	"2014"	"2014"	Suppressed	8360	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2006"	"2006"	Suppressed	19299	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2007"	"2007"	Suppressed	19322	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2008"	"2008"	Suppressed	19347	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2009"	"2009"	0	19329	Unreliable
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2010"	"2010"	Suppressed	19224	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2011"	"2011"	Suppressed	19115	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2012"	"2012"	Suppressed	18907	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2013"	"2013"	Suppressed	18728	Suppressed
+	"Florida"	"12"	"Madison County, FL"	"12079"	"2014"	"2014"	0	18518	Unreliable
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2006"	"2006"	57	313771	18.2
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2007"	"2007"	54	316410	17.1
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2008"	"2008"	55	318766	17.3
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2009"	"2009"	76	320711	23.7
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2010"	"2010"	78	322833	24.2
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2011"	"2011"	75	327142	22.9
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2012"	"2012"	48	333895	14.4
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2013"	"2013"	72	342106	21.0
+	"Florida"	"12"	"Manatee County, FL"	"12081"	"2014"	"2014"	91	351746	25.9
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2006"	"2006"	65	316310	20.5
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2007"	"2007"	36	325634	11.1
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2008"	"2008"	47	330052	14.2
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2009"	"2009"	62	330880	18.7
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2010"	"2010"	59	331298	17.8
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2011"	"2011"	52	332529	15.6
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2012"	"2012"	51	335125	15.2
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2013"	"2013"	54	337362	16.0
+	"Florida"	"12"	"Marion County, FL"	"12083"	"2014"	"2014"	57	339167	16.8
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2006"	"2006"	23	141802	16.2
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2007"	"2007"	29	143542	20.2
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2008"	"2008"	28	144369	19.4
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2009"	"2009"	30	145506	20.6
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2010"	"2010"	22	146318	15.0
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2011"	"2011"	28	147495	19.0
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2012"	"2012"	19	148817	Unreliable
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2013"	"2013"	26	151263	17.2
+	"Florida"	"12"	"Martin County, FL"	"12085"	"2014"	"2014"	20	153392	13.0
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2006"	"2006"	144	2405911	6.0
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2007"	"2007"	150	2415576	6.2
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2008"	"2008"	150	2436062	6.2
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2009"	"2009"	155	2463943	6.3
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2010"	"2010"	98	2496435	3.9
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2011"	"2011"	123	2554766	4.8
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2012"	"2012"	135	2591035	5.2
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2013"	"2013"	113	2617176	4.3
+	"Florida"	"12"	"Miami-Dade County, FL"	"12086"	"2014"	"2014"	140	2662874	5.3
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2006"	"2006"	20	73793	27.1
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2007"	"2007"	21	72906	28.8
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2008"	"2008"	19	72730	Unreliable
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2009"	"2009"	Suppressed	72627	Suppressed
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2010"	"2010"	18	73090	Unreliable
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2011"	"2011"	24	73873	32.5
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2012"	"2012"	11	74809	Unreliable
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2013"	"2013"	12	76351	Unreliable
+	"Florida"	"12"	"Monroe County, FL"	"12087"	"2014"	"2014"	11	77136	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2006"	"2006"	12	67823	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2007"	"2007"	10	69969	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2008"	"2008"	22	71557	30.7
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2009"	"2009"	10	72671	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2010"	"2010"	16	73314	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2011"	"2011"	13	74195	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2012"	"2012"	18	74629	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2013"	"2013"	16	75710	Unreliable
+	"Florida"	"12"	"Nassau County, FL"	"12089"	"2014"	"2014"	Suppressed	76619	Suppressed
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2006"	"2006"	33	184071	17.9
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2007"	"2007"	32	182677	17.5
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2008"	"2008"	20	181752	11.0
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2009"	"2009"	24	181153	13.2
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2010"	"2010"	19	180822	Unreliable
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2011"	"2011"	22	183482	12.0
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2012"	"2012"	21	190083	11.0
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2013"	"2013"	12	193811	Unreliable
+	"Florida"	"12"	"Okaloosa County, FL"	"12091"	"2014"	"2014"	21	196512	10.7
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2006"	"2006"	Suppressed	39668	Suppressed
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2007"	"2007"	10	39840	Unreliable
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2008"	"2008"	11	39968	Unreliable
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2009"	"2009"	11	39899	Unreliable
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2010"	"2010"	Suppressed	39996	Suppressed
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2011"	"2011"	13	40140	Unreliable
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2012"	"2012"	11	39467	Unreliable
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2013"	"2013"	Suppressed	39330	Suppressed
+	"Florida"	"12"	"Okeechobee County, FL"	"12093"	"2014"	"2014"	Suppressed	39149	Suppressed
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2006"	"2006"	110	1083429	10.2
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2007"	"2007"	116	1100663	10.5
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2008"	"2008"	125	1115525	11.2
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2009"	"2009"	128	1131351	11.3
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2010"	"2010"	155	1145956	13.5
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2011"	"2011"	151	1169107	12.9
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2012"	"2012"	135	1202234	11.2
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2013"	"2013"	123	1225267	10.0
+	"Florida"	"12"	"Orange County, FL"	"12095"	"2014"	"2014"	177	1253001	14.1
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2006"	"2006"	23	242081	9.5
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2007"	"2007"	28	253722	11.0
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2008"	"2008"	26	261746	9.9
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2009"	"2009"	19	265267	Unreliable
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2010"	"2010"	27	268685	10.0
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2011"	"2011"	40	276163	14.5
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2012"	"2012"	36	287416	12.5
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2013"	"2013"	32	298504	10.7
+	"Florida"	"12"	"Osceola County, FL"	"12097"	"2014"	"2014"	41	310211	13.2
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2006"	"2006"	211	1284489	16.4
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2007"	"2007"	262	1286586	20.4
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2008"	"2008"	271	1294938	20.9
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2009"	"2009"	276	1307371	21.1
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2010"	"2010"	238	1320134	18.0
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2011"	"2011"	211	1335187	15.8
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2012"	"2012"	192	1356545	14.2
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2013"	"2013"	238	1372171	17.3
+	"Florida"	"12"	"Palm Beach County, FL"	"12099"	"2014"	"2014"	236	1397710	16.9
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2006"	"2006"	101	439529	23.0
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2007"	"2007"	126	453579	27.8
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2008"	"2008"	149	461313	32.3
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2009"	"2009"	169	462607	36.5
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2010"	"2010"	177	464697	38.1
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2011"	"2011"	150	466457	32.2
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2012"	"2012"	112	470391	23.8
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2013"	"2013"	103	475502	21.7
+	"Florida"	"12"	"Pasco County, FL"	"12101"	"2014"	"2014"	105	485331	21.6
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2006"	"2006"	217	924182	23.5
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2007"	"2007"	239	918624	26.0
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2008"	"2008"	271	916458	29.6
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2009"	"2009"	265	915330	29.0
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2010"	"2010"	284	916542	31.0
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2011"	"2011"	251	917398	27.4
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2012"	"2012"	231	921319	25.1
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2013"	"2013"	185	929048	19.9
+	"Florida"	"12"	"Pinellas County, FL"	"12103"	"2014"	"2014"	190	938098	20.3
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2006"	"2006"	71	568324	12.5
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2007"	"2007"	86	585982	14.7
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2008"	"2008"	99	594801	16.6
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2009"	"2009"	107	598683	17.9
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2010"	"2010"	95	602095	15.8
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2011"	"2011"	114	609492	18.7
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2012"	"2012"	84	616158	13.6
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2013"	"2013"	96	623009	15.4
+	"Florida"	"12"	"Polk County, FL"	"12105"	"2014"	"2014"	93	634638	14.7
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2006"	"2006"	Suppressed	74663	Suppressed
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2007"	"2007"	Suppressed	75107	Suppressed
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2008"	"2008"	Suppressed	74999	Suppressed
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2009"	"2009"	10	74546	Unreliable
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2010"	"2010"	23	74364	30.9
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2011"	"2011"	19	74041	Unreliable
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2012"	"2012"	Suppressed	73263	Suppressed
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2013"	"2013"	10	72577	Unreliable
+	"Florida"	"12"	"Putnam County, FL"	"12107"	"2014"	"2014"	Suppressed	72143	Suppressed
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2006"	"2006"	11	168480	Unreliable
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2007"	"2007"	19	175318	Unreliable
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2008"	"2008"	10	181720	Unreliable
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2009"	"2009"	13	186281	Unreliable
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2010"	"2010"	22	190039	11.6
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2011"	"2011"	22	195823	11.2
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2012"	"2012"	20	202188	9.9
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2013"	"2013"	19	209647	Unreliable
+	"Florida"	"12"	"St. Johns County, FL"	"12109"	"2014"	"2014"	23	217919	10.6
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2006"	"2006"	34	255251	13.3
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2007"	"2007"	49	266860	18.4
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2008"	"2008"	40	273151	14.6
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2009"	"2009"	53	274344	19.3
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2010"	"2010"	54	277789	19.4
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2011"	"2011"	48	280379	17.1
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2012"	"2012"	40	283866	14.1
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2013"	"2013"	38	286832	13.2
+	"Florida"	"12"	"St. Lucie County, FL"	"12111"	"2014"	"2014"	46	291028	15.8
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2006"	"2006"	33	142983	23.1
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2007"	"2007"	23	146158	15.7
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2008"	"2008"	25	148538	16.8
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2009"	"2009"	16	149544	Unreliable
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2010"	"2010"	23	151372	15.2
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2011"	"2011"	25	154104	16.2
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2012"	"2012"	19	158512	Unreliable
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2013"	"2013"	13	161096	Unreliable
+	"Florida"	"12"	"Santa Rosa County, FL"	"12113"	"2014"	"2014"	17	163422	Unreliable
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2006"	"2006"	83	371361	22.4
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2007"	"2007"	77	375325	20.5
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2008"	"2008"	85	377178	22.5
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2009"	"2009"	77	377262	20.4
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2010"	"2010"	83	379448	21.9
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2011"	"2011"	85	382213	22.2
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2012"	"2012"	72	386147	18.6
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2013"	"2013"	67	390429	17.2
+	"Florida"	"12"	"Sarasota County, FL"	"12115"	"2014"	"2014"	54	396962	13.6
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2006"	"2006"	47	413218	11.4
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2007"	"2007"	51	413571	12.3
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2008"	"2008"	52	416564	12.5
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2009"	"2009"	73	419788	17.4
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2010"	"2010"	71	422718	16.8
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2011"	"2011"	60	425071	14.1
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2012"	"2012"	48	430838	11.1
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2013"	"2013"	55	436041	12.6
+	"Florida"	"12"	"Seminole County, FL"	"12117"	"2014"	"2014"	55	442516	12.4
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2006"	"2006"	Suppressed	76202	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2007"	"2007"	Suppressed	82101	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2008"	"2008"	Suppressed	86433	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2009"	"2009"	Suppressed	90643	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2010"	"2010"	Suppressed	93420	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2011"	"2011"	Suppressed	97756	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2012"	"2012"	Suppressed	101620	Suppressed
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2013"	"2013"	14	107056	Unreliable
+	"Florida"	"12"	"Sumter County, FL"	"12119"	"2014"	"2014"	Suppressed	114350	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2006"	"2006"	Suppressed	39533	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2007"	"2007"	Suppressed	40309	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2008"	"2008"	Suppressed	40774	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2009"	"2009"	Suppressed	41263	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2010"	"2010"	Suppressed	41551	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2011"	"2011"	Suppressed	41972	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2012"	"2012"	Suppressed	43656	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2013"	"2013"	Suppressed	43734	Suppressed
+	"Florida"	"12"	"Suwannee County, FL"	"12121"	"2014"	"2014"	Suppressed	44022	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2006"	"2006"	Suppressed	20793	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2007"	"2007"	Suppressed	21805	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2008"	"2008"	Suppressed	22356	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2009"	"2009"	Suppressed	22482	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2010"	"2010"	0	22570	Unreliable
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2011"	"2011"	Suppressed	22691	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2012"	"2012"	Suppressed	22744	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2013"	"2013"	Suppressed	22857	Suppressed
+	"Florida"	"12"	"Taylor County, FL"	"12123"	"2014"	"2014"	Suppressed	22582	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2006"	"2006"	Suppressed	14873	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2007"	"2007"	Suppressed	15419	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2008"	"2008"	Suppressed	15718	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2009"	"2009"	Suppressed	15340	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2010"	"2010"	Suppressed	15535	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2011"	"2011"	Suppressed	15388	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2012"	"2012"	Suppressed	15212	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2013"	"2013"	Suppressed	15136	Suppressed
+	"Florida"	"12"	"Union County, FL"	"12125"	"2014"	"2014"	Suppressed	15190	Suppressed
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2006"	"2006"	81	494748	16.4
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2007"	"2007"	74	498935	14.8
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2008"	"2008"	104	497366	20.9
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2009"	"2009"	109	494688	22.0
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2010"	"2010"	111	494593	22.4
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2011"	"2011"	90	494804	18.2
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2012"	"2012"	86	496950	17.3
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2013"	"2013"	101	500800	20.2
+	"Florida"	"12"	"Volusia County, FL"	"12127"	"2014"	"2014"	75	507531	14.8
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2006"	"2006"	Suppressed	27785	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2007"	"2007"	Suppressed	28588	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2008"	"2008"	Suppressed	29183	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2009"	"2009"	Suppressed	30459	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2010"	"2010"	Suppressed	30776	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2011"	"2011"	Suppressed	30978	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2012"	"2012"	Suppressed	30818	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2013"	"2013"	Suppressed	31022	Suppressed
+	"Florida"	"12"	"Wakulla County, FL"	"12129"	"2014"	"2014"	Suppressed	31432	Suppressed
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2006"	"2006"	17	51145	Unreliable
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2007"	"2007"	12	52355	Unreliable
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2008"	"2008"	10	53563	Unreliable
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2009"	"2009"	12	54534	Unreliable
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2010"	"2010"	Suppressed	55043	Suppressed
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2011"	"2011"	Suppressed	55793	Suppressed
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2012"	"2012"	10	57582	Unreliable
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2013"	"2013"	Suppressed	59807	Suppressed
+	"Florida"	"12"	"Walton County, FL"	"12131"	"2014"	"2014"	Suppressed	61530	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2006"	"2006"	Suppressed	22860	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2007"	"2007"	Suppressed	23469	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2008"	"2008"	Suppressed	24706	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2009"	"2009"	Suppressed	24693	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2010"	"2010"	Suppressed	24896	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2011"	"2011"	Suppressed	24935	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2012"	"2012"	Suppressed	24892	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2013"	"2013"	Suppressed	24624	Suppressed
+	"Florida"	"12"	"Washington County, FL"	"12133"	"2014"	"2014"	Suppressed	24451	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Florida (12)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:19:38 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:19:38 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

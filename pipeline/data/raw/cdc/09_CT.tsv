@@ -1,0 +1,129 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2006"	"2006"	100	896254	11.2
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2007"	"2007"	76	897498	8.5
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2008"	"2008"	86	903824	9.5
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2009"	"2009"	75	910421	8.2
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2010"	"2010"	61	916829	6.7
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2011"	"2011"	70	925899	7.6
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2012"	"2012"	81	933835	8.7
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2013"	"2013"	114	939904	12.1
+	"Connecticut"	"09"	"Fairfield County, CT"	"09001"	"2014"	"2014"	104	945438	11.0
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2006"	"2006"	109	881298	12.4
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2007"	"2007"	127	884548	14.4
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2008"	"2008"	86	887891	9.7
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2009"	"2009"	89	891667	10.0
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2010"	"2010"	84	894014	9.4
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2011"	"2011"	95	894705	10.6
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2012"	"2012"	116	897259	12.9
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2013"	"2013"	152	898272	16.9
+	"Connecticut"	"09"	"Hartford County, CT"	"09003"	"2014"	"2014"	160	897985	17.8
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2006"	"2006"	19	189682	Unreliable
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2007"	"2007"	27	189866	14.2
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2008"	"2008"	27	190175	14.2
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2009"	"2009"	21	190015	11.1
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2010"	"2010"	21	189927	11.1
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2011"	"2011"	16	188789	Unreliable
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2012"	"2012"	25	187530	13.3
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2013"	"2013"	39	186924	20.9
+	"Connecticut"	"09"	"Litchfield County, CT"	"09005"	"2014"	"2014"	55	184993	29.7
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2006"	"2006"	14	163473	Unreliable
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2007"	"2007"	24	164129	14.6
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2008"	"2008"	22	164962	13.3
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2009"	"2009"	15	165607	Unreliable
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2010"	"2010"	26	165676	15.7
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2011"	"2011"	22	166043	13.2
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2012"	"2012"	29	165602	17.5
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2013"	"2013"	21	165562	12.7
+	"Connecticut"	"09"	"Middlesex County, CT"	"09007"	"2014"	"2014"	35	164943	21.2
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2006"	"2006"	115	850207	13.5
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2007"	"2007"	122	853598	14.3
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2008"	"2008"	117	856622	13.7
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2009"	"2009"	122	860025	14.2
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2010"	"2010"	116	862477	13.4
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2011"	"2011"	130	861113	15.1
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2012"	"2012"	109	862813	12.6
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2013"	"2013"	159	862287	18.4
+	"Connecticut"	"09"	"New Haven County, CT"	"09009"	"2014"	"2014"	150	861277	17.4
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2006"	"2006"	29	270814	10.7
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2007"	"2007"	32	270669	11.8
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2008"	"2008"	24	272634	8.8
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2009"	"2009"	38	273630	13.9
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2010"	"2010"	30	274055	10.9
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2011"	"2011"	39	273502	14.3
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2012"	"2012"	48	274170	17.5
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2013"	"2013"	63	274150	23.0
+	"Connecticut"	"09"	"New London County, CT"	"09011"	"2014"	"2014"	58	273676	21.2
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2006"	"2006"	Suppressed	148954	Suppressed
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2007"	"2007"	16	149718	Unreliable
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2008"	"2008"	Suppressed	151583	Suppressed
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2009"	"2009"	16	152330	Unreliable
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2010"	"2010"	Suppressed	152691	Suppressed
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2011"	"2011"	13	152507	Unreliable
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2012"	"2012"	16	151539	Unreliable
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2013"	"2013"	13	151377	Unreliable
+	"Connecticut"	"09"	"Tolland County, CT"	"09013"	"2014"	"2014"	28	151367	18.5
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2006"	"2006"	12	116778	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2007"	"2007"	Suppressed	117244	Suppressed
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2008"	"2008"	16	117888	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2009"	"2009"	17	118112	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2010"	"2010"	18	118428	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2011"	"2011"	17	118151	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2012"	"2012"	15	117599	Unreliable
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2013"	"2013"	21	117604	17.9
+	"Connecticut"	"09"	"Windham County, CT"	"09015"	"2014"	"2014"	33	116998	28.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Connecticut (09)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:18:37 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:18:37 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

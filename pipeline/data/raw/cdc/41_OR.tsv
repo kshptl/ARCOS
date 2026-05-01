@@ -1,0 +1,381 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2006"	"2006"	Suppressed	16094	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2007"	"2007"	Suppressed	16139	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2008"	"2008"	Suppressed	16195	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2009"	"2009"	Suppressed	16225	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2010"	"2010"	Suppressed	16134	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2011"	"2011"	Suppressed	15984	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2012"	"2012"	Suppressed	15909	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2013"	"2013"	Suppressed	16018	Suppressed
+	"Oregon"	"41"	"Baker County, OR"	"41001"	"2014"	"2014"	Suppressed	16059	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2006"	"2006"	Suppressed	81957	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2007"	"2007"	Suppressed	83718	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2008"	"2008"	Suppressed	84150	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2009"	"2009"	Suppressed	85390	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2010"	"2010"	Suppressed	85579	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2011"	"2011"	10	85928	Unreliable
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2012"	"2012"	Suppressed	86430	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2013"	"2013"	Suppressed	86591	Suppressed
+	"Oregon"	"41"	"Benton County, OR"	"41003"	"2014"	"2014"	Suppressed	86316	Suppressed
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2006"	"2006"	42	363508	11.6
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2007"	"2007"	38	366808	10.4
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2008"	"2008"	34	371103	9.2
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2009"	"2009"	45	374085	12.0
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2010"	"2010"	49	375992	13.0
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2011"	"2011"	48	380207	12.6
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2012"	"2012"	33	383857	8.6
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2013"	"2013"	48	388263	12.4
+	"Oregon"	"41"	"Clackamas County, OR"	"41005"	"2014"	"2014"	47	394972	11.9
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2006"	"2006"	Suppressed	36603	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2007"	"2007"	Suppressed	36818	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2008"	"2008"	Suppressed	36825	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2009"	"2009"	Suppressed	36972	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2010"	"2010"	Suppressed	37039	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2011"	"2011"	12	37153	Unreliable
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2012"	"2012"	Suppressed	37301	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2013"	"2013"	Suppressed	37244	Suppressed
+	"Oregon"	"41"	"Clatsop County, OR"	"41007"	"2014"	"2014"	Suppressed	37474	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2006"	"2006"	Suppressed	48184	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2007"	"2007"	Suppressed	48898	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2008"	"2008"	Suppressed	49209	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2009"	"2009"	Suppressed	49394	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2010"	"2010"	Suppressed	49351	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2011"	"2011"	Suppressed	49402	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2012"	"2012"	Suppressed	49286	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2013"	"2013"	Suppressed	49344	Suppressed
+	"Oregon"	"41"	"Columbia County, OR"	"41009"	"2014"	"2014"	Suppressed	49459	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2006"	"2006"	Suppressed	63844	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2007"	"2007"	11	63420	Unreliable
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2008"	"2008"	Suppressed	63226	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2009"	"2009"	11	63079	Unreliable
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2010"	"2010"	14	63043	Unreliable
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2011"	"2011"	Suppressed	62791	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2012"	"2012"	Suppressed	62534	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2013"	"2013"	Suppressed	62282	Suppressed
+	"Oregon"	"41"	"Coos County, OR"	"41011"	"2014"	"2014"	Suppressed	62475	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2006"	"2006"	Suppressed	21673	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2007"	"2007"	Suppressed	21818	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2008"	"2008"	Suppressed	21811	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2009"	"2009"	Suppressed	21410	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2010"	"2010"	Suppressed	20978	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2011"	"2011"	Suppressed	20839	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2012"	"2012"	Suppressed	20729	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2013"	"2013"	Suppressed	20815	Suppressed
+	"Oregon"	"41"	"Crook County, OR"	"41013"	"2014"	"2014"	Suppressed	20998	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2006"	"2006"	Suppressed	22626	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2007"	"2007"	Suppressed	22447	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2008"	"2008"	Suppressed	22305	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2009"	"2009"	Suppressed	22341	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2010"	"2010"	Suppressed	22364	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2011"	"2011"	Suppressed	22426	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2012"	"2012"	Suppressed	22248	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2013"	"2013"	Suppressed	22339	Suppressed
+	"Oregon"	"41"	"Curry County, OR"	"41015"	"2014"	"2014"	Suppressed	22335	Suppressed
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2006"	"2006"	16	148149	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2007"	"2007"	16	152633	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2008"	"2008"	14	156820	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2009"	"2009"	12	157345	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2010"	"2010"	23	157733	14.6
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2011"	"2011"	20	160338	12.5
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2012"	"2012"	13	162277	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2013"	"2013"	16	165954	Unreliable
+	"Oregon"	"41"	"Deschutes County, OR"	"41017"	"2014"	"2014"	20	170388	11.7
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2006"	"2006"	12	106658	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2007"	"2007"	19	107057	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2008"	"2008"	13	107316	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2009"	"2009"	Suppressed	107378	Suppressed
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2010"	"2010"	11	107667	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2011"	"2011"	13	107490	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2012"	"2012"	18	107164	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2013"	"2013"	10	106940	Unreliable
+	"Oregon"	"41"	"Douglas County, OR"	"41019"	"2014"	"2014"	13	106972	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2006"	"2006"	0	1834	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2007"	"2007"	0	1816	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2008"	"2008"	0	1886	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2009"	"2009"	0	1856	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2010"	"2010"	0	1871	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2011"	"2011"	0	1937	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2012"	"2012"	0	1953	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2013"	"2013"	0	1947	Unreliable
+	"Oregon"	"41"	"Gilliam County, OR"	"41021"	"2014"	"2014"	0	1932	Unreliable
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2006"	"2006"	Suppressed	7373	Suppressed
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2007"	"2007"	Suppressed	7267	Suppressed
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2008"	"2008"	0	7303	Unreliable
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2009"	"2009"	0	7343	Unreliable
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2010"	"2010"	0	7445	Unreliable
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2011"	"2011"	0	7410	Unreliable
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2012"	"2012"	Suppressed	7317	Suppressed
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2013"	"2013"	Suppressed	7283	Suppressed
+	"Oregon"	"41"	"Grant County, OR"	"41023"	"2014"	"2014"	0	7180	Unreliable
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2006"	"2006"	Suppressed	7286	Suppressed
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2007"	"2007"	Suppressed	7327	Suppressed
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2008"	"2008"	0	7375	Unreliable
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2009"	"2009"	Suppressed	7432	Suppressed
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2010"	"2010"	0	7422	Unreliable
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2011"	"2011"	0	7373	Unreliable
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2012"	"2012"	Suppressed	7212	Suppressed
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2013"	"2013"	Suppressed	7146	Suppressed
+	"Oregon"	"41"	"Harney County, OR"	"41025"	"2014"	"2014"	Suppressed	7126	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2006"	"2006"	0	21200	Unreliable
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2007"	"2007"	Suppressed	21276	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2008"	"2008"	Suppressed	21589	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2009"	"2009"	0	22015	Unreliable
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2010"	"2010"	0	22346	Unreliable
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2011"	"2011"	Suppressed	22493	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2012"	"2012"	Suppressed	22584	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2013"	"2013"	Suppressed	22675	Suppressed
+	"Oregon"	"41"	"Hood River County, OR"	"41027"	"2014"	"2014"	Suppressed	22885	Suppressed
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2006"	"2006"	50	196858	25.4
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2007"	"2007"	19	199152	Unreliable
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2008"	"2008"	29	201162	14.4
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2009"	"2009"	26	202301	12.9
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2010"	"2010"	29	203206	14.3
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2011"	"2011"	32	204822	15.6
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2012"	"2012"	47	206412	22.8
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2013"	"2013"	28	208545	13.4
+	"Oregon"	"41"	"Jackson County, OR"	"41029"	"2014"	"2014"	32	210287	15.2
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2006"	"2006"	0	21113	Unreliable
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2007"	"2007"	Suppressed	21861	Suppressed
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2008"	"2008"	Suppressed	21885	Suppressed
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2009"	"2009"	Suppressed	21730	Suppressed
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2010"	"2010"	Suppressed	21720	Suppressed
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2011"	"2011"	Suppressed	21771	Suppressed
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2012"	"2012"	0	21749	Unreliable
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2013"	"2013"	0	21145	Unreliable
+	"Oregon"	"41"	"Jefferson County, OR"	"41031"	"2014"	"2014"	Suppressed	22192	Suppressed
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2006"	"2006"	12	81601	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2007"	"2007"	21	81746	25.7
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2008"	"2008"	13	82389	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2009"	"2009"	10	82315	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2010"	"2010"	11	82713	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2011"	"2011"	16	82987	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2012"	"2012"	12	82930	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2013"	"2013"	10	83306	Unreliable
+	"Oregon"	"41"	"Josephine County, OR"	"41033"	"2014"	"2014"	15	83599	Unreliable
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2006"	"2006"	11	66294	Unreliable
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2007"	"2007"	Suppressed	66767	Suppressed
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2008"	"2008"	14	66732	Unreliable
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2009"	"2009"	Suppressed	66460	Suppressed
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2010"	"2010"	12	66380	Unreliable
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2011"	"2011"	11	66299	Unreliable
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2012"	"2012"	Suppressed	65912	Suppressed
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2013"	"2013"	Suppressed	65910	Suppressed
+	"Oregon"	"41"	"Klamath County, OR"	"41035"	"2014"	"2014"	10	65455	Unreliable
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2006"	"2006"	Suppressed	7796	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2007"	"2007"	0	7880	Unreliable
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2008"	"2008"	Suppressed	7961	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2009"	"2009"	Suppressed	7901	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2010"	"2010"	Suppressed	7895	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2011"	"2011"	Suppressed	7908	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2012"	"2012"	Suppressed	7771	Suppressed
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2013"	"2013"	0	7820	Unreliable
+	"Oregon"	"41"	"Lake County, OR"	"41037"	"2014"	"2014"	Suppressed	7838	Suppressed
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2006"	"2006"	50	339926	14.7
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2007"	"2007"	49	344844	14.2
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2008"	"2008"	45	348176	12.9
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2009"	"2009"	76	350850	21.7
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2010"	"2010"	54	351715	15.4
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2011"	"2011"	52	353416	14.7
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2012"	"2012"	45	354542	12.7
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2013"	"2013"	48	356212	13.5
+	"Oregon"	"41"	"Lane County, OR"	"41039"	"2014"	"2014"	63	358337	17.6
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2006"	"2006"	13	45529	Unreliable
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2007"	"2007"	Suppressed	45798	Suppressed
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2008"	"2008"	13	45915	Unreliable
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2009"	"2009"	10	45989	Unreliable
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2010"	"2010"	Suppressed	46034	Suppressed
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2011"	"2011"	Suppressed	45933	Suppressed
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2012"	"2012"	10	46151	Unreliable
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2013"	"2013"	11	46350	Unreliable
+	"Oregon"	"41"	"Lincoln County, OR"	"41041"	"2014"	"2014"	15	46406	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2006"	"2006"	12	110764	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2007"	"2007"	12	112932	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2008"	"2008"	10	114967	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2009"	"2009"	17	116001	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2010"	"2010"	14	116672	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2011"	"2011"	22	118122	18.6
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2012"	"2012"	18	118360	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2013"	"2013"	16	118765	Unreliable
+	"Oregon"	"41"	"Linn County, OR"	"41043"	"2014"	"2014"	29	119356	24.3
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2006"	"2006"	Suppressed	31303	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2007"	"2007"	0	31434	Unreliable
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2008"	"2008"	Suppressed	31311	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2009"	"2009"	Suppressed	31265	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2010"	"2010"	Suppressed	31313	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2011"	"2011"	Suppressed	31068	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2012"	"2012"	Suppressed	30630	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2013"	"2013"	Suppressed	30479	Suppressed
+	"Oregon"	"41"	"Malheur County, OR"	"41045"	"2014"	"2014"	Suppressed	30359	Suppressed
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2006"	"2006"	35	303290	11.5
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2007"	"2007"	35	306964	11.4
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2008"	"2008"	24	309729	7.7
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2009"	"2009"	45	313389	14.4
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2010"	"2010"	44	315335	14.0
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2011"	"2011"	33	318872	10.3
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2012"	"2012"	43	319985	13.4
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2013"	"2013"	18	323614	Unreliable
+	"Oregon"	"41"	"Marion County, OR"	"41047"	"2014"	"2014"	23	326110	7.1
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2006"	"2006"	0	11203	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2007"	"2007"	0	11048	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2008"	"2008"	Suppressed	11002	Suppressed
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2009"	"2009"	0	11102	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2010"	"2010"	0	11173	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2011"	"2011"	0	11169	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2012"	"2012"	0	11244	Unreliable
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2013"	"2013"	Suppressed	11336	Suppressed
+	"Oregon"	"41"	"Morrow County, OR"	"41049"	"2014"	"2014"	Suppressed	11187	Suppressed
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2006"	"2006"	130	683767	19.0
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2007"	"2007"	163	697799	23.4
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2008"	"2008"	135	712989	18.9
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2009"	"2009"	128	727721	17.6
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2010"	"2010"	121	735334	16.5
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2011"	"2011"	148	748031	19.8
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2012"	"2012"	125	759256	16.5
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2013"	"2013"	132	766135	17.2
+	"Oregon"	"41"	"Multnomah County, OR"	"41051"	"2014"	"2014"	122	776712	15.7
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2006"	"2006"	Suppressed	71027	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2007"	"2007"	11	72791	Unreliable
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2008"	"2008"	Suppressed	74346	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2009"	"2009"	10	74934	Unreliable
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2010"	"2010"	Suppressed	75403	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2011"	"2011"	Suppressed	75993	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2012"	"2012"	Suppressed	76353	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2013"	"2013"	Suppressed	76794	Suppressed
+	"Oregon"	"41"	"Polk County, OR"	"41053"	"2014"	"2014"	10	77916	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2006"	"2006"	0	1682	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2007"	"2007"	0	1713	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2008"	"2008"	0	1691	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2009"	"2009"	0	1733	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2010"	"2010"	0	1765	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2011"	"2011"	0	1718	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2012"	"2012"	0	1732	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2013"	"2013"	0	1731	Unreliable
+	"Oregon"	"41"	"Sherman County, OR"	"41055"	"2014"	"2014"	0	1710	Unreliable
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2006"	"2006"	Suppressed	25160	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2007"	"2007"	Suppressed	25243	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2008"	"2008"	Suppressed	25151	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2009"	"2009"	0	25179	Unreliable
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2010"	"2010"	Suppressed	25250	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2011"	"2011"	Suppressed	25403	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2012"	"2012"	Suppressed	25287	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2013"	"2013"	Suppressed	25317	Suppressed
+	"Oregon"	"41"	"Tillamook County, OR"	"41057"	"2014"	"2014"	Suppressed	25342	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2006"	"2006"	Suppressed	73984	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2007"	"2007"	10	74269	Unreliable
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2008"	"2008"	Suppressed	74488	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2009"	"2009"	Suppressed	75199	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2010"	"2010"	Suppressed	75889	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2011"	"2011"	Suppressed	76725	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2012"	"2012"	Suppressed	76820	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2013"	"2013"	Suppressed	76720	Suppressed
+	"Oregon"	"41"	"Umatilla County, OR"	"41059"	"2014"	"2014"	Suppressed	76705	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2006"	"2006"	Suppressed	24754	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2007"	"2007"	Suppressed	25263	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2008"	"2008"	Suppressed	25473	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2009"	"2009"	Suppressed	25580	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2010"	"2010"	Suppressed	25748	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2011"	"2011"	0	25791	Unreliable
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2012"	"2012"	Suppressed	25759	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2013"	"2013"	Suppressed	25652	Suppressed
+	"Oregon"	"41"	"Union County, OR"	"41061"	"2014"	"2014"	Suppressed	25691	Suppressed
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2006"	"2006"	0	6835	Unreliable
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2007"	"2007"	Suppressed	6884	Suppressed
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2008"	"2008"	Suppressed	6900	Suppressed
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2009"	"2009"	0	6948	Unreliable
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2010"	"2010"	0	7008	Unreliable
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2011"	"2011"	0	6990	Unreliable
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2012"	"2012"	0	6821	Unreliable
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2013"	"2013"	Suppressed	6814	Suppressed
+	"Oregon"	"41"	"Wallowa County, OR"	"41063"	"2014"	"2014"	0	6820	Unreliable
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2006"	"2006"	Suppressed	24159	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2007"	"2007"	Suppressed	24451	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2008"	"2008"	Suppressed	24617	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2009"	"2009"	0	24981	Unreliable
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2010"	"2010"	Suppressed	25213	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2011"	"2011"	Suppressed	25234	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2012"	"2012"	Suppressed	25487	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2013"	"2013"	Suppressed	25477	Suppressed
+	"Oregon"	"41"	"Wasco County, OR"	"41065"	"2014"	"2014"	Suppressed	25515	Suppressed
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2006"	"2006"	33	502226	6.6
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2007"	"2007"	46	508842	9.0
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2008"	"2008"	33	515815	6.4
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2009"	"2009"	43	524699	8.2
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2010"	"2010"	38	529710	7.2
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2011"	"2011"	51	540410	9.4
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2012"	"2012"	56	547672	10.2
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2013"	"2013"	48	554996	8.6
+	"Oregon"	"41"	"Washington County, OR"	"41067"	"2014"	"2014"	49	562998	8.7
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2006"	"2006"	Suppressed	1425	Suppressed
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2007"	"2007"	0	1419	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2008"	"2008"	0	1399	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2009"	"2009"	0	1411	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2010"	"2010"	0	1441	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2011"	"2011"	0	1426	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2012"	"2012"	0	1424	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2013"	"2013"	0	1381	Unreliable
+	"Oregon"	"41"	"Wheeler County, OR"	"41069"	"2014"	"2014"	0	1375	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2006"	"2006"	10	93198	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2007"	"2007"	Suppressed	95875	Suppressed
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2008"	"2008"	Suppressed	97537	Suppressed
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2009"	"2009"	11	98647	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2010"	"2010"	11	99193	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2011"	"2011"	12	100000	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2012"	"2012"	13	100255	Unreliable
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2013"	"2013"	Suppressed	100725	Suppressed
+	"Oregon"	"41"	"Yamhill County, OR"	"41071"	"2014"	"2014"	10	101758	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Oregon (41)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:40:48 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:40:48 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

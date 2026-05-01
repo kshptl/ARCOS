@@ -171,6 +171,10 @@ pipeline/data/raw/*
 # DEA Federal Register data is immutable historical record — commit for
 # reproducibility (see pipeline/notes/dea-investigation-2026-05-01.md).
 !pipeline/data/raw/dea/
+# CDC WONDER D76 scrape is a frozen 2006-2014 dataset (~14MB) committed
+# for reproducibility (see pipeline/notes/cdc.md). The scraper code
+# lives in openarcos_pipeline/sources/cdc_wonder_scraper.py.
+!pipeline/data/raw/cdc/
 pipeline/data/clean/
 pipeline/data/joined/
 pipeline/data/agg/

@@ -1,0 +1,660 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2006"	"2006"	Suppressed	99899	Suppressed
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2007"	"2007"	Suppressed	100502	Suppressed
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2008"	"2008"	11	101056	Unreliable
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2009"	"2009"	16	101252	Unreliable
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2010"	"2010"	14	101407	Unreliable
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2011"	"2011"	11	101434	Unreliable
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2012"	"2012"	Suppressed	101482	Suppressed
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2013"	"2013"	Suppressed	101546	Suppressed
+	"Pennsylvania"	"42"	"Adams County, PA"	"42001"	"2014"	"2014"	Suppressed	101714	Suppressed
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2006"	"2006"	140	1226025	11.4
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2007"	"2007"	205	1222482	16.8
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2008"	"2008"	223	1221071	18.3
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2009"	"2009"	219	1222171	17.9
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2010"	"2010"	234	1223348	19.1
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2011"	"2011"	247	1227066	20.1
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2012"	"2012"	280	1229338	22.8
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2013"	"2013"	269	1231527	21.8
+	"Pennsylvania"	"42"	"Allegheny County, PA"	"42003"	"2014"	"2014"	316	1231255	25.7
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2006"	"2006"	14	70030	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2007"	"2007"	Suppressed	69845	Suppressed
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2008"	"2008"	10	69611	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2009"	"2009"	Suppressed	69120	Suppressed
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2010"	"2010"	13	68941	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2011"	"2011"	15	68568	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2012"	"2012"	14	68409	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2013"	"2013"	14	68107	Unreliable
+	"Pennsylvania"	"42"	"Armstrong County, PA"	"42005"	"2014"	"2014"	17	67785	Unreliable
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2006"	"2006"	18	173259	Unreliable
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2007"	"2007"	22	172161	12.8
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2008"	"2008"	20	171336	11.7
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2009"	"2009"	26	170524	15.2
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2010"	"2010"	25	170539	14.7
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2011"	"2011"	38	170414	22.3
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2012"	"2012"	34	170245	20.0
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2013"	"2013"	45	170115	26.5
+	"Pennsylvania"	"42"	"Beaver County, PA"	"42007"	"2014"	"2014"	41	169392	24.2
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2006"	"2006"	Suppressed	49871	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2007"	"2007"	Suppressed	49889	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2008"	"2008"	Suppressed	50052	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2009"	"2009"	11	49889	Unreliable
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2010"	"2010"	Suppressed	49762	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2011"	"2011"	Suppressed	49739	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2012"	"2012"	Suppressed	49324	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2013"	"2013"	Suppressed	49055	Suppressed
+	"Pennsylvania"	"42"	"Bedford County, PA"	"42009"	"2014"	"2014"	Suppressed	48946	Suppressed
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2006"	"2006"	31	401834	7.7
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2007"	"2007"	43	405223	10.6
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2008"	"2008"	41	407737	10.1
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2009"	"2009"	57	409904	13.9
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2010"	"2010"	58	411442	14.1
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2011"	"2011"	65	412778	15.7
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2012"	"2012"	53	413491	12.8
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2013"	"2013"	54	413521	13.1
+	"Pennsylvania"	"42"	"Berks County, PA"	"42011"	"2014"	"2014"	67	413691	16.2
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2006"	"2006"	19	127002	Unreliable
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2007"	"2007"	17	127048	Unreliable
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2008"	"2008"	21	127112	16.5
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2009"	"2009"	21	127161	16.5
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2010"	"2010"	12	127089	Unreliable
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2011"	"2011"	26	127099	20.5
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2012"	"2012"	19	127121	Unreliable
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2013"	"2013"	17	126314	Unreliable
+	"Pennsylvania"	"42"	"Blair County, PA"	"42013"	"2014"	"2014"	19	125955	Unreliable
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2006"	"2006"	Suppressed	62345	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2007"	"2007"	Suppressed	62343	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2008"	"2008"	Suppressed	62318	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2009"	"2009"	Suppressed	62418	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2010"	"2010"	Suppressed	62622	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2011"	"2011"	10	62917	Unreliable
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2012"	"2012"	11	62792	Unreliable
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2013"	"2013"	Suppressed	62316	Suppressed
+	"Pennsylvania"	"42"	"Bradford County, PA"	"42015"	"2014"	"2014"	Suppressed	61784	Suppressed
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2006"	"2006"	102	619544	16.5
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2007"	"2007"	80	621336	12.9
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2008"	"2008"	91	623297	14.6
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2009"	"2009"	95	624648	15.2
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2010"	"2010"	102	625249	16.3
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2011"	"2011"	135	626854	21.5
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2012"	"2012"	113	627053	18.0
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2013"	"2013"	141	626976	22.5
+	"Pennsylvania"	"42"	"Bucks County, PA"	"42017"	"2014"	"2014"	144	626685	23.0
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2006"	"2006"	16	181009	Unreliable
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2007"	"2007"	19	181690	Unreliable
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2008"	"2008"	18	182673	Unreliable
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2009"	"2009"	19	183337	Unreliable
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2010"	"2010"	21	183862	11.4
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2011"	"2011"	30	184848	16.2
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2012"	"2012"	23	184970	12.4
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2013"	"2013"	39	185476	21.0
+	"Pennsylvania"	"42"	"Butler County, PA"	"42019"	"2014"	"2014"	39	185943	21.0
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2006"	"2006"	31	146093	21.2
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2007"	"2007"	39	145283	26.8
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2008"	"2008"	32	144646	22.1
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2009"	"2009"	35	144186	24.3
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2010"	"2010"	39	143679	27.1
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2011"	"2011"	27	143728	18.8
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2012"	"2012"	31	141584	21.9
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2013"	"2013"	50	140499	35.6
+	"Pennsylvania"	"42"	"Cambria County, PA"	"42021"	"2014"	"2014"	40	137732	29.0
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2006"	"2006"	Suppressed	5341	Suppressed
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2007"	"2007"	0	5274	Unreliable
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2008"	"2008"	Suppressed	5186	Suppressed
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2009"	"2009"	0	5106	Unreliable
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2010"	"2010"	0	5085	Unreliable
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2011"	"2011"	Suppressed	5010	Suppressed
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2012"	"2012"	0	4939	Unreliable
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2013"	"2013"	0	4886	Unreliable
+	"Pennsylvania"	"42"	"Cameron County, PA"	"42023"	"2014"	"2014"	0	4805	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2006"	"2006"	Suppressed	63105	Suppressed
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2007"	"2007"	Suppressed	64339	Suppressed
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2008"	"2008"	14	64947	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2009"	"2009"	10	65204	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2010"	"2010"	Suppressed	65249	Suppressed
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2011"	"2011"	14	65154	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2012"	"2012"	11	65006	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2013"	"2013"	17	64786	Unreliable
+	"Pennsylvania"	"42"	"Carbon County, PA"	"42025"	"2014"	"2014"	17	64441	Unreliable
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2006"	"2006"	Suppressed	148734	Suppressed
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2007"	"2007"	11	149498	Unreliable
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2008"	"2008"	Suppressed	151645	Suppressed
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2009"	"2009"	14	153052	Unreliable
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2010"	"2010"	Suppressed	153990	Suppressed
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2011"	"2011"	Suppressed	154722	Suppressed
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2012"	"2012"	15	155171	Unreliable
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2013"	"2013"	Suppressed	155403	Suppressed
+	"Pennsylvania"	"42"	"Centre County, PA"	"42027"	"2014"	"2014"	12	158742	Unreliable
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2006"	"2006"	38	479137	7.9
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2007"	"2007"	45	486156	9.3
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2008"	"2008"	51	491473	10.4
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2009"	"2009"	54	496291	10.9
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2010"	"2010"	55	498886	11.0
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2011"	"2011"	73	503897	14.5
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2012"	"2012"	60	506575	11.8
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2013"	"2013"	51	509468	10.0
+	"Pennsylvania"	"42"	"Chester County, PA"	"42029"	"2014"	"2014"	71	512784	13.8
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2006"	"2006"	Suppressed	40615	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2007"	"2007"	0	40399	Unreliable
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2008"	"2008"	Suppressed	40355	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2009"	"2009"	Suppressed	40173	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2010"	"2010"	Suppressed	39988	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2011"	"2011"	Suppressed	40013	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2012"	"2012"	Suppressed	39646	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2013"	"2013"	Suppressed	39155	Suppressed
+	"Pennsylvania"	"42"	"Clarion County, PA"	"42031"	"2014"	"2014"	Suppressed	38821	Suppressed
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2006"	"2006"	Suppressed	82461	Suppressed
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2007"	"2007"	10	82558	Unreliable
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2008"	"2008"	Suppressed	82130	Suppressed
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2009"	"2009"	Suppressed	81942	Suppressed
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2010"	"2010"	11	81642	Unreliable
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2011"	"2011"	10	81445	Unreliable
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2012"	"2012"	Suppressed	81184	Suppressed
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2013"	"2013"	18	81174	Unreliable
+	"Pennsylvania"	"42"	"Clearfield County, PA"	"42033"	"2014"	"2014"	12	81191	Unreliable
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2006"	"2006"	Suppressed	38730	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2007"	"2007"	Suppressed	38859	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2008"	"2008"	Suppressed	38955	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2009"	"2009"	Suppressed	39074	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2010"	"2010"	Suppressed	39238	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2011"	"2011"	Suppressed	39208	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2012"	"2012"	Suppressed	39517	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2013"	"2013"	Suppressed	39954	Suppressed
+	"Pennsylvania"	"42"	"Clinton County, PA"	"42035"	"2014"	"2014"	Suppressed	39745	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2006"	"2006"	Suppressed	65882	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2007"	"2007"	Suppressed	66196	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2008"	"2008"	Suppressed	66645	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2009"	"2009"	Suppressed	67220	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2010"	"2010"	Suppressed	67295	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2011"	"2011"	Suppressed	67476	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2012"	"2012"	Suppressed	66887	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2013"	"2013"	Suppressed	66797	Suppressed
+	"Pennsylvania"	"42"	"Columbia County, PA"	"42037"	"2014"	"2014"	10	67122	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2006"	"2006"	Suppressed	89496	Suppressed
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2007"	"2007"	14	89544	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2008"	"2008"	10	89023	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2009"	"2009"	10	89044	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2010"	"2010"	14	88765	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2011"	"2011"	12	88740	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2012"	"2012"	16	87598	Unreliable
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2013"	"2013"	20	87376	22.9
+	"Pennsylvania"	"42"	"Crawford County, PA"	"42039"	"2014"	"2014"	18	87175	Unreliable
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2006"	"2006"	Suppressed	226835	Suppressed
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2007"	"2007"	23	228718	10.1
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2008"	"2008"	24	231357	10.4
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2009"	"2009"	17	233910	Unreliable
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2010"	"2010"	20	235406	8.5
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2011"	"2011"	24	237892	10.1
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2012"	"2012"	26	238614	10.9
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2013"	"2013"	28	241212	11.6
+	"Pennsylvania"	"42"	"Cumberland County, PA"	"42041"	"2014"	"2014"	27	243762	11.1
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2006"	"2006"	22	260312	8.5
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2007"	"2007"	25	263096	9.5
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2008"	"2008"	25	265395	9.4
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2009"	"2009"	25	267090	9.4
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2010"	"2010"	22	268100	8.2
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2011"	"2011"	32	268977	11.9
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2012"	"2012"	35	269665	13.0
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2013"	"2013"	38	270937	14.0
+	"Pennsylvania"	"42"	"Dauphin County, PA"	"42043"	"2014"	"2014"	52	271453	19.2
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2006"	"2006"	107	553806	19.3
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2007"	"2007"	109	554916	19.6
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2008"	"2008"	108	556246	19.4
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2009"	"2009"	127	558094	22.8
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2010"	"2010"	122	558979	21.8
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2011"	"2011"	148	559494	26.5
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2012"	"2012"	150	561098	26.7
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2013"	"2013"	138	561973	24.6
+	"Pennsylvania"	"42"	"Delaware County, PA"	"42045"	"2014"	"2014"	159	562960	28.2
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2006"	"2006"	Suppressed	33006	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2007"	"2007"	Suppressed	32833	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2008"	"2008"	Suppressed	32504	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2009"	"2009"	Suppressed	32208	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2010"	"2010"	Suppressed	31946	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2011"	"2011"	Suppressed	31751	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2012"	"2012"	Suppressed	31550	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2013"	"2013"	Suppressed	31479	Suppressed
+	"Pennsylvania"	"42"	"Elk County, PA"	"42047"	"2014"	"2014"	10	31194	Unreliable
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2006"	"2006"	29	278389	10.4
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2007"	"2007"	32	278573	11.5
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2008"	"2008"	27	278686	9.7
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2009"	"2009"	33	279838	11.8
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2010"	"2010"	25	280566	8.9
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2011"	"2011"	49	280985	17.4
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2012"	"2012"	52	280646	18.5
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2013"	"2013"	61	280294	21.8
+	"Pennsylvania"	"42"	"Erie County, PA"	"42049"	"2014"	"2014"	57	278443	20.5
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2006"	"2006"	16	141165	Unreliable
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2007"	"2007"	20	140159	14.3
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2008"	"2008"	21	138813	15.1
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2009"	"2009"	23	137450	16.7
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2010"	"2010"	27	136606	19.8
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2011"	"2011"	43	136097	31.6
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2012"	"2012"	16	135660	Unreliable
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2013"	"2013"	36	134999	26.7
+	"Pennsylvania"	"42"	"Fayette County, PA"	"42051"	"2014"	"2014"	40	134086	29.8
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2006"	"2006"	0	7519	Unreliable
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2007"	"2007"	0	7512	Unreliable
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2008"	"2008"	0	7470	Unreliable
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2009"	"2009"	Suppressed	7737	Suppressed
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2010"	"2010"	Suppressed	7716	Suppressed
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2011"	"2011"	Suppressed	7589	Suppressed
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2012"	"2012"	Suppressed	7667	Suppressed
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2013"	"2013"	Suppressed	7631	Suppressed
+	"Pennsylvania"	"42"	"Forest County, PA"	"42053"	"2014"	"2014"	0	7518	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2006"	"2006"	Suppressed	142421	Suppressed
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2007"	"2007"	16	144840	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2008"	"2008"	Suppressed	147032	Suppressed
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2009"	"2009"	12	148662	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2010"	"2010"	13	149618	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2011"	"2011"	14	150811	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2012"	"2012"	17	151275	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2013"	"2013"	10	152085	Unreliable
+	"Pennsylvania"	"42"	"Franklin County, PA"	"42055"	"2014"	"2014"	24	152892	15.7
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2006"	"2006"	Suppressed	14714	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2007"	"2007"	Suppressed	14900	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2008"	"2008"	0	14900	Unreliable
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2009"	"2009"	Suppressed	14828	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2010"	"2010"	Suppressed	14845	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2011"	"2011"	Suppressed	14801	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2012"	"2012"	0	14772	Unreliable
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2013"	"2013"	Suppressed	14670	Suppressed
+	"Pennsylvania"	"42"	"Fulton County, PA"	"42057"	"2014"	"2014"	Suppressed	14632	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2006"	"2006"	Suppressed	39342	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2007"	"2007"	Suppressed	39096	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2008"	"2008"	Suppressed	39074	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2009"	"2009"	Suppressed	38862	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2010"	"2010"	13	38686	Unreliable
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2011"	"2011"	10	38623	Unreliable
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2012"	"2012"	Suppressed	38085	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2013"	"2013"	Suppressed	37838	Suppressed
+	"Pennsylvania"	"42"	"Greene County, PA"	"42059"	"2014"	"2014"	11	37843	Unreliable
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2006"	"2006"	Suppressed	45684	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2007"	"2007"	Suppressed	45802	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2008"	"2008"	Suppressed	45853	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2009"	"2009"	Suppressed	45896	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2010"	"2010"	Suppressed	45913	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2011"	"2011"	Suppressed	45875	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2012"	"2012"	Suppressed	45943	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2013"	"2013"	Suppressed	45694	Suppressed
+	"Pennsylvania"	"42"	"Huntingdon County, PA"	"42061"	"2014"	"2014"	Suppressed	45750	Suppressed
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2006"	"2006"	Suppressed	88716	Suppressed
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2007"	"2007"	Suppressed	88520	Suppressed
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2008"	"2008"	11	88807	Unreliable
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2009"	"2009"	11	88836	Unreliable
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2010"	"2010"	12	88880	Unreliable
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2011"	"2011"	24	89298	26.9
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2012"	"2012"	18	88218	Unreliable
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2013"	"2013"	16	87745	Unreliable
+	"Pennsylvania"	"42"	"Indiana County, PA"	"42063"	"2014"	"2014"	13	87706	Unreliable
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2006"	"2006"	Suppressed	45323	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2007"	"2007"	Suppressed	45335	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2008"	"2008"	Suppressed	45260	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2009"	"2009"	Suppressed	45073	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2010"	"2010"	Suppressed	45200	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2011"	"2011"	Suppressed	44976	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2012"	"2012"	10	44764	Unreliable
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2013"	"2013"	Suppressed	44966	Suppressed
+	"Pennsylvania"	"42"	"Jefferson County, PA"	"42065"	"2014"	"2014"	10	44638	Unreliable
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2006"	"2006"	Suppressed	24107	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2007"	"2007"	0	24238	Unreliable
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2008"	"2008"	0	24409	Unreliable
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2009"	"2009"	Suppressed	24549	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2010"	"2010"	Suppressed	24636	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2011"	"2011"	Suppressed	24400	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2012"	"2012"	Suppressed	24904	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2013"	"2013"	Suppressed	24768	Suppressed
+	"Pennsylvania"	"42"	"Juniata County, PA"	"42067"	"2014"	"2014"	Suppressed	24796	Suppressed
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2006"	"2006"	29	212595	13.6
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2007"	"2007"	38	213513	17.8
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2008"	"2008"	40	214044	18.7
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2009"	"2009"	43	214138	20.1
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2010"	"2010"	33	214437	15.4
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2011"	"2011"	41	214166	19.1
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2012"	"2012"	56	214477	26.1
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2013"	"2013"	47	213931	22.0
+	"Pennsylvania"	"42"	"Lackawanna County, PA"	"42069"	"2014"	"2014"	39	212719	18.3
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2006"	"2006"	30	500922	6.0
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2007"	"2007"	42	506639	8.3
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2008"	"2008"	45	511957	8.8
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2009"	"2009"	50	516577	9.7
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2010"	"2010"	53	519445	10.2
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2011"	"2011"	59	523594	11.3
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2012"	"2012"	58	526823	11.0
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2013"	"2013"	51	529600	9.6
+	"Pennsylvania"	"42"	"Lancaster County, PA"	"42071"	"2014"	"2014"	69	533320	12.9
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2006"	"2006"	14	92248	Unreliable
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2007"	"2007"	13	92007	Unreliable
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2008"	"2008"	22	91798	24.0
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2009"	"2009"	Suppressed	91391	Suppressed
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2010"	"2010"	12	91108	Unreliable
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2011"	"2011"	22	90535	24.3
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2012"	"2012"	14	89871	Unreliable
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2013"	"2013"	26	89333	29.1
+	"Pennsylvania"	"42"	"Lawrence County, PA"	"42073"	"2014"	"2014"	21	88771	23.7
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2006"	"2006"	10	128302	Unreliable
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2007"	"2007"	Suppressed	130182	Suppressed
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2008"	"2008"	11	131574	Unreliable
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2009"	"2009"	Suppressed	132959	Suppressed
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2010"	"2010"	Suppressed	133568	Suppressed
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2011"	"2011"	Suppressed	134311	Suppressed
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2012"	"2012"	Suppressed	135251	Suppressed
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2013"	"2013"	10	135486	Unreliable
+	"Pennsylvania"	"42"	"Lebanon County, PA"	"42075"	"2014"	"2014"	17	136359	Unreliable
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2006"	"2006"	32	336794	9.5
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2007"	"2007"	35	340848	10.3
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2008"	"2008"	51	344743	14.8
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2009"	"2009"	48	347237	13.8
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2010"	"2010"	44	349497	12.6
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2011"	"2011"	61	352947	17.3
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2012"	"2012"	57	355245	16.0
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2013"	"2013"	56	355092	15.8
+	"Pennsylvania"	"42"	"Lehigh County, PA"	"42077"	"2014"	"2014"	65	357823	18.2
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2006"	"2006"	40	316837	12.6
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2007"	"2007"	57	318232	17.9
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2008"	"2008"	64	319210	20.0
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2009"	"2009"	52	320527	16.2
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2010"	"2010"	48	320918	15.0
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2011"	"2011"	54	320651	16.8
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2012"	"2012"	60	321027	18.7
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2013"	"2013"	66	320103	20.6
+	"Pennsylvania"	"42"	"Luzerne County, PA"	"42079"	"2014"	"2014"	65	318829	20.4
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2006"	"2006"	Suppressed	116983	Suppressed
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2007"	"2007"	Suppressed	116524	Suppressed
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2008"	"2008"	Suppressed	116147	Suppressed
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2009"	"2009"	Suppressed	116081	Suppressed
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2010"	"2010"	13	116111	Unreliable
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2011"	"2011"	10	116747	Unreliable
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2012"	"2012"	11	117168	Unreliable
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2013"	"2013"	19	116754	Unreliable
+	"Pennsylvania"	"42"	"Lycoming County, PA"	"42081"	"2014"	"2014"	13	116508	Unreliable
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2006"	"2006"	Suppressed	44309	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2007"	"2007"	Suppressed	44045	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2008"	"2008"	Suppressed	43856	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2009"	"2009"	Suppressed	43701	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2010"	"2010"	Suppressed	43450	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2011"	"2011"	Suppressed	43222	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2012"	"2012"	Suppressed	43127	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2013"	"2013"	Suppressed	42979	Suppressed
+	"Pennsylvania"	"42"	"Mc Kean County, PA"	"42083"	"2014"	"2014"	Suppressed	42554	Suppressed
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2006"	"2006"	13	118123	Unreliable
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2007"	"2007"	26	117794	22.1
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2008"	"2008"	20	117189	17.1
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2009"	"2009"	24	116816	20.5
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2010"	"2010"	19	116638	Unreliable
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2011"	"2011"	17	116205	Unreliable
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2012"	"2012"	21	115655	18.2
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2013"	"2013"	27	115195	23.4
+	"Pennsylvania"	"42"	"Mercer County, PA"	"42085"	"2014"	"2014"	30	114884	26.1
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2006"	"2006"	Suppressed	46435	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2007"	"2007"	Suppressed	46551	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2008"	"2008"	Suppressed	46600	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2009"	"2009"	Suppressed	46662	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2010"	"2010"	Suppressed	46682	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2011"	"2011"	Suppressed	46858	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2012"	"2012"	Suppressed	46773	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2013"	"2013"	Suppressed	46616	Suppressed
+	"Pennsylvania"	"42"	"Mifflin County, PA"	"42087"	"2014"	"2014"	Suppressed	46552	Suppressed
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2006"	"2006"	20	165185	12.1
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2007"	"2007"	25	167352	14.9
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2008"	"2008"	25	168576	14.8
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2009"	"2009"	31	169390	18.3
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2010"	"2010"	16	169842	Unreliable
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2011"	"2011"	23	169882	13.5
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2012"	"2012"	26	168798	15.4
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2013"	"2013"	33	167148	19.7
+	"Pennsylvania"	"42"	"Monroe County, PA"	"42089"	"2014"	"2014"	27	166314	16.2
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2006"	"2006"	112	781519	14.3
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2007"	"2007"	81	785170	10.3
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2008"	"2008"	109	789250	13.8
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2009"	"2009"	110	795494	13.8
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2010"	"2010"	114	799874	14.3
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2011"	"2011"	113	804210	14.1
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2012"	"2012"	136	808460	16.8
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2013"	"2013"	138	812376	17.0
+	"Pennsylvania"	"42"	"Montgomery County, PA"	"42091"	"2014"	"2014"	150	816857	18.4
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2006"	"2006"	0	18114	Unreliable
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2007"	"2007"	Suppressed	18107	Suppressed
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2008"	"2008"	Suppressed	18090	Suppressed
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2009"	"2009"	Suppressed	18165	Suppressed
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2010"	"2010"	0	18267	Unreliable
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2011"	"2011"	Suppressed	18296	Suppressed
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2012"	"2012"	0	18356	Unreliable
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2013"	"2013"	Suppressed	18541	Suppressed
+	"Pennsylvania"	"42"	"Montour County, PA"	"42093"	"2014"	"2014"	Suppressed	18641	Suppressed
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2006"	"2006"	23	289628	7.9
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2007"	"2007"	32	293212	10.9
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2008"	"2008"	32	295096	10.8
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2009"	"2009"	40	296645	13.5
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2010"	"2010"	30	297735	10.1
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2011"	"2011"	46	298476	15.4
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2012"	"2012"	43	299267	14.4
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2013"	"2013"	48	299791	16.0
+	"Pennsylvania"	"42"	"Northampton County, PA"	"42095"	"2014"	"2014"	37	300654	12.3
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2006"	"2006"	Suppressed	93475	Suppressed
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2007"	"2007"	Suppressed	93728	Suppressed
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2008"	"2008"	Suppressed	94150	Suppressed
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2009"	"2009"	Suppressed	94774	Suppressed
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2010"	"2010"	12	94528	Unreliable
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2011"	"2011"	12	94558	Unreliable
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2012"	"2012"	Suppressed	94428	Suppressed
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2013"	"2013"	17	94076	Unreliable
+	"Pennsylvania"	"42"	"Northumberland County, PA"	"42097"	"2014"	"2014"	15	93944	Unreliable
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2006"	"2006"	Suppressed	45121	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2007"	"2007"	Suppressed	45454	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2008"	"2008"	Suppressed	45549	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2009"	"2009"	Suppressed	45874	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2010"	"2010"	Suppressed	45969	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2011"	"2011"	Suppressed	46042	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2012"	"2012"	Suppressed	45701	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2013"	"2013"	Suppressed	45562	Suppressed
+	"Pennsylvania"	"42"	"Perry County, PA"	"42099"	"2014"	"2014"	Suppressed	45634	Suppressed
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2006"	"2006"	433	1488710	29.1
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2007"	"2007"	356	1493309	23.8
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2008"	"2008"	383	1499731	25.5
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2009"	"2009"	351	1514694	23.2
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2010"	"2010"	342	1526006	22.4
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2011"	"2011"	436	1536471	28.4
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2012"	"2012"	460	1547607	29.7
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2013"	"2013"	402	1553165	25.9
+	"Pennsylvania"	"42"	"Philadelphia County, PA"	"42101"	"2014"	"2014"	516	1560297	33.1
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2006"	"2006"	Suppressed	55601	Suppressed
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2007"	"2007"	Suppressed	56627	Suppressed
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2008"	"2008"	Suppressed	57739	Suppressed
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2009"	"2009"	Suppressed	57671	Suppressed
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2010"	"2010"	14	57369	Unreliable
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2011"	"2011"	12	56852	Unreliable
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2012"	"2012"	Suppressed	56899	Suppressed
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2013"	"2013"	11	56591	Unreliable
+	"Pennsylvania"	"42"	"Pike County, PA"	"42103"	"2014"	"2014"	Suppressed	56191	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2006"	"2006"	0	17944	Unreliable
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2007"	"2007"	Suppressed	17659	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2008"	"2008"	Suppressed	17464	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2009"	"2009"	Suppressed	17382	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2010"	"2010"	Suppressed	17457	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2011"	"2011"	Suppressed	17453	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2012"	"2012"	Suppressed	17577	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2013"	"2013"	Suppressed	17497	Suppressed
+	"Pennsylvania"	"42"	"Potter County, PA"	"42105"	"2014"	"2014"	0	17206	Unreliable
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2006"	"2006"	26	148005	17.6
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2007"	"2007"	26	148387	17.5
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2008"	"2008"	16	148463	Unreliable
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2009"	"2009"	30	148358	20.2
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2010"	"2010"	26	148289	17.5
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2011"	"2011"	24	147513	16.3
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2012"	"2012"	39	147063	26.5
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2013"	"2013"	23	146920	15.7
+	"Pennsylvania"	"42"	"Schuylkill County, PA"	"42107"	"2014"	"2014"	26	145797	17.8
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2006"	"2006"	0	38946	Unreliable
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2007"	"2007"	Suppressed	39295	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2008"	"2008"	Suppressed	39481	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2009"	"2009"	Suppressed	39550	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2010"	"2010"	Suppressed	39702	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2011"	"2011"	Suppressed	39819	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2012"	"2012"	Suppressed	39672	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2013"	"2013"	Suppressed	39865	Suppressed
+	"Pennsylvania"	"42"	"Snyder County, PA"	"42109"	"2014"	"2014"	Suppressed	40323	Suppressed
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2006"	"2006"	Suppressed	78834	Suppressed
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2007"	"2007"	Suppressed	78490	Suppressed
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2008"	"2008"	Suppressed	78120	Suppressed
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2009"	"2009"	10	78025	Unreliable
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2010"	"2010"	14	77742	Unreliable
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2011"	"2011"	Suppressed	77405	Suppressed
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2012"	"2012"	13	76957	Unreliable
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2013"	"2013"	11	76520	Unreliable
+	"Pennsylvania"	"42"	"Somerset County, PA"	"42111"	"2014"	"2014"	18	76218	Unreliable
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2006"	"2006"	Suppressed	6487	Suppressed
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2007"	"2007"	0	6525	Unreliable
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2008"	"2008"	0	6462	Unreliable
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2009"	"2009"	Suppressed	6449	Suppressed
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2010"	"2010"	Suppressed	6428	Suppressed
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2011"	"2011"	Suppressed	6479	Suppressed
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2012"	"2012"	0	6461	Unreliable
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2013"	"2013"	0	6351	Unreliable
+	"Pennsylvania"	"42"	"Sullivan County, PA"	"42113"	"2014"	"2014"	Suppressed	6339	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2006"	"2006"	Suppressed	43376	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2007"	"2007"	Suppressed	43310	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2008"	"2008"	Suppressed	43405	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2009"	"2009"	Suppressed	43346	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2010"	"2010"	Suppressed	43356	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2011"	"2011"	Suppressed	43192	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2012"	"2012"	Suppressed	42696	Suppressed
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2013"	"2013"	13	42286	Unreliable
+	"Pennsylvania"	"42"	"Susquehanna County, PA"	"42115"	"2014"	"2014"	17	41920	Unreliable
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2006"	"2006"	Suppressed	41347	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2007"	"2007"	Suppressed	41371	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2008"	"2008"	Suppressed	41609	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2009"	"2009"	Suppressed	41818	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2010"	"2010"	Suppressed	41981	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2011"	"2011"	Suppressed	42419	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2012"	"2012"	Suppressed	42577	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2013"	"2013"	Suppressed	42463	Suppressed
+	"Pennsylvania"	"42"	"Tioga County, PA"	"42117"	"2014"	"2014"	Suppressed	42274	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2006"	"2006"	Suppressed	44666	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2007"	"2007"	Suppressed	44846	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2008"	"2008"	0	45057	Unreliable
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2009"	"2009"	Suppressed	44795	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2010"	"2010"	Suppressed	44947	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2011"	"2011"	Suppressed	44847	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2012"	"2012"	Suppressed	44952	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2013"	"2013"	Suppressed	44867	Suppressed
+	"Pennsylvania"	"42"	"Union County, PA"	"42119"	"2014"	"2014"	Suppressed	44874	Suppressed
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2006"	"2006"	12	55761	Unreliable
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2007"	"2007"	Suppressed	55510	Suppressed
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2008"	"2008"	Suppressed	55315	Suppressed
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2009"	"2009"	Suppressed	55087	Suppressed
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2010"	"2010"	Suppressed	54984	Suppressed
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2011"	"2011"	13	54683	Unreliable
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2012"	"2012"	10	54272	Unreliable
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2013"	"2013"	11	53907	Unreliable
+	"Pennsylvania"	"42"	"Venango County, PA"	"42121"	"2014"	"2014"	11	53529	Unreliable
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2006"	"2006"	Suppressed	41972	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2007"	"2007"	Suppressed	41963	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2008"	"2008"	Suppressed	41853	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2009"	"2009"	Suppressed	41831	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2010"	"2010"	Suppressed	41815	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2011"	"2011"	Suppressed	41441	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2012"	"2012"	Suppressed	41146	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2013"	"2013"	Suppressed	40885	Suppressed
+	"Pennsylvania"	"42"	"Warren County, PA"	"42123"	"2014"	"2014"	Suppressed	40703	Suppressed
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2006"	"2006"	18	205992	Unreliable
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2007"	"2007"	21	206259	10.2
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2008"	"2008"	21	207240	10.1
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2009"	"2009"	16	207571	Unreliable
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2010"	"2010"	40	207820	19.2
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2011"	"2011"	39	208282	18.7
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2012"	"2012"	33	208716	15.8
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2013"	"2013"	54	208206	25.9
+	"Pennsylvania"	"42"	"Washington County, PA"	"42125"	"2014"	"2014"	39	208187	18.7
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2006"	"2006"	Suppressed	52031	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2007"	"2007"	Suppressed	52341	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2008"	"2008"	Suppressed	51692	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2009"	"2009"	Suppressed	52552	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2010"	"2010"	Suppressed	52822	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2011"	"2011"	Suppressed	53004	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2012"	"2012"	13	51955	Unreliable
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2013"	"2013"	Suppressed	51548	Suppressed
+	"Pennsylvania"	"42"	"Wayne County, PA"	"42127"	"2014"	"2014"	14	51401	Unreliable
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2006"	"2006"	48	366559	13.1
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2007"	"2007"	55	366318	15.0
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2008"	"2008"	58	366058	15.8
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2009"	"2009"	65	365259	17.8
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2010"	"2010"	65	365169	17.8
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2011"	"2011"	79	364471	21.7
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2012"	"2012"	106	363395	29.2
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2013"	"2013"	103	362437	28.4
+	"Pennsylvania"	"42"	"Westmoreland County, PA"	"42129"	"2014"	"2014"	101	359320	28.1
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2006"	"2006"	Suppressed	28194	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2007"	"2007"	Suppressed	28287	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2008"	"2008"	Suppressed	28294	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2009"	"2009"	Suppressed	28268	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2010"	"2010"	Suppressed	28276	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2011"	"2011"	Suppressed	28406	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2012"	"2012"	12	28125	Unreliable
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2013"	"2013"	Suppressed	28003	Suppressed
+	"Pennsylvania"	"42"	"Wyoming County, PA"	"42131"	"2014"	"2014"	Suppressed	28131	Suppressed
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2006"	"2006"	38	418043	9.1
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2007"	"2007"	46	424919	10.8
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2008"	"2008"	49	429399	11.4
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2009"	"2009"	42	433022	9.7
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2010"	"2010"	54	434972	12.4
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2011"	"2011"	57	436770	13.1
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2012"	"2012"	73	437846	16.7
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2013"	"2013"	68	438965	15.5
+	"Pennsylvania"	"42"	"York County, PA"	"42133"	"2014"	"2014"	120	440755	27.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Pennsylvania (42)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:41:13 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:41:13 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

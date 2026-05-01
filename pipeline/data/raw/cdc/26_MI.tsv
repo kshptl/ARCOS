@@ -1,0 +1,804 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2006"	"2006"	Suppressed	11503	Suppressed
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2007"	"2007"	0	11412	Unreliable
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2008"	"2008"	Suppressed	11286	Suppressed
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2009"	"2009"	Suppressed	11106	Suppressed
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2010"	"2010"	0	10942	Unreliable
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2011"	"2011"	Suppressed	10800	Suppressed
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2012"	"2012"	0	10635	Unreliable
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2013"	"2013"	Suppressed	10578	Suppressed
+	"Michigan"	"26"	"Alcona County, MI"	"26001"	"2014"	"2014"	Suppressed	10454	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2006"	"2006"	Suppressed	9687	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2007"	"2007"	Suppressed	9779	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2008"	"2008"	Suppressed	9647	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2009"	"2009"	Suppressed	9334	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2010"	"2010"	Suppressed	9601	Suppressed
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2011"	"2011"	0	9513	Unreliable
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2012"	"2012"	0	9541	Unreliable
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2013"	"2013"	0	9522	Unreliable
+	"Michigan"	"26"	"Alger County, MI"	"26003"	"2014"	"2014"	0	9459	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2006"	"2006"	Suppressed	111156	Suppressed
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2007"	"2007"	17	111427	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2008"	"2008"	13	111589	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2009"	"2009"	16	111252	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2010"	"2010"	12	111408	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2011"	"2011"	Suppressed	111234	Suppressed
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2012"	"2012"	Suppressed	112039	Suppressed
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2013"	"2013"	10	112531	Unreliable
+	"Michigan"	"26"	"Allegan County, MI"	"26005"	"2014"	"2014"	25	113847	22.0
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2006"	"2006"	Suppressed	30209	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2007"	"2007"	Suppressed	30180	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2008"	"2008"	Suppressed	30119	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2009"	"2009"	Suppressed	29755	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2010"	"2010"	Suppressed	29598	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2011"	"2011"	Suppressed	29386	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2012"	"2012"	Suppressed	29234	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2013"	"2013"	Suppressed	29091	Suppressed
+	"Michigan"	"26"	"Alpena County, MI"	"26007"	"2014"	"2014"	Suppressed	28988	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2006"	"2006"	Suppressed	24278	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2007"	"2007"	Suppressed	24248	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2008"	"2008"	Suppressed	24047	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2009"	"2009"	Suppressed	23796	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2010"	"2010"	Suppressed	23580	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2011"	"2011"	Suppressed	23316	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2012"	"2012"	Suppressed	23406	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2013"	"2013"	Suppressed	23370	Suppressed
+	"Michigan"	"26"	"Antrim County, MI"	"26009"	"2014"	"2014"	Suppressed	23267	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2006"	"2006"	Suppressed	16968	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2007"	"2007"	Suppressed	16811	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2008"	"2008"	Suppressed	16547	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2009"	"2009"	Suppressed	16243	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2010"	"2010"	Suppressed	15899	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2011"	"2011"	Suppressed	15649	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2012"	"2012"	Suppressed	15477	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2013"	"2013"	Suppressed	15487	Suppressed
+	"Michigan"	"26"	"Arenac County, MI"	"26011"	"2014"	"2014"	Suppressed	15353	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2006"	"2006"	Suppressed	8940	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2007"	"2007"	Suppressed	8930	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2008"	"2008"	Suppressed	8822	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2009"	"2009"	Suppressed	8874	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2010"	"2010"	Suppressed	8860	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2011"	"2011"	0	8808	Unreliable
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2012"	"2012"	Suppressed	8683	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2013"	"2013"	Suppressed	8695	Suppressed
+	"Michigan"	"26"	"Baraga County, MI"	"26013"	"2014"	"2014"	Suppressed	8654	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2006"	"2006"	Suppressed	59610	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2007"	"2007"	Suppressed	59969	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2008"	"2008"	Suppressed	59788	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2009"	"2009"	Suppressed	59469	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2010"	"2010"	Suppressed	59173	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2011"	"2011"	Suppressed	58820	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2012"	"2012"	Suppressed	58990	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2013"	"2013"	Suppressed	59097	Suppressed
+	"Michigan"	"26"	"Barry County, MI"	"26015"	"2014"	"2014"	Suppressed	59281	Suppressed
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2006"	"2006"	14	108711	Unreliable
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2007"	"2007"	17	108132	Unreliable
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2008"	"2008"	21	108320	19.4
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2009"	"2009"	16	107913	Unreliable
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2010"	"2010"	15	107771	Unreliable
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2011"	"2011"	26	107110	24.3
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2012"	"2012"	26	106935	24.3
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2013"	"2013"	20	106832	18.7
+	"Michigan"	"26"	"Bay County, MI"	"26017"	"2014"	"2014"	17	106179	Unreliable
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2006"	"2006"	Suppressed	17867	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2007"	"2007"	Suppressed	17863	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2008"	"2008"	Suppressed	17733	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2009"	"2009"	0	17564	Unreliable
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2010"	"2010"	0	17525	Unreliable
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2011"	"2011"	Suppressed	17443	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2012"	"2012"	Suppressed	17465	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2013"	"2013"	Suppressed	17428	Suppressed
+	"Michigan"	"26"	"Benzie County, MI"	"26019"	"2014"	"2014"	Suppressed	17519	Suppressed
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2006"	"2006"	24	157537	15.2
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2007"	"2007"	19	157378	Unreliable
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2008"	"2008"	19	157380	Unreliable
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2009"	"2009"	24	157059	15.3
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2010"	"2010"	21	156813	13.4
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2011"	"2011"	22	156941	14.0
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2012"	"2012"	22	156067	14.1
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2013"	"2013"	19	155252	Unreliable
+	"Michigan"	"26"	"Berrien County, MI"	"26021"	"2014"	"2014"	33	155233	21.3
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2006"	"2006"	Suppressed	46805	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2007"	"2007"	Suppressed	46788	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2008"	"2008"	Suppressed	46305	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2009"	"2009"	Suppressed	45378	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2010"	"2010"	Suppressed	45248	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2011"	"2011"	Suppressed	45197	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2012"	"2012"	Suppressed	43868	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2013"	"2013"	Suppressed	43649	Suppressed
+	"Michigan"	"26"	"Branch County, MI"	"26023"	"2014"	"2014"	Suppressed	43545	Suppressed
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2006"	"2006"	29	138291	21.0
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2007"	"2007"	27	137582	19.6
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2008"	"2008"	25	137313	18.2
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2009"	"2009"	39	136301	28.6
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2010"	"2010"	33	136146	24.2
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2011"	"2011"	31	135490	22.9
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2012"	"2012"	36	135099	26.6
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2013"	"2013"	31	135012	23.0
+	"Michigan"	"26"	"Calhoun County, MI"	"26025"	"2014"	"2014"	30	134878	22.2
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2006"	"2006"	Suppressed	52282	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2007"	"2007"	Suppressed	52623	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2008"	"2008"	Suppressed	52684	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2009"	"2009"	Suppressed	52362	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2010"	"2010"	Suppressed	52293	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2011"	"2011"	14	51988	Unreliable
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2012"	"2012"	Suppressed	52242	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2013"	"2013"	Suppressed	51910	Suppressed
+	"Michigan"	"26"	"Cass County, MI"	"26027"	"2014"	"2014"	Suppressed	51608	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2006"	"2006"	Suppressed	26394	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2007"	"2007"	Suppressed	26499	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2008"	"2008"	Suppressed	26280	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2009"	"2009"	0	26068	Unreliable
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2010"	"2010"	Suppressed	25949	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2011"	"2011"	Suppressed	25998	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2012"	"2012"	Suppressed	26023	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2013"	"2013"	Suppressed	26129	Suppressed
+	"Michigan"	"26"	"Charlevoix County, MI"	"26029"	"2014"	"2014"	0	26121	Unreliable
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2006"	"2006"	Suppressed	27249	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2007"	"2007"	Suppressed	27093	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2008"	"2008"	Suppressed	26738	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2009"	"2009"	Suppressed	26330	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2010"	"2010"	Suppressed	26152	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2011"	"2011"	Suppressed	25918	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2012"	"2012"	Suppressed	25835	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2013"	"2013"	Suppressed	25726	Suppressed
+	"Michigan"	"26"	"Cheboygan County, MI"	"26031"	"2014"	"2014"	Suppressed	25675	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2006"	"2006"	Suppressed	39051	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2007"	"2007"	Suppressed	39314	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2008"	"2008"	Suppressed	39247	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2009"	"2009"	Suppressed	39174	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2010"	"2010"	Suppressed	38520	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2011"	"2011"	Suppressed	38797	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2012"	"2012"	Suppressed	38917	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2013"	"2013"	Suppressed	38696	Suppressed
+	"Michigan"	"26"	"Chippewa County, MI"	"26033"	"2014"	"2014"	Suppressed	38321	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2006"	"2006"	Suppressed	31612	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2007"	"2007"	Suppressed	31353	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2008"	"2008"	Suppressed	31064	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2009"	"2009"	Suppressed	30856	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2010"	"2010"	Suppressed	30926	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2011"	"2011"	Suppressed	31033	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2012"	"2012"	Suppressed	30753	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2013"	"2013"	Suppressed	30569	Suppressed
+	"Michigan"	"26"	"Clare County, MI"	"26035"	"2014"	"2014"	Suppressed	30652	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2006"	"2006"	Suppressed	72881	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2007"	"2007"	Suppressed	73740	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2008"	"2008"	Suppressed	74302	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2009"	"2009"	Suppressed	74828	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2010"	"2010"	Suppressed	75382	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2011"	"2011"	Suppressed	75469	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2012"	"2012"	Suppressed	76001	Suppressed
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2013"	"2013"	10	76739	Unreliable
+	"Michigan"	"26"	"Clinton County, MI"	"26037"	"2014"	"2014"	Suppressed	77297	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2006"	"2006"	Suppressed	14597	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2007"	"2007"	Suppressed	14455	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2008"	"2008"	Suppressed	14379	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2009"	"2009"	Suppressed	14157	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2010"	"2010"	Suppressed	14074	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2011"	"2011"	Suppressed	14014	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2012"	"2012"	Suppressed	14009	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2013"	"2013"	Suppressed	13904	Suppressed
+	"Michigan"	"26"	"Crawford County, MI"	"26039"	"2014"	"2014"	Suppressed	13745	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2006"	"2006"	Suppressed	37898	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2007"	"2007"	Suppressed	37584	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2008"	"2008"	Suppressed	37409	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2009"	"2009"	Suppressed	37059	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2010"	"2010"	Suppressed	37069	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2011"	"2011"	Suppressed	37105	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2012"	"2012"	Suppressed	36884	Suppressed
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2013"	"2013"	0	36905	Unreliable
+	"Michigan"	"26"	"Delta County, MI"	"26041"	"2014"	"2014"	0	36559	Unreliable
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2006"	"2006"	Suppressed	26951	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2007"	"2007"	Suppressed	26881	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2008"	"2008"	Suppressed	26622	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2009"	"2009"	0	26357	Unreliable
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2010"	"2010"	Suppressed	26168	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2011"	"2011"	Suppressed	26185	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2012"	"2012"	0	26220	Unreliable
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2013"	"2013"	Suppressed	26098	Suppressed
+	"Michigan"	"26"	"Dickinson County, MI"	"26043"	"2014"	"2014"	Suppressed	25957	Suppressed
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2006"	"2006"	10	108364	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2007"	"2007"	11	108358	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2008"	"2008"	10	108021	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2009"	"2009"	10	107430	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2010"	"2010"	13	107759	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2011"	"2011"	10	108056	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2012"	"2012"	10	108008	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2013"	"2013"	18	108348	Unreliable
+	"Michigan"	"26"	"Eaton County, MI"	"26045"	"2014"	"2014"	14	108579	Unreliable
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2006"	"2006"	Suppressed	32926	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2007"	"2007"	Suppressed	32794	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2008"	"2008"	Suppressed	32852	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2009"	"2009"	Suppressed	32765	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2010"	"2010"	Suppressed	32694	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2011"	"2011"	Suppressed	32848	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2012"	"2012"	Suppressed	32915	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2013"	"2013"	Suppressed	33140	Suppressed
+	"Michigan"	"26"	"Emmet County, MI"	"26047"	"2014"	"2014"	Suppressed	33204	Suppressed
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2006"	"2006"	39	441164	8.8
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2007"	"2007"	53	438109	12.1
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2008"	"2008"	86	433082	19.9
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2009"	"2009"	91	427989	21.3
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2010"	"2010"	110	425790	25.8
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2011"	"2011"	89	422080	21.1
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2012"	"2012"	72	418408	17.2
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2013"	"2013"	55	415376	13.2
+	"Michigan"	"26"	"Genesee County, MI"	"26049"	"2014"	"2014"	57	412895	13.8
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2006"	"2006"	Suppressed	26726	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2007"	"2007"	10	26285	Unreliable
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2008"	"2008"	Suppressed	25956	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2009"	"2009"	Suppressed	25738	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2010"	"2010"	Suppressed	25692	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2011"	"2011"	Suppressed	25851	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2012"	"2012"	Suppressed	25484	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2013"	"2013"	Suppressed	25493	Suppressed
+	"Michigan"	"26"	"Gladwin County, MI"	"26051"	"2014"	"2014"	Suppressed	25411	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2006"	"2006"	Suppressed	16552	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2007"	"2007"	Suppressed	16515	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2008"	"2008"	Suppressed	16499	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2009"	"2009"	Suppressed	16390	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2010"	"2010"	0	16427	Unreliable
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2011"	"2011"	Suppressed	16281	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2012"	"2012"	Suppressed	16084	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2013"	"2013"	Suppressed	15916	Suppressed
+	"Michigan"	"26"	"Gogebic County, MI"	"26053"	"2014"	"2014"	0	15737	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2006"	"2006"	11	84705	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2007"	"2007"	Suppressed	85579	Suppressed
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2008"	"2008"	Suppressed	86209	Suppressed
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2009"	"2009"	11	86767	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2010"	"2010"	12	86986	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2011"	"2011"	14	88349	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2012"	"2012"	13	89112	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2013"	"2013"	10	89987	Unreliable
+	"Michigan"	"26"	"Grand Traverse County, MI"	"26055"	"2014"	"2014"	Suppressed	90782	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2006"	"2006"	Suppressed	42714	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2007"	"2007"	Suppressed	42824	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2008"	"2008"	Suppressed	42774	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2009"	"2009"	Suppressed	42285	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2010"	"2010"	Suppressed	42476	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2011"	"2011"	Suppressed	42145	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2012"	"2012"	Suppressed	42063	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2013"	"2013"	Suppressed	41968	Suppressed
+	"Michigan"	"26"	"Gratiot County, MI"	"26057"	"2014"	"2014"	0	41665	Unreliable
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2006"	"2006"	Suppressed	47499	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2007"	"2007"	Suppressed	47336	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2008"	"2008"	Suppressed	46951	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2009"	"2009"	Suppressed	46735	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2010"	"2010"	Suppressed	46688	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2011"	"2011"	Suppressed	46514	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2012"	"2012"	0	46229	Unreliable
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2013"	"2013"	Suppressed	46101	Suppressed
+	"Michigan"	"26"	"Hillsdale County, MI"	"26059"	"2014"	"2014"	Suppressed	45830	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2006"	"2006"	Suppressed	35765	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2007"	"2007"	Suppressed	35839	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2008"	"2008"	Suppressed	36292	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2009"	"2009"	Suppressed	36378	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2010"	"2010"	Suppressed	36628	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2011"	"2011"	Suppressed	36638	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2012"	"2012"	Suppressed	36520	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2013"	"2013"	Suppressed	36225	Suppressed
+	"Michigan"	"26"	"Houghton County, MI"	"26061"	"2014"	"2014"	Suppressed	36495	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2006"	"2006"	Suppressed	34363	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2007"	"2007"	Suppressed	34034	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2008"	"2008"	Suppressed	33504	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2009"	"2009"	Suppressed	33269	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2010"	"2010"	Suppressed	33118	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2011"	"2011"	Suppressed	32675	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2012"	"2012"	Suppressed	32463	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2013"	"2013"	Suppressed	32224	Suppressed
+	"Michigan"	"26"	"Huron County, MI"	"26063"	"2014"	"2014"	Suppressed	32065	Suppressed
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2006"	"2006"	21	282104	7.4
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2007"	"2007"	31	281706	11.0
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2008"	"2008"	25	281315	8.9
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2009"	"2009"	34	280889	12.1
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2010"	"2010"	35	280895	12.5
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2011"	"2011"	39	281613	13.8
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2012"	"2012"	32	281723	11.4
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2013"	"2013"	50	282234	17.7
+	"Michigan"	"26"	"Ingham County, MI"	"26065"	"2014"	"2014"	55	284582	19.3
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2006"	"2006"	Suppressed	65157	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2007"	"2007"	Suppressed	65189	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2008"	"2008"	10	65167	Unreliable
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2009"	"2009"	Suppressed	63858	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2010"	"2010"	10	63905	Unreliable
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2011"	"2011"	Suppressed	63979	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2012"	"2012"	Suppressed	63941	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2013"	"2013"	Suppressed	64073	Suppressed
+	"Michigan"	"26"	"Ionia County, MI"	"26067"	"2014"	"2014"	15	64294	Unreliable
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2006"	"2006"	Suppressed	26869	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2007"	"2007"	Suppressed	26749	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2008"	"2008"	Suppressed	26542	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2009"	"2009"	Suppressed	26174	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2010"	"2010"	Suppressed	25887	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2011"	"2011"	Suppressed	25541	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2012"	"2012"	Suppressed	25357	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2013"	"2013"	Suppressed	25429	Suppressed
+	"Michigan"	"26"	"Iosco County, MI"	"26069"	"2014"	"2014"	Suppressed	25420	Suppressed
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2006"	"2006"	0	12248	Unreliable
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2007"	"2007"	0	12183	Unreliable
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2008"	"2008"	0	12081	Unreliable
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2009"	"2009"	Suppressed	11959	Suppressed
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2010"	"2010"	Suppressed	11817	Suppressed
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2011"	"2011"	Suppressed	11796	Suppressed
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2012"	"2012"	Suppressed	11587	Suppressed
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2013"	"2013"	0	11516	Unreliable
+	"Michigan"	"26"	"Iron County, MI"	"26071"	"2014"	"2014"	Suppressed	11387	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2006"	"2006"	Suppressed	68556	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2007"	"2007"	Suppressed	69012	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2008"	"2008"	Suppressed	69328	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2009"	"2009"	Suppressed	70026	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2010"	"2010"	Suppressed	70311	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2011"	"2011"	Suppressed	70622	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2012"	"2012"	Suppressed	70617	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2013"	"2013"	Suppressed	70436	Suppressed
+	"Michigan"	"26"	"Isabella County, MI"	"26073"	"2014"	"2014"	Suppressed	70616	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2006"	"2006"	13	163387	Unreliable
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2007"	"2007"	Suppressed	163316	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2008"	"2008"	Suppressed	160825	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2009"	"2009"	Suppressed	160114	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2010"	"2010"	10	160248	Unreliable
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2011"	"2011"	Suppressed	159748	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2012"	"2012"	Suppressed	160309	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2013"	"2013"	Suppressed	160369	Suppressed
+	"Michigan"	"26"	"Jackson County, MI"	"26075"	"2014"	"2014"	13	159741	Unreliable
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2006"	"2006"	33	244178	13.5
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2007"	"2007"	22	245431	9.0
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2008"	"2008"	26	246862	10.5
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2009"	"2009"	33	249023	13.3
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2010"	"2010"	24	250331	9.6
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2011"	"2011"	37	252074	14.7
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2012"	"2012"	27	254580	10.6
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2013"	"2013"	42	256725	16.4
+	"Michigan"	"26"	"Kalamazoo County, MI"	"26077"	"2014"	"2014"	37	258818	14.3
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2006"	"2006"	0	17572	Unreliable
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2007"	"2007"	Suppressed	17540	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2008"	"2008"	Suppressed	17546	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2009"	"2009"	Suppressed	17223	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2010"	"2010"	Suppressed	17153	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2011"	"2011"	Suppressed	17160	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2012"	"2012"	Suppressed	17099	Suppressed
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2013"	"2013"	0	17196	Unreliable
+	"Michigan"	"26"	"Kalkaska County, MI"	"26079"	"2014"	"2014"	Suppressed	17394	Suppressed
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2006"	"2006"	54	595191	9.1
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2007"	"2007"	63	598077	10.5
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2008"	"2008"	60	599234	10.0
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2009"	"2009"	65	601437	10.8
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2010"	"2010"	57	602622	9.5
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2011"	"2011"	60	608453	9.9
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2012"	"2012"	67	614462	10.9
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2013"	"2013"	70	621700	11.3
+	"Michigan"	"26"	"Kent County, MI"	"26081"	"2014"	"2014"	60	629237	9.5
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2006"	"2006"	0	2087	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2007"	"2007"	0	2104	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2008"	"2008"	0	2119	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2009"	"2009"	0	2131	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2010"	"2010"	0	2156	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2011"	"2011"	0	2173	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2012"	"2012"	0	2215	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2013"	"2013"	0	2191	Unreliable
+	"Michigan"	"26"	"Keweenaw County, MI"	"26083"	"2014"	"2014"	0	2217	Unreliable
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2006"	"2006"	Suppressed	11707	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2007"	"2007"	Suppressed	11692	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2008"	"2008"	Suppressed	11629	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2009"	"2009"	Suppressed	11593	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2010"	"2010"	0	11539	Unreliable
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2011"	"2011"	Suppressed	11539	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2012"	"2012"	Suppressed	11498	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2013"	"2013"	Suppressed	11386	Suppressed
+	"Michigan"	"26"	"Lake County, MI"	"26085"	"2014"	"2014"	0	11341	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2006"	"2006"	10	91691	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2007"	"2007"	Suppressed	91130	Suppressed
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2008"	"2008"	Suppressed	89914	Suppressed
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2009"	"2009"	20	88774	22.5
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2010"	"2010"	19	88319	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2011"	"2011"	13	88082	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2012"	"2012"	12	88173	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2013"	"2013"	12	88389	Unreliable
+	"Michigan"	"26"	"Lapeer County, MI"	"26087"	"2014"	"2014"	Suppressed	88153	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2006"	"2006"	0	21818	Unreliable
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2007"	"2007"	0	21809	Unreliable
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2008"	"2008"	Suppressed	21731	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2009"	"2009"	Suppressed	21724	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2010"	"2010"	Suppressed	21708	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2011"	"2011"	0	21459	Unreliable
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2012"	"2012"	Suppressed	21607	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2013"	"2013"	Suppressed	21747	Suppressed
+	"Michigan"	"26"	"Leelanau County, MI"	"26089"	"2014"	"2014"	Suppressed	21915	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2006"	"2006"	Suppressed	101715	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2007"	"2007"	Suppressed	101657	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2008"	"2008"	Suppressed	101169	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2009"	"2009"	Suppressed	100250	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2010"	"2010"	Suppressed	99892	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2011"	"2011"	Suppressed	99440	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2012"	"2012"	14	98987	Unreliable
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2013"	"2013"	Suppressed	99188	Suppressed
+	"Michigan"	"26"	"Lenawee County, MI"	"26091"	"2014"	"2014"	21	99047	21.2
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2006"	"2006"	18	181620	Unreliable
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2007"	"2007"	18	181903	Unreliable
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2008"	"2008"	25	181171	13.8
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2009"	"2009"	16	181082	Unreliable
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2010"	"2010"	19	180967	Unreliable
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2011"	"2011"	18	181722	Unreliable
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2012"	"2012"	28	182838	15.3
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2013"	"2013"	29	184443	15.7
+	"Michigan"	"26"	"Livingston County, MI"	"26093"	"2014"	"2014"	50	185596	26.9
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2006"	"2006"	Suppressed	6736	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2007"	"2007"	Suppressed	6791	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2008"	"2008"	Suppressed	6680	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2009"	"2009"	Suppressed	6614	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2010"	"2010"	0	6631	Unreliable
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2011"	"2011"	0	6584	Unreliable
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2012"	"2012"	Suppressed	6522	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2013"	"2013"	Suppressed	6502	Suppressed
+	"Michigan"	"26"	"Luce County, MI"	"26095"	"2014"	"2014"	0	6426	Unreliable
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2006"	"2006"	Suppressed	11474	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2007"	"2007"	Suppressed	11448	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2008"	"2008"	0	11248	Unreliable
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2009"	"2009"	Suppressed	11159	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2010"	"2010"	Suppressed	11113	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2011"	"2011"	Suppressed	11037	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2012"	"2012"	0	11137	Unreliable
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2013"	"2013"	Suppressed	11061	Suppressed
+	"Michigan"	"26"	"Mackinac County, MI"	"26097"	"2014"	"2014"	0	11042	Unreliable
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2006"	"2006"	144	833328	17.3
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2007"	"2007"	169	835703	20.2
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2008"	"2008"	178	837857	21.2
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2009"	"2009"	200	839435	23.8
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2010"	"2010"	203	840978	24.1
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2011"	"2011"	211	842145	25.1
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2012"	"2012"	175	847383	20.7
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2013"	"2013"	237	854769	27.7
+	"Michigan"	"26"	"Macomb County, MI"	"26099"	"2014"	"2014"	252	860112	29.3
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2006"	"2006"	Suppressed	25201	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2007"	"2007"	Suppressed	25077	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2008"	"2008"	Suppressed	24960	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2009"	"2009"	Suppressed	24818	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2010"	"2010"	Suppressed	24733	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2011"	"2011"	12	24709	Unreliable
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2012"	"2012"	Suppressed	24672	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2013"	"2013"	Suppressed	24450	Suppressed
+	"Michigan"	"26"	"Manistee County, MI"	"26101"	"2014"	"2014"	Suppressed	24420	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2006"	"2006"	Suppressed	66002	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2007"	"2007"	Suppressed	66131	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2008"	"2008"	Suppressed	66539	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2009"	"2009"	Suppressed	66765	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2010"	"2010"	Suppressed	67077	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2011"	"2011"	Suppressed	67694	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2012"	"2012"	Suppressed	67906	Suppressed
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2013"	"2013"	12	67700	Unreliable
+	"Michigan"	"26"	"Marquette County, MI"	"26103"	"2014"	"2014"	Suppressed	67676	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2006"	"2006"	Suppressed	28846	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2007"	"2007"	Suppressed	28685	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2008"	"2008"	Suppressed	28668	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2009"	"2009"	0	28656	Unreliable
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2010"	"2010"	Suppressed	28705	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2011"	"2011"	Suppressed	28678	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2012"	"2012"	Suppressed	28680	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2013"	"2013"	Suppressed	28605	Suppressed
+	"Michigan"	"26"	"Mason County, MI"	"26105"	"2014"	"2014"	Suppressed	28824	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2006"	"2006"	Suppressed	42876	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2007"	"2007"	Suppressed	42640	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2008"	"2008"	Suppressed	42683	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2009"	"2009"	Suppressed	42621	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2010"	"2010"	Suppressed	42798	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2011"	"2011"	Suppressed	43300	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2012"	"2012"	Suppressed	43318	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2013"	"2013"	Suppressed	43108	Suppressed
+	"Michigan"	"26"	"Mecosta County, MI"	"26107"	"2014"	"2014"	Suppressed	43186	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2006"	"2006"	Suppressed	24472	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2007"	"2007"	Suppressed	24322	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2008"	"2008"	0	24317	Unreliable
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2009"	"2009"	Suppressed	24118	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2010"	"2010"	0	24029	Unreliable
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2011"	"2011"	Suppressed	23930	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2012"	"2012"	Suppressed	23815	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2013"	"2013"	Suppressed	23791	Suppressed
+	"Michigan"	"26"	"Menominee County, MI"	"26109"	"2014"	"2014"	Suppressed	23714	Suppressed
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2006"	"2006"	12	83693	Unreliable
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2007"	"2007"	Suppressed	83600	Suppressed
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2008"	"2008"	Suppressed	83605	Suppressed
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2009"	"2009"	11	83639	Unreliable
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2010"	"2010"	Suppressed	83629	Suppressed
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2011"	"2011"	11	84063	Unreliable
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2012"	"2012"	12	83822	Unreliable
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2013"	"2013"	Suppressed	83919	Suppressed
+	"Michigan"	"26"	"Midland County, MI"	"26111"	"2014"	"2014"	Suppressed	83427	Suppressed
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2006"	"2006"	Suppressed	15043	Suppressed
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2007"	"2007"	0	15009	Unreliable
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2008"	"2008"	Suppressed	15028	Suppressed
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2009"	"2009"	Suppressed	14898	Suppressed
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2010"	"2010"	0	14849	Unreliable
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2011"	"2011"	Suppressed	14911	Suppressed
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2012"	"2012"	0	15031	Unreliable
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2013"	"2013"	0	15051	Unreliable
+	"Michigan"	"26"	"Missaukee County, MI"	"26113"	"2014"	"2014"	0	15037	Unreliable
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2006"	"2006"	15	153460	Unreliable
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2007"	"2007"	30	153424	19.6
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2008"	"2008"	24	152806	15.7
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2009"	"2009"	21	152296	13.8
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2010"	"2010"	21	152021	13.8
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2011"	"2011"	20	151560	13.2
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2012"	"2012"	42	151048	27.8
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2013"	"2013"	40	150376	26.6
+	"Michigan"	"26"	"Monroe County, MI"	"26115"	"2014"	"2014"	37	149824	24.7
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2006"	"2006"	Suppressed	63806	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2007"	"2007"	Suppressed	63560	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2008"	"2008"	Suppressed	63635	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2009"	"2009"	Suppressed	63496	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2010"	"2010"	Suppressed	63342	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2011"	"2011"	Suppressed	63185	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2012"	"2012"	Suppressed	63097	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2013"	"2013"	Suppressed	63105	Suppressed
+	"Michigan"	"26"	"Montcalm County, MI"	"26117"	"2014"	"2014"	Suppressed	62893	Suppressed
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2006"	"2006"	0	10125	Unreliable
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2007"	"2007"	Suppressed	9996	Suppressed
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2008"	"2008"	0	9922	Unreliable
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2009"	"2009"	Suppressed	9794	Suppressed
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2010"	"2010"	Suppressed	9765	Suppressed
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2011"	"2011"	0	9653	Unreliable
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2012"	"2012"	Suppressed	9476	Suppressed
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2013"	"2013"	0	9350	Unreliable
+	"Michigan"	"26"	"Montmorency County, MI"	"26119"	"2014"	"2014"	Suppressed	9300	Suppressed
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2006"	"2006"	17	173710	Unreliable
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2007"	"2007"	33	173738	19.0
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2008"	"2008"	23	173846	13.2
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2009"	"2009"	31	172755	17.9
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2010"	"2010"	39	172188	22.6
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2011"	"2011"	31	171302	18.1
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2012"	"2012"	21	170182	12.3
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2013"	"2013"	35	171008	20.5
+	"Michigan"	"26"	"Muskegon County, MI"	"26121"	"2014"	"2014"	52	172344	30.2
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2006"	"2006"	Suppressed	49287	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2007"	"2007"	Suppressed	49328	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2008"	"2008"	Suppressed	49153	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2009"	"2009"	Suppressed	48649	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2010"	"2010"	10	48460	Unreliable
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2011"	"2011"	Suppressed	48352	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2012"	"2012"	Suppressed	47959	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2013"	"2013"	Suppressed	48001	Suppressed
+	"Michigan"	"26"	"Newaygo County, MI"	"26123"	"2014"	"2014"	Suppressed	47900	Suppressed
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2006"	"2006"	89	1202256	7.4
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2007"	"2007"	80	1199862	6.7
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2008"	"2008"	76	1199545	6.3
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2009"	"2009"	105	1200890	8.7
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2010"	"2010"	84	1202362	7.0
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2011"	"2011"	76	1210145	6.3
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2012"	"2012"	102	1220657	8.4
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2013"	"2013"	109	1231640	8.8
+	"Michigan"	"26"	"Oakland County, MI"	"26125"	"2014"	"2014"	129	1237868	10.4
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2006"	"2006"	Suppressed	27484	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2007"	"2007"	Suppressed	27251	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2008"	"2008"	Suppressed	27120	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2009"	"2009"	Suppressed	26779	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2010"	"2010"	Suppressed	26570	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2011"	"2011"	Suppressed	26523	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2012"	"2012"	Suppressed	26310	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2013"	"2013"	Suppressed	26245	Suppressed
+	"Michigan"	"26"	"Oceana County, MI"	"26127"	"2014"	"2014"	Suppressed	26221	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2006"	"2006"	Suppressed	22003	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2007"	"2007"	Suppressed	21941	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2008"	"2008"	Suppressed	21885	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2009"	"2009"	Suppressed	21856	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2010"	"2010"	Suppressed	21699	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2011"	"2011"	Suppressed	21570	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2012"	"2012"	Suppressed	21437	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2013"	"2013"	Suppressed	21234	Suppressed
+	"Michigan"	"26"	"Ogemaw County, MI"	"26129"	"2014"	"2014"	Suppressed	21039	Suppressed
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2006"	"2006"	Suppressed	7241	Suppressed
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2007"	"2007"	Suppressed	7133	Suppressed
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2008"	"2008"	Suppressed	6922	Suppressed
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2009"	"2009"	0	6828	Unreliable
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2010"	"2010"	0	6780	Unreliable
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2011"	"2011"	Suppressed	6598	Suppressed
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2012"	"2012"	0	6413	Unreliable
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2013"	"2013"	0	6322	Unreliable
+	"Michigan"	"26"	"Ontonagon County, MI"	"26131"	"2014"	"2014"	0	6172	Unreliable
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2006"	"2006"	Suppressed	23887	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2007"	"2007"	Suppressed	23827	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2008"	"2008"	Suppressed	23662	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2009"	"2009"	Suppressed	23522	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2010"	"2010"	0	23528	Unreliable
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2011"	"2011"	Suppressed	23510	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2012"	"2012"	Suppressed	23276	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2013"	"2013"	Suppressed	23259	Suppressed
+	"Michigan"	"26"	"Osceola County, MI"	"26133"	"2014"	"2014"	Suppressed	23169	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2006"	"2006"	Suppressed	9090	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2007"	"2007"	Suppressed	9039	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2008"	"2008"	Suppressed	8963	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2009"	"2009"	Suppressed	8717	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2010"	"2010"	Suppressed	8640	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2011"	"2011"	Suppressed	8608	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2012"	"2012"	Suppressed	8592	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2013"	"2013"	Suppressed	8379	Suppressed
+	"Michigan"	"26"	"Oscoda County, MI"	"26135"	"2014"	"2014"	Suppressed	8371	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2006"	"2006"	Suppressed	24805	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2007"	"2007"	Suppressed	24719	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2008"	"2008"	Suppressed	24378	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2009"	"2009"	Suppressed	24190	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2010"	"2010"	Suppressed	24164	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2011"	"2011"	Suppressed	24078	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2012"	"2012"	Suppressed	24020	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2013"	"2013"	Suppressed	24129	Suppressed
+	"Michigan"	"26"	"Otsego County, MI"	"26137"	"2014"	"2014"	Suppressed	24158	Suppressed
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2006"	"2006"	19	258003	Unreliable
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2007"	"2007"	29	260037	11.2
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2008"	"2008"	21	261906	8.0
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2009"	"2009"	30	262879	11.4
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2010"	"2010"	22	263801	8.3
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2011"	"2011"	30	266300	11.3
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2012"	"2012"	21	269099	7.8
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2013"	"2013"	24	272701	8.8
+	"Michigan"	"26"	"Ottawa County, MI"	"26139"	"2014"	"2014"	31	276292	11.2
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2006"	"2006"	Suppressed	14006	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2007"	"2007"	Suppressed	13942	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2008"	"2008"	Suppressed	13701	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2009"	"2009"	Suppressed	13505	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2010"	"2010"	Suppressed	13376	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2011"	"2011"	Suppressed	13155	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2012"	"2012"	Suppressed	13129	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2013"	"2013"	Suppressed	13062	Suppressed
+	"Michigan"	"26"	"Presque Isle County, MI"	"26141"	"2014"	"2014"	Suppressed	13004	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2006"	"2006"	Suppressed	25560	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2007"	"2007"	10	25318	Unreliable
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2008"	"2008"	Suppressed	24856	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2009"	"2009"	Suppressed	24499	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2010"	"2010"	Suppressed	24449	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2011"	"2011"	Suppressed	24414	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2012"	"2012"	Suppressed	24106	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2013"	"2013"	Suppressed	24014	Suppressed
+	"Michigan"	"26"	"Roscommon County, MI"	"26143"	"2014"	"2014"	Suppressed	23955	Suppressed
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2006"	"2006"	27	205822	13.1
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2007"	"2007"	28	203144	13.8
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2008"	"2008"	32	201966	15.8
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2009"	"2009"	28	200835	13.9
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2010"	"2010"	24	200169	12.0
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2011"	"2011"	29	199088	14.6
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2012"	"2012"	23	198353	11.6
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2013"	"2013"	31	196542	15.8
+	"Michigan"	"26"	"Saginaw County, MI"	"26145"	"2014"	"2014"	41	195012	21.0
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2006"	"2006"	22	168312	13.1
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2007"	"2007"	23	167526	13.7
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2008"	"2008"	32	165959	19.3
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2009"	"2009"	47	164011	28.7
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2010"	"2010"	46	163040	28.2
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2011"	"2011"	38	161642	23.5
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2012"	"2012"	28	160644	17.4
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2013"	"2013"	39	160469	24.3
+	"Michigan"	"26"	"St. Clair County, MI"	"26147"	"2014"	"2014"	44	160078	27.5
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2006"	"2006"	Suppressed	62236	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2007"	"2007"	Suppressed	62243	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2008"	"2008"	Suppressed	62083	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2009"	"2009"	Suppressed	61417	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2010"	"2010"	Suppressed	61295	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2011"	"2011"	Suppressed	61136	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2012"	"2012"	Suppressed	60796	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2013"	"2013"	Suppressed	60964	Suppressed
+	"Michigan"	"26"	"St. Joseph County, MI"	"26149"	"2014"	"2014"	Suppressed	60946	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2006"	"2006"	Suppressed	44917	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2007"	"2007"	Suppressed	44629	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2008"	"2008"	Suppressed	44177	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2009"	"2009"	Suppressed	43319	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2010"	"2010"	Suppressed	43114	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2011"	"2011"	Suppressed	42605	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2012"	"2012"	Suppressed	42268	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2013"	"2013"	Suppressed	41823	Suppressed
+	"Michigan"	"26"	"Sanilac County, MI"	"26151"	"2014"	"2014"	Suppressed	41587	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2006"	"2006"	Suppressed	8946	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2007"	"2007"	Suppressed	8823	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2008"	"2008"	Suppressed	8471	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2009"	"2009"	Suppressed	8487	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2010"	"2010"	0	8485	Unreliable
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2011"	"2011"	Suppressed	8490	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2012"	"2012"	Suppressed	8343	Suppressed
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2013"	"2013"	0	8247	Unreliable
+	"Michigan"	"26"	"Schoolcraft County, MI"	"26153"	"2014"	"2014"	0	8171	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2006"	"2006"	Suppressed	72839	Suppressed
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2007"	"2007"	14	72426	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2008"	"2008"	16	71523	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2009"	"2009"	16	70710	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2010"	"2010"	19	70648	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2011"	"2011"	15	69841	Unreliable
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2012"	"2012"	Suppressed	69232	Suppressed
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2013"	"2013"	Suppressed	68900	Suppressed
+	"Michigan"	"26"	"Shiawassee County, MI"	"26155"	"2014"	"2014"	Suppressed	68933	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2006"	"2006"	Suppressed	57472	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2007"	"2007"	Suppressed	57169	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2008"	"2008"	Suppressed	56512	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2009"	"2009"	Suppressed	55901	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2010"	"2010"	Suppressed	55729	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2011"	"2011"	Suppressed	55422	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2012"	"2012"	Suppressed	54662	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2013"	"2013"	Suppressed	54263	Suppressed
+	"Michigan"	"26"	"Tuscola County, MI"	"26157"	"2014"	"2014"	Suppressed	54000	Suppressed
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2006"	"2006"	Suppressed	77019	Suppressed
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2007"	"2007"	13	76639	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2008"	"2008"	17	76501	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2009"	"2009"	13	76581	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2010"	"2010"	18	76258	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2011"	"2011"	12	76131	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2012"	"2012"	12	75454	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2013"	"2013"	15	75455	Unreliable
+	"Michigan"	"26"	"Van Buren County, MI"	"26159"	"2014"	"2014"	11	75199	Unreliable
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2006"	"2006"	28	344018	8.1
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2007"	"2007"	26	345310	7.5
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2008"	"2008"	29	341595	8.5
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2009"	"2009"	31	343520	9.0
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2010"	"2010"	44	344791	12.8
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2011"	"2011"	36	347962	10.3
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2012"	"2012"	35	350946	10.0
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2013"	"2013"	52	354240	14.7
+	"Michigan"	"26"	"Washtenaw County, MI"	"26161"	"2014"	"2014"	65	356874	18.2
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2006"	"2006"	328	1932490	17.0
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2007"	"2007"	279	1900992	14.7
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2008"	"2008"	269	1865058	14.4
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2009"	"2009"	306	1837536	16.7
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2010"	"2010"	272	1820584	14.9
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2011"	"2011"	278	1802096	15.4
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2012"	"2012"	296	1792365	16.5
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2013"	"2013"	386	1775273	21.7
+	"Michigan"	"26"	"Wayne County, MI"	"26163"	"2014"	"2014"	457	1764804	25.9
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2006"	"2006"	Suppressed	32461	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2007"	"2007"	Suppressed	32650	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2008"	"2008"	Suppressed	32765	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2009"	"2009"	Suppressed	32658	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2010"	"2010"	Suppressed	32735	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2011"	"2011"	Suppressed	32718	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2012"	"2012"	Suppressed	32608	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2013"	"2013"	Suppressed	32645	Suppressed
+	"Michigan"	"26"	"Wexford County, MI"	"26165"	"2014"	"2014"	Suppressed	32886	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Michigan (26)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:35:39 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:35:39 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

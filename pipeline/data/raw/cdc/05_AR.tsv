@@ -1,0 +1,732 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2006"	"2006"	Suppressed	19785	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2007"	"2007"	Suppressed	19434	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2008"	"2008"	0	19275	Unreliable
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2009"	"2009"	Suppressed	19134	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2010"	"2010"	Suppressed	19019	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2011"	"2011"	Suppressed	18892	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2012"	"2012"	Suppressed	18892	Suppressed
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2013"	"2013"	0	18777	Unreliable
+	"Arkansas"	"05"	"Arkansas County, AR"	"05001"	"2014"	"2014"	Suppressed	18594	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2006"	"2006"	0	22501	Unreliable
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2007"	"2007"	0	22229	Unreliable
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2008"	"2008"	Suppressed	22148	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2009"	"2009"	Suppressed	21920	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2010"	"2010"	Suppressed	21853	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2011"	"2011"	Suppressed	21692	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2012"	"2012"	Suppressed	21524	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2013"	"2013"	Suppressed	21283	Suppressed
+	"Arkansas"	"05"	"Ashley County, AR"	"05003"	"2014"	"2014"	Suppressed	20948	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2006"	"2006"	Suppressed	40867	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2007"	"2007"	Suppressed	41491	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2008"	"2008"	Suppressed	41519	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2009"	"2009"	Suppressed	41561	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2010"	"2010"	Suppressed	41513	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2011"	"2011"	Suppressed	41536	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2012"	"2012"	Suppressed	41048	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2013"	"2013"	Suppressed	40957	Suppressed
+	"Arkansas"	"05"	"Baxter County, AR"	"05005"	"2014"	"2014"	11	40857	Unreliable
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2006"	"2006"	19	195569	Unreliable
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2007"	"2007"	19	203664	Unreliable
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2008"	"2008"	27	210807	12.8
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2009"	"2009"	29	216620	13.4
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2010"	"2010"	31	221339	14.0
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2011"	"2011"	28	227556	12.3
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2012"	"2012"	30	232268	12.9
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2013"	"2013"	22	237297	9.3
+	"Arkansas"	"05"	"Benton County, AR"	"05007"	"2014"	"2014"	35	242321	14.4
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2006"	"2006"	Suppressed	36056	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2007"	"2007"	Suppressed	36759	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2008"	"2008"	Suppressed	36974	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2009"	"2009"	Suppressed	36844	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2010"	"2010"	Suppressed	36903	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2011"	"2011"	Suppressed	37051	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2012"	"2012"	Suppressed	37327	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2013"	"2013"	Suppressed	37396	Suppressed
+	"Arkansas"	"05"	"Boone County, AR"	"05009"	"2014"	"2014"	Suppressed	37196	Suppressed
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2006"	"2006"	0	11778	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2007"	"2007"	Suppressed	11737	Suppressed
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2008"	"2008"	0	11643	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2009"	"2009"	0	11538	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2010"	"2010"	0	11508	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2011"	"2011"	Suppressed	11482	Suppressed
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2012"	"2012"	0	11397	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2013"	"2013"	0	11249	Unreliable
+	"Arkansas"	"05"	"Bradley County, AR"	"05011"	"2014"	"2014"	0	11148	Unreliable
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2006"	"2006"	Suppressed	5693	Suppressed
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2007"	"2007"	0	5659	Unreliable
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2008"	"2008"	Suppressed	5528	Suppressed
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2009"	"2009"	0	5421	Unreliable
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2010"	"2010"	0	5368	Unreliable
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2011"	"2011"	0	5144	Unreliable
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2012"	"2012"	Suppressed	5307	Suppressed
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2013"	"2013"	Suppressed	5241	Suppressed
+	"Arkansas"	"05"	"Calhoun County, AR"	"05013"	"2014"	"2014"	Suppressed	5202	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2006"	"2006"	Suppressed	26615	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2007"	"2007"	Suppressed	26699	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2008"	"2008"	Suppressed	26822	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2009"	"2009"	Suppressed	27158	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2010"	"2010"	Suppressed	27446	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2011"	"2011"	Suppressed	27512	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2012"	"2012"	Suppressed	27610	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2013"	"2013"	Suppressed	27808	Suppressed
+	"Arkansas"	"05"	"Carroll County, AR"	"05015"	"2014"	"2014"	Suppressed	27744	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2006"	"2006"	Suppressed	12516	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2007"	"2007"	Suppressed	12313	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2008"	"2008"	Suppressed	12050	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2009"	"2009"	Suppressed	11851	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2010"	"2010"	0	11800	Unreliable
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2011"	"2011"	0	11721	Unreliable
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2012"	"2012"	Suppressed	11433	Suppressed
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2013"	"2013"	0	11335	Unreliable
+	"Arkansas"	"05"	"Chicot County, AR"	"05017"	"2014"	"2014"	0	11180	Unreliable
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2006"	"2006"	Suppressed	22924	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2007"	"2007"	Suppressed	23139	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2008"	"2008"	Suppressed	23272	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2009"	"2009"	Suppressed	23100	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2010"	"2010"	Suppressed	22995	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2011"	"2011"	0	22858	Unreliable
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2012"	"2012"	Suppressed	22936	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2013"	"2013"	Suppressed	22743	Suppressed
+	"Arkansas"	"05"	"Clark County, AR"	"05019"	"2014"	"2014"	Suppressed	22576	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2006"	"2006"	Suppressed	16679	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2007"	"2007"	Suppressed	16464	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2008"	"2008"	0	16209	Unreliable
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2009"	"2009"	0	16056	Unreliable
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2010"	"2010"	0	16083	Unreliable
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2011"	"2011"	Suppressed	15880	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2012"	"2012"	Suppressed	15684	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2013"	"2013"	Suppressed	15402	Suppressed
+	"Arkansas"	"05"	"Clay County, AR"	"05021"	"2014"	"2014"	Suppressed	15118	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2006"	"2006"	Suppressed	25430	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2007"	"2007"	0	25545	Unreliable
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2008"	"2008"	Suppressed	25623	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2009"	"2009"	Suppressed	25870	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2010"	"2010"	Suppressed	25970	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2011"	"2011"	Suppressed	25901	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2012"	"2012"	Suppressed	25808	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2013"	"2013"	Suppressed	25686	Suppressed
+	"Arkansas"	"05"	"Cleburne County, AR"	"05023"	"2014"	"2014"	Suppressed	25634	Suppressed
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2006"	"2006"	Suppressed	8829	Suppressed
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2007"	"2007"	0	8896	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2008"	"2008"	0	8775	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2009"	"2009"	0	8649	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2010"	"2010"	0	8689	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2011"	"2011"	Suppressed	8672	Suppressed
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2012"	"2012"	0	8627	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2013"	"2013"	0	8593	Unreliable
+	"Arkansas"	"05"	"Cleveland County, AR"	"05025"	"2014"	"2014"	Suppressed	8449	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2006"	"2006"	Suppressed	25133	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2007"	"2007"	Suppressed	24847	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2008"	"2008"	Suppressed	24666	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2009"	"2009"	Suppressed	24622	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2010"	"2010"	Suppressed	24552	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2011"	"2011"	Suppressed	24401	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2012"	"2012"	Suppressed	24473	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2013"	"2013"	Suppressed	24164	Suppressed
+	"Arkansas"	"05"	"Columbia County, AR"	"05027"	"2014"	"2014"	Suppressed	23933	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2006"	"2006"	Suppressed	20753	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2007"	"2007"	Suppressed	20992	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2008"	"2008"	Suppressed	21025	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2009"	"2009"	Suppressed	21257	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2010"	"2010"	Suppressed	21273	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2011"	"2011"	Suppressed	21270	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2012"	"2012"	Suppressed	21287	Suppressed
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2013"	"2013"	0	21245	Unreliable
+	"Arkansas"	"05"	"Conway County, AR"	"05029"	"2014"	"2014"	Suppressed	21083	Suppressed
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2006"	"2006"	13	89725	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2007"	"2007"	Suppressed	91350	Suppressed
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2008"	"2008"	17	93316	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2009"	"2009"	20	95482	20.9
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2010"	"2010"	13	96443	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2011"	"2011"	13	98315	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2012"	"2012"	10	99735	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2013"	"2013"	19	101488	Unreliable
+	"Arkansas"	"05"	"Craighead County, AR"	"05031"	"2014"	"2014"	Suppressed	102518	Suppressed
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2006"	"2006"	Suppressed	59126	Suppressed
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2007"	"2007"	14	60210	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2008"	"2008"	12	60933	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2009"	"2009"	19	61595	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2010"	"2010"	13	61948	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2011"	"2011"	19	61944	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2012"	"2012"	Suppressed	61946	Suppressed
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2013"	"2013"	12	61640	Unreliable
+	"Arkansas"	"05"	"Crawford County, AR"	"05033"	"2014"	"2014"	10	61697	Unreliable
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2006"	"2006"	Suppressed	50360	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2007"	"2007"	Suppressed	50438	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2008"	"2008"	Suppressed	50699	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2009"	"2009"	Suppressed	50929	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2010"	"2010"	Suppressed	50902	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2011"	"2011"	Suppressed	50525	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2012"	"2012"	Suppressed	50021	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2013"	"2013"	Suppressed	49746	Suppressed
+	"Arkansas"	"05"	"Crittenden County, AR"	"05035"	"2014"	"2014"	Suppressed	49548	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2006"	"2006"	0	18525	Unreliable
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2007"	"2007"	Suppressed	18172	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2008"	"2008"	Suppressed	18200	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2009"	"2009"	Suppressed	17971	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2010"	"2010"	0	17870	Unreliable
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2011"	"2011"	Suppressed	17781	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2012"	"2012"	Suppressed	17683	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2013"	"2013"	Suppressed	17548	Suppressed
+	"Arkansas"	"05"	"Cross County, AR"	"05037"	"2014"	"2014"	Suppressed	17227	Suppressed
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2006"	"2006"	Suppressed	8477	Suppressed
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2007"	"2007"	0	8367	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2008"	"2008"	0	8282	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2009"	"2009"	0	8188	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2010"	"2010"	0	8116	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2011"	"2011"	0	8072	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2012"	"2012"	Suppressed	7987	Suppressed
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2013"	"2013"	0	7933	Unreliable
+	"Arkansas"	"05"	"Dallas County, AR"	"05039"	"2014"	"2014"	0	7755	Unreliable
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2006"	"2006"	Suppressed	13870	Suppressed
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2007"	"2007"	0	13523	Unreliable
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2008"	"2008"	Suppressed	13273	Suppressed
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2009"	"2009"	Suppressed	13108	Suppressed
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2010"	"2010"	0	13008	Unreliable
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2011"	"2011"	0	12763	Unreliable
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2012"	"2012"	0	12545	Unreliable
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2013"	"2013"	Suppressed	12505	Suppressed
+	"Arkansas"	"05"	"Desha County, AR"	"05041"	"2014"	"2014"	0	12264	Unreliable
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2006"	"2006"	Suppressed	18705	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2007"	"2007"	Suppressed	18535	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2008"	"2008"	Suppressed	18481	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2009"	"2009"	Suppressed	18495	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2010"	"2010"	Suppressed	18509	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2011"	"2011"	Suppressed	18467	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2012"	"2012"	0	18743	Unreliable
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2013"	"2013"	Suppressed	18785	Suppressed
+	"Arkansas"	"05"	"Drew County, AR"	"05043"	"2014"	"2014"	Suppressed	18622	Suppressed
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2006"	"2006"	11	102969	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2007"	"2007"	10	105637	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2008"	"2008"	15	108477	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2009"	"2009"	13	110813	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2010"	"2010"	16	113237	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2011"	"2011"	14	116342	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2012"	"2012"	15	118704	Unreliable
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2013"	"2013"	Suppressed	119580	Suppressed
+	"Arkansas"	"05"	"Faulkner County, AR"	"05045"	"2014"	"2014"	16	120768	Unreliable
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2006"	"2006"	Suppressed	18151	Suppressed
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2007"	"2007"	0	18237	Unreliable
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2008"	"2008"	0	18229	Unreliable
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2009"	"2009"	Suppressed	18145	Suppressed
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2010"	"2010"	0	18125	Unreliable
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2011"	"2011"	Suppressed	18047	Suppressed
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2012"	"2012"	Suppressed	18045	Suppressed
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2013"	"2013"	Suppressed	18034	Suppressed
+	"Arkansas"	"05"	"Franklin County, AR"	"05047"	"2014"	"2014"	Suppressed	17805	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2006"	"2006"	Suppressed	12119	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2007"	"2007"	Suppressed	12354	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2008"	"2008"	0	12382	Unreliable
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2009"	"2009"	Suppressed	12231	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2010"	"2010"	Suppressed	12245	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2011"	"2011"	Suppressed	12296	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2012"	"2012"	Suppressed	12318	Suppressed
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2013"	"2013"	0	12304	Unreliable
+	"Arkansas"	"05"	"Fulton County, AR"	"05049"	"2014"	"2014"	0	12125	Unreliable
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2006"	"2006"	16	94077	Unreliable
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2007"	"2007"	22	94753	23.2
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2008"	"2008"	23	95636	24.0
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2009"	"2009"	19	95840	Unreliable
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2010"	"2010"	28	96024	29.2
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2011"	"2011"	21	97124	21.6
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2012"	"2012"	24	96903	24.8
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2013"	"2013"	22	97173	22.6
+	"Arkansas"	"05"	"Garland County, AR"	"05051"	"2014"	"2014"	26	97322	26.7
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2006"	"2006"	Suppressed	17442	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2007"	"2007"	0	17483	Unreliable
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2008"	"2008"	Suppressed	17718	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2009"	"2009"	Suppressed	17751	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2010"	"2010"	Suppressed	17853	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2011"	"2011"	Suppressed	17988	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2012"	"2012"	Suppressed	17986	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2013"	"2013"	Suppressed	18019	Suppressed
+	"Arkansas"	"05"	"Grant County, AR"	"05053"	"2014"	"2014"	Suppressed	18144	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2006"	"2006"	Suppressed	40469	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2007"	"2007"	Suppressed	40918	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2008"	"2008"	Suppressed	41286	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2009"	"2009"	Suppressed	41723	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2010"	"2010"	Suppressed	42090	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2011"	"2011"	Suppressed	42720	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2012"	"2012"	Suppressed	43163	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2013"	"2013"	Suppressed	43097	Suppressed
+	"Arkansas"	"05"	"Greene County, AR"	"05055"	"2014"	"2014"	Suppressed	43694	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2006"	"2006"	Suppressed	22957	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2007"	"2007"	0	22918	Unreliable
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2008"	"2008"	Suppressed	22624	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2009"	"2009"	Suppressed	22615	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2010"	"2010"	Suppressed	22609	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2011"	"2011"	Suppressed	22541	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2012"	"2012"	Suppressed	22373	Suppressed
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2013"	"2013"	0	22474	Unreliable
+	"Arkansas"	"05"	"Hempstead County, AR"	"05057"	"2014"	"2014"	Suppressed	22327	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2006"	"2006"	Suppressed	32248	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2007"	"2007"	Suppressed	32631	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2008"	"2008"	Suppressed	32737	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2009"	"2009"	Suppressed	32797	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2010"	"2010"	Suppressed	32923	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2011"	"2011"	Suppressed	32881	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2012"	"2012"	Suppressed	33394	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2013"	"2013"	Suppressed	33500	Suppressed
+	"Arkansas"	"05"	"Hot Spring County, AR"	"05059"	"2014"	"2014"	Suppressed	33368	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2006"	"2006"	0	13843	Unreliable
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2007"	"2007"	Suppressed	13680	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2008"	"2008"	Suppressed	13804	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2009"	"2009"	0	13741	Unreliable
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2010"	"2010"	0	13789	Unreliable
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2011"	"2011"	Suppressed	13886	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2012"	"2012"	Suppressed	13735	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2013"	"2013"	Suppressed	13581	Suppressed
+	"Arkansas"	"05"	"Howard County, AR"	"05061"	"2014"	"2014"	Suppressed	13500	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2006"	"2006"	Suppressed	35426	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2007"	"2007"	Suppressed	35690	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2008"	"2008"	Suppressed	35859	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2009"	"2009"	Suppressed	36259	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2010"	"2010"	Suppressed	36647	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2011"	"2011"	Suppressed	36861	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2012"	"2012"	Suppressed	37025	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2013"	"2013"	Suppressed	36997	Suppressed
+	"Arkansas"	"05"	"Independence County, AR"	"05063"	"2014"	"2014"	Suppressed	36959	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2006"	"2006"	Suppressed	13583	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2007"	"2007"	Suppressed	13552	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2008"	"2008"	Suppressed	13681	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2009"	"2009"	Suppressed	13679	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2010"	"2010"	Suppressed	13696	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2011"	"2011"	0	13419	Unreliable
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2012"	"2012"	Suppressed	13474	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2013"	"2013"	Suppressed	13368	Suppressed
+	"Arkansas"	"05"	"Izard County, AR"	"05065"	"2014"	"2014"	Suppressed	13486	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2006"	"2006"	0	18092	Unreliable
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2007"	"2007"	Suppressed	18098	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2008"	"2008"	Suppressed	17966	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2009"	"2009"	Suppressed	17945	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2010"	"2010"	Suppressed	17997	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2011"	"2011"	Suppressed	17866	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2012"	"2012"	Suppressed	17600	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2013"	"2013"	Suppressed	17615	Suppressed
+	"Arkansas"	"05"	"Jackson County, AR"	"05067"	"2014"	"2014"	Suppressed	17534	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2006"	"2006"	Suppressed	79977	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2007"	"2007"	Suppressed	78788	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2008"	"2008"	Suppressed	78354	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2009"	"2009"	0	77759	Unreliable
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2010"	"2010"	Suppressed	77435	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2011"	"2011"	Suppressed	76246	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2012"	"2012"	Suppressed	74723	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2013"	"2013"	Suppressed	73191	Suppressed
+	"Arkansas"	"05"	"Jefferson County, AR"	"05069"	"2014"	"2014"	Suppressed	72297	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2006"	"2006"	0	24596	Unreliable
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2007"	"2007"	Suppressed	25109	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2008"	"2008"	Suppressed	25236	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2009"	"2009"	Suppressed	25374	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2010"	"2010"	Suppressed	25540	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2011"	"2011"	Suppressed	25742	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2012"	"2012"	Suppressed	25901	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2013"	"2013"	Suppressed	25846	Suppressed
+	"Arkansas"	"05"	"Johnson County, AR"	"05071"	"2014"	"2014"	Suppressed	26005	Suppressed
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2006"	"2006"	0	7879	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2007"	"2007"	0	7845	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2008"	"2008"	0	7806	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2009"	"2009"	0	7654	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2010"	"2010"	0	7645	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2011"	"2011"	Suppressed	7516	Suppressed
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2012"	"2012"	0	7447	Unreliable
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2013"	"2013"	Suppressed	7252	Suppressed
+	"Arkansas"	"05"	"Lafayette County, AR"	"05073"	"2014"	"2014"	0	7111	Unreliable
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2006"	"2006"	Suppressed	17193	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2007"	"2007"	Suppressed	17286	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2008"	"2008"	Suppressed	17460	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2009"	"2009"	0	17336	Unreliable
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2010"	"2010"	Suppressed	17415	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2011"	"2011"	Suppressed	17178	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2012"	"2012"	Suppressed	17012	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2013"	"2013"	Suppressed	17011	Suppressed
+	"Arkansas"	"05"	"Lawrence County, AR"	"05075"	"2014"	"2014"	Suppressed	16931	Suppressed
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2006"	"2006"	Suppressed	11067	Suppressed
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2007"	"2007"	0	10823	Unreliable
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2008"	"2008"	Suppressed	10786	Suppressed
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2009"	"2009"	0	10458	Unreliable
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2010"	"2010"	0	10424	Unreliable
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2011"	"2011"	0	10326	Unreliable
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2012"	"2012"	0	10216	Unreliable
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2013"	"2013"	Suppressed	10015	Suppressed
+	"Arkansas"	"05"	"Lee County, AR"	"05077"	"2014"	"2014"	0	9860	Unreliable
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2006"	"2006"	Suppressed	14315	Suppressed
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2007"	"2007"	Suppressed	14237	Suppressed
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2008"	"2008"	0	14176	Unreliable
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2009"	"2009"	0	14185	Unreliable
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2010"	"2010"	Suppressed	14134	Suppressed
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2011"	"2011"	0	14006	Unreliable
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2012"	"2012"	Suppressed	14101	Suppressed
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2013"	"2013"	0	14031	Unreliable
+	"Arkansas"	"05"	"Lincoln County, AR"	"05079"	"2014"	"2014"	Suppressed	13970	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2006"	"2006"	Suppressed	13147	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2007"	"2007"	Suppressed	13107	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2008"	"2008"	Suppressed	13099	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2009"	"2009"	Suppressed	13228	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2010"	"2010"	Suppressed	13171	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2011"	"2011"	Suppressed	12996	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2012"	"2012"	Suppressed	12919	Suppressed
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2013"	"2013"	0	12730	Unreliable
+	"Arkansas"	"05"	"Little River County, AR"	"05081"	"2014"	"2014"	Suppressed	12532	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2006"	"2006"	0	22689	Unreliable
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2007"	"2007"	Suppressed	22758	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2008"	"2008"	Suppressed	22699	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2009"	"2009"	Suppressed	22429	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2010"	"2010"	Suppressed	22353	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2011"	"2011"	Suppressed	22290	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2012"	"2012"	Suppressed	21983	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2013"	"2013"	Suppressed	22082	Suppressed
+	"Arkansas"	"05"	"Logan County, AR"	"05083"	"2014"	"2014"	Suppressed	21958	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2006"	"2006"	Suppressed	62648	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2007"	"2007"	Suppressed	64379	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2008"	"2008"	10	66086	Unreliable
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2009"	"2009"	Suppressed	67481	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2010"	"2010"	16	68356	Unreliable
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2011"	"2011"	Suppressed	69341	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2012"	"2012"	Suppressed	69839	Suppressed
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2013"	"2013"	13	70753	Unreliable
+	"Arkansas"	"05"	"Lonoke County, AR"	"05085"	"2014"	"2014"	14	71557	Unreliable
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2006"	"2006"	Suppressed	15156	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2007"	"2007"	0	15353	Unreliable
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2008"	"2008"	Suppressed	15619	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2009"	"2009"	Suppressed	15673	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2010"	"2010"	0	15717	Unreliable
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2011"	"2011"	Suppressed	15776	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2012"	"2012"	Suppressed	15645	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2013"	"2013"	Suppressed	15701	Suppressed
+	"Arkansas"	"05"	"Madison County, AR"	"05087"	"2014"	"2014"	Suppressed	15740	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2006"	"2006"	Suppressed	16759	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2007"	"2007"	Suppressed	16795	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2008"	"2008"	Suppressed	16996	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2009"	"2009"	Suppressed	16721	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2010"	"2010"	0	16653	Unreliable
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2011"	"2011"	Suppressed	16573	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2012"	"2012"	Suppressed	16568	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2013"	"2013"	Suppressed	16430	Suppressed
+	"Arkansas"	"05"	"Marion County, AR"	"05089"	"2014"	"2014"	Suppressed	16367	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2006"	"2006"	Suppressed	42669	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2007"	"2007"	Suppressed	42710	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2008"	"2008"	Suppressed	43047	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2009"	"2009"	Suppressed	43284	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2010"	"2010"	Suppressed	43462	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2011"	"2011"	Suppressed	43759	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2012"	"2012"	Suppressed	43634	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2013"	"2013"	Suppressed	43402	Suppressed
+	"Arkansas"	"05"	"Miller County, AR"	"05091"	"2014"	"2014"	Suppressed	43428	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2006"	"2006"	Suppressed	46983	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2007"	"2007"	Suppressed	46850	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2008"	"2008"	Suppressed	47037	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2009"	"2009"	Suppressed	46857	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2010"	"2010"	Suppressed	46480	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2011"	"2011"	Suppressed	45966	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2012"	"2012"	Suppressed	45562	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2013"	"2013"	Suppressed	44765	Suppressed
+	"Arkansas"	"05"	"Mississippi County, AR"	"05093"	"2014"	"2014"	Suppressed	44235	Suppressed
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2006"	"2006"	0	8949	Unreliable
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2007"	"2007"	Suppressed	8670	Suppressed
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2008"	"2008"	0	8456	Unreliable
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2009"	"2009"	0	8286	Unreliable
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2010"	"2010"	Suppressed	8149	Suppressed
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2011"	"2011"	Suppressed	8075	Suppressed
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2012"	"2012"	0	7828	Unreliable
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2013"	"2013"	Suppressed	7682	Suppressed
+	"Arkansas"	"05"	"Monroe County, AR"	"05095"	"2014"	"2014"	0	7582	Unreliable
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2006"	"2006"	Suppressed	9437	Suppressed
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2007"	"2007"	Suppressed	9478	Suppressed
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2008"	"2008"	0	9573	Unreliable
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2009"	"2009"	0	9490	Unreliable
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2010"	"2010"	Suppressed	9487	Suppressed
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2011"	"2011"	Suppressed	9433	Suppressed
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2012"	"2012"	Suppressed	9340	Suppressed
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2013"	"2013"	0	9226	Unreliable
+	"Arkansas"	"05"	"Montgomery County, AR"	"05097"	"2014"	"2014"	0	9082	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2006"	"2006"	Suppressed	9383	Suppressed
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2007"	"2007"	0	9267	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2008"	"2008"	0	9062	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2009"	"2009"	Suppressed	9058	Suppressed
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2010"	"2010"	0	8997	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2011"	"2011"	0	9017	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2012"	"2012"	Suppressed	8925	Suppressed
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2013"	"2013"	0	8799	Unreliable
+	"Arkansas"	"05"	"Nevada County, AR"	"05099"	"2014"	"2014"	Suppressed	8723	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2006"	"2006"	Suppressed	8474	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2007"	"2007"	Suppressed	8428	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2008"	"2008"	Suppressed	8423	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2009"	"2009"	Suppressed	8311	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2010"	"2010"	0	8330	Unreliable
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2011"	"2011"	Suppressed	8264	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2012"	"2012"	Suppressed	8086	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2013"	"2013"	Suppressed	8064	Suppressed
+	"Arkansas"	"05"	"Newton County, AR"	"05101"	"2014"	"2014"	0	7904	Unreliable
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2006"	"2006"	Suppressed	26656	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2007"	"2007"	Suppressed	26448	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2008"	"2008"	Suppressed	26202	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2009"	"2009"	Suppressed	26024	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2010"	"2010"	Suppressed	26120	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2011"	"2011"	Suppressed	25880	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2012"	"2012"	Suppressed	25396	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2013"	"2013"	Suppressed	25002	Suppressed
+	"Arkansas"	"05"	"Ouachita County, AR"	"05103"	"2014"	"2014"	Suppressed	24828	Suppressed
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2006"	"2006"	Suppressed	10352	Suppressed
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2007"	"2007"	Suppressed	10496	Suppressed
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2008"	"2008"	0	10441	Unreliable
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2009"	"2009"	0	10443	Unreliable
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2010"	"2010"	Suppressed	10445	Suppressed
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2011"	"2011"	0	10405	Unreliable
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2012"	"2012"	0	10339	Unreliable
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2013"	"2013"	Suppressed	10345	Suppressed
+	"Arkansas"	"05"	"Perry County, AR"	"05105"	"2014"	"2014"	0	10245	Unreliable
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2006"	"2006"	Suppressed	23244	Suppressed
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2007"	"2007"	Suppressed	22775	Suppressed
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2008"	"2008"	Suppressed	22411	Suppressed
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2009"	"2009"	Suppressed	21976	Suppressed
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2010"	"2010"	0	21757	Unreliable
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2011"	"2011"	0	21442	Unreliable
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2012"	"2012"	Suppressed	20784	Suppressed
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2013"	"2013"	0	20399	Unreliable
+	"Arkansas"	"05"	"Phillips County, AR"	"05107"	"2014"	"2014"	Suppressed	19930	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2006"	"2006"	Suppressed	11262	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2007"	"2007"	Suppressed	11342	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2008"	"2008"	Suppressed	11283	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2009"	"2009"	Suppressed	11260	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2010"	"2010"	Suppressed	11291	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2011"	"2011"	0	11259	Unreliable
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2012"	"2012"	Suppressed	11247	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2013"	"2013"	Suppressed	11177	Suppressed
+	"Arkansas"	"05"	"Pike County, AR"	"05109"	"2014"	"2014"	Suppressed	11024	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2006"	"2006"	Suppressed	24904	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2007"	"2007"	Suppressed	24813	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2008"	"2008"	Suppressed	24599	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2009"	"2009"	Suppressed	24632	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2010"	"2010"	Suppressed	24583	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2011"	"2011"	Suppressed	24514	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2012"	"2012"	Suppressed	24307	Suppressed
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2013"	"2013"	0	24145	Unreliable
+	"Arkansas"	"05"	"Poinsett County, AR"	"05111"	"2014"	"2014"	Suppressed	24246	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2006"	"2006"	Suppressed	20422	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2007"	"2007"	Suppressed	20377	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2008"	"2008"	Suppressed	20388	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2009"	"2009"	Suppressed	20583	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2010"	"2010"	Suppressed	20662	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2011"	"2011"	Suppressed	20610	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2012"	"2012"	Suppressed	20471	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2013"	"2013"	Suppressed	20406	Suppressed
+	"Arkansas"	"05"	"Polk County, AR"	"05113"	"2014"	"2014"	Suppressed	20225	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2006"	"2006"	Suppressed	58809	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2007"	"2007"	Suppressed	59793	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2008"	"2008"	Suppressed	60528	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2009"	"2009"	Suppressed	61302	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2010"	"2010"	10	61754	Unreliable
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2011"	"2011"	10	62331	Unreliable
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2012"	"2012"	Suppressed	62765	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2013"	"2013"	Suppressed	62547	Suppressed
+	"Arkansas"	"05"	"Pope County, AR"	"05115"	"2014"	"2014"	Suppressed	63201	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2006"	"2006"	Suppressed	8989	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2007"	"2007"	0	8951	Unreliable
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2008"	"2008"	0	8806	Unreliable
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2009"	"2009"	Suppressed	8754	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2010"	"2010"	Suppressed	8715	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2011"	"2011"	Suppressed	8618	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2012"	"2012"	Suppressed	8458	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2013"	"2013"	Suppressed	8374	Suppressed
+	"Arkansas"	"05"	"Prairie County, AR"	"05117"	"2014"	"2014"	0	8304	Unreliable
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2006"	"2006"	38	371647	10.2
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2007"	"2007"	33	373403	8.8
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2008"	"2008"	37	376567	9.8
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2009"	"2009"	39	380053	10.3
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2010"	"2010"	55	382748	14.4
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2011"	"2011"	41	386299	10.6
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2012"	"2012"	47	388953	12.1
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2013"	"2013"	55	391284	14.1
+	"Arkansas"	"05"	"Pulaski County, AR"	"05119"	"2014"	"2014"	54	392702	13.8
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2006"	"2006"	Suppressed	18185	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2007"	"2007"	Suppressed	18054	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2008"	"2008"	Suppressed	18072	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2009"	"2009"	Suppressed	17964	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2010"	"2010"	Suppressed	17969	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2011"	"2011"	Suppressed	18017	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2012"	"2012"	Suppressed	17930	Suppressed
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2013"	"2013"	0	17692	Unreliable
+	"Arkansas"	"05"	"Randolph County, AR"	"05121"	"2014"	"2014"	Suppressed	17571	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2006"	"2006"	0	28496	Unreliable
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2007"	"2007"	Suppressed	28394	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2008"	"2008"	Suppressed	28110	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2009"	"2009"	Suppressed	28336	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2010"	"2010"	0	28258	Unreliable
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2011"	"2011"	Suppressed	27970	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2012"	"2012"	Suppressed	27858	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2013"	"2013"	Suppressed	27260	Suppressed
+	"Arkansas"	"05"	"St. Francis County, AR"	"05123"	"2014"	"2014"	Suppressed	26899	Suppressed
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2006"	"2006"	17	96661	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2007"	"2007"	10	100043	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2008"	"2008"	17	102599	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2009"	"2009"	12	105362	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2010"	"2010"	Suppressed	107118	Suppressed
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2011"	"2011"	15	109526	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2012"	"2012"	17	111845	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2013"	"2013"	12	114404	Unreliable
+	"Arkansas"	"05"	"Saline County, AR"	"05125"	"2014"	"2014"	14	115719	Unreliable
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2006"	"2006"	0	11239	Unreliable
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2007"	"2007"	Suppressed	11287	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2008"	"2008"	0	11227	Unreliable
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2009"	"2009"	Suppressed	11097	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2010"	"2010"	Suppressed	11233	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2011"	"2011"	Suppressed	11272	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2012"	"2012"	Suppressed	11010	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2013"	"2013"	Suppressed	10950	Suppressed
+	"Arkansas"	"05"	"Scott County, AR"	"05127"	"2014"	"2014"	Suppressed	10693	Suppressed
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2006"	"2006"	Suppressed	8210	Suppressed
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2007"	"2007"	0	8275	Unreliable
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2008"	"2008"	0	8274	Unreliable
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2009"	"2009"	Suppressed	8190	Suppressed
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2010"	"2010"	0	8195	Unreliable
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2011"	"2011"	Suppressed	8036	Suppressed
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2012"	"2012"	0	8007	Unreliable
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2013"	"2013"	Suppressed	8023	Suppressed
+	"Arkansas"	"05"	"Searcy County, AR"	"05129"	"2014"	"2014"	Suppressed	7929	Suppressed
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2006"	"2006"	20	121492	16.5
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2007"	"2007"	29	122946	23.6
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2008"	"2008"	25	123762	20.2
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2009"	"2009"	23	125116	18.4
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2010"	"2010"	14	125744	Unreliable
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2011"	"2011"	18	127127	Unreliable
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2012"	"2012"	29	127304	22.8
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2013"	"2013"	12	127342	Unreliable
+	"Arkansas"	"05"	"Sebastian County, AR"	"05131"	"2014"	"2014"	15	126776	Unreliable
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2006"	"2006"	0	16273	Unreliable
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2007"	"2007"	Suppressed	16347	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2008"	"2008"	0	16606	Unreliable
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2009"	"2009"	Suppressed	16812	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2010"	"2010"	Suppressed	17058	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2011"	"2011"	Suppressed	17293	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2012"	"2012"	Suppressed	17177	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2013"	"2013"	Suppressed	17366	Suppressed
+	"Arkansas"	"05"	"Sevier County, AR"	"05133"	"2014"	"2014"	0	17426	Unreliable
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2006"	"2006"	Suppressed	17629	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2007"	"2007"	Suppressed	17506	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2008"	"2008"	Suppressed	17416	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2009"	"2009"	Suppressed	17373	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2010"	"2010"	Suppressed	17264	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2011"	"2011"	Suppressed	17380	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2012"	"2012"	Suppressed	17054	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2013"	"2013"	Suppressed	17049	Suppressed
+	"Arkansas"	"05"	"Sharp County, AR"	"05135"	"2014"	"2014"	Suppressed	16906	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2006"	"2006"	Suppressed	12262	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2007"	"2007"	Suppressed	12230	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2008"	"2008"	Suppressed	12370	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2009"	"2009"	Suppressed	12340	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2010"	"2010"	0	12394	Unreliable
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2011"	"2011"	0	12603	Unreliable
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2012"	"2012"	Suppressed	12663	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2013"	"2013"	Suppressed	12581	Suppressed
+	"Arkansas"	"05"	"Stone County, AR"	"05137"	"2014"	"2014"	Suppressed	12494	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2006"	"2006"	Suppressed	42914	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2007"	"2007"	Suppressed	42267	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2008"	"2008"	Suppressed	42222	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2009"	"2009"	Suppressed	41944	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2010"	"2010"	Suppressed	41639	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2011"	"2011"	Suppressed	41427	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2012"	"2012"	Suppressed	40867	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2013"	"2013"	Suppressed	40694	Suppressed
+	"Arkansas"	"05"	"Union County, AR"	"05139"	"2014"	"2014"	Suppressed	40227	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2006"	"2006"	Suppressed	17027	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2007"	"2007"	0	17226	Unreliable
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2008"	"2008"	Suppressed	17373	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2009"	"2009"	0	17293	Unreliable
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2010"	"2010"	Suppressed	17295	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2011"	"2011"	Suppressed	17083	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2012"	"2012"	0	17030	Unreliable
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2013"	"2013"	Suppressed	16932	Suppressed
+	"Arkansas"	"05"	"Van Buren County, AR"	"05141"	"2014"	"2014"	Suppressed	16851	Suppressed
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2006"	"2006"	21	190314	11.0
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2007"	"2007"	16	194526	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2008"	"2008"	11	197223	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2009"	"2009"	15	199774	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2010"	"2010"	14	203065	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2011"	"2011"	19	207521	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2012"	"2012"	16	211411	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2013"	"2013"	16	216410	Unreliable
+	"Arkansas"	"05"	"Washington County, AR"	"05143"	"2014"	"2014"	20	220792	9.1
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2006"	"2006"	Suppressed	72728	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2007"	"2007"	Suppressed	73573	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2008"	"2008"	Suppressed	74848	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2009"	"2009"	11	76284	Unreliable
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2010"	"2010"	Suppressed	77076	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2011"	"2011"	Suppressed	78167	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2012"	"2012"	Suppressed	78493	Suppressed
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2013"	"2013"	11	78483	Unreliable
+	"Arkansas"	"05"	"White County, AR"	"05145"	"2014"	"2014"	Suppressed	78592	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2006"	"2006"	0	7877	Unreliable
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2007"	"2007"	Suppressed	7648	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2008"	"2008"	Suppressed	7458	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2009"	"2009"	Suppressed	7294	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2010"	"2010"	0	7260	Unreliable
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2011"	"2011"	Suppressed	7229	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2012"	"2012"	0	7100	Unreliable
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2013"	"2013"	Suppressed	7072	Suppressed
+	"Arkansas"	"05"	"Woodruff County, AR"	"05147"	"2014"	"2014"	Suppressed	6910	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2006"	"2006"	Suppressed	21556	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2007"	"2007"	Suppressed	21633	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2008"	"2008"	Suppressed	21935	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2009"	"2009"	Suppressed	22145	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2010"	"2010"	Suppressed	22185	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2011"	"2011"	Suppressed	22060	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2012"	"2012"	Suppressed	21932	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2013"	"2013"	Suppressed	21893	Suppressed
+	"Arkansas"	"05"	"Yell County, AR"	"05149"	"2014"	"2014"	Suppressed	21951	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Arkansas (05)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:10:28 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:10:28 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

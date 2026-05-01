@@ -1,0 +1,192 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2006"	"2006"	Suppressed	69390	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2007"	"2007"	Suppressed	69602	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2008"	"2008"	Suppressed	69883	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2009"	"2009"	Suppressed	71008	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2010"	"2010"	Suppressed	71518	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2011"	"2011"	Suppressed	72401	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2012"	"2012"	Suppressed	73195	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2013"	"2013"	Suppressed	71934	Suppressed
+	"Arizona"	"04"	"Apache County, AZ"	"04001"	"2014"	"2014"	Suppressed	71828	Suppressed
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2006"	"2006"	19	127241	Unreliable
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2007"	"2007"	20	128206	15.6
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2008"	"2008"	15	129023	Unreliable
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2009"	"2009"	19	130081	Unreliable
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2010"	"2010"	24	131346	18.3
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2011"	"2011"	Suppressed	133289	Suppressed
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2012"	"2012"	24	132088	18.2
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2013"	"2013"	13	129473	Unreliable
+	"Arizona"	"04"	"Cochise County, AZ"	"04003"	"2014"	"2014"	21	127448	16.5
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2006"	"2006"	Suppressed	128695	Suppressed
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2007"	"2007"	10	130442	Unreliable
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2008"	"2008"	16	131853	Unreliable
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2009"	"2009"	17	133477	Unreliable
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2010"	"2010"	18	134421	Unreliable
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2011"	"2011"	22	134511	16.4
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2012"	"2012"	11	136011	Unreliable
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2013"	"2013"	30	136539	22.0
+	"Arizona"	"04"	"Coconino County, AZ"	"04005"	"2014"	"2014"	15	137682	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2006"	"2006"	10	52541	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2007"	"2007"	11	53252	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2008"	"2008"	Suppressed	53437	Suppressed
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2009"	"2009"	12	53561	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2010"	"2010"	10	53597	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2011"	"2011"	Suppressed	53144	Suppressed
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2012"	"2012"	11	53144	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2013"	"2013"	12	53053	Unreliable
+	"Arizona"	"04"	"Gila County, AZ"	"04007"	"2014"	"2014"	18	53119	Unreliable
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2006"	"2006"	Suppressed	33701	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2007"	"2007"	Suppressed	35175	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2008"	"2008"	Suppressed	36639	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2009"	"2009"	Suppressed	37525	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2010"	"2010"	Suppressed	37220	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2011"	"2011"	Suppressed	37147	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2012"	"2012"	Suppressed	37416	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2013"	"2013"	Suppressed	37482	Suppressed
+	"Arizona"	"04"	"Graham County, AZ"	"04009"	"2014"	"2014"	Suppressed	37957	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2006"	"2006"	Suppressed	7838	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2007"	"2007"	Suppressed	8205	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2008"	"2008"	Suppressed	8561	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2009"	"2009"	Suppressed	8635	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2010"	"2010"	Suppressed	8437	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2011"	"2011"	Suppressed	8606	Suppressed
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2012"	"2012"	0	8802	Unreliable
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2013"	"2013"	0	9049	Unreliable
+	"Arizona"	"04"	"Greenlee County, AZ"	"04011"	"2014"	"2014"	Suppressed	9346	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2006"	"2006"	Suppressed	20573	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2007"	"2007"	Suppressed	20647	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2008"	"2008"	Suppressed	20555	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2009"	"2009"	Suppressed	20514	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2010"	"2010"	Suppressed	20489	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2011"	"2011"	Suppressed	20419	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2012"	"2012"	0	20281	Unreliable
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2013"	"2013"	Suppressed	20324	Suppressed
+	"Arizona"	"04"	"La Paz County, AZ"	"04012"	"2014"	"2014"	Suppressed	20231	Suppressed
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2006"	"2006"	541	3642884	14.9
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2007"	"2007"	575	3711954	15.5
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2008"	"2008"	526	3771061	13.9
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2009"	"2009"	566	3803779	14.9
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2010"	"2010"	609	3817117	16.0
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2011"	"2011"	627	3880244	16.2
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2012"	"2012"	630	3942169	16.0
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2013"	"2013"	705	4009412	17.6
+	"Arizona"	"04"	"Maricopa County, AZ"	"04013"	"2014"	"2014"	695	4087191	17.0
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2006"	"2006"	22	196168	11.2
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2007"	"2007"	26	199760	13.0
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2008"	"2008"	35	200078	17.5
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2009"	"2009"	53	199696	26.5
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2010"	"2010"	68	200186	34.0
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2011"	"2011"	57	202351	28.2
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2012"	"2012"	66	203334	32.5
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2013"	"2013"	62	203030	30.5
+	"Arizona"	"04"	"Mohave County, AZ"	"04015"	"2014"	"2014"	58	203361	28.5
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2006"	"2006"	14	105624	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2007"	"2007"	16	106927	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2008"	"2008"	10	107626	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2009"	"2009"	18	107571	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2010"	"2010"	19	107449	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2011"	"2011"	17	107398	Unreliable
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2012"	"2012"	20	107094	18.7
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2013"	"2013"	29	107322	27.0
+	"Arizona"	"04"	"Navajo County, AZ"	"04017"	"2014"	"2014"	26	108101	24.1
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2006"	"2006"	190	940930	20.2
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2007"	"2007"	165	955869	17.3
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2008"	"2008"	121	967778	12.5
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2009"	"2009"	178	975580	18.2
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2010"	"2010"	205	980263	20.9
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2011"	"2011"	193	989569	19.5
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2012"	"2012"	214	992394	21.6
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2013"	"2013"	215	996554	21.6
+	"Arizona"	"04"	"Pima County, AZ"	"04019"	"2014"	"2014"	223	1004516	22.2
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2006"	"2006"	26	271328	9.6
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2007"	"2007"	40	306174	13.1
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2008"	"2008"	29	335311	8.6
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2009"	"2009"	47	349830	13.4
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2010"	"2010"	51	375770	13.6
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2011"	"2011"	44	382992	11.5
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2012"	"2012"	45	387365	11.6
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2013"	"2013"	52	389350	13.4
+	"Arizona"	"04"	"Pinal County, AZ"	"04021"	"2014"	"2014"	33	401918	8.2
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2006"	"2006"	Suppressed	44298	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2007"	"2007"	Suppressed	45338	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2008"	"2008"	Suppressed	46144	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2009"	"2009"	Suppressed	47011	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2010"	"2010"	Suppressed	47420	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2011"	"2011"	0	47676	Unreliable
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2012"	"2012"	Suppressed	47303	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2013"	"2013"	Suppressed	46768	Suppressed
+	"Arizona"	"04"	"Santa Cruz County, AZ"	"04023"	"2014"	"2014"	Suppressed	46695	Suppressed
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2006"	"2006"	23	204082	11.3
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2007"	"2007"	36	208773	17.2
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2008"	"2008"	38	211211	18.0
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2009"	"2009"	44	211172	20.8
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2010"	"2010"	46	211033	21.8
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2011"	"2011"	59	211888	27.8
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2012"	"2012"	66	212637	31.0
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2013"	"2013"	65	215133	30.2
+	"Arizona"	"04"	"Yavapai County, AZ"	"04025"	"2014"	"2014"	59	218844	27.0
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2006"	"2006"	13	183848	Unreliable
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2007"	"2007"	24	187357	12.8
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2008"	"2008"	14	191202	Unreliable
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2009"	"2009"	21	193714	10.8
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2010"	"2010"	23	195751	11.7
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2011"	"2011"	23	200870	11.5
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2012"	"2012"	33	200022	16.5
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2013"	"2013"	23	201201	11.4
+	"Arizona"	"04"	"Yuma County, AZ"	"04027"	"2014"	"2014"	39	203247	19.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Arizona (04)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:10:05 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:10:05 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

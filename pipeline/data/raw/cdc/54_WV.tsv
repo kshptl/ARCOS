@@ -1,0 +1,552 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2006"	"2006"	0	15922	Unreliable
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2007"	"2007"	Suppressed	16036	Suppressed
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2008"	"2008"	Suppressed	16241	Suppressed
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2009"	"2009"	0	16479	Unreliable
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2010"	"2010"	Suppressed	16589	Suppressed
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2011"	"2011"	0	16520	Unreliable
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2012"	"2012"	Suppressed	16493	Suppressed
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2013"	"2013"	Suppressed	16770	Suppressed
+	"West Virginia"	"54"	"Barbour County, WV"	"54001"	"2014"	"2014"	Suppressed	16766	Suppressed
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2006"	"2006"	12	96318	Unreliable
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2007"	"2007"	16	99132	Unreliable
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2008"	"2008"	22	101629	21.6
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2009"	"2009"	16	102830	Unreliable
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2010"	"2010"	20	104169	19.2
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2011"	"2011"	28	105750	26.5
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2012"	"2012"	33	107098	30.8
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2013"	"2013"	44	108706	40.5
+	"West Virginia"	"54"	"Berkeley County, WV"	"54003"	"2014"	"2014"	46	110497	41.6
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2006"	"2006"	Suppressed	25101	Suppressed
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2007"	"2007"	Suppressed	25115	Suppressed
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2008"	"2008"	11	24794	Unreliable
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2009"	"2009"	Suppressed	24766	Suppressed
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2010"	"2010"	17	24629	Unreliable
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2011"	"2011"	27	24444	110.5
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2012"	"2012"	17	24478	Unreliable
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2013"	"2013"	19	24224	Unreliable
+	"West Virginia"	"54"	"Boone County, WV"	"54005"	"2014"	"2014"	23	23714	97.0
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2006"	"2006"	Suppressed	14585	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2007"	"2007"	0	14585	Unreliable
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2008"	"2008"	Suppressed	14587	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2009"	"2009"	Suppressed	14512	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2010"	"2010"	Suppressed	14523	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2011"	"2011"	Suppressed	14485	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2012"	"2012"	Suppressed	14468	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2013"	"2013"	Suppressed	14502	Suppressed
+	"West Virginia"	"54"	"Braxton County, WV"	"54007"	"2014"	"2014"	Suppressed	14463	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2006"	"2006"	Suppressed	24399	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2007"	"2007"	Suppressed	24235	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2008"	"2008"	Suppressed	24168	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2009"	"2009"	Suppressed	24153	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2010"	"2010"	Suppressed	24069	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2011"	"2011"	14	23844	Unreliable
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2012"	"2012"	Suppressed	23853	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2013"	"2013"	Suppressed	23737	Suppressed
+	"West Virginia"	"54"	"Brooke County, WV"	"54009"	"2014"	"2014"	10	23530	Unreliable
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2006"	"2006"	28	94943	29.5
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2007"	"2007"	40	95059	42.1
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2008"	"2008"	30	95209	31.5
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2009"	"2009"	Suppressed	96040	Suppressed
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2010"	"2010"	29	96319	30.1
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2011"	"2011"	41	96653	42.4
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2012"	"2012"	27	96974	27.8
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2013"	"2013"	48	97133	49.4
+	"West Virginia"	"54"	"Cabell County, WV"	"54011"	"2014"	"2014"	50	97109	51.5
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2006"	"2006"	0	7531	Unreliable
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2007"	"2007"	0	7588	Unreliable
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2008"	"2008"	0	7621	Unreliable
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2009"	"2009"	Suppressed	7560	Suppressed
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2010"	"2010"	0	7627	Unreliable
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2011"	"2011"	Suppressed	7652	Suppressed
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2012"	"2012"	Suppressed	7607	Suppressed
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2013"	"2013"	Suppressed	7564	Suppressed
+	"West Virginia"	"54"	"Calhoun County, WV"	"54013"	"2014"	"2014"	Suppressed	7513	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2006"	"2006"	0	9695	Unreliable
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2007"	"2007"	Suppressed	9696	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2008"	"2008"	Suppressed	9603	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2009"	"2009"	Suppressed	9505	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2010"	"2010"	Suppressed	9386	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2011"	"2011"	Suppressed	9357	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2012"	"2012"	Suppressed	9297	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2013"	"2013"	Suppressed	9244	Suppressed
+	"West Virginia"	"54"	"Clay County, WV"	"54015"	"2014"	"2014"	Suppressed	8941	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2006"	"2006"	Suppressed	7848	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2007"	"2007"	Suppressed	7970	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2008"	"2008"	Suppressed	8034	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2009"	"2009"	0	8124	Unreliable
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2010"	"2010"	Suppressed	8202	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2011"	"2011"	Suppressed	8171	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2012"	"2012"	Suppressed	8178	Suppressed
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2013"	"2013"	0	8344	Unreliable
+	"West Virginia"	"54"	"Doddridge County, WV"	"54017"	"2014"	"2014"	Suppressed	8391	Suppressed
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2006"	"2006"	10	46200	Unreliable
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2007"	"2007"	16	46243	Unreliable
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2008"	"2008"	13	46171	Unreliable
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2009"	"2009"	Suppressed	46034	Suppressed
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2010"	"2010"	15	46039	Unreliable
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2011"	"2011"	20	45699	43.8
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2012"	"2012"	21	45869	45.8
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2013"	"2013"	24	45599	52.6
+	"West Virginia"	"54"	"Fayette County, WV"	"54019"	"2014"	"2014"	17	45132	Unreliable
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2006"	"2006"	Suppressed	8083	Suppressed
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2007"	"2007"	0	8248	Unreliable
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2008"	"2008"	Suppressed	8408	Suppressed
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2009"	"2009"	Suppressed	8529	Suppressed
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2010"	"2010"	0	8693	Unreliable
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2011"	"2011"	0	8705	Unreliable
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2012"	"2012"	Suppressed	8732	Suppressed
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2013"	"2013"	0	8672	Unreliable
+	"West Virginia"	"54"	"Gilmer County, WV"	"54021"	"2014"	"2014"	0	8618	Unreliable
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2006"	"2006"	Suppressed	11834	Suppressed
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2007"	"2007"	Suppressed	11969	Suppressed
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2008"	"2008"	0	12022	Unreliable
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2009"	"2009"	Suppressed	11963	Suppressed
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2010"	"2010"	0	11937	Unreliable
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2011"	"2011"	Suppressed	11891	Suppressed
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2012"	"2012"	Suppressed	11816	Suppressed
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2013"	"2013"	0	11759	Unreliable
+	"West Virginia"	"54"	"Grant County, WV"	"54023"	"2014"	"2014"	0	11687	Unreliable
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2006"	"2006"	Suppressed	35196	Suppressed
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2007"	"2007"	Suppressed	35354	Suppressed
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2008"	"2008"	Suppressed	35457	Suppressed
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2009"	"2009"	Suppressed	35351	Suppressed
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2010"	"2010"	11	35480	Unreliable
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2011"	"2011"	12	35800	Unreliable
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2012"	"2012"	10	35820	Unreliable
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2013"	"2013"	Suppressed	35644	Suppressed
+	"West Virginia"	"54"	"Greenbrier County, WV"	"54025"	"2014"	"2014"	12	35450	Unreliable
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2006"	"2006"	Suppressed	23016	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2007"	"2007"	Suppressed	23492	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2008"	"2008"	Suppressed	23664	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2009"	"2009"	Suppressed	23820	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2010"	"2010"	Suppressed	23964	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2011"	"2011"	Suppressed	23812	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2012"	"2012"	Suppressed	23709	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2013"	"2013"	Suppressed	23445	Suppressed
+	"West Virginia"	"54"	"Hampshire County, WV"	"54027"	"2014"	"2014"	Suppressed	23483	Suppressed
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2006"	"2006"	10	31266	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2007"	"2007"	11	30887	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2008"	"2008"	10	30802	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2009"	"2009"	Suppressed	30748	Suppressed
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2010"	"2010"	11	30676	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2011"	"2011"	Suppressed	30571	Suppressed
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2012"	"2012"	11	30305	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2013"	"2013"	15	30291	Unreliable
+	"West Virginia"	"54"	"Hancock County, WV"	"54029"	"2014"	"2014"	18	30112	Unreliable
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2006"	"2006"	0	13611	Unreliable
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2007"	"2007"	Suppressed	13807	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2008"	"2008"	Suppressed	13793	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2009"	"2009"	0	13885	Unreliable
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2010"	"2010"	Suppressed	14025	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2011"	"2011"	Suppressed	13912	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2012"	"2012"	Suppressed	13866	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2013"	"2013"	Suppressed	13920	Suppressed
+	"West Virginia"	"54"	"Hardy County, WV"	"54031"	"2014"	"2014"	Suppressed	13923	Suppressed
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2006"	"2006"	13	68141	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2007"	"2007"	15	67940	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2008"	"2008"	12	68441	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2009"	"2009"	Suppressed	68696	Suppressed
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2010"	"2010"	19	69099	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2011"	"2011"	25	69436	36.0
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2012"	"2012"	14	69141	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2013"	"2013"	19	68972	Unreliable
+	"West Virginia"	"54"	"Harrison County, WV"	"54033"	"2014"	"2014"	20	68761	29.1
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2006"	"2006"	Suppressed	28877	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2007"	"2007"	Suppressed	29089	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2008"	"2008"	Suppressed	29101	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2009"	"2009"	Suppressed	29155	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2010"	"2010"	Suppressed	29211	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2011"	"2011"	Suppressed	29241	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2012"	"2012"	Suppressed	29234	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2013"	"2013"	Suppressed	29178	Suppressed
+	"West Virginia"	"54"	"Jackson County, WV"	"54035"	"2014"	"2014"	Suppressed	29126	Suppressed
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2006"	"2006"	Suppressed	50003	Suppressed
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2007"	"2007"	15	51264	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2008"	"2008"	13	52184	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2009"	"2009"	10	53054	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2010"	"2010"	Suppressed	53498	Suppressed
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2011"	"2011"	11	54225	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2012"	"2012"	10	54504	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2013"	"2013"	16	55073	Unreliable
+	"West Virginia"	"54"	"Jefferson County, WV"	"54037"	"2014"	"2014"	12	55713	Unreliable
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2006"	"2006"	46	192954	23.8
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2007"	"2007"	27	192354	14.0
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2008"	"2008"	68	192414	35.3
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2009"	"2009"	22	193150	11.4
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2010"	"2010"	49	193063	25.4
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2011"	"2011"	69	192315	35.9
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2012"	"2012"	63	192179	32.8
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2013"	"2013"	64	191275	33.5
+	"West Virginia"	"54"	"Kanawha County, WV"	"54039"	"2014"	"2014"	81	190223	42.6
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2006"	"2006"	Suppressed	16445	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2007"	"2007"	0	16360	Unreliable
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2008"	"2008"	Suppressed	16422	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2009"	"2009"	Suppressed	16422	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2010"	"2010"	Suppressed	16372	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2011"	"2011"	Suppressed	16416	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2012"	"2012"	Suppressed	16371	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2013"	"2013"	Suppressed	16452	Suppressed
+	"West Virginia"	"54"	"Lewis County, WV"	"54041"	"2014"	"2014"	0	16414	Unreliable
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2006"	"2006"	Suppressed	22064	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2007"	"2007"	Suppressed	21953	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2008"	"2008"	Suppressed	21881	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2009"	"2009"	Suppressed	21794	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2010"	"2010"	13	21720	Unreliable
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2011"	"2011"	15	21550	Unreliable
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2012"	"2012"	Suppressed	21627	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2013"	"2013"	Suppressed	21559	Suppressed
+	"West Virginia"	"54"	"Lincoln County, WV"	"54043"	"2014"	"2014"	10	21561	Unreliable
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2006"	"2006"	24	36440	65.9
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2007"	"2007"	19	36443	Unreliable
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2008"	"2008"	Suppressed	36548	Suppressed
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2009"	"2009"	Suppressed	36645	Suppressed
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2010"	"2010"	21	36743	57.2
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2011"	"2011"	24	36457	65.8
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2012"	"2012"	14	36168	Unreliable
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2013"	"2013"	22	35987	61.1
+	"West Virginia"	"54"	"Logan County, WV"	"54045"	"2014"	"2014"	21	35348	59.4
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2006"	"2006"	Suppressed	23199	Suppressed
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2007"	"2007"	18	22746	Unreliable
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2008"	"2008"	23	22494	102.2
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2009"	"2009"	Suppressed	22276	Suppressed
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2010"	"2010"	24	22113	108.5
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2011"	"2011"	26	21729	119.7
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2012"	"2012"	15	21326	Unreliable
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2013"	"2013"	21	20876	100.6
+	"West Virginia"	"54"	"McDowell County, WV"	"54047"	"2014"	"2014"	Suppressed	20448	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2006"	"2006"	Suppressed	56284	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2007"	"2007"	14	56445	Unreliable
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2008"	"2008"	Suppressed	56141	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2009"	"2009"	Suppressed	56426	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2010"	"2010"	Suppressed	56418	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2011"	"2011"	Suppressed	56586	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2012"	"2012"	Suppressed	56678	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2013"	"2013"	Suppressed	56868	Suppressed
+	"West Virginia"	"54"	"Marion County, WV"	"54049"	"2014"	"2014"	Suppressed	56803	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2006"	"2006"	Suppressed	33814	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2007"	"2007"	Suppressed	33583	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2008"	"2008"	Suppressed	33248	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2009"	"2009"	Suppressed	33116	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2010"	"2010"	10	33107	Unreliable
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2011"	"2011"	Suppressed	32800	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2012"	"2012"	Suppressed	32674	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2013"	"2013"	Suppressed	32459	Suppressed
+	"West Virginia"	"54"	"Marshall County, WV"	"54051"	"2014"	"2014"	Suppressed	32416	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2006"	"2006"	Suppressed	26648	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2007"	"2007"	11	26738	Unreliable
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2008"	"2008"	Suppressed	27097	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2009"	"2009"	Suppressed	27309	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2010"	"2010"	Suppressed	27324	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2011"	"2011"	Suppressed	27298	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2012"	"2012"	Suppressed	27179	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2013"	"2013"	Suppressed	27126	Suppressed
+	"West Virginia"	"54"	"Mason County, WV"	"54053"	"2014"	"2014"	12	27016	Unreliable
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2006"	"2006"	21	61297	34.3
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2007"	"2007"	25	61615	40.6
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2008"	"2008"	28	61848	45.3
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2009"	"2009"	11	62177	Unreliable
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2010"	"2010"	32	62264	51.4
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2011"	"2011"	50	62465	80.0
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2012"	"2012"	36	62523	57.6
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2013"	"2013"	24	61984	38.7
+	"West Virginia"	"54"	"Mercer County, WV"	"54055"	"2014"	"2014"	44	61785	71.2
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2006"	"2006"	Suppressed	27324	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2007"	"2007"	Suppressed	27532	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2008"	"2008"	Suppressed	27824	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2009"	"2009"	Suppressed	28080	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2010"	"2010"	Suppressed	28212	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2011"	"2011"	Suppressed	28192	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2012"	"2012"	Suppressed	27956	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2013"	"2013"	Suppressed	27704	Suppressed
+	"West Virginia"	"54"	"Mineral County, WV"	"54057"	"2014"	"2014"	Suppressed	27578	Suppressed
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2006"	"2006"	Suppressed	27054	Suppressed
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2007"	"2007"	10	27145	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2008"	"2008"	18	26850	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2009"	"2009"	Suppressed	26943	Suppressed
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2010"	"2010"	14	26839	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2011"	"2011"	18	26563	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2012"	"2012"	18	26103	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2013"	"2013"	12	25900	Unreliable
+	"West Virginia"	"54"	"Mingo County, WV"	"54059"	"2014"	"2014"	25	25716	97.2
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2006"	"2006"	Suppressed	89656	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2007"	"2007"	Suppressed	90764	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2008"	"2008"	15	92200	Unreliable
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2009"	"2009"	Suppressed	94165	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2010"	"2010"	Suppressed	96189	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2011"	"2011"	Suppressed	98528	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2012"	"2012"	12	100332	Unreliable
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2013"	"2013"	Suppressed	102274	Suppressed
+	"West Virginia"	"54"	"Monongalia County, WV"	"54061"	"2014"	"2014"	14	103463	Unreliable
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2006"	"2006"	Suppressed	13382	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2007"	"2007"	Suppressed	13452	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2008"	"2008"	Suppressed	13607	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2009"	"2009"	Suppressed	13543	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2010"	"2010"	Suppressed	13502	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2011"	"2011"	Suppressed	13534	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2012"	"2012"	Suppressed	13463	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2013"	"2013"	Suppressed	13483	Suppressed
+	"West Virginia"	"54"	"Monroe County, WV"	"54063"	"2014"	"2014"	Suppressed	13582	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2006"	"2006"	Suppressed	17038	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2007"	"2007"	Suppressed	17410	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2008"	"2008"	Suppressed	17520	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2009"	"2009"	Suppressed	17580	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2010"	"2010"	Suppressed	17541	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2011"	"2011"	Suppressed	17535	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2012"	"2012"	Suppressed	17471	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2013"	"2013"	Suppressed	17498	Suppressed
+	"West Virginia"	"54"	"Morgan County, WV"	"54065"	"2014"	"2014"	Suppressed	17453	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2006"	"2006"	Suppressed	26205	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2007"	"2007"	Suppressed	26130	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2008"	"2008"	Suppressed	26138	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2009"	"2009"	Suppressed	26253	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2010"	"2010"	Suppressed	26233	Suppressed
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2011"	"2011"	14	26268	Unreliable
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2012"	"2012"	12	26229	Unreliable
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2013"	"2013"	11	25965	Unreliable
+	"West Virginia"	"54"	"Nicholas County, WV"	"54067"	"2014"	"2014"	10	25827	Unreliable
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2006"	"2006"	Suppressed	44925	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2007"	"2007"	Suppressed	44714	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2008"	"2008"	Suppressed	44469	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2009"	"2009"	Suppressed	44355	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2010"	"2010"	Suppressed	44443	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2011"	"2011"	Suppressed	44246	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2012"	"2012"	Suppressed	44075	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2013"	"2013"	Suppressed	43727	Suppressed
+	"West Virginia"	"54"	"Ohio County, WV"	"54069"	"2014"	"2014"	Suppressed	43328	Suppressed
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2006"	"2006"	0	7922	Unreliable
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2007"	"2007"	0	7792	Unreliable
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2008"	"2008"	Suppressed	7761	Suppressed
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2009"	"2009"	Suppressed	7701	Suppressed
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2010"	"2010"	Suppressed	7695	Suppressed
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2011"	"2011"	0	7673	Unreliable
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2012"	"2012"	0	7566	Unreliable
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2013"	"2013"	Suppressed	7471	Suppressed
+	"West Virginia"	"54"	"Pendleton County, WV"	"54071"	"2014"	"2014"	Suppressed	7371	Suppressed
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2006"	"2006"	Suppressed	7670	Suppressed
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2007"	"2007"	Suppressed	7698	Suppressed
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2008"	"2008"	0	7702	Unreliable
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2009"	"2009"	Suppressed	7672	Suppressed
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2010"	"2010"	0	7605	Unreliable
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2011"	"2011"	0	7611	Unreliable
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2012"	"2012"	0	7595	Unreliable
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2013"	"2013"	0	7577	Unreliable
+	"West Virginia"	"54"	"Pleasants County, WV"	"54073"	"2014"	"2014"	Suppressed	7634	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2006"	"2006"	Suppressed	8938	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2007"	"2007"	Suppressed	8851	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2008"	"2008"	Suppressed	8807	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2009"	"2009"	0	8746	Unreliable
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2010"	"2010"	Suppressed	8719	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2011"	"2011"	Suppressed	8786	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2012"	"2012"	Suppressed	8692	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2013"	"2013"	Suppressed	8669	Suppressed
+	"West Virginia"	"54"	"Pocahontas County, WV"	"54075"	"2014"	"2014"	Suppressed	8662	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2006"	"2006"	Suppressed	32238	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2007"	"2007"	Suppressed	32743	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2008"	"2008"	Suppressed	33067	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2009"	"2009"	Suppressed	33333	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2010"	"2010"	Suppressed	33520	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2011"	"2011"	Suppressed	33723	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2012"	"2012"	Suppressed	33832	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2013"	"2013"	Suppressed	33859	Suppressed
+	"West Virginia"	"54"	"Preston County, WV"	"54077"	"2014"	"2014"	Suppressed	33788	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2006"	"2006"	Suppressed	54207	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2007"	"2007"	Suppressed	54669	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2008"	"2008"	Suppressed	55051	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2009"	"2009"	Suppressed	55178	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2010"	"2010"	10	55486	Unreliable
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2011"	"2011"	14	56008	Unreliable
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2012"	"2012"	Suppressed	56435	Suppressed
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2013"	"2013"	12	56650	Unreliable
+	"West Virginia"	"54"	"Putnam County, WV"	"54079"	"2014"	"2014"	11	56770	Unreliable
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2006"	"2006"	21	78178	26.9
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2007"	"2007"	22	78323	28.1
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2008"	"2008"	18	78379	Unreliable
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2009"	"2009"	12	78782	Unreliable
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2010"	"2010"	45	78859	57.1
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2011"	"2011"	58	79127	73.3
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2012"	"2012"	56	79021	70.9
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2013"	"2013"	37	78833	46.9
+	"West Virginia"	"54"	"Raleigh County, WV"	"54081"	"2014"	"2014"	39	78241	49.8
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2006"	"2006"	Suppressed	29049	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2007"	"2007"	Suppressed	29113	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2008"	"2008"	Suppressed	29236	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2009"	"2009"	Suppressed	29381	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2010"	"2010"	Suppressed	29405	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2011"	"2011"	Suppressed	29465	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2012"	"2012"	Suppressed	29384	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2013"	"2013"	Suppressed	29415	Suppressed
+	"West Virginia"	"54"	"Randolph County, WV"	"54083"	"2014"	"2014"	Suppressed	29429	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2006"	"2006"	0	10588	Unreliable
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2007"	"2007"	Suppressed	10558	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2008"	"2008"	0	10516	Unreliable
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2009"	"2009"	0	10478	Unreliable
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2010"	"2010"	Suppressed	10449	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2011"	"2011"	Suppressed	10295	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2012"	"2012"	Suppressed	10236	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2013"	"2013"	Suppressed	10073	Suppressed
+	"West Virginia"	"54"	"Ritchie County, WV"	"54085"	"2014"	"2014"	Suppressed	10011	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2006"	"2006"	Suppressed	15442	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2007"	"2007"	Suppressed	15215	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2008"	"2008"	0	15048	Unreliable
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2009"	"2009"	Suppressed	14966	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2010"	"2010"	Suppressed	14926	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2011"	"2011"	Suppressed	14858	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2012"	"2012"	Suppressed	14684	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2013"	"2013"	Suppressed	14656	Suppressed
+	"West Virginia"	"54"	"Roane County, WV"	"54087"	"2014"	"2014"	Suppressed	14664	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2006"	"2006"	Suppressed	13879	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2007"	"2007"	Suppressed	13842	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2008"	"2008"	Suppressed	13712	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2009"	"2009"	Suppressed	13882	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2010"	"2010"	10	13927	Unreliable
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2011"	"2011"	Suppressed	13867	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2012"	"2012"	Suppressed	13737	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2013"	"2013"	Suppressed	13563	Suppressed
+	"West Virginia"	"54"	"Summers County, WV"	"54089"	"2014"	"2014"	Suppressed	13417	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2006"	"2006"	0	16498	Unreliable
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2007"	"2007"	Suppressed	16640	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2008"	"2008"	Suppressed	16792	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2009"	"2009"	0	16838	Unreliable
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2010"	"2010"	Suppressed	16895	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2011"	"2011"	Suppressed	16916	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2012"	"2012"	Suppressed	16991	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2013"	"2013"	Suppressed	16973	Suppressed
+	"West Virginia"	"54"	"Taylor County, WV"	"54091"	"2014"	"2014"	Suppressed	17069	Suppressed
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2006"	"2006"	Suppressed	7111	Suppressed
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2007"	"2007"	0	7117	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2008"	"2008"	0	7160	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2009"	"2009"	0	7172	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2010"	"2010"	Suppressed	7141	Suppressed
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2011"	"2011"	0	7021	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2012"	"2012"	0	6995	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2013"	"2013"	0	6968	Unreliable
+	"West Virginia"	"54"	"Tucker County, WV"	"54093"	"2014"	"2014"	0	6927	Unreliable
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2006"	"2006"	Suppressed	9484	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2007"	"2007"	Suppressed	9423	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2008"	"2008"	Suppressed	9363	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2009"	"2009"	Suppressed	9249	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2010"	"2010"	Suppressed	9208	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2011"	"2011"	Suppressed	9121	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2012"	"2012"	Suppressed	9037	Suppressed
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2013"	"2013"	0	8995	Unreliable
+	"West Virginia"	"54"	"Tyler County, WV"	"54095"	"2014"	"2014"	Suppressed	9098	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2006"	"2006"	Suppressed	23754	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2007"	"2007"	Suppressed	23851	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2008"	"2008"	Suppressed	23929	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2009"	"2009"	0	24124	Unreliable
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2010"	"2010"	Suppressed	24254	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2011"	"2011"	Suppressed	24322	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2012"	"2012"	Suppressed	24477	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2013"	"2013"	Suppressed	24665	Suppressed
+	"West Virginia"	"54"	"Upshur County, WV"	"54097"	"2014"	"2014"	Suppressed	24731	Suppressed
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2006"	"2006"	10	42717	Unreliable
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2007"	"2007"	Suppressed	42727	Suppressed
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2008"	"2008"	Suppressed	42767	Suppressed
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2009"	"2009"	Suppressed	42637	Suppressed
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2010"	"2010"	17	42481	Unreliable
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2011"	"2011"	18	42126	Unreliable
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2012"	"2012"	12	41649	Unreliable
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2013"	"2013"	18	41437	Unreliable
+	"West Virginia"	"54"	"Wayne County, WV"	"54099"	"2014"	"2014"	18	41122	Unreliable
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2006"	"2006"	Suppressed	9391	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2007"	"2007"	Suppressed	9260	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2008"	"2008"	Suppressed	9260	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2009"	"2009"	Suppressed	9167	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2010"	"2010"	Suppressed	9154	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2011"	"2011"	Suppressed	9143	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2012"	"2012"	Suppressed	9043	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2013"	"2013"	Suppressed	8893	Suppressed
+	"West Virginia"	"54"	"Webster County, WV"	"54101"	"2014"	"2014"	Suppressed	8834	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2006"	"2006"	Suppressed	16917	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2007"	"2007"	0	16764	Unreliable
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2008"	"2008"	Suppressed	16645	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2009"	"2009"	Suppressed	16588	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2010"	"2010"	Suppressed	16583	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2011"	"2011"	Suppressed	16351	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2012"	"2012"	Suppressed	16422	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2013"	"2013"	Suppressed	16204	Suppressed
+	"West Virginia"	"54"	"Wetzel County, WV"	"54103"	"2014"	"2014"	Suppressed	15988	Suppressed
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2006"	"2006"	0	5791	Unreliable
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2007"	"2007"	Suppressed	5806	Suppressed
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2008"	"2008"	Suppressed	5745	Suppressed
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2009"	"2009"	0	5703	Unreliable
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2010"	"2010"	0	5717	Unreliable
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2011"	"2011"	Suppressed	5762	Suppressed
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2012"	"2012"	0	5847	Unreliable
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2013"	"2013"	0	5901	Unreliable
+	"West Virginia"	"54"	"Wirt County, WV"	"54105"	"2014"	"2014"	Suppressed	5845	Suppressed
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2006"	"2006"	12	86552	Unreliable
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2007"	"2007"	Suppressed	86489	Suppressed
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2008"	"2008"	16	86783	Unreliable
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2009"	"2009"	Suppressed	86841	Suppressed
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2010"	"2010"	Suppressed	86956	Suppressed
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2011"	"2011"	12	87120	Unreliable
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2012"	"2012"	20	86701	23.1
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2013"	"2013"	17	86569	Unreliable
+	"West Virginia"	"54"	"Wood County, WV"	"54107"	"2014"	"2014"	23	86237	26.7
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2006"	"2006"	14	24288	Unreliable
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2007"	"2007"	14	24078	Unreliable
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2008"	"2008"	20	23957	83.5
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2009"	"2009"	Suppressed	23899	Suppressed
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2010"	"2010"	26	23796	109.3
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2011"	"2011"	31	23419	132.4
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2012"	"2012"	21	23273	90.2
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2013"	"2013"	14	23019	Unreliable
+	"West Virginia"	"54"	"Wyoming County, WV"	"54109"	"2014"	"2014"	19	22598	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: West Virginia (54)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:44:28 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:44:28 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

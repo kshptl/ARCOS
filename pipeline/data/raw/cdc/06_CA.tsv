@@ -1,0 +1,579 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"California"	"06"	"Alameda County, CA"	"06001"	"2006"	"2006"	169	1444484	11.7
+	"California"	"06"	"Alameda County, CA"	"06001"	"2007"	"2007"	190	1455715	13.1
+	"California"	"06"	"Alameda County, CA"	"06001"	"2008"	"2008"	157	1477208	10.6
+	"California"	"06"	"Alameda County, CA"	"06001"	"2009"	"2009"	147	1498539	9.8
+	"California"	"06"	"Alameda County, CA"	"06001"	"2010"	"2010"	132	1510271	8.7
+	"California"	"06"	"Alameda County, CA"	"06001"	"2011"	"2011"	168	1529875	11.0
+	"California"	"06"	"Alameda County, CA"	"06001"	"2012"	"2012"	134	1554720	8.6
+	"California"	"06"	"Alameda County, CA"	"06001"	"2013"	"2013"	174	1578891	11.0
+	"California"	"06"	"Alameda County, CA"	"06001"	"2014"	"2014"	165	1610921	10.2
+	"California"	"06"	"Alpine County, CA"	"06003"	"2006"	"2006"	0	1276	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2007"	"2007"	0	1274	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2008"	"2008"	0	1202	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2009"	"2009"	0	1197	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2010"	"2010"	0	1175	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2011"	"2011"	0	1102	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2012"	"2012"	0	1129	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2013"	"2013"	0	1159	Unreliable
+	"California"	"06"	"Alpine County, CA"	"06003"	"2014"	"2014"	0	1116	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2006"	"2006"	10	38353	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2007"	"2007"	Suppressed	38756	Suppressed
+	"California"	"06"	"Amador County, CA"	"06005"	"2008"	"2008"	Suppressed	38248	Suppressed
+	"California"	"06"	"Amador County, CA"	"06005"	"2009"	"2009"	14	38238	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2010"	"2010"	11	38091	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2011"	"2011"	10	37953	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2012"	"2012"	10	37035	Unreliable
+	"California"	"06"	"Amador County, CA"	"06005"	"2013"	"2013"	Suppressed	36519	Suppressed
+	"California"	"06"	"Amador County, CA"	"06005"	"2014"	"2014"	14	36742	Unreliable
+	"California"	"06"	"Butte County, CA"	"06007"	"2006"	"2006"	69	216824	31.8
+	"California"	"06"	"Butte County, CA"	"06007"	"2007"	"2007"	65	217469	29.9
+	"California"	"06"	"Butte County, CA"	"06007"	"2008"	"2008"	68	219034	31.0
+	"California"	"06"	"Butte County, CA"	"06007"	"2009"	"2009"	59	219777	26.8
+	"California"	"06"	"Butte County, CA"	"06007"	"2010"	"2010"	85	220000	38.6
+	"California"	"06"	"Butte County, CA"	"06007"	"2011"	"2011"	84	220266	38.1
+	"California"	"06"	"Butte County, CA"	"06007"	"2012"	"2012"	71	221539	32.0
+	"California"	"06"	"Butte County, CA"	"06007"	"2013"	"2013"	57	222090	25.7
+	"California"	"06"	"Butte County, CA"	"06007"	"2014"	"2014"	74	224241	33.0
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2006"	"2006"	Suppressed	46045	Suppressed
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2007"	"2007"	Suppressed	46268	Suppressed
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2008"	"2008"	Suppressed	46265	Suppressed
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2009"	"2009"	13	45900	Unreliable
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2010"	"2010"	12	45578	Unreliable
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2011"	"2011"	15	45052	Unreliable
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2012"	"2012"	Suppressed	44742	Suppressed
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2013"	"2013"	11	44515	Unreliable
+	"California"	"06"	"Calaveras County, CA"	"06009"	"2014"	"2014"	Suppressed	44624	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2006"	"2006"	Suppressed	20890	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2007"	"2007"	Suppressed	21075	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2008"	"2008"	Suppressed	21134	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2009"	"2009"	Suppressed	21250	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2010"	"2010"	0	21419	Unreliable
+	"California"	"06"	"Colusa County, CA"	"06011"	"2011"	"2011"	Suppressed	21549	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2012"	"2012"	Suppressed	21411	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2013"	"2013"	Suppressed	21358	Suppressed
+	"California"	"06"	"Colusa County, CA"	"06011"	"2014"	"2014"	0	21419	Unreliable
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2006"	"2006"	74	1000834	7.4
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2007"	"2007"	101	1009152	10.0
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2008"	"2008"	115	1023344	11.2
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2009"	"2009"	96	1037890	9.2
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2010"	"2010"	93	1049025	8.9
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2011"	"2011"	122	1066096	11.4
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2012"	"2012"	123	1079597	11.4
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2013"	"2013"	140	1094205	12.8
+	"California"	"06"	"Contra Costa County, CA"	"06013"	"2014"	"2014"	126	1111339	11.3
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2006"	"2006"	Suppressed	28211	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2007"	"2007"	Suppressed	28415	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2008"	"2008"	Suppressed	28496	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2009"	"2009"	Suppressed	28599	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2010"	"2010"	Suppressed	28610	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2011"	"2011"	Suppressed	28659	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2012"	"2012"	Suppressed	28290	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2013"	"2013"	Suppressed	27873	Suppressed
+	"California"	"06"	"Del Norte County, CA"	"06015"	"2014"	"2014"	Suppressed	27212	Suppressed
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2006"	"2006"	35	176773	19.8
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2007"	"2007"	34	177694	19.1
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2008"	"2008"	30	179150	16.7
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2009"	"2009"	40	180455	22.2
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2010"	"2010"	43	181058	23.7
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2011"	"2011"	35	180938	19.3
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2012"	"2012"	35	180561	19.4
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2013"	"2013"	33	181737	18.2
+	"California"	"06"	"El Dorado County, CA"	"06017"	"2014"	"2014"	47	183087	25.7
+	"California"	"06"	"Fresno County, CA"	"06019"	"2006"	"2006"	99	883862	11.2
+	"California"	"06"	"Fresno County, CA"	"06019"	"2007"	"2007"	95	895933	10.6
+	"California"	"06"	"Fresno County, CA"	"06019"	"2008"	"2008"	94	909630	10.3
+	"California"	"06"	"Fresno County, CA"	"06019"	"2009"	"2009"	113	921478	12.3
+	"California"	"06"	"Fresno County, CA"	"06019"	"2010"	"2010"	104	930450	11.2
+	"California"	"06"	"Fresno County, CA"	"06019"	"2011"	"2011"	90	942904	9.5
+	"California"	"06"	"Fresno County, CA"	"06019"	"2012"	"2012"	79	947895	8.3
+	"California"	"06"	"Fresno County, CA"	"06019"	"2013"	"2013"	89	955272	9.3
+	"California"	"06"	"Fresno County, CA"	"06019"	"2014"	"2014"	129	965974	13.4
+	"California"	"06"	"Glenn County, CA"	"06021"	"2006"	"2006"	Suppressed	27652	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2007"	"2007"	Suppressed	27775	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2008"	"2008"	Suppressed	28019	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2009"	"2009"	Suppressed	28100	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2010"	"2010"	Suppressed	28122	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2011"	"2011"	Suppressed	28128	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2012"	"2012"	Suppressed	27992	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2013"	"2013"	Suppressed	27940	Suppressed
+	"California"	"06"	"Glenn County, CA"	"06021"	"2014"	"2014"	Suppressed	27955	Suppressed
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2006"	"2006"	42	132093	31.8
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2007"	"2007"	42	132001	31.8
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2008"	"2008"	49	132657	36.9
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2009"	"2009"	42	133744	31.4
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2010"	"2010"	48	134623	35.7
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2011"	"2011"	57	134761	42.3
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2012"	"2012"	48	134827	35.6
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2013"	"2013"	41	134493	30.5
+	"California"	"06"	"Humboldt County, CA"	"06023"	"2014"	"2014"	43	134809	31.9
+	"California"	"06"	"Imperial County, CA"	"06025"	"2006"	"2006"	19	160505	Unreliable
+	"California"	"06"	"Imperial County, CA"	"06025"	"2007"	"2007"	21	164596	12.8
+	"California"	"06"	"Imperial County, CA"	"06025"	"2008"	"2008"	12	167917	Unreliable
+	"California"	"06"	"Imperial County, CA"	"06025"	"2009"	"2009"	14	172008	Unreliable
+	"California"	"06"	"Imperial County, CA"	"06025"	"2010"	"2010"	10	174528	Unreliable
+	"California"	"06"	"Imperial County, CA"	"06025"	"2011"	"2011"	23	177057	13.0
+	"California"	"06"	"Imperial County, CA"	"06025"	"2012"	"2012"	20	176948	11.3
+	"California"	"06"	"Imperial County, CA"	"06025"	"2013"	"2013"	30	176584	17.0
+	"California"	"06"	"Imperial County, CA"	"06025"	"2014"	"2014"	26	179091	14.5
+	"California"	"06"	"Inyo County, CA"	"06027"	"2006"	"2006"	0	18370	Unreliable
+	"California"	"06"	"Inyo County, CA"	"06027"	"2007"	"2007"	Suppressed	18426	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2008"	"2008"	Suppressed	18318	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2009"	"2009"	Suppressed	18544	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2010"	"2010"	Suppressed	18546	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2011"	"2011"	Suppressed	18478	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2012"	"2012"	Suppressed	18495	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2013"	"2013"	Suppressed	18467	Suppressed
+	"California"	"06"	"Inyo County, CA"	"06027"	"2014"	"2014"	Suppressed	18410	Suppressed
+	"California"	"06"	"Kern County, CA"	"06029"	"2006"	"2006"	118	784511	15.0
+	"California"	"06"	"Kern County, CA"	"06029"	"2007"	"2007"	119	803281	14.8
+	"California"	"06"	"Kern County, CA"	"06029"	"2008"	"2008"	122	818327	14.9
+	"California"	"06"	"Kern County, CA"	"06029"	"2009"	"2009"	132	830137	15.9
+	"California"	"06"	"Kern County, CA"	"06029"	"2010"	"2010"	140	839631	16.7
+	"California"	"06"	"Kern County, CA"	"06029"	"2011"	"2011"	151	851710	17.7
+	"California"	"06"	"Kern County, CA"	"06029"	"2012"	"2012"	159	856158	18.6
+	"California"	"06"	"Kern County, CA"	"06029"	"2013"	"2013"	181	864124	20.9
+	"California"	"06"	"Kern County, CA"	"06029"	"2014"	"2014"	213	874589	24.4
+	"California"	"06"	"Kings County, CA"	"06031"	"2006"	"2006"	Suppressed	147712	Suppressed
+	"California"	"06"	"Kings County, CA"	"06031"	"2007"	"2007"	18	150420	Unreliable
+	"California"	"06"	"Kings County, CA"	"06031"	"2008"	"2008"	12	152027	Unreliable
+	"California"	"06"	"Kings County, CA"	"06031"	"2009"	"2009"	Suppressed	152278	Suppressed
+	"California"	"06"	"Kings County, CA"	"06031"	"2010"	"2010"	14	152982	Unreliable
+	"California"	"06"	"Kings County, CA"	"06031"	"2011"	"2011"	14	153765	Unreliable
+	"California"	"06"	"Kings County, CA"	"06031"	"2012"	"2012"	Suppressed	151364	Suppressed
+	"California"	"06"	"Kings County, CA"	"06031"	"2013"	"2013"	22	150960	14.6
+	"California"	"06"	"Kings County, CA"	"06031"	"2014"	"2014"	24	150269	16.0
+	"California"	"06"	"Lake County, CA"	"06033"	"2006"	"2006"	18	64202	Unreliable
+	"California"	"06"	"Lake County, CA"	"06033"	"2007"	"2007"	20	64077	31.2
+	"California"	"06"	"Lake County, CA"	"06033"	"2008"	"2008"	18	64392	Unreliable
+	"California"	"06"	"Lake County, CA"	"06033"	"2009"	"2009"	29	64413	45.0
+	"California"	"06"	"Lake County, CA"	"06033"	"2010"	"2010"	36	64665	55.7
+	"California"	"06"	"Lake County, CA"	"06033"	"2011"	"2011"	34	64323	52.9
+	"California"	"06"	"Lake County, CA"	"06033"	"2012"	"2012"	23	63983	35.9
+	"California"	"06"	"Lake County, CA"	"06033"	"2013"	"2013"	30	63860	47.0
+	"California"	"06"	"Lake County, CA"	"06033"	"2014"	"2014"	35	64184	54.5
+	"California"	"06"	"Lassen County, CA"	"06035"	"2006"	"2006"	13	34605	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2007"	"2007"	11	35615	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2008"	"2008"	13	35221	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2009"	"2009"	Suppressed	35160	Suppressed
+	"California"	"06"	"Lassen County, CA"	"06035"	"2010"	"2010"	12	34895	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2011"	"2011"	13	34200	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2012"	"2012"	Suppressed	33658	Suppressed
+	"California"	"06"	"Lassen County, CA"	"06035"	"2013"	"2013"	11	32163	Unreliable
+	"California"	"06"	"Lassen County, CA"	"06035"	"2014"	"2014"	13	31749	Unreliable
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2006"	"2006"	689	9737955	7.1
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2007"	"2007"	755	9700359	7.8
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2008"	"2008"	707	9735147	7.3
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2009"	"2009"	770	9787400	7.9
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2010"	"2010"	700	9818605	7.1
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2011"	"2011"	684	9889056	6.9
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2012"	"2012"	682	9962789	6.8
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2013"	"2013"	815	10017068	8.1
+	"California"	"06"	"Los Angeles County, CA"	"06037"	"2014"	"2014"	735	10116705	7.3
+	"California"	"06"	"Madera County, CA"	"06039"	"2006"	"2006"	11	143622	Unreliable
+	"California"	"06"	"Madera County, CA"	"06039"	"2007"	"2007"	12	146067	Unreliable
+	"California"	"06"	"Madera County, CA"	"06039"	"2008"	"2008"	11	148359	Unreliable
+	"California"	"06"	"Madera County, CA"	"06039"	"2009"	"2009"	Suppressed	149234	Suppressed
+	"California"	"06"	"Madera County, CA"	"06039"	"2010"	"2010"	20	150865	13.3
+	"California"	"06"	"Madera County, CA"	"06039"	"2011"	"2011"	24	152925	15.7
+	"California"	"06"	"Madera County, CA"	"06039"	"2012"	"2012"	25	152218	16.4
+	"California"	"06"	"Madera County, CA"	"06039"	"2013"	"2013"	21	152389	13.8
+	"California"	"06"	"Madera County, CA"	"06039"	"2014"	"2014"	22	154548	14.2
+	"California"	"06"	"Marin County, CA"	"06041"	"2006"	"2006"	31	244580	12.7
+	"California"	"06"	"Marin County, CA"	"06041"	"2007"	"2007"	40	246248	16.2
+	"California"	"06"	"Marin County, CA"	"06041"	"2008"	"2008"	32	248398	12.9
+	"California"	"06"	"Marin County, CA"	"06041"	"2009"	"2009"	33	250862	13.2
+	"California"	"06"	"Marin County, CA"	"06041"	"2010"	"2010"	35	252409	13.9
+	"California"	"06"	"Marin County, CA"	"06041"	"2011"	"2011"	21	255031	8.2
+	"California"	"06"	"Marin County, CA"	"06041"	"2012"	"2012"	37	256069	14.4
+	"California"	"06"	"Marin County, CA"	"06041"	"2013"	"2013"	40	258365	15.5
+	"California"	"06"	"Marin County, CA"	"06041"	"2014"	"2014"	18	260750	Unreliable
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2006"	"2006"	Suppressed	18219	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2007"	"2007"	Suppressed	18366	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2008"	"2008"	Suppressed	18412	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2009"	"2009"	Suppressed	18212	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2010"	"2010"	Suppressed	18251	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2011"	"2011"	Suppressed	18191	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2012"	"2012"	Suppressed	17905	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2013"	"2013"	Suppressed	17755	Suppressed
+	"California"	"06"	"Mariposa County, CA"	"06043"	"2014"	"2014"	Suppressed	17682	Suppressed
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2006"	"2006"	19	87345	Unreliable
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2007"	"2007"	21	87071	24.1
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2008"	"2008"	18	87468	Unreliable
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2009"	"2009"	16	87722	Unreliable
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2010"	"2010"	19	87841	Unreliable
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2011"	"2011"	17	87553	Unreliable
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2012"	"2012"	Suppressed	87428	Suppressed
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2013"	"2013"	22	87192	25.2
+	"California"	"06"	"Mendocino County, CA"	"06045"	"2014"	"2014"	25	87869	28.5
+	"California"	"06"	"Merced County, CA"	"06047"	"2006"	"2006"	11	245338	Unreliable
+	"California"	"06"	"Merced County, CA"	"06047"	"2007"	"2007"	23	248540	9.3
+	"California"	"06"	"Merced County, CA"	"06047"	"2008"	"2008"	27	250538	10.8
+	"California"	"06"	"Merced County, CA"	"06047"	"2009"	"2009"	22	252302	8.7
+	"California"	"06"	"Merced County, CA"	"06047"	"2010"	"2010"	29	255793	11.3
+	"California"	"06"	"Merced County, CA"	"06047"	"2011"	"2011"	34	259898	13.1
+	"California"	"06"	"Merced County, CA"	"06047"	"2012"	"2012"	37	262305	14.1
+	"California"	"06"	"Merced County, CA"	"06047"	"2013"	"2013"	34	263228	12.9
+	"California"	"06"	"Merced County, CA"	"06047"	"2014"	"2014"	30	266353	11.3
+	"California"	"06"	"Modoc County, CA"	"06049"	"2006"	"2006"	Suppressed	9617	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2007"	"2007"	Suppressed	9525	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2008"	"2008"	Suppressed	9551	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2009"	"2009"	Suppressed	9646	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2010"	"2010"	Suppressed	9686	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2011"	"2011"	Suppressed	9517	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2012"	"2012"	Suppressed	9327	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2013"	"2013"	Suppressed	9147	Suppressed
+	"California"	"06"	"Modoc County, CA"	"06049"	"2014"	"2014"	Suppressed	9023	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2006"	"2006"	0	13743	Unreliable
+	"California"	"06"	"Mono County, CA"	"06051"	"2007"	"2007"	0	13678	Unreliable
+	"California"	"06"	"Mono County, CA"	"06051"	"2008"	"2008"	0	13862	Unreliable
+	"California"	"06"	"Mono County, CA"	"06051"	"2009"	"2009"	Suppressed	14008	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2010"	"2010"	Suppressed	14202	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2011"	"2011"	Suppressed	14309	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2012"	"2012"	Suppressed	14348	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2013"	"2013"	Suppressed	14074	Suppressed
+	"California"	"06"	"Mono County, CA"	"06051"	"2014"	"2014"	0	13997	Unreliable
+	"California"	"06"	"Monterey County, CA"	"06053"	"2006"	"2006"	41	401831	10.2
+	"California"	"06"	"Monterey County, CA"	"06053"	"2007"	"2007"	24	402376	6.0
+	"California"	"06"	"Monterey County, CA"	"06053"	"2008"	"2008"	44	406022	10.8
+	"California"	"06"	"Monterey County, CA"	"06053"	"2009"	"2009"	37	410263	9.0
+	"California"	"06"	"Monterey County, CA"	"06053"	"2010"	"2010"	43	415057	10.4
+	"California"	"06"	"Monterey County, CA"	"06053"	"2011"	"2011"	47	421898	11.1
+	"California"	"06"	"Monterey County, CA"	"06053"	"2012"	"2012"	43	426762	10.1
+	"California"	"06"	"Monterey County, CA"	"06053"	"2013"	"2013"	55	428826	12.8
+	"California"	"06"	"Monterey County, CA"	"06053"	"2014"	"2014"	48	431344	11.1
+	"California"	"06"	"Napa County, CA"	"06055"	"2006"	"2006"	Suppressed	131440	Suppressed
+	"California"	"06"	"Napa County, CA"	"06055"	"2007"	"2007"	13	132583	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2008"	"2008"	16	134093	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2009"	"2009"	14	135280	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2010"	"2010"	17	136484	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2011"	"2011"	18	138088	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2012"	"2012"	16	139045	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2013"	"2013"	17	140326	Unreliable
+	"California"	"06"	"Napa County, CA"	"06055"	"2014"	"2014"	13	141667	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2006"	"2006"	13	97549	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2007"	"2007"	17	97794	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2008"	"2008"	13	98200	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2009"	"2009"	16	98591	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2010"	"2010"	14	98764	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2011"	"2011"	14	98612	Unreliable
+	"California"	"06"	"Nevada County, CA"	"06057"	"2012"	"2012"	25	98292	25.4
+	"California"	"06"	"Nevada County, CA"	"06057"	"2013"	"2013"	24	98200	24.4
+	"California"	"06"	"Nevada County, CA"	"06057"	"2014"	"2014"	20	98893	20.2
+	"California"	"06"	"Orange County, CA"	"06059"	"2006"	"2006"	247	2932261	8.4
+	"California"	"06"	"Orange County, CA"	"06059"	"2007"	"2007"	287	2931629	9.8
+	"California"	"06"	"Orange County, CA"	"06059"	"2008"	"2008"	324	2957593	11.0
+	"California"	"06"	"Orange County, CA"	"06059"	"2009"	"2009"	336	2987177	11.2
+	"California"	"06"	"Orange County, CA"	"06059"	"2010"	"2010"	313	3010232	10.4
+	"California"	"06"	"Orange County, CA"	"06059"	"2011"	"2011"	319	3055745	10.4
+	"California"	"06"	"Orange County, CA"	"06059"	"2012"	"2012"	320	3090132	10.4
+	"California"	"06"	"Orange County, CA"	"06059"	"2013"	"2013"	358	3114363	11.5
+	"California"	"06"	"Orange County, CA"	"06059"	"2014"	"2014"	372	3145515	11.8
+	"California"	"06"	"Placer County, CA"	"06061"	"2006"	"2006"	44	321934	13.7
+	"California"	"06"	"Placer County, CA"	"06061"	"2007"	"2007"	55	329023	16.7
+	"California"	"06"	"Placer County, CA"	"06061"	"2008"	"2008"	41	337568	12.1
+	"California"	"06"	"Placer County, CA"	"06061"	"2009"	"2009"	41	343810	11.9
+	"California"	"06"	"Placer County, CA"	"06061"	"2010"	"2010"	27	348432	7.7
+	"California"	"06"	"Placer County, CA"	"06061"	"2011"	"2011"	26	357138	7.3
+	"California"	"06"	"Placer County, CA"	"06061"	"2012"	"2012"	38	361682	10.5
+	"California"	"06"	"Placer County, CA"	"06061"	"2013"	"2013"	48	367309	13.1
+	"California"	"06"	"Placer County, CA"	"06061"	"2014"	"2014"	36	371694	9.7
+	"California"	"06"	"Plumas County, CA"	"06063"	"2006"	"2006"	Suppressed	20762	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2007"	"2007"	Suppressed	20667	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2008"	"2008"	Suppressed	20410	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2009"	"2009"	Suppressed	20169	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2010"	"2010"	Suppressed	20007	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2011"	"2011"	Suppressed	19765	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2012"	"2012"	Suppressed	19399	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2013"	"2013"	Suppressed	18859	Suppressed
+	"California"	"06"	"Plumas County, CA"	"06063"	"2014"	"2014"	11	18606	Unreliable
+	"California"	"06"	"Riverside County, CA"	"06065"	"2006"	"2006"	176	2012370	8.7
+	"California"	"06"	"Riverside County, CA"	"06065"	"2007"	"2007"	216	2075183	10.4
+	"California"	"06"	"Riverside County, CA"	"06065"	"2008"	"2008"	219	2109712	10.4
+	"California"	"06"	"Riverside County, CA"	"06065"	"2009"	"2009"	238	2146725	11.1
+	"California"	"06"	"Riverside County, CA"	"06065"	"2010"	"2010"	255	2189641	11.6
+	"California"	"06"	"Riverside County, CA"	"06065"	"2011"	"2011"	254	2239620	11.3
+	"California"	"06"	"Riverside County, CA"	"06065"	"2012"	"2012"	286	2268783	12.6
+	"California"	"06"	"Riverside County, CA"	"06065"	"2013"	"2013"	317	2292507	13.8
+	"California"	"06"	"Riverside County, CA"	"06065"	"2014"	"2014"	327	2329271	14.0
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2006"	"2006"	226	1369563	16.5
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2007"	"2007"	212	1381161	15.3
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2008"	"2008"	260	1394438	18.6
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2009"	"2009"	246	1408601	17.5
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2010"	"2010"	216	1418788	15.2
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2011"	"2011"	213	1436105	14.8
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2012"	"2012"	206	1450121	14.2
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2013"	"2013"	242	1462131	16.6
+	"California"	"06"	"Sacramento County, CA"	"06067"	"2014"	"2014"	250	1482026	16.9
+	"California"	"06"	"San Benito County, CA"	"06069"	"2006"	"2006"	Suppressed	54124	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2007"	"2007"	Suppressed	54072	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2008"	"2008"	Suppressed	54267	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2009"	"2009"	Suppressed	54436	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2010"	"2010"	Suppressed	55269	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2011"	"2011"	Suppressed	56072	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2012"	"2012"	Suppressed	56884	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2013"	"2013"	Suppressed	57600	Suppressed
+	"California"	"06"	"San Benito County, CA"	"06069"	"2014"	"2014"	Suppressed	58267	Suppressed
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2006"	"2006"	97	1974140	4.9
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2007"	"2007"	69	1992161	3.5
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2008"	"2008"	109	2003735	5.4
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2009"	"2009"	137	2013960	6.8
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2010"	"2010"	134	2035210	6.6
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2011"	"2011"	111	2065377	5.4
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2012"	"2012"	127	2081313	6.1
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2013"	"2013"	125	2088371	6.0
+	"California"	"06"	"San Bernardino County, CA"	"06071"	"2014"	"2014"	124	2112619	5.9
+	"California"	"06"	"San Diego County, CA"	"06073"	"2006"	"2006"	305	2947289	10.3
+	"California"	"06"	"San Diego County, CA"	"06073"	"2007"	"2007"	357	2975742	12.0
+	"California"	"06"	"San Diego County, CA"	"06073"	"2008"	"2008"	361	3022116	11.9
+	"California"	"06"	"San Diego County, CA"	"06073"	"2009"	"2009"	368	3061203	12.0
+	"California"	"06"	"San Diego County, CA"	"06073"	"2010"	"2010"	367	3095313	11.9
+	"California"	"06"	"San Diego County, CA"	"06073"	"2011"	"2011"	415	3140069	13.2
+	"California"	"06"	"San Diego County, CA"	"06073"	"2012"	"2012"	424	3177063	13.3
+	"California"	"06"	"San Diego County, CA"	"06073"	"2013"	"2013"	428	3211252	13.3
+	"California"	"06"	"San Diego County, CA"	"06073"	"2014"	"2014"	419	3263431	12.8
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2006"	"2006"	153	768650	19.9
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2007"	"2007"	186	778673	23.9
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2008"	"2008"	173	791152	21.9
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2009"	"2009"	172	801922	21.4
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2010"	"2010"	170	805235	21.1
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2011"	"2011"	194	812826	23.9
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2012"	"2012"	136	825863	16.5
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2013"	"2013"	130	837442	15.5
+	"California"	"06"	"San Francisco County, CA"	"06075"	"2014"	"2014"	164	852469	19.2
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2006"	"2006"	80	662812	12.1
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2007"	"2007"	96	668080	14.4
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2008"	"2008"	106	671692	15.8
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2009"	"2009"	118	677736	17.4
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2010"	"2010"	129	685306	18.8
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2011"	"2011"	134	696214	19.2
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2012"	"2012"	105	702612	14.9
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2013"	"2013"	109	704379	15.5
+	"California"	"06"	"San Joaquin County, CA"	"06077"	"2014"	"2014"	121	715597	16.9
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2006"	"2006"	32	260498	12.3
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2007"	"2007"	36	262770	13.7
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2008"	"2008"	27	266358	10.1
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2009"	"2009"	35	268145	13.1
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2010"	"2010"	40	269637	14.8
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2011"	"2011"	42	271969	15.4
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2012"	"2012"	38	274804	13.8
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2013"	"2013"	38	276443	13.7
+	"California"	"06"	"San Luis Obispo County, CA"	"06079"	"2014"	"2014"	33	279083	11.8
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2006"	"2006"	48	690176	7.0
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2007"	"2007"	63	693849	9.1
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2008"	"2008"	56	703830	8.0
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2009"	"2009"	52	713617	7.3
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2010"	"2010"	55	718451	7.7
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2011"	"2011"	66	727209	9.1
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2012"	"2012"	57	739311	7.7
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2013"	"2013"	56	747373	7.5
+	"California"	"06"	"San Mateo County, CA"	"06081"	"2014"	"2014"	68	758581	9.0
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2006"	"2006"	36	408085	8.8
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2007"	"2007"	44	411243	10.7
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2008"	"2008"	44	415859	10.6
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2009"	"2009"	64	420356	15.2
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2010"	"2010"	48	423895	11.3
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2011"	"2011"	42	426878	9.8
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2012"	"2012"	42	431249	9.7
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2013"	"2013"	53	435697	12.2
+	"California"	"06"	"Santa Barbara County, CA"	"06083"	"2014"	"2014"	56	440668	12.7
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2006"	"2006"	96	1691159	5.7
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2007"	"2007"	141	1712026	8.2
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2008"	"2008"	114	1740964	6.5
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2009"	"2009"	115	1765137	6.5
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2010"	"2010"	133	1781642	7.5
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2011"	"2011"	144	1809378	8.0
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2012"	"2012"	142	1837504	7.7
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2013"	"2013"	152	1862041	8.2
+	"California"	"06"	"Santa Clara County, CA"	"06085"	"2014"	"2014"	134	1894605	7.1
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2006"	"2006"	32	251616	12.7
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2007"	"2007"	42	253304	16.6
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2008"	"2008"	31	256520	12.1
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2009"	"2009"	36	260009	13.8
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2010"	"2010"	47	262382	17.9
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2011"	"2011"	56	264298	21.2
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2012"	"2012"	53	266776	19.9
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2013"	"2013"	44	269419	16.3
+	"California"	"06"	"Santa Cruz County, CA"	"06087"	"2014"	"2014"	59	271804	21.7
+	"California"	"06"	"Shasta County, CA"	"06089"	"2006"	"2006"	39	176166	22.1
+	"California"	"06"	"Shasta County, CA"	"06089"	"2007"	"2007"	48	176548	27.2
+	"California"	"06"	"Shasta County, CA"	"06089"	"2008"	"2008"	57	177247	32.2
+	"California"	"06"	"Shasta County, CA"	"06089"	"2009"	"2009"	57	177279	32.2
+	"California"	"06"	"Shasta County, CA"	"06089"	"2010"	"2010"	49	177223	27.6
+	"California"	"06"	"Shasta County, CA"	"06089"	"2011"	"2011"	53	177774	29.8
+	"California"	"06"	"Shasta County, CA"	"06089"	"2012"	"2012"	52	178586	29.1
+	"California"	"06"	"Shasta County, CA"	"06089"	"2013"	"2013"	50	178980	27.9
+	"California"	"06"	"Shasta County, CA"	"06089"	"2014"	"2014"	40	179804	22.2
+	"California"	"06"	"Sierra County, CA"	"06091"	"2006"	"2006"	Suppressed	3424	Suppressed
+	"California"	"06"	"Sierra County, CA"	"06091"	"2007"	"2007"	0	3373	Unreliable
+	"California"	"06"	"Sierra County, CA"	"06091"	"2008"	"2008"	0	3320	Unreliable
+	"California"	"06"	"Sierra County, CA"	"06091"	"2009"	"2009"	Suppressed	3248	Suppressed
+	"California"	"06"	"Sierra County, CA"	"06091"	"2010"	"2010"	Suppressed	3240	Suppressed
+	"California"	"06"	"Sierra County, CA"	"06091"	"2011"	"2011"	Suppressed	3113	Suppressed
+	"California"	"06"	"Sierra County, CA"	"06091"	"2012"	"2012"	0	3086	Unreliable
+	"California"	"06"	"Sierra County, CA"	"06091"	"2013"	"2013"	Suppressed	3047	Suppressed
+	"California"	"06"	"Sierra County, CA"	"06091"	"2014"	"2014"	Suppressed	3003	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2006"	"2006"	Suppressed	44487	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2007"	"2007"	Suppressed	44465	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2008"	"2008"	10	44780	Unreliable
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2009"	"2009"	Suppressed	44788	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2010"	"2010"	13	44900	Unreliable
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2011"	"2011"	12	44507	Unreliable
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2012"	"2012"	Suppressed	44154	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2013"	"2013"	Suppressed	43799	Suppressed
+	"California"	"06"	"Siskiyou County, CA"	"06093"	"2014"	"2014"	Suppressed	43628	Suppressed
+	"California"	"06"	"Solano County, CA"	"06095"	"2006"	"2006"	36	408402	8.8
+	"California"	"06"	"Solano County, CA"	"06095"	"2007"	"2007"	36	408243	8.8
+	"California"	"06"	"Solano County, CA"	"06095"	"2008"	"2008"	44	408972	10.8
+	"California"	"06"	"Solano County, CA"	"06095"	"2009"	"2009"	44	410290	10.7
+	"California"	"06"	"Solano County, CA"	"06095"	"2010"	"2010"	52	413344	12.6
+	"California"	"06"	"Solano County, CA"	"06095"	"2011"	"2011"	58	416471	13.9
+	"California"	"06"	"Solano County, CA"	"06095"	"2012"	"2012"	29	420757	6.9
+	"California"	"06"	"Solano County, CA"	"06095"	"2013"	"2013"	54	424788	12.7
+	"California"	"06"	"Solano County, CA"	"06095"	"2014"	"2014"	69	431131	16.0
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2006"	"2006"	44	465188	9.5
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2007"	"2007"	61	467356	13.1
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2008"	"2008"	75	473091	15.9
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2009"	"2009"	59	479479	12.3
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2010"	"2010"	83	483878	17.2
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2011"	"2011"	50	488116	10.2
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2012"	"2012"	66	491829	13.4
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2013"	"2013"	38	495025	7.7
+	"California"	"06"	"Sonoma County, CA"	"06097"	"2014"	"2014"	74	500292	14.8
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2006"	"2006"	89	504651	17.6
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2007"	"2007"	82	507834	16.1
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2008"	"2008"	66	509032	13.0
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2009"	"2009"	79	511536	15.4
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2010"	"2010"	90	514453	17.5
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2011"	"2011"	82	518522	15.8
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2012"	"2012"	73	521726	14.0
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2013"	"2013"	73	525491	13.9
+	"California"	"06"	"Stanislaus County, CA"	"06099"	"2014"	"2014"	69	531997	13.0
+	"California"	"06"	"Sutter County, CA"	"06101"	"2006"	"2006"	Suppressed	91112	Suppressed
+	"California"	"06"	"Sutter County, CA"	"06101"	"2007"	"2007"	10	92959	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2008"	"2008"	12	93855	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2009"	"2009"	13	94366	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2010"	"2010"	18	94737	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2011"	"2011"	14	94919	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2012"	"2012"	12	95022	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2013"	"2013"	16	95350	Unreliable
+	"California"	"06"	"Sutter County, CA"	"06101"	"2014"	"2014"	Suppressed	95847	Suppressed
+	"California"	"06"	"Tehama County, CA"	"06103"	"2006"	"2006"	10	61587	Unreliable
+	"California"	"06"	"Tehama County, CA"	"06103"	"2007"	"2007"	Suppressed	62147	Suppressed
+	"California"	"06"	"Tehama County, CA"	"06103"	"2008"	"2008"	11	62648	Unreliable
+	"California"	"06"	"Tehama County, CA"	"06103"	"2009"	"2009"	Suppressed	62891	Suppressed
+	"California"	"06"	"Tehama County, CA"	"06103"	"2010"	"2010"	Suppressed	63463	Suppressed
+	"California"	"06"	"Tehama County, CA"	"06103"	"2011"	"2011"	13	63601	Unreliable
+	"California"	"06"	"Tehama County, CA"	"06103"	"2012"	"2012"	12	63406	Unreliable
+	"California"	"06"	"Tehama County, CA"	"06103"	"2013"	"2013"	Suppressed	63057	Suppressed
+	"California"	"06"	"Tehama County, CA"	"06103"	"2014"	"2014"	Suppressed	63067	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2006"	"2006"	Suppressed	13634	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2007"	"2007"	Suppressed	13648	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2008"	"2008"	Suppressed	13656	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2009"	"2009"	Suppressed	13762	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2010"	"2010"	Suppressed	13786	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2011"	"2011"	Suppressed	13723	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2012"	"2012"	Suppressed	13526	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2013"	"2013"	Suppressed	13448	Suppressed
+	"California"	"06"	"Trinity County, CA"	"06105"	"2014"	"2014"	Suppressed	13170	Suppressed
+	"California"	"06"	"Tulare County, CA"	"06107"	"2006"	"2006"	49	414921	11.8
+	"California"	"06"	"Tulare County, CA"	"06107"	"2007"	"2007"	22	422140	5.2
+	"California"	"06"	"Tulare County, CA"	"06107"	"2008"	"2008"	19	429283	Unreliable
+	"California"	"06"	"Tulare County, CA"	"06107"	"2009"	"2009"	38	436987	8.7
+	"California"	"06"	"Tulare County, CA"	"06107"	"2010"	"2010"	26	442179	5.9
+	"California"	"06"	"Tulare County, CA"	"06107"	"2011"	"2011"	34	449253	7.6
+	"California"	"06"	"Tulare County, CA"	"06107"	"2012"	"2012"	28	451977	6.2
+	"California"	"06"	"Tulare County, CA"	"06107"	"2013"	"2013"	38	454143	8.4
+	"California"	"06"	"Tulare County, CA"	"06107"	"2014"	"2014"	36	458198	7.9
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2006"	"2006"	14	56680	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2007"	"2007"	14	56339	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2008"	"2008"	10	56320	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2009"	"2009"	18	55845	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2010"	"2010"	18	55365	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2011"	"2011"	14	54953	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2012"	"2012"	12	54008	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2013"	"2013"	12	53874	Unreliable
+	"California"	"06"	"Tuolumne County, CA"	"06109"	"2014"	"2014"	19	53831	Unreliable
+	"California"	"06"	"Ventura County, CA"	"06111"	"2006"	"2006"	96	798183	12.0
+	"California"	"06"	"Ventura County, CA"	"06111"	"2007"	"2007"	84	800027	10.5
+	"California"	"06"	"Ventura County, CA"	"06111"	"2008"	"2008"	80	806353	9.9
+	"California"	"06"	"Ventura County, CA"	"06111"	"2009"	"2009"	86	815130	10.6
+	"California"	"06"	"Ventura County, CA"	"06111"	"2010"	"2010"	96	823318	11.7
+	"California"	"06"	"Ventura County, CA"	"06111"	"2011"	"2011"	111	831771	13.3
+	"California"	"06"	"Ventura County, CA"	"06111"	"2012"	"2012"	113	835981	13.5
+	"California"	"06"	"Ventura County, CA"	"06111"	"2013"	"2013"	126	839620	15.0
+	"California"	"06"	"Ventura County, CA"	"06111"	"2014"	"2014"	121	846178	14.3
+	"California"	"06"	"Yolo County, CA"	"06113"	"2006"	"2006"	Suppressed	189615	Suppressed
+	"California"	"06"	"Yolo County, CA"	"06113"	"2007"	"2007"	13	194339	Unreliable
+	"California"	"06"	"Yolo County, CA"	"06113"	"2008"	"2008"	13	197154	Unreliable
+	"California"	"06"	"Yolo County, CA"	"06113"	"2009"	"2009"	16	199791	Unreliable
+	"California"	"06"	"Yolo County, CA"	"06113"	"2010"	"2010"	15	200849	Unreliable
+	"California"	"06"	"Yolo County, CA"	"06113"	"2011"	"2011"	20	202054	9.9
+	"California"	"06"	"Yolo County, CA"	"06113"	"2012"	"2012"	22	204118	10.8
+	"California"	"06"	"Yolo County, CA"	"06113"	"2013"	"2013"	25	204593	12.2
+	"California"	"06"	"Yolo County, CA"	"06113"	"2014"	"2014"	25	207590	12.0
+	"California"	"06"	"Yuba County, CA"	"06115"	"2006"	"2006"	Suppressed	69272	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2007"	"2007"	Suppressed	70761	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2008"	"2008"	Suppressed	71773	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2009"	"2009"	Suppressed	71607	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2010"	"2010"	Suppressed	72155	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2011"	"2011"	Suppressed	72578	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2012"	"2012"	Suppressed	72926	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2013"	"2013"	Suppressed	73340	Suppressed
+	"California"	"06"	"Yuba County, CA"	"06115"	"2014"	"2014"	Suppressed	73966	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: California (06)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:10:51 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:10:51 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

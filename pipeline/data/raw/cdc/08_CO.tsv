@@ -1,0 +1,633 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2006"	"2006"	68	406575	16.7
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2007"	"2007"	75	415746	18.0
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2008"	"2008"	64	424913	15.1
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2009"	"2009"	71	435700	16.3
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2010"	"2010"	66	441603	14.9
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2011"	"2011"	93	451443	20.6
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2012"	"2012"	96	459598	20.9
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2013"	"2013"	82	469193	17.5
+	"Colorado"	"08"	"Adams County, CO"	"08001"	"2014"	"2014"	96	480718	20.0
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2006"	"2006"	Suppressed	15196	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2007"	"2007"	Suppressed	15180	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2008"	"2008"	Suppressed	15300	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2009"	"2009"	Suppressed	15289	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2010"	"2010"	Suppressed	15445	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2011"	"2011"	Suppressed	15710	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2012"	"2012"	Suppressed	16148	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2013"	"2013"	Suppressed	16253	Suppressed
+	"Colorado"	"08"	"Alamosa County, CO"	"08003"	"2014"	"2014"	Suppressed	16177	Suppressed
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2006"	"2006"	73	531619	13.7
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2007"	"2007"	95	542039	17.5
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2008"	"2008"	94	552461	17.0
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2009"	"2009"	99	563161	17.6
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2010"	"2010"	82	572003	14.3
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2011"	"2011"	82	584948	14.0
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2012"	"2012"	87	595546	14.6
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2013"	"2013"	102	607070	16.8
+	"Colorado"	"08"	"Arapahoe County, CO"	"08005"	"2014"	"2014"	102	618821	16.5
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2006"	"2006"	0	11937	Unreliable
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2007"	"2007"	Suppressed	12262	Suppressed
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2008"	"2008"	Suppressed	12250	Suppressed
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2009"	"2009"	0	12169	Unreliable
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2010"	"2010"	0	12084	Unreliable
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2011"	"2011"	Suppressed	12013	Suppressed
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2012"	"2012"	Suppressed	12070	Suppressed
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2013"	"2013"	0	12194	Unreliable
+	"Colorado"	"08"	"Archuleta County, CO"	"08007"	"2014"	"2014"	0	12244	Unreliable
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2006"	"2006"	Suppressed	3933	Suppressed
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2007"	"2007"	0	3866	Unreliable
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2008"	"2008"	Suppressed	3806	Suppressed
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2009"	"2009"	Suppressed	3767	Suppressed
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2010"	"2010"	0	3788	Unreliable
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2011"	"2011"	0	3795	Unreliable
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2012"	"2012"	0	3751	Unreliable
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2013"	"2013"	Suppressed	3682	Suppressed
+	"Colorado"	"08"	"Baca County, CO"	"08009"	"2014"	"2014"	0	3645	Unreliable
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2006"	"2006"	Suppressed	6012	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2007"	"2007"	Suppressed	5715	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2008"	"2008"	0	5962	Unreliable
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2009"	"2009"	Suppressed	6425	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2010"	"2010"	Suppressed	6499	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2011"	"2011"	Suppressed	6250	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2012"	"2012"	Suppressed	5773	Suppressed
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2013"	"2013"	0	5688	Unreliable
+	"Colorado"	"08"	"Bent County, CO"	"08011"	"2014"	"2014"	Suppressed	5630	Suppressed
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2006"	"2006"	42	284243	14.8
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2007"	"2007"	47	287428	16.4
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2008"	"2008"	43	290859	14.8
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2009"	"2009"	46	293190	15.7
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2010"	"2010"	23	294567	7.8
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2011"	"2011"	40	299378	13.4
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2012"	"2012"	35	305318	11.5
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2013"	"2013"	56	310048	18.1
+	"Colorado"	"08"	"Boulder County, CO"	"08013"	"2014"	"2014"	47	313333	15.0
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2006"	"2006"	Suppressed	48729	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2007"	"2007"	Suppressed	51526	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2008"	"2008"	Suppressed	53181	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2009"	"2009"	Suppressed	54789	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2010"	"2010"	Suppressed	55889	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2011"	"2011"	Suppressed	57352	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2012"	"2012"	Suppressed	58298	Suppressed
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2013"	"2013"	11	59471	Unreliable
+	"Colorado"	"08"	"Broomfield County, CO"	"08014"	"2014"	"2014"	Suppressed	62138	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2006"	"2006"	Suppressed	17087	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2007"	"2007"	Suppressed	17377	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2008"	"2008"	Suppressed	17573	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2009"	"2009"	Suppressed	17852	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2010"	"2010"	Suppressed	17809	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2011"	"2011"	Suppressed	17932	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2012"	"2012"	Suppressed	18150	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2013"	"2013"	Suppressed	18510	Suppressed
+	"Colorado"	"08"	"Chaffee County, CO"	"08015"	"2014"	"2014"	Suppressed	18363	Suppressed
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2006"	"2006"	0	1912	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2007"	"2007"	0	1863	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2008"	"2008"	0	1881	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2009"	"2009"	0	1843	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2010"	"2010"	0	1836	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2011"	"2011"	0	1876	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2012"	"2012"	0	1874	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2013"	"2013"	0	1890	Unreliable
+	"Colorado"	"08"	"Cheyenne County, CO"	"08017"	"2014"	"2014"	0	1871	Unreliable
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2006"	"2006"	Suppressed	9042	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2007"	"2007"	Suppressed	9152	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2008"	"2008"	Suppressed	9138	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2009"	"2009"	0	8994	Unreliable
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2010"	"2010"	Suppressed	9088	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2011"	"2011"	Suppressed	9012	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2012"	"2012"	Suppressed	9026	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2013"	"2013"	Suppressed	9031	Suppressed
+	"Colorado"	"08"	"Clear Creek County, CO"	"08019"	"2014"	"2014"	Suppressed	9187	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2006"	"2006"	Suppressed	8256	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2007"	"2007"	0	8217	Unreliable
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2008"	"2008"	Suppressed	8200	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2009"	"2009"	Suppressed	8140	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2010"	"2010"	Suppressed	8256	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2011"	"2011"	Suppressed	8291	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2012"	"2012"	Suppressed	8275	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2013"	"2013"	Suppressed	8277	Suppressed
+	"Colorado"	"08"	"Conejos County, CO"	"08021"	"2014"	"2014"	Suppressed	8265	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2006"	"2006"	Suppressed	3571	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2007"	"2007"	Suppressed	3567	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2008"	"2008"	0	3532	Unreliable
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2009"	"2009"	0	3481	Unreliable
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2010"	"2010"	Suppressed	3524	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2011"	"2011"	Suppressed	3662	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2012"	"2012"	Suppressed	3594	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2013"	"2013"	Suppressed	3518	Suppressed
+	"Colorado"	"08"	"Costilla County, CO"	"08023"	"2014"	"2014"	Suppressed	3568	Suppressed
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2006"	"2006"	0	5886	Unreliable
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2007"	"2007"	Suppressed	6015	Suppressed
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2008"	"2008"	0	5947	Unreliable
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2009"	"2009"	0	5797	Unreliable
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2010"	"2010"	0	5823	Unreliable
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2011"	"2011"	0	5736	Unreliable
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2012"	"2012"	Suppressed	5365	Suppressed
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2013"	"2013"	Suppressed	5322	Suppressed
+	"Colorado"	"08"	"Crowley County, CO"	"08025"	"2014"	"2014"	0	5360	Unreliable
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2006"	"2006"	Suppressed	3994	Suppressed
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2007"	"2007"	0	4112	Unreliable
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2008"	"2008"	0	4107	Unreliable
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2009"	"2009"	0	4190	Unreliable
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2010"	"2010"	Suppressed	4255	Suppressed
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2011"	"2011"	0	4205	Unreliable
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2012"	"2012"	Suppressed	4249	Suppressed
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2013"	"2013"	Suppressed	4285	Suppressed
+	"Colorado"	"08"	"Custer County, CO"	"08027"	"2014"	"2014"	0	4361	Unreliable
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2006"	"2006"	Suppressed	29789	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2007"	"2007"	Suppressed	30121	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2008"	"2008"	Suppressed	30712	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2009"	"2009"	Suppressed	31156	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2010"	"2010"	0	30952	Unreliable
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2011"	"2011"	Suppressed	30451	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2012"	"2012"	Suppressed	30432	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2013"	"2013"	Suppressed	30483	Suppressed
+	"Colorado"	"08"	"Delta County, CO"	"08029"	"2014"	"2014"	Suppressed	29870	Suppressed
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2006"	"2006"	144	556895	25.9
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2007"	"2007"	148	564395	26.2
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2008"	"2008"	170	575721	29.5
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2009"	"2009"	169	589011	28.7
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2010"	"2010"	127	600158	21.2
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2011"	"2011"	163	619968	26.3
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2012"	"2012"	126	634265	19.9
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2013"	"2013"	119	649495	18.3
+	"Colorado"	"08"	"Denver County, CO"	"08031"	"2014"	"2014"	134	663862	20.2
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2006"	"2006"	0	1973	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2007"	"2007"	0	1980	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2008"	"2008"	0	2061	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2009"	"2009"	Suppressed	2057	Suppressed
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2010"	"2010"	0	2064	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2011"	"2011"	0	2056	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2012"	"2012"	0	1994	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2013"	"2013"	0	2029	Unreliable
+	"Colorado"	"08"	"Dolores County, CO"	"08033"	"2014"	"2014"	Suppressed	1978	Suppressed
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2006"	"2006"	25	256136	9.8
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2007"	"2007"	17	267177	Unreliable
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2008"	"2008"	Suppressed	275500	Suppressed
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2009"	"2009"	23	281386	8.2
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2010"	"2010"	23	285465	8.1
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2011"	"2011"	28	292167	9.6
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2012"	"2012"	30	298215	10.1
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2013"	"2013"	30	305963	9.8
+	"Colorado"	"08"	"Douglas County, CO"	"08035"	"2014"	"2014"	23	314638	7.3
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2006"	"2006"	Suppressed	48476	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2007"	"2007"	Suppressed	49803	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2008"	"2008"	Suppressed	51049	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2009"	"2009"	Suppressed	52513	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2010"	"2010"	Suppressed	52197	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2011"	"2011"	Suppressed	51854	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2012"	"2012"	Suppressed	51874	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2013"	"2013"	Suppressed	52460	Suppressed
+	"Colorado"	"08"	"Eagle County, CO"	"08037"	"2014"	"2014"	Suppressed	52921	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2006"	"2006"	Suppressed	22423	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2007"	"2007"	Suppressed	22402	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2008"	"2008"	Suppressed	22634	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2009"	"2009"	Suppressed	22965	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2010"	"2010"	Suppressed	23086	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2011"	"2011"	Suppressed	23174	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2012"	"2012"	Suppressed	23383	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2013"	"2013"	Suppressed	23733	Suppressed
+	"Colorado"	"08"	"Elbert County, CO"	"08039"	"2014"	"2014"	Suppressed	24195	Suppressed
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2006"	"2006"	68	580251	11.7
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2007"	"2007"	80	586783	13.6
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2008"	"2008"	96	597919	16.1
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2009"	"2009"	82	608061	13.5
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2010"	"2010"	79	622263	12.7
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2011"	"2011"	99	636963	15.5
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2012"	"2012"	100	644964	15.5
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2013"	"2013"	110	655044	16.8
+	"Colorado"	"08"	"El Paso County, CO"	"08041"	"2014"	"2014"	139	663519	20.9
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2006"	"2006"	10	46873	Unreliable
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2007"	"2007"	Suppressed	46959	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2008"	"2008"	13	47166	Unreliable
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2009"	"2009"	Suppressed	46871	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2010"	"2010"	Suppressed	46824	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2011"	"2011"	Suppressed	47347	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2012"	"2012"	Suppressed	46788	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2013"	"2013"	Suppressed	46451	Suppressed
+	"Colorado"	"08"	"Fremont County, CO"	"08043"	"2014"	"2014"	Suppressed	46502	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2006"	"2006"	Suppressed	51594	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2007"	"2007"	Suppressed	53534	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2008"	"2008"	Suppressed	55449	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2009"	"2009"	13	57089	Unreliable
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2010"	"2010"	Suppressed	56389	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2011"	"2011"	11	56270	Unreliable
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2012"	"2012"	Suppressed	56953	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2013"	"2013"	Suppressed	57302	Suppressed
+	"Colorado"	"08"	"Garfield County, CO"	"08045"	"2014"	"2014"	Suppressed	57461	Suppressed
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2006"	"2006"	Suppressed	4883	Suppressed
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2007"	"2007"	0	4893	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2008"	"2008"	0	5026	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2009"	"2009"	0	5352	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2010"	"2010"	0	5441	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2011"	"2011"	0	5467	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2012"	"2012"	Suppressed	5491	Suppressed
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2013"	"2013"	0	5601	Unreliable
+	"Colorado"	"08"	"Gilpin County, CO"	"08047"	"2014"	"2014"	Suppressed	5851	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2006"	"2006"	0	14003	Unreliable
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2007"	"2007"	Suppressed	14306	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2008"	"2008"	Suppressed	14622	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2009"	"2009"	Suppressed	14902	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2010"	"2010"	Suppressed	14843	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2011"	"2011"	0	14548	Unreliable
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2012"	"2012"	Suppressed	14195	Suppressed
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2013"	"2013"	0	14289	Unreliable
+	"Colorado"	"08"	"Grand County, CO"	"08049"	"2014"	"2014"	Suppressed	14546	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2006"	"2006"	0	14720	Unreliable
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2007"	"2007"	Suppressed	15043	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2008"	"2008"	Suppressed	15250	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2009"	"2009"	0	15356	Unreliable
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2010"	"2010"	Suppressed	15324	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2011"	"2011"	Suppressed	15408	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2012"	"2012"	Suppressed	15475	Suppressed
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2013"	"2013"	0	15507	Unreliable
+	"Colorado"	"08"	"Gunnison County, CO"	"08051"	"2014"	"2014"	Suppressed	15725	Suppressed
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2006"	"2006"	0	815	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2007"	"2007"	0	835	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2008"	"2008"	0	818	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2009"	"2009"	0	834	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2010"	"2010"	0	843	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2011"	"2011"	0	830	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2012"	"2012"	0	810	Unreliable
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2013"	"2013"	Suppressed	813	Suppressed
+	"Colorado"	"08"	"Hinsdale County, CO"	"08053"	"2014"	"2014"	0	786	Unreliable
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2006"	"2006"	Suppressed	7127	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2007"	"2007"	Suppressed	7051	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2008"	"2008"	Suppressed	7073	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2009"	"2009"	0	6824	Unreliable
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2010"	"2010"	Suppressed	6711	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2011"	"2011"	Suppressed	6520	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2012"	"2012"	Suppressed	6596	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2013"	"2013"	Suppressed	6519	Suppressed
+	"Colorado"	"08"	"Huerfano County, CO"	"08055"	"2014"	"2014"	Suppressed	6462	Suppressed
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2006"	"2006"	0	1415	Unreliable
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2007"	"2007"	Suppressed	1407	Suppressed
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2008"	"2008"	Suppressed	1378	Suppressed
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2009"	"2009"	0	1408	Unreliable
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2010"	"2010"	0	1394	Unreliable
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2011"	"2011"	0	1370	Unreliable
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2012"	"2012"	Suppressed	1348	Suppressed
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2013"	"2013"	0	1365	Unreliable
+	"Colorado"	"08"	"Jackson County, CO"	"08057"	"2014"	"2014"	Suppressed	1396	Suppressed
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2006"	"2006"	37	521662	7.1
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2007"	"2007"	76	524911	14.5
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2008"	"2008"	66	529003	12.5
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2009"	"2009"	62	531961	11.7
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2010"	"2010"	57	534543	10.7
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2011"	"2011"	73	539884	13.5
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2012"	"2012"	81	545358	14.9
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2013"	"2013"	83	551798	15.0
+	"Colorado"	"08"	"Jefferson County, CO"	"08059"	"2014"	"2014"	88	558503	15.8
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2006"	"2006"	0	1456	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2007"	"2007"	0	1410	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2008"	"2008"	0	1392	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2009"	"2009"	0	1378	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2010"	"2010"	0	1398	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2011"	"2011"	0	1433	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2012"	"2012"	0	1444	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2013"	"2013"	0	1423	Unreliable
+	"Colorado"	"08"	"Kiowa County, CO"	"08061"	"2014"	"2014"	0	1402	Unreliable
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2006"	"2006"	Suppressed	8011	Suppressed
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2007"	"2007"	Suppressed	7954	Suppressed
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2008"	"2008"	0	8157	Unreliable
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2009"	"2009"	0	8383	Unreliable
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2010"	"2010"	Suppressed	8270	Suppressed
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2011"	"2011"	Suppressed	8142	Suppressed
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2012"	"2012"	0	8094	Unreliable
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2013"	"2013"	0	8037	Unreliable
+	"Colorado"	"08"	"Kit Carson County, CO"	"08063"	"2014"	"2014"	Suppressed	8072	Suppressed
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2006"	"2006"	0	7278	Unreliable
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2007"	"2007"	0	7392	Unreliable
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2008"	"2008"	Suppressed	7450	Suppressed
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2009"	"2009"	0	7426	Unreliable
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2010"	"2010"	Suppressed	7310	Suppressed
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2011"	"2011"	Suppressed	7427	Suppressed
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2012"	"2012"	0	7338	Unreliable
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2013"	"2013"	Suppressed	7306	Suppressed
+	"Colorado"	"08"	"Lake County, CO"	"08065"	"2014"	"2014"	0	7357	Unreliable
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2006"	"2006"	Suppressed	48574	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2007"	"2007"	Suppressed	49343	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2008"	"2008"	Suppressed	50291	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2009"	"2009"	Suppressed	51105	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2010"	"2010"	Suppressed	51334	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2011"	"2011"	Suppressed	51917	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2012"	"2012"	10	52401	Unreliable
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2013"	"2013"	Suppressed	53284	Suppressed
+	"Colorado"	"08"	"La Plata County, CO"	"08067"	"2014"	"2014"	Suppressed	53989	Suppressed
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2006"	"2006"	37	280713	13.2
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2007"	"2007"	36	286112	12.6
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2008"	"2008"	44	291650	15.1
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2009"	"2009"	43	296696	14.5
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2010"	"2010"	40	299630	13.3
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2011"	"2011"	53	305525	17.3
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2012"	"2012"	42	310487	13.5
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2013"	"2013"	61	315988	19.3
+	"Colorado"	"08"	"Larimer County, CO"	"08069"	"2014"	"2014"	55	324122	17.0
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2006"	"2006"	Suppressed	15673	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2007"	"2007"	Suppressed	15734	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2008"	"2008"	Suppressed	15770	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2009"	"2009"	Suppressed	15775	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2010"	"2010"	Suppressed	15507	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2011"	"2011"	Suppressed	15037	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2012"	"2012"	Suppressed	14945	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2013"	"2013"	Suppressed	14446	Suppressed
+	"Colorado"	"08"	"Las Animas County, CO"	"08071"	"2014"	"2014"	Suppressed	14052	Suppressed
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2006"	"2006"	Suppressed	5530	Suppressed
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2007"	"2007"	Suppressed	5484	Suppressed
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2008"	"2008"	0	5468	Unreliable
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2009"	"2009"	Suppressed	5423	Suppressed
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2010"	"2010"	0	5467	Unreliable
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2011"	"2011"	0	5454	Unreliable
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2012"	"2012"	Suppressed	5453	Suppressed
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2013"	"2013"	0	5430	Unreliable
+	"Colorado"	"08"	"Lincoln County, CO"	"08073"	"2014"	"2014"	Suppressed	5510	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2006"	"2006"	Suppressed	21911	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2007"	"2007"	Suppressed	22163	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2008"	"2008"	Suppressed	22128	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2009"	"2009"	Suppressed	22451	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2010"	"2010"	Suppressed	22709	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2011"	"2011"	Suppressed	22619	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2012"	"2012"	Suppressed	22631	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2013"	"2013"	Suppressed	22450	Suppressed
+	"Colorado"	"08"	"Logan County, CO"	"08075"	"2014"	"2014"	Suppressed	22524	Suppressed
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2006"	"2006"	Suppressed	134665	Suppressed
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2007"	"2007"	22	139434	15.8
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2008"	"2008"	21	143155	14.7
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2009"	"2009"	24	147851	16.2
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2010"	"2010"	22	146723	15.0
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2011"	"2011"	33	147083	22.4
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2012"	"2012"	26	147848	17.6
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2013"	"2013"	20	147554	13.6
+	"Colorado"	"08"	"Mesa County, CO"	"08077"	"2014"	"2014"	20	148255	13.5
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2006"	"2006"	0	789	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2007"	"2007"	0	807	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2008"	"2008"	0	774	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2009"	"2009"	0	732	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2010"	"2010"	0	712	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2011"	"2011"	0	708	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2012"	"2012"	0	709	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2013"	"2013"	0	721	Unreliable
+	"Colorado"	"08"	"Mineral County, CO"	"08079"	"2014"	"2014"	0	698	Unreliable
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2006"	"2006"	Suppressed	13115	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2007"	"2007"	Suppressed	13348	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2008"	"2008"	Suppressed	13585	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2009"	"2009"	Suppressed	13728	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2010"	"2010"	Suppressed	13795	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2011"	"2011"	Suppressed	13451	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2012"	"2012"	Suppressed	13200	Suppressed
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2013"	"2013"	0	13103	Unreliable
+	"Colorado"	"08"	"Moffat County, CO"	"08081"	"2014"	"2014"	Suppressed	12928	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2006"	"2006"	Suppressed	24968	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2007"	"2007"	Suppressed	25157	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2008"	"2008"	Suppressed	25222	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2009"	"2009"	0	25507	Unreliable
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2010"	"2010"	Suppressed	25535	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2011"	"2011"	Suppressed	25442	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2012"	"2012"	0	25431	Unreliable
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2013"	"2013"	Suppressed	25642	Suppressed
+	"Colorado"	"08"	"Montezuma County, CO"	"08083"	"2014"	"2014"	Suppressed	25772	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2006"	"2006"	Suppressed	38282	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2007"	"2007"	Suppressed	39673	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2008"	"2008"	Suppressed	40658	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2009"	"2009"	Suppressed	41535	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2010"	"2010"	Suppressed	41276	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2011"	"2011"	Suppressed	41011	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2012"	"2012"	Suppressed	40725	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2013"	"2013"	Suppressed	40713	Suppressed
+	"Colorado"	"08"	"Montrose County, CO"	"08085"	"2014"	"2014"	Suppressed	40873	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2006"	"2006"	Suppressed	27816	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2007"	"2007"	Suppressed	27745	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2008"	"2008"	Suppressed	27701	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2009"	"2009"	Suppressed	28099	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2010"	"2010"	Suppressed	28159	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2011"	"2011"	Suppressed	28175	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2012"	"2012"	Suppressed	28472	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2013"	"2013"	Suppressed	28404	Suppressed
+	"Colorado"	"08"	"Morgan County, CO"	"08087"	"2014"	"2014"	Suppressed	28328	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2006"	"2006"	Suppressed	19042	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2007"	"2007"	Suppressed	18783	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2008"	"2008"	Suppressed	18726	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2009"	"2009"	Suppressed	18743	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2010"	"2010"	Suppressed	18831	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2011"	"2011"	Suppressed	18865	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2012"	"2012"	Suppressed	18698	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2013"	"2013"	Suppressed	18703	Suppressed
+	"Colorado"	"08"	"Otero County, CO"	"08089"	"2014"	"2014"	Suppressed	18488	Suppressed
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2006"	"2006"	Suppressed	4090	Suppressed
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2007"	"2007"	0	4250	Unreliable
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2008"	"2008"	0	4405	Unreliable
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2009"	"2009"	0	4395	Unreliable
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2010"	"2010"	0	4436	Unreliable
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2011"	"2011"	0	4356	Unreliable
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2012"	"2012"	Suppressed	4530	Suppressed
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2013"	"2013"	Suppressed	4557	Suppressed
+	"Colorado"	"08"	"Ouray County, CO"	"08091"	"2014"	"2014"	Suppressed	4629	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2006"	"2006"	Suppressed	16230	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2007"	"2007"	Suppressed	16445	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2008"	"2008"	Suppressed	16394	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2009"	"2009"	Suppressed	16098	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2010"	"2010"	Suppressed	16206	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2011"	"2011"	Suppressed	16089	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2012"	"2012"	Suppressed	16029	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2013"	"2013"	Suppressed	16121	Suppressed
+	"Colorado"	"08"	"Park County, CO"	"08093"	"2014"	"2014"	Suppressed	16345	Suppressed
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2006"	"2006"	0	4414	Unreliable
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2007"	"2007"	0	4378	Unreliable
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2008"	"2008"	Suppressed	4349	Suppressed
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2009"	"2009"	Suppressed	4359	Suppressed
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2010"	"2010"	0	4442	Unreliable
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2011"	"2011"	Suppressed	4399	Suppressed
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2012"	"2012"	0	4367	Unreliable
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2013"	"2013"	Suppressed	4356	Suppressed
+	"Colorado"	"08"	"Phillips County, CO"	"08095"	"2014"	"2014"	0	4363	Unreliable
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2006"	"2006"	Suppressed	15504	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2007"	"2007"	Suppressed	15814	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2008"	"2008"	Suppressed	16454	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2009"	"2009"	Suppressed	17008	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2010"	"2010"	Suppressed	17148	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2011"	"2011"	Suppressed	17102	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2012"	"2012"	Suppressed	17263	Suppressed
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2013"	"2013"	0	17379	Unreliable
+	"Colorado"	"08"	"Pitkin County, CO"	"08097"	"2014"	"2014"	Suppressed	17626	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2006"	"2006"	0	13130	Unreliable
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2007"	"2007"	Suppressed	12736	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2008"	"2008"	Suppressed	12663	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2009"	"2009"	Suppressed	12593	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2010"	"2010"	Suppressed	12551	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2011"	"2011"	Suppressed	12549	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2012"	"2012"	Suppressed	12389	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2013"	"2013"	Suppressed	12291	Suppressed
+	"Colorado"	"08"	"Prowers County, CO"	"08099"	"2014"	"2014"	Suppressed	12034	Suppressed
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2006"	"2006"	25	152026	16.4
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2007"	"2007"	20	155121	12.9
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2008"	"2008"	26	156748	16.6
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2009"	"2009"	18	157846	Unreliable
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2010"	"2010"	23	159063	14.5
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2011"	"2011"	32	160545	19.9
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2012"	"2012"	36	160852	22.4
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2013"	"2013"	45	161451	27.9
+	"Colorado"	"08"	"Pueblo County, CO"	"08101"	"2014"	"2014"	45	161875	27.8
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2006"	"2006"	0	6176	Unreliable
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2007"	"2007"	Suppressed	6373	Suppressed
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2008"	"2008"	0	6522	Unreliable
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2009"	"2009"	0	6779	Unreliable
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2010"	"2010"	0	6666	Unreliable
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2011"	"2011"	Suppressed	6782	Suppressed
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2012"	"2012"	Suppressed	6857	Suppressed
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2013"	"2013"	0	6807	Unreliable
+	"Colorado"	"08"	"Rio Blanco County, CO"	"08103"	"2014"	"2014"	Suppressed	6707	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2006"	"2006"	Suppressed	12033	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2007"	"2007"	Suppressed	11852	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2008"	"2008"	Suppressed	11860	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2009"	"2009"	Suppressed	11872	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2010"	"2010"	0	11982	Unreliable
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2011"	"2011"	Suppressed	11956	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2012"	"2012"	Suppressed	11943	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2013"	"2013"	Suppressed	11803	Suppressed
+	"Colorado"	"08"	"Rio Grande County, CO"	"08105"	"2014"	"2014"	Suppressed	11607	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2006"	"2006"	Suppressed	21859	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2007"	"2007"	Suppressed	22491	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2008"	"2008"	Suppressed	23135	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2009"	"2009"	Suppressed	23688	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2010"	"2010"	Suppressed	23509	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2011"	"2011"	Suppressed	23239	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2012"	"2012"	Suppressed	23334	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2013"	"2013"	Suppressed	23513	Suppressed
+	"Colorado"	"08"	"Routt County, CO"	"08107"	"2014"	"2014"	Suppressed	23865	Suppressed
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2006"	"2006"	0	6223	Unreliable
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2007"	"2007"	Suppressed	6148	Suppressed
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2008"	"2008"	0	6179	Unreliable
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2009"	"2009"	0	6134	Unreliable
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2010"	"2010"	Suppressed	6108	Suppressed
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2011"	"2011"	Suppressed	6228	Suppressed
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2012"	"2012"	0	6304	Unreliable
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2013"	"2013"	Suppressed	6208	Suppressed
+	"Colorado"	"08"	"Saguache County, CO"	"08109"	"2014"	"2014"	0	6196	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2006"	"2006"	0	649	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2007"	"2007"	0	661	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2008"	"2008"	0	670	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2009"	"2009"	0	657	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2010"	"2010"	0	699	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2011"	"2011"	0	692	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2012"	"2012"	0	690	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2013"	"2013"	0	692	Unreliable
+	"Colorado"	"08"	"San Juan County, CO"	"08111"	"2014"	"2014"	Suppressed	720	Suppressed
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2006"	"2006"	0	7071	Unreliable
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2007"	"2007"	0	7322	Unreliable
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2008"	"2008"	0	7366	Unreliable
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2009"	"2009"	Suppressed	7379	Suppressed
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2010"	"2010"	0	7359	Unreliable
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2011"	"2011"	Suppressed	7490	Suppressed
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2012"	"2012"	Suppressed	7580	Suppressed
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2013"	"2013"	Suppressed	7678	Suppressed
+	"Colorado"	"08"	"San Miguel County, CO"	"08113"	"2014"	"2014"	0	7840	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2006"	"2006"	0	2474	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2007"	"2007"	0	2400	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2008"	"2008"	0	2421	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2009"	"2009"	0	2392	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2010"	"2010"	0	2379	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2011"	"2011"	Suppressed	2364	Suppressed
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2012"	"2012"	Suppressed	2383	Suppressed
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2013"	"2013"	0	2360	Unreliable
+	"Colorado"	"08"	"Sedgwick County, CO"	"08115"	"2014"	"2014"	0	2348	Unreliable
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2006"	"2006"	Suppressed	26019	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2007"	"2007"	Suppressed	26603	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2008"	"2008"	Suppressed	27144	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2009"	"2009"	Suppressed	27678	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2010"	"2010"	Suppressed	27994	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2011"	"2011"	Suppressed	27972	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2012"	"2012"	Suppressed	28044	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2013"	"2013"	Suppressed	28649	Suppressed
+	"Colorado"	"08"	"Summit County, CO"	"08117"	"2014"	"2014"	Suppressed	29404	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2006"	"2006"	Suppressed	22281	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2007"	"2007"	Suppressed	22707	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2008"	"2008"	Suppressed	22725	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2009"	"2009"	Suppressed	22937	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2010"	"2010"	Suppressed	23350	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2011"	"2011"	Suppressed	23356	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2012"	"2012"	Suppressed	23389	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2013"	"2013"	Suppressed	23275	Suppressed
+	"Colorado"	"08"	"Teller County, CO"	"08119"	"2014"	"2014"	Suppressed	23389	Suppressed
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2006"	"2006"	Suppressed	4907	Suppressed
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2007"	"2007"	0	4883	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2008"	"2008"	0	4792	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2009"	"2009"	0	4800	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2010"	"2010"	0	4814	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2011"	"2011"	0	4770	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2012"	"2012"	0	4766	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2013"	"2013"	0	4803	Unreliable
+	"Colorado"	"08"	"Washington County, CO"	"08121"	"2014"	"2014"	0	4780	Unreliable
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2006"	"2006"	15	230703	Unreliable
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2007"	"2007"	26	237692	10.9
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2008"	"2008"	18	243442	Unreliable
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2009"	"2009"	25	248193	10.1
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2010"	"2010"	28	252825	11.1
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2011"	"2011"	34	258638	13.1
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2012"	"2012"	28	263691	10.6
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2013"	"2013"	30	269785	11.1
+	"Colorado"	"08"	"Weld County, CO"	"08123"	"2014"	"2014"	38	277670	13.7
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2006"	"2006"	0	9784	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2007"	"2007"	0	9788	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2008"	"2008"	Suppressed	9843	Suppressed
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2009"	"2009"	Suppressed	10022	Suppressed
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2010"	"2010"	0	10043	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2011"	"2011"	0	10100	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2012"	"2012"	0	10119	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2013"	"2013"	0	10151	Unreliable
+	"Colorado"	"08"	"Yuma County, CO"	"08125"	"2014"	"2014"	0	10202	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Colorado (08)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:18:17 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:18:17 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

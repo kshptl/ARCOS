@@ -1,0 +1,98 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2006"	"2006"	10	50996	Unreliable
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2007"	"2007"	Suppressed	50914	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2008"	"2008"	Suppressed	50668	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2009"	"2009"	Suppressed	50075	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2010"	"2010"	Suppressed	49875	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2011"	"2011"	Suppressed	49800	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2012"	"2012"	Suppressed	49144	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2013"	"2013"	Suppressed	49220	Suppressed
+	"Rhode Island"	"44"	"Bristol County, RI"	"44001"	"2014"	"2014"	13	49060	Unreliable
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2006"	"2006"	25	168522	14.8
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2007"	"2007"	21	167515	12.5
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2008"	"2008"	29	167269	17.3
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2009"	"2009"	31	166766	18.6
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2010"	"2010"	25	166158	15.0
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2011"	"2011"	43	165535	26.0
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2012"	"2012"	47	164843	28.5
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2013"	"2013"	49	165035	29.7
+	"Rhode Island"	"44"	"Kent County, RI"	"44003"	"2014"	"2014"	39	165128	23.6
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2006"	"2006"	11	85130	Unreliable
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2007"	"2007"	Suppressed	82881	Suppressed
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2008"	"2008"	14	82505	Unreliable
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2009"	"2009"	Suppressed	82896	Suppressed
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2010"	"2010"	10	82888	Unreliable
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2011"	"2011"	Suppressed	82695	Suppressed
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2012"	"2012"	Suppressed	82036	Suppressed
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2013"	"2013"	16	82397	Unreliable
+	"Rhode Island"	"44"	"Newport County, RI"	"44005"	"2014"	"2014"	Suppressed	82358	Suppressed
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2006"	"2006"	119	631691	18.8
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2007"	"2007"	86	629110	13.7
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2008"	"2008"	115	627889	18.3
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2009"	"2009"	103	626304	16.4
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2010"	"2010"	111	626667	17.7
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2011"	"2011"	116	626709	18.5
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2012"	"2012"	120	628323	19.1
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2013"	"2013"	145	628600	23.1
+	"Rhode Island"	"44"	"Providence County, RI"	"44007"	"2014"	"2014"	154	631974	24.4
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2006"	"2006"	10	126757	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2007"	"2007"	19	126895	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2008"	"2008"	19	126672	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2009"	"2009"	14	127605	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2010"	"2010"	19	126979	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2011"	"2011"	19	126563	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2012"	"2012"	17	125946	Unreliable
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2013"	"2013"	24	126259	19.0
+	"Rhode Island"	"44"	"Washington County, RI"	"44009"	"2014"	"2014"	32	126653	25.3
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Rhode Island (44)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:41:33 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:41:33 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

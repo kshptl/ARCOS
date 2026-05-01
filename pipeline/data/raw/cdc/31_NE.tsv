@@ -1,0 +1,894 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2006"	"2006"	Suppressed	30910	Suppressed
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2007"	"2007"	0	30892	Unreliable
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2008"	"2008"	Suppressed	31160	Suppressed
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2009"	"2009"	Suppressed	31280	Suppressed
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2010"	"2010"	0	31364	Unreliable
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2011"	"2011"	0	31216	Unreliable
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2012"	"2012"	0	31459	Unreliable
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2013"	"2013"	Suppressed	31610	Suppressed
+	"Nebraska"	"31"	"Adams County, NE"	"31001"	"2014"	"2014"	0	31457	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2006"	"2006"	0	6836	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2007"	"2007"	Suppressed	6767	Suppressed
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2008"	"2008"	0	6704	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2009"	"2009"	0	6739	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2010"	"2010"	0	6685	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2011"	"2011"	0	6619	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2012"	"2012"	Suppressed	6545	Suppressed
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2013"	"2013"	0	6456	Unreliable
+	"Nebraska"	"31"	"Antelope County, NE"	"31003"	"2014"	"2014"	0	6398	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2006"	"2006"	0	450	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2007"	"2007"	0	457	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2008"	"2008"	0	453	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2009"	"2009"	0	442	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2010"	"2010"	0	460	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2011"	"2011"	0	469	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2012"	"2012"	0	486	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2013"	"2013"	0	458	Unreliable
+	"Nebraska"	"31"	"Arthur County, NE"	"31005"	"2014"	"2014"	0	453	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2006"	"2006"	0	733	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2007"	"2007"	0	715	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2008"	"2008"	0	677	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2009"	"2009"	0	686	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2010"	"2010"	0	690	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2011"	"2011"	0	684	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2012"	"2012"	0	760	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2013"	"2013"	0	759	Unreliable
+	"Nebraska"	"31"	"Banner County, NE"	"31007"	"2014"	"2014"	0	764	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2006"	"2006"	0	493	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2007"	"2007"	0	463	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2008"	"2008"	0	456	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2009"	"2009"	0	477	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2010"	"2010"	0	478	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2011"	"2011"	0	473	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2012"	"2012"	0	514	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2013"	"2013"	0	482	Unreliable
+	"Nebraska"	"31"	"Blaine County, NE"	"31009"	"2014"	"2014"	0	504	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2006"	"2006"	0	5623	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2007"	"2007"	0	5582	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2008"	"2008"	0	5548	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2009"	"2009"	0	5514	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2010"	"2010"	0	5505	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2011"	"2011"	0	5412	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2012"	"2012"	0	5417	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2013"	"2013"	0	5388	Unreliable
+	"Nebraska"	"31"	"Boone County, NE"	"31011"	"2014"	"2014"	0	5353	Unreliable
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2006"	"2006"	0	11338	Unreliable
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2007"	"2007"	0	11409	Unreliable
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2008"	"2008"	0	11482	Unreliable
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2009"	"2009"	0	11347	Unreliable
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2010"	"2010"	Suppressed	11308	Suppressed
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2011"	"2011"	Suppressed	11383	Suppressed
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2012"	"2012"	Suppressed	11317	Suppressed
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2013"	"2013"	Suppressed	11305	Suppressed
+	"Nebraska"	"31"	"Box Butte County, NE"	"31013"	"2014"	"2014"	Suppressed	11340	Suppressed
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2006"	"2006"	0	2143	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2007"	"2007"	Suppressed	2109	Suppressed
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2008"	"2008"	0	2102	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2009"	"2009"	0	2075	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2010"	"2010"	0	2099	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2011"	"2011"	0	2082	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2012"	"2012"	0	2054	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2013"	"2013"	0	2032	Unreliable
+	"Nebraska"	"31"	"Boyd County, NE"	"31015"	"2014"	"2014"	0	2033	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2006"	"2006"	0	3319	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2007"	"2007"	0	3225	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2008"	"2008"	0	3149	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2009"	"2009"	0	3115	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2010"	"2010"	0	3145	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2011"	"2011"	0	3117	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2012"	"2012"	Suppressed	3023	Suppressed
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2013"	"2013"	0	2926	Unreliable
+	"Nebraska"	"31"	"Brown County, NE"	"31017"	"2014"	"2014"	0	2941	Unreliable
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2006"	"2006"	Suppressed	44645	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2007"	"2007"	Suppressed	45060	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2008"	"2008"	Suppressed	45343	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2009"	"2009"	Suppressed	45970	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2010"	"2010"	Suppressed	46102	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2011"	"2011"	Suppressed	46690	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2012"	"2012"	Suppressed	47463	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2013"	"2013"	Suppressed	47893	Suppressed
+	"Nebraska"	"31"	"Buffalo County, NE"	"31019"	"2014"	"2014"	Suppressed	48224	Suppressed
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2006"	"2006"	0	7122	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2007"	"2007"	0	6999	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2008"	"2008"	0	6967	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2009"	"2009"	0	6885	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2010"	"2010"	0	6858	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2011"	"2011"	0	6802	Unreliable
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2012"	"2012"	Suppressed	6659	Suppressed
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2013"	"2013"	Suppressed	6574	Suppressed
+	"Nebraska"	"31"	"Burt County, NE"	"31021"	"2014"	"2014"	Suppressed	6573	Suppressed
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2006"	"2006"	0	8396	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2007"	"2007"	0	8375	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2008"	"2008"	0	8355	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2009"	"2009"	0	8387	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2010"	"2010"	0	8395	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2011"	"2011"	0	8287	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2012"	"2012"	0	8295	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2013"	"2013"	0	8312	Unreliable
+	"Nebraska"	"31"	"Butler County, NE"	"31023"	"2014"	"2014"	0	8249	Unreliable
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2006"	"2006"	0	25240	Unreliable
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2007"	"2007"	0	25256	Unreliable
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2008"	"2008"	Suppressed	25322	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2009"	"2009"	Suppressed	25122	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2010"	"2010"	Suppressed	25241	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2011"	"2011"	Suppressed	25188	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2012"	"2012"	Suppressed	25133	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2013"	"2013"	Suppressed	25357	Suppressed
+	"Nebraska"	"31"	"Cass County, NE"	"31025"	"2014"	"2014"	Suppressed	25524	Suppressed
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2006"	"2006"	0	9060	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2007"	"2007"	0	8941	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2008"	"2008"	0	8839	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2009"	"2009"	0	8854	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2010"	"2010"	Suppressed	8852	Suppressed
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2011"	"2011"	0	8730	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2012"	"2012"	0	8746	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2013"	"2013"	0	8711	Unreliable
+	"Nebraska"	"31"	"Cedar County, NE"	"31027"	"2014"	"2014"	0	8610	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2006"	"2006"	0	3965	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2007"	"2007"	0	3913	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2008"	"2008"	Suppressed	3865	Suppressed
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2009"	"2009"	0	3921	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2010"	"2010"	0	3966	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2011"	"2011"	0	4011	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2012"	"2012"	0	4064	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2013"	"2013"	0	4000	Unreliable
+	"Nebraska"	"31"	"Chase County, NE"	"31029"	"2014"	"2014"	0	3978	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2006"	"2006"	0	5927	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2007"	"2007"	0	5834	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2008"	"2008"	0	5752	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2009"	"2009"	0	5683	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2010"	"2010"	0	5713	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2011"	"2011"	Suppressed	5761	Suppressed
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2012"	"2012"	0	5727	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2013"	"2013"	0	5788	Unreliable
+	"Nebraska"	"31"	"Cherry County, NE"	"31031"	"2014"	"2014"	Suppressed	5762	Suppressed
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2006"	"2006"	0	9943	Unreliable
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2007"	"2007"	Suppressed	10139	Suppressed
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2008"	"2008"	0	10150	Unreliable
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2009"	"2009"	0	10032	Unreliable
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2010"	"2010"	Suppressed	9998	Suppressed
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2011"	"2011"	Suppressed	9978	Suppressed
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2012"	"2012"	Suppressed	10068	Suppressed
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2013"	"2013"	0	10091	Unreliable
+	"Nebraska"	"31"	"Cheyenne County, NE"	"31033"	"2014"	"2014"	0	10148	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2006"	"2006"	0	6609	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2007"	"2007"	0	6564	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2008"	"2008"	0	6543	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2009"	"2009"	0	6512	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2010"	"2010"	0	6542	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2011"	"2011"	0	6486	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2012"	"2012"	0	6411	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2013"	"2013"	0	6392	Unreliable
+	"Nebraska"	"31"	"Clay County, NE"	"31035"	"2014"	"2014"	0	6315	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2006"	"2006"	Suppressed	9993	Suppressed
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2007"	"2007"	0	9993	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2008"	"2008"	0	10083	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2009"	"2009"	0	10380	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2010"	"2010"	0	10515	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2011"	"2011"	0	10614	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2012"	"2012"	Suppressed	10653	Suppressed
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2013"	"2013"	0	10425	Unreliable
+	"Nebraska"	"31"	"Colfax County, NE"	"31037"	"2014"	"2014"	0	10504	Unreliable
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2006"	"2006"	Suppressed	9440	Suppressed
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2007"	"2007"	0	9286	Unreliable
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2008"	"2008"	0	9215	Unreliable
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2009"	"2009"	0	9132	Unreliable
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2010"	"2010"	0	9139	Unreliable
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2011"	"2011"	Suppressed	9181	Suppressed
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2012"	"2012"	Suppressed	9072	Suppressed
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2013"	"2013"	Suppressed	8996	Suppressed
+	"Nebraska"	"31"	"Cuming County, NE"	"31039"	"2014"	"2014"	0	9027	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2006"	"2006"	Suppressed	11090	Suppressed
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2007"	"2007"	0	11005	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2008"	"2008"	Suppressed	11001	Suppressed
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2009"	"2009"	0	10999	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2010"	"2010"	0	10939	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2011"	"2011"	0	10903	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2012"	"2012"	0	10740	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2013"	"2013"	0	10792	Unreliable
+	"Nebraska"	"31"	"Custer County, NE"	"31041"	"2014"	"2014"	0	10728	Unreliable
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2006"	"2006"	0	20295	Unreliable
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2007"	"2007"	Suppressed	20564	Suppressed
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2008"	"2008"	0	20559	Unreliable
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2009"	"2009"	0	20924	Unreliable
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2010"	"2010"	Suppressed	21006	Suppressed
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2011"	"2011"	Suppressed	20913	Suppressed
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2012"	"2012"	Suppressed	20918	Suppressed
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2013"	"2013"	0	20947	Unreliable
+	"Nebraska"	"31"	"Dakota County, NE"	"31043"	"2014"	"2014"	Suppressed	20850	Suppressed
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2006"	"2006"	0	9040	Unreliable
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2007"	"2007"	0	9181	Unreliable
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2008"	"2008"	Suppressed	9134	Suppressed
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2009"	"2009"	0	9218	Unreliable
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2010"	"2010"	0	9182	Unreliable
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2011"	"2011"	Suppressed	9196	Suppressed
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2012"	"2012"	Suppressed	9152	Suppressed
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2013"	"2013"	Suppressed	9088	Suppressed
+	"Nebraska"	"31"	"Dawes County, NE"	"31045"	"2014"	"2014"	0	9042	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2006"	"2006"	0	24291	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2007"	"2007"	Suppressed	24178	Suppressed
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2008"	"2008"	0	24160	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2009"	"2009"	Suppressed	24212	Suppressed
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2010"	"2010"	0	24326	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2011"	"2011"	Suppressed	24388	Suppressed
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2012"	"2012"	0	24220	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2013"	"2013"	0	24207	Unreliable
+	"Nebraska"	"31"	"Dawson County, NE"	"31047"	"2014"	"2014"	Suppressed	24096	Suppressed
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2006"	"2006"	0	1969	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2007"	"2007"	0	1982	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2008"	"2008"	Suppressed	1986	Suppressed
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2009"	"2009"	0	1941	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2010"	"2010"	0	1941	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2011"	"2011"	0	1984	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2012"	"2012"	0	1972	Unreliable
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2013"	"2013"	Suppressed	1937	Suppressed
+	"Nebraska"	"31"	"Deuel County, NE"	"31049"	"2014"	"2014"	0	1940	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2006"	"2006"	0	5987	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2007"	"2007"	0	5993	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2008"	"2008"	0	6004	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2009"	"2009"	Suppressed	6013	Suppressed
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2010"	"2010"	0	6000	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2011"	"2011"	0	5989	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2012"	"2012"	Suppressed	5918	Suppressed
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2013"	"2013"	0	5851	Unreliable
+	"Nebraska"	"31"	"Dixon County, NE"	"31051"	"2014"	"2014"	0	5782	Unreliable
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2006"	"2006"	Suppressed	36597	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2007"	"2007"	Suppressed	36647	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2008"	"2008"	0	36548	Unreliable
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2009"	"2009"	Suppressed	36604	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2010"	"2010"	0	36691	Unreliable
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2011"	"2011"	Suppressed	36773	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2012"	"2012"	Suppressed	36427	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2013"	"2013"	Suppressed	36515	Suppressed
+	"Nebraska"	"31"	"Dodge County, NE"	"31053"	"2014"	"2014"	Suppressed	36744	Suppressed
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2006"	"2006"	34	493757	6.9
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2007"	"2007"	36	498743	7.2
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2008"	"2008"	34	504547	6.7
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2009"	"2009"	42	511902	8.2
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2010"	"2010"	44	517110	8.5
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2011"	"2011"	51	524861	9.7
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2012"	"2012"	58	531265	10.9
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2013"	"2013"	33	537256	6.1
+	"Nebraska"	"31"	"Douglas County, NE"	"31055"	"2014"	"2014"	49	543244	9.0
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2006"	"2006"	0	2051	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2007"	"2007"	0	2010	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2008"	"2008"	0	1973	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2009"	"2009"	Suppressed	1997	Suppressed
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2010"	"2010"	0	2008	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2011"	"2011"	0	1976	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2012"	"2012"	0	2021	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2013"	"2013"	0	1981	Unreliable
+	"Nebraska"	"31"	"Dundy County, NE"	"31057"	"2014"	"2014"	0	1886	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2006"	"2006"	0	6053	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2007"	"2007"	0	5985	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2008"	"2008"	0	5940	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2009"	"2009"	0	5898	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2010"	"2010"	0	5890	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2011"	"2011"	0	5866	Unreliable
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2012"	"2012"	Suppressed	5771	Suppressed
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2013"	"2013"	Suppressed	5698	Suppressed
+	"Nebraska"	"31"	"Fillmore County, NE"	"31059"	"2014"	"2014"	0	5661	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2006"	"2006"	0	3352	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2007"	"2007"	0	3207	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2008"	"2008"	0	3167	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2009"	"2009"	0	3186	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2010"	"2010"	0	3225	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2011"	"2011"	0	3207	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2012"	"2012"	0	3188	Unreliable
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2013"	"2013"	Suppressed	3085	Suppressed
+	"Nebraska"	"31"	"Franklin County, NE"	"31061"	"2014"	"2014"	0	3076	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2006"	"2006"	0	2879	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2007"	"2007"	0	2860	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2008"	"2008"	0	2786	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2009"	"2009"	0	2772	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2010"	"2010"	0	2756	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2011"	"2011"	0	2723	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2012"	"2012"	0	2741	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2013"	"2013"	0	2709	Unreliable
+	"Nebraska"	"31"	"Frontier County, NE"	"31063"	"2014"	"2014"	0	2705	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2006"	"2006"	0	5016	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2007"	"2007"	0	4929	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2008"	"2008"	Suppressed	4873	Suppressed
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2009"	"2009"	0	4934	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2010"	"2010"	Suppressed	4959	Suppressed
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2011"	"2011"	0	4943	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2012"	"2012"	0	4907	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2013"	"2013"	0	4865	Unreliable
+	"Nebraska"	"31"	"Furnas County, NE"	"31065"	"2014"	"2014"	0	4888	Unreliable
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2006"	"2006"	Suppressed	22875	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2007"	"2007"	0	22843	Unreliable
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2008"	"2008"	Suppressed	22574	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2009"	"2009"	Suppressed	22364	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2010"	"2010"	Suppressed	22311	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2011"	"2011"	Suppressed	22031	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2012"	"2012"	Suppressed	21806	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2013"	"2013"	Suppressed	21864	Suppressed
+	"Nebraska"	"31"	"Gage County, NE"	"31067"	"2014"	"2014"	Suppressed	21663	Suppressed
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2006"	"2006"	0	2120	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2007"	"2007"	0	2046	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2008"	"2008"	0	2004	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2009"	"2009"	0	2010	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2010"	"2010"	0	2057	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2011"	"2011"	0	2069	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2012"	"2012"	0	1953	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2013"	"2013"	0	1902	Unreliable
+	"Nebraska"	"31"	"Garden County, NE"	"31069"	"2014"	"2014"	0	1911	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2006"	"2006"	0	1984	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2007"	"2007"	Suppressed	1977	Suppressed
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2008"	"2008"	0	2001	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2009"	"2009"	0	2029	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2010"	"2010"	0	2049	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2011"	"2011"	0	2032	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2012"	"2012"	0	2007	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2013"	"2013"	0	2035	Unreliable
+	"Nebraska"	"31"	"Garfield County, NE"	"31071"	"2014"	"2014"	0	2003	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2006"	"2006"	0	2075	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2007"	"2007"	0	2101	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2008"	"2008"	0	2049	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2009"	"2009"	0	2020	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2010"	"2010"	0	2044	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2011"	"2011"	0	2010	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2012"	"2012"	0	2029	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2013"	"2013"	0	1972	Unreliable
+	"Nebraska"	"31"	"Gosper County, NE"	"31073"	"2014"	"2014"	0	1970	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2006"	"2006"	0	677	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2007"	"2007"	0	660	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2008"	"2008"	0	653	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2009"	"2009"	0	619	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2010"	"2010"	0	614	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2011"	"2011"	0	630	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2012"	"2012"	0	629	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2013"	"2013"	0	633	Unreliable
+	"Nebraska"	"31"	"Grant County, NE"	"31075"	"2014"	"2014"	0	619	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2006"	"2006"	Suppressed	2578	Suppressed
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2007"	"2007"	0	2538	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2008"	"2008"	0	2548	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2009"	"2009"	0	2502	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2010"	"2010"	0	2538	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2011"	"2011"	0	2519	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2012"	"2012"	0	2458	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2013"	"2013"	0	2494	Unreliable
+	"Nebraska"	"31"	"Greeley County, NE"	"31077"	"2014"	"2014"	0	2482	Unreliable
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2006"	"2006"	Suppressed	55190	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2007"	"2007"	Suppressed	55742	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2008"	"2008"	Suppressed	56795	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2009"	"2009"	Suppressed	57955	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2010"	"2010"	Suppressed	58607	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2011"	"2011"	Suppressed	59477	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2012"	"2012"	0	60345	Unreliable
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2013"	"2013"	Suppressed	60720	Suppressed
+	"Nebraska"	"31"	"Hall County, NE"	"31079"	"2014"	"2014"	Suppressed	61492	Suppressed
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2006"	"2006"	0	9196	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2007"	"2007"	0	9204	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2008"	"2008"	0	9157	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2009"	"2009"	0	9113	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2010"	"2010"	0	9124	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2011"	"2011"	0	9069	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2012"	"2012"	Suppressed	9011	Suppressed
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2013"	"2013"	0	9112	Unreliable
+	"Nebraska"	"31"	"Hamilton County, NE"	"31081"	"2014"	"2014"	Suppressed	9135	Suppressed
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2006"	"2006"	0	3522	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2007"	"2007"	0	3511	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2008"	"2008"	0	3435	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2009"	"2009"	Suppressed	3406	Suppressed
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2010"	"2010"	0	3423	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2011"	"2011"	0	3417	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2012"	"2012"	0	3410	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2013"	"2013"	0	3513	Unreliable
+	"Nebraska"	"31"	"Harlan County, NE"	"31083"	"2014"	"2014"	0	3492	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2006"	"2006"	0	994	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2007"	"2007"	0	977	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2008"	"2008"	0	986	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2009"	"2009"	0	987	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2010"	"2010"	Suppressed	967	Suppressed
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2011"	"2011"	0	960	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2012"	"2012"	0	953	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2013"	"2013"	0	976	Unreliable
+	"Nebraska"	"31"	"Hayes County, NE"	"31085"	"2014"	"2014"	0	933	Unreliable
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2006"	"2006"	0	2956	Unreliable
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2007"	"2007"	0	2931	Unreliable
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2008"	"2008"	Suppressed	2927	Suppressed
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2009"	"2009"	0	2906	Unreliable
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2010"	"2010"	0	2908	Unreliable
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2011"	"2011"	Suppressed	2857	Suppressed
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2012"	"2012"	Suppressed	2887	Suppressed
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2013"	"2013"	Suppressed	2872	Suppressed
+	"Nebraska"	"31"	"Hitchcock County, NE"	"31087"	"2014"	"2014"	0	2901	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2006"	"2006"	0	10613	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2007"	"2007"	0	10541	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2008"	"2008"	0	10399	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2009"	"2009"	Suppressed	10406	Suppressed
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2010"	"2010"	0	10435	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2011"	"2011"	0	10399	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2012"	"2012"	0	10396	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2013"	"2013"	0	10449	Unreliable
+	"Nebraska"	"31"	"Holt County, NE"	"31089"	"2014"	"2014"	0	10403	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2006"	"2006"	0	751	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2007"	"2007"	0	732	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2008"	"2008"	0	734	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2009"	"2009"	0	733	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2010"	"2010"	0	736	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2011"	"2011"	0	729	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2012"	"2012"	0	727	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2013"	"2013"	0	738	Unreliable
+	"Nebraska"	"31"	"Hooker County, NE"	"31091"	"2014"	"2014"	0	728	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2006"	"2006"	0	6357	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2007"	"2007"	Suppressed	6333	Suppressed
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2008"	"2008"	0	6261	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2009"	"2009"	Suppressed	6288	Suppressed
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2010"	"2010"	Suppressed	6274	Suppressed
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2011"	"2011"	0	6342	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2012"	"2012"	0	6336	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2013"	"2013"	0	6355	Unreliable
+	"Nebraska"	"31"	"Howard County, NE"	"31093"	"2014"	"2014"	0	6362	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2006"	"2006"	Suppressed	7970	Suppressed
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2007"	"2007"	0	7765	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2008"	"2008"	0	7684	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2009"	"2009"	0	7602	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2010"	"2010"	Suppressed	7547	Suppressed
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2011"	"2011"	0	7519	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2012"	"2012"	0	7521	Unreliable
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2013"	"2013"	Suppressed	7560	Suppressed
+	"Nebraska"	"31"	"Jefferson County, NE"	"31095"	"2014"	"2014"	Suppressed	7335	Suppressed
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2006"	"2006"	0	5257	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2007"	"2007"	0	5163	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2008"	"2008"	0	5203	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2009"	"2009"	Suppressed	5199	Suppressed
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2010"	"2010"	0	5217	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2011"	"2011"	0	5211	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2012"	"2012"	0	5140	Unreliable
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2013"	"2013"	Suppressed	5144	Suppressed
+	"Nebraska"	"31"	"Johnson County, NE"	"31097"	"2014"	"2014"	Suppressed	5185	Suppressed
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2006"	"2006"	0	6614	Unreliable
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2007"	"2007"	Suppressed	6624	Suppressed
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2008"	"2008"	0	6554	Unreliable
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2009"	"2009"	0	6476	Unreliable
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2010"	"2010"	Suppressed	6489	Suppressed
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2011"	"2011"	0	6588	Unreliable
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2012"	"2012"	Suppressed	6485	Suppressed
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2013"	"2013"	0	6548	Unreliable
+	"Nebraska"	"31"	"Kearney County, NE"	"31099"	"2014"	"2014"	Suppressed	6644	Suppressed
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2006"	"2006"	0	8381	Unreliable
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2007"	"2007"	0	8423	Unreliable
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2008"	"2008"	Suppressed	8290	Suppressed
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2009"	"2009"	0	8320	Unreliable
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2010"	"2010"	Suppressed	8368	Suppressed
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2011"	"2011"	Suppressed	8301	Suppressed
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2012"	"2012"	0	8220	Unreliable
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2013"	"2013"	Suppressed	8130	Suppressed
+	"Nebraska"	"31"	"Keith County, NE"	"31101"	"2014"	"2014"	0	8121	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2006"	"2006"	0	892	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2007"	"2007"	0	857	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2008"	"2008"	0	836	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2009"	"2009"	0	820	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2010"	"2010"	0	824	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2011"	"2011"	0	813	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2012"	"2012"	0	804	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2013"	"2013"	0	790	Unreliable
+	"Nebraska"	"31"	"Keya Paha County, NE"	"31103"	"2014"	"2014"	0	810	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2006"	"2006"	0	3879	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2007"	"2007"	Suppressed	3809	Suppressed
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2008"	"2008"	0	3761	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2009"	"2009"	0	3799	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2010"	"2010"	0	3821	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2011"	"2011"	0	3775	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2012"	"2012"	Suppressed	3783	Suppressed
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2013"	"2013"	0	3702	Unreliable
+	"Nebraska"	"31"	"Kimball County, NE"	"31105"	"2014"	"2014"	0	3713	Unreliable
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2006"	"2006"	Suppressed	8846	Suppressed
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2007"	"2007"	0	8862	Unreliable
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2008"	"2008"	0	8708	Unreliable
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2009"	"2009"	0	8700	Unreliable
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2010"	"2010"	0	8701	Unreliable
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2011"	"2011"	Suppressed	8575	Suppressed
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2012"	"2012"	Suppressed	8573	Suppressed
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2013"	"2013"	Suppressed	8565	Suppressed
+	"Nebraska"	"31"	"Knox County, NE"	"31107"	"2014"	"2014"	0	8482	Unreliable
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2006"	"2006"	16	272286	Unreliable
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2007"	"2007"	16	276012	Unreliable
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2008"	"2008"	16	279605	Unreliable
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2009"	"2009"	17	283097	Unreliable
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2010"	"2010"	20	285407	7.0
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2011"	"2011"	20	289800	6.9
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2012"	"2012"	28	293407	9.5
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2013"	"2013"	27	297036	9.1
+	"Nebraska"	"31"	"Lancaster County, NE"	"31109"	"2014"	"2014"	24	301795	8.0
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2006"	"2006"	Suppressed	35973	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2007"	"2007"	0	36011	Unreliable
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2008"	"2008"	Suppressed	36301	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2009"	"2009"	Suppressed	36280	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2010"	"2010"	Suppressed	36288	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2011"	"2011"	Suppressed	36142	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2012"	"2012"	Suppressed	36099	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2013"	"2013"	Suppressed	36051	Suppressed
+	"Nebraska"	"31"	"Lincoln County, NE"	"31111"	"2014"	"2014"	Suppressed	35815	Suppressed
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2006"	"2006"	0	756	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2007"	"2007"	0	751	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2008"	"2008"	0	730	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2009"	"2009"	0	738	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2010"	"2010"	0	763	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2011"	"2011"	0	762	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2012"	"2012"	0	765	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2013"	"2013"	0	763	Unreliable
+	"Nebraska"	"31"	"Logan County, NE"	"31113"	"2014"	"2014"	0	750	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2006"	"2006"	0	635	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2007"	"2007"	0	649	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2008"	"2008"	0	630	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2009"	"2009"	0	629	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2010"	"2010"	0	632	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2011"	"2011"	0	610	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2012"	"2012"	0	589	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2013"	"2013"	0	576	Unreliable
+	"Nebraska"	"31"	"Loup County, NE"	"31115"	"2014"	"2014"	0	588	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2006"	"2006"	0	518	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2007"	"2007"	0	545	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2008"	"2008"	0	558	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2009"	"2009"	0	537	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2010"	"2010"	0	539	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2011"	"2011"	0	552	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2012"	"2012"	0	509	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2013"	"2013"	0	526	Unreliable
+	"Nebraska"	"31"	"McPherson County, NE"	"31117"	"2014"	"2014"	0	498	Unreliable
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2006"	"2006"	Suppressed	35415	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2007"	"2007"	Suppressed	34298	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2008"	"2008"	Suppressed	34319	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2009"	"2009"	Suppressed	34609	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2010"	"2010"	Suppressed	34876	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2011"	"2011"	Suppressed	34931	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2012"	"2012"	Suppressed	35031	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2013"	"2013"	Suppressed	35278	Suppressed
+	"Nebraska"	"31"	"Madison County, NE"	"31119"	"2014"	"2014"	Suppressed	35174	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2006"	"2006"	Suppressed	7813	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2007"	"2007"	0	7709	Unreliable
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2008"	"2008"	Suppressed	7734	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2009"	"2009"	Suppressed	7813	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2010"	"2010"	Suppressed	7845	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2011"	"2011"	Suppressed	7732	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2012"	"2012"	Suppressed	7780	Suppressed
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2013"	"2013"	0	7802	Unreliable
+	"Nebraska"	"31"	"Merrick County, NE"	"31121"	"2014"	"2014"	Suppressed	7766	Suppressed
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2006"	"2006"	0	5090	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2007"	"2007"	0	5122	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2008"	"2008"	0	5079	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2009"	"2009"	Suppressed	5019	Suppressed
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2010"	"2010"	0	5042	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2011"	"2011"	0	4998	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2012"	"2012"	0	4889	Unreliable
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2013"	"2013"	Suppressed	4908	Suppressed
+	"Nebraska"	"31"	"Morrill County, NE"	"31123"	"2014"	"2014"	0	4862	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2006"	"2006"	0	3807	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2007"	"2007"	0	3766	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2008"	"2008"	Suppressed	3745	Suppressed
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2009"	"2009"	0	3729	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2010"	"2010"	0	3735	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2011"	"2011"	Suppressed	3740	Suppressed
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2012"	"2012"	0	3715	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2013"	"2013"	0	3623	Unreliable
+	"Nebraska"	"31"	"Nance County, NE"	"31125"	"2014"	"2014"	Suppressed	3570	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2006"	"2006"	0	7311	Unreliable
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2007"	"2007"	0	7220	Unreliable
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2008"	"2008"	0	7280	Unreliable
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2009"	"2009"	Suppressed	7178	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2010"	"2010"	Suppressed	7248	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2011"	"2011"	Suppressed	7280	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2012"	"2012"	Suppressed	7154	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2013"	"2013"	Suppressed	7157	Suppressed
+	"Nebraska"	"31"	"Nemaha County, NE"	"31127"	"2014"	"2014"	Suppressed	7175	Suppressed
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2006"	"2006"	Suppressed	4709	Suppressed
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2007"	"2007"	Suppressed	4642	Suppressed
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2008"	"2008"	0	4571	Unreliable
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2009"	"2009"	Suppressed	4495	Suppressed
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2010"	"2010"	0	4500	Unreliable
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2011"	"2011"	0	4478	Unreliable
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2012"	"2012"	0	4438	Unreliable
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2013"	"2013"	0	4413	Unreliable
+	"Nebraska"	"31"	"Nuckolls County, NE"	"31129"	"2014"	"2014"	0	4369	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2006"	"2006"	Suppressed	15753	Suppressed
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2007"	"2007"	0	15841	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2008"	"2008"	0	15728	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2009"	"2009"	0	15608	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2010"	"2010"	0	15740	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2011"	"2011"	0	15798	Unreliable
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2012"	"2012"	Suppressed	15747	Suppressed
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2013"	"2013"	Suppressed	15752	Suppressed
+	"Nebraska"	"31"	"Otoe County, NE"	"31131"	"2014"	"2014"	0	15797	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2006"	"2006"	0	2802	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2007"	"2007"	Suppressed	2791	Suppressed
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2008"	"2008"	Suppressed	2711	Suppressed
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2009"	"2009"	0	2752	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2010"	"2010"	Suppressed	2773	Suppressed
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2011"	"2011"	0	2735	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2012"	"2012"	0	2765	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2013"	"2013"	0	2709	Unreliable
+	"Nebraska"	"31"	"Pawnee County, NE"	"31133"	"2014"	"2014"	0	2702	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2006"	"2006"	0	3041	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2007"	"2007"	0	3013	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2008"	"2008"	Suppressed	2949	Suppressed
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2009"	"2009"	0	2937	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2010"	"2010"	0	2970	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2011"	"2011"	0	2955	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2012"	"2012"	0	2931	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2013"	"2013"	0	2921	Unreliable
+	"Nebraska"	"31"	"Perkins County, NE"	"31135"	"2014"	"2014"	0	2891	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2006"	"2006"	0	9405	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2007"	"2007"	0	9222	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2008"	"2008"	0	9195	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2009"	"2009"	0	9148	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2010"	"2010"	0	9188	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2011"	"2011"	0	9184	Unreliable
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2012"	"2012"	Suppressed	9215	Suppressed
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2013"	"2013"	Suppressed	9213	Suppressed
+	"Nebraska"	"31"	"Phelps County, NE"	"31137"	"2014"	"2014"	0	9187	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2006"	"2006"	Suppressed	7416	Suppressed
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2007"	"2007"	0	7314	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2008"	"2008"	Suppressed	7286	Suppressed
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2009"	"2009"	0	7260	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2010"	"2010"	0	7266	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2011"	"2011"	0	7216	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2012"	"2012"	0	7166	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2013"	"2013"	0	7150	Unreliable
+	"Nebraska"	"31"	"Pierce County, NE"	"31139"	"2014"	"2014"	Suppressed	7202	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2006"	"2006"	Suppressed	31100	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2007"	"2007"	0	31408	Unreliable
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2008"	"2008"	Suppressed	31527	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2009"	"2009"	0	32017	Unreliable
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2010"	"2010"	Suppressed	32237	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2011"	"2011"	0	32593	Unreliable
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2012"	"2012"	Suppressed	32681	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2013"	"2013"	Suppressed	32505	Suppressed
+	"Nebraska"	"31"	"Platte County, NE"	"31141"	"2014"	"2014"	Suppressed	32666	Suppressed
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2006"	"2006"	Suppressed	5409	Suppressed
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2007"	"2007"	0	5447	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2008"	"2008"	0	5402	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2009"	"2009"	0	5409	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2010"	"2010"	Suppressed	5406	Suppressed
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2011"	"2011"	0	5322	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2012"	"2012"	0	5320	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2013"	"2013"	0	5275	Unreliable
+	"Nebraska"	"31"	"Polk County, NE"	"31143"	"2014"	"2014"	0	5271	Unreliable
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2006"	"2006"	Suppressed	11194	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2007"	"2007"	Suppressed	11053	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2008"	"2008"	Suppressed	11034	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2009"	"2009"	0	11018	Unreliable
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2010"	"2010"	Suppressed	11055	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2011"	"2011"	Suppressed	11032	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2012"	"2012"	0	10975	Unreliable
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2013"	"2013"	Suppressed	11006	Suppressed
+	"Nebraska"	"31"	"Red Willow County, NE"	"31145"	"2014"	"2014"	Suppressed	10867	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2006"	"2006"	Suppressed	8642	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2007"	"2007"	Suppressed	8480	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2008"	"2008"	Suppressed	8413	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2009"	"2009"	0	8383	Unreliable
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2010"	"2010"	Suppressed	8363	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2011"	"2011"	0	8345	Unreliable
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2012"	"2012"	Suppressed	8290	Suppressed
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2013"	"2013"	0	8125	Unreliable
+	"Nebraska"	"31"	"Richardson County, NE"	"31147"	"2014"	"2014"	0	8128	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2006"	"2006"	0	1552	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2007"	"2007"	0	1551	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2008"	"2008"	0	1554	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2009"	"2009"	Suppressed	1550	Suppressed
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2010"	"2010"	0	1526	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2011"	"2011"	0	1494	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2012"	"2012"	0	1376	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2013"	"2013"	0	1411	Unreliable
+	"Nebraska"	"31"	"Rock County, NE"	"31149"	"2014"	"2014"	0	1443	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2006"	"2006"	0	13987	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2007"	"2007"	0	14069	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2008"	"2008"	0	14048	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2009"	"2009"	Suppressed	14166	Suppressed
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2010"	"2010"	Suppressed	14200	Suppressed
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2011"	"2011"	0	14345	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2012"	"2012"	0	14557	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2013"	"2013"	0	14416	Unreliable
+	"Nebraska"	"31"	"Saline County, NE"	"31151"	"2014"	"2014"	0	14252	Unreliable
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2006"	"2006"	Suppressed	144070	Suppressed
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2007"	"2007"	Suppressed	148214	Suppressed
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2008"	"2008"	Suppressed	152762	Suppressed
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2009"	"2009"	Suppressed	156147	Suppressed
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2010"	"2010"	10	158840	Unreliable
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2011"	"2011"	16	162561	Unreliable
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2012"	"2012"	12	165853	Unreliable
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2013"	"2013"	Suppressed	169331	Suppressed
+	"Nebraska"	"31"	"Sarpy County, NE"	"31153"	"2014"	"2014"	10	172193	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2006"	"2006"	0	20411	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2007"	"2007"	0	20483	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2008"	"2008"	Suppressed	20446	Suppressed
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2009"	"2009"	Suppressed	20515	Suppressed
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2010"	"2010"	Suppressed	20780	Suppressed
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2011"	"2011"	0	20867	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2012"	"2012"	0	20823	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2013"	"2013"	0	20929	Unreliable
+	"Nebraska"	"31"	"Saunders County, NE"	"31155"	"2014"	"2014"	Suppressed	20919	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2006"	"2006"	Suppressed	36223	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2007"	"2007"	0	36338	Unreliable
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2008"	"2008"	0	36536	Unreliable
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2009"	"2009"	Suppressed	36677	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2010"	"2010"	Suppressed	36970	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2011"	"2011"	Suppressed	37044	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2012"	"2012"	Suppressed	36964	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2013"	"2013"	Suppressed	36848	Suppressed
+	"Nebraska"	"31"	"Scotts Bluff County, NE"	"31157"	"2014"	"2014"	Suppressed	36465	Suppressed
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2006"	"2006"	0	16654	Unreliable
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2007"	"2007"	Suppressed	16490	Suppressed
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2008"	"2008"	Suppressed	16653	Suppressed
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2009"	"2009"	0	16536	Unreliable
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2010"	"2010"	0	16750	Unreliable
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2011"	"2011"	0	16703	Unreliable
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2012"	"2012"	Suppressed	16935	Suppressed
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2013"	"2013"	0	17089	Unreliable
+	"Nebraska"	"31"	"Seward County, NE"	"31159"	"2014"	"2014"	0	17150	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2006"	"2006"	0	5649	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2007"	"2007"	0	5592	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2008"	"2008"	0	5500	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2009"	"2009"	0	5498	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2010"	"2010"	0	5469	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2011"	"2011"	0	5392	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2012"	"2012"	0	5319	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2013"	"2013"	0	5251	Unreliable
+	"Nebraska"	"31"	"Sheridan County, NE"	"31161"	"2014"	"2014"	0	5259	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2006"	"2006"	0	3148	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2007"	"2007"	0	3145	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2008"	"2008"	0	3147	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2009"	"2009"	0	3129	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2010"	"2010"	0	3152	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2011"	"2011"	Suppressed	3093	Suppressed
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2012"	"2012"	0	3108	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2013"	"2013"	0	3106	Unreliable
+	"Nebraska"	"31"	"Sherman County, NE"	"31163"	"2014"	"2014"	0	3074	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2006"	"2006"	0	1409	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2007"	"2007"	0	1404	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2008"	"2008"	0	1360	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2009"	"2009"	0	1324	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2010"	"2010"	0	1311	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2011"	"2011"	0	1336	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2012"	"2012"	0	1315	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2013"	"2013"	0	1313	Unreliable
+	"Nebraska"	"31"	"Sioux County, NE"	"31165"	"2014"	"2014"	0	1303	Unreliable
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2006"	"2006"	Suppressed	6363	Suppressed
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2007"	"2007"	0	6248	Unreliable
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2008"	"2008"	0	6145	Unreliable
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2009"	"2009"	0	6157	Unreliable
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2010"	"2010"	Suppressed	6129	Suppressed
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2011"	"2011"	Suppressed	6155	Suppressed
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2012"	"2012"	0	6089	Unreliable
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2013"	"2013"	Suppressed	6133	Suppressed
+	"Nebraska"	"31"	"Stanton County, NE"	"31167"	"2014"	"2014"	0	6069	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2006"	"2006"	0	5312	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2007"	"2007"	0	5308	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2008"	"2008"	0	5253	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2009"	"2009"	0	5210	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2010"	"2010"	0	5228	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2011"	"2011"	0	5160	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2012"	"2012"	0	5134	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2013"	"2013"	0	5189	Unreliable
+	"Nebraska"	"31"	"Thayer County, NE"	"31169"	"2014"	"2014"	0	5230	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2006"	"2006"	0	659	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2007"	"2007"	0	667	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2008"	"2008"	0	661	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2009"	"2009"	0	655	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2010"	"2010"	0	647	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2011"	"2011"	0	716	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2012"	"2012"	0	676	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2013"	"2013"	0	699	Unreliable
+	"Nebraska"	"31"	"Thomas County, NE"	"31171"	"2014"	"2014"	0	687	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2006"	"2006"	Suppressed	6947	Suppressed
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2007"	"2007"	0	6925	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2008"	"2008"	0	6821	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2009"	"2009"	Suppressed	6866	Suppressed
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2010"	"2010"	0	6940	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2011"	"2011"	0	7006	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2012"	"2012"	Suppressed	7020	Suppressed
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2013"	"2013"	0	6895	Unreliable
+	"Nebraska"	"31"	"Thurston County, NE"	"31173"	"2014"	"2014"	Suppressed	6969	Suppressed
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2006"	"2006"	Suppressed	4367	Suppressed
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2007"	"2007"	0	4327	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2008"	"2008"	0	4228	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2009"	"2009"	0	4228	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2010"	"2010"	0	4260	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2011"	"2011"	Suppressed	4218	Suppressed
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2012"	"2012"	0	4229	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2013"	"2013"	0	4193	Unreliable
+	"Nebraska"	"31"	"Valley County, NE"	"31175"	"2014"	"2014"	0	4204	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2006"	"2006"	Suppressed	20056	Suppressed
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2007"	"2007"	0	20203	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2008"	"2008"	0	20101	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2009"	"2009"	0	20124	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2010"	"2010"	0	20234	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2011"	"2011"	Suppressed	20295	Suppressed
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2012"	"2012"	0	20252	Unreliable
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2013"	"2013"	Suppressed	20223	Suppressed
+	"Nebraska"	"31"	"Washington County, NE"	"31177"	"2014"	"2014"	0	20258	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2006"	"2006"	0	9720	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2007"	"2007"	0	9506	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2008"	"2008"	Suppressed	9481	Suppressed
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2009"	"2009"	0	9552	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2010"	"2010"	0	9595	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2011"	"2011"	0	9504	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2012"	"2012"	0	9554	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2013"	"2013"	0	9411	Unreliable
+	"Nebraska"	"31"	"Wayne County, NE"	"31179"	"2014"	"2014"	0	9431	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2006"	"2006"	0	3846	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2007"	"2007"	0	3859	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2008"	"2008"	0	3771	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2009"	"2009"	0	3788	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2010"	"2010"	0	3812	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2011"	"2011"	0	3775	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2012"	"2012"	0	3725	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2013"	"2013"	0	3688	Unreliable
+	"Nebraska"	"31"	"Webster County, NE"	"31181"	"2014"	"2014"	0	3658	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2006"	"2006"	0	826	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2007"	"2007"	0	837	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2008"	"2008"	0	831	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2009"	"2009"	0	809	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2010"	"2010"	0	818	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2011"	"2011"	0	818	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2012"	"2012"	0	805	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2013"	"2013"	0	759	Unreliable
+	"Nebraska"	"31"	"Wheeler County, NE"	"31183"	"2014"	"2014"	Suppressed	766	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2006"	"2006"	0	14130	Unreliable
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2007"	"2007"	Suppressed	14078	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2008"	"2008"	Suppressed	13881	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2009"	"2009"	Suppressed	13689	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2010"	"2010"	0	13665	Unreliable
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2011"	"2011"	Suppressed	13726	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2012"	"2012"	0	13746	Unreliable
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2013"	"2013"	Suppressed	13883	Suppressed
+	"Nebraska"	"31"	"York County, NE"	"31185"	"2014"	"2014"	0	13917	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Nebraska (31)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:37:18 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:37:18 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

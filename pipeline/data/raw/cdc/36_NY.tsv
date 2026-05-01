@@ -1,0 +1,615 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"New York"	"36"	"Albany County, NY"	"36001"	"2006"	"2006"	19	303997	Unreliable
+	"New York"	"36"	"Albany County, NY"	"36001"	"2007"	"2007"	36	303858	11.8
+	"New York"	"36"	"Albany County, NY"	"36001"	"2008"	"2008"	30	303739	9.9
+	"New York"	"36"	"Albany County, NY"	"36001"	"2009"	"2009"	18	304733	Unreliable
+	"New York"	"36"	"Albany County, NY"	"36001"	"2010"	"2010"	26	304204	8.5
+	"New York"	"36"	"Albany County, NY"	"36001"	"2011"	"2011"	30	303565	9.9
+	"New York"	"36"	"Albany County, NY"	"36001"	"2012"	"2012"	27	305455	8.8
+	"New York"	"36"	"Albany County, NY"	"36001"	"2013"	"2013"	36	306945	11.7
+	"New York"	"36"	"Albany County, NY"	"36001"	"2014"	"2014"	38	308171	12.3
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2006"	"2006"	Suppressed	49359	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2007"	"2007"	Suppressed	49079	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2008"	"2008"	Suppressed	49177	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2009"	"2009"	Suppressed	48969	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2010"	"2010"	Suppressed	48946	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2011"	"2011"	Suppressed	48778	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2012"	"2012"	Suppressed	48357	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2013"	"2013"	Suppressed	48109	Suppressed
+	"New York"	"36"	"Allegany County, NY"	"36003"	"2014"	"2014"	Suppressed	47736	Suppressed
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2006"	"2006"	193	1348164	14.3
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2007"	"2007"	173	1354056	12.8
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2008"	"2008"	137	1363488	10.0
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2009"	"2009"	134	1376261	9.7
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2010"	"2010"	111	1385108	8.0
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2011"	"2011"	134	1392002	9.6
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2012"	"2012"	165	1408473	11.7
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2013"	"2013"	155	1418733	10.9
+	"New York"	"36"	"Bronx County, NY"	"36005"	"2014"	"2014"	141	1438159	9.8
+	"New York"	"36"	"Broome County, NY"	"36007"	"2006"	"2006"	Suppressed	200905	Suppressed
+	"New York"	"36"	"Broome County, NY"	"36007"	"2007"	"2007"	12	200877	Unreliable
+	"New York"	"36"	"Broome County, NY"	"36007"	"2008"	"2008"	15	201029	Unreliable
+	"New York"	"36"	"Broome County, NY"	"36007"	"2009"	"2009"	15	200935	Unreliable
+	"New York"	"36"	"Broome County, NY"	"36007"	"2010"	"2010"	18	200600	Unreliable
+	"New York"	"36"	"Broome County, NY"	"36007"	"2011"	"2011"	24	199031	12.1
+	"New York"	"36"	"Broome County, NY"	"36007"	"2012"	"2012"	21	198060	10.6
+	"New York"	"36"	"Broome County, NY"	"36007"	"2013"	"2013"	33	197534	16.7
+	"New York"	"36"	"Broome County, NY"	"36007"	"2014"	"2014"	38	197349	19.3
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2006"	"2006"	Suppressed	81342	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2007"	"2007"	Suppressed	81056	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2008"	"2008"	Suppressed	80761	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2009"	"2009"	Suppressed	80491	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2010"	"2010"	Suppressed	80317	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2011"	"2011"	Suppressed	79832	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2012"	"2012"	10	79458	Unreliable
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2013"	"2013"	Suppressed	78892	Suppressed
+	"New York"	"36"	"Cattaraugus County, NY"	"36009"	"2014"	"2014"	Suppressed	78600	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2006"	"2006"	Suppressed	80892	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2007"	"2007"	Suppressed	80629	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2008"	"2008"	Suppressed	80482	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2009"	"2009"	Suppressed	80172	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2010"	"2010"	Suppressed	80026	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2011"	"2011"	12	79738	Unreliable
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2012"	"2012"	Suppressed	79552	Suppressed
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2013"	"2013"	15	79477	Unreliable
+	"New York"	"36"	"Cayuga County, NY"	"36011"	"2014"	"2014"	Suppressed	78823	Suppressed
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2006"	"2006"	Suppressed	135640	Suppressed
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2007"	"2007"	16	135481	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2008"	"2008"	17	135229	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2009"	"2009"	Suppressed	135197	Suppressed
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2010"	"2010"	12	134905	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2011"	"2011"	14	134368	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2012"	"2012"	12	133539	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2013"	"2013"	14	133080	Unreliable
+	"New York"	"36"	"Chautauqua County, NY"	"36013"	"2014"	"2014"	18	132053	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2006"	"2006"	10	88732	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2007"	"2007"	Suppressed	88634	Suppressed
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2008"	"2008"	10	88503	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2009"	"2009"	Suppressed	88849	Suppressed
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2010"	"2010"	Suppressed	88830	Suppressed
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2011"	"2011"	14	88840	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2012"	"2012"	19	88911	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2013"	"2013"	14	88506	Unreliable
+	"New York"	"36"	"Chemung County, NY"	"36015"	"2014"	"2014"	10	87770	Unreliable
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2006"	"2006"	Suppressed	51391	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2007"	"2007"	Suppressed	51463	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2008"	"2008"	Suppressed	51326	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2009"	"2009"	Suppressed	50639	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2010"	"2010"	Suppressed	50477	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2011"	"2011"	Suppressed	50118	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2012"	"2012"	Suppressed	49933	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2013"	"2013"	Suppressed	49503	Suppressed
+	"New York"	"36"	"Chenango County, NY"	"36017"	"2014"	"2014"	Suppressed	49426	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2006"	"2006"	Suppressed	82547	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2007"	"2007"	Suppressed	82556	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2008"	"2008"	10	82401	Unreliable
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2009"	"2009"	Suppressed	82280	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2010"	"2010"	Suppressed	82128	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2011"	"2011"	13	81945	Unreliable
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2012"	"2012"	Suppressed	81654	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2013"	"2013"	Suppressed	81591	Suppressed
+	"New York"	"36"	"Clinton County, NY"	"36019"	"2014"	"2014"	11	81632	Unreliable
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2006"	"2006"	Suppressed	63427	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2007"	"2007"	Suppressed	63430	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2008"	"2008"	Suppressed	63253	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2009"	"2009"	10	63023	Unreliable
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2010"	"2010"	Suppressed	63096	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2011"	"2011"	Suppressed	62550	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2012"	"2012"	Suppressed	62499	Suppressed
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2013"	"2013"	10	62243	Unreliable
+	"New York"	"36"	"Columbia County, NY"	"36021"	"2014"	"2014"	Suppressed	62122	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2006"	"2006"	Suppressed	49449	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2007"	"2007"	Suppressed	49624	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2008"	"2008"	Suppressed	49537	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2009"	"2009"	Suppressed	49358	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2010"	"2010"	Suppressed	49336	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2011"	"2011"	Suppressed	49363	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2012"	"2012"	Suppressed	49474	Suppressed
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2013"	"2013"	0	48976	Unreliable
+	"New York"	"36"	"Cortland County, NY"	"36023"	"2014"	"2014"	Suppressed	49024	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2006"	"2006"	Suppressed	48271	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2007"	"2007"	Suppressed	48450	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2008"	"2008"	Suppressed	48363	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2009"	"2009"	Suppressed	48182	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2010"	"2010"	Suppressed	47980	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2011"	"2011"	Suppressed	47559	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2012"	"2012"	Suppressed	47276	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2013"	"2013"	Suppressed	46722	Suppressed
+	"New York"	"36"	"Delaware County, NY"	"36025"	"2014"	"2014"	Suppressed	46581	Suppressed
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2006"	"2006"	24	294712	8.1
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2007"	"2007"	32	295319	10.8
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2008"	"2008"	38	296267	12.8
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2009"	"2009"	32	296887	10.8
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2010"	"2010"	55	297488	18.5
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2011"	"2011"	38	297999	12.8
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2012"	"2012"	58	297322	19.5
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2013"	"2013"	70	296916	23.6
+	"New York"	"36"	"Dutchess County, NY"	"36027"	"2014"	"2014"	48	296579	16.2
+	"New York"	"36"	"Erie County, NY"	"36029"	"2006"	"2006"	55	925564	5.9
+	"New York"	"36"	"Erie County, NY"	"36029"	"2007"	"2007"	74	921887	8.0
+	"New York"	"36"	"Erie County, NY"	"36029"	"2008"	"2008"	88	920571	9.6
+	"New York"	"36"	"Erie County, NY"	"36029"	"2009"	"2009"	86	919334	9.4
+	"New York"	"36"	"Erie County, NY"	"36029"	"2010"	"2010"	79	919040	8.6
+	"New York"	"36"	"Erie County, NY"	"36029"	"2011"	"2011"	112	918028	12.2
+	"New York"	"36"	"Erie County, NY"	"36029"	"2012"	"2012"	92	919086	10.0
+	"New York"	"36"	"Erie County, NY"	"36029"	"2013"	"2013"	137	919866	14.9
+	"New York"	"36"	"Erie County, NY"	"36029"	"2014"	"2014"	148	922835	16.0
+	"New York"	"36"	"Essex County, NY"	"36031"	"2006"	"2006"	Suppressed	39490	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2007"	"2007"	Suppressed	39373	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2008"	"2008"	0	39435	Unreliable
+	"New York"	"36"	"Essex County, NY"	"36031"	"2009"	"2009"	Suppressed	39478	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2010"	"2010"	Suppressed	39370	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2011"	"2011"	Suppressed	39181	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2012"	"2012"	Suppressed	38961	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2013"	"2013"	Suppressed	38762	Suppressed
+	"New York"	"36"	"Essex County, NY"	"36031"	"2014"	"2014"	Suppressed	38679	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2006"	"2006"	Suppressed	51511	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2007"	"2007"	Suppressed	51782	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2008"	"2008"	Suppressed	51907	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2009"	"2009"	Suppressed	51706	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2010"	"2010"	Suppressed	51599	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2011"	"2011"	Suppressed	51551	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2012"	"2012"	10	51795	Unreliable
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2013"	"2013"	Suppressed	51688	Suppressed
+	"New York"	"36"	"Franklin County, NY"	"36033"	"2014"	"2014"	Suppressed	51262	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2006"	"2006"	Suppressed	55328	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2007"	"2007"	Suppressed	55489	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2008"	"2008"	Suppressed	55584	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2009"	"2009"	Suppressed	55558	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2010"	"2010"	Suppressed	55531	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2011"	"2011"	Suppressed	55180	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2012"	"2012"	Suppressed	54925	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2013"	"2013"	Suppressed	54586	Suppressed
+	"New York"	"36"	"Fulton County, NY"	"36035"	"2014"	"2014"	Suppressed	54105	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2006"	"2006"	Suppressed	59919	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2007"	"2007"	Suppressed	59930	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2008"	"2008"	Suppressed	59895	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2009"	"2009"	10	59932	Unreliable
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2010"	"2010"	Suppressed	60079	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2011"	"2011"	Suppressed	59993	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2012"	"2012"	Suppressed	59977	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2013"	"2013"	Suppressed	59454	Suppressed
+	"New York"	"36"	"Genesee County, NY"	"36037"	"2014"	"2014"	Suppressed	59162	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2006"	"2006"	Suppressed	49513	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2007"	"2007"	Suppressed	49537	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2008"	"2008"	Suppressed	49467	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2009"	"2009"	Suppressed	49372	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2010"	"2010"	Suppressed	49221	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2011"	"2011"	Suppressed	48954	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2012"	"2012"	11	48673	Unreliable
+	"New York"	"36"	"Greene County, NY"	"36039"	"2013"	"2013"	Suppressed	48455	Suppressed
+	"New York"	"36"	"Greene County, NY"	"36039"	"2014"	"2014"	11	47967	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2006"	"2006"	0	4987	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2007"	"2007"	0	4969	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2008"	"2008"	0	4893	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2009"	"2009"	Suppressed	4858	Suppressed
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2010"	"2010"	0	4836	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2011"	"2011"	0	4793	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2012"	"2012"	0	4778	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2013"	"2013"	0	4773	Unreliable
+	"New York"	"36"	"Hamilton County, NY"	"36041"	"2014"	"2014"	Suppressed	4715	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2006"	"2006"	Suppressed	64029	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2007"	"2007"	Suppressed	64343	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2008"	"2008"	Suppressed	64404	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2009"	"2009"	Suppressed	64381	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2010"	"2010"	Suppressed	64519	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2011"	"2011"	Suppressed	64160	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2012"	"2012"	0	64508	Unreliable
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2013"	"2013"	Suppressed	64181	Suppressed
+	"New York"	"36"	"Herkimer County, NY"	"36043"	"2014"	"2014"	Suppressed	63744	Suppressed
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2006"	"2006"	Suppressed	113650	Suppressed
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2007"	"2007"	Suppressed	115059	Suppressed
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2008"	"2008"	Suppressed	115033	Suppressed
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2009"	"2009"	12	115023	Unreliable
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2010"	"2010"	Suppressed	116229	Suppressed
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2011"	"2011"	18	117910	Unreliable
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2012"	"2012"	13	120262	Unreliable
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2013"	"2013"	13	119504	Unreliable
+	"New York"	"36"	"Jefferson County, NY"	"36045"	"2014"	"2014"	17	119103	Unreliable
+	"New York"	"36"	"Kings County, NY"	"36047"	"2006"	"2006"	255	2436132	10.5
+	"New York"	"36"	"Kings County, NY"	"36047"	"2007"	"2007"	216	2441324	8.8
+	"New York"	"36"	"Kings County, NY"	"36047"	"2008"	"2008"	186	2460361	7.6
+	"New York"	"36"	"Kings County, NY"	"36047"	"2009"	"2009"	182	2487751	7.3
+	"New York"	"36"	"Kings County, NY"	"36047"	"2010"	"2010"	180	2504700	7.2
+	"New York"	"36"	"Kings County, NY"	"36047"	"2011"	"2011"	191	2532645	7.5
+	"New York"	"36"	"Kings County, NY"	"36047"	"2012"	"2012"	206	2565635	8.0
+	"New York"	"36"	"Kings County, NY"	"36047"	"2013"	"2013"	193	2592149	7.4
+	"New York"	"36"	"Kings County, NY"	"36047"	"2014"	"2014"	222	2621793	8.5
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2006"	"2006"	Suppressed	27001	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2007"	"2007"	Suppressed	27086	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2008"	"2008"	0	26878	Unreliable
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2009"	"2009"	Suppressed	27047	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2010"	"2010"	Suppressed	27087	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2011"	"2011"	Suppressed	27072	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2012"	"2012"	Suppressed	27224	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2013"	"2013"	Suppressed	27149	Suppressed
+	"New York"	"36"	"Lewis County, NY"	"36049"	"2014"	"2014"	Suppressed	27220	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2006"	"2006"	Suppressed	65357	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2007"	"2007"	Suppressed	65460	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2008"	"2008"	Suppressed	65637	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2009"	"2009"	Suppressed	65420	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2010"	"2010"	Suppressed	65393	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2011"	"2011"	Suppressed	65070	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2012"	"2012"	10	64810	Unreliable
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2013"	"2013"	Suppressed	64705	Suppressed
+	"New York"	"36"	"Livingston County, NY"	"36051"	"2014"	"2014"	Suppressed	64586	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2006"	"2006"	Suppressed	72042	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2007"	"2007"	Suppressed	72709	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2008"	"2008"	Suppressed	73075	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2009"	"2009"	Suppressed	73169	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2010"	"2010"	Suppressed	73442	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2011"	"2011"	Suppressed	73365	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2012"	"2012"	Suppressed	72382	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2013"	"2013"	Suppressed	72382	Suppressed
+	"New York"	"36"	"Madison County, NY"	"36053"	"2014"	"2014"	12	72369	Unreliable
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2006"	"2006"	55	738329	7.4
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2007"	"2007"	65	739249	8.8
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2008"	"2008"	62	741018	8.4
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2009"	"2009"	55	743386	7.4
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2010"	"2010"	63	744344	8.5
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2011"	"2011"	70	745625	9.4
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2012"	"2012"	81	747813	10.8
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2013"	"2013"	96	749606	12.8
+	"New York"	"36"	"Monroe County, NY"	"36055"	"2014"	"2014"	112	749857	14.9
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2006"	"2006"	0	49724	Unreliable
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2007"	"2007"	Suppressed	49798	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2008"	"2008"	0	49951	Unreliable
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2009"	"2009"	Suppressed	50001	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2010"	"2010"	Suppressed	50219	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2011"	"2011"	Suppressed	49916	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2012"	"2012"	Suppressed	49941	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2013"	"2013"	Suppressed	49897	Suppressed
+	"New York"	"36"	"Montgomery County, NY"	"36057"	"2014"	"2014"	Suppressed	49779	Suppressed
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2006"	"2006"	124	1324905	9.4
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2007"	"2007"	126	1322048	9.5
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2008"	"2008"	133	1325129	10.0
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2009"	"2009"	121	1332088	9.1
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2010"	"2010"	101	1339532	7.5
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2011"	"2011"	148	1344436	11.0
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2012"	"2012"	158	1349233	11.7
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2013"	"2013"	170	1352146	12.6
+	"New York"	"36"	"Nassau County, NY"	"36059"	"2014"	"2014"	173	1358627	12.7
+	"New York"	"36"	"New York County, NY"	"36061"	"2006"	"2006"	200	1578171	12.7
+	"New York"	"36"	"New York County, NY"	"36061"	"2007"	"2007"	155	1581402	9.8
+	"New York"	"36"	"New York County, NY"	"36061"	"2008"	"2008"	139	1587022	8.8
+	"New York"	"36"	"New York County, NY"	"36061"	"2009"	"2009"	122	1583431	7.7
+	"New York"	"36"	"New York County, NY"	"36061"	"2010"	"2010"	99	1585873	6.2
+	"New York"	"36"	"New York County, NY"	"36061"	"2011"	"2011"	127	1601948	7.9
+	"New York"	"36"	"New York County, NY"	"36061"	"2012"	"2012"	187	1619090	11.5
+	"New York"	"36"	"New York County, NY"	"36061"	"2013"	"2013"	181	1626159	11.1
+	"New York"	"36"	"New York County, NY"	"36061"	"2014"	"2014"	166	1636268	10.1
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2006"	"2006"	23	216148	10.6
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2007"	"2007"	14	215791	Unreliable
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2008"	"2008"	30	215793	13.9
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2009"	"2009"	18	216043	Unreliable
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2010"	"2010"	30	216469	13.9
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2011"	"2011"	24	216011	11.1
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2012"	"2012"	34	215124	15.8
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2013"	"2013"	37	214249	17.3
+	"New York"	"36"	"Niagara County, NY"	"36063"	"2014"	"2014"	36	213525	16.9
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2006"	"2006"	16	234229	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2007"	"2007"	18	234488	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2008"	"2008"	Suppressed	234482	Suppressed
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2009"	"2009"	12	234619	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2010"	"2010"	17	234878	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2011"	"2011"	16	234287	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2012"	"2012"	17	233556	Unreliable
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2013"	"2013"	28	233585	12.0
+	"New York"	"36"	"Oneida County, NY"	"36065"	"2014"	"2014"	41	232871	17.6
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2006"	"2006"	37	460925	8.0
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2007"	"2007"	40	461287	8.7
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2008"	"2008"	58	463472	12.5
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2009"	"2009"	42	465633	9.0
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2010"	"2010"	40	467026	8.6
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2011"	"2011"	45	466960	9.6
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2012"	"2012"	60	466852	12.9
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2013"	"2013"	67	468387	14.3
+	"New York"	"36"	"Onondaga County, NY"	"36067"	"2014"	"2014"	78	468196	16.7
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2006"	"2006"	15	104644	Unreliable
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2007"	"2007"	Suppressed	105216	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2008"	"2008"	Suppressed	106302	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2009"	"2009"	Suppressed	107214	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2010"	"2010"	Suppressed	107931	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2011"	"2011"	Suppressed	108525	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2012"	"2012"	Suppressed	108519	Suppressed
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2013"	"2013"	13	109103	Unreliable
+	"New York"	"36"	"Ontario County, NY"	"36069"	"2014"	"2014"	14	109707	Unreliable
+	"New York"	"36"	"Orange County, NY"	"36071"	"2006"	"2006"	33	366908	9.0
+	"New York"	"36"	"Orange County, NY"	"36071"	"2007"	"2007"	27	368464	7.3
+	"New York"	"36"	"Orange County, NY"	"36071"	"2008"	"2008"	38	370201	10.3
+	"New York"	"36"	"Orange County, NY"	"36071"	"2009"	"2009"	38	372079	10.2
+	"New York"	"36"	"Orange County, NY"	"36071"	"2010"	"2010"	53	372813	14.2
+	"New York"	"36"	"Orange County, NY"	"36071"	"2011"	"2011"	52	374872	13.9
+	"New York"	"36"	"Orange County, NY"	"36071"	"2012"	"2012"	52	374512	13.9
+	"New York"	"36"	"Orange County, NY"	"36071"	"2013"	"2013"	62	375592	16.5
+	"New York"	"36"	"Orange County, NY"	"36071"	"2014"	"2014"	69	376099	18.3
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2006"	"2006"	Suppressed	43420	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2007"	"2007"	Suppressed	43342	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2008"	"2008"	Suppressed	43254	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2009"	"2009"	Suppressed	42975	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2010"	"2010"	Suppressed	42883	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2011"	"2011"	Suppressed	42622	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2012"	"2012"	Suppressed	42836	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2013"	"2013"	Suppressed	42235	Suppressed
+	"New York"	"36"	"Orleans County, NY"	"36073"	"2014"	"2014"	Suppressed	41984	Suppressed
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2006"	"2006"	Suppressed	122354	Suppressed
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2007"	"2007"	17	122213	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2008"	"2008"	10	122366	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2009"	"2009"	17	122055	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2010"	"2010"	12	122109	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2011"	"2011"	17	122228	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2012"	"2012"	16	121700	Unreliable
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2013"	"2013"	21	121165	17.3
+	"New York"	"36"	"Oswego County, NY"	"36075"	"2014"	"2014"	18	120913	Unreliable
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2006"	"2006"	Suppressed	63032	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2007"	"2007"	Suppressed	62914	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2008"	"2008"	Suppressed	62561	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2009"	"2009"	Suppressed	62280	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2010"	"2010"	Suppressed	62259	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2011"	"2011"	Suppressed	61917	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2012"	"2012"	Suppressed	61709	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2013"	"2013"	Suppressed	61683	Suppressed
+	"New York"	"36"	"Otsego County, NY"	"36077"	"2014"	"2014"	Suppressed	61128	Suppressed
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2006"	"2006"	10	99357	Unreliable
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2007"	"2007"	Suppressed	99454	Suppressed
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2008"	"2008"	Suppressed	99537	Suppressed
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2009"	"2009"	Suppressed	99666	Suppressed
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2010"	"2010"	Suppressed	99710	Suppressed
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2011"	"2011"	10	99933	Unreliable
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2012"	"2012"	16	99607	Unreliable
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2013"	"2013"	19	99645	Unreliable
+	"New York"	"36"	"Putnam County, NY"	"36079"	"2014"	"2014"	16	99487	Unreliable
+	"New York"	"36"	"Queens County, NY"	"36081"	"2006"	"2006"	165	2173862	7.6
+	"New York"	"36"	"Queens County, NY"	"36081"	"2007"	"2007"	158	2177351	7.3
+	"New York"	"36"	"Queens County, NY"	"36081"	"2008"	"2008"	130	2193623	5.9
+	"New York"	"36"	"Queens County, NY"	"36081"	"2009"	"2009"	127	2217166	5.7
+	"New York"	"36"	"Queens County, NY"	"36081"	"2010"	"2010"	132	2230722	5.9
+	"New York"	"36"	"Queens County, NY"	"36081"	"2011"	"2011"	143	2247848	6.4
+	"New York"	"36"	"Queens County, NY"	"36081"	"2012"	"2012"	133	2272771	5.9
+	"New York"	"36"	"Queens County, NY"	"36081"	"2013"	"2013"	180	2296175	7.8
+	"New York"	"36"	"Queens County, NY"	"36081"	"2014"	"2014"	151	2321580	6.5
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2006"	"2006"	Suppressed	157312	Suppressed
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2007"	"2007"	Suppressed	158243	Suppressed
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2008"	"2008"	Suppressed	159011	Suppressed
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2009"	"2009"	18	159150	Unreliable
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2010"	"2010"	13	159429	Unreliable
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2011"	"2011"	Suppressed	159395	Suppressed
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2012"	"2012"	16	159835	Unreliable
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2013"	"2013"	19	159918	Unreliable
+	"New York"	"36"	"Rensselaer County, NY"	"36083"	"2014"	"2014"	10	159774	Unreliable
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2006"	"2006"	47	457577	10.3
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2007"	"2007"	51	459642	11.1
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2008"	"2008"	56	463701	12.1
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2009"	"2009"	60	466965	12.8
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2010"	"2010"	69	468730	14.7
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2011"	"2011"	79	470467	16.8
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2012"	"2012"	87	470728	18.5
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2013"	"2013"	76	472621	16.1
+	"New York"	"36"	"Richmond County, NY"	"36085"	"2014"	"2014"	85	473279	18.0
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2006"	"2006"	15	299390	Unreliable
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2007"	"2007"	Suppressed	301668	Suppressed
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2008"	"2008"	22	305413	7.2
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2009"	"2009"	24	308652	7.8
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2010"	"2010"	17	311687	Unreliable
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2011"	"2011"	19	315158	Unreliable
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2012"	"2012"	21	317757	6.6
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2013"	"2013"	34	320903	10.6
+	"New York"	"36"	"Rockland County, NY"	"36087"	"2014"	"2014"	22	323866	6.8
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2006"	"2006"	Suppressed	111556	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2007"	"2007"	Suppressed	111586	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2008"	"2008"	Suppressed	111684	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2009"	"2009"	Suppressed	112169	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2010"	"2010"	Suppressed	111944	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2011"	"2011"	Suppressed	111690	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2012"	"2012"	Suppressed	112232	Suppressed
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2013"	"2013"	12	111963	Unreliable
+	"New York"	"36"	"St. Lawrence County, NY"	"36089"	"2014"	"2014"	12	111400	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2006"	"2006"	Suppressed	214627	Suppressed
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2007"	"2007"	13	215798	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2008"	"2008"	16	217282	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2009"	"2009"	15	218652	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2010"	"2010"	Suppressed	219607	Suppressed
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2011"	"2011"	14	220882	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2012"	"2012"	11	222133	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2013"	"2013"	19	223865	Unreliable
+	"New York"	"36"	"Saratoga County, NY"	"36091"	"2014"	"2014"	25	224921	11.1
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2006"	"2006"	Suppressed	151768	Suppressed
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2007"	"2007"	Suppressed	152275	Suppressed
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2008"	"2008"	10	153360	Unreliable
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2009"	"2009"	13	154050	Unreliable
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2010"	"2010"	Suppressed	154727	Suppressed
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2011"	"2011"	13	155058	Unreliable
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2012"	"2012"	10	155124	Unreliable
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2013"	"2013"	19	155333	Unreliable
+	"New York"	"36"	"Schenectady County, NY"	"36093"	"2014"	"2014"	Suppressed	155735	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2006"	"2006"	Suppressed	32661	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2007"	"2007"	0	32894	Unreliable
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2008"	"2008"	0	32890	Unreliable
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2009"	"2009"	Suppressed	32776	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2010"	"2010"	Suppressed	32749	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2011"	"2011"	Suppressed	32578	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2012"	"2012"	0	32099	Unreliable
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2013"	"2013"	Suppressed	31844	Suppressed
+	"New York"	"36"	"Schoharie County, NY"	"36095"	"2014"	"2014"	0	31566	Unreliable
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2006"	"2006"	Suppressed	18752	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2007"	"2007"	0	18707	Unreliable
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2008"	"2008"	Suppressed	18644	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2009"	"2009"	Suppressed	18398	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2010"	"2010"	0	18343	Unreliable
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2011"	"2011"	Suppressed	18361	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2012"	"2012"	Suppressed	18514	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2013"	"2013"	Suppressed	18460	Suppressed
+	"New York"	"36"	"Schuyler County, NY"	"36097"	"2014"	"2014"	0	18479	Unreliable
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2006"	"2006"	Suppressed	35223	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2007"	"2007"	Suppressed	35469	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2008"	"2008"	Suppressed	35370	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2009"	"2009"	Suppressed	35286	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2010"	"2010"	Suppressed	35251	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2011"	"2011"	Suppressed	35198	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2012"	"2012"	Suppressed	35305	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2013"	"2013"	Suppressed	35409	Suppressed
+	"New York"	"36"	"Seneca County, NY"	"36099"	"2014"	"2014"	Suppressed	34884	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2006"	"2006"	10	98473	Unreliable
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2007"	"2007"	12	98541	Unreliable
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2008"	"2008"	Suppressed	98726	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2009"	"2009"	Suppressed	98949	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2010"	"2010"	Suppressed	98990	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2011"	"2011"	Suppressed	99033	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2012"	"2012"	Suppressed	99063	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2013"	"2013"	Suppressed	98650	Suppressed
+	"New York"	"36"	"Steuben County, NY"	"36101"	"2014"	"2014"	13	98394	Unreliable
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2006"	"2006"	160	1475626	10.8
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2007"	"2007"	182	1475255	12.3
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2008"	"2008"	193	1480218	13.0
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2009"	"2009"	164	1487206	11.0
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2010"	"2010"	199	1493350	13.3
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2011"	"2011"	279	1498816	18.6
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2012"	"2012"	288	1499273	19.2
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2013"	"2013"	274	1499738	18.3
+	"New York"	"36"	"Suffolk County, NY"	"36103"	"2014"	"2014"	261	1502968	17.4
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2006"	"2006"	14	77231	Unreliable
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2007"	"2007"	11	77991	Unreliable
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2008"	"2008"	16	77755	Unreliable
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2009"	"2009"	Suppressed	77647	Suppressed
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2010"	"2010"	Suppressed	77547	Suppressed
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2011"	"2011"	31	76900	40.3
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2012"	"2012"	14	76793	Unreliable
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2013"	"2013"	19	76665	Unreliable
+	"New York"	"36"	"Sullivan County, NY"	"36105"	"2014"	"2014"	21	75943	27.7
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2006"	"2006"	0	51536	Unreliable
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2007"	"2007"	Suppressed	51565	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2008"	"2008"	Suppressed	51498	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2009"	"2009"	Suppressed	51236	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2010"	"2010"	Suppressed	51125	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2011"	"2011"	Suppressed	51043	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2012"	"2012"	Suppressed	50478	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2013"	"2013"	Suppressed	50243	Suppressed
+	"New York"	"36"	"Tioga County, NY"	"36107"	"2014"	"2014"	14	49870	Unreliable
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2006"	"2006"	Suppressed	99651	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2007"	"2007"	Suppressed	99910	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2008"	"2008"	Suppressed	100383	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2009"	"2009"	Suppressed	101497	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2010"	"2010"	Suppressed	101564	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2011"	"2011"	11	101723	Unreliable
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2012"	"2012"	14	102554	Unreliable
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2013"	"2013"	Suppressed	103617	Suppressed
+	"New York"	"36"	"Tompkins County, NY"	"36109"	"2014"	"2014"	15	104691	Unreliable
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2006"	"2006"	Suppressed	182845	Suppressed
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2007"	"2007"	23	182818	12.6
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2008"	"2008"	17	183174	Unreliable
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2009"	"2009"	20	182638	11.0
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2010"	"2010"	14	182493	Unreliable
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2011"	"2011"	25	182448	13.7
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2012"	"2012"	23	181791	12.7
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2013"	"2013"	26	180998	14.4
+	"New York"	"36"	"Ulster County, NY"	"36111"	"2014"	"2014"	22	180445	12.2
+	"New York"	"36"	"Warren County, NY"	"36113"	"2006"	"2006"	Suppressed	65554	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2007"	"2007"	Suppressed	65740	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2008"	"2008"	Suppressed	65848	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2009"	"2009"	Suppressed	65694	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2010"	"2010"	Suppressed	65707	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2011"	"2011"	Suppressed	65831	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2012"	"2012"	Suppressed	65538	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2013"	"2013"	Suppressed	65337	Suppressed
+	"New York"	"36"	"Warren County, NY"	"36113"	"2014"	"2014"	Suppressed	64973	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2006"	"2006"	Suppressed	62771	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2007"	"2007"	Suppressed	63054	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2008"	"2008"	Suppressed	63252	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2009"	"2009"	Suppressed	63077	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2010"	"2010"	Suppressed	63216	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2011"	"2011"	Suppressed	63165	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2012"	"2012"	Suppressed	62934	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2013"	"2013"	Suppressed	63093	Suppressed
+	"New York"	"36"	"Washington County, NY"	"36115"	"2014"	"2014"	Suppressed	62372	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2006"	"2006"	Suppressed	93595	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2007"	"2007"	Suppressed	93539	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2008"	"2008"	Suppressed	93739	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2009"	"2009"	Suppressed	93643	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2010"	"2010"	Suppressed	93772	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2011"	"2011"	Suppressed	93436	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2012"	"2012"	Suppressed	92962	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2013"	"2013"	Suppressed	92473	Suppressed
+	"New York"	"36"	"Wayne County, NY"	"36117"	"2014"	"2014"	Suppressed	92051	Suppressed
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2006"	"2006"	61	931426	6.5
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2007"	"2007"	78	933414	8.4
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2008"	"2008"	71	937449	7.6
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2009"	"2009"	68	944201	7.2
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2010"	"2010"	48	949113	5.1
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2011"	"2011"	91	955899	9.5
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2012"	"2012"	95	961670	9.9
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2013"	"2013"	106	968802	10.9
+	"New York"	"36"	"Westchester County, NY"	"36119"	"2014"	"2014"	94	972634	9.7
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2006"	"2006"	Suppressed	42673	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2007"	"2007"	Suppressed	42515	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2008"	"2008"	Suppressed	42281	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2009"	"2009"	0	42236	Unreliable
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2010"	"2010"	Suppressed	42155	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2011"	"2011"	Suppressed	41944	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2012"	"2012"	Suppressed	41892	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2013"	"2013"	Suppressed	41531	Suppressed
+	"New York"	"36"	"Wyoming County, NY"	"36121"	"2014"	"2014"	0	41188	Unreliable
+	"New York"	"36"	"Yates County, NY"	"36123"	"2006"	"2006"	Suppressed	25025	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2007"	"2007"	Suppressed	25234	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2008"	"2008"	0	25352	Unreliable
+	"New York"	"36"	"Yates County, NY"	"36123"	"2009"	"2009"	Suppressed	25303	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2010"	"2010"	0	25348	Unreliable
+	"New York"	"36"	"Yates County, NY"	"36123"	"2011"	"2011"	Suppressed	25454	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2012"	"2012"	Suppressed	25344	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2013"	"2013"	Suppressed	25156	Suppressed
+	"New York"	"36"	"Yates County, NY"	"36123"	"2014"	"2014"	Suppressed	25208	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: New York (36)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:39:00 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:39:00 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

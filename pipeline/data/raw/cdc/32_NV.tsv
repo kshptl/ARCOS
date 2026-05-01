@@ -1,0 +1,211 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2006"	"2006"	Suppressed	24842	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2007"	"2007"	Suppressed	24961	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2008"	"2008"	Suppressed	25049	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2009"	"2009"	Suppressed	25067	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2010"	"2010"	Suppressed	24877	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2011"	"2011"	Suppressed	24637	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2012"	"2012"	Suppressed	24375	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2013"	"2013"	Suppressed	24063	Suppressed
+	"Nevada"	"32"	"Churchill County, NV"	"32001"	"2014"	"2014"	Suppressed	23989	Suppressed
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2006"	"2006"	343	1803774	19.0
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2007"	"2007"	376	1867817	20.1
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2008"	"2008"	364	1912349	19.0
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2009"	"2009"	395	1939407	20.4
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2010"	"2010"	390	1951269	20.0
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2011"	"2011"	456	1969975	23.1
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2012"	"2012"	424	2000759	21.2
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2013"	"2013"	441	2027868	21.7
+	"Nevada"	"32"	"Clark County, NV"	"32003"	"2014"	"2014"	403	2069681	19.5
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2006"	"2006"	Suppressed	46855	Suppressed
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2007"	"2007"	Suppressed	47166	Suppressed
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2008"	"2008"	13	47270	Unreliable
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2009"	"2009"	10	46965	Unreliable
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2010"	"2010"	13	46997	Unreliable
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2011"	"2011"	10	46886	Unreliable
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2012"	"2012"	Suppressed	46996	Suppressed
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2013"	"2013"	Suppressed	47118	Suppressed
+	"Nevada"	"32"	"Douglas County, NV"	"32005"	"2014"	"2014"	11	47536	Unreliable
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2006"	"2006"	Suppressed	46108	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2007"	"2007"	Suppressed	47423	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2008"	"2008"	Suppressed	47634	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2009"	"2009"	Suppressed	48445	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2010"	"2010"	Suppressed	48818	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2011"	"2011"	Suppressed	49491	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2012"	"2012"	Suppressed	51216	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2013"	"2013"	Suppressed	52384	Suppressed
+	"Nevada"	"32"	"Elko County, NV"	"32007"	"2014"	"2014"	Suppressed	52766	Suppressed
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2006"	"2006"	0	883	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2007"	"2007"	0	829	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2008"	"2008"	0	820	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2009"	"2009"	0	806	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2010"	"2010"	0	783	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2011"	"2011"	0	775	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2012"	"2012"	0	775	Unreliable
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2013"	"2013"	Suppressed	832	Suppressed
+	"Nevada"	"32"	"Esmeralda County, NV"	"32009"	"2014"	"2014"	0	822	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2006"	"2006"	0	1579	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2007"	"2007"	Suppressed	1683	Suppressed
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2008"	"2008"	0	1778	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2009"	"2009"	0	1926	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2010"	"2010"	0	1987	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2011"	"2011"	0	1979	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2012"	"2012"	0	2001	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2013"	"2013"	0	2076	Unreliable
+	"Nevada"	"32"	"Eureka County, NV"	"32011"	"2014"	"2014"	0	2018	Unreliable
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2006"	"2006"	Suppressed	15420	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2007"	"2007"	Suppressed	15658	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2008"	"2008"	Suppressed	15958	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2009"	"2009"	Suppressed	16290	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2010"	"2010"	Suppressed	16528	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2011"	"2011"	Suppressed	16735	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2012"	"2012"	Suppressed	17048	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2013"	"2013"	Suppressed	17363	Suppressed
+	"Nevada"	"32"	"Humboldt County, NV"	"32013"	"2014"	"2014"	Suppressed	17279	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2006"	"2006"	Suppressed	5307	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2007"	"2007"	0	5439	Unreliable
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2008"	"2008"	Suppressed	5521	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2009"	"2009"	0	5660	Unreliable
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2010"	"2010"	Suppressed	5775	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2011"	"2011"	Suppressed	5841	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2012"	"2012"	Suppressed	5941	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2013"	"2013"	Suppressed	6032	Suppressed
+	"Nevada"	"32"	"Lander County, NV"	"32015"	"2014"	"2014"	Suppressed	6009	Suppressed
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2006"	"2006"	Suppressed	4729	Suppressed
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2007"	"2007"	0	4859	Unreliable
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2008"	"2008"	0	5106	Unreliable
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2009"	"2009"	Suppressed	5246	Suppressed
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2010"	"2010"	0	5345	Unreliable
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2011"	"2011"	Suppressed	5311	Suppressed
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2012"	"2012"	0	5405	Unreliable
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2013"	"2013"	0	5245	Unreliable
+	"Nevada"	"32"	"Lincoln County, NV"	"32017"	"2014"	"2014"	0	5184	Unreliable
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2006"	"2006"	Suppressed	49827	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2007"	"2007"	Suppressed	51725	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2008"	"2008"	Suppressed	52156	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2009"	"2009"	Suppressed	51819	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2010"	"2010"	14	51980	Unreliable
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2011"	"2011"	Suppressed	51871	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2012"	"2012"	11	51327	Unreliable
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2013"	"2013"	Suppressed	51557	Suppressed
+	"Nevada"	"32"	"Lyon County, NV"	"32019"	"2014"	"2014"	Suppressed	51789	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2006"	"2006"	Suppressed	4864	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2007"	"2007"	Suppressed	4880	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2008"	"2008"	Suppressed	4781	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2009"	"2009"	Suppressed	4769	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2010"	"2010"	Suppressed	4772	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2011"	"2011"	0	4593	Unreliable
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2012"	"2012"	Suppressed	4653	Suppressed
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2013"	"2013"	0	4614	Unreliable
+	"Nevada"	"32"	"Mineral County, NV"	"32021"	"2014"	"2014"	0	4500	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2006"	"2006"	Suppressed	42530	Suppressed
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2007"	"2007"	Suppressed	44279	Suppressed
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2008"	"2008"	13	44367	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2009"	"2009"	14	44446	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2010"	"2010"	21	43946	47.8
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2011"	"2011"	13	43351	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2012"	"2012"	19	42963	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2013"	"2013"	10	42297	Unreliable
+	"Nevada"	"32"	"Nye County, NV"	"32023"	"2014"	"2014"	10	42282	Unreliable
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2006"	"2006"	Suppressed	6653	Suppressed
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2007"	"2007"	0	6715	Unreliable
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2008"	"2008"	0	6665	Unreliable
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2009"	"2009"	Suppressed	6731	Suppressed
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2010"	"2010"	Suppressed	6753	Suppressed
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2011"	"2011"	Suppressed	6734	Suppressed
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2012"	"2012"	0	6749	Unreliable
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2013"	"2013"	Suppressed	6877	Suppressed
+	"Nevada"	"32"	"Pershing County, NV"	"32027"	"2014"	"2014"	Suppressed	6698	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2006"	"2006"	Suppressed	3913	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2007"	"2007"	0	4000	Unreliable
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2008"	"2008"	0	4099	Unreliable
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2009"	"2009"	0	4065	Unreliable
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2010"	"2010"	Suppressed	4010	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2011"	"2011"	Suppressed	3896	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2012"	"2012"	Suppressed	3935	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2013"	"2013"	Suppressed	3942	Suppressed
+	"Nevada"	"32"	"Storey County, NV"	"32029"	"2014"	"2014"	0	3912	Unreliable
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2006"	"2006"	64	400453	16.0
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2007"	"2007"	85	408724	20.8
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2008"	"2008"	93	414793	22.4
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2009"	"2009"	90	417722	21.5
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2010"	"2010"	103	421407	24.4
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2011"	"2011"	120	425710	28.2
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2012"	"2012"	106	429908	24.7
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2013"	"2013"	115	433731	26.5
+	"Nevada"	"32"	"Washoe County, NV"	"32031"	"2014"	"2014"	80	440078	18.2
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2006"	"2006"	Suppressed	9511	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2007"	"2007"	Suppressed	9626	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2008"	"2008"	Suppressed	9732	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2009"	"2009"	Suppressed	9900	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2010"	"2010"	Suppressed	10030	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2011"	"2011"	Suppressed	10098	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2012"	"2012"	Suppressed	10042	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2013"	"2013"	Suppressed	10057	Suppressed
+	"Nevada"	"32"	"White Pine County, NV"	"32033"	"2014"	"2014"	Suppressed	10034	Suppressed
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2006"	"2006"	11	55410	Unreliable
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2007"	"2007"	Suppressed	55288	Suppressed
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2008"	"2008"	Suppressed	55552	Suppressed
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2009"	"2009"	15	55401	Unreliable
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2010"	"2010"	10	55274	Unreliable
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2011"	"2011"	10	55439	Unreliable
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2012"	"2012"	Suppressed	54838	Suppressed
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2013"	"2013"	13	54080	Unreliable
+	"Nevada"	"32"	"Carson City, NV"	"32510"	"2014"	"2014"	12	54522	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Nevada (32)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:37:37 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:37:37 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths and population estimates are shown separately from the adjacent counties for Carson City, Nevada (FIPS code 32510)."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"5. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

@@ -1,0 +1,453 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2006"	"2006"	40	363498	11.0
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2007"	"2007"	44	375368	11.7
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2008"	"2008"	43	382618	11.2
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2009"	"2009"	47	388577	12.1
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2010"	"2010"	47	392365	12.0
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2011"	"2011"	51	400842	12.7
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2012"	"2012"	42	409061	10.3
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2013"	"2013"	57	416464	13.7
+	"Idaho"	"16"	"Ada County, ID"	"16001"	"2014"	"2014"	69	426236	16.2
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2006"	"2006"	0	3788	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2007"	"2007"	Suppressed	3949	Suppressed
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2008"	"2008"	Suppressed	4021	Suppressed
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2009"	"2009"	0	4000	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2010"	"2010"	0	3976	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2011"	"2011"	0	3977	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2012"	"2012"	0	3915	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2013"	"2013"	0	3828	Unreliable
+	"Idaho"	"16"	"Adams County, ID"	"16003"	"2014"	"2014"	0	3861	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2006"	"2006"	Suppressed	78491	Suppressed
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2007"	"2007"	Suppressed	79338	Suppressed
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2008"	"2008"	10	80609	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2009"	"2009"	19	81994	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2010"	"2010"	13	82839	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2011"	"2011"	17	83691	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2012"	"2012"	19	83800	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2013"	"2013"	18	83249	Unreliable
+	"Idaho"	"16"	"Bannock County, ID"	"16005"	"2014"	"2014"	26	83347	31.2
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2006"	"2006"	0	6071	Unreliable
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2007"	"2007"	Suppressed	6049	Suppressed
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2008"	"2008"	0	6027	Unreliable
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2009"	"2009"	Suppressed	6014	Suppressed
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2010"	"2010"	Suppressed	5986	Suppressed
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2011"	"2011"	Suppressed	6001	Suppressed
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2012"	"2012"	0	5907	Unreliable
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2013"	"2013"	Suppressed	5943	Suppressed
+	"Idaho"	"16"	"Bear Lake County, ID"	"16007"	"2014"	"2014"	0	5957	Unreliable
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2006"	"2006"	0	9260	Unreliable
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2007"	"2007"	0	9296	Unreliable
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2008"	"2008"	Suppressed	9385	Suppressed
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2009"	"2009"	Suppressed	9286	Suppressed
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2010"	"2010"	Suppressed	9285	Suppressed
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2011"	"2011"	Suppressed	9209	Suppressed
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2012"	"2012"	0	9117	Unreliable
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2013"	"2013"	0	9044	Unreliable
+	"Idaho"	"16"	"Benewah County, ID"	"16009"	"2014"	"2014"	Suppressed	9118	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2006"	"2006"	Suppressed	43396	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2007"	"2007"	Suppressed	43816	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2008"	"2008"	Suppressed	44414	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2009"	"2009"	0	45087	Unreliable
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2010"	"2010"	Suppressed	45607	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2011"	"2011"	Suppressed	45952	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2012"	"2012"	Suppressed	45474	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2013"	"2013"	Suppressed	45290	Suppressed
+	"Idaho"	"16"	"Bingham County, ID"	"16011"	"2014"	"2014"	10	45269	Unreliable
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2006"	"2006"	Suppressed	21082	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2007"	"2007"	0	21169	Unreliable
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2008"	"2008"	Suppressed	21477	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2009"	"2009"	Suppressed	21590	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2010"	"2010"	Suppressed	21376	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2011"	"2011"	Suppressed	21199	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2012"	"2012"	Suppressed	21146	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2013"	"2013"	Suppressed	21329	Suppressed
+	"Idaho"	"16"	"Blaine County, ID"	"16013"	"2014"	"2014"	Suppressed	21482	Suppressed
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2006"	"2006"	0	7151	Unreliable
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2007"	"2007"	0	7229	Unreliable
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2008"	"2008"	0	7148	Unreliable
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2009"	"2009"	0	7051	Unreliable
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2010"	"2010"	Suppressed	7028	Suppressed
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2011"	"2011"	Suppressed	7025	Suppressed
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2012"	"2012"	Suppressed	6835	Suppressed
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2013"	"2013"	Suppressed	6795	Suppressed
+	"Idaho"	"16"	"Boise County, ID"	"16015"	"2014"	"2014"	Suppressed	6824	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2006"	"2006"	Suppressed	40127	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2007"	"2007"	Suppressed	40738	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2008"	"2008"	Suppressed	40966	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2009"	"2009"	Suppressed	40809	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2010"	"2010"	Suppressed	40877	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2011"	"2011"	Suppressed	40808	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2012"	"2012"	Suppressed	40476	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2013"	"2013"	Suppressed	40699	Suppressed
+	"Idaho"	"16"	"Bonner County, ID"	"16017"	"2014"	"2014"	Suppressed	41585	Suppressed
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2006"	"2006"	Suppressed	94756	Suppressed
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2007"	"2007"	10	97890	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2008"	"2008"	16	100811	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2009"	"2009"	15	103016	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2010"	"2010"	19	104234	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2011"	"2011"	14	105772	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2012"	"2012"	18	106684	Unreliable
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2013"	"2013"	35	107517	32.6
+	"Idaho"	"16"	"Bonneville County, ID"	"16019"	"2014"	"2014"	23	108623	21.2
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2006"	"2006"	Suppressed	10530	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2007"	"2007"	Suppressed	10754	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2008"	"2008"	0	10831	Unreliable
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2009"	"2009"	Suppressed	10819	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2010"	"2010"	Suppressed	10972	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2011"	"2011"	Suppressed	10804	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2012"	"2012"	Suppressed	10808	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2013"	"2013"	Suppressed	10853	Suppressed
+	"Idaho"	"16"	"Boundary County, ID"	"16021"	"2014"	"2014"	Suppressed	10979	Suppressed
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2006"	"2006"	0	2786	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2007"	"2007"	Suppressed	2838	Suppressed
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2008"	"2008"	Suppressed	2846	Suppressed
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2009"	"2009"	0	2835	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2010"	"2010"	0	2891	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2011"	"2011"	0	2822	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2012"	"2012"	0	2740	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2013"	"2013"	0	2642	Unreliable
+	"Idaho"	"16"	"Butte County, ID"	"16023"	"2014"	"2014"	Suppressed	2622	Suppressed
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2006"	"2006"	0	1073	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2007"	"2007"	0	1103	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2008"	"2008"	0	1120	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2009"	"2009"	0	1133	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2010"	"2010"	0	1117	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2011"	"2011"	0	1124	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2012"	"2012"	Suppressed	1077	Suppressed
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2013"	"2013"	0	1042	Unreliable
+	"Idaho"	"16"	"Camas County, ID"	"16025"	"2014"	"2014"	0	1039	Unreliable
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2006"	"2006"	Suppressed	172188	Suppressed
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2007"	"2007"	Suppressed	179645	Suppressed
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2008"	"2008"	12	184996	Unreliable
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2009"	"2009"	15	187357	Unreliable
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2010"	"2010"	20	188923	10.6
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2011"	"2011"	20	191694	10.4
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2012"	"2012"	16	193888	Unreliable
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2013"	"2013"	21	198871	10.6
+	"Idaho"	"16"	"Canyon County, ID"	"16027"	"2014"	"2014"	30	203143	14.8
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2006"	"2006"	Suppressed	6886	Suppressed
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2007"	"2007"	Suppressed	6873	Suppressed
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2008"	"2008"	Suppressed	6840	Suppressed
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2009"	"2009"	Suppressed	6922	Suppressed
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2010"	"2010"	Suppressed	6963	Suppressed
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2011"	"2011"	0	6850	Unreliable
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2012"	"2012"	0	6787	Unreliable
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2013"	"2013"	0	6808	Unreliable
+	"Idaho"	"16"	"Caribou County, ID"	"16029"	"2014"	"2014"	0	6837	Unreliable
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2006"	"2006"	Suppressed	21281	Suppressed
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2007"	"2007"	Suppressed	21568	Suppressed
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2008"	"2008"	0	22134	Unreliable
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2009"	"2009"	0	22476	Unreliable
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2010"	"2010"	Suppressed	22952	Suppressed
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2011"	"2011"	Suppressed	23186	Suppressed
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2012"	"2012"	0	23249	Unreliable
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2013"	"2013"	Suppressed	23331	Suppressed
+	"Idaho"	"16"	"Cassia County, ID"	"16031"	"2014"	"2014"	Suppressed	23540	Suppressed
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2006"	"2006"	0	947	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2007"	"2007"	0	948	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2008"	"2008"	0	981	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2009"	"2009"	0	961	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2010"	"2010"	0	982	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2011"	"2011"	0	949	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2012"	"2012"	0	869	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2013"	"2013"	0	867	Unreliable
+	"Idaho"	"16"	"Clark County, ID"	"16033"	"2014"	"2014"	0	867	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2006"	"2006"	0	8776	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2007"	"2007"	0	8788	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2008"	"2008"	Suppressed	8764	Suppressed
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2009"	"2009"	0	8761	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2010"	"2010"	0	8761	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2011"	"2011"	Suppressed	8702	Suppressed
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2012"	"2012"	0	8590	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2013"	"2013"	0	8577	Unreliable
+	"Idaho"	"16"	"Clearwater County, ID"	"16035"	"2014"	"2014"	0	8562	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2006"	"2006"	0	4155	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2007"	"2007"	0	4200	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2008"	"2008"	0	4300	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2009"	"2009"	0	4363	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2010"	"2010"	Suppressed	4368	Suppressed
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2011"	"2011"	Suppressed	4333	Suppressed
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2012"	"2012"	0	4331	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2013"	"2013"	0	4249	Unreliable
+	"Idaho"	"16"	"Custer County, ID"	"16037"	"2014"	"2014"	Suppressed	4140	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2006"	"2006"	Suppressed	25927	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2007"	"2007"	Suppressed	26595	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2008"	"2008"	Suppressed	26930	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2009"	"2009"	Suppressed	26769	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2010"	"2010"	Suppressed	27038	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2011"	"2011"	Suppressed	26346	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2012"	"2012"	Suppressed	26223	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2013"	"2013"	Suppressed	26170	Suppressed
+	"Idaho"	"16"	"Elmore County, ID"	"16039"	"2014"	"2014"	Suppressed	26094	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2006"	"2006"	Suppressed	12085	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2007"	"2007"	Suppressed	12277	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2008"	"2008"	0	12570	Unreliable
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2009"	"2009"	0	12757	Unreliable
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2010"	"2010"	0	12786	Unreliable
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2011"	"2011"	Suppressed	12850	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2012"	"2012"	Suppressed	12786	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2013"	"2013"	Suppressed	12854	Suppressed
+	"Idaho"	"16"	"Franklin County, ID"	"16041"	"2014"	"2014"	Suppressed	13021	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2006"	"2006"	0	12770	Unreliable
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2007"	"2007"	0	13005	Unreliable
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2008"	"2008"	Suppressed	13112	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2009"	"2009"	0	13173	Unreliable
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2010"	"2010"	Suppressed	13242	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2011"	"2011"	Suppressed	13128	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2012"	"2012"	Suppressed	12957	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2013"	"2013"	Suppressed	12927	Suppressed
+	"Idaho"	"16"	"Fremont County, ID"	"16043"	"2014"	"2014"	0	12867	Unreliable
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2006"	"2006"	Suppressed	16632	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2007"	"2007"	Suppressed	16833	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2008"	"2008"	Suppressed	16941	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2009"	"2009"	Suppressed	16809	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2010"	"2010"	Suppressed	16719	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2011"	"2011"	Suppressed	16665	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2012"	"2012"	Suppressed	16673	Suppressed
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2013"	"2013"	0	16686	Unreliable
+	"Idaho"	"16"	"Gem County, ID"	"16045"	"2014"	"2014"	Suppressed	16866	Suppressed
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2006"	"2006"	0	14749	Unreliable
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2007"	"2007"	0	14963	Unreliable
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2008"	"2008"	0	15216	Unreliable
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2009"	"2009"	Suppressed	15270	Suppressed
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2010"	"2010"	0	15464	Unreliable
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2011"	"2011"	Suppressed	15475	Suppressed
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2012"	"2012"	Suppressed	15291	Suppressed
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2013"	"2013"	0	15080	Unreliable
+	"Idaho"	"16"	"Gooding County, ID"	"16047"	"2014"	"2014"	0	15064	Unreliable
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2006"	"2006"	Suppressed	15638	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2007"	"2007"	0	15770	Unreliable
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2008"	"2008"	Suppressed	15896	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2009"	"2009"	Suppressed	16138	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2010"	"2010"	Suppressed	16267	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2011"	"2011"	Suppressed	16446	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2012"	"2012"	Suppressed	16308	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2013"	"2013"	Suppressed	16116	Suppressed
+	"Idaho"	"16"	"Idaho County, ID"	"16049"	"2014"	"2014"	Suppressed	16215	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2006"	"2006"	0	22439	Unreliable
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2007"	"2007"	Suppressed	23475	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2008"	"2008"	0	24696	Unreliable
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2009"	"2009"	Suppressed	25770	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2010"	"2010"	Suppressed	26140	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2011"	"2011"	Suppressed	26301	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2012"	"2012"	Suppressed	26684	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2013"	"2013"	Suppressed	26914	Suppressed
+	"Idaho"	"16"	"Jefferson County, ID"	"16051"	"2014"	"2014"	0	27021	Unreliable
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2006"	"2006"	0	20111	Unreliable
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2007"	"2007"	Suppressed	20572	Suppressed
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2008"	"2008"	0	21217	Unreliable
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2009"	"2009"	Suppressed	22039	Suppressed
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2010"	"2010"	Suppressed	22374	Suppressed
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2011"	"2011"	0	22682	Unreliable
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2012"	"2012"	Suppressed	22499	Suppressed
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2013"	"2013"	Suppressed	22514	Suppressed
+	"Idaho"	"16"	"Jerome County, ID"	"16053"	"2014"	"2014"	Suppressed	22818	Suppressed
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2006"	"2006"	18	129510	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2007"	"2007"	Suppressed	132811	Suppressed
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2008"	"2008"	18	135627	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2009"	"2009"	16	137407	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2010"	"2010"	13	138494	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2011"	"2011"	12	141132	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2012"	"2012"	12	142357	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2013"	"2013"	10	144265	Unreliable
+	"Idaho"	"16"	"Kootenai County, ID"	"16055"	"2014"	"2014"	12	147326	Unreliable
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2006"	"2006"	Suppressed	36251	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2007"	"2007"	Suppressed	36179	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2008"	"2008"	Suppressed	36524	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2009"	"2009"	Suppressed	36939	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2010"	"2010"	Suppressed	37244	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2011"	"2011"	Suppressed	37704	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2012"	"2012"	Suppressed	38184	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2013"	"2013"	Suppressed	38078	Suppressed
+	"Idaho"	"16"	"Latah County, ID"	"16057"	"2014"	"2014"	Suppressed	38411	Suppressed
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2006"	"2006"	0	7795	Unreliable
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2007"	"2007"	Suppressed	7780	Suppressed
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2008"	"2008"	0	7902	Unreliable
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2009"	"2009"	0	7870	Unreliable
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2010"	"2010"	Suppressed	7936	Suppressed
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2011"	"2011"	0	7967	Unreliable
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2012"	"2012"	Suppressed	7758	Suppressed
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2013"	"2013"	Suppressed	7712	Suppressed
+	"Idaho"	"16"	"Lemhi County, ID"	"16059"	"2014"	"2014"	Suppressed	7726	Suppressed
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2006"	"2006"	Suppressed	3712	Suppressed
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2007"	"2007"	0	3707	Unreliable
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2008"	"2008"	0	3739	Unreliable
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2009"	"2009"	0	3832	Unreliable
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2010"	"2010"	0	3821	Unreliable
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2011"	"2011"	Suppressed	3822	Suppressed
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2012"	"2012"	Suppressed	3889	Suppressed
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2013"	"2013"	0	3902	Unreliable
+	"Idaho"	"16"	"Lewis County, ID"	"16061"	"2014"	"2014"	0	3838	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2006"	"2006"	0	4762	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2007"	"2007"	0	4938	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2008"	"2008"	0	5041	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2009"	"2009"	0	5151	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2010"	"2010"	0	5208	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2011"	"2011"	0	5186	Unreliable
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2012"	"2012"	Suppressed	5277	Suppressed
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2013"	"2013"	Suppressed	5315	Suppressed
+	"Idaho"	"16"	"Lincoln County, ID"	"16063"	"2014"	"2014"	0	5316	Unreliable
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2006"	"2006"	Suppressed	34984	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2007"	"2007"	Suppressed	35771	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2008"	"2008"	0	36564	Unreliable
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2009"	"2009"	Suppressed	37121	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2010"	"2010"	Suppressed	37536	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2011"	"2011"	Suppressed	37864	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2012"	"2012"	0	37456	Unreliable
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2013"	"2013"	Suppressed	37450	Suppressed
+	"Idaho"	"16"	"Madison County, ID"	"16065"	"2014"	"2014"	Suppressed	38038	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2006"	"2006"	Suppressed	19046	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2007"	"2007"	Suppressed	19184	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2008"	"2008"	Suppressed	19393	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2009"	"2009"	Suppressed	19884	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2010"	"2010"	Suppressed	20069	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2011"	"2011"	0	20155	Unreliable
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2012"	"2012"	Suppressed	20037	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2013"	"2013"	Suppressed	20292	Suppressed
+	"Idaho"	"16"	"Minidoka County, ID"	"16067"	"2014"	"2014"	Suppressed	20323	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2006"	"2006"	Suppressed	38513	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2007"	"2007"	Suppressed	38720	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2008"	"2008"	Suppressed	38810	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2009"	"2009"	Suppressed	39049	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2010"	"2010"	Suppressed	39265	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2011"	"2011"	Suppressed	39543	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2012"	"2012"	Suppressed	39531	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2013"	"2013"	Suppressed	39915	Suppressed
+	"Idaho"	"16"	"Nez Perce County, ID"	"16069"	"2014"	"2014"	Suppressed	40007	Suppressed
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2006"	"2006"	Suppressed	4146	Suppressed
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2007"	"2007"	0	4167	Unreliable
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2008"	"2008"	0	4201	Unreliable
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2009"	"2009"	0	4248	Unreliable
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2010"	"2010"	Suppressed	4286	Suppressed
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2011"	"2011"	0	4215	Unreliable
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2012"	"2012"	Suppressed	4215	Suppressed
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2013"	"2013"	0	4275	Unreliable
+	"Idaho"	"16"	"Oneida County, ID"	"16071"	"2014"	"2014"	0	4184	Unreliable
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2006"	"2006"	Suppressed	11114	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2007"	"2007"	Suppressed	11255	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2008"	"2008"	0	11515	Unreliable
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2009"	"2009"	Suppressed	11547	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2010"	"2010"	Suppressed	11526	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2011"	"2011"	0	11438	Unreliable
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2012"	"2012"	Suppressed	11439	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2013"	"2013"	Suppressed	11472	Suppressed
+	"Idaho"	"16"	"Owyhee County, ID"	"16073"	"2014"	"2014"	Suppressed	11353	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2006"	"2006"	Suppressed	21916	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2007"	"2007"	Suppressed	22437	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2008"	"2008"	Suppressed	22618	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2009"	"2009"	Suppressed	22665	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2010"	"2010"	0	22623	Unreliable
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2011"	"2011"	Suppressed	22624	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2012"	"2012"	Suppressed	22639	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2013"	"2013"	Suppressed	22610	Suppressed
+	"Idaho"	"16"	"Payette County, ID"	"16075"	"2014"	"2014"	Suppressed	22836	Suppressed
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2006"	"2006"	0	7564	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2007"	"2007"	0	7532	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2008"	"2008"	Suppressed	7564	Suppressed
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2009"	"2009"	0	7628	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2010"	"2010"	0	7817	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2011"	"2011"	0	7766	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2012"	"2012"	0	7778	Unreliable
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2013"	"2013"	Suppressed	7719	Suppressed
+	"Idaho"	"16"	"Power County, ID"	"16077"	"2014"	"2014"	Suppressed	7617	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2006"	"2006"	Suppressed	13014	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2007"	"2007"	0	12949	Unreliable
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2008"	"2008"	Suppressed	13031	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2009"	"2009"	Suppressed	12862	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2010"	"2010"	Suppressed	12765	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2011"	"2011"	Suppressed	12672	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2012"	"2012"	Suppressed	12702	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2013"	"2013"	Suppressed	12690	Suppressed
+	"Idaho"	"16"	"Shoshone County, ID"	"16079"	"2014"	"2014"	Suppressed	12390	Suppressed
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2006"	"2006"	Suppressed	8270	Suppressed
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2007"	"2007"	Suppressed	8932	Suppressed
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2008"	"2008"	0	9627	Unreliable
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2009"	"2009"	0	10041	Unreliable
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2010"	"2010"	Suppressed	10170	Suppressed
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2011"	"2011"	0	10166	Unreliable
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2012"	"2012"	Suppressed	10052	Suppressed
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2013"	"2013"	0	10275	Unreliable
+	"Idaho"	"16"	"Teton County, ID"	"16081"	"2014"	"2014"	Suppressed	10341	Suppressed
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2006"	"2006"	Suppressed	71974	Suppressed
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2007"	"2007"	Suppressed	73738	Suppressed
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2008"	"2008"	Suppressed	75143	Suppressed
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2009"	"2009"	13	76271	Unreliable
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2010"	"2010"	15	77230	Unreliable
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2011"	"2011"	17	78005	Unreliable
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2012"	"2012"	Suppressed	78595	Suppressed
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2013"	"2013"	10	79957	Unreliable
+	"Idaho"	"16"	"Twin Falls County, ID"	"16083"	"2014"	"2014"	Suppressed	80914	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2006"	"2006"	Suppressed	9480	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2007"	"2007"	Suppressed	9929	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2008"	"2008"	Suppressed	10060	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2009"	"2009"	0	9975	Unreliable
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2010"	"2010"	Suppressed	9862	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2011"	"2011"	Suppressed	9638	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2012"	"2012"	Suppressed	9545	Suppressed
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2013"	"2013"	0	9606	Unreliable
+	"Idaho"	"16"	"Valley County, ID"	"16085"	"2014"	"2014"	Suppressed	9826	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2006"	"2006"	0	10025	Unreliable
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2007"	"2007"	0	10027	Unreliable
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2008"	"2008"	Suppressed	10095	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2009"	"2009"	Suppressed	10173	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2010"	"2010"	Suppressed	10198	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2011"	"2011"	Suppressed	10255	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2012"	"2012"	Suppressed	10099	Suppressed
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2013"	"2013"	0	9944	Unreliable
+	"Idaho"	"16"	"Washington County, ID"	"16087"	"2014"	"2014"	0	10021	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Idaho (16)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:31:55 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:31:55 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

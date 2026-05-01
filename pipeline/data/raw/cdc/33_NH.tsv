@@ -1,0 +1,143 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2006"	"2006"	Suppressed	60105	Suppressed
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2007"	"2007"	15	60109	Unreliable
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2008"	"2008"	11	60239	Unreliable
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2009"	"2009"	12	60171	Unreliable
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2010"	"2010"	Suppressed	60088	Suppressed
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2011"	"2011"	11	60223	Unreliable
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2012"	"2012"	Suppressed	60327	Suppressed
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2013"	"2013"	10	60179	Unreliable
+	"New Hampshire"	"33"	"Belknap County, NH"	"33001"	"2014"	"2014"	11	60305	Unreliable
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2006"	"2006"	Suppressed	47421	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2007"	"2007"	13	47829	Unreliable
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2008"	"2008"	Suppressed	48013	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2009"	"2009"	Suppressed	47763	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2010"	"2010"	Suppressed	47818	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2011"	"2011"	Suppressed	47641	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2012"	"2012"	Suppressed	47567	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2013"	"2013"	Suppressed	47499	Suppressed
+	"New Hampshire"	"33"	"Carroll County, NH"	"33003"	"2014"	"2014"	Suppressed	47399	Suppressed
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2006"	"2006"	10	77658	Unreliable
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2007"	"2007"	Suppressed	77745	Suppressed
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2008"	"2008"	Suppressed	77472	Suppressed
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2009"	"2009"	Suppressed	77302	Suppressed
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2010"	"2010"	Suppressed	77117	Suppressed
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2011"	"2011"	17	76918	Unreliable
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2012"	"2012"	15	76851	Unreliable
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2013"	"2013"	13	76610	Unreliable
+	"New Hampshire"	"33"	"Cheshire County, NH"	"33005"	"2014"	"2014"	16	76115	Unreliable
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2006"	"2006"	Suppressed	33814	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2007"	"2007"	Suppressed	33751	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2008"	"2008"	Suppressed	33488	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2009"	"2009"	Suppressed	33224	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2010"	"2010"	Suppressed	33055	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2011"	"2011"	Suppressed	32688	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2012"	"2012"	Suppressed	32096	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2013"	"2013"	Suppressed	31997	Suppressed
+	"New Hampshire"	"33"	"Coos County, NH"	"33007"	"2014"	"2014"	12	31653	Unreliable
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2006"	"2006"	Suppressed	87236	Suppressed
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2007"	"2007"	12	87764	Unreliable
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2008"	"2008"	Suppressed	88745	Suppressed
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2009"	"2009"	Suppressed	88926	Suppressed
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2010"	"2010"	10	89118	Unreliable
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2011"	"2011"	Suppressed	88923	Suppressed
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2012"	"2012"	Suppressed	89181	Suppressed
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2013"	"2013"	10	89629	Unreliable
+	"New Hampshire"	"33"	"Grafton County, NH"	"33009"	"2014"	"2014"	14	89658	Unreliable
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2006"	"2006"	50	398169	12.6
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2007"	"2007"	56	398843	14.0
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2008"	"2008"	41	399556	10.3
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2009"	"2009"	54	400148	13.5
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2010"	"2010"	58	400721	14.5
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2011"	"2011"	73	401696	18.2
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2012"	"2012"	61	402922	15.1
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2013"	"2013"	69	403985	17.1
+	"New Hampshire"	"33"	"Hillsborough County, NH"	"33011"	"2014"	"2014"	110	405184	27.1
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2006"	"2006"	12	146609	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2007"	"2007"	22	147024	15.0
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2008"	"2008"	18	147170	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2009"	"2009"	13	146723	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2010"	"2010"	11	146445	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2011"	"2011"	16	146579	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2012"	"2012"	10	146761	Unreliable
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2013"	"2013"	20	146849	13.6
+	"New Hampshire"	"33"	"Merrimack County, NH"	"33013"	"2014"	"2014"	41	147171	27.9
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2006"	"2006"	34	293618	11.6
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2007"	"2007"	44	294132	15.0
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2008"	"2008"	28	294996	9.5
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2009"	"2009"	41	295083	13.9
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2010"	"2010"	30	295223	10.2
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2011"	"2011"	45	296207	15.2
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2012"	"2012"	42	297820	14.1
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2013"	"2013"	41	299134	13.7
+	"New Hampshire"	"33"	"Rockingham County, NH"	"33015"	"2014"	"2014"	70	300621	23.3
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2006"	"2006"	13	120363	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2007"	"2007"	11	121735	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2008"	"2008"	11	122460	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2009"	"2009"	20	123034	16.3
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2010"	"2010"	18	123143	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2011"	"2011"	17	123857	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2012"	"2012"	13	124119	Unreliable
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2013"	"2013"	23	124593	18.5
+	"New Hampshire"	"33"	"Strafford County, NH"	"33017"	"2014"	"2014"	45	125604	35.8
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2006"	"2006"	Suppressed	43396	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2007"	"2007"	Suppressed	43608	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2008"	"2008"	Suppressed	43767	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2009"	"2009"	Suppressed	43728	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2010"	"2010"	Suppressed	43742	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2011"	"2011"	Suppressed	43462	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2012"	"2012"	Suppressed	43074	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2013"	"2013"	Suppressed	42984	Suppressed
+	"New Hampshire"	"33"	"Sullivan County, NH"	"33019"	"2014"	"2014"	Suppressed	43103	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: New Hampshire (33)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:37:56 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:37:56 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

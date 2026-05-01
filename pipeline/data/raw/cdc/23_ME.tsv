@@ -1,0 +1,197 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2006"	"2006"	10	107932	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2007"	"2007"	11	107739	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2008"	"2008"	13	108284	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2009"	"2009"	17	107830	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2010"	"2010"	15	107702	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2011"	"2011"	14	107398	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2012"	"2012"	12	107609	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2013"	"2013"	11	107604	Unreliable
+	"Maine"	"23"	"Androscoggin County, ME"	"23001"	"2014"	"2014"	23	107440	21.4
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2006"	"2006"	Suppressed	72827	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2007"	"2007"	Suppressed	72711	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2008"	"2008"	Suppressed	72542	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2009"	"2009"	Suppressed	72258	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2010"	"2010"	Suppressed	71870	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2011"	"2011"	14	71482	Unreliable
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2012"	"2012"	Suppressed	70868	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2013"	"2013"	Suppressed	70055	Suppressed
+	"Maine"	"23"	"Aroostook County, ME"	"23003"	"2014"	"2014"	Suppressed	69447	Suppressed
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2006"	"2006"	22	277084	7.9
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2007"	"2007"	38	278781	13.6
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2008"	"2008"	41	280681	14.6
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2009"	"2009"	38	281969	13.5
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2010"	"2010"	28	281674	9.9
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2011"	"2011"	27	282401	9.6
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2012"	"2012"	42	283921	14.8
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2013"	"2013"	46	285456	16.1
+	"Maine"	"23"	"Cumberland County, ME"	"23005"	"2014"	"2014"	44	287797	15.3
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2006"	"2006"	0	30528	Unreliable
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2007"	"2007"	Suppressed	30596	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2008"	"2008"	Suppressed	30652	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2009"	"2009"	Suppressed	30779	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2010"	"2010"	Suppressed	30768	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2011"	"2011"	Suppressed	30746	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2012"	"2012"	Suppressed	30630	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2013"	"2013"	Suppressed	30495	Suppressed
+	"Maine"	"23"	"Franklin County, ME"	"23007"	"2014"	"2014"	Suppressed	30296	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2006"	"2006"	Suppressed	54009	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2007"	"2007"	Suppressed	54300	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2008"	"2008"	Suppressed	54371	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2009"	"2009"	13	54499	Unreliable
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2010"	"2010"	Suppressed	54418	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2011"	"2011"	Suppressed	54578	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2012"	"2012"	Suppressed	54558	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2013"	"2013"	Suppressed	54845	Suppressed
+	"Maine"	"23"	"Hancock County, ME"	"23009"	"2014"	"2014"	11	54696	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2006"	"2006"	22	121508	18.1
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2007"	"2007"	16	121741	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2008"	"2008"	14	122147	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2009"	"2009"	10	122084	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2010"	"2010"	15	122151	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2011"	"2011"	16	121935	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2012"	"2012"	14	121853	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2013"	"2013"	19	121164	Unreliable
+	"Maine"	"23"	"Kennebec County, ME"	"23011"	"2014"	"2014"	20	121112	16.5
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2006"	"2006"	Suppressed	40417	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2007"	"2007"	Suppressed	40297	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2008"	"2008"	Suppressed	40225	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2009"	"2009"	Suppressed	39924	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2010"	"2010"	Suppressed	39736	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2011"	"2011"	Suppressed	39708	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2012"	"2012"	Suppressed	39668	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2013"	"2013"	Suppressed	39550	Suppressed
+	"Maine"	"23"	"Knox County, ME"	"23013"	"2014"	"2014"	Suppressed	39676	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2006"	"2006"	Suppressed	34904	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2007"	"2007"	Suppressed	34899	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2008"	"2008"	Suppressed	34768	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2009"	"2009"	Suppressed	34627	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2010"	"2010"	Suppressed	34457	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2011"	"2011"	Suppressed	34224	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2012"	"2012"	Suppressed	34180	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2013"	"2013"	Suppressed	34088	Suppressed
+	"Maine"	"23"	"Lincoln County, ME"	"23015"	"2014"	"2014"	Suppressed	34170	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2006"	"2006"	Suppressed	57556	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2007"	"2007"	12	57966	Unreliable
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2008"	"2008"	Suppressed	58138	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2009"	"2009"	Suppressed	57923	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2010"	"2010"	Suppressed	57833	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2011"	"2011"	Suppressed	57695	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2012"	"2012"	Suppressed	57481	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2013"	"2013"	Suppressed	57277	Suppressed
+	"Maine"	"23"	"Oxford County, ME"	"23017"	"2014"	"2014"	Suppressed	57238	Suppressed
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2006"	"2006"	32	151446	21.1
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2007"	"2007"	15	152232	Unreliable
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2008"	"2008"	24	153372	15.6
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2009"	"2009"	21	153770	13.7
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2010"	"2010"	15	153923	Unreliable
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2011"	"2011"	21	153786	13.7
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2012"	"2012"	12	153746	Unreliable
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2013"	"2013"	19	153364	Unreliable
+	"Maine"	"23"	"Penobscot County, ME"	"23019"	"2014"	"2014"	21	153414	13.7
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2006"	"2006"	0	17597	Unreliable
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2007"	"2007"	Suppressed	17660	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2008"	"2008"	Suppressed	17534	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2009"	"2009"	Suppressed	17433	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2010"	"2010"	Suppressed	17535	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2011"	"2011"	Suppressed	17419	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2012"	"2012"	0	17290	Unreliable
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2013"	"2013"	Suppressed	17124	Suppressed
+	"Maine"	"23"	"Piscataquis County, ME"	"23021"	"2014"	"2014"	Suppressed	17026	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2006"	"2006"	Suppressed	35895	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2007"	"2007"	Suppressed	35890	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2008"	"2008"	Suppressed	35860	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2009"	"2009"	0	35567	Unreliable
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2010"	"2010"	Suppressed	35293	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2011"	"2011"	Suppressed	35207	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2012"	"2012"	Suppressed	35191	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2013"	"2013"	Suppressed	35013	Suppressed
+	"Maine"	"23"	"Sagadahoc County, ME"	"23023"	"2014"	"2014"	Suppressed	35045	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2006"	"2006"	Suppressed	52195	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2007"	"2007"	Suppressed	52459	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2008"	"2008"	Suppressed	52316	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2009"	"2009"	Suppressed	52104	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2010"	"2010"	Suppressed	52228	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2011"	"2011"	Suppressed	52028	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2012"	"2012"	Suppressed	51910	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2013"	"2013"	Suppressed	51706	Suppressed
+	"Maine"	"23"	"Somerset County, ME"	"23025"	"2014"	"2014"	Suppressed	51163	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2006"	"2006"	Suppressed	38763	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2007"	"2007"	Suppressed	38751	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2008"	"2008"	Suppressed	38680	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2009"	"2009"	Suppressed	38706	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2010"	"2010"	Suppressed	38786	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2011"	"2011"	Suppressed	38745	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2012"	"2012"	Suppressed	38820	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2013"	"2013"	Suppressed	38940	Suppressed
+	"Maine"	"23"	"Waldo County, ME"	"23027"	"2014"	"2014"	Suppressed	39051	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2006"	"2006"	Suppressed	33323	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2007"	"2007"	Suppressed	33424	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2008"	"2008"	Suppressed	33289	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2009"	"2009"	Suppressed	32925	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2010"	"2010"	Suppressed	32856	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2011"	"2011"	Suppressed	32637	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2012"	"2012"	Suppressed	32462	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2013"	"2013"	Suppressed	32190	Suppressed
+	"Maine"	"23"	"Washington County, ME"	"23029"	"2014"	"2014"	10	31808	Unreliable
+	"Maine"	"23"	"York County, ME"	"23031"	"2006"	"2006"	25	197635	12.6
+	"Maine"	"23"	"York County, ME"	"23031"	"2007"	"2007"	23	197594	11.6
+	"Maine"	"23"	"York County, ME"	"23031"	"2008"	"2008"	26	197650	13.2
+	"Maine"	"23"	"York County, ME"	"23031"	"2009"	"2009"	31	197192	15.7
+	"Maine"	"23"	"York County, ME"	"23031"	"2010"	"2010"	21	197131	10.7
+	"Maine"	"23"	"York County, ME"	"23031"	"2011"	"2011"	23	198199	11.6
+	"Maine"	"23"	"York County, ME"	"23031"	"2012"	"2012"	25	199005	12.6
+	"Maine"	"23"	"York County, ME"	"23031"	"2013"	"2013"	26	199431	13.0
+	"Maine"	"23"	"York County, ME"	"23031"	"2014"	"2014"	44	200710	21.9
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Maine (23)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:34:33 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:34:33 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

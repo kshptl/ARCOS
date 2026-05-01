@@ -634,12 +634,17 @@ def fetch_all_states(
     max_retries: int = 3,
     scraper: CDCWonderScraper | None = None,
     continue_on_failure: bool = True,
+    skip_cached: bool = False,
 ) -> list[dict[str, Any]]:
     """Fetch every US state (+ DC) county×year grid, one at a time.
 
     Respects ``delay_s`` between state queries (15s minimum per WONDER's
     published API rate floor). Retries transient per-state failures up
     to ``max_retries`` times with exponential-backoff sleep.
+
+    When ``skip_cached=True`` and a prior ``{cache_dir}/{FIPS}_{ST}.tsv``
+    file exists, the scrape is skipped and its cached TSV is parsed
+    back. This makes long multi-state runs resumable after a crash.
 
     On terminal per-state failure with ``continue_on_failure=True``, logs
     a warning and proceeds; the returned list simply lacks that state's
@@ -655,6 +660,21 @@ def fetch_all_states(
     last_call_at: float | None = None
 
     for state_fips in states:
+        state_fips = state_fips.zfill(2)
+        abbrev = STATE_FIPS_TO_ABBREV.get(state_fips, "XX")
+
+        # Resume-from-cache: if we already have a TSV for this state,
+        # parse it and skip the scrape.
+        if skip_cached and cache_dir is not None:
+            cached_tsv = Path(cache_dir) / f"{state_fips}_{abbrev}.tsv"
+            if cached_tsv.exists():
+                log.info(
+                    "cdc wonder scrape: reusing cached TSV",
+                    extra={"state": state_fips, "path": str(cached_tsv)},
+                )
+                results.extend(parse_tsv(cached_tsv.read_text()))
+                continue
+
         if last_call_at is not None:
             elapsed = time.monotonic() - last_call_at
             remaining = delay_s - elapsed
@@ -733,6 +753,11 @@ def main(argv: list[str] | None = None) -> int:
         "--delay", type=int, default=15, help="Seconds between state queries (>=15)"
     )
     ap.add_argument(
+        "--skip-cached",
+        action="store_true",
+        help="Reuse existing {cache_dir}/{FIPS}_{ST}.tsv files (resume after crash)",
+    )
+    ap.add_argument(
         "--out",
         default="data/processed/cdc_wonder_scraped.json",
         help="Destination JSON",
@@ -749,7 +774,11 @@ def main(argv: list[str] | None = None) -> int:
     cache.mkdir(parents=True, exist_ok=True)
 
     rows = fetch_all_states(
-        years=years, states=states, delay_s=args.delay, cache_dir=cache
+        years=years,
+        states=states,
+        delay_s=args.delay,
+        cache_dir=cache,
+        skip_cached=args.skip_cached,
     )
 
     out = Path(args.out)

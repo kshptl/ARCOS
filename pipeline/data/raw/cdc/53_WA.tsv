@@ -1,0 +1,408 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2006"	"2006"	0	16997	Unreliable
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2007"	"2007"	0	17413	Unreliable
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2008"	"2008"	0	17782	Unreliable
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2009"	"2009"	0	18405	Unreliable
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2010"	"2010"	Suppressed	18728	Suppressed
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2011"	"2011"	Suppressed	19027	Suppressed
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2012"	"2012"	Suppressed	19005	Suppressed
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2013"	"2013"	0	19067	Unreliable
+	"Washington"	"53"	"Adams County, WA"	"53001"	"2014"	"2014"	Suppressed	19179	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2006"	"2006"	Suppressed	21133	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2007"	"2007"	Suppressed	21188	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2008"	"2008"	Suppressed	21393	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2009"	"2009"	Suppressed	21415	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2010"	"2010"	Suppressed	21623	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2011"	"2011"	Suppressed	21933	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2012"	"2012"	Suppressed	21888	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2013"	"2013"	Suppressed	22110	Suppressed
+	"Washington"	"53"	"Asotin County, WA"	"53003"	"2014"	"2014"	Suppressed	22189	Suppressed
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2006"	"2006"	22	159564	13.8
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2007"	"2007"	21	161669	13.0
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2008"	"2008"	12	166573	Unreliable
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2009"	"2009"	23	171122	13.4
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2010"	"2010"	13	175177	Unreliable
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2011"	"2011"	19	180678	Unreliable
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2012"	"2012"	21	182398	11.5
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2013"	"2013"	19	184486	Unreliable
+	"Washington"	"53"	"Benton County, WA"	"53005"	"2014"	"2014"	22	186486	11.8
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2006"	"2006"	13	69536	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2007"	"2007"	Suppressed	70214	Suppressed
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2008"	"2008"	13	70813	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2009"	"2009"	10	71679	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2010"	"2010"	12	72453	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2011"	"2011"	15	73477	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2012"	"2012"	12	73687	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2013"	"2013"	11	73967	Unreliable
+	"Washington"	"53"	"Chelan County, WA"	"53007"	"2014"	"2014"	Suppressed	74588	Suppressed
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2006"	"2006"	22	69642	31.6
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2007"	"2007"	26	70186	37.0
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2008"	"2008"	22	70769	31.1
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2009"	"2009"	16	71077	Unreliable
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2010"	"2010"	13	71404	Unreliable
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2011"	"2011"	12	71838	Unreliable
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2012"	"2012"	18	71863	Unreliable
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2013"	"2013"	19	72312	Unreliable
+	"Washington"	"53"	"Clallam County, WA"	"53009"	"2014"	"2014"	Suppressed	72715	Suppressed
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2006"	"2006"	50	401698	12.4
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2007"	"2007"	60	408820	14.7
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2008"	"2008"	64	415282	15.4
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2009"	"2009"	64	421236	15.2
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2010"	"2010"	53	425363	12.5
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2011"	"2011"	58	433418	13.4
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2012"	"2012"	64	438287	14.6
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2013"	"2013"	60	443817	13.5
+	"Washington"	"53"	"Clark County, WA"	"53011"	"2014"	"2014"	60	451008	13.3
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2006"	"2006"	Suppressed	3895	Suppressed
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2007"	"2007"	Suppressed	3897	Suppressed
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2008"	"2008"	0	3903	Unreliable
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2009"	"2009"	0	3977	Unreliable
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2010"	"2010"	Suppressed	4078	Suppressed
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2011"	"2011"	0	4050	Unreliable
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2012"	"2012"	0	3995	Unreliable
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2013"	"2013"	0	4032	Unreliable
+	"Washington"	"53"	"Columbia County, WA"	"53013"	"2014"	"2014"	Suppressed	3985	Suppressed
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2006"	"2006"	22	99162	22.2
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2007"	"2007"	19	100744	Unreliable
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2008"	"2008"	23	101688	22.6
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2009"	"2009"	21	102126	20.6
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2010"	"2010"	18	102410	Unreliable
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2011"	"2011"	30	102478	29.3
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2012"	"2012"	25	101996	24.5
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2013"	"2013"	23	101860	22.6
+	"Washington"	"53"	"Cowlitz County, WA"	"53015"	"2014"	"2014"	23	102133	22.5
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2006"	"2006"	Suppressed	35558	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2007"	"2007"	Suppressed	36503	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2008"	"2008"	Suppressed	37216	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2009"	"2009"	Suppressed	37935	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2010"	"2010"	Suppressed	38431	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2011"	"2011"	Suppressed	38971	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2012"	"2012"	Suppressed	39350	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2013"	"2013"	Suppressed	39471	Suppressed
+	"Washington"	"53"	"Douglas County, WA"	"53017"	"2014"	"2014"	Suppressed	39804	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2006"	"2006"	Suppressed	7562	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2007"	"2007"	Suppressed	7430	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2008"	"2008"	0	7439	Unreliable
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2009"	"2009"	Suppressed	7538	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2010"	"2010"	Suppressed	7551	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2011"	"2011"	Suppressed	7689	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2012"	"2012"	Suppressed	7705	Suppressed
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2013"	"2013"	0	7646	Unreliable
+	"Washington"	"53"	"Ferry County, WA"	"53019"	"2014"	"2014"	Suppressed	7667	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2006"	"2006"	Suppressed	64585	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2007"	"2007"	Suppressed	67586	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2008"	"2008"	Suppressed	70775	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2009"	"2009"	Suppressed	74478	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2010"	"2010"	Suppressed	78163	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2011"	"2011"	Suppressed	83455	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2012"	"2012"	Suppressed	85845	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2013"	"2013"	Suppressed	86638	Suppressed
+	"Washington"	"53"	"Franklin County, WA"	"53021"	"2014"	"2014"	Suppressed	87809	Suppressed
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2006"	"2006"	0	2245	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2007"	"2007"	0	2203	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2008"	"2008"	0	2244	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2009"	"2009"	0	2237	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2010"	"2010"	Suppressed	2266	Suppressed
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2011"	"2011"	0	2262	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2012"	"2012"	Suppressed	2228	Suppressed
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2013"	"2013"	0	2256	Unreliable
+	"Washington"	"53"	"Garfield County, WA"	"53023"	"2014"	"2014"	0	2215	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2006"	"2006"	17	81036	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2007"	"2007"	14	82645	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2008"	"2008"	12	84944	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2009"	"2009"	19	87340	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2010"	"2010"	12	89120	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2011"	"2011"	10	91265	Unreliable
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2012"	"2012"	Suppressed	91723	Suppressed
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2013"	"2013"	Suppressed	91878	Suppressed
+	"Washington"	"53"	"Grant County, WA"	"53025"	"2014"	"2014"	Suppressed	93147	Suppressed
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2006"	"2006"	12	71256	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2007"	"2007"	11	71827	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2008"	"2008"	15	72027	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2009"	"2009"	18	72468	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2010"	"2010"	14	72797	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2011"	"2011"	11	72546	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2012"	"2012"	14	71692	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2013"	"2013"	16	71078	Unreliable
+	"Washington"	"53"	"Grays Harbor County, WA"	"53027"	"2014"	"2014"	17	70818	Unreliable
+	"Washington"	"53"	"Island County, WA"	"53029"	"2006"	"2006"	Suppressed	79136	Suppressed
+	"Washington"	"53"	"Island County, WA"	"53029"	"2007"	"2007"	Suppressed	78726	Suppressed
+	"Washington"	"53"	"Island County, WA"	"53029"	"2008"	"2008"	11	78375	Unreliable
+	"Washington"	"53"	"Island County, WA"	"53029"	"2009"	"2009"	12	78248	Unreliable
+	"Washington"	"53"	"Island County, WA"	"53029"	"2010"	"2010"	Suppressed	78506	Suppressed
+	"Washington"	"53"	"Island County, WA"	"53029"	"2011"	"2011"	Suppressed	78971	Suppressed
+	"Washington"	"53"	"Island County, WA"	"53029"	"2012"	"2012"	14	79177	Unreliable
+	"Washington"	"53"	"Island County, WA"	"53029"	"2013"	"2013"	Suppressed	78801	Suppressed
+	"Washington"	"53"	"Island County, WA"	"53029"	"2014"	"2014"	14	79275	Unreliable
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2006"	"2006"	Suppressed	29239	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2007"	"2007"	Suppressed	29346	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2008"	"2008"	Suppressed	29648	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2009"	"2009"	Suppressed	29714	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2010"	"2010"	Suppressed	29872	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2011"	"2011"	Suppressed	29924	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2012"	"2012"	Suppressed	29854	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2013"	"2013"	Suppressed	30076	Suppressed
+	"Washington"	"53"	"Jefferson County, WA"	"53031"	"2014"	"2014"	Suppressed	30228	Suppressed
+	"Washington"	"53"	"King County, WA"	"53033"	"2006"	"2006"	259	1822967	14.2
+	"Washington"	"53"	"King County, WA"	"53033"	"2007"	"2007"	258	1847986	14.0
+	"Washington"	"53"	"King County, WA"	"53033"	"2008"	"2008"	245	1875020	13.1
+	"Washington"	"53"	"King County, WA"	"53033"	"2009"	"2009"	239	1912012	12.5
+	"Washington"	"53"	"King County, WA"	"53033"	"2010"	"2010"	246	1931249	12.7
+	"Washington"	"53"	"King County, WA"	"53033"	"2011"	"2011"	236	1969722	12.0
+	"Washington"	"53"	"King County, WA"	"53033"	"2012"	"2012"	261	2007440	13.0
+	"Washington"	"53"	"King County, WA"	"53033"	"2013"	"2013"	282	2044449	13.8
+	"Washington"	"53"	"King County, WA"	"53033"	"2014"	"2014"	300	2079967	14.4
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2006"	"2006"	25	245054	10.2
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2007"	"2007"	33	244105	13.5
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2008"	"2008"	32	246912	13.0
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2009"	"2009"	33	248800	13.3
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2010"	"2010"	32	251133	12.7
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2011"	"2011"	34	254633	13.4
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2012"	"2012"	29	254991	11.4
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2013"	"2013"	25	253968	9.8
+	"Washington"	"53"	"Kitsap County, WA"	"53035"	"2014"	"2014"	31	254183	12.2
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2006"	"2006"	Suppressed	38680	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2007"	"2007"	Suppressed	39158	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2008"	"2008"	Suppressed	40015	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2009"	"2009"	Suppressed	40466	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2010"	"2010"	Suppressed	40915	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2011"	"2011"	Suppressed	41629	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2012"	"2012"	Suppressed	41672	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2013"	"2013"	Suppressed	41765	Suppressed
+	"Washington"	"53"	"Kittitas County, WA"	"53037"	"2014"	"2014"	Suppressed	42522	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2006"	"2006"	0	19701	Unreliable
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2007"	"2007"	Suppressed	19898	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2008"	"2008"	Suppressed	20135	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2009"	"2009"	Suppressed	20164	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2010"	"2010"	Suppressed	20318	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2011"	"2011"	Suppressed	20697	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2012"	"2012"	Suppressed	20699	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2013"	"2013"	Suppressed	20866	Suppressed
+	"Washington"	"53"	"Klickitat County, WA"	"53039"	"2014"	"2014"	Suppressed	20861	Suppressed
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2006"	"2006"	11	73318	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2007"	"2007"	15	74229	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2008"	"2008"	13	74899	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2009"	"2009"	13	75316	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2010"	"2010"	13	75455	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2011"	"2011"	18	75901	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2012"	"2012"	13	75621	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2013"	"2013"	10	75081	Unreliable
+	"Washington"	"53"	"Lewis County, WA"	"53041"	"2014"	"2014"	14	75128	Unreliable
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2006"	"2006"	0	10418	Unreliable
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2007"	"2007"	0	10509	Unreliable
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2008"	"2008"	Suppressed	10608	Suppressed
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2009"	"2009"	Suppressed	10570	Suppressed
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2010"	"2010"	0	10570	Unreliable
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2011"	"2011"	0	10476	Unreliable
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2012"	"2012"	Suppressed	10437	Suppressed
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2013"	"2013"	Suppressed	10301	Suppressed
+	"Washington"	"53"	"Lincoln County, WA"	"53043"	"2014"	"2014"	Suppressed	10250	Suppressed
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2006"	"2006"	10	56872	Unreliable
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2007"	"2007"	Suppressed	58679	Suppressed
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2008"	"2008"	12	59785	Unreliable
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2009"	"2009"	10	60333	Unreliable
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2010"	"2010"	Suppressed	60699	Suppressed
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2011"	"2011"	Suppressed	61019	Suppressed
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2012"	"2012"	16	60832	Unreliable
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2013"	"2013"	10	60497	Unreliable
+	"Washington"	"53"	"Mason County, WA"	"53045"	"2014"	"2014"	13	60711	Unreliable
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2006"	"2006"	10	39322	Unreliable
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2007"	"2007"	Suppressed	39676	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2008"	"2008"	Suppressed	40235	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2009"	"2009"	Suppressed	40699	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2010"	"2010"	Suppressed	41120	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2011"	"2011"	Suppressed	41411	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2012"	"2012"	Suppressed	41275	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2013"	"2013"	Suppressed	41193	Suppressed
+	"Washington"	"53"	"Okanogan County, WA"	"53047"	"2014"	"2014"	Suppressed	41290	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2006"	"2006"	Suppressed	21326	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2007"	"2007"	Suppressed	21415	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2008"	"2008"	Suppressed	21305	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2009"	"2009"	Suppressed	21026	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2010"	"2010"	Suppressed	20920	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2011"	"2011"	Suppressed	20930	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2012"	"2012"	Suppressed	20575	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2013"	"2013"	Suppressed	20498	Suppressed
+	"Washington"	"53"	"Pacific County, WA"	"53049"	"2014"	"2014"	Suppressed	20561	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2006"	"2006"	Suppressed	12681	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2007"	"2007"	Suppressed	12828	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2008"	"2008"	Suppressed	12985	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2009"	"2009"	Suppressed	13043	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2010"	"2010"	Suppressed	13001	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2011"	"2011"	Suppressed	12936	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2012"	"2012"	Suppressed	12980	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2013"	"2013"	Suppressed	12896	Suppressed
+	"Washington"	"53"	"Pend Oreille County, WA"	"53051"	"2014"	"2014"	Suppressed	12985	Suppressed
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2006"	"2006"	85	763408	11.1
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2007"	"2007"	125	772484	16.2
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2008"	"2008"	134	785400	17.1
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2009"	"2009"	117	796483	14.7
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2010"	"2010"	121	795225	15.2
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2011"	"2011"	131	807904	16.2
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2012"	"2012"	114	811681	14.0
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2013"	"2013"	123	819743	15.0
+	"Washington"	"53"	"Pierce County, WA"	"53053"	"2014"	"2014"	126	831928	15.1
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2006"	"2006"	Suppressed	15270	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2007"	"2007"	Suppressed	15400	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2008"	"2008"	Suppressed	15590	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2009"	"2009"	Suppressed	15714	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2010"	"2010"	Suppressed	15769	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2011"	"2011"	Suppressed	15844	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2012"	"2012"	Suppressed	15824	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2013"	"2013"	Suppressed	15875	Suppressed
+	"Washington"	"53"	"San Juan County, WA"	"53055"	"2014"	"2014"	Suppressed	16015	Suppressed
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2006"	"2006"	18	112621	Unreliable
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2007"	"2007"	14	114066	Unreliable
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2008"	"2008"	16	115808	Unreliable
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2009"	"2009"	24	116557	20.6
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2010"	"2010"	18	116901	Unreliable
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2011"	"2011"	17	118109	Unreliable
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2012"	"2012"	22	118222	18.6
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2013"	"2013"	27	118837	22.7
+	"Washington"	"53"	"Skagit County, WA"	"53057"	"2014"	"2014"	14	120365	Unreliable
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2006"	"2006"	0	10583	Unreliable
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2007"	"2007"	0	10786	Unreliable
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2008"	"2008"	Suppressed	10918	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2009"	"2009"	Suppressed	10955	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2010"	"2010"	Suppressed	11066	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2011"	"2011"	Suppressed	11137	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2012"	"2012"	Suppressed	11187	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2013"	"2013"	Suppressed	11274	Suppressed
+	"Washington"	"53"	"Skamania County, WA"	"53059"	"2014"	"2014"	Suppressed	11340	Suppressed
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2006"	"2006"	98	670706	14.6
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2007"	"2007"	109	683997	15.9
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2008"	"2008"	121	694622	17.4
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2009"	"2009"	130	706302	18.4
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2010"	"2010"	113	713335	15.8
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2011"	"2011"	175	722400	24.2
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2012"	"2012"	136	733036	18.6
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2013"	"2013"	131	745913	17.6
+	"Washington"	"53"	"Snohomish County, WA"	"53061"	"2014"	"2014"	127	759583	16.7
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2006"	"2006"	101	447517	22.6
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2007"	"2007"	109	456150	23.9
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2008"	"2008"	132	462263	28.6
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2009"	"2009"	89	468235	19.0
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2010"	"2010"	79	471221	16.8
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2011"	"2011"	76	473761	16.0
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2012"	"2012"	88	475735	18.5
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2013"	"2013"	66	479398	13.8
+	"Washington"	"53"	"Spokane County, WA"	"53063"	"2014"	"2014"	61	484318	12.6
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2006"	"2006"	13	42366	Unreliable
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2007"	"2007"	Suppressed	43059	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2008"	"2008"	11	43398	Unreliable
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2009"	"2009"	Suppressed	43548	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2010"	"2010"	Suppressed	43531	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2011"	"2011"	Suppressed	43496	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2012"	"2012"	Suppressed	43538	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2013"	"2013"	Suppressed	43430	Suppressed
+	"Washington"	"53"	"Stevens County, WA"	"53065"	"2014"	"2014"	Suppressed	43650	Suppressed
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2006"	"2006"	27	232688	11.6
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2007"	"2007"	25	237772	10.5
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2008"	"2008"	31	244332	12.7
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2009"	"2009"	39	249936	15.6
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2010"	"2010"	27	252264	10.7
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2011"	"2011"	34	256591	13.3
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2012"	"2012"	30	258332	11.6
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2013"	"2013"	37	262388	14.1
+	"Washington"	"53"	"Thurston County, WA"	"53067"	"2014"	"2014"	24	265851	9.0
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2006"	"2006"	0	3936	Unreliable
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2007"	"2007"	Suppressed	3975	Suppressed
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2008"	"2008"	0	4033	Unreliable
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2009"	"2009"	Suppressed	3995	Suppressed
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2010"	"2010"	Suppressed	3978	Suppressed
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2011"	"2011"	Suppressed	3991	Suppressed
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2012"	"2012"	Suppressed	3993	Suppressed
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2013"	"2013"	0	4042	Unreliable
+	"Washington"	"53"	"Wahkiakum County, WA"	"53069"	"2014"	"2014"	0	4067	Unreliable
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2006"	"2006"	Suppressed	56705	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2007"	"2007"	Suppressed	56840	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2008"	"2008"	Suppressed	57315	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2009"	"2009"	10	58103	Unreliable
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2010"	"2010"	Suppressed	58781	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2011"	"2011"	Suppressed	59588	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2012"	"2012"	Suppressed	59404	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2013"	"2013"	Suppressed	59530	Suppressed
+	"Washington"	"53"	"Walla Walla County, WA"	"53071"	"2014"	"2014"	17	59844	Unreliable
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2006"	"2006"	29	188926	15.3
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2007"	"2007"	16	192837	Unreliable
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2008"	"2008"	21	196708	10.7
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2009"	"2009"	24	199865	12.0
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2010"	"2010"	22	201140	10.9
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2011"	"2011"	23	203663	11.3
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2012"	"2012"	16	205262	Unreliable
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2013"	"2013"	21	206353	10.2
+	"Washington"	"53"	"Whatcom County, WA"	"53073"	"2014"	"2014"	15	208351	Unreliable
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2006"	"2006"	Suppressed	42827	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2007"	"2007"	Suppressed	42608	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2008"	"2008"	Suppressed	43802	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2009"	"2009"	Suppressed	44705	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2010"	"2010"	Suppressed	44776	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2011"	"2011"	0	45077	Unreliable
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2012"	"2012"	Suppressed	46606	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2013"	"2013"	Suppressed	46570	Suppressed
+	"Washington"	"53"	"Whitman County, WA"	"53075"	"2014"	"2014"	Suppressed	46827	Suppressed
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2006"	"2006"	20	230617	8.7
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2007"	"2007"	25	232733	10.7
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2008"	"2008"	13	235272	Unreliable
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2009"	"2009"	21	239604	8.8
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2010"	"2010"	26	243231	10.7
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2011"	"2011"	15	247141	Unreliable
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2012"	"2012"	29	246977	11.7
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2013"	"2013"	15	247044	Unreliable
+	"Washington"	"53"	"Yakima County, WA"	"53077"	"2014"	"2014"	24	247687	9.7
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Washington (53)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:44:10 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:44:10 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

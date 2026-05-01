@@ -1,0 +1,2486 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html xmlns:xsljava="xalan://gov.cdc.wonder.util.XSLHelper" xmlns:wonder="http://wonder.cdc.gov" xmlns:math="http://exslt.org/math" xmlns:str="http://exslt.org/strings" xmlns:xalan="http://xml.apache.org/xalan" class="cdc-2022 theme-blue cdc-page-type-content cdc-tp5" lang="en-us"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Underlying Cause of Death, 1999-2020 Results Form</title><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#075290">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/templatepackage/4.0/assets/imgs/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/templatepackage/4.0/assets/imgs/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/templatepackage/4.0/assets/imgs/favicon/favicon-16x16.png">
+<link rel="mask-icon" href="/templatepackage/4.0/assets/imgs/favicon/safari-pinned-tab.svg" color="#0056b3">
+<meta name="msapplication-TileColor" content="#0056b3">
+<meta name="theme-color" content="#0056b3">
+
+<link rel="stylesheet prefetch" href="/templatepackage/contrib/libs/bootstrap/latest/css/bootstrap.min.css?_=58548">
+<link rel="stylesheet prefetch" href="/templatepackage/4.0/assets/css/app.tp5.min.css?_=58548">
+<link rel="stylesheet" media="print" href="/templatepackage/4.0/assets/css/print.min.css?_=58548">
+
+<!-- @prismcss@ -->
+<script src="https://www.cdc.gov/JScript/metrics/topic_levels.js?_=58548"></script>
+<script src="https://www.cdc.gov/JScript/metrics/adobe/launch/b36c1852e229/2c674008a127/launch-04da70ea688d.min.js" async=""></script>
+
+<link rel="stylesheet" href="/t4_wonder_general.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_general.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_finder2.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/t4_rr_results.css?v=1.1" type="text/css">
+<link rel="stylesheet" href="/print.css?v=1.1" type="text/css" media="print">
+<link rel="stylesheet" href="/components/components.css" type="text/css">
+<!--[if lt IE 10]>
+	<link rel="stylesheet" href="/rr_ieold.css?v=1.1"/>
+<![endif]-->
+
+<script src="/wonder.js"></script>
+<script src="/finder.js"></script>
+<script src="/accordion.js"></script>
+<script src="/components/components.js"></script>
+<style>
+.lastrow td { padding-bottom: 10px !important; }
+</style>
+    <script language="javascript">
+
+var ocSections = [ 
+	new OCSection(1, 'close')
+];
+
+// put min/max values for all totals/zeros combinations for each numeric measure into this JS object for later use
+var measures = {
+
+	"D76.M1": {
+	"max": "5,483",
+	"min": "0",
+	"maxNtNz": "83",
+	"minNtNz": "10",
+	"maxNtWz": "83",
+	"minNtWz": "0",
+	"maxWtNz": "5,483",
+	"minWtNz": "10"
+	},
+	"D76.M2": {
+	"max": "41,556,463",
+	"min": "9,695",
+	"maxNtNz": "482,752",
+	"minNtNz": "9,846",
+	"maxNtWz": "482,752",
+	"minNtWz": "9,695",
+	"maxWtNz": "41,556,463",
+	"minWtNz": "9,846"
+	},
+	"D76.M3": {
+	"max": "32.4",
+	"min": "4.6",
+	"maxNtNz": "32.4",
+	"minNtNz": "6.8",
+	"maxNtWz": "32.4",
+	"minNtWz": "6.8",
+	"maxWtNz": "32.4",
+	"minWtNz": "4.6"
+	} 
+};
+
+
+
+// byvariable action for vaers ids, add input with vaers id for report
+function bvActionVaersID(vaersID) {
+
+	var form = document.getElementById('wonderform');
+	var input = document.createElement('input');
+	input.type = 'hidden';
+	input.name= 'vaers_report_id';
+	input.value = vaersID;
+	form.appendChild(input);
+}
+
+function clearGroups() {
+
+	for (var n = 2; n < 11; n++)
+		document.getElementById('group' + n).value = '';
+}
+
+function groupsCurrentSortBySet() {
+
+	var select = document.getElementById('tsort');
+	var index = select.selectedIndex;
+	var options = select.options;
+	for (var n = 0; n < options.length; n++) {
+		var divId = options[n].value.replace(',', '_');
+		if (n == index) {
+			groupsSetStartEndValues(options[n].value.split(',')[0], divId);
+			replaceClass(divId, 'displayoff', 'displayon');
+			var elem = document.getElementById(divId + 'S');
+			var text = elem == null ? 'n/a' : (elem.innerText || elem.textContent);
+			if (text == 'text')
+				text = 'n/a';
+			document.getElementById('group1').value = text;
+		}
+		else
+			replaceClass(divId, 'displayon', 'displayoff');
+	}
+}
+
+// set start/end values for current sort by measure using current totals/zeros settings
+function groupsSetStartEndValues(mcode, divId) {
+
+	// no start/end sections for byvariables or text variables
+	if (document.getElementById(divId + 'S') == null)
+		return;
+
+	var max = 0;
+	var min = 0;
+	var totals = document.form.O_show_totals.checked;
+	var zeros = document.form.O_show_zeros.checked;
+	if (totals && zeros) {
+		max = measures[mcode].max;
+		min = measures[mcode].min;
+	}
+	else if (totals && !zeros) {
+		max = measures[mcode].maxWtNz;
+		min = measures[mcode].minWtNz;
+	}
+	else if (!totals && zeros) {
+		max = measures[mcode].maxNtWz;
+		min = measures[mcode].minNtWz;
+	}
+	else {
+		max = measures[mcode].maxNtNz;
+		min = measures[mcode].minNtNz;
+	}
+
+	var asc = divId.indexOf('ASCEND') > -1;
+	var elem = document.getElementById(divId + 'S');
+	if (elem.innerText) 
+		elem.innerText = asc ? min : max;
+	if (elem.textContent)
+		elem.textContent = asc ? min : max;
+
+	elem = document.getElementById(divId + 'E');
+	if (elem.innerText) 
+		elem.innerText = asc ? max : min;
+	if (elem.textContent)
+		elem.textContent = asc ? max : min;
+}
+
+function measuresHide() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+
+	while (true) {
+		var found = false;
+		for (var n = 0; n < showOptions.length; n++) {
+			if (showOptions[n].selected) {
+				showSelect.remove(n);
+				found = true;
+			}
+		}
+		if (!found)
+			break;
+	}
+
+	if (showOptions.length > 0)
+		showOptions[0].selected = true;
+}
+
+function measuresShow() {
+
+	var allOptions = document.getElementById('measures-all').options;
+	var showOptions = document.getElementById('measures-show').options;
+
+	for (var n = 0; n < allOptions.length; n++) {
+		if (allOptions[n].selected)
+			measuresShowAdd(showOptions, allOptions[n]);
+	}
+}
+
+
+function measuresShowAdd(showOptions, option) {
+
+	for (var n = 0; n < showOptions.length; n++) {
+		if (showOptions[n].value == option.value) {
+			(option.text + ' is already in the "Measures Shown" box.');
+			return;
+		}
+	}
+
+	var newoption = new Option(option.text, option.value);
+	showOptions[showOptions.length] = newoption;
+
+}
+
+function measuresSortDown() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+	for (var n = showOptions.length - 2; n > -1; n--) {
+		if (!showOptions[n].selected)
+			continue;
+		// just swapping elements caused array to shorten by 1, need to make copy
+		var nextCopy = new Option(showOptions[n+1].text, showOptions[n+1].value);
+		var cur = showOptions[n];
+		showOptions[n] = nextCopy;
+		showOptions[n + 1] = cur;
+	}
+}
+
+function measuresSortUp() {
+
+	var showSelect = document.getElementById('measures-show');
+	var showOptions = showSelect.options;
+	for (var n = 1; n < showOptions.length; n++) {
+		if (!showOptions[n].selected)
+			continue;
+		// just swapping elements caused array to shorten by 1, need to make copy
+		var prevCopy = new Option(showOptions[n-1].text, showOptions[n-1].value);
+		var cur = showOptions[n];
+		showOptions[n] = prevCopy;
+		showOptions[n - 1] = cur;
+	}
+}
+
+function setFocus(elemId) {
+
+	var elem = document.getElementById(elemId);
+	if (elem != null) {
+		if (elemId = 'table-options')
+			optionsShow('results_table');
+		elem.scrollIntoView();
+		window.scrollBy(0, -80);
+	}
+}
+
+function validate() {
+
+	// get measures from the Measures Shown list
+	var showOptions = document.getElementById('measures-show').options;
+	var measures = '';
+
+	for (var n = 0; n < showOptions.length; n++) {
+		if (measures != '')
+			measures += ',';
+		measures += showOptions[n].value;
+	}
+
+	// if Change Table button clicked, perform validations, return false if any fail
+	// otherwise set O_results_table_options.value = 'off' so table isn't redisplayed and return true
+	if (submitGet() == 'action-Change Table') {
+		// get measure selected in the Sort By list
+		var sortSelect = document.getElementById('tsort');
+		var index = sortSelect.selectedIndex;
+		if (index == -1) {
+			('Please select an item in the "Sort By" list');
+			return false;
+		}
+		var sortOptions = sortSelect.options;
+		var sel = sortOptions[index].value;
+		var mcode = sel.split(',')[0];
+
+		// check that sort measure is also shown
+		if (mcode != 'byvar' && measures.indexOf(mcode) == -1) {
+			(sortOptions[index].text + '  is selected in the "Sort By" list but isn\'t in the "Measures Shown" list.'
+				+ '\n\nPlease alter your selections so the sort by measure is also shown.');
+			return false;
+		}
+
+		// if doing group breaks, make sure we're sorting by a measure
+//		if (document.form.O_groups.value == 'true') {
+		if (document.form.O_groups.checked) {
+			// points to an element containing start value for numeric measures, isn't there for non-numeric
+			var elem = document.getElementById(mcode + '_MEASURE_ASCENDS');
+			if (mcode == 'byvar' || elem == null) {
+				('A numeric measure must be selected in the "Sort By" list to break results into groups.');
+				return false;
+			}
+		}
+
+		document.form.O_results_table_options.value = 'off';
+	}
+	
+
+	// measures_list contains the complete list from the Measures Shown list, needed by Java code
+	// normally just selected items returned cause it's a select box
+	document.form.measures_list.value = measures;
+
+	return sendMsgSet();
+}
+
+</script>
+  </head>
+  <body onunload="sendMsgClear()">
+    <a name="Top"></a>	<div id="skipmenu">
+		<a class="skippy sr-only-focusable" href="#content">Skip directly to site content</a>
+		<a class="skippy sr-only-focusable" href="#share-nav">Skip directly to page options</a>
+		<a class="skippy d-none d-lg-block sr-only-focusable" href="#az-large">Skip directly to A-Z link</a>
+		<a class="skippy d-none d-md-block d-lg-none sr-only-focusable" href="#az-medium">Skip directly to A-Z link</a>
+		<a class="skippy d-md-none sr-only-focusable" href="#az-small">Skip directly to A-Z link</a>
+	</div>
+
+	<!-- (1) Global Alerts Area  -->
+
+<div class="cdc-header-official-notice container noindex">
+	<div class="cdc-header-official-notice-header d-flex">
+		<img src="/templatepackage/4.0/assets/imgs/uswds/us_flag_small.png" width="16" height="11" alt="U.S. flag">
+		<small class="ml-2">An official website of the United States government <button class="cdc-header-official-notice-header-btn">Here's how you know <span class="cdc-header-official-notice-header-icon x12 fill-p cdc-icon-arrow-down"></span></button></small>
+	</div>
+
+	<div class="cdc-header-official-notice-body row" style="display: none;">
+		<figure class="col-lg-6 d-flex">
+			<img class="cdc-header-official-notice-body-img" src="/templatepackage/4.0/assets/imgs/uswds/icon-dot-gov.svg" alt="Official icon" aria-hidden="true">
+			<figcaption class="cdc-header-official-notice-body-info ml-3">
+				<p class="cdc-header-official-notice-body-title mb-1"><strong>Official websites use .gov</strong></p>
+				<p>A .gov website belongs to an official government organization in the United States.</p>
+			</figcaption>
+		</figure>
+		<figure class="col-lg-6 d-flex">
+			<img class="cdc-header-official-notice-body-img" src="/templatepackage/4.0/assets/imgs/uswds/icon-https.svg" alt="Lock icon" aria-hidden="true">
+			<figcaption class="cdc-header-official-notice-body-info ml-3">
+				<p class="cdc-header-official-notice-body-title mb-1"><strong>Secure .gov websites use HTTPS</strong></p>
+				<p>A lock ( <span class="x16 fill-black cdc-icon-lock-alt-solid"></span> ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.</p>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+	<!-- (2) Intranet - Links Bar -->
+
+	<!-- (3) Header Bar -->
+	<div class="container-fluid header-wrapper">
+		<div class="container">
+			<header role="banner" aria-label="Header" class="pt-2 pb-2">
+				<div class="row"> 
+				<div class="col cdc-logo">
+<a href="https://www.cdc.gov/">
+	<span class="sr-only">Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People</span>
+	<img src="/templatepackage/4.0/assets/imgs/logo/logo-notext.svg" alt="CDC Logo" class="cdc-logo--desktop">
+	<img src="/templatepackage/4.0/assets/imgs/logo/logo-notext.svg" alt="CDC Logo" class="cdc-logo--mobile">
+</a>
+				</div>
+				<div class="col-3 col-xl-4 col-xxl-3 tp-search">
+<div class="headerSearch cdc-header-search">
+	<form accept-charset="UTF-8" action="https://search.cdc.gov/search/" class="cdc-header-search-form" method="get" autocomplete="off">
+
+		<!-- fallback mobile search -->
+		<button class="btn btn-primary dropdown-toggle no-toggle search-button ssi d-xl-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="search"><span>Search</span>
+			<i class="fi cdc-icon-magnify dropdown-menu-medium-search-icon x24" aria-hidden="true"></i>
+			<i class="fi cdc-icon-close dropdown-menu-medium-close-icon x24" aria-hidden="true"></i>
+		</button>
+
+		<div class="dropdown-menu dropdown-menu-right dropdown-menu-search dropdown-menu-medium-search">
+			<div class="input-group">
+				<input id="headerSearch" type="text" class="form-control" maxlength="300" placeholder="Search" aria-label="Search" name="query">
+				<span class="form-control-clear cdc-icon-close"></span>
+				<div class="input-group-append">
+					<button class="btn search-submit" type="button">
+						<span class="sr-only">Submit</span>
+						<i class="fi cdc-icon-magnify x24 search-submit" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="affiliate" value="cdc-main">
+	</form>
+</div>
+
+				</div>
+				</div>
+			</header>
+		</div>
+	</div>
+
+	<!-- (4) Intranet Global -->
+
+	<!-- (5 and 6) Site Title / Identity Area -->
+	<div class="container-fluid site-title">
+		<div class="container"> <div class="row"> <div class="col">
+			<div class="display-6 text-white fw-500 wontitle"><a href="/">CDC WONDER</a></div>
+			<div class="wontitle-menu"><a href="/wonder/help/faq.html">FAQs</a> <a href="/wonder/help/main.html">Help</a> <a href="/controller/datarequest?stage=contactus&amp;action=start">Contact Us</a> <a href="/controller/datarequest?stage=search&amp;action=current">WONDER Search</a></div>
+		</div> </div> </div>
+	</div>
+
+	<!-- (7) Mobile Nav -->
+	<nav role="navigation" aria-label="Mobile Nav" id="mobilenav" class="sticky-top">
+<div class="mobile-section-nav d-lg-none">
+	<div class="ct">
+		<!-- section nav area -->
+		<nav role="navigation" aria-label="Section Nav">
+
+			<div class="dropdown">
+				<button class="btn dropdown-toggle rounded-0 toggleMask" type="button" id="sectionNavButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="sr-only">Section Navigation</span>
+					<span class="mobile-title"></span>
+					<span id="svg-down" class="fi cdc-icon-arrow-down" aria-hidden="true"></span>
+				</button>
+
+				<div class="dropdown-menu w-100 rounded-0 m-0" id="mobileNav-dropdown" aria-labelledby="sectionNavButton">
+					<nav role="navigation" aria-label="Left Nav" id="leftnav">
+
+						<div class="list-group indicator-plus">
+							<ul></ul>
+						</div>
+						<a class="list-group-item mobile-section-nav-foot" href="#">
+							<span class="fi cdc-icon-home x24"></span>
+							<span class="mobile-foot-title">TP Docs Home</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+</div>
+	</nav>
+
+	<!-- (8 and 9) Breadcrumbs and Page Share Area  -->
+	<div class="container breadcrumb-share">
+		<div class="d-none d-lg-block">
+			<div class="row">
+				<!-- (8) Breadcrumbs Area -->
+				<div class="col-sm-9">  </div>
+				<!-- (9) Page Share -->
+				<div class="col-sm-3 page-share">
+<nav id="share-nav" class="page-share-wrapper" role="navigation" aria-label="Social Media">
+    <ul>
+        <li><a target="_blank" title="Share to Facebook" rel="noreferrer noopener" class="page-share-facebook metrics-share-facebook" href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">Facebook</span><span class="fi cdc-icon-fb-round"></span></a></li>
+        <li><a target="_blank" title="Share to Twitter" rel="noreferrer noopener" class="page-share-twitter metrics-share-twitter" href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-round"></span></a></li>
+        <li><a target="_blank" title="Share to LinkedIn" rel="noreferrer noopener" class="page-share-linkedin metrics-share-linkedin" href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&amp;title=CDC%20Works%2024/7&amp;description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&amp;via=CDCgov&amp;ct=0&amp;media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png"><span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin-round"></span></a></li>
+        <li><a target="_blank" title="Embed this Page" rel="noreferrer noopener" class="page-share-syndication metrics-share-syndicate" href="https://tools.cdc.gov/medialibrary/index.aspx#/sharecontent/https%3A%2F%2Fwww.cdc.gov%2Findex.htm"><span class="sr-only">Syndicate</span><span class="fi cdc-icon-syndication-round"></span></a></li>
+    </ul>
+</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Global Above Feature -->
+	<!-- (10) Feature Area -->
+	<div class="container-fluid feature-area"> </div>
+
+	<!-- Page Content Wrap (11 through 19) -->
+	<div class="container d-flex flex-wrap body-wrapper">
+
+		<!-- Content (13 through 19) -->
+		<main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
+			<!-- (13) Visual Element -->
+			<div class="row d-none d-md-block visual-element">	</div>
+			<!-- (14) Audience Identity -->
+			<div class="row audience-identity"> </div>
+
+			<!-- (17) Content Area -->
+			<div class="row">
+				<div class="col content"> 
+					<!-- (15) Page Title -->
+					<!-- (16) Page Language	-->
+					<!-- (17) Content Area -->
+<div class="wonder">
+      <form onsubmit="return validate()" method="post" action="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7" name="form" id="wonderform">
+        <input value="results" name="stage" type="hidden"><input value="on" name="O_javascript" type="hidden"><script language="javascript">document.form.O_javascript.value="on"</script><input value="" name="measures_list" type="hidden"><input value="off" name="O_results_table_options" type="hidden"><input value="off" name="O_results_table_api_options" type="hidden">
+        <table style="width:100%">
+          <tbody><tr>
+            <td>
+              <div class="title">
+                <h1>Underlying Cause of Death, 1999-2020 Results</h1>
+                <h2>Deaths occurring through 2020</h2><!--#include virtual="/message_request_forms.html" -->
+</div>
+              <a name="Options"></a>
+              <div class="rounded-tabs noprint" id="rounded-tabs">
+                <ul>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to see the request page" value="Request Form" name="tab-request" type="submit">
+                  </li>
+                  <li class="current">
+                    <input value="Results" type="button">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to create maps" value="Map" name="tab-map" type="submit">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Click to create charts" value="Chart" name="tab-chart" type="submit">
+                  </li>
+                  <li>
+                    <input onclick="submitSet(this); sendTab()" title="Information about this dataset" value="About" name="tab-about" type="submit">
+                  </li>
+                </ul>
+              </div>
+              <div class="wonder-content">
+                <div>
+                  <script language="javascript">
+	sendMsgInit();
+</script><div id="send-msg" class="displayoff"><div id="send-text">Processing Request, please wait for results...</div><div id="progress-bar" style="width:10px">&nbsp;</div><div style="width:10px">&nbsp;</div></div>
+                  <table class="top-utilities-bar noprint">
+                    <tbody><tr>
+                      <td>
+                        <table>
+                          <tbody><tr>
+                            <td><a title="List of links to related datasets" href="/deaths-by-underlying-cause.html" class="related">Underlying Cause of Death Data</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/ucd.html#" title="Complete information about this dataset">Dataset Documentation</a></td><td><a title="Link to other sources of data" href="http://www.cdc.gov/nchs/data_access/VitalStatsOnline.htm#Mortality_Multiple" target="_blank">
+	Other Data Access</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#" title="Information about the results page">Help for Results</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#print" title="Tips for printing">Printing Tips</a></td><td><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#export" title="Information about exporting WONDER query results data to a file">Help with Exports</a></td>
+                          </tr>
+                        </tbody></table>
+                      </td><td class="top-util-buttons"><input onclick="submitSet(this); saveRequest()" title="Save this page" value="Save" name="action-Save" type="submit" class="button2"><button style="margin-left:10px;" title="Export results to a file" onclick="toggleExportTypeOptions();" type="button" id="export-type-toggle" class="button2">Export</button>
+                        <div class="closed" id="export-format">
+                          <select name="O_export-format"><option value="xls">XLS (Export as Excel compatible)</option><option value="tsv">TSV (Export as Tab Separated Values)</option><option value="csv">CSV (Export as Comma Separated Values)</option></select><input title="Download" onclick="submitSet(this);" value="Download" name="action-Export" type="submit" class="button2">
+                        </div>
+                        <input title="Restore original results table and option values" onclick="submitSet(this);" value="Reset" name="action-Reset" type="submit" class="button2"></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td style="padding-top:0" nowrap="">
+                        <div id="quick-options-menu">
+                          <ul class="first">
+                            <li>Quick Options
+	<ul class="second">
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=toggle&amp;p=O_labels_quick&amp;v=false" title="Show fewer by-variable labels that span rows" onclick="sendMsgSet()">Show nested row labels</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=toggle&amp;p=O_show_totals&amp;v=true" title="Show all totals rows" onclick="sendMsgSet()">Show totals rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=toggle&amp;p=O_show_zeros&amp;v=false" title="Hide all zero rows" onclick="sendMsgSet()">Hide zero rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=toggle&amp;p=O_show_suppressed&amp;v=false" title="Hide suppressed rows" onclick="sendMsgSet()">Hide suppressed rows</a>
+                                </li>
+                                <li>
+                                  <a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=toggle&amp;p=O_show_rank&amp;v=true" title="Show row numbers / rank" onclick="sendMsgSet()">Show row numbers</a>
+                                </li>
+                                <li class="disabled">Click measure name to hide it</li>
+                                <li class="disabled">Sort by a measure for groups</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <div class="options-menu">
+                            <a title="Show more options to modify the results table" onclick="optionsShow('results_table');" href="#Options" class="displayon" id="show-opt">More Options </a><a title="Hide the table options form" href="javascript:optionsHide('results_table');" class="displayoff" id="hide-opt">Hide Options </a>
+                          </div>
+                          <div class="options-menu">
+                            <a title="Show API options to generate the API form" onclick="optionsShowApi('api_form');" href="#API" class="displayon" id="show-opt-api"> API Options </a><a title="Hide the API options form" href="javascript:optionsHideApi('api_form');" class="displayoff" id="hide-opt-api">Hide API </a>
+                          </div>
+                        </div>
+                      </td><td align="right"><span class="noprint current">Top</span><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <div id="options-form" class="noprint displayoff">
+                    <div id="send-help">
+Make all desired selections and then click any <b>Change Table</b> button one time to see your changes.
+</div>
+                    <div class="response-options-border">
+                      <table class="req-form response-options">
+                        <tbody><tr>
+                          <td colspan="1" class="hd">
+                            <div title="Click to open this section" class="button2 oc-button oc-button-plus displayoff" id="oc-sect-open" onclick="openSection()">+</div>
+                            <div title="Click to close this section" class="button2 oc-button oc-button-minus displayoff" id="oc-sect-close" onclick="closeSection()">−</div>1. Table options:</td><td nowrap="" colspan="1" class="hd"><span><input title="Hide this options form" onclick="optionsHide('Change Table')" class="button2" value="X" name="" type="button"></span><span class="help"><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#options" title="Click for help on this section of the table options form">Help</a></span><span><input title="Change results table using options in this form" class="button2" onclick="submitSet(this)" value="Change Table" name="action-Change Table" type="submit" id="submit-button1"></span></td>
+                        </tr>
+                        <tr class="displayoff" id="oc-sect-note">
+                          <td class="oc-note" colspan="2"><input value="" id="oc-sect" name="O_oc-sect-results" type="hidden"></td>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px" class="firstcell lastcell" colspan="2"><span style="color:#000">Change any desired options and click the "Change Table" button.</span></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="TO_title">Title</label><input size="50" value="" maxlength="150" id="TO_title" name="O_title" type="text" style="margin-left:10px; margin-right:50px"><label for="O_precision">
+	Precision</label><select id="O_precision" name="O_precision" style="margin-left:4px">
+<option value="0">&nbsp;0&nbsp;</option>
+<option selected="" value="1">&nbsp;1&nbsp;</option>
+<option value="2">&nbsp;2&nbsp;</option>
+<option value="3">&nbsp;3&nbsp;</option>
+<option value="4">&nbsp;4&nbsp;</option>
+<option value="5">&nbsp;5&nbsp;</option>
+<option value="6">&nbsp;6&nbsp;</option>
+<option value="7">&nbsp;7&nbsp;</option>
+<option value="8">&nbsp;8&nbsp;</option>
+<option value="9">&nbsp;9&nbsp;</option></select></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="O_show_totals">
+	Show Totals</label><input value="true" id="O_show_totals" name="O_show_totals" type="checkbox" class="inline" onclick="groupsCurrentSortBySet();"><label style="margin-left:15px" for="O_show_zeros">
+	Show Zeros</label><input value="true" id="O_show_zeros" name="O_show_zeros" type="checkbox" class="inline" onclick="groupsCurrentSortBySet();" checked=""><label style="margin-left:15px" for="O_show_suppressed">
+		Show Suppressed</label><input value="true" id="O_show_suppressed" name="O_show_suppressed" type="checkbox" class="inline" checked=""><label style="margin-left:15px" for="O_show_rank">Show Row Numbers / Rank</label><input value="true" id="O_show_rank" name="O_show_rank" type="checkbox" class="inline"></td>
+                        </tr>
+                        <tr>
+                          <td class="firstcell lastcell" colspan="2"><label for="O_labels_opt">
+	Show All Labels</label><input value="true" id="O_labels_opt" name="O_labels_opt" type="checkbox" style="margin-left:5px; margin-right:15px" checked=""><span class="normal">
+	(Displays every label on every row of the results table)</span></td>
+                        </tr>
+                        <tr class="lastrow">
+                          <td style="padding-top: 12px" class="firstcell lastcell" colspan="2">
+                            <table>
+                              <tbody><tr>
+                                <td><label for="tsort">Sort By</label>
+                                  <div style="padding-top: 2px">
+                                    <select onchange="groupsCurrentSortBySet()" size="5" id="tsort" name="tsort">
+<option value="byvar,BYVARIABLE" selected="">Group By variables</option>
+<option value="D76.M1,MEASURE_ASCEND">(asc) Deaths</option>
+<option value="D76.M1,MEASURE_DESCEND">(des) Deaths</option>
+<option value="D76.M2,MEASURE_ASCEND">(asc) Population</option>
+<option value="D76.M2,MEASURE_DESCEND">(des) Population</option>
+<option value="D76.M3,MEASURE_ASCEND">(asc) Crude Rate</option>
+<option value="D76.M3,MEASURE_DESCEND">(des) Crude Rate</option></select>
+                                  </div>
+                                </td><td style="padding-left:50px;">
+                                  <table cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                      <td style="padding-bottom:2px !important; white-space: nowrap" colspan="3">Available Measures</td><td style="padding-bottom:2px !important; white-space: nowrap" colspan="2">Measures Shown</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding-top:0 !important">
+                                        <div>
+                                          <select multiple="" size="3" id="measures-all">
+<option value="D76.M1" selected="">Deaths</option>
+<option value="D76.M2">Population</option>
+<option value="D76.M3">Crude Rate</option></select>
+                                        </div>
+                                      </td><td style="padding: 0 10px 0 3px; vertical-align:middle"><a title="Show selected measures" href="javascript:measuresShow()"><img alt="Show selected measures" class="lr-arrow2 noprint" src="/images/arrow-blue-rt.gif"></a></td><td style="padding: 0 3px 0 10px; vertical-align:middle"><a title="Hide selected measures" href="javascript:measuresHide()"><img alt="Hide selected measures" class="lr-arrow2 noprint" src="/images/arrow-blue-lf.gif"></a></td><td style="padding-top:0 !important">
+                                        <div>
+                                          <select multiple="" size="3" id="measures-show" name="measures_show">
+<option value="D76.M1" selected="">Deaths</option>
+<option value="D76.M2">Population</option>
+<option value="D76.M3">Crude Rate</option></select>
+                                        </div>
+                                      </td><td nowrap="" style="padding-left: 6px; vertical-align: middle"><a title="Move selected measures up" href="javascript:measuresSortUp()"><img alt="Move selected measures up" class="measure-updn noprint" src="/images/arrow-green-up.gif"></a><a title="Move selected measures down" href="javascript:measuresSortDown()"><img alt="Move selected measures down" class="measure-updn noprint" src="/images/arrow-green-dn.gif"></a></td><td style="vertical-align:middle; padding-left:10px" class="normal">
+		Rearrange measures order with the up and down arrows.</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="normal" colspan="6">
+	Use the right and left arrows to move measures into and out of the "Measures Shown" box.
+	</td>
+                                    </tr>
+                                  </tbody></table>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="1" class="hd">
+                            <div title="Click to open this section" class="button2 oc-button oc-button-plus displayoff" id="oc-sect1-open" onclick="openSection(1)">+</div>
+                            <div title="Click to close this section" class="button2 oc-button oc-button-minus displayoff" id="oc-sect1-close" onclick="closeSection(1)">−</div>2. Results groups:</td><td nowrap="" colspan="1" class="hd"><span class="help"><a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/table_response.html#groups" title="Click for help on this section of the table options form">Help</a></span><span><input title="Change results table using options in this form" class="button2" onclick="submitSet(this)" value="Change Table" name="action-Change Table" type="submit"></span></td>
+                        </tr>
+                        <tr class="displayoff" id="oc-sect1-note">
+                          <td class="oc-note" colspan="2">Open to organize rows into groups.<input value="" id="oc-sect1" name="O_oc-sect1-results" type="hidden"></td>
+                        </tr>
+                        <tr id="oc-sect1-1" class="displayoff">
+                          <td style="padding-top:15px !important; padding-bottom:15px" class="firstcell lastcell" colspan="2">
+                            <div>
+	Check to divide results into groups
+	<input value="true" id="O_groups" name="O_groups" type="checkbox">
+                              <p></p>
+                              <span style="margin-left:20px" class="normal">• Pick a numeric measure in the "Sort By" list above to use for the groups.</span>
+                              <br>
+                              <span style="margin-left:20px" class="normal">• Use the "Show Totals" checkbox above to specify whether totals are included in the groups.</span>
+                              <br>
+                              <span style="margin-left:20px" class="normal">• Then specify break points using one of these methods:</span>
+                            </div>
+                            <div style="padding:8px 0 0 20px">
+                              <input checked="" onclick="toggleOptions('grp_std', 'grp_std,grp_custom',true)" value="grp_std" name="O_group_type" id="RO_group_typegrp_std" type="radio"><label for="RO_group_typegrp_std" style="margin-right:30px"><b>Standard break points methods</b></label><input value="grp_custom" onclick="toggleOptions('grp_custom', 'grp_std,grp_custom',true)" name="O_group_type" id="RO_group_typegrp_custom" type="radio"><label for="RO_group_typegrp_custom"><b>Specify custom break points</b></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr id="oc-sect1-2" class="displayoff">
+                          <td class="firstcell lastcell" colspan="2">
+                            <div id="grp_std">
+                              <label style="padding:0 8px 0 20px" for="O_groups_count">Number of groups</label><select id="O_groups_count" name="O_groups_count">
+<option value="2">&nbsp;Two&nbsp;</option>
+<option value="3">&nbsp;Three&nbsp;</option>
+<option selected="" value="4">&nbsp;Four&nbsp;</option>
+<option value="5">&nbsp;Five&nbsp;</option>
+<option value="6">&nbsp;Six&nbsp;</option>
+<option value="7">&nbsp;Seven&nbsp;</option>
+<option value="8">&nbsp;Eight&nbsp;</option>
+<option value="9">&nbsp;Nine&nbsp;</option>
+<option value="10">&nbsp;Ten&nbsp;</option></select><label style="padding:0 8px 0 35px" for="O_groups_methods">Breaks method</label><select id="O_groups_methods" name="O_groups_methods">
+<option selected="" value="QUANTILE">&nbsp;Quantile&nbsp;</option>
+<option value="EQUAL">&nbsp;Equal Interval&nbsp;</option></select>
+                            </div>
+                            <table id="grp_custom" cellpadding="0" cellspacing="0">
+                              <tbody><tr>
+                                <td style="padding-bottom:10px" class="normal" colspan="2"><b>Custom Groups:</b>
+                                  <br>Enter the value at which each group should start, up to 10 groups.
+		<br>Values must be between the Start and End values for the "Current Sort By selection".
+	</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table>
+                                    <tbody><tr>
+                                      <td style="padding-left:20px">
+                                        <table>
+                                          <tbody><tr>
+                                            <td>&nbsp;</td><td style="padding-left:6px">Start value</td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group1" class="disabled">Group 1</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="n/a" maxlength="15" size="10" id="group1" name="group1" type="text" disabled="" style="background:#ddd"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group2">Group 2</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group2" name="group2" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group3">Group 3</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group3" name="group3" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group4">Group 4</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group4" name="group4" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group5">Group 5</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group5" name="group5" type="text"></td>
+                                          </tr>
+                                        </tbody></table>
+                                      </td><td style="padding-left:40px; vertical-align:top;">
+                                        <table>
+                                          <tbody><tr>
+                                            <td>&nbsp;</td><td style="padding-left:6px">Start value</td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group6">Group 6</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group6" name="group6" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group7">Group 7</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group7" name="group7" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group8">Group 8</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group8" name="group8" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group9">Group 9</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group9" name="group9" type="text"></td>
+                                          </tr>
+                                          <tr>
+
+                                            <td><label for="group10">Group 10</label></td>
+<td style="padding-left:6px"><input onchange="document.form.O_group_type[1].checked = true" value="" maxlength="15" size="10" id="group10" name="group10" type="text"></td>
+                                          </tr>
+                                        </tbody></table>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </td><td style="padding-left:50px">
+                                  <div class="normal" style="padding:2px 0 2px 0">
+                                    <b>Current Sort By selection:</b>
+                                  </div>
+                                  <div class="displayon cur-measure" id="byvar_BYVARIABLE">
+			Group By variables
+			<div class="cur-measure-list">Sort by a numeric measure to set custom group breaks.</div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M1_MEASURE_ASCEND">Deaths (ascending)<div class="cur-measure-list">Start value: <span id="D76.M1_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M1_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M1_MEASURE_DESCEND">Deaths (descending)<div class="cur-measure-list">Start value:  <span id="D76.M1_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M1_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M2_MEASURE_ASCEND">Population (ascending)<div class="cur-measure-list">Start value: <span id="D76.M2_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M2_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M2_MEASURE_DESCEND">Population (descending)<div class="cur-measure-list">Start value:  <span id="D76.M2_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M2_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M3_MEASURE_ASCEND">Crude Rate (ascending)<div class="cur-measure-list">Start value: <span id="D76.M3_MEASURE_ASCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value: <span id="D76.M3_MEASURE_ASCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div class="displayoff cur-measure" id="D76.M3_MEASURE_DESCEND">Crude Rate (descending)<div class="cur-measure-list">Start value:  <span id="D76.M3_MEASURE_DESCENDS">1</span>
+                                    </div>
+                                    <div class="cur-measure-list">End value:  <span id="D76.M3_MEASURE_DESCENDE">1</span>
+                                    </div>
+                                  </div>
+                                  <div style="padding-top: 18px">
+                                    <input onclick="clearGroups()" style="font-size:90%; padding-bottom:2px" class="button2" value="Clear Values" type="button">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                          </td>
+                        </tr>
+                        <tr id="oc-sect1-3" class="lastrow displayoff">
+                          <td style="padding-top:12px" class="firstcell lastcell" colspan="2"><span style="color:#000;">Options for non-numeric cells:</span>
+                            <div style="margin: 6px 0 0 20px">
+                              <input checked="" value="false" name="O_show_flags_group" id="RO_show_flags_groupfalse" type="radio"><label for="RO_show_flags_groupfalse">
+		Hide non-numeric cells</label>
+                              <br>
+                              <input value="true" name="O_show_flags_group" id="RO_show_flags_grouptrue" type="radio"><label for="RO_show_flags_grouptrue">
+		Group non-numeric cells separately</label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                    <div class="footer-buttons">
+                      <input title="" onclick="submitSet(this);" class="button2" value="Change Table" name="action-Change Table" type="submit"><input title="Restore original option values in this form" onclick="submitSet(this);" class="button2" value="Reset" name="action-Reset" type="submit">
+                    </div>
+                    <table class="response-links noprint">
+                      <tbody><tr>
+                        <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                  <br>
+                  <div id="options-form-api" class="noprint displayoff">
+                    <div class="response-options-border">
+                      <table class="req-form response-options">
+                        <tbody><tr style="background-color:#75a9ed; color:#fff; font-size:15px; text-align:left; vertical-align:middle" class="firstrow">
+                          <th style="padding-left:7px" colspan="4"> API Options: </th>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px; font-size:13px" class="firstcell lastcell" colspan="2"><span style="color:#000">Select "Export API" to generate API request file.</span></td><td><input title="Generate API Form" onclick="submitSet(this);" value="Export API" name="action-Api" type="submit" class="button2"></td><td><a target="_blank" href="/wonder/help/wonder-api.html">More info</a></td>
+                        </tr>
+                        <tr class="firstrow">
+                          <td style="padding-bottom:15px;font-size:13px" class="firstcell lastcell" colspan="2"><span style="color:#000">Select "Export Response" to create API response file for API request file.</span></td><td><input title="Generate API Form Response" onclick="submitSet(this);" value="Export Response" name="action-response" type="submit" class="button2"></td><td><a target="_blank" href="/wonder/help/wonder-api.html">More info</a></td>
+                        </tr>
+                      </tbody></table>
+                    </div>
+                  </div>
+                  <table class="response-form">
+                    <thead>
+                      <tr>
+                        <th style="padding: 3px 6px;">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th align="center">
+                                  <div style="text-align:center">State</div>
+                                </th><th class="up"><img alt="Results are sorted in by-variable order" title="Results are sorted in by-variable order" src="/images/arrow-red-dn.gif" class="sort-img1 noprint"></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px;">County</th><th style="padding: 3px 6px;">Year</th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=shiftm&amp;measure=D76.M1&amp;direction=right" onclick="sendMsgSet()"><img alt="Move this column one place to the right" title="Move this column one place to the right" src="/images/arrow-blue-rt.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=hide&amp;measure=D76.M1" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Deaths</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M1" onclick="sendMsgSet()"><img alt="Click to sort by Deaths ascending" title="Sort by Deaths ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M1" onclick="sendMsgSet()"><img alt="Click to sort by Deaths descending" title="Sort by Deaths descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=shiftm&amp;measure=D76.M2&amp;direction=right" onclick="sendMsgSet()"><img alt="Move this column one place to the right" title="Move this column one place to the right" src="/images/arrow-blue-rt.gif" class="lr-arrow noprint"></a><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=shiftm&amp;measure=D76.M2&amp;direction=left" onclick="sendMsgSet()"><img alt="Move this column one place to the left" title="Move this column one place to the left" src="/images/arrow-blue-lf.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=hide&amp;measure=D76.M2" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Population</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M2" onclick="sendMsgSet()"><img alt="Click to sort by Population ascending" title="Sort by Population ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M2" onclick="sendMsgSet()"><img alt="Click to sort by Population descending" title="Sort by Population descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th><th style="padding: 3px 6px">
+                          <table class="hdr" style="margin-left:auto; margin-right:auto">
+                            <thead>
+                              <tr>
+                                <th class="lr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=shiftm&amp;measure=D76.M3&amp;direction=left" onclick="sendMsgSet()"><img alt="Move this column one place to the left" title="Move this column one place to the left" src="/images/arrow-blue-lf.gif" class="lr-arrow noprint"></a></th><th class="msr"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=hide&amp;measure=D76.M3" title="Click to hide this measure column, use Options above to restore it." onclick="sendMsgSet()">Crude Rate Per 100,000</a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_ASCEND&amp;measure=D76.M3" onclick="sendMsgSet()"><img alt="Click to sort by Crude Rate Per 100,000 ascending" title="Sort by Crude Rate Per 100,000 ascending" src="/images/arrow-green-up.gif" class="sort-img1 noprint"></a></th><th class="up"><a href="/controller/datarequest/D76;jsessionid=C48A7FF52E8DC5F56D3A9FB000E7?stage=results&amp;action=sort&amp;direction=MEASURE_DESCEND&amp;measure=D76.M3" onclick="sendMsgSet()"><img alt="Click to sort by Crude Rate Per 100,000 descending" title="Sort by Crude Rate Per 100,000 descending" height="12px" border="0" src="/images/arrow-green-dn.gif" class="sort-img2 noprint"></a></th>
+                              </tr>
+                            </thead>
+                          </table>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2006</th><td>Suppressed</td><td>25,821</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2007</th><td>Suppressed</td><td>25,745</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2008</th><td>0</td><td>25,699</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2009</th><td>0</td><td>25,614</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2010</th><td>Suppressed</td><td>25,417</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2011</th><td>Suppressed</td><td>25,161</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2012</th><td>Suppressed</td><td>25,101</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2013</th><td>Suppressed</td><td>25,007</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Abbeville County, SC (45001)</th><th>2014</th><td>0</td><td>24,965</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2006</th><td>27</td><td>152,577</td><td>17.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2007</th><td>21</td><td>154,814</td><td>13.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2008</th><td>23</td><td>156,896</td><td>14.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2009</th><td>24</td><td>158,499</td><td>15.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2010</th><td>27</td><td>160,099</td><td>16.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2011</th><td>24</td><td>160,682</td><td>14.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2012</th><td>32</td><td>162,812</td><td>19.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2013</th><td>32</td><td>164,176</td><td>19.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Aiken County, SC (45003)</th><th>2014</th><td>30</td><td>164,753</td><td>18.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2006</th><td>Suppressed</td><td>10,882</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2007</th><td>0</td><td>10,787</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2008</th><td>Suppressed</td><td>10,803</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2009</th><td>0</td><td>10,619</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2010</th><td>0</td><td>10,419</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2011</th><td>0</td><td>10,181</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2012</th><td>0</td><td>9,988</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2013</th><td>0</td><td>9,839</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Allendale County, SC (45005)</th><th>2014</th><td>0</td><td>9,695</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2006</th><td>27</td><td>178,579</td><td>15.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2007</th><td>27</td><td>181,543</td><td>14.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2008</th><td>32</td><td>184,520</td><td>17.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2009</th><td>42</td><td>186,544</td><td>22.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2010</th><td>37</td><td>187,126</td><td>19.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2011</th><td>34</td><td>188,488</td><td>18.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2012</th><td>30</td><td>189,355</td><td>15.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2013</th><td>36</td><td>190,641</td><td>18.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Anderson County, SC (45007)</th><th>2014</th><td>37</td><td>192,810</td><td>19.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2006</th><td>0</td><td>16,392</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2007</th><td>0</td><td>16,226</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2008</th><td>Suppressed</td><td>16,104</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2009</th><td>Suppressed</td><td>16,022</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2010</th><td>Suppressed</td><td>15,987</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2011</th><td>Suppressed</td><td>15,975</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2012</th><td>Suppressed</td><td>15,763</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2013</th><td>Suppressed</td><td>15,430</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Bamberg County, SC (45009)</th><th>2014</th><td>Suppressed</td><td>15,182</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2006</th><td>Suppressed</td><td>22,886</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2007</th><td>Suppressed</td><td>22,851</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2008</th><td>Suppressed</td><td>22,761</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2009</th><td>Suppressed</td><td>22,611</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2010</th><td>Suppressed</td><td>22,621</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2011</th><td>Suppressed</td><td>22,358</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2012</th><td>Suppressed</td><td>22,212</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2013</th><td>Suppressed</td><td>22,119</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Barnwell County, SC (45011)</th><th>2014</th><td>Suppressed</td><td>21,959</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2006</th><td>13</td><td>147,213</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2007</th><td>12</td><td>151,411</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2008</th><td>13</td><td>156,399</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2009</th><td>14</td><td>159,737</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2010</th><td>15</td><td>162,233</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2011</th><td>17</td><td>164,684</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2012</th><td>13</td><td>168,049</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2013</th><td>17</td><td>171,838</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Beaufort County, SC (45013)</th><th>2014</th><td>13</td><td>175,852</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2006</th><td>14</td><td>159,501</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2007</th><td>12</td><td>164,913</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2008</th><td>16</td><td>171,099</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2009</th><td>13</td><td>175,092</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2010</th><td>25</td><td>177,843</td><td>14.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2011</th><td>19</td><td>183,525</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2012</th><td>28</td><td>189,781</td><td>14.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2013</th><td>28</td><td>194,020</td><td>14.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Berkeley County, SC (45015)</th><th>2014</th><td>26</td><td>198,205</td><td>13.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2006</th><td>Suppressed</td><td>15,229</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2007</th><td>Suppressed</td><td>15,260</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2008</th><td>0</td><td>15,175</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2009</th><td>0</td><td>15,268</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2010</th><td>Suppressed</td><td>15,175</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2011</th><td>0</td><td>15,145</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2012</th><td>0</td><td>14,910</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2013</th><td>Suppressed</td><td>15,055</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Calhoun County, SC (45017)</th><th>2014</th><td>0</td><td>14,878</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2006</th><td>34</td><td>334,826</td><td>10.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2007</th><td>49</td><td>337,147</td><td>14.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2008</th><td>41</td><td>341,921</td><td>12.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2009</th><td>46</td><td>346,795</td><td>13.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2010</th><td>60</td><td>350,209</td><td>17.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2011</th><td>55</td><td>357,704</td><td>15.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2012</th><td>37</td><td>365,162</td><td>10.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2013</th><td>44</td><td>372,803</td><td>11.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Charleston County, SC (45019)</th><th>2014</th><td>57</td><td>381,015</td><td>15.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2006</th><td>10</td><td>54,166</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2007</th><td>Suppressed</td><td>54,467</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2008</th><td>Suppressed</td><td>54,981</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2009</th><td>Suppressed</td><td>55,149</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2010</th><td>10</td><td>55,342</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2011</th><td>Suppressed</td><td>55,540</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2012</th><td>13</td><td>55,662</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2013</th><td>Suppressed</td><td>55,885</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Cherokee County, SC (45021)</th><th>2014</th><td>Suppressed</td><td>56,024</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2006</th><td>Suppressed</td><td>33,222</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2007</th><td>Suppressed</td><td>33,247</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2008</th><td>Suppressed</td><td>33,454</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2009</th><td>Suppressed</td><td>33,210</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2010</th><td>Suppressed</td><td>33,140</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2011</th><td>Suppressed</td><td>32,916</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2012</th><td>Suppressed</td><td>32,546</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2013</th><td>Suppressed</td><td>32,578</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chester County, SC (45023)</th><th>2014</th><td>Suppressed</td><td>32,337</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2006</th><td>Suppressed</td><td>45,103</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2007</th><td>10</td><td>45,708</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2008</th><td>Suppressed</td><td>46,319</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2009</th><td>Suppressed</td><td>46,638</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2010</th><td>Suppressed</td><td>46,734</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2011</th><td>Suppressed</td><td>46,557</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2012</th><td>Suppressed</td><td>46,103</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2013</th><td>Suppressed</td><td>46,197</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Chesterfield County, SC (45025)</th><th>2014</th><td>Suppressed</td><td>46,125</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2006</th><td>Suppressed</td><td>34,094</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2007</th><td>Suppressed</td><td>34,250</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2008</th><td>Suppressed</td><td>34,875</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2009</th><td>Suppressed</td><td>34,942</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2010</th><td>Suppressed</td><td>34,971</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2011</th><td>Suppressed</td><td>34,726</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2012</th><td>Suppressed</td><td>34,357</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2013</th><td>Suppressed</td><td>34,355</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Clarendon County, SC (45027)</th><th>2014</th><td>Suppressed</td><td>34,113</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2006</th><td>Suppressed</td><td>38,608</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2007</th><td>Suppressed</td><td>38,765</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2008</th><td>Suppressed</td><td>39,014</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2009</th><td>Suppressed</td><td>38,864</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2010</th><td>10</td><td>38,892</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2011</th><td>Suppressed</td><td>38,611</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2012</th><td>Suppressed</td><td>38,153</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2013</th><td>Suppressed</td><td>37,788</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Colleton County, SC (45029)</th><th>2014</th><td>Suppressed</td><td>37,771</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2006</th><td>11</td><td>68,424</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2007</th><td>Suppressed</td><td>68,489</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2008</th><td>Suppressed</td><td>68,773</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2009</th><td>Suppressed</td><td>68,705</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2010</th><td>Suppressed</td><td>68,681</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2011</th><td>Suppressed</td><td>68,299</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2012</th><td>Suppressed</td><td>68,139</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2013</th><td>14</td><td>67,935</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Darlington County, SC (45031)</th><th>2014</th><td>Suppressed</td><td>67,799</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2006</th><td>Suppressed</td><td>31,373</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2007</th><td>Suppressed</td><td>31,433</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2008</th><td>Suppressed</td><td>31,585</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2009</th><td>Suppressed</td><td>31,817</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2010</th><td>Suppressed</td><td>32,062</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2011</th><td>Suppressed</td><td>31,758</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2012</th><td>0</td><td>31,446</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2013</th><td>Suppressed</td><td>31,229</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dillon County, SC (45033)</th><th>2014</th><td>Suppressed</td><td>31,127</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2006</th><td>Suppressed</td><td>120,136</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2007</th><td>Suppressed</td><td>126,324</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2008</th><td>16</td><td>130,593</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2009</th><td>Suppressed</td><td>133,560</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2010</th><td>11</td><td>136,555</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2011</th><td>14</td><td>140,892</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2012</th><td>17</td><td>142,496</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2013</th><td>15</td><td>145,397</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Dorchester County, SC (45035)</th><th>2014</th><td>15</td><td>148,469</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2006</th><td>Suppressed</td><td>26,135</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2007</th><td>Suppressed</td><td>26,493</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2008</th><td>Suppressed</td><td>26,774</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2009</th><td>Suppressed</td><td>27,032</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2010</th><td>0</td><td>26,985</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2011</th><td>Suppressed</td><td>26,670</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2012</th><td>0</td><td>26,347</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2013</th><td>0</td><td>26,436</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Edgefield County, SC (45037)</th><th>2014</th><td>Suppressed</td><td>26,553</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2006</th><td>Suppressed</td><td>24,177</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2007</th><td>0</td><td>23,917</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2008</th><td>0</td><td>24,131</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2009</th><td>Suppressed</td><td>24,084</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2010</th><td>Suppressed</td><td>23,956</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2011</th><td>Suppressed</td><td>23,571</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2012</th><td>Suppressed</td><td>23,363</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2013</th><td>0</td><td>23,109</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Fairfield County, SC (45039)</th><th>2014</th><td>Suppressed</td><td>22,976</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2006</th><td>17</td><td>132,489</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2007</th><td>Suppressed</td><td>133,757</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2008</th><td>Suppressed</td><td>135,032</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2009</th><td>11</td><td>136,120</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2010</th><td>17</td><td>136,885</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2011</th><td>14</td><td>137,862</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2012</th><td>Suppressed</td><td>137,948</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2013</th><td>20</td><td>138,326</td><td>14.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Florence County, SC (45041)</th><th>2014</th><td>20</td><td>139,231</td><td>14.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2006</th><td>Suppressed</td><td>59,821</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2007</th><td>14</td><td>60,277</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2008</th><td>Suppressed</td><td>60,621</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2009</th><td>Suppressed</td><td>60,369</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2010</th><td>Suppressed</td><td>60,158</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2011</th><td>Suppressed</td><td>59,991</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2012</th><td>Suppressed</td><td>60,189</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2013</th><td>Suppressed</td><td>60,440</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Georgetown County, SC (45043)</th><th>2014</th><td>12</td><td>60,773</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2006</th><td>76</td><td>415,957</td><td>18.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2007</th><td>81</td><td>427,970</td><td>18.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2008</th><td>79</td><td>438,742</td><td>18.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2009</th><td>70</td><td>446,655</td><td>15.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2010</th><td>78</td><td>451,225</td><td>17.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2011</th><td>71</td><td>461,299</td><td>15.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2012</th><td>75</td><td>467,605</td><td>16.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2013</th><td>68</td><td>474,266</td><td>14.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenville County, SC (45045)</th><th>2014</th><td>83</td><td>482,752</td><td>17.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2006</th><td>Suppressed</td><td>68,091</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2007</th><td>Suppressed</td><td>68,198</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2008</th><td>13</td><td>68,862</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2009</th><td>Suppressed</td><td>69,598</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2010</th><td>Suppressed</td><td>69,661</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2011</th><td>Suppressed</td><td>69,835</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2012</th><td>Suppressed</td><td>69,756</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2013</th><td>Suppressed</td><td>69,723</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Greenwood County, SC (45047)</th><th>2014</th><td>13</td><td>69,520</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2006</th><td>Suppressed</td><td>21,104</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2007</th><td>Suppressed</td><td>21,295</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2008</th><td>Suppressed</td><td>21,212</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2009</th><td>Suppressed</td><td>21,205</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2010</th><td>0</td><td>21,090</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2011</th><td>Suppressed</td><td>20,821</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2012</th><td>Suppressed</td><td>20,726</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2013</th><td>Suppressed</td><td>20,408</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Hampton County, SC (45049)</th><th>2014</th><td>0</td><td>20,405</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2006</th><td>35</td><td>242,194</td><td>14.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2007</th><td>33</td><td>252,464</td><td>13.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2008</th><td>38</td><td>260,609</td><td>14.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2009</th><td>40</td><td>265,640</td><td>15.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2010</th><td>46</td><td>269,291</td><td>17.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2011</th><td>30</td><td>276,340</td><td>10.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2012</th><td>35</td><td>282,285</td><td>12.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2013</th><td>38</td><td>289,650</td><td>13.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Horry County, SC (45051)</th><th>2014</th><td>63</td><td>298,832</td><td>21.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2006</th><td>Suppressed</td><td>22,406</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2007</th><td>Suppressed</td><td>22,971</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2008</th><td>Suppressed</td><td>23,620</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2009</th><td>Suppressed</td><td>24,234</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2010</th><td>Suppressed</td><td>24,777</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2011</th><td>0</td><td>25,195</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2012</th><td>Suppressed</td><td>25,833</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2013</th><td>Suppressed</td><td>26,629</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Jasper County, SC (45053)</th><th>2014</th><td>Suppressed</td><td>27,170</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2006</th><td>Suppressed</td><td>58,060</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2007</th><td>Suppressed</td><td>59,380</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2008</th><td>Suppressed</td><td>60,395</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2009</th><td>Suppressed</td><td>61,143</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2010</th><td>10</td><td>61,697</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2011</th><td>Suppressed</td><td>62,273</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2012</th><td>12</td><td>62,343</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2013</th><td>Suppressed</td><td>62,516</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Kershaw County, SC (45055)</th><th>2014</th><td>Suppressed</td><td>63,161</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2006</th><td>12</td><td>66,992</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2007</th><td>Suppressed</td><td>69,504</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2008</th><td>Suppressed</td><td>72,733</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2009</th><td>12</td><td>75,394</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2010</th><td>16</td><td>76,652</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2011</th><td>12</td><td>77,908</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2012</th><td>Suppressed</td><td>79,089</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2013</th><td>12</td><td>80,458</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lancaster County, SC (45057)</th><th>2014</th><td>Suppressed</td><td>83,160</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2006</th><td>Suppressed</td><td>67,388</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2007</th><td>10</td><td>67,172</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2008</th><td>15</td><td>67,173</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2009</th><td>Suppressed</td><td>66,897</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2010</th><td>12</td><td>66,537</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2011</th><td>Suppressed</td><td>66,528</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2012</th><td>Suppressed</td><td>66,223</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2013</th><td>18</td><td>66,229</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Laurens County, SC (45059)</th><th>2014</th><td>Suppressed</td><td>66,533</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2006</th><td>0</td><td>20,001</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2007</th><td>Suppressed</td><td>19,836</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2008</th><td>0</td><td>19,697</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2009</th><td>Suppressed</td><td>19,352</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2010</th><td>0</td><td>19,220</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2011</th><td>Suppressed</td><td>18,976</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2012</th><td>0</td><td>18,654</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2013</th><td>0</td><td>18,347</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lee County, SC (45061)</th><th>2014</th><td>0</td><td>18,343</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2006</th><td>37</td><td>241,219</td><td>15.3</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2007</th><td>35</td><td>246,461</td><td>14.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2008</th><td>18</td><td>252,747</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2009</th><td>29</td><td>258,983</td><td>11.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2010</th><td>45</td><td>262,391</td><td>17.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2011</th><td>44</td><td>267,129</td><td>16.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2012</th><td>35</td><td>270,406</td><td>12.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2013</th><td>49</td><td>273,752</td><td>17.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Lexington County, SC (45063)</th><th>2014</th><td>53</td><td>277,888</td><td>19.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2006</th><td>0</td><td>10,166</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2007</th><td>Suppressed</td><td>10,162</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2008</th><td>0</td><td>10,224</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2009</th><td>0</td><td>10,235</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2010</th><td>0</td><td>10,233</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2011</th><td>Suppressed</td><td>10,035</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2012</th><td>0</td><td>9,943</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2013</th><td>0</td><td>9,947</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>McCormick County, SC (45065)</th><th>2014</th><td>Suppressed</td><td>9,846</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2006</th><td>Suppressed</td><td>33,994</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2007</th><td>Suppressed</td><td>33,842</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2008</th><td>Suppressed</td><td>33,724</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2009</th><td>Suppressed</td><td>33,277</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2010</th><td>0</td><td>33,062</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2011</th><td>Suppressed</td><td>32,846</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2012</th><td>Suppressed</td><td>32,457</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2013</th><td>Suppressed</td><td>32,072</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marion County, SC (45067)</th><th>2014</th><td>Suppressed</td><td>31,933</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2006</th><td>Suppressed</td><td>29,199</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2007</th><td>Suppressed</td><td>29,221</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2008</th><td>Suppressed</td><td>29,079</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2009</th><td>Suppressed</td><td>29,189</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2010</th><td>0</td><td>28,933</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2011</th><td>Suppressed</td><td>28,509</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2012</th><td>Suppressed</td><td>28,145</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2013</th><td>Suppressed</td><td>28,003</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Marlboro County, SC (45069)</th><th>2014</th><td>0</td><td>27,924</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2006</th><td>Suppressed</td><td>36,746</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2007</th><td>Suppressed</td><td>37,061</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2008</th><td>Suppressed</td><td>37,192</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2009</th><td>Suppressed</td><td>37,413</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2010</th><td>Suppressed</td><td>37,508</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2011</th><td>Suppressed</td><td>37,721</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2012</th><td>0</td><td>37,576</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2013</th><td>Suppressed</td><td>37,521</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Newberry County, SC (45071)</th><th>2014</th><td>Suppressed</td><td>37,783</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2006</th><td>15</td><td>71,490</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2007</th><td>19</td><td>72,407</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2008</th><td>20</td><td>73,089</td><td>27.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2009</th><td>15</td><td>73,829</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2010</th><td>19</td><td>74,273</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2011</th><td>21</td><td>74,418</td><td>28.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2012</th><td>21</td><td>74,627</td><td>28.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2013</th><td>12</td><td>75,045</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Oconee County, SC (45073)</th><th>2014</th><td>20</td><td>75,192</td><td>26.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2006</th><td>Suppressed</td><td>91,761</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2007</th><td>Suppressed</td><td>92,626</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2008</th><td>Suppressed</td><td>92,886</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2009</th><td>Suppressed</td><td>92,755</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2010</th><td>10</td><td>92,501</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2011</th><td>Suppressed</td><td>91,910</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2012</th><td>Suppressed</td><td>91,476</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2013</th><td>Suppressed</td><td>90,942</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Orangeburg County, SC (45075)</th><th>2014</th><td>Suppressed</td><td>90,090</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2006</th><td>28</td><td>115,570</td><td>24.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2007</th><td>23</td><td>116,815</td><td>19.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2008</th><td>21</td><td>118,330</td><td>17.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2009</th><td>38</td><td>119,183</td><td>31.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2010</th><td>36</td><td>119,224</td><td>30.2</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2011</th><td>32</td><td>119,574</td><td>26.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2012</th><td>32</td><td>119,670</td><td>26.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2013</th><td>32</td><td>119,829</td><td>26.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Pickens County, SC (45077)</th><th>2014</th><td>39</td><td>120,368</td><td>32.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2006</th><td>29</td><td>357,096</td><td>8.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2007</th><td>25</td><td>366,111</td><td>6.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2008</th><td>32</td><td>373,789</td><td>8.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2009</th><td>36</td><td>380,245</td><td>9.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2010</th><td>54</td><td>384,504</td><td>14.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2011</th><td>37</td><td>389,116</td><td>9.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2012</th><td>38</td><td>393,830</td><td>9.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2013</th><td>28</td><td>399,256</td><td>7.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Richland County, SC (45079)</th><th>2014</th><td>48</td><td>401,566</td><td>12.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2006</th><td>Suppressed</td><td>19,310</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2007</th><td>Suppressed</td><td>19,417</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2008</th><td>Suppressed</td><td>19,503</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2009</th><td>Suppressed</td><td>19,677</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2010</th><td>0</td><td>19,875</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2011</th><td>Suppressed</td><td>19,882</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2012</th><td>Suppressed</td><td>19,893</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2013</th><td>Suppressed</td><td>20,091</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Saluda County, SC (45081)</th><th>2014</th><td>Suppressed</td><td>20,026</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2006</th><td>64</td><td>268,898</td><td>23.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2007</th><td>48</td><td>274,215</td><td>17.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2008</th><td>67</td><td>279,673</td><td>24.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2009</th><td>73</td><td>283,335</td><td>25.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2010</th><td>56</td><td>284,307</td><td>19.7</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2011</th><td>60</td><td>286,868</td><td>20.9</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2012</th><td>36</td><td>288,745</td><td>12.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2013</th><td>38</td><td>290,969</td><td>13.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Spartanburg County, SC (45083)</th><th>2014</th><td>44</td><td>293,542</td><td>15.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2006</th><td>Suppressed</td><td>105,953</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2007</th><td>Suppressed</td><td>106,014</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2008</th><td>Suppressed</td><td>106,463</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2009</th><td>Suppressed</td><td>107,004</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2010</th><td>Suppressed</td><td>107,456</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2011</th><td>Suppressed</td><td>107,460</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2012</th><td>Suppressed</td><td>108,052</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2013</th><td>Suppressed</td><td>108,123</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Sumter County, SC (45085)</th><th>2014</th><td>Suppressed</td><td>107,919</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2006</th><td>0</td><td>29,248</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2007</th><td>Suppressed</td><td>29,060</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2008</th><td>Suppressed</td><td>29,172</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2009</th><td>Suppressed</td><td>29,100</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2010</th><td>0</td><td>28,961</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2011</th><td>Suppressed</td><td>28,679</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2012</th><td>Suppressed</td><td>28,252</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2013</th><td>Suppressed</td><td>28,030</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Union County, SC (45087)</th><th>2014</th><td>Suppressed</td><td>27,876</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2006</th><td>Suppressed</td><td>35,458</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2007</th><td>Suppressed</td><td>35,444</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2008</th><td>Suppressed</td><td>35,090</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2009</th><td>Suppressed</td><td>34,622</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2010</th><td>Suppressed</td><td>34,423</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2011</th><td>Suppressed</td><td>34,084</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2012</th><td>0</td><td>33,620</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2013</th><td>Suppressed</td><td>33,067</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>Williamsburg County, SC (45089)</th><th>2014</th><td>Suppressed</td><td>32,695</td><td>Suppressed</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2006</th><td>16</td><td>197,892</td><td>Unreliable</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2007</th><td>20</td><td>208,640</td><td>9.6</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2008</th><td>26</td><td>217,463</td><td>12.0</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2009</th><td>28</td><td>223,616</td><td>12.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2010</th><td>25</td><td>226,073</td><td>11.1</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2011</th><td>31</td><td>230,528</td><td>13.4</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2012</th><td>37</td><td>234,635</td><td>15.8</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2013</th><td>37</td><td>239,363</td><td>15.5</td>
+                      </tr>
+                      <tr>
+                        <th>South Carolina (45)</th><th>York County, SC (45091)</th><th>2014</th><td>34</td><td>245,346</td><td>13.9</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a name="Notes"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><span class="noprint current">Notes</span><a href="#Citation" class="noprint">Citation</a><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <a name="caveats"></a>
+                  <table class="response-notes caveats">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Notes:</th>
+                    </tr>
+                    <tr>
+                      <th>Caveats:</th><td>As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. <a href="/wonder/help/ucd.html#2014-Revision" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>Data are Suppressed when the data meet the criteria for confidentiality constraints. <a href="/wonder/help/ucd.html#Assurance of Confidentiality" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. <a href="/wonder/help/ucd.html#Unreliable" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>The population figures for year 2020 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2020 postcensal series released by NCHS on September 22, 2021.
+			The population figures for year 2019 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2019 postcensal series released by NCHS on July 9, 2020.
+			The population figures for year 2018 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2018 postcensal series released by NCHS on June 25, 2019.
+			The population figures for year 2017 are bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2017 postcensal series released by NCHS on June 27, 2018.
+			The population figures for year 2016 are bridged-race estimates of the July 1 resident population,
+			from the Vintage 2016 postcensal series released by NCHS on June 26, 2017.
+			The population figures for year 2015 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2015 postcensal series  
+			released by NCHS on June 28, 2016. 
+			The population figures for year 2014 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2014 postcensal series  
+			released by NCHS on June 30, 2015. 
+			The population figures for year 2013 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2013 postcensal series  
+			released by NCHS on June 26, 2014. 
+			The population figures for year 2012 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2012 postcensal series  
+			released by NCHS on June 13, 2013. 
+			The population figures for year 2011 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the Vintage 2011 postcensal series  
+			released by NCHS on July 18, 2012. 
+			Population figures for 2010 are April 1 Census counts. 
+			The population figures for years 2001 - 2009 are 
+			bridged-race estimates of the July 1 resident population, 
+			from the revised intercensal county-level  2000 - 2009 series 
+			released by NCHS on October 26, 2012. 
+			Population figures 
+			for 2000 are April 1 Census counts. 
+			Population figures for 1999 are from the 
+			1990-1999 intercensal series of July 1 estimates. 
+			Population figures for the infant age groups are the number of live births. 
+			<br><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly 
+			from previously published reports, due to use of the population estimates which were 
+			available at the time of release.<p></p>The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the resident population that is under one year of age. <a href="/wonder/help/ucd.html#Age Group" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a><p></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Help:</th><td>See <a onclick="setfocus('WONDER_Help')" target="WONDER_Help" href="/wonder/help/ucd.html">Underlying Cause of Death, 1999-2020 Documentation</a> for more information.</td>
+                    </tr>
+                    <tr>
+                      <th>Query Date:</th><td>May 1, 2026 7:41:53 PM</td>
+                    </tr>
+                  </tbody></table>
+                  <a name="Citation"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><span class="noprint current">Citation</span><a href="#Query Criteria" class="noprint">Query Criteria</a></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-notes">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Suggested Citation:</th>
+                    </tr>
+                    <tr>
+                      <td>Centers for Disease Control and Prevention, National Center for Health Statistics. 
+		National Vital Statistics System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. 
+		Data are from the Multiple Cause of Death Files, 1999-2020, 
+		as compiled from data provided by the 57 vital statistics jurisdictions through the 
+		Vital Statistics Cooperative Program. 
+		Accessed at http://wonder.cdc.gov/ucd-icd10.html on 
+		May 1, 2026 7:41:53 PM</td>
+                    </tr>
+                  </tbody></table>
+                  <a name="Query Criteria"></a>
+                  <table class="response-links noprint">
+                    <tbody><tr>
+                      <td align="right"><a href="#Top" class="noprint">Top</a><a onclick="optionsShow('results')" href="#Options" class="noprint">Options</a><a href="#Notes" class="noprint">Notes</a><a href="#Citation" class="noprint">Citation</a><span class="noprint current">Query Criteria</span></td>
+                    </tr>
+                  </tbody></table>
+                  <table class="response-notes query-description">
+                    <tbody><tr>
+                      <th colspan="2" class="title">Query Criteria:</th>
+                    </tr>
+                    <tr>
+                      <th></th><td></td>
+                    </tr>
+                    <tr>
+                      <th>Drug/Alcohol Induced Causes:</th><td>Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64); Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)</td>
+                    </tr>
+                    <tr>
+                      <th>States:</th><td>South Carolina (45)</td>
+                    </tr>
+                    <tr>
+                      <th>Year/Month:</th><td>2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014</td>
+                    </tr>
+                    <tr>
+                      <th>Group By:</th><td>State; County; Year</td>
+                    </tr>
+                    <tr>
+                      <th>Show Totals:</th><td>False</td>
+                    </tr>
+                    <tr>
+                      <th>Show Zero Values:</th><td>True</td>
+                    </tr>
+                    <tr>
+                      <th>Show Suppressed:</th><td>True</td>
+                    </tr>
+                    <tr>
+                      <th>Calculate Rates Per:</th><td>100,000</td>
+                    </tr>
+                    <tr>
+                      <th>Rate Options:</th><td>Default intercensal populations for years 2001-2009 (except Infant Age Groups)</td>
+                    </tr>
+                  </tbody></table>
+                  <div style="margin-bottom: 15px"></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </form>
+    </div>				</div>
+			</div> <!-- END 17 CONTENT AREA -->
+
+			<!-- (19) Page Format -->
+			<!-- <div class="row"> <div class="col page-format">
+			</div> </div> -->
+			
+			<!-- (18) Persistent Content Area -->
+			<!-- <div class="row"> </div> -->
+
+			<!-- (20) Date Updated -->
+			<div class="row">
+				<!-- dynamic pages generated by xsl don't have a last modified date -->
+				<div class="col last-reviewed">
+				<div class="d-none d-lg-block content-source">Content source: <a href="/" class="td-none"> CDC WONDER </a></div>
+
+				</div>
+			</div>
+		</main>  <!-- END MAIN -->
+
+		<!-- (11, 12) Left Nav / Bottom Nav and Under Left Nav -->
+		
+	</div> <!-- END WRAPPER DIV OUTSIDE MAIN -->
+
+	<!-- (21, 22) Footer Area -->
+	<footer role="contentinfo" aria-label="Footer">
+
+		<!-- (21) Footer -->
+		<div class="container-fluid footer-wrapper">
+			<div class="container">
+ <div class="footer-2022">
+	<div class="footer-desktop">
+		<div class="row">
+			<div class="col-6 about">
+				<ul class="d-flex">
+					<li><a href="https://www.cdc.gov/about">About CDC</a></li>
+					<li><a href="https://www.cdc.gov/cdc-info/index.html">Contact Us</a></li>
+					<li><a href="tel:8002324636">800-232-4636</a></li>
+				</ul>
+			</div>
+			<div class="col-6 social">
+				<div class="d-flex flex-nowrap">
+					<a href="https://www.facebook.com/CDC" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-facebook-inverse"></span><span class="sr-only">Facebook</span></a>
+					<a href="https://twitter.com/CDCgov" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-twitter-inverse"></span><span class="sr-only">Twitter</span></a>
+					<a href="https://www.instagram.com/CDCgov/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-instagram-inverse"></span><span class="sr-only">Instagram</span></a>
+					<a href="https://www.linkedin.com/company/centers-for-disease-control-and-prevention" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-linkedin-inverse"></span><span class="sr-only">LinkedIn</span></a>
+					<a href="https://www.youtube.com/c/cdc/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-youtube-inverse"></span><span class="sr-only">Youtube</span></a>
+					<a href="https://www.pinterest.com/cdcgov/" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-pinterest-inverse"></span><span class="sr-only">Pinterest</span></a>
+					<a href="https://www.snapchat.com/add/cdcgov" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-snapchat-inverse"></span><span class="sr-only">Snapchat</span></a>
+					<a href="https://tools.cdc.gov/medialibrary/index.aspx" target="_blank" rel="noreferrer noopener"><span class="cdc-icon-rss-inverse" aria-hidden="true"></span><span class="sr-only">RSS</span></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-mobile" aria-label="Footer" role="contentinfo">
+		<ul class="accordion indicator-arrow mb-3" role="tablist" aria-busy="true">
+			<li class="card footer-mobile_contact" role="presentation">
+				<button role="tab" class="card-header tab collapsed" data-target="#footer-mobile-collapse-1" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-1">CONTACT CDC</button>
+				<div class="collapse" id="footer-mobile-collapse-1" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<address itemscope="itemscope" itemtype="https://schema.org/Organization">
+							<div class="row mt-2">
+								<div class="col-1">
+									<span aria-hidden="true" class="fi cdc-icon-desktop x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1"><a href="https://www.cdc.gov/cdc-info/index.html">Contact Us</a></span>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-1">
+									<span class="fi cdc-icon-phone x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1" itemprop="telephone">Call 800-232-4636</span>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-1">
+									<span class="fi cdc-icon-email x24"></span>
+								</div>
+								<div class="col">
+									<span class="pl-1" itemprop="url"><a href="https://www.cdc.gov/cdc-info/index.html">Email Us</a></span>
+								</div>
+							</div>
+						</address>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_about" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-2" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-2">ABOUT CDC</button>
+				<div class="collapse" id="footer-mobile-collapse-2" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul>
+							<li><a href="https://www.cdc.gov/about">About CDC</a></li>
+							<li><a href="https://jobs.cdc.gov">Jobs</a></li>
+							<li><a href="https://www.cdc.gov/funding">Funding</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_policies" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-3" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-3">POLICIES</button>
+				<div class="collapse" id="footer-mobile-collapse-3" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul>
+							<li><a href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+							<li><a href="https://www.cdc.gov/Other/disclaimer.html">External Links</a></li>
+							<li><a href="https://www.cdc.gov/other/privacy.html">Privacy</a></li>
+							<li><a href="https://www.cdc.gov/Other/policies.html">Web Policies</a></li>
+							<li><a href="https://www.cdc.gov/foia">FOIA</a></li>
+							<li><a href="https://oig.hhs.gov">OIG</a></li>
+							<li><a href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+							<li><a href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+							<li><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+							<li><a href="https://archive.cdc.gov/">CDC Archive</a></li>
+							<li><a href="https://stacks.cdc.gov/ ">Public Health Publications</a></li>
+							<li><a href="https://hhs.gov/">HHS.gov</a></li>
+							<li><a href="https://www.usa.gov/">USA.gov</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_connect" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-4" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-4">CONNECT WITH US</button>
+				<div class="collapse" id="footer-mobile-collapse-4" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul class="bullet-list cc-4 lsp-out row">
+							<div class="col-12">
+								<li><a href="https://www.facebook.com/CDC" target="_blank" rel="noreferrer noopener"><span class="sr-only">Facebook</span><span class="fi cdc-icon-fb-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://twitter.com/CDCgov" target="_blank" rel="noreferrer noopener"><span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.instagram.com/CDCgov/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Instagram</span><span class="fi cdc-icon-ig-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.linkedin.com/company/centers-for-disease-control-and-prevention" target="_blank" rel="noreferrer noopener"><span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin-white x24" aria-hidden="true"></span></a></li>
+							</div>
+							<div class="col-12">
+								<li><a href="https://www.youtube.com/c/cdc/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Youtube</span><span class="fi cdc-icon-youtube-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.pinterest.com/cdcgov/" target="_blank" rel="noreferrer noopener"><span class="sr-only">Pinterest</span><span class="fi cdc-icon-pinterest-white x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://www.snapchat.com/add/cdcgov" target="_blank" rel="noreferrer noopener"><span class="sr-only">Snapchat</span><span class="fi cdc-icon-snapchat x24" aria-hidden="true"></span></a></li>
+								<li><a href="https://wwwn.cdc.gov/dcs/RequestForm.aspx"><span class="sr-only">Email</span><span class="fi cdc-icon-email x24" aria-hidden="true"></span></a></li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="card footer-mobile_language" role="presentation">
+				<button role="tab" class="card-header tab collapsed " data-target="#footer-mobile-collapse-5" data-toggle="collapse" aria-expanded="false" id="footer-mobile-card-5">LANGUAGES</button>
+				<div class="collapse" id="footer-mobile-collapse-5" role="tabpanel" aria-hidden="true">
+					<div class="card-body">
+						<ul class="bullet-list cc-2 lsp-out">
+							<li lang="es"><a href="https://www.cdc.gov/other/language-assistance.html#Spanish" title="Spanish">Español</a></li>
+							<li lang="zh"><a href="https://www.cdc.gov/other/language-assistance.html#Chinese" title="Chinese">????</a></li>
+							<li lang="vi"><a href="https://www.cdc.gov/other/language-assistance.html#Vietnamese" title="Vietnamese">Ti?ng Vi?t</a></li>
+							<li lang="ko"><a href="https://www.cdc.gov/other/language-assistance.html#Korean" title="Korean">???</a></li>
+							<li lang="tl"><a href="https://www.cdc.gov/other/language-assistance.html#Tagalog" title="Tagalog">Tagalog</a></li>
+							<li lang="ru"><a href="https://www.cdc.gov/other/language-assistance.html#Russian" title="Russian">???????</a></li>
+							<li lang="ar"><a href="https://www.cdc.gov/other/language-assistance.html#Arabic" title="Arabic">???????</a></li>
+							<li lang="ht"><a href="https://www.cdc.gov/other/language-assistance.html#Haitian" title="Haitian">Kreyòl Ayisyen</a></li>
+							<li lang="fr"><a href="https://www.cdc.gov/other/language-assistance.html#French" title="French">Français</a></li>
+							<li lang="pl"><a href="https://www.cdc.gov/other/language-assistance.html#Polish" title="Polish">Polski</a></li>
+							<li lang="pt"><a href="https://www.cdc.gov/other/language-assistance.html#Portuguese" title="Portuguese">Português</a></li>
+							<li lang="it"><a href="https://www.cdc.gov/other/language-assistance.html#Italian" title="Italian">Italiano</a></li>
+							<li lang="de"><a href="https://www.cdc.gov/other/language-assistance.html#German" title="German">Deutsch</a></li>
+							<li lang="ja"><a href="https://www.cdc.gov/other/language-assistance.html#Japanese" title="Japanese">???</a></li>
+							<li lang="fa"><a href="https://www.cdc.gov/other/language-assistance.html#Farsi" title="Farsi">?????</a></li>
+							<li lang="en"><a href="https://www.cdc.gov/other/language-assistance.html#English" title="English">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+
+		<!-- (22) Sub-Footer -->
+		<div class="container-fluid agency-footer">
+			<div class="container">
+<div class="footer-2022 footer-agency row">
+	<div class="col">
+		<ul>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/Other/disclaimer.html">External Links</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/privacy.html">Privacy</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/Other/policies.html">Web Policies</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/foia">FOIA</a></li>
+			<li class="d-none d-md-block"><a href="https://oig.hhs.gov">OIG</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+			<li class="d-none d-md-block"><a href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+			<li class="d-none d-md-block"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+			<li class="d-none d-md-block"><a href="https://archive.cdc.gov/">CDC Archive</a></li>
+			<li class="d-none d-md-block"><a href="https://stacks.cdc.gov/ ">Public Health Publications</a></li>
+			<li><a href="https://hhs.gov/">HHS.gov</a></li>
+			<li><a href="https://www.usa.gov/">USA.gov</a></li>
+		</ul>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- (23) Mobile Share Bar (Markup Only, Global Include) -->
+<!-- social media footer removed -->
+
+	<!-- Extra needed, hidden page markup (modals etc) -->
+
+
+
+	<!-- TEMPLATE SPECIFIC SCRIPTS -->
+<!-- social media footer removed -->
+<!--  include virtual="/templatepackage/4.0/includes/tp-docs-config-panel.html" -->
+<div id="metrics">
+    <!-- Google DAP inclusion -->
+    <script id="_fed_an_ua_tag" src="/JScript/metrics/google/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=CDC"></script></div></body></html>

@@ -1,0 +1,840 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2006"	"2006"	Suppressed	16357	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2007"	"2007"	Suppressed	16481	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2008"	"2008"	0	16422	Unreliable
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2009"	"2009"	Suppressed	16168	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2010"	"2010"	Suppressed	16202	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2011"	"2011"	Suppressed	16220	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2012"	"2012"	Suppressed	15927	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2013"	"2013"	Suppressed	15742	Suppressed
+	"Minnesota"	"27"	"Aitkin County, MN"	"27001"	"2014"	"2014"	Suppressed	15771	Suppressed
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2006"	"2006"	17	323590	Unreliable
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2007"	"2007"	19	325767	Unreliable
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2008"	"2008"	20	327427	6.1
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2009"	"2009"	32	329635	9.7
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2010"	"2010"	36	330844	10.9
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2011"	"2011"	40	333140	12.0
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2012"	"2012"	45	336414	13.4
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2013"	"2013"	44	339534	13.0
+	"Minnesota"	"27"	"Anoka County, MN"	"27003"	"2014"	"2014"	27	341864	7.9
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2006"	"2006"	0	32057	Unreliable
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2007"	"2007"	Suppressed	32142	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2008"	"2008"	Suppressed	32244	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2009"	"2009"	Suppressed	32407	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2010"	"2010"	Suppressed	32504	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2011"	"2011"	Suppressed	32778	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2012"	"2012"	0	33000	Unreliable
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2013"	"2013"	Suppressed	33231	Suppressed
+	"Minnesota"	"27"	"Becker County, MN"	"27005"	"2014"	"2014"	Suppressed	33259	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2006"	"2006"	Suppressed	43066	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2007"	"2007"	Suppressed	43281	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2008"	"2008"	Suppressed	43815	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2009"	"2009"	Suppressed	44226	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2010"	"2010"	Suppressed	44442	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2011"	"2011"	Suppressed	45264	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2012"	"2012"	Suppressed	45375	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2013"	"2013"	Suppressed	45670	Suppressed
+	"Minnesota"	"27"	"Beltrami County, MN"	"27007"	"2014"	"2014"	Suppressed	45664	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2006"	"2006"	Suppressed	37617	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2007"	"2007"	Suppressed	38007	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2008"	"2008"	Suppressed	38200	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2009"	"2009"	Suppressed	38418	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2010"	"2010"	Suppressed	38451	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2011"	"2011"	Suppressed	38671	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2012"	"2012"	Suppressed	38865	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2013"	"2013"	Suppressed	39214	Suppressed
+	"Minnesota"	"27"	"Benton County, MN"	"27009"	"2014"	"2014"	Suppressed	39506	Suppressed
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2006"	"2006"	Suppressed	5375	Suppressed
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2007"	"2007"	0	5366	Unreliable
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2008"	"2008"	0	5328	Unreliable
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2009"	"2009"	0	5285	Unreliable
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2010"	"2010"	Suppressed	5269	Suppressed
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2011"	"2011"	0	5238	Unreliable
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2012"	"2012"	Suppressed	5164	Suppressed
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2013"	"2013"	0	5122	Unreliable
+	"Minnesota"	"27"	"Big Stone County, MN"	"27011"	"2014"	"2014"	0	5127	Unreliable
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2006"	"2006"	0	61100	Unreliable
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2007"	"2007"	Suppressed	61974	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2008"	"2008"	0	62860	Unreliable
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2009"	"2009"	Suppressed	63565	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2010"	"2010"	Suppressed	64013	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2011"	"2011"	Suppressed	64384	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2012"	"2012"	Suppressed	65091	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2013"	"2013"	Suppressed	65528	Suppressed
+	"Minnesota"	"27"	"Blue Earth County, MN"	"27013"	"2014"	"2014"	Suppressed	65385	Suppressed
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2006"	"2006"	0	26252	Unreliable
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2007"	"2007"	Suppressed	26130	Suppressed
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2008"	"2008"	Suppressed	25992	Suppressed
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2009"	"2009"	0	25890	Unreliable
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2010"	"2010"	Suppressed	25893	Suppressed
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2011"	"2011"	Suppressed	25734	Suppressed
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2012"	"2012"	0	25425	Unreliable
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2013"	"2013"	0	25332	Unreliable
+	"Minnesota"	"27"	"Brown County, MN"	"27015"	"2014"	"2014"	Suppressed	25292	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2006"	"2006"	Suppressed	34538	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2007"	"2007"	Suppressed	34596	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2008"	"2008"	Suppressed	34986	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2009"	"2009"	Suppressed	35269	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2010"	"2010"	Suppressed	35386	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2011"	"2011"	Suppressed	35455	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2012"	"2012"	Suppressed	35348	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2013"	"2013"	Suppressed	35460	Suppressed
+	"Minnesota"	"27"	"Carlton County, MN"	"27017"	"2014"	"2014"	Suppressed	35571	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2006"	"2006"	Suppressed	85657	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2007"	"2007"	Suppressed	87270	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2008"	"2008"	Suppressed	88812	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2009"	"2009"	Suppressed	90242	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2010"	"2010"	Suppressed	91042	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2011"	"2011"	Suppressed	92638	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2012"	"2012"	Suppressed	93707	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2013"	"2013"	Suppressed	95562	Suppressed
+	"Minnesota"	"27"	"Carver County, MN"	"27019"	"2014"	"2014"	Suppressed	97338	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2006"	"2006"	Suppressed	28754	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2007"	"2007"	Suppressed	28681	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2008"	"2008"	Suppressed	28733	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2009"	"2009"	Suppressed	28483	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2010"	"2010"	Suppressed	28567	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2011"	"2011"	Suppressed	28390	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2012"	"2012"	Suppressed	28357	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2013"	"2013"	Suppressed	28555	Suppressed
+	"Minnesota"	"27"	"Cass County, MN"	"27021"	"2014"	"2014"	Suppressed	28559	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2006"	"2006"	Suppressed	12525	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2007"	"2007"	0	12401	Unreliable
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2008"	"2008"	0	12376	Unreliable
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2009"	"2009"	Suppressed	12360	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2010"	"2010"	Suppressed	12441	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2011"	"2011"	0	12319	Unreliable
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2012"	"2012"	Suppressed	12135	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2013"	"2013"	Suppressed	12093	Suppressed
+	"Minnesota"	"27"	"Chippewa County, MN"	"27023"	"2014"	"2014"	Suppressed	12110	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2006"	"2006"	Suppressed	51444	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2007"	"2007"	Suppressed	52312	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2008"	"2008"	Suppressed	53012	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2009"	"2009"	Suppressed	53526	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2010"	"2010"	Suppressed	53887	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2011"	"2011"	Suppressed	53916	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2012"	"2012"	Suppressed	53452	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2013"	"2013"	Suppressed	53761	Suppressed
+	"Minnesota"	"27"	"Chisago County, MN"	"27025"	"2014"	"2014"	Suppressed	54025	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2006"	"2006"	Suppressed	55072	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2007"	"2007"	10	55805	Unreliable
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2008"	"2008"	Suppressed	57056	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2009"	"2009"	Suppressed	58351	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2010"	"2010"	Suppressed	58999	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2011"	"2011"	10	59803	Unreliable
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2012"	"2012"	Suppressed	60155	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2013"	"2013"	Suppressed	60661	Suppressed
+	"Minnesota"	"27"	"Clay County, MN"	"27027"	"2014"	"2014"	10	61286	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2006"	"2006"	0	8476	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2007"	"2007"	0	8541	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2008"	"2008"	Suppressed	8603	Suppressed
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2009"	"2009"	0	8645	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2010"	"2010"	0	8695	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2011"	"2011"	0	8774	Unreliable
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2012"	"2012"	Suppressed	8703	Suppressed
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2013"	"2013"	Suppressed	8838	Suppressed
+	"Minnesota"	"27"	"Clearwater County, MN"	"27029"	"2014"	"2014"	Suppressed	8791	Suppressed
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2006"	"2006"	0	5210	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2007"	"2007"	0	5217	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2008"	"2008"	0	5255	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2009"	"2009"	Suppressed	5203	Suppressed
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2010"	"2010"	0	5176	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2011"	"2011"	0	5218	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2012"	"2012"	0	5185	Unreliable
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2013"	"2013"	Suppressed	5200	Suppressed
+	"Minnesota"	"27"	"Cook County, MN"	"27031"	"2014"	"2014"	0	5233	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2006"	"2006"	0	11789	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2007"	"2007"	0	11748	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2008"	"2008"	0	11701	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2009"	"2009"	Suppressed	11632	Suppressed
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2010"	"2010"	0	11687	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2011"	"2011"	Suppressed	11686	Suppressed
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2012"	"2012"	0	11597	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2013"	"2013"	0	11616	Unreliable
+	"Minnesota"	"27"	"Cottonwood County, MN"	"27033"	"2014"	"2014"	0	11633	Unreliable
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2006"	"2006"	Suppressed	60654	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2007"	"2007"	Suppressed	61484	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2008"	"2008"	Suppressed	62178	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2009"	"2009"	Suppressed	62307	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2010"	"2010"	Suppressed	62500	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2011"	"2011"	Suppressed	62763	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2012"	"2012"	Suppressed	62882	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2013"	"2013"	Suppressed	63208	Suppressed
+	"Minnesota"	"27"	"Crow Wing County, MN"	"27035"	"2014"	"2014"	Suppressed	63265	Suppressed
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2006"	"2006"	11	386228	Unreliable
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2007"	"2007"	19	390767	Unreliable
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2008"	"2008"	30	393900	7.6
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2009"	"2009"	37	396906	9.3
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2010"	"2010"	33	398552	8.3
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2011"	"2011"	39	402006	9.7
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2012"	"2012"	29	405088	7.2
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2013"	"2013"	34	408509	8.3
+	"Minnesota"	"27"	"Dakota County, MN"	"27037"	"2014"	"2014"	30	412529	7.3
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2006"	"2006"	Suppressed	19601	Suppressed
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2007"	"2007"	0	19613	Unreliable
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2008"	"2008"	0	19876	Unreliable
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2009"	"2009"	Suppressed	19921	Suppressed
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2010"	"2010"	0	20087	Unreliable
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2011"	"2011"	0	20243	Unreliable
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2012"	"2012"	Suppressed	20231	Suppressed
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2013"	"2013"	Suppressed	20349	Suppressed
+	"Minnesota"	"27"	"Dodge County, MN"	"27039"	"2014"	"2014"	0	20353	Unreliable
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2006"	"2006"	Suppressed	35472	Suppressed
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2007"	"2007"	Suppressed	35903	Suppressed
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2008"	"2008"	0	36108	Unreliable
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2009"	"2009"	0	36076	Unreliable
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2010"	"2010"	Suppressed	36009	Suppressed
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2011"	"2011"	Suppressed	36172	Suppressed
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2012"	"2012"	Suppressed	36415	Suppressed
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2013"	"2013"	0	36545	Unreliable
+	"Minnesota"	"27"	"Douglas County, MN"	"27041"	"2014"	"2014"	Suppressed	36790	Suppressed
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2006"	"2006"	0	15150	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2007"	"2007"	0	14986	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2008"	"2008"	0	14790	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2009"	"2009"	0	14651	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2010"	"2010"	0	14553	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2011"	"2011"	Suppressed	14508	Suppressed
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2012"	"2012"	0	14263	Unreliable
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2013"	"2013"	Suppressed	14191	Suppressed
+	"Minnesota"	"27"	"Faribault County, MN"	"27043"	"2014"	"2014"	0	14192	Unreliable
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2006"	"2006"	Suppressed	21043	Suppressed
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2007"	"2007"	0	21092	Unreliable
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2008"	"2008"	Suppressed	20991	Suppressed
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2009"	"2009"	0	20921	Unreliable
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2010"	"2010"	0	20866	Unreliable
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2011"	"2011"	Suppressed	20876	Suppressed
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2012"	"2012"	Suppressed	20834	Suppressed
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2013"	"2013"	0	20835	Unreliable
+	"Minnesota"	"27"	"Fillmore County, MN"	"27045"	"2014"	"2014"	Suppressed	20776	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2006"	"2006"	0	31622	Unreliable
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2007"	"2007"	Suppressed	31511	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2008"	"2008"	Suppressed	31270	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2009"	"2009"	Suppressed	31313	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2010"	"2010"	Suppressed	31255	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2011"	"2011"	Suppressed	31172	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2012"	"2012"	Suppressed	31054	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2013"	"2013"	Suppressed	30948	Suppressed
+	"Minnesota"	"27"	"Freeborn County, MN"	"27047"	"2014"	"2014"	0	30840	Unreliable
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2006"	"2006"	Suppressed	45598	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2007"	"2007"	Suppressed	45866	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2008"	"2008"	Suppressed	45919	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2009"	"2009"	Suppressed	46035	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2010"	"2010"	Suppressed	46183	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2011"	"2011"	Suppressed	46217	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2012"	"2012"	Suppressed	46336	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2013"	"2013"	Suppressed	46464	Suppressed
+	"Minnesota"	"27"	"Goodhue County, MN"	"27049"	"2014"	"2014"	Suppressed	46423	Suppressed
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2006"	"2006"	0	6127	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2007"	"2007"	0	6138	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2008"	"2008"	Suppressed	6113	Suppressed
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2009"	"2009"	0	6022	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2010"	"2010"	0	6018	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2011"	"2011"	0	5989	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2012"	"2012"	0	5944	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2013"	"2013"	0	5989	Unreliable
+	"Minnesota"	"27"	"Grant County, MN"	"27051"	"2014"	"2014"	0	5956	Unreliable
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2006"	"2006"	91	1119507	8.1
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2007"	"2007"	99	1126585	8.8
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2008"	"2008"	104	1135173	9.2
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2009"	"2009"	97	1146721	8.5
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2010"	"2010"	109	1152425	9.5
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2011"	"2011"	123	1168431	10.5
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2012"	"2012"	131	1184576	11.1
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2013"	"2013"	144	1198778	12.0
+	"Minnesota"	"27"	"Hennepin County, MN"	"27053"	"2014"	"2014"	133	1212064	11.0
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2006"	"2006"	Suppressed	19506	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2007"	"2007"	Suppressed	19392	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2008"	"2008"	Suppressed	19159	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2009"	"2009"	0	19051	Unreliable
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2010"	"2010"	Suppressed	19027	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2011"	"2011"	Suppressed	18916	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2012"	"2012"	Suppressed	18837	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2013"	"2013"	Suppressed	18799	Suppressed
+	"Minnesota"	"27"	"Houston County, MN"	"27055"	"2014"	"2014"	0	18738	Unreliable
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2006"	"2006"	Suppressed	19783	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2007"	"2007"	Suppressed	20123	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2008"	"2008"	Suppressed	20346	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2009"	"2009"	Suppressed	20389	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2010"	"2010"	Suppressed	20428	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2011"	"2011"	Suppressed	20303	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2012"	"2012"	Suppressed	20347	Suppressed
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2013"	"2013"	0	20658	Unreliable
+	"Minnesota"	"27"	"Hubbard County, MN"	"27057"	"2014"	"2014"	Suppressed	20573	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2006"	"2006"	Suppressed	37183	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2007"	"2007"	Suppressed	37711	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2008"	"2008"	Suppressed	37851	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2009"	"2009"	Suppressed	37809	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2010"	"2010"	Suppressed	37816	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2011"	"2011"	Suppressed	38283	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2012"	"2012"	Suppressed	38248	Suppressed
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2013"	"2013"	0	38204	Unreliable
+	"Minnesota"	"27"	"Isanti County, MN"	"27059"	"2014"	"2014"	Suppressed	38413	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2006"	"2006"	Suppressed	44405	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2007"	"2007"	Suppressed	44809	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2008"	"2008"	Suppressed	44852	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2009"	"2009"	Suppressed	45066	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2010"	"2010"	Suppressed	45058	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2011"	"2011"	Suppressed	45034	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2012"	"2012"	Suppressed	45221	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2013"	"2013"	Suppressed	45564	Suppressed
+	"Minnesota"	"27"	"Itasca County, MN"	"27061"	"2014"	"2014"	Suppressed	45589	Suppressed
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2006"	"2006"	0	10583	Unreliable
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2007"	"2007"	0	10523	Unreliable
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2008"	"2008"	0	10364	Unreliable
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2009"	"2009"	Suppressed	10276	Suppressed
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2010"	"2010"	Suppressed	10266	Suppressed
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2011"	"2011"	0	10202	Unreliable
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2012"	"2012"	Suppressed	10281	Suppressed
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2013"	"2013"	0	10260	Unreliable
+	"Minnesota"	"27"	"Jackson County, MN"	"27063"	"2014"	"2014"	0	10269	Unreliable
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2006"	"2006"	0	16360	Unreliable
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2007"	"2007"	0	16495	Unreliable
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2008"	"2008"	Suppressed	16535	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2009"	"2009"	Suppressed	16294	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2010"	"2010"	Suppressed	16239	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2011"	"2011"	Suppressed	16169	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2012"	"2012"	Suppressed	16005	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2013"	"2013"	Suppressed	15996	Suppressed
+	"Minnesota"	"27"	"Kanabec County, MN"	"27065"	"2014"	"2014"	Suppressed	15930	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2006"	"2006"	Suppressed	41537	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2007"	"2007"	Suppressed	41639	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2008"	"2008"	Suppressed	41840	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2009"	"2009"	0	42058	Unreliable
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2010"	"2010"	Suppressed	42239	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2011"	"2011"	Suppressed	42173	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2012"	"2012"	Suppressed	42379	Suppressed
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2013"	"2013"	0	42410	Unreliable
+	"Minnesota"	"27"	"Kandiyohi County, MN"	"27067"	"2014"	"2014"	Suppressed	42285	Suppressed
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2006"	"2006"	0	4746	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2007"	"2007"	0	4640	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2008"	"2008"	0	4614	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2009"	"2009"	0	4561	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2010"	"2010"	0	4552	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2011"	"2011"	0	4515	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2012"	"2012"	0	4493	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2013"	"2013"	0	4503	Unreliable
+	"Minnesota"	"27"	"Kittson County, MN"	"27069"	"2014"	"2014"	Suppressed	4435	Suppressed
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2006"	"2006"	0	13705	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2007"	"2007"	0	13577	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2008"	"2008"	0	13432	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2009"	"2009"	0	13276	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2010"	"2010"	0	13311	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2011"	"2011"	Suppressed	13213	Suppressed
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2012"	"2012"	0	13208	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2013"	"2013"	0	13206	Unreliable
+	"Minnesota"	"27"	"Koochiching County, MN"	"27071"	"2014"	"2014"	Suppressed	12856	Suppressed
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2006"	"2006"	0	7415	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2007"	"2007"	0	7419	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2008"	"2008"	Suppressed	7342	Suppressed
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2009"	"2009"	0	7302	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2010"	"2010"	0	7259	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2011"	"2011"	0	7193	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2012"	"2012"	0	7109	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2013"	"2013"	0	7027	Unreliable
+	"Minnesota"	"27"	"Lac qui Parle County, MN"	"27073"	"2014"	"2014"	0	6891	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2006"	"2006"	Suppressed	10962	Suppressed
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2007"	"2007"	0	10938	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2008"	"2008"	0	10872	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2009"	"2009"	0	10872	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2010"	"2010"	0	10866	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2011"	"2011"	Suppressed	10824	Suppressed
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2012"	"2012"	0	10818	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2013"	"2013"	0	10777	Unreliable
+	"Minnesota"	"27"	"Lake County, MN"	"27075"	"2014"	"2014"	0	10680	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2006"	"2006"	0	4321	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2007"	"2007"	0	4205	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2008"	"2008"	0	4128	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2009"	"2009"	0	4043	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2010"	"2010"	Suppressed	4045	Suppressed
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2011"	"2011"	0	4007	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2012"	"2012"	Suppressed	3973	Suppressed
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2013"	"2013"	0	3929	Unreliable
+	"Minnesota"	"27"	"Lake of the Woods County, MN"	"27077"	"2014"	"2014"	Suppressed	3918	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2006"	"2006"	Suppressed	27480	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2007"	"2007"	0	27870	Unreliable
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2008"	"2008"	Suppressed	27816	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2009"	"2009"	Suppressed	27730	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2010"	"2010"	0	27703	Unreliable
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2011"	"2011"	Suppressed	27656	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2012"	"2012"	0	27677	Unreliable
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2013"	"2013"	Suppressed	27810	Suppressed
+	"Minnesota"	"27"	"Le Sueur County, MN"	"27079"	"2014"	"2014"	Suppressed	27770	Suppressed
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2006"	"2006"	0	6003	Unreliable
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2007"	"2007"	Suppressed	5949	Suppressed
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2008"	"2008"	0	5937	Unreliable
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2009"	"2009"	Suppressed	5892	Suppressed
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2010"	"2010"	Suppressed	5896	Suppressed
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2011"	"2011"	0	5820	Unreliable
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2012"	"2012"	Suppressed	5818	Suppressed
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2013"	"2013"	0	5830	Unreliable
+	"Minnesota"	"27"	"Lincoln County, MN"	"27081"	"2014"	"2014"	Suppressed	5788	Suppressed
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2006"	"2006"	0	25347	Unreliable
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2007"	"2007"	Suppressed	25403	Suppressed
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2008"	"2008"	0	25646	Unreliable
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2009"	"2009"	0	25768	Unreliable
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2010"	"2010"	0	25857	Unreliable
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2011"	"2011"	Suppressed	25891	Suppressed
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2012"	"2012"	Suppressed	25543	Suppressed
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2013"	"2013"	Suppressed	25487	Suppressed
+	"Minnesota"	"27"	"Lyon County, MN"	"27083"	"2014"	"2014"	Suppressed	25665	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2006"	"2006"	Suppressed	36749	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2007"	"2007"	Suppressed	36961	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2008"	"2008"	Suppressed	36917	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2009"	"2009"	Suppressed	36662	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2010"	"2010"	0	36651	Unreliable
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2011"	"2011"	Suppressed	36432	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2012"	"2012"	Suppressed	36053	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2013"	"2013"	Suppressed	35918	Suppressed
+	"Minnesota"	"27"	"McLeod County, MN"	"27085"	"2014"	"2014"	0	35882	Unreliable
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2006"	"2006"	0	5277	Unreliable
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2007"	"2007"	0	5352	Unreliable
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2008"	"2008"	Suppressed	5386	Suppressed
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2009"	"2009"	Suppressed	5357	Suppressed
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2010"	"2010"	0	5413	Unreliable
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2011"	"2011"	Suppressed	5456	Suppressed
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2012"	"2012"	0	5536	Unreliable
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2013"	"2013"	Suppressed	5532	Suppressed
+	"Minnesota"	"27"	"Mahnomen County, MN"	"27087"	"2014"	"2014"	Suppressed	5505	Suppressed
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2006"	"2006"	0	9802	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2007"	"2007"	0	9651	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2008"	"2008"	0	9551	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2009"	"2009"	Suppressed	9478	Suppressed
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2010"	"2010"	0	9439	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2011"	"2011"	Suppressed	9481	Suppressed
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2012"	"2012"	0	9449	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2013"	"2013"	0	9425	Unreliable
+	"Minnesota"	"27"	"Marshall County, MN"	"27089"	"2014"	"2014"	0	9417	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2006"	"2006"	Suppressed	20901	Suppressed
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2007"	"2007"	0	20878	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2008"	"2008"	0	20914	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2009"	"2009"	0	20790	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2010"	"2010"	Suppressed	20840	Suppressed
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2011"	"2011"	0	20689	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2012"	"2012"	0	20475	Unreliable
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2013"	"2013"	Suppressed	20422	Suppressed
+	"Minnesota"	"27"	"Martin County, MN"	"27091"	"2014"	"2014"	Suppressed	20220	Suppressed
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2006"	"2006"	0	23402	Unreliable
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2007"	"2007"	0	23407	Unreliable
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2008"	"2008"	Suppressed	23454	Suppressed
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2009"	"2009"	0	23298	Unreliable
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2010"	"2010"	Suppressed	23300	Suppressed
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2011"	"2011"	0	23265	Unreliable
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2012"	"2012"	Suppressed	23061	Suppressed
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2013"	"2013"	Suppressed	23119	Suppressed
+	"Minnesota"	"27"	"Meeker County, MN"	"27093"	"2014"	"2014"	Suppressed	23107	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2006"	"2006"	Suppressed	25882	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2007"	"2007"	Suppressed	26108	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2008"	"2008"	Suppressed	26171	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2009"	"2009"	Suppressed	26127	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2010"	"2010"	Suppressed	26097	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2011"	"2011"	Suppressed	25979	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2012"	"2012"	Suppressed	25740	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2013"	"2013"	Suppressed	25833	Suppressed
+	"Minnesota"	"27"	"Mille Lacs County, MN"	"27095"	"2014"	"2014"	Suppressed	25884	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2006"	"2006"	Suppressed	32813	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2007"	"2007"	Suppressed	33024	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2008"	"2008"	Suppressed	33267	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2009"	"2009"	Suppressed	33156	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2010"	"2010"	Suppressed	33198	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2011"	"2011"	Suppressed	33229	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2012"	"2012"	Suppressed	33052	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2013"	"2013"	Suppressed	32872	Suppressed
+	"Minnesota"	"27"	"Morrison County, MN"	"27097"	"2014"	"2014"	Suppressed	32810	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2006"	"2006"	Suppressed	38697	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2007"	"2007"	Suppressed	38672	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2008"	"2008"	Suppressed	38695	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2009"	"2009"	Suppressed	39023	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2010"	"2010"	Suppressed	39163	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2011"	"2011"	Suppressed	39349	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2012"	"2012"	Suppressed	39372	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2013"	"2013"	Suppressed	39327	Suppressed
+	"Minnesota"	"27"	"Mower County, MN"	"27099"	"2014"	"2014"	Suppressed	39323	Suppressed
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2006"	"2006"	0	8884	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2007"	"2007"	0	8788	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2008"	"2008"	0	8755	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2009"	"2009"	0	8771	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2010"	"2010"	0	8725	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2011"	"2011"	Suppressed	8630	Suppressed
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2012"	"2012"	0	8577	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2013"	"2013"	0	8533	Unreliable
+	"Minnesota"	"27"	"Murray County, MN"	"27101"	"2014"	"2014"	Suppressed	8470	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2006"	"2006"	Suppressed	31779	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2007"	"2007"	Suppressed	31989	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2008"	"2008"	0	32261	Unreliable
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2009"	"2009"	Suppressed	32546	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2010"	"2010"	Suppressed	32727	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2011"	"2011"	Suppressed	32820	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2012"	"2012"	Suppressed	32929	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2013"	"2013"	Suppressed	33032	Suppressed
+	"Minnesota"	"27"	"Nicollet County, MN"	"27103"	"2014"	"2014"	Suppressed	33093	Suppressed
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2006"	"2006"	0	20608	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2007"	"2007"	0	20723	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2008"	"2008"	Suppressed	21126	Suppressed
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2009"	"2009"	0	21318	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2010"	"2010"	0	21378	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2011"	"2011"	Suppressed	21397	Suppressed
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2012"	"2012"	0	21487	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2013"	"2013"	0	21617	Unreliable
+	"Minnesota"	"27"	"Nobles County, MN"	"27105"	"2014"	"2014"	0	21590	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2006"	"2006"	0	6952	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2007"	"2007"	0	6860	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2008"	"2008"	0	6842	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2009"	"2009"	0	6815	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2010"	"2010"	0	6852	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2011"	"2011"	0	6869	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2012"	"2012"	0	6634	Unreliable
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2013"	"2013"	Suppressed	6631	Suppressed
+	"Minnesota"	"27"	"Norman County, MN"	"27107"	"2014"	"2014"	0	6639	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2006"	"2006"	10	137293	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2007"	"2007"	Suppressed	139369	Suppressed
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2008"	"2008"	Suppressed	141527	Suppressed
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2009"	"2009"	10	143521	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2010"	"2010"	Suppressed	144248	Suppressed
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2011"	"2011"	11	145769	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2012"	"2012"	14	147066	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2013"	"2013"	17	149226	Unreliable
+	"Minnesota"	"27"	"Olmsted County, MN"	"27109"	"2014"	"2014"	16	150287	Unreliable
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2006"	"2006"	Suppressed	57732	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2007"	"2007"	Suppressed	57677	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2008"	"2008"	Suppressed	57691	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2009"	"2009"	Suppressed	57333	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2010"	"2010"	0	57303	Unreliable
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2011"	"2011"	Suppressed	57252	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2012"	"2012"	Suppressed	57288	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2013"	"2013"	Suppressed	57581	Suppressed
+	"Minnesota"	"27"	"Otter Tail County, MN"	"27111"	"2014"	"2014"	Suppressed	57635	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2006"	"2006"	Suppressed	13810	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2007"	"2007"	0	13840	Unreliable
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2008"	"2008"	Suppressed	13842	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2009"	"2009"	Suppressed	13873	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2010"	"2010"	Suppressed	13930	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2011"	"2011"	Suppressed	14072	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2012"	"2012"	0	14074	Unreliable
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2013"	"2013"	Suppressed	14118	Suppressed
+	"Minnesota"	"27"	"Pennington County, MN"	"27113"	"2014"	"2014"	Suppressed	14058	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2006"	"2006"	Suppressed	28860	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2007"	"2007"	0	29210	Unreliable
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2008"	"2008"	0	29614	Unreliable
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2009"	"2009"	Suppressed	29655	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2010"	"2010"	Suppressed	29750	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2011"	"2011"	Suppressed	29604	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2012"	"2012"	Suppressed	29218	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2013"	"2013"	Suppressed	29104	Suppressed
+	"Minnesota"	"27"	"Pine County, MN"	"27115"	"2014"	"2014"	Suppressed	29095	Suppressed
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2006"	"2006"	0	9496	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2007"	"2007"	0	9520	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2008"	"2008"	0	9631	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2009"	"2009"	0	9624	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2010"	"2010"	Suppressed	9596	Suppressed
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2011"	"2011"	Suppressed	9501	Suppressed
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2012"	"2012"	0	9345	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2013"	"2013"	0	9270	Unreliable
+	"Minnesota"	"27"	"Pipestone County, MN"	"27117"	"2014"	"2014"	0	9281	Unreliable
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2006"	"2006"	Suppressed	31170	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2007"	"2007"	Suppressed	31273	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2008"	"2008"	Suppressed	31175	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2009"	"2009"	Suppressed	31423	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2010"	"2010"	Suppressed	31600	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2011"	"2011"	Suppressed	31456	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2012"	"2012"	Suppressed	31416	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2013"	"2013"	Suppressed	31569	Suppressed
+	"Minnesota"	"27"	"Polk County, MN"	"27119"	"2014"	"2014"	Suppressed	31704	Suppressed
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2006"	"2006"	Suppressed	11138	Suppressed
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2007"	"2007"	0	11087	Unreliable
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2008"	"2008"	Suppressed	11084	Suppressed
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2009"	"2009"	0	11034	Unreliable
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2010"	"2010"	0	10995	Unreliable
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2011"	"2011"	Suppressed	10894	Suppressed
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2012"	"2012"	0	10892	Unreliable
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2013"	"2013"	Suppressed	10932	Suppressed
+	"Minnesota"	"27"	"Pope County, MN"	"27121"	"2014"	"2014"	Suppressed	10984	Suppressed
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2006"	"2006"	45	497158	9.1
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2007"	"2007"	51	499605	10.2
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2008"	"2008"	61	502890	12.1
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2009"	"2009"	49	506590	9.7
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2010"	"2010"	48	508640	9.4
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2011"	"2011"	63	514696	12.2
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2012"	"2012"	70	520152	13.5
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2013"	"2013"	66	526714	12.5
+	"Minnesota"	"27"	"Ramsey County, MN"	"27123"	"2014"	"2014"	59	532655	11.1
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2006"	"2006"	0	4077	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2007"	"2007"	0	4093	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2008"	"2008"	0	4097	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2009"	"2009"	Suppressed	4130	Suppressed
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2010"	"2010"	Suppressed	4089	Suppressed
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2011"	"2011"	0	4105	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2012"	"2012"	0	4087	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2013"	"2013"	0	4057	Unreliable
+	"Minnesota"	"27"	"Red Lake County, MN"	"27125"	"2014"	"2014"	0	4043	Unreliable
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2006"	"2006"	Suppressed	16119	Suppressed
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2007"	"2007"	Suppressed	16053	Suppressed
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2008"	"2008"	Suppressed	16103	Suppressed
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2009"	"2009"	0	16011	Unreliable
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2010"	"2010"	0	16059	Unreliable
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2011"	"2011"	Suppressed	15972	Suppressed
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2012"	"2012"	0	15847	Unreliable
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2013"	"2013"	Suppressed	15744	Suppressed
+	"Minnesota"	"27"	"Redwood County, MN"	"27127"	"2014"	"2014"	0	15515	Unreliable
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2006"	"2006"	Suppressed	16374	Suppressed
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2007"	"2007"	0	16227	Unreliable
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2008"	"2008"	Suppressed	15911	Suppressed
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2009"	"2009"	0	15832	Unreliable
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2010"	"2010"	Suppressed	15730	Suppressed
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2011"	"2011"	Suppressed	15500	Suppressed
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2012"	"2012"	0	15369	Unreliable
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2013"	"2013"	Suppressed	15166	Suppressed
+	"Minnesota"	"27"	"Renville County, MN"	"27129"	"2014"	"2014"	Suppressed	15025	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2006"	"2006"	Suppressed	61899	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2007"	"2007"	Suppressed	62387	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2008"	"2008"	Suppressed	63061	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2009"	"2009"	Suppressed	63859	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2010"	"2010"	Suppressed	64142	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2011"	"2011"	Suppressed	64409	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2012"	"2012"	Suppressed	64854	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2013"	"2013"	Suppressed	65049	Suppressed
+	"Minnesota"	"27"	"Rice County, MN"	"27131"	"2014"	"2014"	Suppressed	65151	Suppressed
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2006"	"2006"	Suppressed	9502	Suppressed
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2007"	"2007"	0	9588	Unreliable
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2008"	"2008"	Suppressed	9597	Suppressed
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2009"	"2009"	0	9652	Unreliable
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2010"	"2010"	0	9687	Unreliable
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2011"	"2011"	0	9614	Unreliable
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2012"	"2012"	0	9553	Unreliable
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2013"	"2013"	Suppressed	9520	Suppressed
+	"Minnesota"	"27"	"Rock County, MN"	"27133"	"2014"	"2014"	Suppressed	9553	Suppressed
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2006"	"2006"	0	16031	Unreliable
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2007"	"2007"	Suppressed	15959	Suppressed
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2008"	"2008"	Suppressed	15935	Suppressed
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2009"	"2009"	Suppressed	15836	Suppressed
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2010"	"2010"	0	15629	Unreliable
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2011"	"2011"	0	15540	Unreliable
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2012"	"2012"	0	15476	Unreliable
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2013"	"2013"	0	15520	Unreliable
+	"Minnesota"	"27"	"Roseau County, MN"	"27135"	"2014"	"2014"	0	15679	Unreliable
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2006"	"2006"	17	198357	Unreliable
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2007"	"2007"	16	198903	Unreliable
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2008"	"2008"	12	199745	Unreliable
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2009"	"2009"	27	200198	13.5
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2010"	"2010"	23	200226	11.5
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2011"	"2011"	21	200255	10.5
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2012"	"2012"	22	200319	11.0
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2013"	"2013"	25	200540	12.5
+	"Minnesota"	"27"	"St. Louis County, MN"	"27137"	"2014"	"2014"	33	200949	16.4
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2006"	"2006"	Suppressed	121013	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2007"	"2007"	Suppressed	124050	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2008"	"2008"	Suppressed	126613	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2009"	"2009"	Suppressed	128530	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2010"	"2010"	Suppressed	129928	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2011"	"2011"	Suppressed	132556	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2012"	"2012"	Suppressed	135152	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2013"	"2013"	Suppressed	137232	Suppressed
+	"Minnesota"	"27"	"Scott County, MN"	"27139"	"2014"	"2014"	Suppressed	139672	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2006"	"2006"	Suppressed	84079	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2007"	"2007"	Suppressed	85968	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2008"	"2008"	12	87495	Unreliable
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2009"	"2009"	Suppressed	87880	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2010"	"2010"	Suppressed	88499	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2011"	"2011"	Suppressed	89319	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2012"	"2012"	12	89455	Unreliable
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2013"	"2013"	Suppressed	90158	Suppressed
+	"Minnesota"	"27"	"Sherburne County, MN"	"27141"	"2014"	"2014"	12	91126	Unreliable
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2006"	"2006"	0	15164	Unreliable
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2007"	"2007"	Suppressed	15263	Suppressed
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2008"	"2008"	0	15283	Unreliable
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2009"	"2009"	0	15140	Unreliable
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2010"	"2010"	Suppressed	15226	Suppressed
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2011"	"2011"	Suppressed	15169	Suppressed
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2012"	"2012"	Suppressed	15123	Suppressed
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2013"	"2013"	0	15072	Unreliable
+	"Minnesota"	"27"	"Sibley County, MN"	"27143"	"2014"	"2014"	0	14918	Unreliable
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2006"	"2006"	Suppressed	144256	Suppressed
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2007"	"2007"	Suppressed	146591	Suppressed
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2008"	"2008"	Suppressed	148307	Suppressed
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2009"	"2009"	16	149696	Unreliable
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2010"	"2010"	Suppressed	150642	Suppressed
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2011"	"2011"	14	151343	Unreliable
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2012"	"2012"	Suppressed	151606	Suppressed
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2013"	"2013"	17	152092	Unreliable
+	"Minnesota"	"27"	"Stearns County, MN"	"27145"	"2014"	"2014"	13	152912	Unreliable
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2006"	"2006"	0	36040	Unreliable
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2007"	"2007"	Suppressed	36342	Suppressed
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2008"	"2008"	Suppressed	36558	Suppressed
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2009"	"2009"	0	36684	Unreliable
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2010"	"2010"	0	36576	Unreliable
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2011"	"2011"	Suppressed	36534	Suppressed
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2012"	"2012"	Suppressed	36322	Suppressed
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2013"	"2013"	Suppressed	36465	Suppressed
+	"Minnesota"	"27"	"Steele County, MN"	"27147"	"2014"	"2014"	Suppressed	36573	Suppressed
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2006"	"2006"	0	9729	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2007"	"2007"	Suppressed	9660	Suppressed
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2008"	"2008"	0	9711	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2009"	"2009"	Suppressed	9735	Suppressed
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2010"	"2010"	0	9726	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2011"	"2011"	0	9685	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2012"	"2012"	0	9663	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2013"	"2013"	0	9735	Unreliable
+	"Minnesota"	"27"	"Stevens County, MN"	"27149"	"2014"	"2014"	0	9800	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2006"	"2006"	0	10119	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2007"	"2007"	Suppressed	10058	Suppressed
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2008"	"2008"	0	9966	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2009"	"2009"	0	9827	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2010"	"2010"	0	9783	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2011"	"2011"	0	9640	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2012"	"2012"	Suppressed	9594	Suppressed
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2013"	"2013"	0	9546	Unreliable
+	"Minnesota"	"27"	"Swift County, MN"	"27151"	"2014"	"2014"	0	9436	Unreliable
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2006"	"2006"	Suppressed	24620	Suppressed
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2007"	"2007"	0	24819	Unreliable
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2008"	"2008"	0	24859	Unreliable
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2009"	"2009"	Suppressed	24839	Suppressed
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2010"	"2010"	Suppressed	24895	Suppressed
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2011"	"2011"	Suppressed	24836	Suppressed
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2012"	"2012"	0	24509	Unreliable
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2013"	"2013"	Suppressed	24382	Suppressed
+	"Minnesota"	"27"	"Todd County, MN"	"27153"	"2014"	"2014"	Suppressed	24264	Suppressed
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2006"	"2006"	0	3795	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2007"	"2007"	0	3709	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2008"	"2008"	0	3637	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2009"	"2009"	0	3600	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2010"	"2010"	0	3558	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2011"	"2011"	0	3523	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2012"	"2012"	Suppressed	3451	Suppressed
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2013"	"2013"	0	3445	Unreliable
+	"Minnesota"	"27"	"Traverse County, MN"	"27155"	"2014"	"2014"	0	3387	Unreliable
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2006"	"2006"	Suppressed	21826	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2007"	"2007"	Suppressed	21708	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2008"	"2008"	Suppressed	21787	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2009"	"2009"	Suppressed	21734	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2010"	"2010"	Suppressed	21676	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2011"	"2011"	Suppressed	21600	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2012"	"2012"	Suppressed	21476	Suppressed
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2013"	"2013"	0	21443	Unreliable
+	"Minnesota"	"27"	"Wabasha County, MN"	"27157"	"2014"	"2014"	0	21362	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2006"	"2006"	0	13705	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2007"	"2007"	Suppressed	13840	Suppressed
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2008"	"2008"	0	13844	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2009"	"2009"	Suppressed	13825	Suppressed
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2010"	"2010"	Suppressed	13843	Suppressed
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2011"	"2011"	0	13749	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2012"	"2012"	0	13767	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2013"	"2013"	0	13804	Unreliable
+	"Minnesota"	"27"	"Wadena County, MN"	"27159"	"2014"	"2014"	Suppressed	13757	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2006"	"2006"	Suppressed	19348	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2007"	"2007"	Suppressed	19407	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2008"	"2008"	Suppressed	19311	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2009"	"2009"	0	18639	Unreliable
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2010"	"2010"	Suppressed	19136	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2011"	"2011"	0	19273	Unreliable
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2012"	"2012"	Suppressed	19237	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2013"	"2013"	Suppressed	19098	Suppressed
+	"Minnesota"	"27"	"Waseca County, MN"	"27161"	"2014"	"2014"	0	19025	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2006"	"2006"	13	225091	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2007"	"2007"	11	229756	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2008"	"2008"	15	233306	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2009"	"2009"	15	235684	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2010"	"2010"	14	238136	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2011"	"2011"	23	241280	9.5
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2012"	"2012"	15	244088	Unreliable
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2013"	"2013"	20	246603	8.1
+	"Minnesota"	"27"	"Washington County, MN"	"27163"	"2014"	"2014"	24	249283	9.6
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2006"	"2006"	0	11323	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2007"	"2007"	0	11231	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2008"	"2008"	0	11120	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2009"	"2009"	0	11171	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2010"	"2010"	0	11211	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2011"	"2011"	0	11201	Unreliable
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2012"	"2012"	Suppressed	11187	Suppressed
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2013"	"2013"	Suppressed	11137	Suppressed
+	"Minnesota"	"27"	"Watonwan County, MN"	"27165"	"2014"	"2014"	0	11083	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2006"	"2006"	0	6709	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2007"	"2007"	Suppressed	6715	Suppressed
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2008"	"2008"	0	6622	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2009"	"2009"	0	6563	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2010"	"2010"	0	6576	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2011"	"2011"	0	6592	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2012"	"2012"	0	6585	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2013"	"2013"	0	6557	Unreliable
+	"Minnesota"	"27"	"Wilkin County, MN"	"27167"	"2014"	"2014"	Suppressed	6495	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2006"	"2006"	Suppressed	50904	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2007"	"2007"	Suppressed	51316	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2008"	"2008"	Suppressed	51457	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2009"	"2009"	Suppressed	51422	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2010"	"2010"	Suppressed	51461	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2011"	"2011"	Suppressed	51378	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2012"	"2012"	Suppressed	51629	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2013"	"2013"	Suppressed	51232	Suppressed
+	"Minnesota"	"27"	"Winona County, MN"	"27169"	"2014"	"2014"	Suppressed	51097	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2006"	"2006"	Suppressed	115192	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2007"	"2007"	Suppressed	118635	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2008"	"2008"	Suppressed	121553	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2009"	"2009"	Suppressed	123320	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2010"	"2010"	Suppressed	124700	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2011"	"2011"	Suppressed	126437	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2012"	"2012"	Suppressed	127336	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2013"	"2013"	Suppressed	128470	Suppressed
+	"Minnesota"	"27"	"Wright County, MN"	"27171"	"2014"	"2014"	Suppressed	129918	Suppressed
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2006"	"2006"	0	10663	Unreliable
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2007"	"2007"	Suppressed	10574	Suppressed
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2008"	"2008"	0	10473	Unreliable
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2009"	"2009"	0	10437	Unreliable
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2010"	"2010"	0	10438	Unreliable
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2011"	"2011"	Suppressed	10307	Suppressed
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2012"	"2012"	Suppressed	10158	Suppressed
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2013"	"2013"	0	10143	Unreliable
+	"Minnesota"	"27"	"Yellow Medicine County, MN"	"27173"	"2014"	"2014"	Suppressed	10109	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Minnesota (27)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:36:00 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:36:00 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

@@ -1,0 +1,634 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2006"	"2006"	21	60522	34.7
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2007"	"2007"	25	60762	41.1
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2008"	"2008"	Suppressed	61115	Suppressed
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2009"	"2009"	12	61451	Unreliable
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2010"	"2010"	21	61773	34.0
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2011"	"2011"	16	61982	Unreliable
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2012"	"2012"	Suppressed	61912	Suppressed
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2013"	"2013"	Suppressed	62204	Suppressed
+	"Louisiana"	"22"	"Acadia Parish, LA"	"22001"	"2014"	"2014"	10	62486	Unreliable
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2006"	"2006"	0	25692	Unreliable
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2007"	"2007"	Suppressed	25937	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2008"	"2008"	Suppressed	25854	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2009"	"2009"	Suppressed	25863	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2010"	"2010"	Suppressed	25764	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2011"	"2011"	Suppressed	25757	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2012"	"2012"	Suppressed	25539	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2013"	"2013"	Suppressed	25537	Suppressed
+	"Louisiana"	"22"	"Allen Parish, LA"	"22003"	"2014"	"2014"	0	25713	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2006"	"2006"	Suppressed	96421	Suppressed
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2007"	"2007"	14	100132	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2008"	"2008"	12	102891	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2009"	"2009"	13	105172	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2010"	"2010"	Suppressed	107215	Suppressed
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2011"	"2011"	11	109985	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2012"	"2012"	15	112286	Unreliable
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2013"	"2013"	22	114393	19.2
+	"Louisiana"	"22"	"Ascension Parish, LA"	"22005"	"2014"	"2014"	15	117029	Unreliable
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2006"	"2006"	Suppressed	23477	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2007"	"2007"	Suppressed	23543	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2008"	"2008"	Suppressed	23534	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2009"	"2009"	Suppressed	23508	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2010"	"2010"	Suppressed	23421	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2011"	"2011"	Suppressed	23153	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2012"	"2012"	Suppressed	23026	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2013"	"2013"	Suppressed	23187	Suppressed
+	"Louisiana"	"22"	"Assumption Parish, LA"	"22007"	"2014"	"2014"	0	23034	Unreliable
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2006"	"2006"	Suppressed	42080	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2007"	"2007"	Suppressed	41809	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2008"	"2008"	Suppressed	42040	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2009"	"2009"	Suppressed	42034	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2010"	"2010"	Suppressed	42073	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2011"	"2011"	Suppressed	41895	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2012"	"2012"	Suppressed	41632	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2013"	"2013"	Suppressed	41299	Suppressed
+	"Louisiana"	"22"	"Avoyelles Parish, LA"	"22009"	"2014"	"2014"	11	41145	Unreliable
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2006"	"2006"	Suppressed	34510	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2007"	"2007"	14	34623	Unreliable
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2008"	"2008"	12	34893	Unreliable
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2009"	"2009"	Suppressed	35142	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2010"	"2010"	Suppressed	35654	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2011"	"2011"	Suppressed	36129	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2012"	"2012"	Suppressed	36281	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2013"	"2013"	Suppressed	36167	Suppressed
+	"Louisiana"	"22"	"Beauregard Parish, LA"	"22011"	"2014"	"2014"	Suppressed	36198	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2006"	"2006"	Suppressed	14773	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2007"	"2007"	0	14699	Unreliable
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2008"	"2008"	Suppressed	14494	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2009"	"2009"	0	14435	Unreliable
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2010"	"2010"	Suppressed	14353	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2011"	"2011"	Suppressed	14335	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2012"	"2012"	Suppressed	14076	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2013"	"2013"	Suppressed	13981	Suppressed
+	"Louisiana"	"22"	"Bienville Parish, LA"	"22013"	"2014"	"2014"	Suppressed	13885	Suppressed
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2006"	"2006"	15	110606	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2007"	"2007"	19	112048	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2008"	"2008"	16	113824	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2009"	"2009"	17	115187	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2010"	"2010"	12	116979	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2011"	"2011"	Suppressed	119732	Suppressed
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2012"	"2012"	Suppressed	122197	Suppressed
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2013"	"2013"	16	123823	Unreliable
+	"Louisiana"	"22"	"Bossier Parish, LA"	"22015"	"2014"	"2014"	Suppressed	125064	Suppressed
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2006"	"2006"	32	252740	12.7
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2007"	"2007"	40	251760	15.9
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2008"	"2008"	22	251953	8.7
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2009"	"2009"	31	253245	12.2
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2010"	"2010"	22	254969	8.6
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2011"	"2011"	29	257051	11.3
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2012"	"2012"	15	257093	Unreliable
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2013"	"2013"	24	254887	9.4
+	"Louisiana"	"22"	"Caddo Parish, LA"	"22017"	"2014"	"2014"	20	252603	7.9
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2006"	"2006"	58	185350	31.3
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2007"	"2007"	58	187081	31.0
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2008"	"2008"	33	188928	17.5
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2009"	"2009"	32	191080	16.7
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2010"	"2010"	26	192768	13.5
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2011"	"2011"	24	194092	12.4
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2012"	"2012"	25	194493	12.9
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2013"	"2013"	26	195296	13.3
+	"Louisiana"	"22"	"Calcasieu Parish, LA"	"22019"	"2014"	"2014"	33	197204	16.7
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2006"	"2006"	Suppressed	10224	Suppressed
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2007"	"2007"	Suppressed	10189	Suppressed
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2008"	"2008"	0	10224	Unreliable
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2009"	"2009"	Suppressed	10185	Suppressed
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2010"	"2010"	0	10132	Unreliable
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2011"	"2011"	Suppressed	10057	Suppressed
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2012"	"2012"	0	10004	Unreliable
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2013"	"2013"	Suppressed	9989	Suppressed
+	"Louisiana"	"22"	"Caldwell Parish, LA"	"22021"	"2014"	"2014"	Suppressed	9894	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2006"	"2006"	Suppressed	7719	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2007"	"2007"	Suppressed	7517	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2008"	"2008"	Suppressed	7434	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2009"	"2009"	Suppressed	6930	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2010"	"2010"	0	6839	Unreliable
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2011"	"2011"	0	6730	Unreliable
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2012"	"2012"	0	6702	Unreliable
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2013"	"2013"	Suppressed	6744	Suppressed
+	"Louisiana"	"22"	"Cameron Parish, LA"	"22023"	"2014"	"2014"	0	6679	Unreliable
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2006"	"2006"	Suppressed	10423	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2007"	"2007"	Suppressed	10481	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2008"	"2008"	Suppressed	10567	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2009"	"2009"	Suppressed	10471	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2010"	"2010"	Suppressed	10407	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2011"	"2011"	Suppressed	10325	Suppressed
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2012"	"2012"	0	10292	Unreliable
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2013"	"2013"	0	10238	Unreliable
+	"Louisiana"	"22"	"Catahoula Parish, LA"	"22025"	"2014"	"2014"	Suppressed	10151	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2006"	"2006"	0	17109	Unreliable
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2007"	"2007"	Suppressed	17149	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2008"	"2008"	Suppressed	17169	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2009"	"2009"	0	17230	Unreliable
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2010"	"2010"	Suppressed	17195	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2011"	"2011"	Suppressed	16914	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2012"	"2012"	Suppressed	16828	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2013"	"2013"	Suppressed	16650	Suppressed
+	"Louisiana"	"22"	"Claiborne Parish, LA"	"22027"	"2014"	"2014"	Suppressed	16412	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2006"	"2006"	Suppressed	20315	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2007"	"2007"	Suppressed	20244	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2008"	"2008"	Suppressed	20420	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2009"	"2009"	0	20726	Unreliable
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2010"	"2010"	Suppressed	20822	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2011"	"2011"	Suppressed	20876	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2012"	"2012"	Suppressed	20365	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2013"	"2013"	Suppressed	20442	Suppressed
+	"Louisiana"	"22"	"Concordia Parish, LA"	"22029"	"2014"	"2014"	Suppressed	20466	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2006"	"2006"	Suppressed	26175	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2007"	"2007"	Suppressed	26413	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2008"	"2008"	Suppressed	26590	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2009"	"2009"	0	26413	Unreliable
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2010"	"2010"	Suppressed	26656	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2011"	"2011"	Suppressed	26812	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2012"	"2012"	Suppressed	26963	Suppressed
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2013"	"2013"	0	27083	Unreliable
+	"Louisiana"	"22"	"De Soto Parish, LA"	"22031"	"2014"	"2014"	Suppressed	27142	Suppressed
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2006"	"2006"	38	433474	8.8
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2007"	"2007"	39	433344	9.0
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2008"	"2008"	32	433723	7.4
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2009"	"2009"	31	437623	7.1
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2010"	"2010"	37	440171	8.4
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2011"	"2011"	26	441438	5.9
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2012"	"2012"	29	444526	6.5
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2013"	"2013"	55	445227	12.4
+	"Louisiana"	"22"	"East Baton Rouge Parish, LA"	"22033"	"2014"	"2014"	63	446042	14.1
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2006"	"2006"	0	8188	Unreliable
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2007"	"2007"	Suppressed	8102	Suppressed
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2008"	"2008"	0	7939	Unreliable
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2009"	"2009"	0	7862	Unreliable
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2010"	"2010"	Suppressed	7759	Suppressed
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2011"	"2011"	Suppressed	7630	Suppressed
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2012"	"2012"	0	7526	Unreliable
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2013"	"2013"	0	7529	Unreliable
+	"Louisiana"	"22"	"East Carroll Parish, LA"	"22035"	"2014"	"2014"	0	7487	Unreliable
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2006"	"2006"	Suppressed	20559	Suppressed
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2007"	"2007"	Suppressed	20432	Suppressed
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2008"	"2008"	Suppressed	20415	Suppressed
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2009"	"2009"	0	20487	Unreliable
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2010"	"2010"	0	20267	Unreliable
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2011"	"2011"	0	20117	Unreliable
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2012"	"2012"	Suppressed	20008	Suppressed
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2013"	"2013"	Suppressed	19728	Suppressed
+	"Louisiana"	"22"	"East Feliciana Parish, LA"	"22037"	"2014"	"2014"	Suppressed	19813	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2006"	"2006"	Suppressed	34839	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2007"	"2007"	Suppressed	34873	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2008"	"2008"	Suppressed	34316	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2009"	"2009"	Suppressed	34078	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2010"	"2010"	Suppressed	33984	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2011"	"2011"	Suppressed	33896	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2012"	"2012"	Suppressed	33710	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2013"	"2013"	Suppressed	33578	Suppressed
+	"Louisiana"	"22"	"Evangeline Parish, LA"	"22039"	"2014"	"2014"	Suppressed	33700	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2006"	"2006"	0	20685	Unreliable
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2007"	"2007"	Suppressed	20740	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2008"	"2008"	Suppressed	20758	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2009"	"2009"	Suppressed	20677	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2010"	"2010"	Suppressed	20767	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2011"	"2011"	Suppressed	20785	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2012"	"2012"	Suppressed	20561	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2013"	"2013"	Suppressed	20571	Suppressed
+	"Louisiana"	"22"	"Franklin Parish, LA"	"22041"	"2014"	"2014"	Suppressed	20441	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2006"	"2006"	Suppressed	21039	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2007"	"2007"	Suppressed	21268	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2008"	"2008"	Suppressed	21657	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2009"	"2009"	Suppressed	22069	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2010"	"2010"	Suppressed	22309	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2011"	"2011"	Suppressed	22131	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2012"	"2012"	Suppressed	22068	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2013"	"2013"	Suppressed	22030	Suppressed
+	"Louisiana"	"22"	"Grant Parish, LA"	"22043"	"2014"	"2014"	Suppressed	22384	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2006"	"2006"	Suppressed	73362	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2007"	"2007"	Suppressed	73482	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2008"	"2008"	Suppressed	73522	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2009"	"2009"	Suppressed	73372	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2010"	"2010"	Suppressed	73240	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2011"	"2011"	10	73400	Unreliable
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2012"	"2012"	Suppressed	73999	Suppressed
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2013"	"2013"	20	73878	27.1
+	"Louisiana"	"22"	"Iberia Parish, LA"	"22045"	"2014"	"2014"	Suppressed	73913	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2006"	"2006"	Suppressed	33519	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2007"	"2007"	Suppressed	33603	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2008"	"2008"	Suppressed	33685	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2009"	"2009"	Suppressed	33393	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2010"	"2010"	Suppressed	33387	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2011"	"2011"	Suppressed	33230	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2012"	"2012"	Suppressed	33228	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2013"	"2013"	Suppressed	33367	Suppressed
+	"Louisiana"	"22"	"Iberville Parish, LA"	"22047"	"2014"	"2014"	Suppressed	33327	Suppressed
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2006"	"2006"	Suppressed	15950	Suppressed
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2007"	"2007"	0	15922	Unreliable
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2008"	"2008"	Suppressed	16105	Suppressed
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2009"	"2009"	0	16118	Unreliable
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2010"	"2010"	Suppressed	16274	Suppressed
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2011"	"2011"	0	16323	Unreliable
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2012"	"2012"	0	16216	Unreliable
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2013"	"2013"	Suppressed	16112	Suppressed
+	"Louisiana"	"22"	"Jackson Parish, LA"	"22049"	"2014"	"2014"	Suppressed	15994	Suppressed
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2006"	"2006"	121	426285	28.4
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2007"	"2007"	126	432683	29.1
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2008"	"2008"	91	431759	21.1
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2009"	"2009"	78	431921	18.1
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2010"	"2010"	64	432552	14.8
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2011"	"2011"	87	432640	20.1
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2012"	"2012"	87	433676	20.1
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2013"	"2013"	126	434767	29.0
+	"Louisiana"	"22"	"Jefferson Parish, LA"	"22051"	"2014"	"2014"	111	435716	25.5
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2006"	"2006"	Suppressed	31489	Suppressed
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2007"	"2007"	12	31379	Unreliable
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2008"	"2008"	10	31497	Unreliable
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2009"	"2009"	Suppressed	31530	Suppressed
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2010"	"2010"	10	31594	Unreliable
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2011"	"2011"	Suppressed	31694	Suppressed
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2012"	"2012"	Suppressed	31432	Suppressed
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2013"	"2013"	Suppressed	31301	Suppressed
+	"Louisiana"	"22"	"Jefferson Davis Parish, LA"	"22053"	"2014"	"2014"	Suppressed	31477	Suppressed
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2006"	"2006"	41	209424	19.6
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2007"	"2007"	42	211826	19.8
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2008"	"2008"	27	215139	12.6
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2009"	"2009"	29	219466	13.2
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2010"	"2010"	32	221578	14.4
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2011"	"2011"	29	224390	12.9
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2012"	"2012"	37	227055	16.3
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2013"	"2013"	30	230845	13.0
+	"Louisiana"	"22"	"Lafayette Parish, LA"	"22055"	"2014"	"2014"	32	235644	13.6
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2006"	"2006"	Suppressed	94385	Suppressed
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2007"	"2007"	14	94745	Unreliable
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2008"	"2008"	10	95603	Unreliable
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2009"	"2009"	Suppressed	96080	Suppressed
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2010"	"2010"	23	96318	23.9
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2011"	"2011"	16	96666	Unreliable
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2012"	"2012"	12	97029	Unreliable
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2013"	"2013"	16	97141	Unreliable
+	"Louisiana"	"22"	"Lafourche Parish, LA"	"22057"	"2014"	"2014"	26	98020	26.5
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2006"	"2006"	Suppressed	14519	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2007"	"2007"	Suppressed	14570	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2008"	"2008"	Suppressed	14667	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2009"	"2009"	Suppressed	14717	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2010"	"2010"	Suppressed	14890	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2011"	"2011"	Suppressed	14985	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2012"	"2012"	Suppressed	14927	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2013"	"2013"	Suppressed	14777	Suppressed
+	"Louisiana"	"22"	"LaSalle Parish, LA"	"22059"	"2014"	"2014"	Suppressed	14839	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2006"	"2006"	Suppressed	44867	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2007"	"2007"	Suppressed	45323	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2008"	"2008"	Suppressed	45726	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2009"	"2009"	Suppressed	46270	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2010"	"2010"	0	46735	Unreliable
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2011"	"2011"	Suppressed	46856	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2012"	"2012"	0	46953	Unreliable
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2013"	"2013"	Suppressed	47414	Suppressed
+	"Louisiana"	"22"	"Lincoln Parish, LA"	"22061"	"2014"	"2014"	Suppressed	47617	Suppressed
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2006"	"2006"	29	115722	25.1
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2007"	"2007"	26	119528	21.8
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2008"	"2008"	32	123962	25.8
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2009"	"2009"	26	126230	20.6
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2010"	"2010"	36	128026	28.1
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2011"	"2011"	37	130251	28.4
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2012"	"2012"	25	131942	18.9
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2013"	"2013"	37	134053	27.6
+	"Louisiana"	"22"	"Livingston Parish, LA"	"22063"	"2014"	"2014"	34	135751	25.0
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2006"	"2006"	0	12537	Unreliable
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2007"	"2007"	Suppressed	12410	Suppressed
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2008"	"2008"	0	12340	Unreliable
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2009"	"2009"	0	12040	Unreliable
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2010"	"2010"	0	12093	Unreliable
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2011"	"2011"	Suppressed	12004	Suppressed
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2012"	"2012"	Suppressed	12154	Suppressed
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2013"	"2013"	0	11927	Unreliable
+	"Louisiana"	"22"	"Madison Parish, LA"	"22065"	"2014"	"2014"	0	11843	Unreliable
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2006"	"2006"	Suppressed	29079	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2007"	"2007"	Suppressed	28478	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2008"	"2008"	0	28311	Unreliable
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2009"	"2009"	Suppressed	28147	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2010"	"2010"	Suppressed	27979	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2011"	"2011"	Suppressed	27608	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2012"	"2012"	Suppressed	27559	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2013"	"2013"	Suppressed	27057	Suppressed
+	"Louisiana"	"22"	"Morehouse Parish, LA"	"22067"	"2014"	"2014"	Suppressed	26760	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2006"	"2006"	Suppressed	38984	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2007"	"2007"	Suppressed	39114	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2008"	"2008"	Suppressed	39244	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2009"	"2009"	Suppressed	39425	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2010"	"2010"	Suppressed	39566	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2011"	"2011"	Suppressed	39442	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2012"	"2012"	0	39436	Unreliable
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2013"	"2013"	Suppressed	39138	Suppressed
+	"Louisiana"	"22"	"Natchitoches Parish, LA"	"22069"	"2014"	"2014"	Suppressed	39166	Suppressed
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2006"	"2006"	35	230172	15.2
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2007"	"2007"	50	268751	18.6
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2008"	"2008"	54	301842	17.9
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2009"	"2009"	49	327803	14.9
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2010"	"2010"	19	343829	Unreliable
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2011"	"2011"	43	360740	11.9
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2012"	"2012"	72	369250	19.5
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2013"	"2013"	116	378715	30.6
+	"Louisiana"	"22"	"Orleans Parish, LA"	"22071"	"2014"	"2014"	110	384320	28.6
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2006"	"2006"	18	151183	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2007"	"2007"	19	151157	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2008"	"2008"	19	151727	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2009"	"2009"	18	153058	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2010"	"2010"	13	153720	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2011"	"2011"	10	154919	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2012"	"2012"	19	155363	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2013"	"2013"	17	156220	Unreliable
+	"Louisiana"	"22"	"Ouachita Parish, LA"	"22073"	"2014"	"2014"	16	156325	Unreliable
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2006"	"2006"	Suppressed	22329	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2007"	"2007"	Suppressed	22709	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2008"	"2008"	Suppressed	22677	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2009"	"2009"	Suppressed	22730	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2010"	"2010"	Suppressed	23042	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2011"	"2011"	Suppressed	23628	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2012"	"2012"	Suppressed	23921	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2013"	"2013"	Suppressed	23550	Suppressed
+	"Louisiana"	"22"	"Plaquemines Parish, LA"	"22075"	"2014"	"2014"	Suppressed	23447	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2006"	"2006"	Suppressed	22754	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2007"	"2007"	Suppressed	22848	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2008"	"2008"	Suppressed	22966	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2009"	"2009"	0	22847	Unreliable
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2010"	"2010"	Suppressed	22802	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2011"	"2011"	Suppressed	22703	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2012"	"2012"	Suppressed	22726	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2013"	"2013"	Suppressed	22499	Suppressed
+	"Louisiana"	"22"	"Pointe Coupee Parish, LA"	"22077"	"2014"	"2014"	Suppressed	22406	Suppressed
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2006"	"2006"	Suppressed	130103	Suppressed
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2007"	"2007"	Suppressed	130238	Suppressed
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2008"	"2008"	Suppressed	130785	Suppressed
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2009"	"2009"	11	131095	Unreliable
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2010"	"2010"	18	131613	Unreliable
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2011"	"2011"	20	132374	15.1
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2012"	"2012"	12	132373	Unreliable
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2013"	"2013"	18	132723	Unreliable
+	"Louisiana"	"22"	"Rapides Parish, LA"	"22079"	"2014"	"2014"	17	132488	Unreliable
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2006"	"2006"	Suppressed	9281	Suppressed
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2007"	"2007"	0	9245	Unreliable
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2008"	"2008"	Suppressed	9185	Suppressed
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2009"	"2009"	Suppressed	9117	Suppressed
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2010"	"2010"	Suppressed	9091	Suppressed
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2011"	"2011"	0	8890	Unreliable
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2012"	"2012"	0	8983	Unreliable
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2013"	"2013"	Suppressed	8894	Suppressed
+	"Louisiana"	"22"	"Red River Parish, LA"	"22081"	"2014"	"2014"	0	8669	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2006"	"2006"	Suppressed	20661	Suppressed
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2007"	"2007"	0	20670	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2008"	"2008"	0	20727	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2009"	"2009"	0	20664	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2010"	"2010"	0	20725	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2011"	"2011"	0	20938	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2012"	"2012"	0	20921	Unreliable
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2013"	"2013"	Suppressed	20857	Suppressed
+	"Louisiana"	"22"	"Richland Parish, LA"	"22083"	"2014"	"2014"	Suppressed	20740	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2006"	"2006"	Suppressed	23954	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2007"	"2007"	Suppressed	24090	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2008"	"2008"	Suppressed	24124	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2009"	"2009"	Suppressed	24199	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2010"	"2010"	Suppressed	24233	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2011"	"2011"	Suppressed	24526	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2012"	"2012"	Suppressed	24325	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2013"	"2013"	Suppressed	24235	Suppressed
+	"Louisiana"	"22"	"Sabine Parish, LA"	"22085"	"2014"	"2014"	Suppressed	24199	Suppressed
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2006"	"2006"	14	16563	Unreliable
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2007"	"2007"	15	23613	Unreliable
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2008"	"2008"	21	28879	72.7
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2009"	"2009"	14	32878	Unreliable
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2010"	"2010"	11	35897	Unreliable
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2011"	"2011"	Suppressed	39558	Suppressed
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2012"	"2012"	15	41635	Unreliable
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2013"	"2013"	22	43482	50.6
+	"Louisiana"	"22"	"St. Bernard Parish, LA"	"22087"	"2014"	"2014"	Suppressed	44409	Suppressed
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2006"	"2006"	11	52453	Unreliable
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2007"	"2007"	11	52765	Unreliable
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2008"	"2008"	10	52516	Unreliable
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2009"	"2009"	Suppressed	52719	Suppressed
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2010"	"2010"	Suppressed	52780	Suppressed
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2011"	"2011"	Suppressed	52517	Suppressed
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2012"	"2012"	Suppressed	52681	Suppressed
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2013"	"2013"	14	52617	Unreliable
+	"Louisiana"	"22"	"St. Charles Parish, LA"	"22089"	"2014"	"2014"	Suppressed	52745	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2006"	"2006"	0	11089	Unreliable
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2007"	"2007"	Suppressed	11070	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2008"	"2008"	Suppressed	11106	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2009"	"2009"	Suppressed	11154	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2010"	"2010"	Suppressed	11203	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2011"	"2011"	Suppressed	10949	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2012"	"2012"	0	11071	Unreliable
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2013"	"2013"	Suppressed	10875	Suppressed
+	"Louisiana"	"22"	"St. Helena Parish, LA"	"22091"	"2014"	"2014"	Suppressed	10619	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2006"	"2006"	Suppressed	21964	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2007"	"2007"	0	22164	Unreliable
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2008"	"2008"	Suppressed	22095	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2009"	"2009"	0	22231	Unreliable
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2010"	"2010"	Suppressed	22102	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2011"	"2011"	Suppressed	21784	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2012"	"2012"	Suppressed	21722	Suppressed
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2013"	"2013"	0	21752	Unreliable
+	"Louisiana"	"22"	"St. James Parish, LA"	"22093"	"2014"	"2014"	Suppressed	21638	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2006"	"2006"	Suppressed	47296	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2007"	"2007"	Suppressed	47386	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2008"	"2008"	Suppressed	46811	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2009"	"2009"	Suppressed	46336	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2010"	"2010"	10	45924	Unreliable
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2011"	"2011"	Suppressed	45221	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2012"	"2012"	Suppressed	44758	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2013"	"2013"	Suppressed	43761	Suppressed
+	"Louisiana"	"22"	"St. John the Baptist Parish, LA"	"22095"	"2014"	"2014"	Suppressed	43745	Suppressed
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2006"	"2006"	23	85128	27.0
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2007"	"2007"	16	84710	Unreliable
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2008"	"2008"	17	84427	Unreliable
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2009"	"2009"	Suppressed	83825	Suppressed
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2010"	"2010"	10	83384	Unreliable
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2011"	"2011"	Suppressed	83552	Suppressed
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2012"	"2012"	Suppressed	83662	Suppressed
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2013"	"2013"	Suppressed	83454	Suppressed
+	"Louisiana"	"22"	"St. Landry Parish, LA"	"22097"	"2014"	"2014"	10	83709	Unreliable
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2006"	"2006"	Suppressed	51044	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2007"	"2007"	Suppressed	51410	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2008"	"2008"	Suppressed	51914	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2009"	"2009"	Suppressed	52025	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2010"	"2010"	Suppressed	52160	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2011"	"2011"	Suppressed	52917	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2012"	"2012"	Suppressed	52726	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2013"	"2013"	Suppressed	52936	Suppressed
+	"Louisiana"	"22"	"St. Martin Parish, LA"	"22099"	"2014"	"2014"	Suppressed	53315	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2006"	"2006"	Suppressed	54152	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2007"	"2007"	Suppressed	54104	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2008"	"2008"	11	54352	Unreliable
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2009"	"2009"	12	54551	Unreliable
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2010"	"2010"	Suppressed	54650	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2011"	"2011"	Suppressed	54210	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2012"	"2012"	Suppressed	53697	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2013"	"2013"	Suppressed	53543	Suppressed
+	"Louisiana"	"22"	"St. Mary Parish, LA"	"22101"	"2014"	"2014"	Suppressed	53162	Suppressed
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2006"	"2006"	70	223133	31.4
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2007"	"2007"	65	226294	28.7
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2008"	"2008"	56	229252	24.4
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2009"	"2009"	36	231224	15.6
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2010"	"2010"	47	233740	20.1
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2011"	"2011"	48	236785	20.3
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2012"	"2012"	44	239453	18.4
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2013"	"2013"	72	242333	29.7
+	"Louisiana"	"22"	"St. Tammany Parish, LA"	"22103"	"2014"	"2014"	69	245829	28.1
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2006"	"2006"	26	114102	22.8
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2007"	"2007"	28	116792	24.0
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2008"	"2008"	23	118621	19.4
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2009"	"2009"	22	120009	18.3
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2010"	"2010"	30	121097	24.8
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2011"	"2011"	21	122571	17.1
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2012"	"2012"	11	123441	Unreliable
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2013"	"2013"	20	125412	15.9
+	"Louisiana"	"22"	"Tangipahoa Parish, LA"	"22105"	"2014"	"2014"	28	127049	22.0
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2006"	"2006"	Suppressed	5719	Suppressed
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2007"	"2007"	Suppressed	5513	Suppressed
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2008"	"2008"	0	5376	Unreliable
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2009"	"2009"	0	5311	Unreliable
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2010"	"2010"	Suppressed	5252	Suppressed
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2011"	"2011"	0	5066	Unreliable
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2012"	"2012"	Suppressed	4954	Suppressed
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2013"	"2013"	0	4908	Unreliable
+	"Louisiana"	"22"	"Tensas Parish, LA"	"22107"	"2014"	"2014"	0	4830	Unreliable
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2006"	"2006"	20	109994	18.2
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2007"	"2007"	17	110656	Unreliable
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2008"	"2008"	16	111453	Unreliable
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2009"	"2009"	12	111689	Unreliable
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2010"	"2010"	23	111860	20.6
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2011"	"2011"	21	111917	18.8
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2012"	"2012"	19	111893	Unreliable
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2013"	"2013"	22	112749	19.5
+	"Louisiana"	"22"	"Terrebonne Parish, LA"	"22109"	"2014"	"2014"	22	113328	19.4
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2006"	"2006"	Suppressed	22919	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2007"	"2007"	Suppressed	22770	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2008"	"2008"	Suppressed	22698	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2009"	"2009"	Suppressed	22609	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2010"	"2010"	0	22721	Unreliable
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2011"	"2011"	Suppressed	22732	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2012"	"2012"	Suppressed	22419	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2013"	"2013"	Suppressed	22344	Suppressed
+	"Louisiana"	"22"	"Union Parish, LA"	"22111"	"2014"	"2014"	Suppressed	22539	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2006"	"2006"	Suppressed	56388	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2007"	"2007"	12	56835	Unreliable
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2008"	"2008"	Suppressed	57421	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2009"	"2009"	Suppressed	57684	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2010"	"2010"	Suppressed	57999	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2011"	"2011"	Suppressed	58276	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2012"	"2012"	Suppressed	58723	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2013"	"2013"	Suppressed	59253	Suppressed
+	"Louisiana"	"22"	"Vermilion Parish, LA"	"22113"	"2014"	"2014"	Suppressed	59616	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2006"	"2006"	Suppressed	50781	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2007"	"2007"	Suppressed	49796	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2008"	"2008"	Suppressed	48007	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2009"	"2009"	Suppressed	50903	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2010"	"2010"	Suppressed	52334	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2011"	"2011"	Suppressed	52107	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2012"	"2012"	Suppressed	53869	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2013"	"2013"	Suppressed	52606	Suppressed
+	"Louisiana"	"22"	"Vernon Parish, LA"	"22115"	"2014"	"2014"	Suppressed	52132	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2006"	"2006"	Suppressed	45157	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2007"	"2007"	15	46376	Unreliable
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2008"	"2008"	Suppressed	47000	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2009"	"2009"	Suppressed	47262	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2010"	"2010"	Suppressed	47168	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2011"	"2011"	Suppressed	47139	Suppressed
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2012"	"2012"	15	46670	Unreliable
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2013"	"2013"	14	46419	Unreliable
+	"Louisiana"	"22"	"Washington Parish, LA"	"22117"	"2014"	"2014"	13	46286	Unreliable
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2006"	"2006"	Suppressed	41331	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2007"	"2007"	10	41275	Unreliable
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2008"	"2008"	Suppressed	41240	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2009"	"2009"	Suppressed	41131	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2010"	"2010"	Suppressed	41207	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2011"	"2011"	Suppressed	41288	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2012"	"2012"	Suppressed	40940	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2013"	"2013"	Suppressed	40678	Suppressed
+	"Louisiana"	"22"	"Webster Parish, LA"	"22119"	"2014"	"2014"	Suppressed	40333	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2006"	"2006"	Suppressed	22666	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2007"	"2007"	Suppressed	23184	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2008"	"2008"	Suppressed	23252	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2009"	"2009"	Suppressed	23352	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2010"	"2010"	Suppressed	23788	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2011"	"2011"	Suppressed	24109	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2012"	"2012"	Suppressed	24106	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2013"	"2013"	Suppressed	24573	Suppressed
+	"Louisiana"	"22"	"West Baton Rouge Parish, LA"	"22121"	"2014"	"2014"	Suppressed	25085	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2006"	"2006"	Suppressed	11851	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2007"	"2007"	Suppressed	11708	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2008"	"2008"	Suppressed	11670	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2009"	"2009"	0	11633	Unreliable
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2010"	"2010"	Suppressed	11604	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2011"	"2011"	0	11569	Unreliable
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2012"	"2012"	Suppressed	11512	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2013"	"2013"	Suppressed	11465	Suppressed
+	"Louisiana"	"22"	"West Carroll Parish, LA"	"22123"	"2014"	"2014"	Suppressed	11525	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2006"	"2006"	Suppressed	15736	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2007"	"2007"	Suppressed	15655	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2008"	"2008"	Suppressed	15767	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2009"	"2009"	Suppressed	15639	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2010"	"2010"	0	15625	Unreliable
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2011"	"2011"	Suppressed	15460	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2012"	"2012"	Suppressed	15405	Suppressed
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2013"	"2013"	0	15444	Unreliable
+	"Louisiana"	"22"	"West Feliciana Parish, LA"	"22125"	"2014"	"2014"	Suppressed	15406	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2006"	"2006"	Suppressed	15720	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2007"	"2007"	Suppressed	15588	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2008"	"2008"	Suppressed	15398	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2009"	"2009"	Suppressed	15393	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2010"	"2010"	Suppressed	15313	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2011"	"2011"	Suppressed	15080	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2012"	"2012"	Suppressed	15000	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2013"	"2013"	Suppressed	14813	Suppressed
+	"Louisiana"	"22"	"Winn Parish, LA"	"22127"	"2014"	"2014"	0	14743	Unreliable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Louisiana (22)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:34:11 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:34:11 PM"
+"---"
+Footnotes:
+"1. Deaths for Allen Parish, Louisiana are under reported in years 2006 through 2008. See Caveats below for more information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths for Allen Parish, Louisiana (FIPS code 22003] in years 2006 through 2008 are under reported due to problems with"
+"registering the deaths with the Louisiana Vital Statistics Office."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"5. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

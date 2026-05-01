@@ -1,0 +1,660 @@
+"Notes"	"State"	"State Code"	"County"	"County Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2006"	"2006"	Suppressed	51328	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2007"	"2007"	Suppressed	52405	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2008"	"2008"	Suppressed	53277	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2009"	"2009"	Suppressed	54135	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2010"	"2010"	Suppressed	54571	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2011"	"2011"	Suppressed	55267	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2012"	"2012"	Suppressed	55514	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2013"	"2013"	Suppressed	55246	Suppressed
+	"Alabama"	"01"	"Autauga County, AL"	"01001"	"2014"	"2014"	Suppressed	55395	Suppressed
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2006"	"2006"	21	168121	12.5
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2007"	"2007"	28	172404	16.2
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2008"	"2008"	27	175827	15.4
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2009"	"2009"	32	179406	17.8
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2010"	"2010"	26	182265	14.3
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2011"	"2011"	24	186717	12.9
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2012"	"2012"	34	190790	17.8
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2013"	"2013"	22	195540	11.3
+	"Alabama"	"01"	"Baldwin County, AL"	"01003"	"2014"	"2014"	38	200111	19.0
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2006"	"2006"	Suppressed	27861	Suppressed
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2007"	"2007"	0	27757	Unreliable
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2008"	"2008"	0	27808	Unreliable
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2009"	"2009"	Suppressed	27657	Suppressed
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2010"	"2010"	Suppressed	27457	Suppressed
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2011"	"2011"	Suppressed	27119	Suppressed
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2012"	"2012"	0	27201	Unreliable
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2013"	"2013"	Suppressed	27076	Suppressed
+	"Alabama"	"01"	"Barbour County, AL"	"01005"	"2014"	"2014"	Suppressed	26887	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2006"	"2006"	Suppressed	22099	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2007"	"2007"	Suppressed	22438	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2008"	"2008"	Suppressed	22705	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2009"	"2009"	Suppressed	22941	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2010"	"2010"	Suppressed	22915	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2011"	"2011"	Suppressed	22766	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2012"	"2012"	Suppressed	22597	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2013"	"2013"	Suppressed	22512	Suppressed
+	"Alabama"	"01"	"Bibb County, AL"	"01007"	"2014"	"2014"	Suppressed	22506	Suppressed
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2006"	"2006"	Suppressed	55485	Suppressed
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2007"	"2007"	Suppressed	56240	Suppressed
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2008"	"2008"	17	57055	Unreliable
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2009"	"2009"	11	57341	Unreliable
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2010"	"2010"	10	57322	Unreliable
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2011"	"2011"	Suppressed	57677	Suppressed
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2012"	"2012"	17	57826	Unreliable
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2013"	"2013"	13	57872	Unreliable
+	"Alabama"	"01"	"Blount County, AL"	"01009"	"2014"	"2014"	12	57719	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2006"	"2006"	Suppressed	10776	Suppressed
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2007"	"2007"	0	11011	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2008"	"2008"	0	10953	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2009"	"2009"	0	10987	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2010"	"2010"	0	10914	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2011"	"2011"	Suppressed	10542	Suppressed
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2012"	"2012"	Suppressed	10474	Suppressed
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2013"	"2013"	0	10639	Unreliable
+	"Alabama"	"01"	"Bullock County, AL"	"01011"	"2014"	"2014"	Suppressed	10764	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2006"	"2006"	Suppressed	20815	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2007"	"2007"	Suppressed	20894	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2008"	"2008"	Suppressed	20949	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2009"	"2009"	Suppressed	20867	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2010"	"2010"	Suppressed	20947	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2011"	"2011"	Suppressed	20650	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2012"	"2012"	Suppressed	20307	Suppressed
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2013"	"2013"	0	20265	Unreliable
+	"Alabama"	"01"	"Butler County, AL"	"01013"	"2014"	"2014"	Suppressed	20296	Suppressed
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2006"	"2006"	Suppressed	115388	Suppressed
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2007"	"2007"	13	116211	Unreliable
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2008"	"2008"	21	117274	17.9
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2009"	"2009"	15	118363	Unreliable
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2010"	"2010"	21	118572	17.7
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2011"	"2011"	14	117797	Unreliable
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2012"	"2012"	Suppressed	117296	Suppressed
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2013"	"2013"	Suppressed	116736	Suppressed
+	"Alabama"	"01"	"Calhoun County, AL"	"01015"	"2014"	"2014"	19	115916	Unreliable
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2006"	"2006"	Suppressed	34945	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2007"	"2007"	Suppressed	34847	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2008"	"2008"	Suppressed	34563	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2009"	"2009"	Suppressed	34384	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2010"	"2010"	Suppressed	34215	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2011"	"2011"	Suppressed	33939	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2012"	"2012"	Suppressed	34064	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2013"	"2013"	Suppressed	34162	Suppressed
+	"Alabama"	"01"	"Chambers County, AL"	"01017"	"2014"	"2014"	Suppressed	34076	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2006"	"2006"	Suppressed	25466	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2007"	"2007"	Suppressed	25553	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2008"	"2008"	Suppressed	25636	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2009"	"2009"	0	25854	Unreliable
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2010"	"2010"	Suppressed	25989	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2011"	"2011"	Suppressed	26057	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2012"	"2012"	Suppressed	26021	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2013"	"2013"	Suppressed	26203	Suppressed
+	"Alabama"	"01"	"Cherokee County, AL"	"01019"	"2014"	"2014"	Suppressed	26037	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2006"	"2006"	13	42318	Unreliable
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2007"	"2007"	Suppressed	42881	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2008"	"2008"	Suppressed	43239	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2009"	"2009"	Suppressed	43484	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2010"	"2010"	11	43643	Unreliable
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2011"	"2011"	Suppressed	43895	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2012"	"2012"	Suppressed	43819	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2013"	"2013"	Suppressed	43951	Suppressed
+	"Alabama"	"01"	"Chilton County, AL"	"01021"	"2014"	"2014"	Suppressed	43931	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2006"	"2006"	0	14431	Unreliable
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2007"	"2007"	Suppressed	14216	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2008"	"2008"	Suppressed	14114	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2009"	"2009"	0	13976	Unreliable
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2010"	"2010"	Suppressed	13859	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2011"	"2011"	0	13609	Unreliable
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2012"	"2012"	Suppressed	13633	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2013"	"2013"	Suppressed	13426	Suppressed
+	"Alabama"	"01"	"Choctaw County, AL"	"01023"	"2014"	"2014"	0	13323	Unreliable
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2006"	"2006"	0	26755	Unreliable
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2007"	"2007"	Suppressed	26436	Suppressed
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2008"	"2008"	0	26283	Unreliable
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2009"	"2009"	0	26038	Unreliable
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2010"	"2010"	Suppressed	25833	Suppressed
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2011"	"2011"	Suppressed	25695	Suppressed
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2012"	"2012"	Suppressed	25161	Suppressed
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2013"	"2013"	Suppressed	25207	Suppressed
+	"Alabama"	"01"	"Clarke County, AL"	"01025"	"2014"	"2014"	Suppressed	24945	Suppressed
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2006"	"2006"	Suppressed	14053	Suppressed
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2007"	"2007"	0	14085	Unreliable
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2008"	"2008"	Suppressed	14161	Suppressed
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2009"	"2009"	Suppressed	14006	Suppressed
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2010"	"2010"	0	13932	Unreliable
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2011"	"2011"	0	13862	Unreliable
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2012"	"2012"	Suppressed	13435	Suppressed
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2013"	"2013"	0	13486	Unreliable
+	"Alabama"	"01"	"Clay County, AL"	"01027"	"2014"	"2014"	0	13552	Unreliable
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2006"	"2006"	Suppressed	14538	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2007"	"2007"	Suppressed	14799	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2008"	"2008"	Suppressed	14874	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2009"	"2009"	Suppressed	14918	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2010"	"2010"	Suppressed	14972	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2011"	"2011"	0	14835	Unreliable
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2012"	"2012"	Suppressed	14832	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2013"	"2013"	Suppressed	14994	Suppressed
+	"Alabama"	"01"	"Cleburne County, AL"	"01029"	"2014"	"2014"	Suppressed	15080	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2006"	"2006"	Suppressed	46228	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2007"	"2007"	Suppressed	47458	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2008"	"2008"	Suppressed	48516	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2009"	"2009"	Suppressed	49440	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2010"	"2010"	Suppressed	49948	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2011"	"2011"	Suppressed	50526	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2012"	"2012"	Suppressed	51252	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2013"	"2013"	Suppressed	50938	Suppressed
+	"Alabama"	"01"	"Coffee County, AL"	"01031"	"2014"	"2014"	Suppressed	50909	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2006"	"2006"	Suppressed	54413	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2007"	"2007"	Suppressed	54486	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2008"	"2008"	Suppressed	54473	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2009"	"2009"	Suppressed	54426	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2010"	"2010"	Suppressed	54428	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2011"	"2011"	Suppressed	54512	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2012"	"2012"	Suppressed	54446	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2013"	"2013"	Suppressed	54520	Suppressed
+	"Alabama"	"01"	"Colbert County, AL"	"01033"	"2014"	"2014"	Suppressed	54543	Suppressed
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2006"	"2006"	0	13603	Unreliable
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2007"	"2007"	Suppressed	13441	Suppressed
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2008"	"2008"	0	13388	Unreliable
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2009"	"2009"	Suppressed	13274	Suppressed
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2010"	"2010"	0	13228	Unreliable
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2011"	"2011"	Suppressed	13105	Suppressed
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2012"	"2012"	0	12981	Unreliable
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2013"	"2013"	Suppressed	12887	Suppressed
+	"Alabama"	"01"	"Conecuh County, AL"	"01035"	"2014"	"2014"	Suppressed	12670	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2006"	"2006"	Suppressed	11451	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2007"	"2007"	Suppressed	11439	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2008"	"2008"	0	11493	Unreliable
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2009"	"2009"	Suppressed	11410	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2010"	"2010"	Suppressed	11539	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2011"	"2011"	Suppressed	10713	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2012"	"2012"	Suppressed	10966	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2013"	"2013"	Suppressed	10898	Suppressed
+	"Alabama"	"01"	"Coosa County, AL"	"01037"	"2014"	"2014"	0	10886	Unreliable
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2006"	"2006"	Suppressed	37441	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2007"	"2007"	0	37631	Unreliable
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2008"	"2008"	Suppressed	37545	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2009"	"2009"	Suppressed	37648	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2010"	"2010"	Suppressed	37765	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2011"	"2011"	Suppressed	38058	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2012"	"2012"	Suppressed	37955	Suppressed
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2013"	"2013"	0	37886	Unreliable
+	"Alabama"	"01"	"Covington County, AL"	"01039"	"2014"	"2014"	Suppressed	37914	Suppressed
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2006"	"2006"	Suppressed	13880	Suppressed
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2007"	"2007"	0	13956	Unreliable
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2008"	"2008"	0	13922	Unreliable
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2009"	"2009"	Suppressed	14024	Suppressed
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2010"	"2010"	0	13906	Unreliable
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2011"	"2011"	Suppressed	13911	Suppressed
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2012"	"2012"	0	14083	Unreliable
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2013"	"2013"	0	13986	Unreliable
+	"Alabama"	"01"	"Crenshaw County, AL"	"01041"	"2014"	"2014"	Suppressed	13977	Suppressed
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2006"	"2006"	Suppressed	79044	Suppressed
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2007"	"2007"	Suppressed	79576	Suppressed
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2008"	"2008"	11	80273	Unreliable
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2009"	"2009"	Suppressed	80351	Suppressed
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2010"	"2010"	Suppressed	80406	Suppressed
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2011"	"2011"	10	80536	Unreliable
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2012"	"2012"	12	80440	Unreliable
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2013"	"2013"	16	80811	Unreliable
+	"Alabama"	"01"	"Cullman County, AL"	"01043"	"2014"	"2014"	30	81289	36.9
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2006"	"2006"	Suppressed	49077	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2007"	"2007"	Suppressed	49488	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2008"	"2008"	Suppressed	49871	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2009"	"2009"	Suppressed	49854	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2010"	"2010"	Suppressed	50251	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2011"	"2011"	Suppressed	50044	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2012"	"2012"	Suppressed	50444	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2013"	"2013"	Suppressed	49884	Suppressed
+	"Alabama"	"01"	"Dale County, AL"	"01045"	"2014"	"2014"	Suppressed	49484	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2006"	"2006"	Suppressed	44323	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2007"	"2007"	Suppressed	44194	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2008"	"2008"	Suppressed	44265	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2009"	"2009"	Suppressed	43759	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2010"	"2010"	Suppressed	43820	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2011"	"2011"	Suppressed	43332	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2012"	"2012"	Suppressed	42864	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2013"	"2013"	Suppressed	41996	Suppressed
+	"Alabama"	"01"	"Dallas County, AL"	"01047"	"2014"	"2014"	Suppressed	41711	Suppressed
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2006"	"2006"	Suppressed	68495	Suppressed
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2007"	"2007"	11	69450	Unreliable
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2008"	"2008"	11	70228	Unreliable
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2009"	"2009"	14	70864	Unreliable
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2010"	"2010"	Suppressed	71109	Suppressed
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2011"	"2011"	11	71375	Unreliable
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2012"	"2012"	16	71080	Unreliable
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2013"	"2013"	23	71013	32.4
+	"Alabama"	"01"	"DeKalb County, AL"	"01049"	"2014"	"2014"	Suppressed	71065	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2006"	"2006"	Suppressed	75246	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2007"	"2007"	Suppressed	77124	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2008"	"2008"	Suppressed	77698	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2009"	"2009"	Suppressed	78632	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2010"	"2010"	Suppressed	79303	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2011"	"2011"	Suppressed	80162	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2012"	"2012"	Suppressed	80629	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2013"	"2013"	Suppressed	80902	Suppressed
+	"Alabama"	"01"	"Elmore County, AL"	"01051"	"2014"	"2014"	10	80977	Unreliable
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2006"	"2006"	Suppressed	37673	Suppressed
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2007"	"2007"	Suppressed	37839	Suppressed
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2008"	"2008"	Suppressed	37929	Suppressed
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2009"	"2009"	17	38249	Unreliable
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2010"	"2010"	10	38319	Unreliable
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2011"	"2011"	16	38095	Unreliable
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2012"	"2012"	Suppressed	37994	Suppressed
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2013"	"2013"	13	37983	Unreliable
+	"Alabama"	"01"	"Escambia County, AL"	"01053"	"2014"	"2014"	13	37733	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2006"	"2006"	10	103528	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2007"	"2007"	13	103893	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2008"	"2008"	20	104206	19.2
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2009"	"2009"	15	104239	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2010"	"2010"	12	104430	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2011"	"2011"	15	104303	Unreliable
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2012"	"2012"	Suppressed	104392	Suppressed
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2013"	"2013"	21	103931	20.2
+	"Alabama"	"01"	"Etowah County, AL"	"01055"	"2014"	"2014"	18	103531	Unreliable
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2006"	"2006"	Suppressed	17767	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2007"	"2007"	Suppressed	17523	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2008"	"2008"	Suppressed	17541	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2009"	"2009"	0	17310	Unreliable
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2010"	"2010"	Suppressed	17241	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2011"	"2011"	Suppressed	17182	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2012"	"2012"	Suppressed	16983	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2013"	"2013"	Suppressed	16909	Suppressed
+	"Alabama"	"01"	"Fayette County, AL"	"01057"	"2014"	"2014"	Suppressed	16874	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2006"	"2006"	Suppressed	31134	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2007"	"2007"	Suppressed	31004	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2008"	"2008"	Suppressed	31459	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2009"	"2009"	Suppressed	31589	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2010"	"2010"	Suppressed	31704	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2011"	"2011"	Suppressed	31884	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2012"	"2012"	Suppressed	31761	Suppressed
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2013"	"2013"	10	31532	Unreliable
+	"Alabama"	"01"	"Franklin County, AL"	"01059"	"2014"	"2014"	Suppressed	31601	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2006"	"2006"	0	26271	Unreliable
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2007"	"2007"	Suppressed	26322	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2008"	"2008"	0	26646	Unreliable
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2009"	"2009"	Suppressed	26653	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2010"	"2010"	Suppressed	26790	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2011"	"2011"	Suppressed	26781	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2012"	"2012"	Suppressed	26931	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2013"	"2013"	Suppressed	26727	Suppressed
+	"Alabama"	"01"	"Geneva County, AL"	"01061"	"2014"	"2014"	0	26712	Unreliable
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2006"	"2006"	Suppressed	9361	Suppressed
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2007"	"2007"	Suppressed	9385	Suppressed
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2008"	"2008"	0	9359	Unreliable
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2009"	"2009"	0	9182	Unreliable
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2010"	"2010"	0	9045	Unreliable
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2011"	"2011"	0	8921	Unreliable
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2012"	"2012"	Suppressed	8876	Suppressed
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2013"	"2013"	Suppressed	8744	Suppressed
+	"Alabama"	"01"	"Greene County, AL"	"01063"	"2014"	"2014"	0	8553	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2006"	"2006"	0	16427	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2007"	"2007"	0	16418	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2008"	"2008"	0	16260	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2009"	"2009"	0	16025	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2010"	"2010"	Suppressed	15760	Suppressed
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2011"	"2011"	Suppressed	15421	Suppressed
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2012"	"2012"	0	15388	Unreliable
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2013"	"2013"	Suppressed	15406	Suppressed
+	"Alabama"	"01"	"Hale County, AL"	"01065"	"2014"	"2014"	Suppressed	15184	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2006"	"2006"	Suppressed	16953	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2007"	"2007"	Suppressed	17108	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2008"	"2008"	Suppressed	17129	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2009"	"2009"	Suppressed	17243	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2010"	"2010"	0	17302	Unreliable
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2011"	"2011"	0	17412	Unreliable
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2012"	"2012"	Suppressed	17287	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2013"	"2013"	Suppressed	17296	Suppressed
+	"Alabama"	"01"	"Henry County, AL"	"01067"	"2014"	"2014"	0	17190	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2006"	"2006"	Suppressed	95846	Suppressed
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2007"	"2007"	10	97727	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2008"	"2008"	13	99183	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2009"	"2009"	11	100500	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2010"	"2010"	13	101547	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2011"	"2011"	13	102369	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2012"	"2012"	10	103402	Unreliable
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2013"	"2013"	20	103668	19.3
+	"Alabama"	"01"	"Houston County, AL"	"01069"	"2014"	"2014"	13	104193	Unreliable
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2006"	"2006"	Suppressed	53483	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2007"	"2007"	Suppressed	53333	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2008"	"2008"	Suppressed	53525	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2009"	"2009"	Suppressed	53461	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2010"	"2010"	Suppressed	53227	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2011"	"2011"	Suppressed	53291	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2012"	"2012"	13	53019	Unreliable
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2013"	"2013"	Suppressed	52951	Suppressed
+	"Alabama"	"01"	"Jackson County, AL"	"01071"	"2014"	"2014"	Suppressed	52665	Suppressed
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2006"	"2006"	65	655893	9.9
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2007"	"2007"	80	655163	12.2
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2008"	"2008"	75	656510	11.4
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2009"	"2009"	95	658441	14.4
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2010"	"2010"	60	658466	9.1
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2011"	"2011"	85	658931	12.9
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2012"	"2012"	72	660009	10.9
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2013"	"2013"	96	659479	14.6
+	"Alabama"	"01"	"Jefferson County, AL"	"01073"	"2014"	"2014"	175	660793	26.5
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2006"	"2006"	Suppressed	14816	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2007"	"2007"	Suppressed	14901	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2008"	"2008"	Suppressed	14799	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2009"	"2009"	Suppressed	14689	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2010"	"2010"	0	14564	Unreliable
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2011"	"2011"	Suppressed	14311	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2012"	"2012"	Suppressed	14259	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2013"	"2013"	Suppressed	14236	Suppressed
+	"Alabama"	"01"	"Lamar County, AL"	"01075"	"2014"	"2014"	0	14086	Unreliable
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2006"	"2006"	Suppressed	90294	Suppressed
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2007"	"2007"	18	91107	Unreliable
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2008"	"2008"	18	92202	Unreliable
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2009"	"2009"	Suppressed	92526	Suppressed
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2010"	"2010"	11	92709	Unreliable
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2011"	"2011"	12	92781	Unreliable
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2012"	"2012"	Suppressed	92542	Suppressed
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2013"	"2013"	Suppressed	92797	Suppressed
+	"Alabama"	"01"	"Lauderdale County, AL"	"01077"	"2014"	"2014"	Suppressed	93096	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2006"	"2006"	Suppressed	34028	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2007"	"2007"	Suppressed	34293	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2008"	"2008"	Suppressed	34196	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2009"	"2009"	10	34315	Unreliable
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2010"	"2010"	Suppressed	34339	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2011"	"2011"	Suppressed	34117	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2012"	"2012"	Suppressed	33838	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2013"	"2013"	Suppressed	33587	Suppressed
+	"Alabama"	"01"	"Lawrence County, AL"	"01079"	"2014"	"2014"	Suppressed	33477	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2006"	"2006"	Suppressed	129247	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2007"	"2007"	Suppressed	131934	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2008"	"2008"	Suppressed	134524	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2009"	"2009"	11	138566	Unreliable
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2010"	"2010"	Suppressed	140247	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2011"	"2011"	Suppressed	143468	Suppressed
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2012"	"2012"	10	147257	Unreliable
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2013"	"2013"	10	150933	Unreliable
+	"Alabama"	"01"	"Lee County, AL"	"01081"	"2014"	"2014"	12	154255	Unreliable
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2006"	"2006"	Suppressed	73651	Suppressed
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2007"	"2007"	Suppressed	76063	Suppressed
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2008"	"2008"	14	78835	Unreliable
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2009"	"2009"	12	81326	Unreliable
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2010"	"2010"	14	82782	Unreliable
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2011"	"2011"	10	85369	Unreliable
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2012"	"2012"	Suppressed	87654	Suppressed
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2013"	"2013"	Suppressed	88845	Suppressed
+	"Alabama"	"01"	"Limestone County, AL"	"01083"	"2014"	"2014"	Suppressed	90787	Suppressed
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2006"	"2006"	0	12124	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2007"	"2007"	0	11973	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2008"	"2008"	0	11813	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2009"	"2009"	Suppressed	11486	Suppressed
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2010"	"2010"	0	11299	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2011"	"2011"	Suppressed	11147	Suppressed
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2012"	"2012"	0	10857	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2013"	"2013"	0	10703	Unreliable
+	"Alabama"	"01"	"Lowndes County, AL"	"01085"	"2014"	"2014"	0	10580	Unreliable
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2006"	"2006"	0	22227	Unreliable
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2007"	"2007"	Suppressed	21942	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2008"	"2008"	Suppressed	21597	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2009"	"2009"	Suppressed	21190	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2010"	"2010"	0	21452	Unreliable
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2011"	"2011"	Suppressed	21182	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2012"	"2012"	Suppressed	20535	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2013"	"2013"	Suppressed	19688	Suppressed
+	"Alabama"	"01"	"Macon County, AL"	"01087"	"2014"	"2014"	Suppressed	19425	Suppressed
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2006"	"2006"	Suppressed	309170	Suppressed
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2007"	"2007"	14	315859	Unreliable
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2008"	"2008"	26	323526	8.0
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2009"	"2009"	31	330856	9.4
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2010"	"2010"	35	334811	10.5
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2011"	"2011"	30	340111	8.8
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2012"	"2012"	28	343080	8.2
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2013"	"2013"	23	346892	6.6
+	"Alabama"	"01"	"Madison County, AL"	"01089"	"2014"	"2014"	23	350299	6.6
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2006"	"2006"	Suppressed	21531	Suppressed
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2007"	"2007"	0	21475	Unreliable
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2008"	"2008"	0	21331	Unreliable
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2009"	"2009"	Suppressed	21170	Suppressed
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2010"	"2010"	Suppressed	21027	Suppressed
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2011"	"2011"	0	20692	Unreliable
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2012"	"2012"	Suppressed	20401	Suppressed
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2013"	"2013"	Suppressed	20155	Suppressed
+	"Alabama"	"01"	"Marengo County, AL"	"01091"	"2014"	"2014"	Suppressed	20110	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2006"	"2006"	Suppressed	30779	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2007"	"2007"	0	30849	Unreliable
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2008"	"2008"	Suppressed	30918	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2009"	"2009"	Suppressed	30646	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2010"	"2010"	Suppressed	30776	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2011"	"2011"	Suppressed	30663	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2012"	"2012"	Suppressed	30327	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2013"	"2013"	Suppressed	30334	Suppressed
+	"Alabama"	"01"	"Marion County, AL"	"01093"	"2014"	"2014"	0	30271	Unreliable
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2006"	"2006"	Suppressed	88209	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2007"	"2007"	Suppressed	89605	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2008"	"2008"	Suppressed	91072	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2009"	"2009"	Suppressed	92213	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2010"	"2010"	Suppressed	93019	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2011"	"2011"	Suppressed	94166	Suppressed
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2012"	"2012"	14	94776	Unreliable
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2013"	"2013"	16	94760	Unreliable
+	"Alabama"	"01"	"Marshall County, AL"	"01095"	"2014"	"2014"	21	94636	22.2
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2006"	"2006"	39	402916	9.7
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2007"	"2007"	62	405715	15.3
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2008"	"2008"	60	409196	14.7
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2009"	"2009"	61	411994	14.8
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2010"	"2010"	45	412992	10.9
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2011"	"2011"	48	412577	11.6
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2012"	"2012"	59	413936	14.3
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2013"	"2013"	64	414079	15.5
+	"Alabama"	"01"	"Mobile County, AL"	"01097"	"2014"	"2014"	56	415123	13.5
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2006"	"2006"	Suppressed	23602	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2007"	"2007"	Suppressed	23437	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2008"	"2008"	Suppressed	23393	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2009"	"2009"	Suppressed	23218	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2010"	"2010"	Suppressed	23068	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2011"	"2011"	Suppressed	22760	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2012"	"2012"	Suppressed	22602	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2013"	"2013"	Suppressed	22236	Suppressed
+	"Alabama"	"01"	"Monroe County, AL"	"01099"	"2014"	"2014"	Suppressed	21947	Suppressed
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2006"	"2006"	12	227291	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2007"	"2007"	11	227888	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2008"	"2008"	10	227461	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2009"	"2009"	12	227607	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2010"	"2010"	18	229363	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2011"	"2011"	Suppressed	232032	Suppressed
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2012"	"2012"	17	230149	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2013"	"2013"	10	226659	Unreliable
+	"Alabama"	"01"	"Montgomery County, AL"	"01101"	"2014"	"2014"	19	226189	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2006"	"2006"	17	115491	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2007"	"2007"	18	116397	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2008"	"2008"	22	117694	18.7
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2009"	"2009"	31	118954	26.1
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2010"	"2010"	18	119490	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2011"	"2011"	16	119953	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2012"	"2012"	20	120395	16.6
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2013"	"2013"	18	119787	Unreliable
+	"Alabama"	"01"	"Morgan County, AL"	"01103"	"2014"	"2014"	12	119607	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2006"	"2006"	0	10677	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2007"	"2007"	Suppressed	10774	Suppressed
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2008"	"2008"	0	10722	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2009"	"2009"	0	10690	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2010"	"2010"	Suppressed	10591	Suppressed
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2011"	"2011"	0	10373	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2012"	"2012"	0	10181	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2013"	"2013"	0	10020	Unreliable
+	"Alabama"	"01"	"Perry County, AL"	"01105"	"2014"	"2014"	0	9826	Unreliable
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2006"	"2006"	0	20128	Unreliable
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2007"	"2007"	Suppressed	19989	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2008"	"2008"	Suppressed	19951	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2009"	"2009"	Suppressed	19814	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2010"	"2010"	Suppressed	19746	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2011"	"2011"	Suppressed	19349	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2012"	"2012"	0	19405	Unreliable
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2013"	"2013"	Suppressed	19401	Suppressed
+	"Alabama"	"01"	"Pickens County, AL"	"01107"	"2014"	"2014"	Suppressed	20365	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2006"	"2006"	Suppressed	31309	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2007"	"2007"	0	31761	Unreliable
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2008"	"2008"	Suppressed	32149	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2009"	"2009"	Suppressed	32560	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2010"	"2010"	Suppressed	32899	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2011"	"2011"	Suppressed	32915	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2012"	"2012"	Suppressed	33182	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2013"	"2013"	Suppressed	33339	Suppressed
+	"Alabama"	"01"	"Pike County, AL"	"01109"	"2014"	"2014"	0	33389	Unreliable
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2006"	"2006"	Suppressed	22695	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2007"	"2007"	Suppressed	22662	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2008"	"2008"	Suppressed	22946	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2009"	"2009"	Suppressed	22864	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2010"	"2010"	Suppressed	22913	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2011"	"2011"	Suppressed	22787	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2012"	"2012"	Suppressed	22675	Suppressed
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2013"	"2013"	0	22727	Unreliable
+	"Alabama"	"01"	"Randolph County, AL"	"01111"	"2014"	"2014"	Suppressed	22539	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2006"	"2006"	Suppressed	50459	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2007"	"2007"	Suppressed	51074	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2008"	"2008"	10	51434	Unreliable
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2009"	"2009"	Suppressed	52162	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2010"	"2010"	Suppressed	52947	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2011"	"2011"	Suppressed	54572	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2012"	"2012"	Suppressed	57820	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2013"	"2013"	Suppressed	59585	Suppressed
+	"Alabama"	"01"	"Russell County, AL"	"01113"	"2014"	"2014"	Suppressed	59608	Suppressed
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2006"	"2006"	10	75948	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2007"	"2007"	11	79348	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2008"	"2008"	Suppressed	81223	Suppressed
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2009"	"2009"	12	83009	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2010"	"2010"	15	83593	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2011"	"2011"	18	84398	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2012"	"2012"	10	85237	Unreliable
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2013"	"2013"	22	86308	25.5
+	"Alabama"	"01"	"St. Clair County, AL"	"01115"	"2014"	"2014"	34	86697	39.2
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2006"	"2006"	18	178841	Unreliable
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2007"	"2007"	29	183491	15.8
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2008"	"2008"	45	188534	23.9
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2009"	"2009"	32	192708	16.6
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2010"	"2010"	26	195085	13.3
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2011"	"2011"	27	197936	13.6
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2012"	"2012"	38	200941	18.9
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2013"	"2013"	30	204180	14.7
+	"Alabama"	"01"	"Shelby County, AL"	"01117"	"2014"	"2014"	40	206655	19.4
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2006"	"2006"	0	14059	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2007"	"2007"	0	13926	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2008"	"2008"	0	13882	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2009"	"2009"	Suppressed	13746	Suppressed
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2010"	"2010"	0	13763	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2011"	"2011"	0	13478	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2012"	"2012"	0	13427	Unreliable
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2013"	"2013"	Suppressed	13361	Suppressed
+	"Alabama"	"01"	"Sumter County, AL"	"01119"	"2014"	"2014"	Suppressed	13166	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2006"	"2006"	10	81991	Unreliable
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2007"	"2007"	Suppressed	82226	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2008"	"2008"	Suppressed	82735	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2009"	"2009"	Suppressed	82674	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2010"	"2010"	Suppressed	82291	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2011"	"2011"	Suppressed	81664	Suppressed
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2012"	"2012"	10	81762	Unreliable
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2013"	"2013"	11	81096	Unreliable
+	"Alabama"	"01"	"Talladega County, AL"	"01121"	"2014"	"2014"	Suppressed	81322	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2006"	"2006"	Suppressed	41243	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2007"	"2007"	Suppressed	41414	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2008"	"2008"	Suppressed	41668	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2009"	"2009"	Suppressed	41831	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2010"	"2010"	Suppressed	41616	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2011"	"2011"	Suppressed	41623	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2012"	"2012"	Suppressed	41168	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2013"	"2013"	Suppressed	41203	Suppressed
+	"Alabama"	"01"	"Tallapoosa County, AL"	"01123"	"2014"	"2014"	Suppressed	41165	Suppressed
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2006"	"2006"	24	181383	13.2
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2007"	"2007"	31	184350	16.8
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2008"	"2008"	33	188093	17.5
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2009"	"2009"	32	192792	16.6
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2010"	"2010"	27	194656	13.9
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2011"	"2011"	22	197211	11.2
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2012"	"2012"	31	198596	15.6
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2013"	"2013"	33	200821	16.4
+	"Alabama"	"01"	"Tuscaloosa County, AL"	"01125"	"2014"	"2014"	24	202212	11.9
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2006"	"2006"	12	68234	Unreliable
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2007"	"2007"	20	67695	29.5
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2008"	"2008"	35	67835	51.6
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2009"	"2009"	32	67347	47.5
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2010"	"2010"	34	67023	50.7
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2011"	"2011"	37	66661	55.5
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2012"	"2012"	23	66221	34.7
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2013"	"2013"	26	65998	39.4
+	"Alabama"	"01"	"Walker County, AL"	"01127"	"2014"	"2014"	22	65471	33.6
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2006"	"2006"	Suppressed	17705	Suppressed
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2007"	"2007"	Suppressed	17491	Suppressed
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2008"	"2008"	Suppressed	17496	Suppressed
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2009"	"2009"	0	17493	Unreliable
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2010"	"2010"	Suppressed	17581	Suppressed
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2011"	"2011"	0	17344	Unreliable
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2012"	"2012"	0	17109	Unreliable
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2013"	"2013"	Suppressed	16877	Suppressed
+	"Alabama"	"01"	"Washington County, AL"	"01129"	"2014"	"2014"	Suppressed	16834	Suppressed
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2006"	"2006"	0	12221	Unreliable
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2007"	"2007"	Suppressed	12208	Suppressed
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2008"	"2008"	Suppressed	12148	Suppressed
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2009"	"2009"	0	11870	Unreliable
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2010"	"2010"	0	11670	Unreliable
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2011"	"2011"	Suppressed	11482	Suppressed
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2012"	"2012"	Suppressed	11431	Suppressed
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2013"	"2013"	0	11307	Unreliable
+	"Alabama"	"01"	"Wilcox County, AL"	"01131"	"2014"	"2014"	Suppressed	11098	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2006"	"2006"	Suppressed	24796	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2007"	"2007"	0	24858	Unreliable
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2008"	"2008"	Suppressed	24696	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2009"	"2009"	Suppressed	24691	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2010"	"2010"	Suppressed	24484	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2011"	"2011"	Suppressed	24327	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2012"	"2012"	Suppressed	24108	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2013"	"2013"	Suppressed	24146	Suppressed
+	"Alabama"	"01"	"Winston County, AL"	"01133"	"2014"	"2014"	Suppressed	24150	Suppressed
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Drug/Alcohol Induced Causes: Drug poisonings (overdose) Unintentional (X40-X44); Drug poisonings (overdose) Suicide (X60-X64);"
+"Drug poisonings (overdose) Homicide (X85); Drug poisonings (overdose) Undetermined (Y10-Y14)"
+"States: Alabama (01)"
+"Year/Month: 2006; 2007; 2008; 2009; 2010; 2011; 2012; 2013; 2014"
+"Group By: State; County; Year"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 1, 2026 7:09:20 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 1, 2026 7:09:20 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
