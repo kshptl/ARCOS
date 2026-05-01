@@ -60,11 +60,18 @@ export default function Methodology() {
             </dd>
             <dt>DEA Diversion Control</dt>
             <dd>
-              Annual enforcement summaries and notable actions.{" "}
-              <a href="https://www.deadiversion.usdoj.gov/pubs/reports/index.html">
-                View at deadiversion.usdoj.gov
-              </a>
-              . Public domain (17 USC §105).
+              Annual counts of <strong>DEA enforcement actions</strong> are pulled from the{" "}
+              <a href="https://www.federalregister.gov/api">Federal Register API</a> — specifically,
+              NOTICE documents published by the DEA whose titles match a registrant-action
+              disposition: Final Orders, Revocations of Registration, Immediate Suspension Orders,
+              Orders to Show Cause, Settlements, and Admonitions. Classification is regex-based on
+              notice titles; post-2011 the Federal Register switched to an umbrella "Decision and
+              Order" title convention, which means later-year type breakdowns are coarser than
+              earlier years. Counts reflect the year of Federal Register publication, not the year
+              of the underlying conduct. Criminal prosecutions (which proceed through DOJ, not
+              DEA's administrative track) are not included. Source:{" "}
+              <a href="https://www.federalregister.gov/api">federalregister.gov/api</a>. Public
+              domain (17 USC §105).
             </dd>
             <dt>CDC WONDER</dt>
             <dd>
@@ -98,8 +105,9 @@ export default function Methodology() {
               one unit regardless of strength.
             </li>
             <li>
-              DEA enforcement totals are scraped from annual PDFs; our counts are approximate and
-              may diverge from DEA's internal tallies.
+              DEA enforcement totals reflect Federal Register <em>publication dates</em>, not the
+              dates of the underlying conduct. Final orders routinely lag the initiating Immediate
+              Suspension Orders by 6–24 months.
             </li>
           </ul>
         </section>
