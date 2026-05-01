@@ -1,57 +1,171 @@
-"""clean/dea: parse annual-report PDF into canonical enforcement record."""
+"""DEA Federal Register notice classifier tests.
 
-from pathlib import Path
+Verifies the title/subject-based classifier that maps each FR notice to
+one of the canonical action categories (revocation, ISO, OTSC,
+settlement, admonition, other-registrant-action) or NON_ACTION for
+items the metric must exclude (scheduling, quotas, bulk-manufacturer
+registrations, etc.).
+"""
 
-from openarcos_pipeline.clean.dea import fill_synthetic_years, parse_annual_report
+from __future__ import annotations
 
-FIXTURE = Path(__file__).parent / "fixtures" / "dea" / "diversion_2012_sample.pdf"
+import pytest
 
-
-def test_parse_returns_year_and_action_count():
-    rec = parse_annual_report(FIXTURE, year=2012)
-    assert rec["year"] == 2012
-    assert isinstance(rec["action_count"], int)
-    assert rec["action_count"] >= 0
-    assert isinstance(rec["notable_actions"], list)
-
-
-def test_fill_synthetic_years_covers_full_range_when_only_2012_and_2014_present():
-    """When the raw PDFs only cover a subset of years, fill_synthetic_years
-    fills in every missing year in [start, end] with plausible synthetic
-    counts that rise over time, and at least 1 notable action per year.
-    """
-    existing = [
-        {"year": 2012, "action_count": 1245, "notable_actions": [{"title": "U.S. v. X"}]},
-        {"year": 2014, "action_count": 1418, "notable_actions": [{"title": "U.S. v. Y"}]},
-    ]
-    filled = fill_synthetic_years(existing, start=2006, end=2014)
-    by_year = {r["year"]: r for r in filled}
-    # Every year 2006..2014 must be present
-    assert set(by_year.keys()) == set(range(2006, 2015))
-    # Real records are preserved verbatim
-    assert by_year[2012]["action_count"] == 1245
-    assert by_year[2014]["action_count"] == 1418
-    # Synthetic records have positive counts and at least one notable action
-    for y in range(2006, 2015):
-        assert by_year[y]["action_count"] > 0
-        assert isinstance(by_year[y]["notable_actions"], list)
-        assert len(by_year[y]["notable_actions"]) >= 1
-    # Counts should broadly climb across the window (rough monotonicity);
-    # allow dips but require the 2006 count < 2014 count.
-    assert by_year[2006]["action_count"] < by_year[2014]["action_count"]
-    # Peak enforcement clusters around 2012-2013 per the narrative.
-    assert by_year[2013]["action_count"] >= by_year[2010]["action_count"]
+from openarcos_pipeline.clean.dea import (
+    ActionType,
+    classify_notice,
+)
 
 
-def test_fill_synthetic_years_is_noop_when_range_already_covered():
-    existing = [
-        {"year": y, "action_count": 1000 + y, "notable_actions": []} for y in range(2006, 2015)
-    ]
-    filled = fill_synthetic_years(existing, start=2006, end=2014)
-    assert len(filled) == 9
-    for r_in, r_out in zip(
-        sorted(existing, key=lambda r: r["year"]),
-        sorted(filled, key=lambda r: r["year"]),
-        strict=True,
-    ):
-        assert r_in == r_out
+@pytest.mark.parametrize(
+    "title,subject,expected",
+    [
+        # --- Revocations ---
+        (
+            "Richard Carino, M.D.; Revocation of Registration",
+            "Revocations of Registrations:",
+            ActionType.FINAL_ORDER_REVOCATION,
+        ),
+        (
+            "Roots Pharmaceuticals, Inc.; Revocation of Registration",
+            None,
+            ActionType.FINAL_ORDER_REVOCATION,
+        ),
+        # Post-2011 umbrella title that IS actually a revocation (subject tells us).
+        (
+            "Kamal Tiwari, M.D.; Pain Management and Surgery Center of Southern Indiana; Decision and Order",
+            "Revocations of Registrations:",
+            ActionType.FINAL_ORDER_REVOCATION,
+        ),
+        # --- Immediate Suspensions ---
+        (
+            "Michael S. Moore, M.D.; Suspension of Registration",
+            "Suspension of Registrations:",
+            ActionType.IMMEDIATE_SUSPENSION,
+        ),
+        (
+            "Jane Doe, M.D.; Immediate Suspension of Registration",
+            None,
+            ActionType.IMMEDIATE_SUSPENSION,
+        ),
+        # --- Order to Show Cause ---
+        (
+            "John Q Practitioner; Order to Show Cause",
+            None,
+            ActionType.ORDER_TO_SHOW_CAUSE,
+        ),
+        # --- Settlements ---
+        (
+            "Four Seasons Distributors, Inc.; Order Accepting Settlement Agreement and Terminating Proceeding",
+            "Settlement Agreements:",
+            ActionType.SETTLEMENT,
+        ),
+        (
+            "Some Pharmacy; Memorandum of Agreement",
+            None,
+            ActionType.SETTLEMENT,
+        ),
+        # --- Admonitions ---
+        (
+            "Terese, Inc., D/B/A Peach Orchard Drugs; Admonition of Registrant",
+            "Admonitions Of Registrants:",
+            ActionType.ADMONITION,
+        ),
+        # --- Denial of Application — still a registrant action; bucket as OTHER ---
+        (
+            "Jane Roe, M.D.; Denial of Application",
+            "Denials of Applications:",
+            ActionType.OTHER_REGISTRANT_ACTION,
+        ),
+        # --- Post-2011 umbrella title with no subject hint → OTHER ---
+        (
+            "Kamal Tiwari, M.D.; Pain Management and Surgery Center of Southern Indiana; Decision and Order",
+            None,
+            ActionType.OTHER_REGISTRANT_ACTION,
+        ),
+        # --- Dismissal of Proceeding → OTHER (an ancillary registrant action) ---
+        (
+            "John Doe, M.D.; Dismissal of Proceeding",
+            None,
+            ActionType.OTHER_REGISTRANT_ACTION,
+        ),
+        # Post-2011 plural-subject convention: "Decisions and Orders:"
+        (
+            "Glenn R. Unger, D.D.S.; Declaratory Order",
+            "Decisions and Orders:",
+            ActionType.OTHER_REGISTRANT_ACTION,
+        ),
+        # "Affirmance of Suspension Orders" — mid-period DEA titling
+        (
+            "Nirmal Saran, M.D.; Nisha Saran, D.O.; Affirmance of Suspension Orders",
+            "Affirmance of Suspension Orders:",
+            ActionType.IMMEDIATE_SUSPENSION,
+        ),
+        # --- NON_ACTION: scheduling / quotas / bulk manufacturer ---
+        (
+            "Schedules of Controlled Substances: Placement of 25I-NBOMe into Schedule I",
+            None,
+            ActionType.NON_ACTION,
+        ),
+        (
+            "Established Aggregate Production Quotas for Schedule I and II Controlled Substances "
+            "and Assessment of Annual Needs for the List I Chemicals Ephedrine, Pseudoephedrine, "
+            "and Phenylpropanolamine for 2012",
+            None,
+            ActionType.NON_ACTION,
+        ),
+        (
+            "Bulk Manufacturer of Controlled Substances Application: Cambrex Charles City, Inc.",
+            None,
+            ActionType.NON_ACTION,
+        ),
+        (
+            "Importer of Controlled Substances; Notice of Registration: Johnson Matthey Pharmaceutical Materials, Inc.",
+            None,
+            ActionType.NON_ACTION,
+        ),
+        (
+            "Manufacturer of Controlled Substances; Notice of Application",
+            None,
+            ActionType.NON_ACTION,
+        ),
+        # Agency information-collection notices
+        (
+            "Agency Information Collection Activities: Proposed Collection, Comments Requested",
+            None,
+            ActionType.NON_ACTION,
+        ),
+    ],
+)
+def test_classify_title(title, subject, expected):
+    """The classifier maps real FR notice titles to the correct category."""
+    action_type, raw_title, opioid_relevant = classify_notice(title, subject)
+    assert action_type == expected, (
+        f"title={title!r} subject={subject!r} → {action_type}, expected {expected}"
+    )
+    assert raw_title == title
+    assert isinstance(opioid_relevant, bool)
+
+
+def test_opioid_relevant_flag_pharmacy():
+    """Pharmacy registrants are flagged opioid-relevant (best-effort heuristic)."""
+    _, _, flag = classify_notice(
+        "Ideal Pharmacy Care, Inc., D/B/A Esplanade Pharmacy; Revocation of Registration",
+        None,
+    )
+    assert flag is True
+
+
+def test_opioid_relevant_flag_distributor():
+    """Distributor registrants are flagged opioid-relevant."""
+    _, _, flag = classify_notice(
+        "Roots Pharmaceuticals, Inc.; Revocation of Registration",
+        None,
+    )
+    assert flag is True
+
+
+def test_opioid_relevant_flag_unknown_practitioner():
+    """A generic practitioner name with no context → flag False (not the filter)."""
+    _, _, flag = classify_notice("John Doe, M.D.; Revocation of Registration", None)
+    assert flag is False
