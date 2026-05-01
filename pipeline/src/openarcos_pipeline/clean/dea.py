@@ -324,26 +324,3 @@ def build_artifact(
         "source": "Federal Register API (federalregister.gov/api/v1)",
         "fetched_at": fetched.isoformat(),
     }
-
-
-# --------------------------------------------------------------------------
-# Back-compat stubs — retained briefly for the CLI wiring that will be
-# rewritten in Step 3. They intentionally raise if called so any stray
-# usage fails loudly rather than silently emitting stale synthetic data.
-# --------------------------------------------------------------------------
-
-
-def parse_annual_report(*_args: Any, **_kwargs: Any) -> dict[str, Any]:
-    """Legacy PDF parser — removed. Use the FR-based classifier."""
-    raise RuntimeError(
-        "parse_annual_report() has been removed; DEA data now comes from the "
-        "Federal Register API. See pipeline/notes/dea-investigation-2026-05-01.md."
-    )
-
-
-def fill_synthetic_years(*_args: Any, **_kwargs: Any) -> list[dict[str, Any]]:
-    """Synthetic-year filler — removed."""
-    raise RuntimeError(
-        "fill_synthetic_years() has been removed; DEA action counts now come "
-        "from the Federal Register API and cover every year 2006–2014."
-    )
