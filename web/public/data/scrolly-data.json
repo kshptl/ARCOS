@@ -117,122 +117,264 @@
     "actions": [
       {
         "year": 2006,
-        "action_count": 250,
+        "action_count": 32,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2006 (synthetic)",
-            "url": null,
+            "title": "William R. Lockridge, M.D. Affirmance of Immediate Suspension of Registration",
+            "url": "https://www.federalregister.gov/documents/2006/12/27/E6-22105/william-r-lockridge-md-affirmance-of-immediate-suspension-of-registration",
+            "target": null
+          },
+          {
+            "title": "Wedgewood Village Pharmacy; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2006/04/03/E6-4771/wedgewood-village-pharmacy-revocation-of-registration",
+            "target": null
+          },
+          {
+            "title": "Michael's Discount Pharmacy; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2006/08/24/E6-14049/michaels-discount-pharmacy-revocation-of-registration",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 16,
+          "IMMEDIATE_SUSPENSION": 1,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 15
+        }
       },
       {
         "year": 2007,
-        "action_count": 360,
+        "action_count": 40,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2007 (synthetic)",
-            "url": null,
+            "title": "Wild West Wholesale Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2007/01/29/E7-1316/wild-west-wholesale-revocation-of-registration",
+            "target": null
+          },
+          {
+            "title": "Bourne Pharmacy, Inc.; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2007/04/11/E7-6760/bourne-pharmacy-inc-revocation-of-registration",
+            "target": null
+          },
+          {
+            "title": "CRJ Pharmacy, Inc. and YPM Total Care Pharmacy, Inc.; Revocation of Registrations",
+            "url": "https://www.federalregister.gov/documents/2007/06/04/E7-10624/crj-pharmacy-inc-and-ypm-total-care-pharmacy-inc-revocation-of-registrations",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 22,
+          "IMMEDIATE_SUSPENSION": 0,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 18
+        }
       },
       {
         "year": 2008,
-        "action_count": 520,
+        "action_count": 22,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2008 (synthetic)",
-            "url": null,
+            "title": "Nirmal Saran, M.D.; Nisha Saran, D.O.; Affirmance of Suspension Orders",
+            "url": "https://www.federalregister.gov/documents/2008/12/23/E8-30506/nirmal-saran-md-nisha-saran-do-affirmance-of-suspension-orders",
+            "target": null
+          },
+          {
+            "title": "Novelty Distributors, Inc.; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2008/09/10/E8-21035/novelty-distributors-inc-revocation-of-registration",
+            "target": null
+          },
+          {
+            "title": "Sunny Wholesale, Inc.; Revocation of Registration and Denial of Application",
+            "url": "https://www.federalregister.gov/documents/2008/10/03/E8-23395/sunny-wholesale-inc-revocation-of-registration-and-denial-of-application",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 10,
+          "IMMEDIATE_SUSPENSION": 1,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 11
+        }
       },
       {
         "year": 2009,
-        "action_count": 700,
+        "action_count": 22,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2009 (synthetic)",
-            "url": null,
+            "title": "Meetinghouse Community Pharmacy, Inc.; Affirmance of Suspension Order",
+            "url": "https://www.federalregister.gov/documents/2009/03/09/E9-4909/meetinghouse-community-pharmacy-inc-affirmance-of-suspension-order",
+            "target": null
+          },
+          {
+            "title": "Jayam Krishna-Iyer, M.D.; Suspension of Registration; Granting of Renewal Application Subject to Condition",
+            "url": "https://www.federalregister.gov/documents/2009/01/06/E8-31412/jayam-krishna-iyer-md-suspension-of-registration-granting-of-renewal-application-subject-to",
+            "target": null
+          },
+          {
+            "title": "Joseph Gaudio, M.D.; Suspension of Registration",
+            "url": "https://www.federalregister.gov/documents/2009/03/09/E9-4903/joseph-gaudio-md-suspension-of-registration",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 10,
+          "IMMEDIATE_SUSPENSION": 4,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 8
+        }
       },
       {
         "year": 2010,
-        "action_count": 880,
+        "action_count": 25,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2010 (synthetic)",
-            "url": null,
+            "title": "East Main Street Pharmacy; Affirmance of Suspension Order",
+            "url": "https://www.federalregister.gov/documents/2010/10/27/2010-27096/east-main-street-pharmacy-affirmance-of-suspension-order",
+            "target": null
+          },
+          {
+            "title": "Lincoln Pharmacy; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2010/10/26/2010-27026/lincoln-pharmacy-revocation-of-registration",
+            "target": null
+          },
+          {
+            "title": "Dwayne LaFrantz Wilson, M.D.; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2010/02/25/2010-3766/dwayne-lafrantz-wilson-md-revocation-of-registration",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 16,
+          "IMMEDIATE_SUSPENSION": 1,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 1,
+          "OTHER_REGISTRANT_ACTION": 7
+        }
       },
       {
         "year": 2011,
-        "action_count": 1060,
+        "action_count": 69,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2011 (synthetic)",
-            "url": null,
+            "title": "Paul Weir Battershell, N.P.; Suspension Of Registration",
+            "url": "https://www.federalregister.gov/documents/2011/07/25/2011-18564/paul-weir-battershell-np-suspension-of-registration",
+            "target": null
+          },
+          {
+            "title": "Michael S. Moore, M.D.; Suspension of Registration",
+            "url": "https://www.federalregister.gov/documents/2011/08/01/2011-19376/michael-s-moore-md-suspension-of-registration",
+            "target": null
+          },
+          {
+            "title": "Sun & Lake Pharmacy, Inc.; D/B/A the Medicine Shoppe; Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2011/05/02/2011-10506/sun-and-lake-pharmacy-inc-dba-the-medicine-shoppe-revocation-of-registration",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 16,
+          "IMMEDIATE_SUSPENSION": 2,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 1,
+          "ADMONITION": 1,
+          "OTHER_REGISTRANT_ACTION": 49
+        }
       },
       {
         "year": 2012,
-        "action_count": 1245,
+        "action_count": 42,
         "notable_actions": [
           {
-            "title": "United States v. Florida Pain Relief Centers",
-            "url": null,
+            "title": "Morris W. Cochran, M.D.: Revocation of Registration",
+            "url": "https://www.federalregister.gov/documents/2012/03/26/2012-7107/morris-w-cochran-md-revocation-of-registration",
             "target": null
           },
           {
-            "title": "United States v. Tug Valley Pharmacy",
-            "url": null,
+            "title": "Grider Drug #1 & Grider Drug #2; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2012/07/26/2012-17973/grider-drug-1-and-grider-drug-2-decision-and-order",
             "target": null
           },
           {
-            "title": "Operation Pill Nation II was a multi",
-            "url": null,
+            "title": "Physicians Pharmacy, L.L.C.; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2012/08/07/2012-19221/physicians-pharmacy-llc-decision-and-order",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 1,
+          "IMMEDIATE_SUSPENSION": 0,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 41
+        }
       },
       {
         "year": 2013,
-        "action_count": 1380,
+        "action_count": 31,
         "notable_actions": [
           {
-            "title": "DEA Diversion annual summary 2013 (synthetic)",
-            "url": null,
+            "title": "Top RX Pharmacy; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2013/05/03/2013-10550/top-rx-pharmacy-decision-and-order",
+            "target": null
+          },
+          {
+            "title": "S & S Pharmacy, Inc., d/b/a Platinum Pharmacy & Compounding; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2013/09/19/2013-22793/s-and-s-pharmacy-inc-dba-platinum-pharmacy-and-compounding-decision-and-order",
+            "target": null
+          },
+          {
+            "title": "Wheatland Pharmacy; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2013/11/19/2013-27700/wheatland-pharmacy-decision-and-order",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 0,
+          "IMMEDIATE_SUSPENSION": 0,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 31
+        }
       },
       {
         "year": 2014,
-        "action_count": 1418,
+        "action_count": 20,
         "notable_actions": [
           {
-            "title": "United States v. Appalachian Wholesale",
-            "url": null,
+            "title": "James Clopton, M.D.; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2014/01/14/2014-00524/james-clopton-md-decision-and-order",
             "target": null
           },
           {
-            "title": "United States v. Mingo Family Pharmacy",
-            "url": null,
+            "title": "Roderick Lee Mitchell, M.D.; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2014/01/22/2014-01159/roderick-lee-mitchell-md-decision-and-order",
             "target": null
           },
           {
-            "title": "Operation Supply Chain targeted large distributor diversion",
-            "url": null,
+            "title": "House of Medicine; Decision and Order",
+            "url": "https://www.federalregister.gov/documents/2014/01/30/2014-01794/house-of-medicine-decision-and-order",
             "target": null
           }
-        ]
+        ],
+        "by_type": {
+          "FINAL_ORDER_REVOCATION": 0,
+          "IMMEDIATE_SUSPENSION": 0,
+          "ORDER_TO_SHOW_CAUSE": 0,
+          "SETTLEMENT": 0,
+          "ADMONITION": 0,
+          "OTHER_REGISTRANT_ACTION": 20
+        }
       }
     ]
   },

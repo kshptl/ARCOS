@@ -1,0 +1,85 @@
+{
+  "years": [
+    {
+      "year": 2006,
+      "total": 32,
+      "by_type": {
+        "IMMEDIATE_SUSPENSION": 1,
+        "OTHER_REGISTRANT_ACTION": 15,
+        "FINAL_ORDER_REVOCATION": 16
+      }
+    },
+    {
+      "year": 2007,
+      "total": 40,
+      "by_type": {
+        "OTHER_REGISTRANT_ACTION": 18,
+        "FINAL_ORDER_REVOCATION": 22
+      }
+    },
+    {
+      "year": 2008,
+      "total": 22,
+      "by_type": {
+        "IMMEDIATE_SUSPENSION": 1,
+        "FINAL_ORDER_REVOCATION": 10,
+        "OTHER_REGISTRANT_ACTION": 11
+      }
+    },
+    {
+      "year": 2009,
+      "total": 22,
+      "by_type": {
+        "FINAL_ORDER_REVOCATION": 10,
+        "OTHER_REGISTRANT_ACTION": 8,
+        "IMMEDIATE_SUSPENSION": 4
+      }
+    },
+    {
+      "year": 2010,
+      "total": 25,
+      "by_type": {
+        "FINAL_ORDER_REVOCATION": 16,
+        "IMMEDIATE_SUSPENSION": 1,
+        "OTHER_REGISTRANT_ACTION": 7,
+        "ADMONITION": 1
+      }
+    },
+    {
+      "year": 2011,
+      "total": 69,
+      "by_type": {
+        "OTHER_REGISTRANT_ACTION": 49,
+        "FINAL_ORDER_REVOCATION": 16,
+        "ADMONITION": 1,
+        "IMMEDIATE_SUSPENSION": 2,
+        "SETTLEMENT": 1
+      }
+    },
+    {
+      "year": 2012,
+      "total": 42,
+      "by_type": {
+        "OTHER_REGISTRANT_ACTION": 41,
+        "FINAL_ORDER_REVOCATION": 1
+      }
+    },
+    {
+      "year": 2013,
+      "total": 31,
+      "by_type": {
+        "OTHER_REGISTRANT_ACTION": 31
+      }
+    },
+    {
+      "year": 2014,
+      "total": 20,
+      "by_type": {
+        "OTHER_REGISTRANT_ACTION": 20
+      }
+    }
+  ],
+  "methodology": "Counts reflect Federal Register publication date, not date of underlying misconduct. Each FR Notice with a title/TOC-subject matching a registrant-action disposition is counted once (deduped by document_number). Scheduling, quota, importer/manufacturer registration, and information-collection notices are excluded. Administrative scope only \u2014 criminal prosecutions are tracked separately and not included here. See pipeline/notes/dea-investigation-2026-05-01.md.",
+  "source": "Federal Register API (federalregister.gov/api/v1)",
+  "fetched_at": "2026-05-01T16:30:40.295450+00:00"
+}

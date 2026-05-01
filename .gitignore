@@ -167,7 +167,10 @@ cython_debug/
 
 # pipeline
 pipeline/.venv/
-pipeline/data/raw/
+pipeline/data/raw/*
+# DEA Federal Register data is immutable historical record — commit for
+# reproducibility (see pipeline/notes/dea-investigation-2026-05-01.md).
+!pipeline/data/raw/dea/
 pipeline/data/clean/
 pipeline/data/joined/
 pipeline/data/agg/
