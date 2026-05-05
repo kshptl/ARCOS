@@ -17,7 +17,7 @@ export interface Act4AftermathProps {
 }
 
 interface SparkGeom {
-  path: string;
+  segments: SparkSegment[];
   peakX: number;
   peakY: number;
   peakIndex: number;
@@ -32,8 +32,14 @@ interface SparkGeom {
   max: number;
   width: number;
   height: number;
-  suppressed: Array<{ x: number; y: number }>;
+  suppressed: Array<{ x: number; y: number; year: number }>;
   numericCount: number;
+}
+
+interface SparkSegment {
+  path: string;
+  length: number;
+  start: number;
 }
 
 interface SparkPoint {
@@ -45,6 +51,10 @@ interface SparkPoint {
 
 function clamp01(n: number): number {
   return n < 0 ? 0 : n > 1 ? 1 : n;
+}
+
+function clamp(n: number, min: number, max: number): number {
+  return n < min ? min : n > max ? max : n;
 }
 
 function isDrawable(point: SparkPoint): boolean {
@@ -71,7 +81,7 @@ function buildSpark(
   const suppressed = points.flatMap((point, i) => {
     if (isDrawable(point)) return [];
     const x = points.length === 1 ? width / 2 : (i * width) / (points.length - 1);
-    return [{ x, y: height - 6 }];
+    return [{ x, y: height - 6, year: point.year }];
   });
 
   if (points.length === 1) {
@@ -79,7 +89,7 @@ function buildSpark(
     const cx = width / 2;
     const cy = isDrawable(point) ? y(point.deaths as number) : height - 6;
     return {
-      path: isDrawable(point) ? `M${cx},${cy}` : "",
+      segments: isDrawable(point) ? [{ path: `M${cx},${cy}`, length: 0, start: 0 }] : [],
       peakX: cx,
       peakY: cy,
       peakIndex: 0,
@@ -113,26 +123,32 @@ function buildSpark(
     (point, i) => (isDrawable(point) ? ([i * step, y(point.deaths as number)] as [number, number]) : null),
   );
   let length = 0;
-  for (let i = 1; i < drawablePoints.length; i++) {
-    if (!drawablePoints[i - 1] || !drawablePoints[i]) continue;
-    const [ax, ay] = drawablePoints[i - 1] as [number, number];
-    const [bx, by] = drawablePoints[i] as [number, number];
-    length += Math.hypot(bx - ax, by - ay);
+  let currentPath: string[] = [];
+  let currentLength = 0;
+  const segments: SparkSegment[] = [];
+  const flushSegment = () => {
+    if (currentPath.length === 0) return;
+    segments.push({ path: currentPath.join(" "), length: currentLength, start: length });
+    length += currentLength;
+    currentPath = [];
+    currentLength = 0;
+  };
+  for (let i = 0; i < drawablePoints.length; i++) {
+    const point = drawablePoints[i];
+    if (!point) {
+      flushSegment();
+      continue;
+    }
+    const [px, py] = point;
+    if (currentPath.length === 0) {
+      currentPath.push(`M${px.toFixed(1)},${py.toFixed(1)}`);
+      continue;
+    }
+    const previous = drawablePoints[i - 1] as [number, number];
+    currentLength += Math.hypot(px - previous[0], py - previous[1]);
+    currentPath.push(`L${px.toFixed(1)},${py.toFixed(1)}`);
   }
-  let startsSegment = true;
-  const path = drawablePoints
-    .map((point) => {
-      if (!point) {
-        startsSegment = true;
-        return null;
-      }
-      const [px, py] = point;
-      const command = startsSegment ? "M" : "L";
-      startsSegment = false;
-      return `${command}${px.toFixed(1)},${py.toFixed(1)}`;
-    })
-    .filter(Boolean)
-    .join(" ");
+  flushSegment();
   const firstPoint = points[0] as SparkPoint;
   const lastIdx = points.length - 1;
   const lastPoint = points[lastIdx] as SparkPoint;
@@ -141,7 +157,7 @@ function buildSpark(
   const peakPoint = points[peakIndex] as SparkPoint;
   const peakY = isDrawable(peakPoint) ? y(peakPoint.deaths as number) : height - 6;
   return {
-    path,
+    segments,
     peakX: peakIndex * step,
     peakY,
     peakIndex,
@@ -162,7 +178,9 @@ function buildSpark(
 }
 
 function getPoints(county: Act4County): SparkPoint[] {
-  if (county.points) return [...county.points].sort((a, b) => a.year - b.year);
+  if (county.points && county.points.length > 0) {
+    return [...county.points].sort((a, b) => a.year - b.year);
+  }
   return county.deaths?.map((deaths, year) => ({
     year,
     deaths,
@@ -232,7 +250,7 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
             const lineT = reducedMotion ? 1 : clamp01((p - lineStart) / (1 - lineStart));
 
             const lineLen = spark?.length ?? 0;
-            const dashOffset = lineLen * (1 - lineT);
+            const totalDrawnLength = lineLen * lineT;
 
             return (
               <figure
@@ -261,23 +279,29 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       stroke="var(--ink-40)"
                       strokeWidth={0.5}
                     />
-                    {spark && spark.path && (
-                      <path
-                        data-testid="spark-line"
-                        d={spark.path}
-                        style={{
-                          strokeDasharray: lineLen,
-                          strokeDashoffset: dashOffset,
-                        }}
-                      />
-                    )}
+                    {spark?.segments.map((segment, segmentIndex) => {
+                      const visible = clamp(totalDrawnLength - segment.start, 0, segment.length);
+                      const dashOffset = segment.length - visible;
+                      return (
+                        <path
+                          key={segmentIndex}
+                          data-testid="spark-line"
+                          d={segment.path}
+                          style={{
+                            strokeDasharray: segment.length,
+                            strokeDashoffset: dashOffset,
+                          }}
+                        />
+                      );
+                    })}
                     {spark?.suppressed.map((point, markerIndex) => (
                       <g
                         key={markerIndex}
                         data-testid="spark-suppressed"
-                        aria-label="count suppressed under 10 deaths"
+                        role="img"
+                        aria-label={`${c.name} ${point.year} count suppressed under 10 deaths`}
                       >
-                        <circle cx={point.x} cy={point.y} r={2} fill="var(--ink-40)" />
+                        <circle cx={point.x} cy={point.y} r={2} style={{ fill: "var(--ink-40)" }} />
                       </g>
                     ))}
                     {/* Peak marker */}

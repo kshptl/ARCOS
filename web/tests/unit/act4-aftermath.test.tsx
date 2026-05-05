@@ -165,17 +165,79 @@ describe("Act4Aftermath", () => {
       </ScrollyProgressContext.Provider>,
     );
 
-    const path = screen.getByTestId("spark-line").getAttribute("d") ?? "";
-    expect(path.match(/M/g)).toHaveLength(2);
-    expect(path.match(/L/g)).toHaveLength(1);
+    const paths = screen.getAllByTestId("spark-line");
+    expect(paths).toHaveLength(2);
+    expect(paths[0]?.getAttribute("d")?.match(/M/g)).toHaveLength(1);
+    expect(paths[1]?.getAttribute("d")?.match(/M/g)).toHaveLength(1);
+    expect(paths[1]?.getAttribute("d")?.match(/L/g)).toHaveLength(1);
 
     const suppressedMarkers = screen.getAllByTestId("spark-suppressed");
     expect(suppressedMarkers).toHaveLength(2);
-    expect(suppressedMarkers[0]).toHaveAccessibleName(/count suppressed under 10 deaths/i);
+    const secondMarker = suppressedMarkers[1]!;
+    expect(secondMarker).toHaveAccessibleName(/Mingo 2008 count suppressed under 10 deaths/i);
+    expect(secondMarker.querySelector("circle")?.getAttribute("style")).toContain(
+      "fill: var(--ink-40)",
+    );
 
     const labels = screen.getAllByTestId("spark-endpoint");
     expect(labels[0]).toHaveTextContent("<10");
     expect(labels[1]).toHaveTextContent("24");
+  });
+
+  it("reveals gapped sparkline segments chronologically at partial progress", () => {
+    render(
+      <ScrollyProgressContext.Provider value={0.2}>
+        <Act4Aftermath
+          counties={[
+            {
+              fips: "54059",
+              name: "Mingo",
+              state: "WV",
+              points: [
+                { year: 2006, deaths: 12, suppressed: false, unreliable: true },
+                { year: 2007, deaths: 16, suppressed: false, unreliable: true },
+                { year: 2008, deaths: null, suppressed: true, unreliable: false },
+                { year: 2009, deaths: 18, suppressed: false, unreliable: true },
+                { year: 2010, deaths: 24, suppressed: false, unreliable: true },
+              ],
+            },
+          ]}
+        />
+      </ScrollyProgressContext.Provider>,
+    );
+
+    const paths = screen.getAllByTestId("spark-line");
+    expect(paths).toHaveLength(2);
+    const firstPath = paths[0]!;
+    const secondPath = paths[1]!;
+    const firstOffset = Number(firstPath.style.strokeDashoffset || "0");
+    const secondOffset = Number(secondPath.style.strokeDashoffset || "0");
+    const firstLength = Number(firstPath.style.strokeDasharray || "0");
+    const secondLength = Number(secondPath.style.strokeDasharray || "0");
+    expect(firstLength - firstOffset).toBeGreaterThan(secondLength - secondOffset);
+  });
+
+  it("uses legacy deaths when points is empty", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath
+          counties={[
+            {
+              fips: "54059",
+              name: "Mingo",
+              state: "WV",
+              points: [],
+              deaths: [11, 22, 33],
+            },
+          ]}
+        />
+      </ScrollyProgressContext.Provider>,
+    );
+
+    expect(screen.getAllByTestId("spark-line")).toHaveLength(1);
+    const labels = screen.getAllByTestId("spark-endpoint");
+    expect(labels[0]).toHaveTextContent("11");
+    expect(labels[1]).toHaveTextContent("33");
   });
 
   it("renders suppressed markers and <10 endpoint labels when every Act 4 point is suppressed", () => {
