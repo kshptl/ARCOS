@@ -59,6 +59,23 @@ describe("CountyOverdoseTrend", () => {
     ).toBeInTheDocument();
   });
 
+  it("does not show the unreliable-rate caveat for only suppressed unreliable rows", () => {
+    render(
+      <CountyOverdoseTrend
+        countyName="Mingo County"
+        rows={[
+          row({ year: 2011, deaths: null, suppressed: true, unreliable: true }),
+          row({ year: 2012, deaths: null, suppressed: true, unreliable: true }),
+        ]}
+      />,
+    );
+
+    expect(
+      screen.queryByText(/counts of 10-20 are publishable, but CDC rates are flagged unreliable/i),
+    ).not.toBeInTheDocument();
+    screen.getAllByTestId("overdose-deaths").forEach((cell) => expect(cell).toHaveTextContent("<10"));
+  });
+
   it("renders an empty message when no rows are available", () => {
     render(<CountyOverdoseTrend countyName="Mingo County" rows={[]} />);
 

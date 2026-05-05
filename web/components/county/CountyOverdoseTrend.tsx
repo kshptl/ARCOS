@@ -13,7 +13,9 @@ export function CountyOverdoseTrend({
   }
 
   const sortedRows = [...rows].sort((a, b) => a.year - b.year);
-  const hasUnreliableRate = sortedRows.some((r) => r.unreliable);
+  const hasUnreliableRate = sortedRows.some(
+    (r) => r.unreliable && !r.suppressed && r.deaths !== null,
+  );
 
   return (
     <div className={styles.root}>
