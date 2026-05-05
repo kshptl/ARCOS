@@ -47,7 +47,9 @@ describe("syncCDCOverdose", () => {
     const rootDir = await makeTempRoot();
     const source = path.join(rootDir, "pipeline", "data", "processed", "cdc_county_overdose.json");
     const destination = path.join(rootDir, "web", "public", "data", "cdc_county_overdose.json");
-    const existingJson = JSON.stringify({ records: [{ fips: "01003", deaths: 4 }] });
+    const existingJson = JSON.stringify({
+      records: [{ fips: "01003", deaths: null, suppressed: true }],
+    });
 
     await fs.mkdir(path.dirname(destination), { recursive: true });
     await fs.writeFile(destination, existingJson);
