@@ -22,12 +22,12 @@ vi.mock("@/lib/data/parquet", () => ({
   readParquetRows: (...args: unknown[]) => readParquetRowsMock(...args),
 }));
 
-import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
 import {
   loadCDCOverdose,
   loadCDCOverdoseByFips,
   resetCDCOverdoseCache,
 } from "@/lib/data/loadCDCOverdose";
+import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
 import { loadStateShipments, resetStateShipmentsCache } from "@/lib/data/loadStateShipments";
 import {
   loadTopDistributors,
@@ -215,8 +215,12 @@ describe("loadCDCOverdose", () => {
   });
 
   it("returns empty rows when both rich JSON and parquet artifacts are missing", async () => {
-    readFileMock.mockRejectedValueOnce(Object.assign(new Error("missing json"), { code: "ENOENT" }));
-    accessMock.mockRejectedValueOnce(Object.assign(new Error("missing parquet"), { code: "ENOENT" }));
+    readFileMock.mockRejectedValueOnce(
+      Object.assign(new Error("missing json"), { code: "ENOENT" }),
+    );
+    accessMock.mockRejectedValueOnce(
+      Object.assign(new Error("missing parquet"), { code: "ENOENT" }),
+    );
 
     const rows = await loadCDCOverdose();
 
