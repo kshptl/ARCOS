@@ -92,9 +92,21 @@ export interface DEAEnforcementAction {
  */
 export interface CDCOverdoseByCountyYear {
   fips: string;
+  county_fips?: string;
+  county_name?: string;
+  state_fips?: string;
   year: number;
   deaths: number | null;
   suppressed: boolean;
+  population?: number | null;
+  crude_rate?: number | null;
+  crude_rate_lower_ci?: number | null;
+  crude_rate_upper_ci?: number | null;
+  unreliable?: boolean;
+}
+
+export interface CDCCountyOverdoseArtifact {
+  records: Array<Omit<CDCOverdoseByCountyYear, "fips"> & { fips?: string }>;
 }
 
 /** Common fields across all search-index entry types */

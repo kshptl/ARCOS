@@ -15,6 +15,11 @@ vi.mock("node:fs/promises", async (importOriginal) => {
 });
 
 import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
+import {
+  loadCDCOverdose,
+  loadCDCOverdoseByFips,
+  resetCDCOverdoseCache,
+} from "@/lib/data/loadCDCOverdose";
 import { loadStateShipments, resetStateShipmentsCache } from "@/lib/data/loadStateShipments";
 import {
   loadTopDistributors,
@@ -87,5 +92,88 @@ describe("loadCountyBundle", () => {
     // county-metadata.json is an empty array, so lookup returns null
     readFileMock.mockResolvedValueOnce(JSON.stringify([]));
     await expect(loadCountyBundle("99999")).rejects.toThrow(/not found/);
+  });
+});
+
+describe("loadCDCOverdose", () => {
+  beforeEach(() => {
+    resetCDCOverdoseCache();
+    readFileMock.mockReset();
+  });
+
+  it("normalizes rich CDC WONDER JSON records and preserves metadata", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify({
+        records: [
+          {
+            county_fips: "54059",
+            county_name: "Mingo County",
+            state_fips: "54",
+            year: 2012,
+            deaths: 42,
+            suppressed: false,
+            population: 26_839,
+            crude_rate: 156.5,
+            crude_rate_lower_ci: 112.8,
+            crude_rate_upper_ci: 211.8,
+            unreliable: false,
+          },
+          {
+            county_fips: "54059",
+            county_name: "Mingo County",
+            state_fips: "54",
+            year: 2011,
+            deaths: null,
+            suppressed: true,
+            population: 27_000,
+            crude_rate: null,
+            unreliable: true,
+          },
+        ],
+      }),
+    );
+
+    const rows = await loadCDCOverdose();
+
+    expect(rows[0]).toMatchObject({
+      fips: "54059",
+      county_fips: "54059",
+      county_name: "Mingo County",
+      state_fips: "54",
+      year: 2012,
+      deaths: 42,
+      suppressed: false,
+      population: 26_839,
+      crude_rate: 156.5,
+      crude_rate_lower_ci: 112.8,
+      crude_rate_upper_ci: 211.8,
+      unreliable: false,
+    });
+    expect(rows[1]).toMatchObject({
+      fips: "54059",
+      deaths: null,
+      suppressed: true,
+      crude_rate: null,
+      unreliable: true,
+    });
+  });
+
+  it("groups rich CDC WONDER records by normalized FIPS sorted by year", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify({
+        records: [
+          { county_fips: "54059", year: 2013, deaths: 44, suppressed: false },
+          { county_fips: "54059", year: 2011, deaths: null, suppressed: true },
+          { county_fips: "54001", year: 2012, deaths: 12, suppressed: false },
+        ],
+      }),
+    );
+
+    const rows = await loadCDCOverdoseByFips("54059");
+
+    expect(rows).toEqual([
+      { fips: "54059", county_fips: "54059", year: 2011, deaths: null, suppressed: true },
+      { fips: "54059", county_fips: "54059", year: 2013, deaths: 44, suppressed: false },
+    ]);
   });
 });
