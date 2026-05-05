@@ -68,17 +68,21 @@ export default function Methodology() {
               notice titles; post-2011 the Federal Register switched to an umbrella "Decision and
               Order" title convention, which means later-year type breakdowns are coarser than
               earlier years. Counts reflect the year of Federal Register publication, not the year
-              of the underlying conduct. Criminal prosecutions (which proceed through DOJ, not
-              DEA's administrative track) are not included. Source:{" "}
+              of the underlying conduct. Criminal prosecutions (which proceed through DOJ, not DEA's
+              administrative track) are not included. Source:{" "}
               <a href="https://www.federalregister.gov/api">federalregister.gov/api</a>. Public
               domain (17 USC §105).
             </dd>
             <dt>CDC WONDER</dt>
             <dd>
-              Overdose deaths by county-year via the D76 multiple-cause-of-death dataset.{" "}
-              <a href="https://wonder.cdc.gov/mcd.html">View at wonder.cdc.gov</a>. Cells with fewer
-              than 10 deaths are suppressed per CDC rules; we preserve this as a boolean flag rather
-              than a zero.
+              Overdose deaths by county-year from a CDC WONDER Underlying Cause of Death 1999-2020
+              interactive UI scrape.{" "}
+              <a href="https://wonder.cdc.gov/mcd.html">View at wonder.cdc.gov</a>. The scrape runs
+              one state/DC query at a time for 2006-2014, using the WONDER Drug/Alcohol Induced
+              Causes D1-D4 macro and ICD-10 codes X40-X44, X60-X64, X85, Y10-Y14. Counts of 9 or
+              fewer are suppressed under 42 USC 242m(d) and rendered &lt;10, never zero. Counts of
+              10-20 are publishable as raw deaths, but CDC flags their rates as statistically
+              unreliable.
             </dd>
           </dl>
         </section>
@@ -97,8 +101,9 @@ export default function Methodology() {
           <ul>
             <li>ARCOS covers 2006–2014 only. Later years are not in this dataset.</li>
             <li>
-              CDC suppression hides cells with fewer than 10 deaths in a county-year — the map shows
-              these as "suppressed," not zero.
+              CDC suppression hides counts of 9 or fewer deaths in a county-year — the map renders
+              these as &lt;10, never zero. Rates based on 10-20 deaths are flagged by CDC as
+              statistically unreliable even though the raw death counts are publishable.
             </li>
             <li>
               Pill counts are in DEA "dosage units," not individual pills; a 100mg tablet counts as

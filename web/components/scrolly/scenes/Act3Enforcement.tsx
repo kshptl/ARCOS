@@ -169,20 +169,10 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                   stroke="var(--ink-60)"
                   strokeWidth={0.75}
                 />
-                <text
-                  className={styles.annotationStrong}
-                  x={cx}
-                  y={labelY}
-                  textAnchor="middle"
-                >
+                <text className={styles.annotationStrong} x={cx} y={labelY} textAnchor="middle">
                   Peak: 69 actions
                 </text>
-                <text
-                  className={styles.annotation}
-                  x={cx}
-                  y={labelY + 12}
-                  textAnchor="middle"
-                >
+                <text className={styles.annotation} x={cx} y={labelY + 12} textAnchor="middle">
                   pharmacy-chain crackdowns begin
                 </text>
               </g>
@@ -200,12 +190,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             const labelY = Math.min(PAD_TOP + plotH - 6, barTopY + 20);
             return (
               <g data-testid="act3-annotation-2013">
-                <text
-                  className={styles.annotation}
-                  x={cx}
-                  y={labelY}
-                  textAnchor="middle"
-                >
+                <text className={styles.annotation} x={cx} y={labelY} textAnchor="middle">
                   Industry pushback intensifies
                 </text>
               </g>

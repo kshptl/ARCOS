@@ -119,8 +119,8 @@ function buildSpark(
     }
   }
   // Compute points + total polyline length.
-  const drawablePoints: Array<[number, number] | null> = points.map(
-    (point, i) => (isDrawable(point) ? ([i * step, y(point.deaths as number)] as [number, number]) : null),
+  const drawablePoints: Array<[number, number] | null> = points.map((point, i) =>
+    isDrawable(point) ? ([i * step, y(point.deaths as number)] as [number, number]) : null,
   );
   let length = 0;
   let currentPath: string[] = [];
@@ -181,12 +181,14 @@ function getPoints(county: Act4County): SparkPoint[] {
   if (county.points && county.points.length > 0) {
     return [...county.points].sort((a, b) => a.year - b.year);
   }
-  return county.deaths?.map((deaths, year) => ({
-    year,
-    deaths,
-    suppressed: false,
-    unreliable: false,
-  })) ?? [];
+  return (
+    county.deaths?.map((deaths, year) => ({
+      year,
+      deaths,
+      suppressed: false,
+      unreliable: false,
+    })) ?? []
+  );
 }
 
 function getDeaths(county: Act4County): number[] {
@@ -279,12 +281,12 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       stroke="var(--ink-40)"
                       strokeWidth={0.5}
                     />
-                    {spark?.segments.map((segment, segmentIndex) => {
+                    {spark?.segments.map((segment) => {
                       const visible = clamp(totalDrawnLength - segment.start, 0, segment.length);
                       const dashOffset = segment.length - visible;
                       return (
                         <path
-                          key={segmentIndex}
+                          key={segment.path}
                           data-testid="spark-line"
                           d={segment.path}
                           style={{
@@ -294,11 +296,10 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                         />
                       );
                     })}
-                    {spark?.suppressed.map((point, markerIndex) => (
+                    {spark?.suppressed.map((point) => (
                       <g
-                        key={markerIndex}
+                        key={`${point.year}-${point.x}`}
                         data-testid="spark-suppressed"
-                        role="img"
                         aria-label={`${c.name} ${point.year} count suppressed under 10 deaths`}
                       >
                         <circle cx={point.x} cy={point.y} r={2} style={{ fill: "var(--ink-40)" }} />

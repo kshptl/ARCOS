@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("next/font/local", () => ({
@@ -19,14 +19,40 @@ describe("/methodology", () => {
   });
 
   it("lists all three sources with external links", () => {
-    const { container, getAllByRole } = render(<Methodology />);
+    const { container } = render(<Methodology />);
     const article = container.querySelector("article");
     expect(article).toBeTruthy();
     expect(article?.textContent).toMatch(/Washington Post ARCOS/i);
     expect(article?.textContent).toMatch(/DEA Diversion Control/i);
     expect(article?.textContent).toMatch(/CDC WONDER/i);
-    const externals = getAllByRole("link", { name: /View at/i });
-    expect(externals.length).toBeGreaterThanOrEqual(3);
+    expect(screen.getByRole("link", { name: /arcos-api\.ext\.nile\.works/i })).toHaveAttribute(
+      "href",
+      "https://arcos-api.ext.nile.works/__swagger__/",
+    );
+    expect(screen.getByRole("link", { name: /federal register api/i })).toHaveAttribute(
+      "href",
+      "https://www.federalregister.gov/api",
+    );
+    expect(screen.getByRole("link", { name: /wonder\.cdc\.gov/i })).toHaveAttribute(
+      "href",
+      "https://wonder.cdc.gov/mcd.html",
+    );
+  });
+
+  it("documents CDC WONDER sourcing and suppression rules", () => {
+    render(<Methodology />);
+
+    expect(screen.getByText(/Underlying Cause of Death 1999-2020/i)).toBeInTheDocument();
+    expect(screen.getByText(/interactive UI scrape/i)).toBeInTheDocument();
+    expect(screen.getByText(/one state\/DC query at a time/i)).toBeInTheDocument();
+    expect(screen.getByText(/2006-2014/i)).toBeInTheDocument();
+    expect(screen.getByText(/Drug\/Alcohol Induced Causes D1-D4/i)).toBeInTheDocument();
+    expect(screen.getByText(/X40-X44, X60-X64, X85, Y10-Y14/i)).toBeInTheDocument();
+    expect(screen.getByText(/42 USC 242m\(d\)/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/<10/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/never zero/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/10-20/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/statistically unreliable/i).length).toBeGreaterThan(0);
   });
 
   it("applies dark-mode scope", () => {

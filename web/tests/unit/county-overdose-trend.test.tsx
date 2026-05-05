@@ -42,7 +42,9 @@ describe("CountyOverdoseTrend", () => {
 
     const deathCells = screen.getAllByTestId("overdose-deaths");
     expect(deathCells).toHaveLength(2);
-    deathCells.forEach((cell) => expect(cell).toHaveTextContent("<10"));
+    deathCells.forEach((cell) => {
+      expect(cell).toHaveTextContent("<10");
+    });
     expect(screen.queryByText("0")).not.toBeInTheDocument();
   });
 
@@ -73,7 +75,9 @@ describe("CountyOverdoseTrend", () => {
     expect(
       screen.queryByText(/counts of 10-20 are publishable, but CDC rates are flagged unreliable/i),
     ).not.toBeInTheDocument();
-    screen.getAllByTestId("overdose-deaths").forEach((cell) => expect(cell).toHaveTextContent("<10"));
+    screen.getAllByTestId("overdose-deaths").forEach((cell) => {
+      expect(cell).toHaveTextContent("<10");
+    });
   });
 
   it("renders an empty message when no rows are available", () => {

@@ -9,7 +9,9 @@ export function CountyOverdoseTrend({
   rows: CDCOverdoseByCountyYear[];
 }) {
   if (rows.length === 0) {
-    return <p className={styles.empty}>No CDC overdose death records available for {countyName}.</p>;
+    return (
+      <p className={styles.empty}>No CDC overdose death records available for {countyName}.</p>
+    );
   }
 
   const sortedRows = [...rows].sort((a, b) => a.year - b.year);
