@@ -36,7 +36,7 @@ type CDCRow = {
   unreliable: boolean;
 };
 
-export type Act4Point = CDCRow;
+export type Act4Point = Omit<CDCRow, "fips">;
 export type Act4County = { fips: string; name: string; state: string; points: Act4Point[] };
 
 async function exists(p: string): Promise<boolean> {
@@ -215,7 +215,7 @@ export function buildAct4(
 ): { counties: Act4County[] } {
   const metaByFips = new Map<string, CountyMeta>();
   for (const m of meta ?? []) metaByFips.set(m.fips, m);
-  const pointsByFips = new Map<string, Act4Point[]>();
+  const pointsByFips = new Map<string, CDCRow[]>();
   for (const r of cdc ?? []) {
     const arr = pointsByFips.get(r.fips) ?? [];
     arr.push(r);

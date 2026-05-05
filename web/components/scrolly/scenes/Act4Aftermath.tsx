@@ -8,7 +8,8 @@ export interface Act4County {
   fips: string;
   name: string;
   state: string;
-  deaths: number[];
+  deaths?: number[];
+  points?: { year: number; deaths: number | null; suppressed: boolean; unreliable: boolean }[];
 }
 
 export interface Act4AftermathProps {
@@ -108,6 +109,11 @@ function buildSpark(
   };
 }
 
+function getDeaths(county: Act4County): number[] {
+  if (county.deaths) return county.deaths;
+  return county.points?.flatMap((point) => (point.deaths === null ? [] : [point.deaths])) ?? [];
+}
+
 const SPARK_W = 160;
 const SPARK_H = 36;
 
@@ -137,7 +143,10 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
   // 0, 1, or many points; we scale each county into a shared year span.
   const globalMax = Math.max(
     1,
-    ...counties.flatMap((c) => (c.deaths.length > 0 ? [Math.max(...c.deaths)] : [])),
+    ...counties.flatMap((c) => {
+      const deaths = getDeaths(c);
+      return deaths.length > 0 ? [Math.max(...deaths)] : [];
+    }),
   );
 
   // Remap raw scroll progress onto the animation's [0..1] timeline so all
@@ -149,8 +158,9 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
       <div className={styles.actInner}>
         <div className={styles.gridMultiples}>
           {counties.map((c, i) => {
-            const hasData = c.deaths.length > 0;
-            const spark = hasData ? buildSpark(c.deaths, SPARK_W, SPARK_H, globalMax) : null;
+            const deaths = getDeaths(c);
+            const hasData = deaths.length > 0;
+            const spark = hasData ? buildSpark(deaths, SPARK_W, SPARK_H, globalMax) : null;
 
             // Per-card reveal progress (0..1), keyed off the remapped p.
             const cardT = reducedMotion ? 1 : clamp01((p - i * CARD_STAGGER) / CARD_DUR);
@@ -201,7 +211,7 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       />
                     )}
                     {/* Peak marker */}
-                    {spark && c.deaths.length > 1 && (
+                    {spark && deaths.length > 1 && (
                       <g data-testid="spark-peak">
                         <circle
                           cx={spark.peakX}

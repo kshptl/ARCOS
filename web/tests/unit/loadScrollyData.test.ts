@@ -11,7 +11,7 @@ describe("loadScrollyData", () => {
     resetScrollyDataCache();
   });
 
-  it("reads and parses scrolly-data.json", async () => {
+  it("reads and parses scrolly-data.json with Act 4 points", async () => {
     const readFile = vi.fn().mockResolvedValue(
       JSON.stringify({
         act1: { totalPills: 76_000_000_000, yearly: [{ year: 2006, pills: 8_000_000_000 }] },

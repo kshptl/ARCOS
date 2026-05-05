@@ -143,6 +143,31 @@ describe("Act4Aftermath", () => {
     }
   });
 
+  it("temporarily accepts Act 4 points data and uses numeric deaths for the sparkline", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath
+          counties={[
+            {
+              fips: "54059",
+              name: "Mingo",
+              state: "WV",
+              points: [
+                { year: 2006, deaths: null, suppressed: true, unreliable: false },
+                { year: 2007, deaths: 10, suppressed: false, unreliable: true },
+                { year: 2008, deaths: 18, suppressed: false, unreliable: true },
+              ],
+            },
+          ]}
+        />
+      </ScrollyProgressContext.Provider>,
+    );
+
+    const labels = screen.getAllByTestId("spark-endpoint");
+    expect(labels[0]).toHaveTextContent("10");
+    expect(labels[1]).toHaveTextContent("18");
+  });
+
   it("at progress=0.1, first cards are visible and last cards are still hidden", () => {
     render(
       <ScrollyProgressContext.Provider value={0.1}>
