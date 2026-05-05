@@ -194,7 +194,7 @@
       "year": 2014,
       "deaths": 38,
       "population": 200111,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -2704,7 +2704,7 @@
       "population": 104206,
       "crude_rate": 19.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "01",
@@ -3452,7 +3452,7 @@
       "population": 103668,
       "crude_rate": 19.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "01",
@@ -4385,7 +4385,7 @@
       "year": 2008,
       "deaths": 26,
       "population": 323526,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -5124,7 +5124,7 @@
       "population": 120395,
       "crude_rate": 16.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "01",
@@ -6257,7 +6257,7 @@
       "population": 67695,
       "crude_rate": 29.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "01",
@@ -6882,7 +6882,7 @@
       "year": 2010,
       "deaths": 38,
       "population": 291826,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -7366,9 +7366,9 @@
       "year": 2009,
       "deaths": 20,
       "population": 95238,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "02",
@@ -8061,7 +8061,7 @@
       "population": 84079,
       "crude_rate": 23.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "02",
@@ -9447,7 +9447,7 @@
       "population": 128206,
       "crude_rate": 15.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "04",
@@ -9610,7 +9610,7 @@
       "year": 2013,
       "deaths": 30,
       "population": 136539,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -10072,7 +10072,7 @@
       "year": 2010,
       "deaths": 609,
       "population": 3817117,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -10094,7 +10094,7 @@
       "year": 2012,
       "deaths": 630,
       "population": 3942169,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -10116,7 +10116,7 @@
       "year": 2014,
       "deaths": 695,
       "population": 4087191,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -10138,7 +10138,7 @@
       "year": 2007,
       "deaths": 26,
       "population": 199760,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -10171,7 +10171,7 @@
       "year": 2010,
       "deaths": 68,
       "population": 200186,
-      "crude_rate": 34.0,
+      "crude_rate": 34,
       "suppressed": false,
       "unreliable": false
     },
@@ -10294,7 +10294,7 @@
       "population": 107094,
       "crude_rate": 18.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "04",
@@ -10303,7 +10303,7 @@
       "year": 2013,
       "deaths": 29,
       "population": 107322,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -10644,7 +10644,7 @@
       "year": 2008,
       "deaths": 38,
       "population": 211211,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -10688,7 +10688,7 @@
       "year": 2012,
       "deaths": 66,
       "population": 212637,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -10710,7 +10710,7 @@
       "year": 2014,
       "deaths": 59,
       "population": 218844,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -11161,7 +11161,7 @@
       "year": 2010,
       "deaths": 31,
       "population": 221339,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -12340,7 +12340,7 @@
       "population": 95482,
       "crude_rate": 20.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "05",
@@ -13317,7 +13317,7 @@
       "year": 2008,
       "deaths": 23,
       "population": 95636,
-      "crude_rate": 24.0,
+      "crude_rate": 24,
       "suppressed": false,
       "unreliable": false
     },
@@ -17257,7 +17257,7 @@
       "population": 121492,
       "crude_rate": 16.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "05",
@@ -17849,7 +17849,7 @@
       "year": 2006,
       "deaths": 21,
       "population": 190314,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -17939,7 +17939,7 @@
       "population": 220792,
       "crude_rate": 9.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "05",
@@ -18300,7 +18300,7 @@
       "year": 2011,
       "deaths": 168,
       "population": 1529875,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -18322,7 +18322,7 @@
       "year": 2013,
       "deaths": 174,
       "population": 1578891,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -18564,7 +18564,7 @@
       "year": 2008,
       "deaths": 68,
       "population": 219034,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -18608,7 +18608,7 @@
       "year": 2012,
       "deaths": 71,
       "population": 221539,
-      "crude_rate": 32.0,
+      "crude_rate": 32,
       "suppressed": false,
       "unreliable": false
     },
@@ -18630,7 +18630,7 @@
       "year": 2014,
       "deaths": 74,
       "population": 224241,
-      "crude_rate": 33.0,
+      "crude_rate": 33,
       "suppressed": false,
       "unreliable": false
     },
@@ -18850,7 +18850,7 @@
       "year": 2007,
       "deaths": 101,
       "population": 1009152,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -19488,7 +19488,7 @@
       "year": 2011,
       "deaths": 23,
       "population": 177057,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -19501,7 +19501,7 @@
       "population": 176948,
       "crude_rate": 11.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "06",
@@ -19510,7 +19510,7 @@
       "year": 2013,
       "deaths": 30,
       "population": 176584,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -19631,7 +19631,7 @@
       "year": 2006,
       "deaths": 118,
       "population": 784511,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -19818,7 +19818,7 @@
       "year": 2014,
       "deaths": 24,
       "population": 150269,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -19842,7 +19842,7 @@
       "population": 64077,
       "crude_rate": 31.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "06",
@@ -19862,7 +19862,7 @@
       "year": 2009,
       "deaths": 29,
       "population": 64413,
-      "crude_rate": 45.0,
+      "crude_rate": 45,
       "suppressed": false,
       "unreliable": false
     },
@@ -19906,7 +19906,7 @@
       "year": 2013,
       "deaths": 30,
       "population": 63860,
-      "crude_rate": 47.0,
+      "crude_rate": 47,
       "suppressed": false,
       "unreliable": false
     },
@@ -20172,7 +20172,7 @@
       "population": 150865,
       "crude_rate": 13.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "06",
@@ -20830,7 +20830,7 @@
       "year": 2007,
       "deaths": 24,
       "population": 402376,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -20852,7 +20852,7 @@
       "year": 2009,
       "deaths": 37,
       "population": 410263,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -21107,7 +21107,7 @@
       "population": 98893,
       "crude_rate": 20.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "06",
@@ -21138,7 +21138,7 @@
       "year": 2008,
       "deaths": 324,
       "population": 2957593,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -21501,7 +21501,7 @@
       "year": 2014,
       "deaths": 327,
       "population": 2329271,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -21787,7 +21787,7 @@
       "year": 2013,
       "deaths": 125,
       "population": 2088371,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -21820,7 +21820,7 @@
       "year": 2007,
       "deaths": 357,
       "population": 2975742,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -21842,7 +21842,7 @@
       "year": 2009,
       "deaths": 368,
       "population": 3061203,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -22205,7 +22205,7 @@
       "year": 2006,
       "deaths": 48,
       "population": 690176,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -22227,7 +22227,7 @@
       "year": 2008,
       "deaths": 56,
       "population": 703830,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -22293,7 +22293,7 @@
       "year": 2014,
       "deaths": 68,
       "population": 758581,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -22458,7 +22458,7 @@
       "year": 2011,
       "deaths": 144,
       "population": 1809378,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -22986,7 +22986,7 @@
       "year": 2014,
       "deaths": 69,
       "population": 431131,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -23118,7 +23118,7 @@
       "year": 2008,
       "deaths": 66,
       "population": 509032,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -23162,7 +23162,7 @@
       "year": 2012,
       "deaths": 73,
       "population": 521726,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -23184,7 +23184,7 @@
       "year": 2014,
       "deaths": 69,
       "population": 531997,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -23690,7 +23690,7 @@
       "year": 2006,
       "deaths": 96,
       "population": 798183,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -23767,7 +23767,7 @@
       "year": 2013,
       "deaths": 126,
       "population": 839620,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -23846,7 +23846,7 @@
       "population": 202054,
       "crude_rate": 9.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "06",
@@ -23877,7 +23877,7 @@
       "year": 2014,
       "deaths": 25,
       "population": 207590,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -23998,7 +23998,7 @@
       "year": 2007,
       "deaths": 75,
       "population": 415746,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -24075,7 +24075,7 @@
       "year": 2014,
       "deaths": 96,
       "population": 480718,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -24207,7 +24207,7 @@
       "year": 2008,
       "deaths": 94,
       "population": 552461,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -24240,7 +24240,7 @@
       "year": 2011,
       "deaths": 82,
       "population": 584948,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -24669,7 +24669,7 @@
       "year": 2014,
       "deaths": 47,
       "population": 313333,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -27034,7 +27034,7 @@
       "year": 2013,
       "deaths": 83,
       "population": 551798,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -27540,7 +27540,7 @@
       "year": 2014,
       "deaths": 55,
       "population": 324122,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -27892,7 +27892,7 @@
       "year": 2010,
       "deaths": 22,
       "population": 146723,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -27927,7 +27927,7 @@
       "population": 147554,
       "crude_rate": 13.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "08",
@@ -27938,7 +27938,7 @@
       "population": 148255,
       "crude_rate": 13.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "08",
@@ -29049,7 +29049,7 @@
       "population": 155121,
       "crude_rate": 12.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "08",
@@ -30411,7 +30411,7 @@
       "year": 2014,
       "deaths": 104,
       "population": 945438,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -30455,7 +30455,7 @@
       "year": 2009,
       "deaths": 89,
       "population": 891667,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -30895,7 +30895,7 @@
       "year": 2013,
       "deaths": 63,
       "population": 274150,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -31148,7 +31148,7 @@
       "year": 2009,
       "deaths": 24,
       "population": 160081,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -31170,7 +31170,7 @@
       "year": 2011,
       "deaths": 33,
       "population": 164834,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -31236,7 +31236,7 @@
       "year": 2008,
       "deaths": 80,
       "population": 533958,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -31326,7 +31326,7 @@
       "population": 187225,
       "crude_rate": 10.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "10",
@@ -31401,7 +31401,7 @@
       "year": 2014,
       "deaths": 38,
       "population": 210849,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -31456,7 +31456,7 @@
       "year": 2010,
       "deaths": 78,
       "population": 601723,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -31524,7 +31524,7 @@
       "population": 242685,
       "crude_rate": 8.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -31566,7 +31566,7 @@
       "year": 2011,
       "deaths": 25,
       "population": 249365,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -31590,7 +31590,7 @@
       "population": 253451,
       "crude_rate": 7.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -31753,7 +31753,7 @@
       "year": 2010,
       "deaths": 27,
       "population": 168852,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -31788,7 +31788,7 @@
       "population": 174987,
       "crude_rate": 11.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -31907,7 +31907,7 @@
       "year": 2006,
       "deaths": 107,
       "population": 535138,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -31929,7 +31929,7 @@
       "year": 2008,
       "deaths": 125,
       "population": 542378,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -31962,7 +31962,7 @@
       "year": 2011,
       "deaths": 125,
       "population": 543566,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -31973,7 +31973,7 @@
       "year": 2012,
       "deaths": 115,
       "population": 547307,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -32050,7 +32050,7 @@
       "year": 2010,
       "deaths": 262,
       "population": 1748066,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -32316,7 +32316,7 @@
       "population": 140974,
       "crude_rate": 14.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -32457,7 +32457,7 @@
       "year": 2011,
       "deaths": 27,
       "population": 192370,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -32468,7 +32468,7 @@
       "year": 2012,
       "deaths": 35,
       "population": 194345,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -32534,7 +32534,7 @@
       "year": 2009,
       "deaths": 54,
       "population": 318485,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -32545,7 +32545,7 @@
       "year": 2010,
       "deaths": 45,
       "population": 321520,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -32567,7 +32567,7 @@
       "year": 2012,
       "deaths": 40,
       "population": 332427,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -32578,7 +32578,7 @@
       "year": 2013,
       "deaths": 34,
       "population": 339642,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -34008,7 +34008,7 @@
       "year": 2008,
       "deaths": 50,
       "population": 172437,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -34030,7 +34030,7 @@
       "year": 2010,
       "deaths": 57,
       "population": 172778,
-      "crude_rate": 33.0,
+      "crude_rate": 33,
       "suppressed": false,
       "unreliable": false
     },
@@ -34382,7 +34382,7 @@
       "year": 2006,
       "deaths": 25,
       "population": 131463,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -34437,7 +34437,7 @@
       "year": 2011,
       "deaths": 25,
       "population": 138894,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -35449,7 +35449,7 @@
       "year": 2013,
       "deaths": 72,
       "population": 342106,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -35548,7 +35548,7 @@
       "year": 2013,
       "deaths": 54,
       "population": 337362,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -35614,7 +35614,7 @@
       "year": 2010,
       "deaths": 22,
       "population": 146318,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -35625,7 +35625,7 @@
       "year": 2011,
       "deaths": 28,
       "population": 147495,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -35658,9 +35658,9 @@
       "year": 2014,
       "deaths": 20,
       "population": 153392,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -35669,7 +35669,7 @@
       "year": 2006,
       "deaths": 144,
       "population": 2405911,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -35770,7 +35770,7 @@
       "population": 73793,
       "crude_rate": 27.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -35988,9 +35988,9 @@
       "year": 2008,
       "deaths": 20,
       "population": 181752,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -36021,7 +36021,7 @@
       "year": 2011,
       "deaths": 22,
       "population": 183482,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -36032,7 +36032,7 @@
       "year": 2012,
       "deaths": 21,
       "population": 190083,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -36241,7 +36241,7 @@
       "year": 2013,
       "deaths": 123,
       "population": 1225267,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -36274,7 +36274,7 @@
       "year": 2007,
       "deaths": 28,
       "population": 253722,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -36307,7 +36307,7 @@
       "year": 2010,
       "deaths": 27,
       "population": 268685,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -36406,7 +36406,7 @@
       "year": 2010,
       "deaths": 238,
       "population": 1320134,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -36461,7 +36461,7 @@
       "year": 2006,
       "deaths": 101,
       "population": 439529,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -36571,7 +36571,7 @@
       "year": 2007,
       "deaths": 239,
       "population": 918624,
-      "crude_rate": 26.0,
+      "crude_rate": 26,
       "suppressed": false,
       "unreliable": false
     },
@@ -36593,7 +36593,7 @@
       "year": 2009,
       "deaths": 265,
       "population": 915330,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -36604,7 +36604,7 @@
       "year": 2010,
       "deaths": 284,
       "population": 916542,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -36925,7 +36925,7 @@
       "population": 202188,
       "crude_rate": 9.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "12",
@@ -37781,7 +37781,7 @@
       "year": 2009,
       "deaths": 109,
       "population": 494688,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -38881,7 +38881,7 @@
       "year": 2010,
       "deaths": 22,
       "population": 100157,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -39191,7 +39191,7 @@
       "population": 156433,
       "crude_rate": 12.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -40390,7 +40390,7 @@
       "population": 65046,
       "crude_rate": 30.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -40522,7 +40522,7 @@
       "population": 246896,
       "crude_rate": 8.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -40872,7 +40872,7 @@
       "year": 2011,
       "deaths": 24,
       "population": 218286,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -41127,7 +41127,7 @@
       "population": 260441,
       "crude_rate": 7.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -41160,7 +41160,7 @@
       "population": 259424,
       "crude_rate": 7.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -41193,7 +41193,7 @@
       "population": 264220,
       "crude_rate": 7.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -41367,7 +41367,7 @@
       "year": 2011,
       "deaths": 77,
       "population": 697553,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -41842,7 +41842,7 @@
       "population": 125501,
       "crude_rate": 15.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -42423,7 +42423,7 @@
       "year": 2008,
       "deaths": 41,
       "population": 685646,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -44876,9 +44876,9 @@
       "year": 2006,
       "deaths": 20,
       "population": 166524,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -44911,7 +44911,7 @@
       "population": 178503,
       "crude_rate": 11.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -45472,7 +45472,7 @@
       "population": 180304,
       "crude_rate": 11.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -48937,7 +48937,7 @@
       "population": 122635,
       "crude_rate": 16.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -48948,7 +48948,7 @@
       "population": 131172,
       "crude_rate": 15.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -50037,7 +50037,7 @@
       "population": 196483,
       "crude_rate": 10.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -50103,7 +50103,7 @@
       "population": 202003,
       "crude_rate": 9.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "13",
@@ -54017,7 +54017,7 @@
       "year": 2009,
       "deaths": 94,
       "population": 943177,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -54327,7 +54327,7 @@
       "population": 154834,
       "crude_rate": 12.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "15",
@@ -54360,7 +54360,7 @@
       "population": 160202,
       "crude_rate": 12.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "15",
@@ -54380,7 +54380,7 @@
       "year": 2006,
       "deaths": 40,
       "population": 363498,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -54424,7 +54424,7 @@
       "year": 2010,
       "deaths": 47,
       "population": 392365,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -55713,7 +55713,7 @@
       "population": 188923,
       "crude_rate": 10.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "16",
@@ -55724,7 +55724,7 @@
       "population": 191694,
       "crude_rate": 10.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "16",
@@ -59715,7 +59715,7 @@
       "year": 2014,
       "deaths": 31,
       "population": 207133,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -60232,7 +60232,7 @@
       "year": 2007,
       "deaths": 518,
       "population": 5154235,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -60298,7 +60298,7 @@
       "year": 2013,
       "deaths": 628,
       "population": 5240700,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -63158,7 +63158,7 @@
       "year": 2012,
       "deaths": 52,
       "population": 522487,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -63510,7 +63510,7 @@
       "year": 2008,
       "deaths": 84,
       "population": 697369,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -64181,7 +64181,7 @@
       "year": 2006,
       "deaths": 21,
       "population": 300630,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -64225,7 +64225,7 @@
       "year": 2010,
       "deaths": 40,
       "population": 308760,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -64326,7 +64326,7 @@
       "population": 169572,
       "crude_rate": 11.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "17",
@@ -64588,7 +64588,7 @@
       "year": 2007,
       "deaths": 40,
       "population": 267382,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -64610,7 +64610,7 @@
       "year": 2009,
       "deaths": 43,
       "population": 268978,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -64654,7 +64654,7 @@
       "year": 2013,
       "deaths": 48,
       "population": 267225,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -64665,7 +64665,7 @@
       "year": 2014,
       "deaths": 88,
       "population": 266560,
-      "crude_rate": 33.0,
+      "crude_rate": 33,
       "suppressed": false,
       "unreliable": false
     },
@@ -65831,7 +65831,7 @@
       "year": 2012,
       "deaths": 30,
       "population": 187254,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -65842,7 +65842,7 @@
       "year": 2013,
       "deaths": 34,
       "population": 188429,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -66757,7 +66757,7 @@
       "population": 263445,
       "crude_rate": 7.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "17",
@@ -68658,7 +68658,7 @@
       "year": 2008,
       "deaths": 68,
       "population": 295726,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -68669,7 +68669,7 @@
       "year": 2009,
       "deaths": 65,
       "population": 295612,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -69771,7 +69771,7 @@
       "population": 110232,
       "crude_rate": 18.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -70572,9 +70572,9 @@
       "year": 2011,
       "deaths": 20,
       "population": 117660,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -70594,9 +70594,9 @@
       "year": 2013,
       "deaths": 20,
       "population": 117484,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -71003,7 +71003,7 @@
       "population": 76179,
       "crude_rate": 26.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -71608,7 +71608,7 @@
       "population": 244738,
       "crude_rate": 8.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -72178,7 +72178,7 @@
       "year": 2013,
       "deaths": 24,
       "population": 82760,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -72838,7 +72838,7 @@
       "year": 2010,
       "deaths": 21,
       "population": 139654,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -73379,7 +73379,7 @@
       "population": 111444,
       "crude_rate": 17.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -73487,7 +73487,7 @@
       "year": 2006,
       "deaths": 42,
       "population": 131240,
-      "crude_rate": 32.0,
+      "crude_rate": 32,
       "suppressed": false,
       "unreliable": false
     },
@@ -73586,7 +73586,7 @@
       "year": 2006,
       "deaths": 114,
       "population": 878515,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -74215,7 +74215,7 @@
       "population": 68583,
       "crude_rate": 29.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -75788,7 +75788,7 @@
       "population": 267282,
       "crude_rate": 7.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -75797,7 +75797,7 @@
       "year": 2009,
       "deaths": 24,
       "population": 266827,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -76567,9 +76567,9 @@
       "year": 2007,
       "deaths": 20,
       "population": 166226,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -77625,7 +77625,7 @@
       "population": 67893,
       "crude_rate": 29.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -77636,7 +77636,7 @@
       "population": 67671,
       "crude_rate": 29.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "18",
@@ -83499,7 +83499,7 @@
       "population": 205840,
       "crude_rate": 9.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "19",
@@ -83532,7 +83532,7 @@
       "population": 211226,
       "crude_rate": 9.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "19",
@@ -85488,7 +85488,7 @@
       "year": 2008,
       "deaths": 42,
       "population": 419495,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -85521,7 +85521,7 @@
       "year": 2011,
       "deaths": 57,
       "population": 437399,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -92242,7 +92242,7 @@
       "year": 2010,
       "deaths": 38,
       "population": 544179,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -92253,7 +92253,7 @@
       "year": 2011,
       "deaths": 44,
       "population": 552991,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -96268,7 +96268,7 @@
       "year": 2007,
       "deaths": 67,
       "population": 478479,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -96301,7 +96301,7 @@
       "year": 2010,
       "deaths": 55,
       "population": 498365,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -96334,7 +96334,7 @@
       "year": 2013,
       "deaths": 71,
       "population": 505415,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -96523,7 +96523,7 @@
       "population": 178991,
       "crude_rate": 11.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "20",
@@ -98107,7 +98107,7 @@
       "population": 159129,
       "crude_rate": 12.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "20",
@@ -98864,9 +98864,9 @@
       "year": 2009,
       "deaths": 20,
       "population": 117461,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -99590,7 +99590,7 @@
       "year": 2012,
       "deaths": 22,
       "population": 75896,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -99955,7 +99955,7 @@
       "population": 89664,
       "crude_rate": 22.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -99964,7 +99964,7 @@
       "year": 2010,
       "deaths": 28,
       "population": 90336,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -100008,7 +100008,7 @@
       "year": 2014,
       "deaths": 45,
       "population": 91833,
-      "crude_rate": 49.0,
+      "crude_rate": 49,
       "suppressed": false,
       "unreliable": false
     },
@@ -101022,7 +101022,7 @@
       "population": 94647,
       "crude_rate": 21.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -101493,7 +101493,7 @@
       "year": 2014,
       "deaths": 84,
       "population": 310797,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -103880,7 +103880,7 @@
       "year": 2006,
       "deaths": 42,
       "population": 155557,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -104729,7 +104729,7 @@
       "population": 24446,
       "crude_rate": 81.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -105631,7 +105631,7 @@
       "population": 84786,
       "crude_rate": 23.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -107820,7 +107820,7 @@
       "population": 63380,
       "crude_rate": 31.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -109382,7 +109382,7 @@
       "population": 115517,
       "crude_rate": 17.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "21",
@@ -110062,7 +110062,7 @@
       "year": 2010,
       "deaths": 21,
       "population": 61773,
-      "crude_rate": 34.0,
+      "crude_rate": 34,
       "suppressed": false,
       "unreliable": false
     },
@@ -110900,7 +110900,7 @@
       "population": 252603,
       "crude_rate": 7.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "22",
@@ -110920,7 +110920,7 @@
       "year": 2007,
       "deaths": 58,
       "population": 187081,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -111613,7 +111613,7 @@
       "year": 2007,
       "deaths": 39,
       "population": 433344,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -112275,7 +112275,7 @@
       "population": 73878,
       "crude_rate": 27.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "22",
@@ -112570,7 +112570,7 @@
       "year": 2013,
       "deaths": 126,
       "population": 434767,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -112768,7 +112768,7 @@
       "year": 2013,
       "deaths": 30,
       "population": 230845,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -113175,7 +113175,7 @@
       "year": 2014,
       "deaths": 34,
       "population": 135751,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -113936,7 +113936,7 @@
       "population": 132374,
       "crude_rate": 15.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "22",
@@ -114770,7 +114770,7 @@
       "year": 2006,
       "deaths": 23,
       "population": 85128,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -115177,7 +115177,7 @@
       "year": 2007,
       "deaths": 28,
       "population": 116792,
-      "crude_rate": 24.0,
+      "crude_rate": 24,
       "suppressed": false,
       "unreliable": false
     },
@@ -115245,7 +115245,7 @@
       "population": 125412,
       "crude_rate": 15.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "22",
@@ -115254,7 +115254,7 @@
       "year": 2014,
       "deaths": 28,
       "population": 127049,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -115366,7 +115366,7 @@
       "population": 109994,
       "crude_rate": 18.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "22",
@@ -116939,7 +116939,7 @@
       "population": 121112,
       "crude_rate": 16.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "23",
@@ -117916,7 +117916,7 @@
       "year": 2013,
       "deaths": 26,
       "population": 199431,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -118180,7 +118180,7 @@
       "year": 2010,
       "deaths": 129,
       "population": 805029,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -119192,7 +119192,7 @@
       "year": 2012,
       "deaths": 30,
       "population": 299430,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -119216,7 +119216,7 @@
       "population": 309284,
       "crude_rate": 6.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "24",
@@ -119500,7 +119500,7 @@
       "year": 2013,
       "deaths": 53,
       "population": 890081,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -119920,7 +119920,7 @@
       "population": 144286,
       "crude_rate": 13.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "24",
@@ -119931,7 +119931,7 @@
       "population": 146173,
       "crude_rate": 13.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "24",
@@ -120226,7 +120226,7 @@
       "year": 2007,
       "deaths": 242,
       "population": 620306,
-      "crude_rate": 39.0,
+      "crude_rate": 39,
       "suppressed": false,
       "unreliable": false
     },
@@ -120237,7 +120237,7 @@
       "year": 2008,
       "deaths": 155,
       "population": 620184,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -120292,7 +120292,7 @@
       "year": 2013,
       "deaths": 205,
       "population": 622104,
-      "crude_rate": 33.0,
+      "crude_rate": 33,
       "suppressed": false,
       "unreliable": false
     },
@@ -120358,7 +120358,7 @@
       "year": 2010,
       "deaths": 28,
       "population": 215888,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -120369,7 +120369,7 @@
       "year": 2011,
       "deaths": 26,
       "population": 215769,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -120426,7 +120426,7 @@
       "population": 131883,
       "crude_rate": 15.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "25",
@@ -120512,7 +120512,7 @@
       "year": 2006,
       "deaths": 120,
       "population": 544487,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -120721,7 +120721,7 @@
       "year": 2007,
       "deaths": 124,
       "population": 730664,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -120963,7 +120963,7 @@
       "year": 2011,
       "deaths": 65,
       "population": 463783,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -121009,7 +121009,7 @@
       "population": 156168,
       "crude_rate": 12.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "25",
@@ -121436,7 +121436,7 @@
       "year": 2009,
       "deaths": 64,
       "population": 492738,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -121469,7 +121469,7 @@
       "year": 2012,
       "deaths": 65,
       "population": 499759,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -121601,7 +121601,7 @@
       "year": 2006,
       "deaths": 118,
       "population": 785345,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -121667,7 +121667,7 @@
       "year": 2012,
       "deaths": 105,
       "population": 806163,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -121986,7 +121986,7 @@
       "year": 2014,
       "deaths": 25,
       "population": 113847,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -122571,7 +122571,7 @@
       "population": 106832,
       "crude_rate": 18.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "26",
@@ -122745,7 +122745,7 @@
       "year": 2011,
       "deaths": 22,
       "population": 156941,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -122888,7 +122888,7 @@
       "year": 2006,
       "deaths": 29,
       "population": 138291,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -122965,7 +122965,7 @@
       "year": 2013,
       "deaths": 31,
       "population": 135012,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -124879,7 +124879,7 @@
       "year": 2007,
       "deaths": 31,
       "population": 281706,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -125473,7 +125473,7 @@
       "year": 2007,
       "deaths": 22,
       "population": 245431,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -125682,7 +125682,7 @@
       "year": 2008,
       "deaths": 60,
       "population": 599234,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -125992,7 +125992,7 @@
       "population": 88774,
       "crude_rate": 22.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "26",
@@ -127400,7 +127400,7 @@
       "population": 151560,
       "crude_rate": 13.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "26",
@@ -127651,7 +127651,7 @@
       "year": 2007,
       "deaths": 33,
       "population": 173738,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -127882,7 +127882,7 @@
       "year": 2010,
       "deaths": 84,
       "population": 1202362,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -128553,7 +128553,7 @@
       "year": 2008,
       "deaths": 21,
       "population": 261906,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -128872,7 +128872,7 @@
       "year": 2010,
       "deaths": 24,
       "population": 200169,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -128916,7 +128916,7 @@
       "year": 2014,
       "deaths": 41,
       "population": 195012,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -129653,7 +129653,7 @@
       "year": 2009,
       "deaths": 31,
       "population": 343520,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -129686,7 +129686,7 @@
       "year": 2012,
       "deaths": 35,
       "population": 350946,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -129719,7 +129719,7 @@
       "year": 2006,
       "deaths": 328,
       "population": 1932490,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -130040,7 +130040,7 @@
       "population": 327427,
       "crude_rate": 6.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "27",
@@ -130071,7 +130071,7 @@
       "year": 2011,
       "deaths": 40,
       "population": 333140,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -130093,7 +130093,7 @@
       "year": 2013,
       "deaths": 44,
       "population": 339534,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -132568,7 +132568,7 @@
       "year": 2013,
       "deaths": 144,
       "population": 1198778,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -132579,7 +132579,7 @@
       "year": 2014,
       "deaths": 133,
       "population": 1212064,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -136715,7 +136715,7 @@
       "year": 2012,
       "deaths": 22,
       "population": 200319,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -138015,7 +138015,7 @@
       "population": 246603,
       "crude_rate": 8.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "27",
@@ -140710,7 +140710,7 @@
       "population": 40087,
       "crude_rate": 49.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "28",
@@ -140787,7 +140787,7 @@
       "population": 45566,
       "crude_rate": 43.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "28",
@@ -141467,7 +141467,7 @@
       "year": 2012,
       "deaths": 28,
       "population": 140298,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -141489,7 +141489,7 @@
       "year": 2014,
       "deaths": 31,
       "population": 141137,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -144538,7 +144538,7 @@
       "population": 145165,
       "crude_rate": 13.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "28",
@@ -149013,7 +149013,7 @@
       "year": 2014,
       "deaths": 21,
       "population": 233682,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -150137,7 +150137,7 @@
       "population": 101149,
       "crude_rate": 19.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "29",
@@ -150421,7 +150421,7 @@
       "year": 2007,
       "deaths": 75,
       "population": 267576,
-      "crude_rate": 28.0,
+      "crude_rate": 28,
       "suppressed": false,
       "unreliable": false
     },
@@ -150443,7 +150443,7 @@
       "year": 2009,
       "deaths": 63,
       "population": 274013,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -155712,7 +155712,7 @@
       "year": 2011,
       "deaths": 62,
       "population": 365151,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -156020,7 +156020,7 @@
       "year": 2012,
       "deaths": 31,
       "population": 65917,
-      "crude_rate": 47.0,
+      "crude_rate": 47,
       "suppressed": false,
       "unreliable": false
     },
@@ -156119,7 +156119,7 @@
       "year": 2012,
       "deaths": 150,
       "population": 1000438,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -157934,7 +157934,7 @@
       "year": 2006,
       "deaths": 80,
       "population": 320131,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -158000,7 +158000,7 @@
       "year": 2012,
       "deaths": 70,
       "population": 318172,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -161115,7 +161115,7 @@
       "population": 106110,
       "crude_rate": 18.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "30",
@@ -161137,7 +161137,7 @@
       "population": 108717,
       "crude_rate": 18.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "30",
@@ -161148,7 +161148,7 @@
       "population": 109299,
       "crude_rate": 18.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "30",
@@ -163491,7 +163491,7 @@
       "population": 141518,
       "crude_rate": 14.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "30",
@@ -163533,7 +163533,7 @@
       "year": 2011,
       "deaths": 24,
       "population": 150069,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -166338,7 +166338,7 @@
       "year": 2014,
       "deaths": 49,
       "population": 543244,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -168967,9 +168967,9 @@
       "year": 2010,
       "deaths": 20,
       "population": 285407,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "31",
@@ -168980,7 +168980,7 @@
       "population": 289800,
       "crude_rate": 6.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "31",
@@ -169011,7 +169011,7 @@
       "year": 2014,
       "deaths": 24,
       "population": 301795,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -172883,7 +172883,7 @@
       "year": 2006,
       "deaths": 343,
       "population": 1803774,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -172905,7 +172905,7 @@
       "year": 2008,
       "deaths": 364,
       "population": 1912349,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -172927,7 +172927,7 @@
       "year": 2010,
       "deaths": 390,
       "population": 1951269,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -174170,7 +174170,7 @@
       "year": 2006,
       "deaths": 64,
       "population": 400453,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -174973,7 +174973,7 @@
       "year": 2007,
       "deaths": 56,
       "population": 398843,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -175072,7 +175072,7 @@
       "year": 2007,
       "deaths": 22,
       "population": 147024,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -175140,7 +175140,7 @@
       "population": 146849,
       "crude_rate": 13.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "33",
@@ -175171,7 +175171,7 @@
       "year": 2007,
       "deaths": 44,
       "population": 294132,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -175294,7 +175294,7 @@
       "population": 123034,
       "crude_rate": 16.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "33",
@@ -175919,7 +175919,7 @@
       "year": 2012,
       "deaths": 26,
       "population": 96304,
-      "crude_rate": 27.0,
+      "crude_rate": 27,
       "suppressed": false,
       "unreliable": false
     },
@@ -176623,7 +176623,7 @@
       "year": 2013,
       "deaths": 75,
       "population": 828919,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -176656,7 +176656,7 @@
       "year": 2007,
       "deaths": 50,
       "population": 626644,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -176810,7 +176810,7 @@
       "year": 2012,
       "deaths": 55,
       "population": 497999,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -176821,7 +176821,7 @@
       "year": 2013,
       "deaths": 45,
       "population": 499397,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -176854,7 +176854,7 @@
       "year": 2007,
       "deaths": 62,
       "population": 565356,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -176865,7 +176865,7 @@
       "year": 2008,
       "deaths": 51,
       "population": 569485,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -176920,7 +176920,7 @@
       "year": 2013,
       "deaths": 146,
       "population": 583414,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -177030,7 +177030,7 @@
       "year": 2014,
       "deaths": 51,
       "population": 508856,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -177206,7 +177206,7 @@
       "year": 2012,
       "deaths": 23,
       "population": 327707,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -177307,7 +177307,7 @@
       "population": 147442,
       "crude_rate": 13.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "34",
@@ -177415,7 +177415,7 @@
       "year": 2013,
       "deaths": 44,
       "population": 548256,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -178374,7 +178374,7 @@
       "population": 53829,
       "crude_rate": 37.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "35",
@@ -179617,7 +179617,7 @@
       "population": 40335,
       "crude_rate": 49.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "35",
@@ -179628,7 +179628,7 @@
       "population": 40268,
       "crude_rate": 49.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "35",
@@ -179648,9 +179648,9 @@
       "year": 2009,
       "deaths": 20,
       "population": 40023,
-      "crude_rate": 50.0,
+      "crude_rate": 50,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "35",
@@ -180110,7 +180110,7 @@
       "year": 2006,
       "deaths": 25,
       "population": 138786,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -180176,7 +180176,7 @@
       "year": 2012,
       "deaths": 38,
       "population": 146375,
-      "crude_rate": 26.0,
+      "crude_rate": 26,
       "suppressed": false,
       "unreliable": false
     },
@@ -180198,7 +180198,7 @@
       "year": 2014,
       "deaths": 46,
       "population": 148164,
-      "crude_rate": 31.0,
+      "crude_rate": 31,
       "suppressed": false,
       "unreliable": false
     },
@@ -180794,7 +180794,7 @@
       "population": 75817,
       "crude_rate": 26.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "36",
@@ -181023,7 +181023,7 @@
       "year": 2008,
       "deaths": 137,
       "population": 1363488,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -181045,7 +181045,7 @@
       "year": 2010,
       "deaths": 111,
       "population": 1385108,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -182200,7 +182200,7 @@
       "year": 2007,
       "deaths": 74,
       "population": 921887,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -182255,7 +182255,7 @@
       "year": 2012,
       "deaths": 92,
       "population": 919086,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -182277,7 +182277,7 @@
       "year": 2014,
       "deaths": 148,
       "population": 922835,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -183146,7 +183146,7 @@
       "year": 2012,
       "deaths": 206,
       "population": 2565635,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -183696,7 +183696,7 @@
       "year": 2008,
       "deaths": 133,
       "population": 1325129,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -183729,7 +183729,7 @@
       "year": 2011,
       "deaths": 148,
       "population": 1344436,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -184048,7 +184048,7 @@
       "year": 2013,
       "deaths": 28,
       "population": 233585,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -184070,7 +184070,7 @@
       "year": 2006,
       "deaths": 37,
       "population": 460925,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -184103,7 +184103,7 @@
       "year": 2009,
       "deaths": 42,
       "population": 465633,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -184268,7 +184268,7 @@
       "year": 2006,
       "deaths": 33,
       "population": 366908,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -185049,7 +185049,7 @@
       "year": 2014,
       "deaths": 85,
       "population": 473279,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -185874,7 +185874,7 @@
       "year": 2008,
       "deaths": 193,
       "population": 1480218,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -185885,7 +185885,7 @@
       "year": 2009,
       "deaths": 164,
       "population": 1487206,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -186281,9 +186281,9 @@
       "year": 2009,
       "deaths": 20,
       "population": 182638,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "36",
@@ -186974,7 +186974,7 @@
       "year": 2009,
       "deaths": 21,
       "population": 149954,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -187953,7 +187953,7 @@
       "year": 2008,
       "deaths": 28,
       "population": 233772,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -188032,7 +188032,7 @@
       "population": 89903,
       "crude_rate": 22.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -188063,7 +188063,7 @@
       "year": 2009,
       "deaths": 21,
       "population": 91178,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -188252,7 +188252,7 @@
       "population": 82527,
       "crude_rate": 24.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -188263,7 +188263,7 @@
       "population": 82798,
       "crude_rate": 24.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -189165,7 +189165,7 @@
       "population": 98078,
       "crude_rate": 20.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -189713,7 +189713,7 @@
       "year": 2006,
       "deaths": 33,
       "population": 157209,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -190252,7 +190252,7 @@
       "year": 2010,
       "deaths": 28,
       "population": 350670,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -190472,7 +190472,7 @@
       "year": 2012,
       "deaths": 50,
       "population": 208049,
-      "crude_rate": 24.0,
+      "crude_rate": 24,
       "suppressed": false,
       "unreliable": false
     },
@@ -190923,7 +190923,7 @@
       "year": 2008,
       "deaths": 38,
       "population": 477809,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -191321,7 +191321,7 @@
       "population": 104289,
       "crude_rate": 19.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -191948,7 +191948,7 @@
       "population": 172595,
       "crude_rate": 11.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -193554,7 +193554,7 @@
       "population": 185220,
       "crude_rate": 10.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -194377,7 +194377,7 @@
       "year": 2007,
       "deaths": 25,
       "population": 138855,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -194399,7 +194399,7 @@
       "year": 2009,
       "deaths": 24,
       "population": 141175,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -194619,7 +194619,7 @@
       "year": 2011,
       "deaths": 23,
       "population": 135517,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -194775,7 +194775,7 @@
       "population": 135626,
       "crude_rate": 14.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -194839,7 +194839,7 @@
       "year": 2013,
       "deaths": 29,
       "population": 138323,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -194885,7 +194885,7 @@
       "population": 67145,
       "crude_rate": 29.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -196447,7 +196447,7 @@
       "population": 68489,
       "crude_rate": 29.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "37",
@@ -196533,7 +196533,7 @@
       "year": 2014,
       "deaths": 31,
       "population": 68838,
-      "crude_rate": 45.0,
+      "crude_rate": 45,
       "suppressed": false,
       "unreliable": false
     },
@@ -202431,7 +202431,7 @@
       "population": 101497,
       "crude_rate": 19.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -202462,9 +202462,9 @@
       "year": 2013,
       "deaths": 20,
       "population": 99811,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -202891,7 +202891,7 @@
       "year": 2007,
       "deaths": 54,
       "population": 361192,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -202913,7 +202913,7 @@
       "year": 2009,
       "deaths": 66,
       "population": 366633,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -203254,7 +203254,7 @@
       "year": 2013,
       "deaths": 30,
       "population": 136167,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -203542,7 +203542,7 @@
       "population": 106507,
       "crude_rate": 18.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -203564,7 +203564,7 @@
       "population": 105686,
       "crude_rate": 18.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -204345,7 +204345,7 @@
       "population": 148867,
       "crude_rate": 13.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -204541,7 +204541,7 @@
       "year": 2013,
       "deaths": 218,
       "population": 1212263,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -204895,7 +204895,7 @@
       "population": 161075,
       "crude_rate": 12.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -204915,7 +204915,7 @@
       "year": 2011,
       "deaths": 26,
       "population": 162846,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -204948,7 +204948,7 @@
       "year": 2014,
       "deaths": 41,
       "population": 163820,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -205058,7 +205058,7 @@
       "year": 2006,
       "deaths": 121,
       "population": 804913,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -205146,7 +205146,7 @@
       "year": 2014,
       "deaths": 258,
       "population": 806631,
-      "crude_rate": 32.0,
+      "crude_rate": 32,
       "suppressed": false,
       "unreliable": false
     },
@@ -206444,7 +206444,7 @@
       "year": 2006,
       "deaths": 24,
       "population": 160263,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -206521,7 +206521,7 @@
       "year": 2013,
       "deaths": 27,
       "population": 168375,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -206664,7 +206664,7 @@
       "year": 2008,
       "deaths": 24,
       "population": 299814,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -206675,7 +206675,7 @@
       "year": 2009,
       "deaths": 27,
       "population": 300893,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -206730,7 +206730,7 @@
       "year": 2014,
       "deaths": 76,
       "population": 304216,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -206752,7 +206752,7 @@
       "year": 2007,
       "deaths": 89,
       "population": 445482,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -206774,7 +206774,7 @@
       "year": 2009,
       "deaths": 40,
       "population": 442603,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -206785,7 +206785,7 @@
       "year": 2010,
       "deaths": 62,
       "population": 441815,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -206939,7 +206939,7 @@
       "year": 2006,
       "deaths": 32,
       "population": 246112,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -206983,7 +206983,7 @@
       "year": 2010,
       "deaths": 55,
       "population": 238823,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -207106,7 +207106,7 @@
       "population": 66238,
       "crude_rate": 30.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -207524,7 +207524,7 @@
       "population": 103900,
       "crude_rate": 19.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -208710,7 +208710,7 @@
       "year": 2014,
       "deaths": 34,
       "population": 161882,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -209053,7 +209053,7 @@
       "population": 77862,
       "crude_rate": 25.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -209064,7 +209064,7 @@
       "population": 78064,
       "crude_rate": 25.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -209075,7 +209075,7 @@
       "population": 78249,
       "crude_rate": 25.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -209251,7 +209251,7 @@
       "population": 79241,
       "crude_rate": 25.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -209557,7 +209557,7 @@
       "year": 2010,
       "deaths": 45,
       "population": 375586,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -209579,7 +209579,7 @@
       "year": 2012,
       "deaths": 45,
       "population": 374868,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -209634,7 +209634,7 @@
       "year": 2008,
       "deaths": 60,
       "population": 543116,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -209667,7 +209667,7 @@
       "year": 2011,
       "deaths": 65,
       "population": 539832,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -209678,7 +209678,7 @@
       "year": 2012,
       "deaths": 103,
       "population": 540811,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -210206,9 +210206,9 @@
       "year": 2006,
       "deaths": 20,
       "population": 200630,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "39",
@@ -211649,7 +211649,7 @@
       "population": 119492,
       "crude_rate": 16.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -211748,7 +211748,7 @@
       "population": 48096,
       "crude_rate": 41.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -212131,7 +212131,7 @@
       "year": 2010,
       "deaths": 41,
       "population": 255755,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -212626,7 +212626,7 @@
       "year": 2010,
       "deaths": 21,
       "population": 69967,
-      "crude_rate": 30.0,
+      "crude_rate": 30,
       "suppressed": false,
       "unreliable": false
     },
@@ -212639,7 +212639,7 @@
       "population": 70467,
       "crude_rate": 28.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -213343,7 +213343,7 @@
       "population": 53118,
       "crude_rate": 37.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -216157,7 +216157,7 @@
       "year": 2007,
       "deaths": 139,
       "population": 695706,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -216234,7 +216234,7 @@
       "year": 2014,
       "deaths": 161,
       "population": 766215,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -217941,7 +217941,7 @@
       "population": 68677,
       "crude_rate": 29.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -218007,7 +218007,7 @@
       "population": 75700,
       "crude_rate": 26.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -218018,7 +218018,7 @@
       "population": 75702,
       "crude_rate": 26.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "40",
@@ -218654,7 +218654,7 @@
       "year": 2009,
       "deaths": 45,
       "population": 374085,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -218665,7 +218665,7 @@
       "year": 2010,
       "deaths": 49,
       "population": 375992,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -219272,7 +219272,7 @@
       "population": 160338,
       "crude_rate": 12.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "41",
@@ -219305,7 +219305,7 @@
       "population": 170388,
       "crude_rate": 11.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "41",
@@ -220744,7 +220744,7 @@
       "year": 2010,
       "deaths": 44,
       "population": 315335,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -220898,7 +220898,7 @@
       "year": 2006,
       "deaths": 130,
       "population": 683767,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -221701,7 +221701,7 @@
       "year": 2007,
       "deaths": 46,
       "population": 508842,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -222308,7 +222308,7 @@
       "population": 171336,
       "crude_rate": 11.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -222350,7 +222350,7 @@
       "year": 2012,
       "deaths": 34,
       "population": 170245,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -222845,7 +222845,7 @@
       "year": 2012,
       "deaths": 113,
       "population": 627053,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -222867,7 +222867,7 @@
       "year": 2014,
       "deaths": 144,
       "population": 626685,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -222955,7 +222955,7 @@
       "year": 2013,
       "deaths": 39,
       "population": 185476,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -222966,7 +222966,7 @@
       "year": 2014,
       "deaths": 39,
       "population": 185943,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -223065,7 +223065,7 @@
       "year": 2014,
       "deaths": 40,
       "population": 137732,
-      "crude_rate": 29.0,
+      "crude_rate": 29,
       "suppressed": false,
       "unreliable": false
     },
@@ -223417,7 +223417,7 @@
       "year": 2010,
       "deaths": 55,
       "population": 498886,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -223450,7 +223450,7 @@
       "year": 2013,
       "deaths": 51,
       "population": 509468,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -223947,7 +223947,7 @@
       "population": 87376,
       "crude_rate": 22.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -224013,7 +224013,7 @@
       "population": 235406,
       "crude_rate": 8.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -224132,7 +224132,7 @@
       "year": 2012,
       "deaths": 35,
       "population": 269665,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -224143,7 +224143,7 @@
       "year": 2013,
       "deaths": 38,
       "population": 270937,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -224475,7 +224475,7 @@
       "population": 140159,
       "crude_rate": 14.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -225430,7 +225430,7 @@
       "year": 2013,
       "deaths": 47,
       "population": 213931,
-      "crude_rate": 22.0,
+      "crude_rate": 22,
       "suppressed": false,
       "unreliable": false
     },
@@ -225452,7 +225452,7 @@
       "year": 2006,
       "deaths": 30,
       "population": 500922,
-      "crude_rate": 6.0,
+      "crude_rate": 6,
       "suppressed": false,
       "unreliable": false
     },
@@ -225518,7 +225518,7 @@
       "year": 2012,
       "deaths": 58,
       "population": 526823,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -225573,7 +225573,7 @@
       "year": 2008,
       "deaths": 22,
       "population": 91798,
-      "crude_rate": 24.0,
+      "crude_rate": 24,
       "suppressed": false,
       "unreliable": false
     },
@@ -225815,7 +225815,7 @@
       "year": 2012,
       "deaths": 57,
       "population": 355245,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -225870,7 +225870,7 @@
       "year": 2008,
       "deaths": 64,
       "population": 319210,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -225892,7 +225892,7 @@
       "year": 2010,
       "deaths": 48,
       "population": 320918,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -226169,7 +226169,7 @@
       "population": 117189,
       "crude_rate": 17.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -226345,7 +226345,7 @@
       "population": 165185,
       "crude_rate": 12.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "42",
@@ -226519,7 +226519,7 @@
       "year": 2013,
       "deaths": 138,
       "population": 812376,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -226717,7 +226717,7 @@
       "year": 2013,
       "deaths": 48,
       "population": 299791,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -228334,7 +228334,7 @@
       "year": 2007,
       "deaths": 55,
       "population": 366318,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -228763,7 +228763,7 @@
       "year": 2010,
       "deaths": 25,
       "population": 166158,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -228774,7 +228774,7 @@
       "year": 2011,
       "deaths": 43,
       "population": 165535,
-      "crude_rate": 26.0,
+      "crude_rate": 26,
       "suppressed": false,
       "unreliable": false
     },
@@ -229093,7 +229093,7 @@
       "year": 2013,
       "deaths": 24,
       "population": 126259,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -229467,7 +229467,7 @@
       "year": 2011,
       "deaths": 34,
       "population": 188488,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -230028,7 +230028,7 @@
       "year": 2008,
       "deaths": 41,
       "population": 341921,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -230094,7 +230094,7 @@
       "year": 2014,
       "deaths": 57,
       "population": 381015,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -231174,7 +231174,7 @@
       "population": 138326,
       "crude_rate": 14.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "45",
@@ -231185,7 +231185,7 @@
       "population": 139231,
       "crude_rate": 14.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "45",
@@ -231315,7 +231315,7 @@
       "year": 2008,
       "deaths": 79,
       "population": 438742,
-      "crude_rate": 18.0,
+      "crude_rate": 18,
       "suppressed": false,
       "unreliable": false
     },
@@ -231359,7 +231359,7 @@
       "year": 2012,
       "deaths": 75,
       "population": 467605,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -232703,7 +232703,7 @@
       "population": 73089,
       "crude_rate": 27.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "45",
@@ -232769,7 +232769,7 @@
       "population": 75192,
       "crude_rate": 26.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "45",
@@ -233020,7 +233020,7 @@
       "year": 2010,
       "deaths": 54,
       "population": 384504,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -233053,7 +233053,7 @@
       "year": 2013,
       "deaths": 28,
       "population": 399256,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -233064,7 +233064,7 @@
       "year": 2014,
       "deaths": 48,
       "population": 401566,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -233196,7 +233196,7 @@
       "year": 2008,
       "deaths": 67,
       "population": 279673,
-      "crude_rate": 24.0,
+      "crude_rate": 24,
       "suppressed": false,
       "unreliable": false
     },
@@ -233262,7 +233262,7 @@
       "year": 2014,
       "deaths": 44,
       "population": 293542,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -233583,7 +233583,7 @@
       "population": 208640,
       "crude_rate": 9.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "45",
@@ -233592,7 +233592,7 @@
       "year": 2008,
       "deaths": 26,
       "population": 217463,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -240249,7 +240249,7 @@
       "population": 75129,
       "crude_rate": 26.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -240623,7 +240623,7 @@
       "population": 121716,
       "crude_rate": 16.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -240634,7 +240634,7 @@
       "population": 122689,
       "crude_rate": 16.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -240709,7 +240709,7 @@
       "year": 2007,
       "deaths": 25,
       "population": 96336,
-      "crude_rate": 26.0,
+      "crude_rate": 26,
       "suppressed": false,
       "unreliable": false
     },
@@ -240777,7 +240777,7 @@
       "population": 101848,
       "crude_rate": 19.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -243142,7 +243142,7 @@
       "population": 68819,
       "crude_rate": 29.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -243164,7 +243164,7 @@
       "population": 68335,
       "crude_rate": 29.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -243316,9 +243316,9 @@
       "year": 2010,
       "deaths": 20,
       "population": 62544,
-      "crude_rate": 32.0,
+      "crude_rate": 32,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -246134,7 +246134,7 @@
       "population": 85515,
       "crude_rate": 23.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -246398,7 +246398,7 @@
       "population": 176619,
       "crude_rate": 11.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -247410,7 +247410,7 @@
       "population": 53047,
       "crude_rate": 37.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -247564,7 +247564,7 @@
       "population": 259078,
       "crude_rate": 7.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -247573,7 +247573,7 @@
       "year": 2010,
       "deaths": 29,
       "population": 262604,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -247991,7 +247991,7 @@
       "year": 2012,
       "deaths": 132,
       "population": 940764,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -248013,7 +248013,7 @@
       "year": 2014,
       "deaths": 150,
       "population": 938803,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -248255,7 +248255,7 @@
       "year": 2009,
       "deaths": 25,
       "population": 156661,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -248299,7 +248299,7 @@
       "year": 2013,
       "deaths": 36,
       "population": 156595,
-      "crude_rate": 23.0,
+      "crude_rate": 23,
       "suppressed": false,
       "unreliable": false
     },
@@ -248310,7 +248310,7 @@
       "year": 2014,
       "deaths": 44,
       "population": 157047,
-      "crude_rate": 28.0,
+      "crude_rate": 28,
       "suppressed": false,
       "unreliable": false
     },
@@ -248367,7 +248367,7 @@
       "population": 160645,
       "crude_rate": 12.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -249014,7 +249014,7 @@
       "year": 2006,
       "deaths": 22,
       "population": 115923,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -249080,9 +249080,9 @@
       "year": 2012,
       "deaths": 20,
       "population": 125094,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -249102,7 +249102,7 @@
       "year": 2014,
       "deaths": 24,
       "population": 126242,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -249467,7 +249467,7 @@
       "population": 188560,
       "crude_rate": 10.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "47",
@@ -250928,7 +250928,7 @@
       "year": 2009,
       "deaths": 21,
       "population": 301050,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -250985,7 +250985,7 @@
       "population": 329140,
       "crude_rate": 6.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -251049,7 +251049,7 @@
       "year": 2011,
       "deaths": 264,
       "population": 1756153,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -251489,7 +251489,7 @@
       "year": 2006,
       "deaths": 34,
       "population": 284248,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -251511,7 +251511,7 @@
       "year": 2008,
       "deaths": 27,
       "population": 301336,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -251579,7 +251579,7 @@
       "population": 338124,
       "crude_rate": 5.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -252611,7 +252611,7 @@
       "year": 2009,
       "deaths": 28,
       "population": 400303,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -252646,7 +252646,7 @@
       "population": 415557,
       "crude_rate": 4.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -253843,7 +253843,7 @@
       "year": 2013,
       "deaths": 60,
       "population": 854778,
-      "crude_rate": 7.0,
+      "crude_rate": 7,
       "suppressed": false,
       "unreliable": false
     },
@@ -254109,7 +254109,7 @@
       "population": 108472,
       "crude_rate": 18.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -255174,7 +255174,7 @@
       "year": 2008,
       "deaths": 184,
       "population": 2314018,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -255196,7 +255196,7 @@
       "year": 2010,
       "deaths": 213,
       "population": 2368139,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -255229,7 +255229,7 @@
       "year": 2013,
       "deaths": 247,
       "population": 2480331,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -255592,7 +255592,7 @@
       "year": 2010,
       "deaths": 53,
       "population": 662614,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -257913,7 +257913,7 @@
       "year": 2014,
       "deaths": 47,
       "population": 314198,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -259519,7 +259519,7 @@
       "year": 2007,
       "deaths": 501,
       "population": 3863344,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -260236,7 +260236,7 @@
       "population": 757468,
       "crude_rate": 2.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -260258,7 +260258,7 @@
       "population": 797810,
       "crude_rate": 2.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -260291,7 +260291,7 @@
       "population": 831073,
       "crude_rate": 2.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -261708,7 +261708,7 @@
       "year": 2008,
       "deaths": 40,
       "population": 249430,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -264557,7 +264557,7 @@
       "year": 2006,
       "deaths": 21,
       "population": 261761,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -264592,7 +264592,7 @@
       "population": 274252,
       "crude_rate": 7.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -264623,7 +264623,7 @@
       "year": 2012,
       "deaths": 23,
       "population": 285760,
-      "crude_rate": 8.0,
+      "crude_rate": 8,
       "suppressed": false,
       "unreliable": false
     },
@@ -267175,7 +267175,7 @@
       "year": 2010,
       "deaths": 51,
       "population": 340223,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -267428,7 +267428,7 @@
       "year": 2006,
       "deaths": 40,
       "population": 81687,
-      "crude_rate": 49.0,
+      "crude_rate": 49,
       "suppressed": false,
       "unreliable": false
     },
@@ -267461,7 +267461,7 @@
       "year": 2009,
       "deaths": 31,
       "population": 81586,
-      "crude_rate": 38.0,
+      "crude_rate": 38,
       "suppressed": false,
       "unreliable": false
     },
@@ -268200,7 +268200,7 @@
       "population": 121661,
       "crude_rate": 16.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -268211,7 +268211,7 @@
       "population": 121627,
       "crude_rate": 16.4,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -270508,9 +270508,9 @@
       "year": 2007,
       "deaths": 20,
       "population": 199953,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -270530,7 +270530,7 @@
       "year": 2009,
       "deaths": 29,
       "population": 207111,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -270541,7 +270541,7 @@
       "year": 2010,
       "deaths": 21,
       "population": 209714,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -271355,7 +271355,7 @@
       "year": 2012,
       "deaths": 188,
       "population": 1880153,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -271377,7 +271377,7 @@
       "year": 2014,
       "deaths": 195,
       "population": 1945360,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -273346,7 +273346,7 @@
       "year": 2013,
       "deaths": 29,
       "population": 262495,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -273610,7 +273610,7 @@
       "year": 2010,
       "deaths": 21,
       "population": 131500,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -273634,7 +273634,7 @@
       "population": 131559,
       "crude_rate": 15.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "48",
@@ -275260,7 +275260,7 @@
       "year": 2007,
       "deaths": 49,
       "population": 288236,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -275326,7 +275326,7 @@
       "year": 2013,
       "deaths": 45,
       "population": 322094,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -276437,7 +276437,7 @@
       "year": 2006,
       "deaths": 203,
       "population": 966798,
-      "crude_rate": 21.0,
+      "crude_rate": 21,
       "suppressed": false,
       "unreliable": false
     },
@@ -277020,7 +277020,7 @@
       "year": 2014,
       "deaths": 24,
       "population": 61598,
-      "crude_rate": 39.0,
+      "crude_rate": 39,
       "suppressed": false,
       "unreliable": false
     },
@@ -277185,7 +277185,7 @@
       "year": 2011,
       "deaths": 90,
       "population": 530499,
-      "crude_rate": 17.0,
+      "crude_rate": 17,
       "suppressed": false,
       "unreliable": false
     },
@@ -277352,7 +277352,7 @@
       "population": 135552,
       "crude_rate": 14.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "49",
@@ -277405,7 +277405,7 @@
       "year": 2013,
       "deaths": 37,
       "population": 147800,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -280993,7 +280993,7 @@
       "population": 298496,
       "crude_rate": 6.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -281004,7 +281004,7 @@
       "population": 304636,
       "crude_rate": 6.6,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -282368,7 +282368,7 @@
       "population": 82377,
       "crude_rate": 24.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -283224,7 +283224,7 @@
       "year": 2011,
       "deaths": 34,
       "population": 310445,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -286163,7 +286163,7 @@
       "population": 374776,
       "crude_rate": 5.3,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -288911,7 +288911,7 @@
       "year": 2007,
       "deaths": 24,
       "population": 217450,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
       "unreliable": false
     },
@@ -288933,7 +288933,7 @@
       "year": 2009,
       "deaths": 22,
       "population": 220176,
-      "crude_rate": 10.0,
+      "crude_rate": 10,
       "suppressed": false,
       "unreliable": false
     },
@@ -290684,7 +290684,7 @@
       "population": 183581,
       "crude_rate": 10.9,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -290715,9 +290715,9 @@
       "year": 2009,
       "deaths": 20,
       "population": 181000,
-      "crude_rate": 11.0,
+      "crude_rate": 11,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "51",
@@ -291903,7 +291903,7 @@
       "year": 2009,
       "deaths": 39,
       "population": 435004,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -291958,7 +291958,7 @@
       "year": 2014,
       "deaths": 54,
       "population": 450980,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -292475,7 +292475,7 @@
       "year": 2007,
       "deaths": 21,
       "population": 161669,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -292673,7 +292673,7 @@
       "year": 2007,
       "deaths": 26,
       "population": 70186,
-      "crude_rate": 37.0,
+      "crude_rate": 37,
       "suppressed": false,
       "unreliable": false
     },
@@ -293861,7 +293861,7 @@
       "year": 2007,
       "deaths": 258,
       "population": 1847986,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -293905,7 +293905,7 @@
       "year": 2011,
       "deaths": 236,
       "population": 1969722,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -293916,7 +293916,7 @@
       "year": 2012,
       "deaths": 261,
       "population": 2007440,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -293971,7 +293971,7 @@
       "year": 2008,
       "deaths": 32,
       "population": 246912,
-      "crude_rate": 13.0,
+      "crude_rate": 13,
       "suppressed": false,
       "unreliable": false
     },
@@ -294906,7 +294906,7 @@
       "year": 2012,
       "deaths": 114,
       "population": 811681,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -294917,7 +294917,7 @@
       "year": 2013,
       "deaths": 123,
       "population": 819743,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -295368,7 +295368,7 @@
       "year": 2009,
       "deaths": 89,
       "population": 468235,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -295390,7 +295390,7 @@
       "year": 2011,
       "deaths": 76,
       "population": 473761,
-      "crude_rate": 16.0,
+      "crude_rate": 16,
       "suppressed": false,
       "unreliable": false
     },
@@ -295621,7 +295621,7 @@
       "year": 2014,
       "deaths": 24,
       "population": 265851,
-      "crude_rate": 9.0,
+      "crude_rate": 9,
       "suppressed": false,
       "unreliable": false
     },
@@ -295863,7 +295863,7 @@
       "year": 2009,
       "deaths": 24,
       "population": 199865,
-      "crude_rate": 12.0,
+      "crude_rate": 12,
       "suppressed": false,
       "unreliable": false
     },
@@ -296030,7 +296030,7 @@
       "population": 230617,
       "crude_rate": 8.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "53",
@@ -296272,7 +296272,7 @@
       "population": 104169,
       "crude_rate": 19.2,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "54",
@@ -296413,7 +296413,7 @@
       "year": 2014,
       "deaths": 23,
       "population": 23714,
-      "crude_rate": 97.0,
+      "crude_rate": 97,
       "suppressed": false,
       "unreliable": false
     },
@@ -297075,7 +297075,7 @@
       "population": 45699,
       "crude_rate": 43.8,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "54",
@@ -297766,7 +297766,7 @@
       "year": 2011,
       "deaths": 25,
       "population": 69436,
-      "crude_rate": 36.0,
+      "crude_rate": 36,
       "suppressed": false,
       "unreliable": false
     },
@@ -297801,7 +297801,7 @@
       "population": 68761,
       "crude_rate": 29.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "54",
@@ -298019,7 +298019,7 @@
       "year": 2007,
       "deaths": 27,
       "population": 192354,
-      "crude_rate": 14.0,
+      "crude_rate": 14,
       "suppressed": false,
       "unreliable": false
     },
@@ -298855,7 +298855,7 @@
       "year": 2011,
       "deaths": 50,
       "population": 62465,
-      "crude_rate": 80.0,
+      "crude_rate": 80,
       "suppressed": false,
       "unreliable": false
     },
@@ -301442,7 +301442,7 @@
       "population": 86701,
       "crude_rate": 23.1,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "54",
@@ -301497,7 +301497,7 @@
       "population": 23957,
       "crude_rate": 83.5,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "54",
@@ -304509,7 +304509,7 @@
       "year": 2012,
       "deaths": 42,
       "population": 167936,
-      "crude_rate": 25.0,
+      "crude_rate": 25,
       "suppressed": false,
       "unreliable": false
     },
@@ -305620,7 +305620,7 @@
       "year": 2014,
       "deaths": 249,
       "population": 956406,
-      "crude_rate": 26.0,
+      "crude_rate": 26,
       "suppressed": false,
       "unreliable": false
     },
@@ -306698,7 +306698,7 @@
       "year": 2013,
       "deaths": 37,
       "population": 195041,
-      "crude_rate": 19.0,
+      "crude_rate": 19,
       "suppressed": false,
       "unreliable": false
     },
@@ -306863,7 +306863,7 @@
       "year": 2010,
       "deaths": 24,
       "population": 160331,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
       "unreliable": false
     },
@@ -306874,7 +306874,7 @@
       "year": 2011,
       "deaths": 32,
       "population": 160092,
-      "crude_rate": 20.0,
+      "crude_rate": 20,
       "suppressed": false,
       "unreliable": false
     },
@@ -308194,9 +308194,9 @@
       "year": 2014,
       "deaths": 20,
       "population": 133251,
-      "crude_rate": 15.0,
+      "crude_rate": 15,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "55",
@@ -309780,7 +309780,7 @@
       "population": 96389,
       "crude_rate": 20.7,
       "suppressed": false,
-      "unreliable": false
+      "unreliable": true
     },
     {
       "state_fips": "56",
@@ -310971,7 +310971,7 @@
       "unreliable": true
     }
   ],
-  "methodology": "CDC WONDER Underlying Cause of Death 1999-2020 (D76), scraped via the interactive UI (Playwright-driven). Filters: Drug/Alcohol Induced Causes D1+D2+D3+D4 \u2014 maps to ICD-10 X40-X44 (unintentional drug poisoning) \u222a X60-X64 (suicide by drug) \u222a X85 (homicide by drug) \u222a Y10-Y14 (undetermined drug poisoning). Group-by: State, County, Year. Years: 2006-2014 annual. Show Zeros: true; Show Suppressed: true. Suppressed cells (NCHS rule, 42 USC 242m(d): counts of 9 or fewer not publishable) are carried through with deaths=null and suppressed=true. Crude-rate cells marked 'Unreliable' (NCHS rule: counts \u2264 20) arrive as crude_rate=null and unreliable=true \u2014 the count is still the ground truth. Population denominators come from CDC's bridged-race Census vintage used internally by WONDER.",
+  "methodology": "CDC WONDER Underlying Cause of Death 1999-2020 (D76), scraped via the interactive UI (Playwright-driven). Filters: Drug/Alcohol Induced Causes D1+D2+D3+D4 — maps to ICD-10 X40-X44 (unintentional drug poisoning) ∪ X60-X64 (suicide by drug) ∪ X85 (homicide by drug) ∪ Y10-Y14 (undetermined drug poisoning). Group-by: State, County, Year. Years: 2006-2014 annual. Show Zeros: true; Show Suppressed: true. Suppressed cells (NCHS rule, 42 USC 242m(d): counts of 9 or fewer not publishable) are carried through with deaths=null and suppressed=true. Crude-rate cells marked 'Unreliable' (NCHS rule: counts ≤ 20) arrive as crude_rate=null and unreliable=true — the count is still the ground truth. Population denominators come from CDC's bridged-race Census vintage used internally by WONDER.",
   "source": "https://wonder.cdc.gov/ucd-icd10.html",
   "fetched_at": "2026-05-05T16:28:55.030068+00:00",
   "totals": {

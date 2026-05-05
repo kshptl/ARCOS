@@ -31,16 +31,26 @@ describe("buildAct4", () => {
 
   it("builds per-year points sorted ascending without converting suppressed deaths to zero", () => {
     const cdc = [
-      { fips: "54059", year: 2013, deaths: 15, suppressed: false, unreliable: false },
+      { fips: "54059", year: 2013, deaths: 21, suppressed: false, unreliable: false },
       { fips: "54059", year: 2011, deaths: null, suppressed: true, unreliable: false },
-      { fips: "54059", year: 2012, deaths: 8, suppressed: false, unreliable: true },
+      { fips: "54059", year: 2012, deaths: null, suppressed: true, unreliable: false },
     ];
     const { counties } = buildAct4(null, cdc);
     const mingo = counties.find((c) => c.fips === "54059");
     expect(mingo?.points).toEqual([
       { year: 2011, deaths: null, suppressed: true, unreliable: false },
-      { year: 2012, deaths: 8, suppressed: false, unreliable: true },
-      { year: 2013, deaths: 15, suppressed: false, unreliable: false },
+      { year: 2012, deaths: null, suppressed: true, unreliable: false },
+      { year: 2013, deaths: 21, suppressed: false, unreliable: false },
+    ]);
+  });
+
+  it("treats publishable count-20 points as unreliable", () => {
+    const cdc = [{ fips: "54059", year: 2013, deaths: 20, suppressed: false, unreliable: false }];
+
+    const { counties } = buildAct4(null, cdc);
+
+    expect(counties.find((c) => c.fips === "54059")?.points).toEqual([
+      { year: 2013, deaths: 20, suppressed: false, unreliable: true },
     ]);
   });
 
@@ -49,13 +59,13 @@ describe("buildAct4", () => {
     // later revised row for the same county-year. Keep the real value.
     const cdc = [
       { fips: "54059", year: 2013, deaths: null, suppressed: true, unreliable: false },
-      { fips: "54059", year: 2013, deaths: 9, suppressed: false, unreliable: true },
+      { fips: "54059", year: 2013, deaths: null, suppressed: true, unreliable: false },
       { fips: "54059", year: 2013, deaths: 15, suppressed: false, unreliable: false },
     ];
     const { counties } = buildAct4(null, cdc);
     const mingo = counties.find((c) => c.fips === "54059");
     expect(mingo?.points).toEqual([
-      { year: 2013, deaths: 15, suppressed: false, unreliable: false },
+      { year: 2013, deaths: 15, suppressed: false, unreliable: true },
     ]);
   });
 

@@ -85,7 +85,15 @@ function normalizeJsonRecord(
     ...row,
     fips,
     county_fips: row.county_fips === undefined ? undefined : fips,
+    unreliable: isUnreliable(row),
   };
+}
+
+function isUnreliable(row: CDCCountyOverdoseArtifact["records"][number]): boolean | undefined {
+  if (!row.suppressed && row.deaths !== null && row.deaths !== undefined && row.deaths <= 20) {
+    return true;
+  }
+  return row.unreliable;
 }
 
 function buildCache(rows: CDCOverdoseByCountyYear[]): CDCOverdoseCacheEntry {

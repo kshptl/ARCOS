@@ -17,11 +17,14 @@ afterEach(async () => {
 });
 
 describe("syncCDCOverdose", () => {
-  it("copies source JSON into public data dir", async () => {
+  it("copies source JSON into public data dir and normalizes count-20 unreliable rows", async () => {
     const rootDir = await makeTempRoot();
     const source = path.join(rootDir, "pipeline", "data", "processed", "cdc_county_overdose.json");
     const destination = path.join(rootDir, "web", "public", "data", "cdc_county_overdose.json");
-    const sourceJson = JSON.stringify({ records: [{ fips: "01001", deaths: 12 }] });
+    const sourceJson = JSON.stringify({
+      records: [{ fips: "01001", deaths: 20, suppressed: false, unreliable: false }],
+      metadata: { source: "CDC WONDER" },
+    });
 
     await fs.mkdir(path.dirname(source), { recursive: true });
     await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -30,7 +33,13 @@ describe("syncCDCOverdose", () => {
     const result = await syncCDCOverdose({ rootDir });
 
     const copied = JSON.parse(await fs.readFile(destination, "utf-8"));
-    expect(copied.records[0]).toEqual({ fips: "01001", deaths: 12 });
+    expect(copied).toMatchObject({ metadata: { source: "CDC WONDER" } });
+    expect(copied.records[0]).toEqual({
+      fips: "01001",
+      deaths: 20,
+      suppressed: false,
+      unreliable: true,
+    });
     expect(result).toEqual({ copied: true, source, destination });
   });
 

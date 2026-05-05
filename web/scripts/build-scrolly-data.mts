@@ -95,13 +95,23 @@ async function readCdcParquet(p: string): Promise<CDCRow[] | null> {
 }
 
 function normalizeCdcRow(row: Record<string, unknown>): CDCRow {
+  const deaths = row.deaths === null || row.deaths === undefined ? null : Number(row.deaths);
+  const suppressed = Boolean(row.suppressed);
   return {
     fips: String(row.fips ?? row.county_fips),
     year: Number(row.year),
-    deaths: row.deaths === null || row.deaths === undefined ? null : Number(row.deaths),
-    suppressed: Boolean(row.suppressed),
-    unreliable: Boolean(row.unreliable),
+    deaths,
+    suppressed,
+    unreliable: isUnreliable(deaths, suppressed, Boolean(row.unreliable)),
   };
+}
+
+function isUnreliable(
+  deaths: number | null,
+  suppressed: boolean,
+  current: boolean,
+): boolean {
+  return current || (!suppressed && deaths !== null && deaths <= 20);
 }
 
 async function readCdcJson(p: string): Promise<CDCRow[] | null> {
@@ -241,7 +251,7 @@ export function buildAct4(
         year: point.year,
         deaths: point.deaths,
         suppressed: point.suppressed,
-        unreliable: point.unreliable,
+        unreliable: isUnreliable(point.deaths, point.suppressed, point.unreliable),
       }));
     return {
       fips,

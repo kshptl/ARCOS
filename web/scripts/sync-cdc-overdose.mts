@@ -28,7 +28,8 @@ export async function syncCDCOverdose(
 
   try {
     await fs.mkdir(path.dirname(destination), { recursive: true });
-    await fs.copyFile(source, destination);
+    const artifact = JSON.parse(await fs.readFile(source, "utf8")) as unknown;
+    await fs.writeFile(destination, `${JSON.stringify(normalizeArtifact(artifact), null, 2)}\n`);
     console.log(`copied ${source} to ${destination}`);
     return { copied: true, source, destination };
   } catch (err) {
@@ -38,6 +39,25 @@ export async function syncCDCOverdose(
     }
     throw err;
   }
+}
+
+function normalizeArtifact(artifact: unknown): unknown {
+  if (Array.isArray(artifact)) return artifact.map(normalizeRecord);
+  if (artifact !== null && typeof artifact === "object") {
+    const records = (artifact as { records?: unknown }).records;
+    if (Array.isArray(records)) {
+      return { ...artifact, records: records.map(normalizeRecord) };
+    }
+  }
+  return artifact;
+}
+
+function normalizeRecord(record: unknown): unknown {
+  if (record === null || typeof record !== "object") return record;
+  const row = record as { deaths?: unknown; suppressed?: unknown; unreliable?: unknown };
+  const deaths = row.deaths === null || row.deaths === undefined ? null : Number(row.deaths);
+  const unreliable = !row.suppressed && deaths !== null && deaths <= 20 ? true : row.unreliable;
+  return { ...row, unreliable };
 }
 
 if (fileURLToPath(import.meta.url) === process.argv[1]) {
