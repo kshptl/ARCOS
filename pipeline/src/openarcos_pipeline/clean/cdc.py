@@ -1,93 +1,74 @@
-"""Parse CDC WONDER D76 XML responses."""
+"""Parse CDC WONDER D76 TSV exports into a canonical DataFrame.
+
+The live scraper (``openarcos_pipeline.sources.cdc_wonder_scraper``)
+writes one ``{state_fips}_{abbrev}.tsv`` file per state. This module
+collapses those TSVs into a single ``{fips, year, deaths, suppressed}``
+DataFrame consumed by the join/aggregate layers.
+
+Richer fields (population, crude_rate, unreliable flag) live in the
+parallel :mod:`openarcos_pipeline.aggregate_cdc` artifact; we
+deliberately project those away here because the existing downstream
+JSON-schema contract
+(``pipeline/schemas/cdc-overdose-by-county-year.schema.json``) is
+pinned to the four-column shape.
+"""
 
 from __future__ import annotations
 
-import re
-import xml.etree.ElementTree as ET
+from pathlib import Path
 
 import polars as pl
 
-from openarcos_pipeline.fips import normalize_fips
+from openarcos_pipeline.sources.cdc_wonder_scraper import parse_tsv
 
-FIPS_IN_LABEL = re.compile(r"\((\d{5})\)")
+_CANONICAL_SCHEMA = {
+    "fips": pl.Utf8,
+    "year": pl.Int64,
+    "deaths": pl.Int64,
+    "suppressed": pl.Boolean,
+}
 
 
-def parse_d76_response(xml_text: str) -> pl.DataFrame:
-    """Walk the response `<data-table>` and produce canonical rows.
+def parse_d76_tsv(tsv_text: str) -> pl.DataFrame:
+    """Parse one WONDER TSV and project to the canonical 4-column shape."""
+    rows = parse_tsv(tsv_text)
+    projected = [
+        {
+            "fips": r["county_fips"],
+            "year": r["year"],
+            "deaths": r["deaths"],
+            "suppressed": r["suppressed"],
+        }
+        for r in rows
+    ]
+    return pl.DataFrame(projected, schema=_CANONICAL_SCHEMA)
 
-    Per notes/cdc.md: each `<r>` is a row; `<c>` cells carry labels.
-    County labels look like "Mingo County, WV (54059)"; year cells are ints.
-    Suppressed cells carry the literal string "Suppressed".
+
+def load_cache_dir(cache_dir: Path) -> pl.DataFrame:
+    """Concatenate every TSV in ``cache_dir`` into one DataFrame.
+
+    Dedupes by ``(fips, year)``; first occurrence wins.
     """
-    rows: list[dict[str, object]] = []
-    root = ET.fromstring(xml_text)
-    data_table = root.find(".//data-table")
-    if data_table is None:
-        return pl.DataFrame(
-            schema={
-                "fips": pl.Utf8,
-                "year": pl.Int64,
-                "deaths": pl.Int64,
-                "suppressed": pl.Boolean,
-            }
-        )
+    cache_dir = Path(cache_dir)
+    frames = [
+        parse_d76_tsv(p.read_text())
+        for p in sorted(cache_dir.glob("*.tsv"))
+    ]
+    if not frames:
+        return pl.DataFrame(schema=_CANONICAL_SCHEMA)
+    df = pl.concat(frames, how="vertical_relaxed")
+    return df.unique(subset=["fips", "year"], keep="first").sort(["fips", "year"])
 
-    current_county: str | None = None
-    for r in data_table.findall("r"):
-        cells = r.findall("c")
-        if not cells:
-            continue
-        # WONDER responses are hierarchical: county cells appear once per group,
-        # year cells in child rows. Detect by number of `l`-attr present.
-        # Heuristic: a cell with an `l` attribute that matches the FIPS pattern
-        # is a county header; a cell whose label looks like "YYYY" is the year;
-        # a cell whose text is "Suppressed" marks suppression; any numeric text
-        # is the death count.
-        county_match: str | None = None
-        year: int | None = None
-        deaths: int | None = None
-        suppressed = False
-        for c in cells:
-            label = (c.get("l") or "").strip()
-            text = (c.text or "").strip()
-            m = FIPS_IN_LABEL.search(label)
-            if m:
-                county_match = m.group(1)
-                continue
-            if label.isdigit() and len(label) == 4:
-                year = int(label)
-                continue
-            # Value cell (no meaningful label, or label != county/year).
-            if text.lower() == "suppressed":
-                suppressed = True
-                deaths = None
-                continue
-            if text.replace(",", "").isdigit():
-                deaths = int(text.replace(",", ""))
-                continue
-            # Fall back to label-as-value if no text (older format).
-            if label.lower() == "suppressed":
-                suppressed = True
-                deaths = None
-            elif label.replace(",", "").isdigit() and len(label) != 4:
-                deaths = int(label.replace(",", ""))
-        if county_match is not None:
-            current_county = normalize_fips(county_match)
-        if year is not None and current_county is not None:
-            rows.append(
-                {
-                    "fips": current_county,
-                    "year": year,
-                    "deaths": deaths,
-                    "suppressed": suppressed,
-                }
-            )
-    return pl.DataFrame(
-        rows,
-        schema={
-            "fips": pl.Utf8,
-            "year": pl.Int64,
-            "deaths": pl.Int64,
-            "suppressed": pl.Boolean,
-        },
-    )
+
+def parse_d76_response(_text: str) -> pl.DataFrame:
+    """Legacy XML parser shim.
+
+    The D76 XML API refuses county-level queries (HTTP 500 "Only
+    national data are available..."). All production data now comes
+    from TSV exports of the interactive UI via
+    :func:`parse_d76_tsv`. This function remains only so existing tests
+    that feed an unchanged XML body through a soft-deprecated path keep
+    compiling; it returns an empty canonical-shape frame rather than
+    silently parsing stale synthetic fixtures.
+    """
+    return pl.DataFrame(schema=_CANONICAL_SCHEMA)

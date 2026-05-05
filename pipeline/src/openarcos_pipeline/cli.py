@@ -48,7 +48,7 @@ def _run_clean(cfg) -> None:
 
     import polars as pl
 
-    from openarcos_pipeline.clean.cdc import parse_d76_response
+    from openarcos_pipeline.clean.cdc import load_cache_dir as load_cdc_cache
     from openarcos_pipeline.clean.dea import (
         ActionType,
         build_artifact,
@@ -70,13 +70,25 @@ def _run_clean(cfg) -> None:
 
         clean_census(cfg, census_csv)
 
-    # CDC
+    # CDC — parse per-state TSV exports from `data/raw/cdc/*.tsv` into
+    # the canonical 4-column parquet consumed by join/aggregate.
     cdc_raw = cfg.raw_dir / "cdc"
     if cdc_raw.is_dir():
-        frames = [parse_d76_response(p.read_text()) for p in sorted(cdc_raw.glob("*.xml"))]
-        if frames:
-            df = pl.concat(frames, how="vertical_relaxed")
+        df = load_cdc_cache(cdc_raw)
+        if len(df) > 0:
             df.write_parquet(cfg.clean_dir / "cdc_overdose.parquet")
+
+        # Parallel richer artifact: data/processed/cdc_county_overdose.json
+        # (population, crude_rate, unreliable flag, full methodology).
+        # Separate from the parquet because the web-facing schema for the
+        # parquet is pinned at {fips, year, deaths, suppressed}.
+        from openarcos_pipeline.aggregate_cdc import write_processed_artifact
+
+        processed_dir = cfg.data_root / "processed"
+        processed_dir.mkdir(parents=True, exist_ok=True)
+        write_processed_artifact(
+            cdc_raw, processed_dir / "cdc_county_overdose.json"
+        )
 
     # DEA — Federal Register NOTICES, classified into registrant actions.
     # Reads cached FR payloads from data/raw/dea/fr_notices_<year>.json
