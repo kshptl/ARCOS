@@ -25,36 +25,61 @@ interface SparkGeom {
   firstY: number;
   lastX: number;
   lastY: number;
-  firstValue: number;
-  lastValue: number;
+  firstLabel: string;
+  lastLabel: string;
   length: number;
   min: number;
   max: number;
   width: number;
   height: number;
+  suppressed: Array<{ x: number; y: number }>;
+  numericCount: number;
 }
 
-function clamp01(n: number) {
+interface SparkPoint {
+  year: number;
+  deaths: number | null;
+  suppressed: boolean;
+  unreliable: boolean;
+}
+
+function clamp01(n: number): number {
   return n < 0 ? 0 : n > 1 ? 1 : n;
 }
 
+function isDrawable(point: SparkPoint): boolean {
+  return !point.suppressed && point.deaths !== null;
+}
+
+function pointLabel(point: SparkPoint): string {
+  return isDrawable(point) ? String(point.deaths) : "<10";
+}
+
 function buildSpark(
-  values: number[],
+  points: SparkPoint[],
   width: number,
   height: number,
   globalMax: number,
 ): SparkGeom | null {
-  if (values.length === 0) return null;
-  const min = Math.min(...values);
-  const max = Math.max(...values);
+  if (points.length === 0) return null;
+  const values = points.flatMap((point) => (isDrawable(point) ? [point.deaths as number] : []));
+  const min = values.length === 0 ? 0 : Math.min(...values);
+  const max = values.length === 0 ? 0 : Math.max(...values);
   // Use shared global y-scale so bars are comparable across counties.
   const yMax = Math.max(globalMax, 1);
   const y = (v: number) => height - (v / yMax) * (height - 4) - 2;
-  if (values.length === 1) {
+  const suppressed = points.flatMap((point, i) => {
+    if (isDrawable(point)) return [];
+    const x = points.length === 1 ? width / 2 : (i * width) / (points.length - 1);
+    return [{ x, y: height - 6 }];
+  });
+
+  if (points.length === 1) {
+    const point = points[0] as SparkPoint;
     const cx = width / 2;
-    const cy = y(values[0] as number);
+    const cy = isDrawable(point) ? y(point.deaths as number) : height - 6;
     return {
-      path: `M${cx},${cy}`,
+      path: isDrawable(point) ? `M${cx},${cy}` : "",
       peakX: cx,
       peakY: cy,
       peakIndex: 0,
@@ -62,56 +87,92 @@ function buildSpark(
       firstY: cy,
       lastX: cx,
       lastY: cy,
-      firstValue: values[0] as number,
-      lastValue: values[0] as number,
+      firstLabel: pointLabel(point),
+      lastLabel: pointLabel(point),
       length: 0,
       min,
       max,
       width,
       height,
+      suppressed,
+      numericCount: values.length,
     };
   }
-  const step = width / (values.length - 1);
-  let peakIndex = 0;
-  for (let i = 1; i < values.length; i++) {
-    if ((values[i] as number) > (values[peakIndex] as number)) peakIndex = i;
+  const step = width / (points.length - 1);
+  let peakIndex = points.findIndex(isDrawable);
+  if (peakIndex === -1) peakIndex = 0;
+  for (let i = peakIndex + 1; i < points.length; i++) {
+    const point = points[i] as SparkPoint;
+    const peakDeaths = (points[peakIndex] as SparkPoint).deaths as number;
+    if (isDrawable(point) && (point.deaths as number) > peakDeaths) {
+      peakIndex = i;
+    }
   }
   // Compute points + total polyline length.
-  const points: Array<[number, number]> = values.map(
-    (v, i) => [i * step, y(v)] as [number, number],
+  const drawablePoints: Array<[number, number] | null> = points.map(
+    (point, i) => (isDrawable(point) ? ([i * step, y(point.deaths as number)] as [number, number]) : null),
   );
   let length = 0;
-  for (let i = 1; i < points.length; i++) {
-    const [ax, ay] = points[i - 1] as [number, number];
-    const [bx, by] = points[i] as [number, number];
+  for (let i = 1; i < drawablePoints.length; i++) {
+    if (!drawablePoints[i - 1] || !drawablePoints[i]) continue;
+    const [ax, ay] = drawablePoints[i - 1] as [number, number];
+    const [bx, by] = drawablePoints[i] as [number, number];
     length += Math.hypot(bx - ax, by - ay);
   }
-  const path = points
-    .map(([px, py], i) => `${i === 0 ? "M" : "L"}${px.toFixed(1)},${py.toFixed(1)}`)
+  let startsSegment = true;
+  const path = drawablePoints
+    .map((point) => {
+      if (!point) {
+        startsSegment = true;
+        return null;
+      }
+      const [px, py] = point;
+      const command = startsSegment ? "M" : "L";
+      startsSegment = false;
+      return `${command}${px.toFixed(1)},${py.toFixed(1)}`;
+    })
+    .filter(Boolean)
     .join(" ");
-  const lastIdx = values.length - 1;
+  const firstPoint = points[0] as SparkPoint;
+  const lastIdx = points.length - 1;
+  const lastPoint = points[lastIdx] as SparkPoint;
+  const firstY = isDrawable(firstPoint) ? y(firstPoint.deaths as number) : height - 6;
+  const lastY = isDrawable(lastPoint) ? y(lastPoint.deaths as number) : height - 6;
+  const peakPoint = points[peakIndex] as SparkPoint;
+  const peakY = isDrawable(peakPoint) ? y(peakPoint.deaths as number) : height - 6;
   return {
     path,
     peakX: peakIndex * step,
-    peakY: y(values[peakIndex] as number),
+    peakY,
     peakIndex,
     firstX: 0,
-    firstY: y(values[0] as number),
+    firstY,
     lastX: lastIdx * step,
-    lastY: y(values[lastIdx] as number),
-    firstValue: values[0] as number,
-    lastValue: values[lastIdx] as number,
+    lastY,
+    firstLabel: pointLabel(firstPoint),
+    lastLabel: pointLabel(lastPoint),
     length,
     min,
     max,
     width,
     height,
+    suppressed,
+    numericCount: values.length,
   };
 }
 
+function getPoints(county: Act4County): SparkPoint[] {
+  if (county.points) return [...county.points].sort((a, b) => a.year - b.year);
+  return county.deaths?.map((deaths, year) => ({
+    year,
+    deaths,
+    suppressed: false,
+    unreliable: false,
+  })) ?? [];
+}
+
 function getDeaths(county: Act4County): number[] {
-  if (county.deaths) return county.deaths;
-  return county.points?.flatMap((point) => (point.deaths === null ? [] : [point.deaths])) ?? [];
+  return getPoints(county).flatMap((point) => (isDrawable(point) ? [point.deaths as number] : []));
 }
 
 const SPARK_W = 160;
@@ -158,9 +219,9 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
       <div className={styles.actInner}>
         <div className={styles.gridMultiples}>
           {counties.map((c, i) => {
-            const deaths = getDeaths(c);
-            const hasData = deaths.length > 0;
-            const spark = hasData ? buildSpark(deaths, SPARK_W, SPARK_H, globalMax) : null;
+            const points = getPoints(c);
+            const hasData = points.length > 0;
+            const spark = hasData ? buildSpark(points, SPARK_W, SPARK_H, globalMax) : null;
 
             // Per-card reveal progress (0..1), keyed off the remapped p.
             const cardT = reducedMotion ? 1 : clamp01((p - i * CARD_STAGGER) / CARD_DUR);
@@ -200,7 +261,7 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                       stroke="var(--ink-40)"
                       strokeWidth={0.5}
                     />
-                    {spark && (
+                    {spark && spark.path && (
                       <path
                         data-testid="spark-line"
                         d={spark.path}
@@ -210,8 +271,17 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                         }}
                       />
                     )}
+                    {spark?.suppressed.map((point, markerIndex) => (
+                      <g
+                        key={markerIndex}
+                        data-testid="spark-suppressed"
+                        aria-label="count suppressed under 10 deaths"
+                      >
+                        <circle cx={point.x} cy={point.y} r={2} fill="var(--ink-40)" />
+                      </g>
+                    ))}
                     {/* Peak marker */}
-                    {spark && deaths.length > 1 && (
+                    {spark && spark.numericCount > 1 && (
                       <g data-testid="spark-peak">
                         <circle
                           cx={spark.peakX}
@@ -231,7 +301,7 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                           y={Math.max(spark.firstY - 3, 8)}
                           textAnchor="start"
                         >
-                          {spark.firstValue}
+                          {spark.firstLabel}
                         </text>
                         <text
                           data-testid="spark-endpoint"
@@ -240,7 +310,7 @@ export function Act4Aftermath({ counties }: Act4AftermathProps) {
                           y={Math.max(spark.lastY - 3, 8)}
                           textAnchor="end"
                         >
-                          {spark.lastValue}
+                          {spark.lastLabel}
                         </text>
                       </>
                     )}

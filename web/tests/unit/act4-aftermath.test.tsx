@@ -143,7 +143,7 @@ describe("Act4Aftermath", () => {
     }
   });
 
-  it("temporarily accepts Act 4 points data and uses numeric deaths for the sparkline", () => {
+  it("renders suppressed Act 4 points as gaps with <10 endpoint labels and markers", () => {
     render(
       <ScrollyProgressContext.Provider value={1}>
         <Act4Aftermath
@@ -154,8 +154,10 @@ describe("Act4Aftermath", () => {
               state: "WV",
               points: [
                 { year: 2006, deaths: null, suppressed: true, unreliable: false },
-                { year: 2007, deaths: 10, suppressed: false, unreliable: true },
-                { year: 2008, deaths: 18, suppressed: false, unreliable: true },
+                { year: 2007, deaths: 12, suppressed: false, unreliable: true },
+                { year: 2008, deaths: null, suppressed: true, unreliable: false },
+                { year: 2009, deaths: 18, suppressed: false, unreliable: true },
+                { year: 2010, deaths: 24, suppressed: false, unreliable: true },
               ],
             },
           ]}
@@ -163,9 +165,43 @@ describe("Act4Aftermath", () => {
       </ScrollyProgressContext.Provider>,
     );
 
+    const path = screen.getByTestId("spark-line").getAttribute("d") ?? "";
+    expect(path.match(/M/g)).toHaveLength(2);
+    expect(path.match(/L/g)).toHaveLength(1);
+
+    const suppressedMarkers = screen.getAllByTestId("spark-suppressed");
+    expect(suppressedMarkers).toHaveLength(2);
+    expect(suppressedMarkers[0]).toHaveAccessibleName(/count suppressed under 10 deaths/i);
+
     const labels = screen.getAllByTestId("spark-endpoint");
-    expect(labels[0]).toHaveTextContent("10");
-    expect(labels[1]).toHaveTextContent("18");
+    expect(labels[0]).toHaveTextContent("<10");
+    expect(labels[1]).toHaveTextContent("24");
+  });
+
+  it("renders suppressed markers and <10 endpoint labels when every Act 4 point is suppressed", () => {
+    render(
+      <ScrollyProgressContext.Provider value={1}>
+        <Act4Aftermath
+          counties={[
+            {
+              fips: "54059",
+              name: "Mingo",
+              state: "WV",
+              points: [
+                { year: 2006, deaths: null, suppressed: true, unreliable: false },
+                { year: 2007, deaths: null, suppressed: true, unreliable: false },
+              ],
+            },
+          ]}
+        />
+      </ScrollyProgressContext.Provider>,
+    );
+
+    expect(screen.queryByTestId("spark-line")).toBeNull();
+    expect(screen.getAllByTestId("spark-suppressed")).toHaveLength(2);
+    const labels = screen.getAllByTestId("spark-endpoint");
+    expect(labels[0]).toHaveTextContent("<10");
+    expect(labels[1]).toHaveTextContent("<10");
   });
 
   it("at progress=0.1, first cards are visible and last cards are still hidden", () => {
