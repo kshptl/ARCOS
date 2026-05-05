@@ -9,7 +9,15 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parquetRead } from "hyparquet";
 
-const AFTERMATH_FIPS = ["54059", "51720", "54011", "54045", "21071", "21195"] as const;
+const AFTERMATH_FIPS = ["54059", "21195", "21119", "54047", "54011", "39145"] as const;
+const AFTERMATH_LABELS: Record<(typeof AFTERMATH_FIPS)[number], { name: string; state: string }> = {
+  "54059": { name: "Mingo County", state: "WV" },
+  "21195": { name: "Pike County", state: "KY" },
+  "21119": { name: "Knott County", state: "KY" },
+  "54047": { name: "McDowell County", state: "WV" },
+  "54011": { name: "Cabell County", state: "WV" },
+  "39145": { name: "Scioto County", state: "OH" },
+};
 
 type StateShip = { state: string; year: number; pills: number; pills_per_capita: number };
 type TopDist = { distributor: string; year: number; pills: number; share_pct: number };
@@ -20,9 +28,16 @@ type DEA = {
   notable_actions: { title: string; url?: string }[];
 };
 type CountyMeta = { fips: string; name: string; state: string; pop: number };
-type CDCRow = { fips: string; year: number; deaths: number | null; suppressed: boolean };
+type CDCRow = {
+  fips: string;
+  year: number;
+  deaths: number | null;
+  suppressed: boolean;
+  unreliable: boolean;
+};
 
-export type Act4County = { fips: string; name: string; state: string; deaths: number[] };
+export type Act4Point = CDCRow;
+export type Act4County = { fips: string; name: string; state: string; points: Act4Point[] };
 
 async function exists(p: string): Promise<boolean> {
   try {
@@ -69,13 +84,42 @@ async function readCdcParquet(p: string): Promise<CDCRow[] | null> {
                 ? Number(rawDeaths)
                 : (rawDeaths as number);
           const suppressed = Boolean(row.suppressed);
-          rows.push({ fips, year, deaths, suppressed });
+          const unreliable = Boolean(row.unreliable);
+          rows.push({ fips, year, deaths, suppressed, unreliable });
         }
         resolve();
       },
     }).catch(reject);
   });
   return rows;
+}
+
+function normalizeCdcRow(row: Record<string, unknown>): CDCRow {
+  return {
+    fips: String(row.fips ?? row.county_fips),
+    year: Number(row.year),
+    deaths: row.deaths === null || row.deaths === undefined ? null : Number(row.deaths),
+    suppressed: Boolean(row.suppressed),
+    unreliable: Boolean(row.unreliable),
+  };
+}
+
+async function readCdcJson(p: string): Promise<CDCRow[] | null> {
+  const raw = await readJSON<unknown>(p);
+  if (raw === null) return null;
+  let rows: unknown[] = [];
+  if (Array.isArray(raw)) {
+    rows = raw;
+  } else if (Array.isArray((raw as { records?: unknown }).records)) {
+    rows = (raw as { records: unknown[] }).records;
+  }
+  return rows.map((row) => normalizeCdcRow(row as Record<string, unknown>));
+}
+
+export async function readCdcRows(dataDir: string): Promise<CDCRow[] | null> {
+  const json = await readCdcJson(path.join(dataDir, "cdc_county_overdose.json"));
+  if (json !== null) return json;
+  return readCdcParquet(path.join(dataDir, "cdc-overdose-by-county-year.parquet"));
 }
 
 function pickAct1(state: StateShip[]): {
@@ -160,10 +204,10 @@ function pickAct3(actions: DEA[]): { actions: DEA[] } {
  * Build the Act 4 aftermath counties list.
  *
  * For each aftermath FIPS, resolve human-readable name + state from
- * `county-metadata.json` and a per-year `deaths` array (suppressed rows → 0,
- * sorted ascending by year) from the CDC overdose parquet. FIPS missing from
- * the metadata fall back to `{ name: fips, state: "" }`; FIPS missing from
- * the CDC data get an empty deaths array.
+ * `county-metadata.json` and per-year CDC overdose `points`, preserving
+ * suppression metadata. FIPS missing from
+ * the metadata fall back to the built-in epicenter labels; FIPS missing from
+ * the CDC data get an empty points array.
  */
 export function buildAct4(
   meta: CountyMeta[] | null,
@@ -171,31 +215,39 @@ export function buildAct4(
 ): { counties: Act4County[] } {
   const metaByFips = new Map<string, CountyMeta>();
   for (const m of meta ?? []) metaByFips.set(m.fips, m);
-  const deathsByFips = new Map<string, Array<{ year: number; deaths: number }>>();
+  const pointsByFips = new Map<string, Act4Point[]>();
   for (const r of cdc ?? []) {
-    const arr = deathsByFips.get(r.fips) ?? [];
-    // Replace suppressed/null with 0 so the Sparkline still has signal.
-    arr.push({ year: r.year, deaths: r.deaths ?? 0 });
-    deathsByFips.set(r.fips, arr);
+    const arr = pointsByFips.get(r.fips) ?? [];
+    arr.push(r);
+    pointsByFips.set(r.fips, arr);
   }
   const counties: Act4County[] = AFTERMATH_FIPS.map((fips) => {
     const m = metaByFips.get(fips);
-    const raw = deathsByFips.get(fips) ?? [];
+    const fallback = AFTERMATH_LABELS[fips];
+    const raw = pointsByFips.get(fips) ?? [];
     // Deduplicate per-year entries (the CDC parquet may have duplicate
     // suppressed + unsuppressed rows for the same county-year) by keeping
-    // the max value per year, then sort by year ascending.
-    const byYear = new Map<number, number>();
+    // the highest numeric value per year, then sort by year ascending.
+    const byYear = new Map<number, Act4Point>();
     for (const row of raw) {
-      byYear.set(row.year, Math.max(byYear.get(row.year) ?? 0, row.deaths));
+      const existing = byYear.get(row.year);
+      if (existing === undefined || (row.deaths ?? -1) > (existing.deaths ?? -1)) {
+        byYear.set(row.year, row);
+      }
     }
-    const deaths = Array.from(byYear.entries())
-      .sort(([a], [b]) => a - b)
-      .map(([, d]) => d);
+    const points = Array.from(byYear.values())
+      .sort((a, b) => a.year - b.year)
+      .map((point) => ({
+        year: point.year,
+        deaths: point.deaths,
+        suppressed: point.suppressed,
+        unreliable: point.unreliable,
+      }));
     return {
       fips,
-      name: m?.name ?? fips,
-      state: m?.state ?? "",
-      deaths,
+      name: m?.name ?? fallback.name,
+      state: m?.state ?? fallback.state,
+      points,
     };
   });
   return { counties };
@@ -207,7 +259,7 @@ async function main() {
   const top = await readJSON<TopDist[]>(path.join(dataDir, "top-distributors-by-year.json"));
   const dea = await readJSON<DEA[]>(path.join(dataDir, "dea-enforcement-actions.json"));
   const meta = await readJSON<CountyMeta[]>(path.join(dataDir, "county-metadata.json"));
-  const cdc = await readCdcParquet(path.join(dataDir, "cdc-overdose-by-county-year.parquet"));
+  const cdc = await readCdcRows(dataDir);
 
   if (state === null || top === null || dea === null || state.length === 0) {
     console.log(

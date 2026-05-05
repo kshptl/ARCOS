@@ -384,60 +384,366 @@
         "fips": "54059",
         "name": "Mingo County",
         "state": "WV",
-        "deaths": [
-          0,
-          15,
-          18
-        ]
-      },
-      {
-        "fips": "51720",
-        "name": "Norton city",
-        "state": "VA",
-        "deaths": [
-          0,
-          11,
-          14
-        ]
-      },
-      {
-        "fips": "54011",
-        "name": "Cabell County",
-        "state": "WV",
-        "deaths": [
-          63,
-          72,
-          85
-        ]
-      },
-      {
-        "fips": "54045",
-        "name": "Logan County",
-        "state": "WV",
-        "deaths": [
-          22,
-          25,
-          29
-        ]
-      },
-      {
-        "fips": "21071",
-        "name": "Floyd County",
-        "state": "KY",
-        "deaths": [
-          19,
-          24,
-          29
+        "points": [
+          {
+            "year": 2006,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2007,
+            "deaths": 10,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2008,
+            "deaths": 18,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2009,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 14,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2011,
+            "deaths": 18,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2012,
+            "deaths": 18,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2013,
+            "deaths": 12,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2014,
+            "deaths": 25,
+            "suppressed": false,
+            "unreliable": false
+          }
         ]
       },
       {
         "fips": "21195",
         "name": "Pike County",
         "state": "KY",
-        "deaths": [
-          42,
-          51,
-          58
+        "points": [
+          {
+            "year": 2006,
+            "deaths": 15,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2007,
+            "deaths": 31,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2008,
+            "deaths": 28,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2009,
+            "deaths": 23,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 36,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2011,
+            "deaths": 36,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2012,
+            "deaths": 31,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2013,
+            "deaths": 20,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2014,
+            "deaths": 30,
+            "suppressed": false,
+            "unreliable": false
+          }
+        ]
+      },
+      {
+        "fips": "21119",
+        "name": "Knott County",
+        "state": "KY",
+        "points": [
+          {
+            "year": 2006,
+            "deaths": 11,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2007,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2008,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2009,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 11,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2011,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2012,
+            "deaths": 12,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2013,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2014,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          }
+        ]
+      },
+      {
+        "fips": "54047",
+        "name": "McDowell County",
+        "state": "WV",
+        "points": [
+          {
+            "year": 2006,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2007,
+            "deaths": 18,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2008,
+            "deaths": 23,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2009,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 24,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2011,
+            "deaths": 26,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2012,
+            "deaths": 15,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2013,
+            "deaths": 21,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2014,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          }
+        ]
+      },
+      {
+        "fips": "54011",
+        "name": "Cabell County",
+        "state": "WV",
+        "points": [
+          {
+            "year": 2006,
+            "deaths": 28,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2007,
+            "deaths": 40,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2008,
+            "deaths": 30,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2009,
+            "deaths": null,
+            "suppressed": true,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 29,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2011,
+            "deaths": 41,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2012,
+            "deaths": 27,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2013,
+            "deaths": 48,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2014,
+            "deaths": 50,
+            "suppressed": false,
+            "unreliable": false
+          }
+        ]
+      },
+      {
+        "fips": "39145",
+        "name": "Scioto County",
+        "state": "OH",
+        "points": [
+          {
+            "year": 2006,
+            "deaths": 23,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2007,
+            "deaths": 21,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2008,
+            "deaths": 21,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2009,
+            "deaths": 20,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2010,
+            "deaths": 25,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2011,
+            "deaths": 25,
+            "suppressed": false,
+            "unreliable": false
+          },
+          {
+            "year": 2012,
+            "deaths": 17,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2013,
+            "deaths": 18,
+            "suppressed": false,
+            "unreliable": true
+          },
+          {
+            "year": 2014,
+            "deaths": 23,
+            "suppressed": false,
+            "unreliable": false
+          }
         ]
       }
     ]

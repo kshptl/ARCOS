@@ -21,7 +21,16 @@ describe("loadScrollyData", () => {
           otherAggregate: { sharesByYear: [15, 16] },
         },
         act3: { actions: [{ year: 2012, action_count: 40, notable_actions: [] }] },
-        act4: { counties: [{ fips: "54059", name: "Mingo", state: "WV", deaths: [1, 2, 3] }] },
+        act4: {
+          counties: [
+            {
+              fips: "54059",
+              name: "Mingo",
+              state: "WV",
+              points: [{ year: 2013, deaths: 15, suppressed: false, unreliable: false }],
+            },
+          ],
+        },
       }),
     );
     const data = await loadScrollyData({ readFile });
@@ -29,6 +38,9 @@ describe("loadScrollyData", () => {
     expect(data.act2.series[0]!.distributor).toBe("McKesson");
     expect(data.act3.actions[0]!.year).toBe(2012);
     expect(data.act4.counties[0]!.fips).toBe("54059");
+    expect(data.act4.counties[0]!.points).toEqual([
+      { year: 2013, deaths: 15, suppressed: false, unreliable: false },
+    ]);
   });
 
   it("returns empty-fixture fallback when file missing", async () => {

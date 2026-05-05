@@ -18,7 +18,14 @@ export type ScrollyData = {
   act1: { totalPills: number; yearly: { year: number; pills: number }[] };
   act2: Act2Data;
   act3: { actions: DEAEnforcementAction[] };
-  act4: { counties: { fips: string; name: string; state: string; deaths: number[] }[] };
+  act4: {
+    counties: {
+      fips: string;
+      name: string;
+      state: string;
+      points: { year: number; deaths: number | null; suppressed: boolean; unreliable: boolean }[];
+    }[];
+  };
 };
 
 const EMPTY: ScrollyData = {
