@@ -1,4 +1,4 @@
-"""CLI clean: ingests raw CDC XMLs and emits data/clean/cdc.parquet."""
+"""CLI clean: ingests raw CDC TSVs and emits data/clean/cdc.parquet."""
 
 import shutil
 from pathlib import Path
@@ -10,7 +10,7 @@ from openarcos_pipeline.cli import app
 from openarcos_pipeline.config import Config
 
 runner = CliRunner()
-FIXTURE = Path(__file__).parent / "fixtures" / "cdc" / "wv_2012_2014.xml"
+FIXTURE = Path(__file__).parent / "fixtures" / "cdc_wonder" / "sample_wv_2006_2014.tsv"
 
 
 def test_clean_cdc_produces_parquet(tmp_path, monkeypatch):
@@ -19,7 +19,7 @@ def test_clean_cdc_produces_parquet(tmp_path, monkeypatch):
     cfg.ensure_dirs()
     cdc_raw = cfg.raw_dir / "cdc"
     cdc_raw.mkdir(parents=True, exist_ok=True)
-    shutil.copy(FIXTURE, cdc_raw / "WV_2012-2014.xml")
+    shutil.copy(FIXTURE, cdc_raw / "54_WV.tsv")
 
     result = runner.invoke(app, ["clean"])
     assert result.exit_code == 0, result.stdout

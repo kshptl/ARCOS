@@ -113,7 +113,8 @@ def parse_tsv(tsv_text: str) -> list[dict[str, Any]]:
     Stops when the metadata block (``"---"`` sentinel row) is reached.
     Skips rows whose Deaths cell is ``"Missing"`` (no data) — they are
     neither counted nor emitted. Rows with Deaths ``"Suppressed"`` are
-    emitted with ``deaths=None, suppressed=True``.
+    emitted with ``deaths=None, suppressed=True``. Numeric counts of 9 or
+    fewer receive the same representation before public artifacts are built.
     """
     if not tsv_text.strip():
         return []
@@ -186,6 +187,9 @@ def parse_tsv(tsv_text: str) -> list[dict[str, Any]]:
                 deaths = int(deaths_raw.replace(",", ""))
             except ValueError:
                 continue
+            if deaths <= 9:
+                deaths = None
+                suppressed = True
 
         try:
             population = int(pop_raw) if pop_raw else 0

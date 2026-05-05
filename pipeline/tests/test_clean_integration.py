@@ -19,7 +19,10 @@ def test_clean_produces_all_parquets(tmp_path, monkeypatch):
 
     # Seed raw dirs with fixtures.
     (cfg.raw_dir / "cdc").mkdir(parents=True, exist_ok=True)
-    shutil.copy(FIX / "cdc" / "wv_2012_2014.xml", cfg.raw_dir / "cdc" / "WV_2012-2014.xml")
+    shutil.copy(
+        FIX / "cdc_wonder" / "sample_wv_2006_2014.tsv",
+        cfg.raw_dir / "cdc" / "54_WV.tsv",
+    )
 
     (cfg.raw_dir / "dea").mkdir(parents=True, exist_ok=True)
     shutil.copy(

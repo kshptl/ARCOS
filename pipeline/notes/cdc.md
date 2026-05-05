@@ -1,4 +1,49 @@
-# CDC WONDER D76 — probe notes
+# CDC WONDER D76 Source Notes
+
+## Current Source
+
+The committed county-level overdose mortality artifact comes from CDC WONDER
+Underlying Cause of Death 1999-2020 (`D76`) interactive UI TSV exports, not the
+XML API. The scraper queries one state at a time for the fixed historical window
+2006-2014 and caches the raw TSVs under `pipeline/data/raw/cdc/{FIPS}_{ST}.tsv`.
+
+The processed artifact is `pipeline/data/processed/cdc_county_overdose.json`.
+It is built by `openarcos_pipeline.aggregate_cdc` and validated by
+`pipeline/schemas/cdc_county_overdose.schema.json`.
+
+Refresh policy: the 2006-2014 story window is frozen. Refresh CDC data only by
+running the manual Playwright workflow/scraper intentionally; do not refresh it
+on every commit or as part of routine pipeline verification.
+
+## Query Definition
+
+- Dataset: CDC WONDER Underlying Cause of Death, 1999-2020.
+- UI endpoint: `https://wonder.cdc.gov/ucd-icd10.html`.
+- Export format: TSV, one state/DC query per file.
+- Group by: State, County, Year.
+- Years: 2006 through 2014.
+- Geography: 50 states plus DC; territories excluded.
+- Drug/alcohol-induced causes: WONDER macro D1-D4.
+- Exact ICD-10 mapping: X40-X44, X60-X64, X85, Y10-Y14.
+
+## Suppression And Reliability
+
+Suppression follows 42 USC 242m(d): NCHS cannot publish cells with counts of 9
+or fewer. The processed artifact stores these cells as `deaths=null` and
+`suppressed=true`; consumers must render them as suppressed or `<10`, not impute
+a number.
+
+CDC flags rates based on counts of 20 or fewer as statistically unreliable. For
+publishable counts of 10-20, the artifact retains the numeric `deaths` count and
+sets `unreliable=true`; the rate fields remain nullable because the caveat is
+about rate precision, not count availability.
+
+## Investigation Log
+
+- `pipeline/notes/cdc-investigation-2026-05-01.md`
+- `pipeline/notes/cdc-investigation-2026-05-01-round2.md`
+
+## XML API Probe Outcome
 
 **Probed on:** 2026-04-30
 **Endpoint:** `POST https://wonder.cdc.gov/controller/datarequest/D76`
@@ -40,41 +85,6 @@ those trigger the "location variable" refusal. **Every live call
 will return HTTP 500 with the message above.** No parameter tweaking
 will change this — CDC deliberately blocks it.
 
-### Options for a maintainer
-
-1. **Switch dataset**: The [NCHS restricted-use Multiple Cause of
-   Death file](https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm)
-   provides county-level data but requires a signed Data Use
-   Agreement (RDC). Not compatible with an open-source automated
-   pipeline.
-2. **Pre-computed county data**: CDC publishes county-year drug-
-   overdose mortality at
-   <https://www.cdc.gov/drugoverdose/deaths/data.html> as static
-   spreadsheets. Refetching these as Excel/CSV is trivial but gives
-   a much coarser feature set (just counts, no ICD-code detail).
-3. **State-level fallback**: Call the D76 API with `B_1=*None*` and
-   download national totals by year only, join to state totals from
-   another source. Loses the county fidelity that motivated this
-   pipeline in the first place.
-4. **Scrape the interactive web UI**: possible but brittle; CDC's
-   session handling explicitly rate-limits non-authenticated browsers
-   at 15-second intervals (observed 429 during our probing) and the
-   T&C forbid automated UI scraping.
-
-None of these are drop-in. Pick a path, then re-spec the source.
-
-### Current fixture (SYNTHETIC)
-
-- `tests/fixtures/cdc/wv_2012_2014_request.xml` — the attempted request
-  body (will 500 live)
-- `tests/fixtures/cdc/wv_2012_2014.xml` — **hand-authored synthetic**
-  response matching the schema that the interactive UI produces:
-  `<page><response><data-table><r><c l="Name County, ST (FIPS)"/>
-  <c l="YYYY">count-or-Suppressed</c></r>...</data-table></response></page>`.
-  This lets us develop `clean/cdc.py` without blocking on the D76
-  parameter adjustments, but its production applicability depends on
-  which of the options above the maintainers pick.
-
 ### Live 500 response (for reference)
 
 ```xml
@@ -89,7 +99,7 @@ None of these are drop-in. Pick a path, then re-spec the source.
 </page>
 ```
 
-### Rate limit
+### XML API Rate Limit
 
 The WONDER API enforces **15 seconds between consecutive requests**.
 Observed response when violated:
@@ -98,44 +108,21 @@ Observed response when violated:
 >  requests must have at least 15 seconds between consecutive
 >  requests."* (HTTP 429)
 
-`cdc_wonder.py`'s tenacity retry with `wait_exponential_jitter(initial=2.0, max=30.0)`
-can hit this; `initial=15.0, max=60.0` would be safer.
+The historical XML client remains only to document the refused path. It is not
+used to refresh the committed county-level TSV cache.
 
-## Request body parameters (known-working set)
+## TSV Response Shape
 
-| Parameter | Meaning |
-|---|---|
-| `accept_datause_restrictions=true` | Required; agrees to WONDER terms |
-| `B_1 = D76.V1-level3` | Group by year |
-| `B_2 = D76.V1-level1` | Group by county |
-| `F_D76.V1 = <year>` (repeat) | Year filter |
-| `F_D76.V9 = <state-fips>` | State FIPS filter (2-digit) |
-| `F_D76.V10 = *All*` | County (all) |
-| `F_D76.V17 = X40..Y14` | ICD-10 underlying-cause filter for drug-related deaths |
-| `O_rate_per = 100000` | Rate denominator (we ignore, use raw count) |
-| `O_precision = 1` | Decimals |
-
-The exact working XML envelope must be recorded from a real successful
-submission; the set above is a scaffold.
-
-## Response shape
-
-- Root element: `<page ...>` containing `<response>` with `<data-table>`
-- `<data-table>` has `<r>` rows, each with `<c>` cells keyed by `<c l="label">value</c>`
-- Suppressed rows carry cell value `Suppressed` (literal string); we map these to `deaths=null, suppressed=true`
-- Non-suppressed rows have integer counts
+- Header columns include `State Code`, `County`, `County Code`, `Year`, `Deaths`, `Population`, and `Crude Rate`.
+- Data rows end at the `---` metadata sentinel.
+- Suppressed rows carry `Deaths=Suppressed`; they map to `deaths=null, suppressed=true`.
+- Missing rows carry `Deaths=Missing`; they are omitted from the processed artifact.
+- Non-suppressed rows have integer counts.
 
 ## Known quirks
 
 - Data-use restrictions terms must be accepted with the literal string "true"
-- Suppressed cells contain "Suppressed"; missing cells contain "Missing"
+- TSV suppressed cells contain "Suppressed"; missing cells contain "Missing".
 - Responses >30k rows require pagination via `V_D76.V1` year splits (do per-state, per-year if we trip the limit)
 - Response can briefly return HTML on heavy load; retry with exponential backoff
 - `B_1`/`B_2` must be listed in the correct variable order (State before County); our code orders year-then-county which may need flipping.
-
-## Content hashes (SYNTHETIC, not production)
-
-- `wv_2012_2014.xml`: sha256=f07c2fcfb5cdf69d4e774e7a41f939db3ef432cd1225c07172326412f60beaea
-- `wv_2012_2014_request.xml`: sha256=acd8725b5b3bb6508881eca183b3531b2d2edeff56488a87fdd22eb99f604365
-
-Regenerate via: `sha256sum pipeline/tests/fixtures/cdc/*.xml`

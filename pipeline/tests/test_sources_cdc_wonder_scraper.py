@@ -65,6 +65,22 @@ def test_parse_tsv_suppressed_count_marked():
     assert webster_2010["population"] == 9154
 
 
+def test_parse_tsv_zero_count_is_suppressed_for_publication():
+    body = (
+        '"Notes"\t"State"\t"State Code"\t"County"\t"County Code"\t'
+        '"Year"\t"Year Code"\tDeaths\tPopulation\tCrude Rate\n'
+        '\t"Wyoming"\t"56"\t"Big Horn County, WY"\t"56003"\t'
+        '"2014"\t"2014"\t0\t11930\tUnreliable\n'
+        '"---"\n'
+    )
+
+    records = parse_tsv(body)
+
+    assert records[0]["deaths"] is None
+    assert records[0]["suppressed"] is True
+    assert records[0]["unreliable"] is True
+
+
 def test_parse_tsv_skips_missing_cells():
     """Cells marked 'Missing' (no data) are excluded, not returned as zero."""
     records = parse_tsv(SAMPLE_TSV.read_text())

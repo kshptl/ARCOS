@@ -69,6 +69,6 @@ def parse_d76_response(_text: str) -> pl.DataFrame:
     :func:`parse_d76_tsv`. This function remains only so existing tests
     that feed an unchanged XML body through a soft-deprecated path keep
     compiling; it returns an empty canonical-shape frame rather than
-    silently parsing stale synthetic fixtures.
+    silently parsing stale fixtures.
     """
     return pl.DataFrame(schema=_CANONICAL_SCHEMA)

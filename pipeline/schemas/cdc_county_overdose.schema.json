@@ -31,6 +31,11 @@
             "description": "Suppressed cells never carry a numeric death count.",
             "if": {"properties": {"suppressed": {"const": true}}},
             "then": {"properties": {"deaths": {"type": "null"}}}
+          },
+          {
+            "description": "Publishable non-suppressed cells must be at least 10 deaths.",
+            "if": {"properties": {"suppressed": {"const": false}}},
+            "then": {"properties": {"deaths": {"type": "integer", "minimum": 10}}}
           }
         ]
       }

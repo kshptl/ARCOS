@@ -38,7 +38,7 @@ def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
         if src.name.startswith(("county_", "distributors_", "pharmacies_")):
             shutil.copy(src, raw_dir / "wapo" / src.name)
     (raw_dir / "cdc").mkdir(parents=True, exist_ok=True)
-    for src in (fixtures_dir / "cdc").glob("*.xml"):
+    for src in (fixtures_dir / "cdc_wonder").glob("*.tsv"):
         shutil.copy(src, raw_dir / "cdc" / src.name)
     (raw_dir / "dea").mkdir(parents=True, exist_ok=True)
     for src in (fixtures_dir / "dea").glob("fr_notices_*.json"):

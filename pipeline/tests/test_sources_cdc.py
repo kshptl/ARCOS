@@ -1,13 +1,8 @@
-"""CDC WONDER client: POSTs D76 request, returns raw XML."""
-
-from pathlib import Path
+"""Legacy CDC WONDER XML API client documents county-level refusal."""
 
 import httpx
 
 from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient, build_request_xml
-
-FIXTURE = Path(__file__).parent / "fixtures" / "cdc" / "wv_2012_2014.xml"
-
 
 def test_build_request_xml_contains_years():
     body = build_request_xml(state_fips="54", years=[2012, 2013, 2014])
@@ -17,14 +12,19 @@ def test_build_request_xml_contains_years():
     assert "accept_datause_restrictions" in body
 
 
-def test_fetch_returns_xml():
+def test_fetch_raises_on_county_level_api_refusal():
     def handler(req: httpx.Request) -> httpx.Response:
         assert req.method == "POST"
         return httpx.Response(
-            200, content=FIXTURE.read_bytes(), headers={"content-type": "text/xml"}
+            500,
+            text="Only national data are available for this dataset when using the WONDER web service.",
+            headers={"content-type": "text/plain"},
         )
 
-    client = CDCWonderClient(transport=httpx.MockTransport(handler))
-    body = client.fetch(state_fips="54", years=[2012, 2013, 2014])
-    assert body.startswith("<") or body.startswith("\ufeff<")
-    assert len(body) > 100
+    with CDCWonderClient(transport=httpx.MockTransport(handler), max_retries=1) as client:
+        try:
+            client.fetch(state_fips="54", years=[2012, 2013, 2014])
+        except httpx.HTTPStatusError as exc:
+            assert exc.response.status_code == 500
+        else:  # pragma: no cover - assertion path
+            raise AssertionError("county-level D76 API refusal should raise")

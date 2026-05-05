@@ -27,8 +27,8 @@ def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
 
     (raw_dir / "cdc").mkdir(parents=True, exist_ok=True)
     shutil.copy(
-        fixtures_dir / "cdc" / "wv_2012_2014.xml",
-        raw_dir / "cdc" / "WV_2012-2014.xml",
+        fixtures_dir / "cdc_wonder" / "sample_wv_2006_2014.tsv",
+        raw_dir / "cdc" / "54_WV.tsv",
     )
 
 

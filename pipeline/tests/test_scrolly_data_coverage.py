@@ -32,6 +32,7 @@ from openarcos_pipeline.cli import app
 
 # Mirrors web/scripts/build-scrolly-data.mts:AFTERMATH_FIPS
 AFTERMATH_FIPS = ("54059", "51720", "54011", "54045", "21071", "21195")
+REAL_CDC_RAW = Path(__file__).resolve().parents[1] / "data" / "raw" / "cdc"
 
 
 def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
@@ -46,7 +47,7 @@ def _seed_raw(raw_dir: Path, fixtures_dir: Path) -> None:
         if src.name.startswith(("county_", "distributors_", "pharmacies_")):
             shutil.copy(src, raw_dir / "wapo" / src.name)
     (raw_dir / "cdc").mkdir(parents=True, exist_ok=True)
-    for src in (fixtures_dir / "cdc").glob("*.xml"):
+    for src in REAL_CDC_RAW.glob("*.tsv"):
         shutil.copy(src, raw_dir / "cdc" / src.name)
     (raw_dir / "dea").mkdir(parents=True, exist_ok=True)
     for src in (fixtures_dir / "dea").glob("fr_notices_*.json"):

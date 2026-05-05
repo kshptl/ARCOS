@@ -113,10 +113,12 @@ def test_processed_artifact_sanity_counts_real_scrape():
     # Suppressed rows for the same county-year, depending on the
     # show-zeros/show-suppressed toggles). Accept up to +500 slack.
     assert 20_000 <= len(artifact["records"]) <= 28_800
-    # Majority non-suppressed (most county-years across 2006-2014
-    # exceed the 9-death floor, especially by 2014).
+    # A large publishable subset remains after the <=9 suppression floor.
     non_sup = sum(1 for r in artifact["records"] if not r["suppressed"])
-    assert non_sup >= 10_000
+    assert non_sup >= 6_000
+    assert all(
+        r["deaths"] is None or r["deaths"] >= 10 for r in artifact["records"]
+    )
     # Mingo WV 2010 ≥ 10 (publishable).
     mingo_2010 = next(
         r for r in artifact["records"]
