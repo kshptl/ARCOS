@@ -77,8 +77,8 @@ export default function Methodology() {
             <dd>
               Overdose deaths by county-year from a CDC WONDER Underlying Cause of Death 1999-2020
               interactive UI scrape.{" "}
-              <a href="https://wonder.cdc.gov/mcd.html">View at wonder.cdc.gov</a>. The scrape runs
-              one state/DC query at a time for 2006-2014, using the WONDER Drug/Alcohol Induced
+              <a href="https://wonder.cdc.gov/ucd-icd10.html">View at wonder.cdc.gov</a>. The scrape
+              runs one state/DC query at a time for 2006-2014, using the WONDER Drug/Alcohol Induced
               Causes D1-D4 macro and ICD-10 codes X40-X44, X60-X64, X85, Y10-Y14. Counts of 9 or
               fewer are suppressed under 42 USC 242m(d) and rendered &lt;10, never zero. Counts of
               10-20 are publishable as raw deaths, but CDC flags their rates as statistically

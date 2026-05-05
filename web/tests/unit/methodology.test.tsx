@@ -35,7 +35,7 @@ describe("/methodology", () => {
     );
     expect(screen.getByRole("link", { name: /wonder\.cdc\.gov/i })).toHaveAttribute(
       "href",
-      "https://wonder.cdc.gov/mcd.html",
+      "https://wonder.cdc.gov/ucd-icd10.html",
     );
   });
 
