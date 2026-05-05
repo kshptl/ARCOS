@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CountyOverdoseTrend } from "@/components/county/CountyOverdoseTrend";
 import { CountyTimeSeries } from "@/components/county/CountyTimeSeries";
 import { Hero } from "@/components/county/Hero";
 import { RankCallouts } from "@/components/county/RankCallouts";
@@ -73,6 +74,11 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Pills shipped, year by year</h2>
         <CountyTimeSeries fips={fips} meta={meta} bundle={bundle} stateSeries={stateSeries} />
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Overdose deaths, year by year</h2>
+        <CountyOverdoseTrend countyName={meta.name} rows={bundle.overdose} />
       </section>
 
       <section className={styles.section}>
