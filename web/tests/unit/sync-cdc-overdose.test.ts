@@ -21,7 +21,7 @@ describe("syncCDCOverdose", () => {
     const rootDir = await makeTempRoot();
     const source = path.join(rootDir, "pipeline", "data", "processed", "cdc_county_overdose.json");
     const destination = path.join(rootDir, "web", "public", "data", "cdc_county_overdose.json");
-    const sourceJson = JSON.stringify({ rows: [{ fips: "01001", deaths: 12 }] });
+    const sourceJson = JSON.stringify({ records: [{ fips: "01001", deaths: 12 }] });
 
     await fs.mkdir(path.dirname(source), { recursive: true });
     await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -29,7 +29,8 @@ describe("syncCDCOverdose", () => {
 
     const result = await syncCDCOverdose({ rootDir });
 
-    await expect(fs.readFile(destination, "utf-8")).resolves.toBe(sourceJson);
+    const copied = JSON.parse(await fs.readFile(destination, "utf-8"));
+    expect(copied.records[0]).toEqual({ fips: "01001", deaths: 12 });
     expect(result).toEqual({ copied: true, source, destination });
   });
 
@@ -37,7 +38,7 @@ describe("syncCDCOverdose", () => {
     const rootDir = await makeTempRoot();
     const source = path.join(rootDir, "pipeline", "data", "processed", "cdc_county_overdose.json");
     const destination = path.join(rootDir, "web", "public", "data", "cdc_county_overdose.json");
-    const existingJson = JSON.stringify({ rows: [{ fips: "01003", deaths: 4 }] });
+    const existingJson = JSON.stringify({ records: [{ fips: "01003", deaths: 4 }] });
 
     await fs.mkdir(path.dirname(destination), { recursive: true });
     await fs.writeFile(destination, existingJson);
