@@ -1,0 +1,39 @@
+{
+  "records": [
+    {
+      "county_fips": "54059",
+      "county_name": "Mingo County, WV",
+      "state_fips": "54",
+      "year": 2010,
+      "deaths": 14,
+      "population": 26839,
+      "crude_rate": null,
+      "crude_rate_lower_ci": null,
+      "crude_rate_upper_ci": null,
+      "suppressed": false,
+      "unreliable": true
+    },
+    {
+      "county_fips": "54101",
+      "county_name": "Webster County, WV",
+      "state_fips": "54",
+      "year": 2010,
+      "deaths": null,
+      "population": 9154,
+      "crude_rate": null,
+      "crude_rate_lower_ci": null,
+      "crude_rate_upper_ci": null,
+      "suppressed": true,
+      "unreliable": true
+    }
+  ],
+  "methodology": "CDC WONDER Underlying Cause of Death 1999-2020 D1-D4: X40-X44, X60-X64, X85, Y10-Y14. Suppressed cells are deaths=null.",
+  "source": "https://wonder.cdc.gov/ucd-icd10.html",
+  "fetched_at": "2026-05-01T00:00:00Z",
+  "totals": {
+    "records": 2,
+    "suppressed": 1,
+    "unreliable": 2,
+    "states": 1
+  }
+}

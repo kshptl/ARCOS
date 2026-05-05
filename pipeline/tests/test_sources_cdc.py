@@ -4,6 +4,7 @@ import httpx
 
 from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient, build_request_xml
 
+
 def test_build_request_xml_contains_years():
     body = build_request_xml(state_fips="54", years=[2012, 2013, 2014])
     assert "<value>2012</value>" in body

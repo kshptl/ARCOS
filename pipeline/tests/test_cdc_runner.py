@@ -6,6 +6,7 @@ from openarcos_pipeline.config import Config
 from openarcos_pipeline.sources.cdc_runner import fetch_all_states
 from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient
 
+
 def test_runner_does_not_write_refused_xml_response(tmp_path, monkeypatch):
     monkeypatch.setenv("OPENARCOS_DATA_ROOT", str(tmp_path))
     cfg = Config.from_env()
