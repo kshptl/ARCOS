@@ -1,6 +1,8 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const readFileMock = vi.fn();
+const accessMock = vi.fn();
+const readParquetRowsMock = vi.fn();
 
 vi.mock("node:fs/promises", async (importOriginal) => {
   const actual = (await importOriginal()) as typeof import("node:fs/promises");
@@ -8,11 +10,17 @@ vi.mock("node:fs/promises", async (importOriginal) => {
     ...actual,
     default: {
       ...actual,
+      access: (...args: unknown[]) => accessMock(...args),
       readFile: (...args: unknown[]) => readFileMock(...args),
     },
+    access: (...args: unknown[]) => accessMock(...args),
     readFile: (...args: unknown[]) => readFileMock(...args),
   };
 });
+
+vi.mock("@/lib/data/parquet", () => ({
+  readParquetRows: (...args: unknown[]) => readParquetRowsMock(...args),
+}));
 
 import { loadCountyBundle } from "@/lib/data/loadCountyBundle";
 import {
@@ -98,7 +106,9 @@ describe("loadCountyBundle", () => {
 describe("loadCDCOverdose", () => {
   beforeEach(() => {
     resetCDCOverdoseCache();
+    accessMock.mockReset();
     readFileMock.mockReset();
+    readParquetRowsMock.mockReset();
   });
 
   it("normalizes rich CDC WONDER JSON records and preserves metadata", async () => {
@@ -158,6 +168,18 @@ describe("loadCDCOverdose", () => {
     });
   });
 
+  it("normalizes preserved county_fips when rich JSON uses a short FIPS", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify({
+        records: [{ county_fips: "1059", year: 2012, deaths: 12, suppressed: false }],
+      }),
+    );
+
+    const rows = await loadCDCOverdose();
+
+    expect(rows[0]).toMatchObject({ fips: "01059", county_fips: "01059" });
+  });
+
   it("groups rich CDC WONDER records by normalized FIPS sorted by year", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify({
@@ -175,5 +197,65 @@ describe("loadCDCOverdose", () => {
       { fips: "54059", county_fips: "54059", year: 2011, deaths: null, suppressed: true },
       { fips: "54059", county_fips: "54059", year: 2013, deaths: 44, suppressed: false },
     ]);
+  });
+
+  it("falls back to parquet when rich JSON is missing", async () => {
+    readFileMock
+      .mockRejectedValueOnce(Object.assign(new Error("missing json"), { code: "ENOENT" }))
+      .mockResolvedValueOnce(Buffer.from("parquet bytes"));
+    accessMock.mockResolvedValueOnce(undefined);
+    readParquetRowsMock.mockResolvedValueOnce([
+      { fips: "54059", year: 2012, deaths: 42, suppressed: false },
+    ]);
+
+    const rows = await loadCDCOverdose();
+
+    expect(readParquetRowsMock).toHaveBeenCalledWith(Buffer.from("parquet bytes"));
+    expect(rows).toEqual([{ fips: "54059", year: 2012, deaths: 42, suppressed: false }]);
+  });
+
+  it("returns empty rows when both rich JSON and parquet artifacts are missing", async () => {
+    readFileMock.mockRejectedValueOnce(Object.assign(new Error("missing json"), { code: "ENOENT" }));
+    accessMock.mockRejectedValueOnce(Object.assign(new Error("missing parquet"), { code: "ENOENT" }));
+
+    const rows = await loadCDCOverdose();
+
+    expect(rows).toEqual([]);
+    expect(readParquetRowsMock).not.toHaveBeenCalled();
+  });
+
+  it("can skip rich JSON when preferJson is false", async () => {
+    readFileMock.mockResolvedValueOnce(Buffer.from("parquet bytes"));
+    accessMock.mockResolvedValueOnce(undefined);
+    readParquetRowsMock.mockResolvedValueOnce([
+      { fips: "54059", year: 2012, deaths: 42, suppressed: false },
+    ]);
+
+    const rows = await loadCDCOverdose({ preferJson: false });
+
+    expect(readFileMock).toHaveBeenCalledTimes(1);
+    expect(rows).toEqual([{ fips: "54059", year: 2012, deaths: 42, suppressed: false }]);
+  });
+
+  it("uses separate caches for JSON-first and parquet-only loading", async () => {
+    readFileMock
+      .mockResolvedValueOnce(
+        JSON.stringify({
+          records: [{ county_fips: "54059", year: 2011, deaths: null, suppressed: true }],
+        }),
+      )
+      .mockResolvedValueOnce(Buffer.from("parquet bytes"));
+    accessMock.mockResolvedValueOnce(undefined);
+    readParquetRowsMock.mockResolvedValueOnce([
+      { fips: "54059", year: 2012, deaths: 42, suppressed: false },
+    ]);
+
+    const jsonRows = await loadCDCOverdoseByFips("54059");
+    const parquetRows = await loadCDCOverdoseByFips("54059", { preferJson: false });
+
+    expect(jsonRows).toEqual([
+      { fips: "54059", county_fips: "54059", year: 2011, deaths: null, suppressed: true },
+    ]);
+    expect(parquetRows).toEqual([{ fips: "54059", year: 2012, deaths: 42, suppressed: false }]);
   });
 });

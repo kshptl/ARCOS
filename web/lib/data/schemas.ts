@@ -106,6 +106,10 @@ export interface CDCOverdoseByCountyYear {
 }
 
 export interface CDCCountyOverdoseArtifact {
+  methodology?: string;
+  source?: string;
+  fetched_at?: string;
+  totals?: Record<string, unknown>;
   records: Array<Omit<CDCOverdoseByCountyYear, "fips"> & { fips?: string }>;
 }
 

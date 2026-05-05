@@ -12,54 +12,84 @@ const PARQUET_DATA_PATH = path.join(
   "cdc-overdose-by-county-year.parquet",
 );
 
-let cache: CDCOverdoseByCountyYear[] | null = null;
-let byFips: Map<string, CDCOverdoseByCountyYear[]> | null = null;
-
-export function resetCDCOverdoseCache(): void {
-  cache = null;
-  byFips = null;
+export interface LoadCDCOverdoseOptions {
+  preferJson?: boolean;
 }
 
-export async function loadCDCOverdose(): Promise<CDCOverdoseByCountyYear[]> {
-  if (cache) return cache;
-  try {
-    const json = await fs.readFile(JSON_DATA_PATH, "utf8");
-    const artifact = JSON.parse(json) as CDCCountyOverdoseArtifact;
-    cache = artifact.records.map((row) => ({
-      ...row,
-      fips: normalizeFips(row.county_fips ?? row.fips ?? ""),
-    }));
-    buildByFipsCache(cache);
-    return cache;
-  } catch (error) {
-    if (!isMissingFileError(error)) throw error;
+interface CDCOverdoseCacheEntry {
+  rows: CDCOverdoseByCountyYear[];
+  byFips: Map<string, CDCOverdoseByCountyYear[]>;
+}
+
+let jsonFirstCache: CDCOverdoseCacheEntry | null = null;
+let parquetOnlyCache: CDCOverdoseCacheEntry | null = null;
+
+export function resetCDCOverdoseCache(): void {
+  jsonFirstCache = null;
+  parquetOnlyCache = null;
+}
+
+export async function loadCDCOverdose(
+  options: LoadCDCOverdoseOptions = {},
+): Promise<CDCOverdoseByCountyYear[]> {
+  const preferJson = options.preferJson ?? true;
+  const cache = preferJson ? jsonFirstCache : parquetOnlyCache;
+  if (cache) return cache.rows;
+
+  if (preferJson) {
+    try {
+      const json = await fs.readFile(JSON_DATA_PATH, "utf8");
+      const artifact = JSON.parse(json) as CDCCountyOverdoseArtifact;
+      jsonFirstCache = buildCache(artifact.records.map(normalizeJsonRecord));
+      return jsonFirstCache.rows;
+    } catch (error) {
+      if (!isMissingFileError(error)) throw error;
+    }
   }
 
   try {
     await fs.access(PARQUET_DATA_PATH);
   } catch {
-    cache = [];
-    byFips = new Map();
-    return cache;
+    const emptyCache = buildCache([]);
+    if (preferJson) jsonFirstCache = emptyCache;
+    else parquetOnlyCache = emptyCache;
+    return emptyCache.rows;
   }
   const buf = await fs.readFile(PARQUET_DATA_PATH);
   if (buf.byteLength === 0) {
-    cache = [];
-    byFips = new Map();
-    return cache;
+    const emptyCache = buildCache([]);
+    if (preferJson) jsonFirstCache = emptyCache;
+    else parquetOnlyCache = emptyCache;
+    return emptyCache.rows;
   }
-  cache = await readParquetRows<CDCOverdoseByCountyYear>(buf);
-  buildByFipsCache(cache);
-  return cache;
+  const parquetCache = buildCache(await readParquetRows<CDCOverdoseByCountyYear>(buf));
+  if (preferJson) jsonFirstCache = parquetCache;
+  else parquetOnlyCache = parquetCache;
+  return parquetCache.rows;
 }
 
-export async function loadCDCOverdoseByFips(fips: string): Promise<CDCOverdoseByCountyYear[]> {
-  await loadCDCOverdose();
-  return byFips?.get(normalizeFips(fips)) ?? [];
+export async function loadCDCOverdoseByFips(
+  fips: string,
+  options: LoadCDCOverdoseOptions = {},
+): Promise<CDCOverdoseByCountyYear[]> {
+  await loadCDCOverdose(options);
+  const cache = options.preferJson === false ? parquetOnlyCache : jsonFirstCache;
+  return cache?.byFips.get(normalizeFips(fips)) ?? [];
 }
 
-function buildByFipsCache(rows: CDCOverdoseByCountyYear[]): void {
-  byFips = new Map();
+function normalizeJsonRecord(
+  row: CDCCountyOverdoseArtifact["records"][number],
+): CDCOverdoseByCountyYear {
+  const fips = normalizeFips(row.county_fips ?? row.fips ?? "");
+  return {
+    ...row,
+    fips,
+    county_fips: row.county_fips === undefined ? undefined : fips,
+  };
+}
+
+function buildCache(rows: CDCOverdoseByCountyYear[]): CDCOverdoseCacheEntry {
+  const byFips = new Map<string, CDCOverdoseByCountyYear[]>();
   for (const row of rows) {
     const normalizedFips = normalizeFips(row.fips);
     if (row.fips !== normalizedFips) row.fips = normalizedFips;
@@ -68,6 +98,7 @@ function buildByFipsCache(rows: CDCOverdoseByCountyYear[]): void {
     byFips.set(normalizedFips, bucket);
   }
   for (const arr of byFips.values()) arr.sort((a, b) => a.year - b.year);
+  return { rows, byFips };
 }
 
 function isMissingFileError(error: unknown): boolean {
