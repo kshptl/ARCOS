@@ -1,7 +1,7 @@
 "use client";
 
 import type { FeatureCollection, Geometry } from "geojson";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ChoroplethMap } from "@/components/map/ChoroplethMap";
 import { TimeSlider } from "@/components/map/TimeSlider";
 import { useWebGLSupport } from "@/components/map/useWebGLSupport";
@@ -9,7 +9,7 @@ import type { CountyMetadata } from "@/lib/data/schemas";
 import { loadCountyTopology, loadStateTopology } from "@/lib/geo/topology";
 import { DataLoader } from "./DataLoader";
 import styles from "./Explorer.module.css";
-import { Filters } from "./Filters";
+import { Filters, type FiltersState } from "./Filters";
 import { useURLState } from "./useURLState";
 import { WebGLFallback } from "./WebGLFallback";
 
@@ -18,6 +18,10 @@ const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
 const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
+const DEFAULT_URL_STATE = {
+  year: 2012,
+  metric: "pills" as const,
+};
 
 // Shared empty map reused across renders so that currentValues keeps a
 // stable identity while data is loading — otherwise every Explorer render
@@ -30,10 +34,7 @@ interface ExplorerProps {
 }
 
 export function Explorer({ counties }: ExplorerProps) {
-  const [urlState, setURLState] = useURLState({
-    year: 2012,
-    metric: "pills",
-  });
+  const [urlState, setURLState] = useURLState(DEFAULT_URL_STATE);
   const [topology, setTopology] = useState<{
     counties: FeatureCollection<Geometry, { name?: string }> | null;
     states: FeatureCollection<Geometry, { name?: string }> | null;
@@ -107,6 +108,29 @@ export function Explorer({ counties }: ExplorerProps) {
     );
   }, [counties]);
 
+  const handleFilterChange = useCallback(
+    (next: FiltersState) => setURLState({ ...urlState, ...next }),
+    [setURLState, urlState],
+  );
+
+  const handleYearChange = useCallback(
+    (year: number) => setURLState({ ...urlState, year }),
+    [setURLState, urlState],
+  );
+
+  const handleData = useCallback((year: number, values: Map<string, number>) => {
+    setValuesByYear((prev) => {
+      if (prev.get(year) === values) return prev;
+      const next = new Map(prev);
+      next.set(year, values);
+      return next;
+    });
+  }, []);
+
+  const handleDataError = useCallback((err: Error) => {
+    setTopologyError(err.message);
+  }, []);
+
   return (
     <section className={styles.root} aria-labelledby="explorer-heading">
       <header className={styles.header}>
@@ -122,16 +146,12 @@ export function Explorer({ counties }: ExplorerProps) {
           year={urlState.year}
           metric={urlState.metric}
           years={AVAILABLE_YEARS}
-          onChange={(next) => setURLState({ ...urlState, ...next })}
+          onChange={handleFilterChange}
         />
       </div>
 
       <div className={styles.slider}>
-        <TimeSlider
-          years={AVAILABLE_YEARS}
-          value={urlState.year}
-          onChange={(y) => setURLState({ ...urlState, year: y })}
-        />
+        <TimeSlider years={AVAILABLE_YEARS} value={urlState.year} onChange={handleYearChange} />
       </div>
 
       <div className={styles.mapArea} ref={mapAreaRef}>
@@ -174,16 +194,10 @@ export function Explorer({ counties }: ExplorerProps) {
       </aside>
 
       <DataLoader
-        onData={(year, values) =>
-          setValuesByYear((prev) => {
-            const next = new Map(prev);
-            next.set(year, values);
-            return next;
-          })
-        }
+        onData={handleData}
         year={urlState.year}
         metric={urlState.metric}
-        onError={(err) => setTopologyError(err.message)}
+        onError={handleDataError}
       />
     </section>
   );

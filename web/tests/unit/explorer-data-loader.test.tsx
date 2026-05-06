@@ -1,17 +1,25 @@
 import { render, waitFor } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { DataLoader } from "@/components/explorer/DataLoader";
+import { fetchParquetRows } from "@/lib/data/parquet";
 
 vi.mock("@/lib/data/parquet", () => ({
-  fetchParquetRows: vi.fn().mockResolvedValue([
-    { fips: "54059", year: 2012, pills: 1000, pills_per_capita: 38 },
-    { fips: "54047", year: 2012, pills: 500, pills_per_capita: 18 },
-    { fips: "54059", year: 2011, pills: 800, pills_per_capita: 30 },
-  ]),
+  fetchParquetRows: vi.fn(),
   readParquetRows: vi.fn(),
 }));
 
+const rows = [
+  { fips: "54059", year: 2012, pills: 1000, pills_per_capita: 38 },
+  { fips: "54047", year: 2012, pills: 500, pills_per_capita: 18 },
+  { fips: "54059", year: 2011, pills: 800, pills_per_capita: 30 },
+];
+
 describe("DataLoader", () => {
+  beforeEach(() => {
+    vi.mocked(fetchParquetRows).mockReset();
+    vi.mocked(fetchParquetRows).mockResolvedValue(rows);
+  });
+
   it("groups rows by year and calls onData once per year", async () => {
     const onData = vi.fn();
     render(<DataLoader year={2012} onData={onData} />);
@@ -26,8 +34,53 @@ describe("DataLoader", () => {
     expect(values2012.get("54059")).toBe(1000);
   });
 
+  it("does not refetch parquet when parent callbacks change during a render", async () => {
+    let resolveRows: (value: typeof rows) => void = () => {};
+    const rowsPromise = new Promise<typeof rows>((resolve) => {
+      resolveRows = resolve;
+    });
+    vi.mocked(fetchParquetRows).mockReset();
+    vi.mocked(fetchParquetRows).mockReturnValue(rowsPromise);
+
+    const firstOnData = vi.fn();
+    const secondOnData = vi.fn();
+    const { rerender } = render(<DataLoader year={2012} onData={firstOnData} />);
+
+    expect(fetchParquetRows).toHaveBeenCalledTimes(1);
+    rerender(<DataLoader year={2012} onData={secondOnData} />);
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    expect(fetchParquetRows).toHaveBeenCalledTimes(1);
+
+    resolveRows(rows);
+    await waitFor(() => expect(secondOnData).toHaveBeenCalled());
+    expect(firstOnData).not.toHaveBeenCalled();
+  });
+
+  it("does not refetch parquet when changing the metric", async () => {
+    const onData = vi.fn();
+    const { rerender } = render(<DataLoader year={2012} metric="pills" onData={onData} />);
+
+    await waitFor(() => expect(onData).toHaveBeenCalled());
+    const firstValues2012 = onData.mock.calls.find((c: unknown[]) => c[0] === 2012)?.[1] as Map<
+      string,
+      number
+    >;
+    expect(firstValues2012.get("54059")).toBe(1000);
+    expect(fetchParquetRows).toHaveBeenCalledTimes(1);
+
+    onData.mockClear();
+    rerender(<DataLoader year={2012} metric="pills_per_capita" onData={onData} />);
+
+    await waitFor(() => expect(onData).toHaveBeenCalled());
+    const secondValues2012 = onData.mock.calls.find((c: unknown[]) => c[0] === 2012)?.[1] as Map<
+      string,
+      number
+    >;
+    expect(secondValues2012.get("54059")).toBe(38);
+    expect(fetchParquetRows).toHaveBeenCalledTimes(1);
+  });
+
   it("falls back gracefully when parquet fetch throws", async () => {
-    const { fetchParquetRows } = await import("@/lib/data/parquet");
     vi.mocked(fetchParquetRows).mockRejectedValueOnce(new Error("boom"));
     const onData = vi.fn();
     const onError = vi.fn();

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import { fetchParquetRows } from "@/lib/data/parquet";
 import type { CountyShipmentsByYear } from "@/lib/data/schemas";
@@ -24,31 +24,45 @@ function field(row: CountyShipmentsByYear, metric: MapMetric): number {
 
 export function DataLoader(props: DataLoaderProps) {
   const { onData, onError, onProgress, parquetUrl = DEFAULT_URL, metric = "pills" } = props;
+  const latestCallbacks = useRef({ onData, onError, onProgress });
+  const [rows, setRows] = useState<CountyShipmentsByYear[] | null>(null);
+
+  // Keep the newest callbacks without restarting the large Parquet load.
+  latestCallbacks.current = { onData, onError, onProgress };
 
   useEffect(() => {
     let cancelled = false;
-    fetchParquetRows<CountyShipmentsByYear>(parquetUrl, { onProgress })
+    setRows(null);
+    const progress = (received: number, total: number) => {
+      latestCallbacks.current.onProgress?.(received, total);
+    };
+    fetchParquetRows<CountyShipmentsByYear>(parquetUrl, { onProgress: progress })
       .then((rows) => {
         if (cancelled) return;
-        const byYear = new Map<number, Map<string, number>>();
-        for (const r of rows) {
-          let m = byYear.get(r.year);
-          if (!m) {
-            m = new Map();
-            byYear.set(r.year, m);
-          }
-          m.set(r.fips, field(r, metric));
-        }
-        for (const [year, values] of byYear) onData(year, values);
+        setRows(rows);
       })
       .catch((err: Error) => {
         if (cancelled) return;
-        onError?.(err);
+        latestCallbacks.current.onError?.(err);
       });
     return () => {
       cancelled = true;
     };
-  }, [parquetUrl, metric, onData, onError, onProgress]);
+  }, [parquetUrl]);
+
+  useEffect(() => {
+    if (!rows) return;
+    const byYear = new Map<number, Map<string, number>>();
+    for (const r of rows) {
+      let m = byYear.get(r.year);
+      if (!m) {
+        m = new Map();
+        byYear.set(r.year, m);
+      }
+      m.set(r.fips, field(r, metric));
+    }
+    for (const [year, values] of byYear) latestCallbacks.current.onData(year, values);
+  }, [rows, metric]);
 
   return null;
 }
