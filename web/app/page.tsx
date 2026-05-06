@@ -29,9 +29,9 @@ export default async function HomePage() {
         <p className="eyebrow">2006–2014</p>
         <h1 className={styles.h1}>Where the pills went, who sent them, and who paid.</h1>
         <p className={styles.lede}>
-          <BigNumeral value={76_000_000_000} unit="pills" compact as="span" /> shipped across the
-          United States in nine years. This site follows the pill through the distribution system —
-          and counts what came after.
+          <BigNumeral value={76_000_000_000} unit="pills" as="span" /> shipped across the United
+          States in nine years. This site follows the pill through the distribution system — and
+          counts what came after.
         </p>
         <div className={styles.cta}>
           <Link href="/explorer" className={styles.buttonLink}>
@@ -65,6 +65,11 @@ export default async function HomePage() {
           <Step id="act2">
             <p className="eyebrow">Act 2 — Distributors</p>
             <h2>Three companies.</h2>
+            <p>
+              McKesson, Cardinal Health, and AmerisourceBergen carried roughly four out of every
+              five pills in this dataset. The lines compare each company with everyone else
+              combined, showing how concentrated the supply chain already was.
+            </p>
           </Step>
         </ScrollyStage>
       </ScrollyErrorBoundary>
@@ -100,11 +105,11 @@ export default async function HomePage() {
             </p>
           </Step>
           <Step id="act3-retreat">
-            <h2>Pressure from above.</h2>
+            <h2>By 2014, the spike is gone.</h2>
             <p>
-              Then the industry pushed back. A 2016 law — the Ensuring Patient Access and Effective
-              Drug Enforcement Act — would strip DEA's power to freeze suspicious shipments. By
-              2014, the end of our window, total actions had already fallen back below 2007 levels.
+              After the 2011 high and the big settlement years, published registrant actions fell
+              back below 2007 levels by the end of this dataset. This chart does not make a claim
+              about what happened after 2014.
             </p>
           </Step>
         </ScrollyStage>

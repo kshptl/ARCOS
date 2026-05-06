@@ -23,6 +23,23 @@
   max-width: 56ch;
 }
 
+.lede :global([role="figure"]) {
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-width: 0;
+  vertical-align: baseline;
+}
+
+.lede :global([role="figure"] span:first-child) {
+  font-size: clamp(1.75rem, 6vw, var(--type-display-lg));
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.lede :global([role="figure"] span:last-child) {
+  font-size: clamp(var(--type-body), 3vw, var(--type-h2));
+}
+
 .numeral {
   margin: var(--space-2xl) 0;
 }

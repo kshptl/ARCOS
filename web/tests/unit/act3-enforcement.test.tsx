@@ -229,9 +229,11 @@ describe("Act3Enforcement", () => {
     expect(combined).toMatch(/Cardinal Health/);
     expect(combined).toMatch(/Walgreens/);
     expect(combined).toMatch(/CVS/);
-    // Step D — 2014 decline + 2016 law.
-    expect(combined).toMatch(/Ensuring Patient Access/);
-    expect(combined).toMatch(/2016/);
+    // Step D — 2014 decline, without claiming later laws affected this window.
+    expect(combined).toMatch(/below 2007 levels/i);
+    expect(combined).toMatch(/does not make a claim\s+about what happened after 2014/i);
+    expect(combined).not.toMatch(/Ensuring Patient Access/);
+    expect(combined).not.toMatch(/2016/);
   });
 
   it("renders a 2011 peak annotation citing the 69-action high", () => {
