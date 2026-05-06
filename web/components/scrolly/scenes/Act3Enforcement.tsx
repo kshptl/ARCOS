@@ -2,6 +2,7 @@
 
 import type { DEAEnforcementAction } from "@/lib/data/schemas";
 import { formatFull } from "@/lib/format/number";
+import { useScrollyProgress } from "../progressContext";
 import { formatTickValue, niceTicks } from "./axes";
 import styles from "./scenes.module.css";
 
@@ -24,6 +25,7 @@ const BAR_PADDING = BAR_WIDTH / 2 + 2;
 const FULL_YEAR_RANGE: number[] = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 
 export function Act3Enforcement({ actions }: Act3EnforcementProps) {
+  const progress = useScrollyProgress();
   // Build a dense year series so the timeline reads 2006→2014 with equal
   // x-axis spacing even if the fixture only has data for some years.
   const byYear = new Map(actions.map((a) => [a.year, a]));
@@ -49,10 +51,18 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
   };
   const yScale = (v: number) => PAD_TOP + plotH - (v / yMax) * plotH;
   const barWidth = Math.min(BAR_WIDTH, step - 6);
+  let highlightedYears = new Set<number>([2014]);
+  if (progress < 0.25) {
+    highlightedYears = new Set([2006, 2007, 2008, 2009, 2010]);
+  } else if (progress < 0.5) {
+    highlightedYears = new Set([2011]);
+  } else if (progress < 0.75) {
+    highlightedYears = new Set([2012, 2013]);
+  }
 
   return (
     <div className={styles.act}>
-      <div className={styles.actInner}>
+      <div className={`${styles.actInner} ${styles.chartPanel}`}>
         <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className={styles.chart} aria-hidden="true">
           {/* y-axis title */}
           <text
@@ -98,6 +108,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             const h = (count / yMax) * plotH;
             const y = PAD_TOP + plotH - h;
             const hasCount = count > 0;
+            const isHighlighted = highlightedYears.has(year);
             return (
               <g key={year}>
                 {hasCount && (
@@ -107,7 +118,7 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                     y={y}
                     width={barWidth}
                     height={h}
-                    fill="var(--ink-60)"
+                    fill={isHighlighted ? "var(--accent-hot)" : "var(--ink-60)"}
                   />
                 )}
                 {!hasCount && (
@@ -117,13 +128,19 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
                     x2={cx}
                     y1={PAD_TOP + plotH}
                     y2={PAD_TOP + plotH - 4}
-                    stroke="var(--ink-40)"
+                    stroke={isHighlighted ? "var(--accent-hot)" : "var(--ink-40)"}
                     strokeWidth={1}
                   />
                 )}
                 {/* value label atop bar */}
                 {hasCount && (
-                  <text className={styles.barLabel} x={cx} y={y - 5} textAnchor="middle">
+                  <text
+                    className={styles.barLabel}
+                    x={cx}
+                    y={y - 5}
+                    textAnchor="middle"
+                    fill={isHighlighted ? "var(--accent-hot)" : undefined}
+                  >
                     {formatFull(count)}
                   </text>
                 )}
@@ -185,12 +202,19 @@ export function Act3Enforcement({ actions }: Act3EnforcementProps) {
             if (!mark) return null;
             const cx = xFor(2013);
             const barTopY = PAD_TOP + plotH - (mark.action_count / yMax) * plotH;
-            // Place muted text below the 2013 bar value, above the x-axis
-            // tick labels (which sit at PAD_TOP + plotH + 14).
-            const labelY = Math.min(PAD_TOP + plotH - 6, barTopY + 20);
+            const labelX = PAD_LEFT + plotW - 160;
+            const labelY = PAD_TOP + plotH * 0.38;
             return (
               <g data-testid="act3-annotation-2013">
-                <text className={styles.annotation} x={cx} y={labelY} textAnchor="middle">
+                <line
+                  x1={labelX + 148}
+                  y1={labelY + 4}
+                  x2={cx}
+                  y2={barTopY - 6}
+                  stroke="var(--ink-40)"
+                  strokeWidth={0.75}
+                />
+                <text className={styles.annotation} x={labelX} y={labelY} textAnchor="start">
                   Industry pushback intensifies
                 </text>
               </g>

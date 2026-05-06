@@ -8,14 +8,15 @@ export function clampProgress(p: number): number {
 }
 
 export function computeProgress(rect: DOMRect, viewportHeight: number): number {
-  // Element must scroll by its full height before it's considered done.
+  // Element must scroll through the visible sticky span before it is done.
   // If rect.top >= viewportHeight, element is still below viewport → 0.
   // If rect.top + rect.height <= 0, element is past viewport → 1.
   if (rect.top >= viewportHeight) return 0;
   if (rect.top + rect.height <= 0) return 1;
-  // Use total = rect.height (not height - viewport) so that p ramps linearly
-  // through the scroll span.
-  const total = rect.height;
+  // For tall scrolly sections, the next section starts entering when this
+  // section's bottom reaches the viewport bottom. The animation should be
+  // complete by then, not after the section has already left the screen.
+  const total = rect.height > viewportHeight ? rect.height - viewportHeight : rect.height;
   if (total <= 0) return 0;
   const scrolled = -rect.top;
   return clampProgress(scrolled / total);

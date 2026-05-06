@@ -1,7 +1,8 @@
 .step {
   max-width: 40ch;
   padding: var(--space-md);
-  background: color-mix(in srgb, var(--canvas) 92%, transparent);
+  background: var(--canvas);
+  border: 1px solid var(--rule);
   font-family: var(--font-body);
   font-size: var(--type-body);
   line-height: var(--leading-normal);

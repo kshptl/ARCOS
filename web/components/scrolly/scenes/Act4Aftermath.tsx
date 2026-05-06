@@ -123,32 +123,24 @@ function buildSpark(
     isDrawable(point) ? ([i * step, y(point.deaths as number)] as [number, number]) : null,
   );
   let length = 0;
-  let currentPath: string[] = [];
-  let currentLength = 0;
-  const segments: SparkSegment[] = [];
-  const flushSegment = () => {
-    if (currentPath.length === 0) return;
-    segments.push({ path: currentPath.join(" "), length: currentLength, start: length });
-    length += currentLength;
-    currentPath = [];
-    currentLength = 0;
-  };
-  for (let i = 0; i < drawablePoints.length; i++) {
-    const point = drawablePoints[i];
-    if (!point) {
-      flushSegment();
-      continue;
-    }
+  const path: string[] = [];
+  let previousPoint: [number, number] | null = null;
+  for (const point of drawablePoints) {
+    if (!point) continue;
     const [px, py] = point;
-    if (currentPath.length === 0) {
-      currentPath.push(`M${px.toFixed(1)},${py.toFixed(1)}`);
+    if (path.length === 0) {
+      path.push(`M${px.toFixed(1)},${py.toFixed(1)}`);
+      previousPoint = point;
       continue;
     }
-    const previous = drawablePoints[i - 1] as [number, number];
-    currentLength += Math.hypot(px - previous[0], py - previous[1]);
-    currentPath.push(`L${px.toFixed(1)},${py.toFixed(1)}`);
+    if (previousPoint) {
+      length += Math.hypot(px - previousPoint[0], py - previousPoint[1]);
+    }
+    path.push(`L${px.toFixed(1)},${py.toFixed(1)}`);
+    previousPoint = point;
   }
-  flushSegment();
+  const segments: SparkSegment[] =
+    path.length > 0 ? [{ path: path.join(" "), length, start: 0 }] : [];
   const firstPoint = points[0] as SparkPoint;
   const lastIdx = points.length - 1;
   const lastPoint = points[lastIdx] as SparkPoint;

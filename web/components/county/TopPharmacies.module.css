@@ -1,3 +1,15 @@
+.tableScroller {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tableScroller:focus-visible {
+  outline: 2px solid var(--accent-cool);
+  outline-offset: 3px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -22,26 +34,7 @@
 }
 
 @media (max-width: 640px) {
-  /*
-   * Turn the table itself into a horizontally scrollable block so the
-   * Yearly-trend sparkline column doesn't push off the viewport on
-   * mobile. A right-edge gradient fade hints that content overflows.
-   */
   .table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
-    background: linear-gradient(to right, transparent 80%, var(--canvas) 100%);
-    background-attachment: local;
-  }
-  .table thead,
-  .table tbody {
-    display: table;
-    width: max-content;
-    min-width: 100%;
-  }
-  .table tr {
-    display: table-row;
+    min-width: 42rem;
   }
 }

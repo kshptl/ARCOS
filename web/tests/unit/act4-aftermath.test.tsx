@@ -143,7 +143,7 @@ describe("Act4Aftermath", () => {
     }
   });
 
-  it("renders suppressed Act 4 points as gaps with <10 endpoint labels and markers", () => {
+  it("bridges suppressed Act 4 points while keeping <10 endpoint labels and markers", () => {
     render(
       <ScrollyProgressContext.Provider value={1}>
         <Act4Aftermath
@@ -166,10 +166,9 @@ describe("Act4Aftermath", () => {
     );
 
     const paths = screen.getAllByTestId("spark-line");
-    expect(paths).toHaveLength(2);
+    expect(paths).toHaveLength(1);
     expect(paths[0]?.getAttribute("d")?.match(/M/g)).toHaveLength(1);
-    expect(paths[1]?.getAttribute("d")?.match(/M/g)).toHaveLength(1);
-    expect(paths[1]?.getAttribute("d")?.match(/L/g)).toHaveLength(1);
+    expect(paths[0]?.getAttribute("d")?.match(/L/g)).toHaveLength(2);
 
     const suppressedMarkers = screen.getAllByTestId("spark-suppressed");
     expect(suppressedMarkers).toHaveLength(2);
@@ -184,7 +183,7 @@ describe("Act4Aftermath", () => {
     expect(labels[1]).toHaveTextContent("24");
   });
 
-  it("reveals gapped sparkline segments chronologically at partial progress", () => {
+  it("reveals bridged sparkline paths at partial progress", () => {
     render(
       <ScrollyProgressContext.Provider value={0.2}>
         <Act4Aftermath
@@ -207,14 +206,12 @@ describe("Act4Aftermath", () => {
     );
 
     const paths = screen.getAllByTestId("spark-line");
-    expect(paths).toHaveLength(2);
-    const firstPath = paths[0]!;
-    const secondPath = paths[1]!;
-    const firstOffset = Number(firstPath.style.strokeDashoffset || "0");
-    const secondOffset = Number(secondPath.style.strokeDashoffset || "0");
-    const firstLength = Number(firstPath.style.strokeDasharray || "0");
-    const secondLength = Number(secondPath.style.strokeDasharray || "0");
-    expect(firstLength - firstOffset).toBeGreaterThan(secondLength - secondOffset);
+    expect(paths).toHaveLength(1);
+    const path = paths[0]!;
+    const offset = Number(path.style.strokeDashoffset || "0");
+    const length = Number(path.style.strokeDasharray || "0");
+    expect(offset).toBeGreaterThan(0);
+    expect(length - offset).toBeGreaterThan(0);
   });
 
   it("uses legacy deaths when points is empty", () => {

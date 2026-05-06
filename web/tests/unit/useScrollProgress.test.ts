@@ -18,12 +18,18 @@ describe("scroll progress helpers", () => {
     expect(computeProgress(rect, 800)).toBe(1);
   });
 
+  it("computeProgress finishes when the section bottom reaches the viewport bottom", () => {
+    const viewportHeight = 800;
+    const rect = { top: -1200, height: 2000 } as DOMRect;
+    expect(computeProgress(rect, viewportHeight)).toBe(1);
+  });
+
   it("computeProgress returns 0..1 while element is in view", () => {
     const p1 = computeProgress({ top: 0, height: 2000 } as DOMRect, 800);
     expect(p1).toBeGreaterThanOrEqual(0);
     expect(p1).toBeLessThan(0.5);
     const p2 = computeProgress({ top: -1000, height: 2000 } as DOMRect, 800);
-    expect(p2).toBeGreaterThan(0.4);
-    expect(p2).toBeLessThan(0.8);
+    expect(p2).toBeGreaterThan(0.8);
+    expect(p2).toBeLessThan(1);
   });
 });

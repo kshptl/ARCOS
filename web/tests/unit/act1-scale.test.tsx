@@ -170,6 +170,15 @@ describe("Act1Scale", () => {
     expect(valueLabelY - peakY).toBeGreaterThanOrEqual(16);
   });
 
+  it("peak annotation leaves room above the SVG instead of clipping against the card top", () => {
+    renderWithProgress(1);
+    const callout = screen.getByTestId("act1-peak-callout");
+    const peakText = callout.querySelector("text");
+    expect(peakText).not.toBeNull();
+    const peakY = Number.parseFloat(peakText!.getAttribute("y") ?? "NaN");
+    expect(peakY).toBeGreaterThanOrEqual(14);
+  });
+
   describe("count-up numeral always shows one decimal", () => {
     const DECIMAL_RE = /^\d+\.\d[KMB]?$/;
     const cases: Array<[string, number]> = [

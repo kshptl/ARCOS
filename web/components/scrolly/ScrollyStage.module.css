@@ -55,12 +55,24 @@
     grid-template-columns: 1fr;
   }
   .sticky {
-    position: relative;
-    top: auto;
-    height: 50vh;
+    position: sticky;
+    top: calc(var(--space-2xl) + var(--space-md));
+    height: min(58vh, 32rem);
   }
   .steps {
     gap: var(--space-xl);
     padding: var(--space-md) 0;
+  }
+}
+
+@media (max-width: 720px) and (prefers-reduced-motion: reduce) {
+  .sticky {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 60vh;
+  }
+  .stage {
+    min-height: auto;
   }
 }

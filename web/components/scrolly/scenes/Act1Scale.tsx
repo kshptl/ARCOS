@@ -207,7 +207,9 @@ export function Act1Scale({ yearly }: Act1ScaleProps) {
               // label (which sits at barTopY - 6 with ~11px glyphs). 44px
               // gives a full line of air between the two, even when the
               // peak bar tops out near the plot ceiling.
-              const labelY = barTopY - 44;
+              // The 18px floor keeps the text inside the SVG instead of
+              // clipping against the top edge.
+              const labelY = Math.max(18, barTopY - 44);
               return (
                 <g data-testid="act1-peak-callout">
                   <line

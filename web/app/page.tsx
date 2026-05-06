@@ -10,6 +10,7 @@ import { Act3Enforcement } from "@/components/scrolly/scenes/Act3Enforcement";
 import { Act4Aftermath } from "@/components/scrolly/scenes/Act4Aftermath";
 import { Button } from "@/components/ui/Button";
 import { loadScrollyData } from "@/lib/data/loadScrollyData";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: {
@@ -25,24 +26,16 @@ export default async function HomePage() {
 
   return (
     <>
-      <header className="container" style={{ paddingBlock: "var(--space-xl)" }}>
+      <header className={`container ${styles.hero}`}>
         <p className="eyebrow">2006–2014</p>
-        <h1
-          style={{
-            fontSize: "var(--type-display-xl)",
-            lineHeight: "var(--leading-tight)",
-            maxWidth: "20ch",
-          }}
-        >
-          Where the pills went, who sent them, and who paid.
-        </h1>
-        <p style={{ fontSize: "var(--type-lede)", color: "var(--text-muted)", maxWidth: "56ch" }}>
+        <h1 className={styles.h1}>Where the pills went, who sent them, and who paid.</h1>
+        <p className={styles.lede}>
           <BigNumeral value={76_000_000_000} unit="pills" compact as="span" /> shipped across the
           United States in nine years. This site follows the pill through the distribution system —
           and counts what came after.
         </p>
-        <div style={{ marginBlockStart: "var(--space-lg)" }}>
-          <Link href="/explorer" style={{ textDecoration: "none" }}>
+        <div className={styles.cta}>
+          <Link href="/explorer" className={styles.ctaLink}>
             <Button variant="primary">Open the explorer</Button>
           </Link>
         </div>

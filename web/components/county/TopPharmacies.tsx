@@ -12,36 +12,43 @@ export function TopPharmacies({ rows }: { rows: TopPharmacy[] }) {
     return <p>No pharmacy-level data available for this county.</p>;
   }
   return (
-    <table className={styles.table}>
-      <caption className="visually-hidden">Top pharmacies by pills shipped 2006–2014</caption>
-      <thead>
-        <tr>
-          <th scope="col">Rank</th>
-          <th scope="col">Pharmacy</th>
-          <th scope="col">Address</th>
-          <th scope="col" className={styles.num}>
-            Total pills
-          </th>
-          <th scope="col" className={styles.sparkCell}>
-            Yearly trend
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {displayRows.map((r, i) => (
-          <tr key={r.pharmacy_id}>
-            <td className={styles.num}>{i + 1}</td>
-            <td>{r.name}</td>
-            <td>{r.address}</td>
-            <td className={styles.num}>{formatCompact(r.total_pills)}</td>
-            <td className={styles.sparkCell}>
-              {r.yearly ? (
-                <Sparkline values={r.yearly} ariaLabel={`${r.name} yearly trend`} />
-              ) : null}
-            </td>
+    <section
+      className={styles.tableScroller}
+      aria-label="Scrollable top pharmacies table"
+      // biome-ignore lint/a11y/noNoninteractiveTabindex: horizontal overflow region must be keyboard-focusable so hidden columns can be scrolled.
+      tabIndex={0}
+    >
+      <table className={styles.table}>
+        <caption className="visually-hidden">Top pharmacies by pills shipped 2006–2014</caption>
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Pharmacy</th>
+            <th scope="col">Address</th>
+            <th scope="col" className={styles.num}>
+              Total pills
+            </th>
+            <th scope="col" className={styles.sparkCell}>
+              Yearly trend
+            </th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {displayRows.map((r, i) => (
+            <tr key={r.pharmacy_id}>
+              <td className={styles.num}>{i + 1}</td>
+              <td>{r.name}</td>
+              <td>{r.address}</td>
+              <td className={styles.num}>{formatCompact(r.total_pills)}</td>
+              <td className={styles.sparkCell}>
+                {r.yearly ? (
+                  <Sparkline values={r.yearly} ariaLabel={`${r.name} yearly trend`} />
+                ) : null}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
   );
 }

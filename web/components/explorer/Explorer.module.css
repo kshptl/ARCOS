@@ -7,7 +7,11 @@
     "slider slider"
     "map browse";
   gap: var(--space-lg);
-  padding: var(--space-xl) 0;
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-block: var(--space-xl);
+  padding-inline: var(--gutter);
   container-type: inline-size;
 }
 

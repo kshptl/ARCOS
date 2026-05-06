@@ -6,18 +6,21 @@
 }
 
 .hero {
-  max-width: var(--page-max);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  width: 100%;
+  padding-block: var(--space-xl);
 }
 
 .h1 {
-  font-size: var(--type-display-lg);
+  font-size: clamp(3rem, 12vw, var(--type-display-xl));
   font-family: var(--font-display);
   line-height: var(--leading-tight);
   margin: var(--space-md) 0 var(--space-lg);
-  max-width: 18ch;
+  max-width: 20ch;
+}
+
+.lede {
+  font-size: clamp(var(--type-body), 3vw, var(--type-h2));
+  color: var(--text-muted);
+  max-width: 56ch;
 }
 
 .numeral {
@@ -25,7 +28,7 @@
 }
 
 .cta {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);

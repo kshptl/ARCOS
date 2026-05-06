@@ -57,7 +57,7 @@ export function Act2Distributors({ data }: Act2DistributorsProps) {
 
   return (
     <div className={styles.act}>
-      <div className={styles.actInner}>
+      <div className={`${styles.actInner} ${styles.chartPanel}`}>
         <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className={styles.chart} aria-hidden="true">
           {/* y-axis title */}
           <text

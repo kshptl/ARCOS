@@ -258,6 +258,30 @@ describe("Act3Enforcement", () => {
     expect(anno?.textContent ?? "").toMatch(/Industry pushback/i);
   });
 
+  it("highlights the 2011 bar while the 2011 step is active", () => {
+    const { container } = render(
+      <ScrollyProgressContext.Provider value={0.38}>
+        <Act3Enforcement actions={ACTIONS_FULL} />
+      </ScrollyProgressContext.Provider>,
+    );
+
+    const yearLabel = Array.from(container.querySelectorAll("svg text")).find(
+      (node) => node.textContent === "2011",
+    );
+    expect(yearLabel).toBeTruthy();
+    const yearGroup = yearLabel?.parentElement;
+    const bar = yearGroup?.querySelector('rect[data-testid="timeline-tick"]');
+    expect(bar?.getAttribute("fill")).toContain("accent-hot");
+
+    const baselineLabel = Array.from(container.querySelectorAll("svg text")).find(
+      (node) => node.textContent === "2010",
+    );
+    const baselineBar = baselineLabel?.parentElement?.querySelector(
+      'rect[data-testid="timeline-tick"]',
+    );
+    expect(baselineBar?.getAttribute("fill")).not.toContain("accent-hot");
+  });
+
   it("data-table caption reflects the Federal Register publication metric", () => {
     // The data-table caption is the user-visible label for the chart (the
     // on-canvas title band was removed earlier). It must describe the real
