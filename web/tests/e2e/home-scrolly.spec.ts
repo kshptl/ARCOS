@@ -21,8 +21,7 @@ test.describe("homepage scrolly", () => {
     await page.goto("/");
     const cta = page.getByRole("link", { name: /see your county|open the explorer/i }).first();
     await cta.scrollIntoViewIfNeeded();
-    await cta.click();
-    await expect(page).toHaveURL(/\/explorer$/);
+    await Promise.all([page.waitForURL(/\/explorer$/), cta.click()]);
   });
 
   test("scrolly charts keep hidden data tables for screen-reader fallback", async ({ page }) => {
