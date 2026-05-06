@@ -162,9 +162,7 @@ _OPIOID_RELEVANT_HINTS: tuple[re.Pattern[str], ...] = (
 )
 
 
-def classify_notice(
-    title: str, toc_subject: str | None
-) -> tuple[ActionType, str, bool]:
+def classify_notice(title: str, toc_subject: str | None) -> tuple[ActionType, str, bool]:
     """Classify a single FR notice.
 
     Returns ``(action_type, raw_title, opioid_relevant)``. The
@@ -286,10 +284,7 @@ def aggregate_by_year(
         slot["by_type"][action] += 1
 
     # Resolve defaultdicts so callers don't get surprise writes.
-    return {
-        y: {"total": v["total"], "by_type": dict(v["by_type"])}
-        for y, v in by_year.items()
-    }
+    return {y: {"total": v["total"], "by_type": dict(v["by_type"])} for y, v in by_year.items()}
 
 
 def build_artifact(

@@ -31,9 +31,7 @@ SAMPLE_TSV = FIXTURES / "sample_wv_2006_2014.tsv"
 def test_parse_tsv_returns_county_year_records():
     records = parse_tsv(SAMPLE_TSV.read_text())
     # Mingo 2010 is the canonical round-2 validation point.
-    mingo_2010 = next(
-        r for r in records if r["county_fips"] == "54059" and r["year"] == 2010
-    )
+    mingo_2010 = next(r for r in records if r["county_fips"] == "54059" and r["year"] == 2010)
     assert mingo_2010["state_fips"] == "54"
     assert mingo_2010["county_name"] == "Mingo County, WV"
     assert mingo_2010["deaths"] == 14
@@ -45,9 +43,7 @@ def test_parse_tsv_returns_county_year_records():
 
 def test_parse_tsv_non_unreliable_rate_is_float():
     records = parse_tsv(SAMPLE_TSV.read_text())
-    mingo_2012 = next(
-        r for r in records if r["county_fips"] == "54059" and r["year"] == 2012
-    )
+    mingo_2012 = next(r for r in records if r["county_fips"] == "54059" and r["year"] == 2012)
     assert mingo_2012["deaths"] == 21
     assert mingo_2012["crude_rate"] == pytest.approx(79.2)
     assert mingo_2012["unreliable"] is False
@@ -56,9 +52,7 @@ def test_parse_tsv_non_unreliable_rate_is_float():
 
 def test_parse_tsv_suppressed_count_marked():
     records = parse_tsv(SAMPLE_TSV.read_text())
-    webster_2010 = next(
-        r for r in records if r["county_fips"] == "54101" and r["year"] == 2010
-    )
+    webster_2010 = next(r for r in records if r["county_fips"] == "54101" and r["year"] == 2010)
     assert webster_2010["deaths"] is None
     assert webster_2010["suppressed"] is True
     # Population still present even when deaths suppressed.
@@ -84,9 +78,7 @@ def test_parse_tsv_zero_count_is_suppressed_for_publication():
 def test_parse_tsv_skips_missing_cells():
     """Cells marked 'Missing' (no data) are excluded, not returned as zero."""
     records = parse_tsv(SAMPLE_TSV.read_text())
-    missing = [
-        r for r in records if r["county_fips"] == "54043" and r["year"] == 2010
-    ]
+    missing = [r for r in records if r["county_fips"] == "54043" and r["year"] == 2010]
     assert missing == []
 
 
@@ -106,11 +98,7 @@ def test_parse_tsv_empty_body_returns_empty_list():
 
 
 def test_parse_tsv_only_metadata_returns_empty_list():
-    body = (
-        '"Notes"\t"State"\t"Deaths"\n'
-        '"---"\n'
-        '"Dataset: Underlying Cause of Death, 1999-2020"\n'
-    )
+    body = '"Notes"\t"State"\t"Deaths"\n"---"\n"Dataset: Underlying Cause of Death, 1999-2020"\n'
     assert parse_tsv(body) == []
 
 
@@ -129,8 +117,7 @@ def _make_stub_page(tsv_body: str):
     """
     page = MagicMock()
     page.url = (
-        "https://wonder.cdc.gov/controller/datarequest/D76"
-        ";jsessionid=300D6C069EDE99D1EC9477DC972F"
+        "https://wonder.cdc.gov/controller/datarequest/D76;jsessionid=300D6C069EDE99D1EC9477DC972F"
     )
 
     # Simulate download response: the scraper will call page.content() or
@@ -157,8 +144,7 @@ def test_scraper_fetches_state_via_stub_browser(tmp_path):
     )
 
     assert any(
-        r["county_fips"] == "54059" and r["year"] == 2010 and r["deaths"] == 14
-        for r in records
+        r["county_fips"] == "54059" and r["year"] == 2010 and r["deaths"] == 14 for r in records
     ), "Mingo WV 2010 must come through end-to-end"
 
     # Raw cache written.
@@ -188,9 +174,7 @@ def test_fetch_all_states_throttles_between_queries(tmp_path, monkeypatch):
     tsv_body = SAMPLE_TSV.read_text()
     call_times: list[float] = []
 
-    def fake_scrape_state(
-        self, state_fips: str, years, cache_dir=None
-    ):
+    def fake_scrape_state(self, state_fips: str, years, cache_dir=None):
         call_times.append(time.monotonic())
         return parse_tsv(tsv_body)
 
@@ -206,9 +190,7 @@ def test_fetch_all_states_throttles_between_queries(tmp_path, monkeypatch):
     def fake_monotonic():
         return fake_now[0]
 
-    monkeypatch.setattr(
-        "openarcos_pipeline.sources.cdc_wonder_scraper.time.sleep", fake_sleep
-    )
+    monkeypatch.setattr("openarcos_pipeline.sources.cdc_wonder_scraper.time.sleep", fake_sleep)
     monkeypatch.setattr(
         "openarcos_pipeline.sources.cdc_wonder_scraper.time.monotonic",
         fake_monotonic,
@@ -257,9 +239,7 @@ def test_fetch_all_states_retries_transient_state_failures(tmp_path, monkeypatch
         lambda s: None,
     )
 
-    records = fetch_all_states(
-        years=[2010], states=["01"], delay_s=0, cache_dir=tmp_path
-    )
+    records = fetch_all_states(years=[2010], states=["01"], delay_s=0, cache_dir=tmp_path)
     assert attempts["01"] == 3  # 2 failures + 1 success
     assert len(records) > 0
 

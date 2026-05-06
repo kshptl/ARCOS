@@ -86,9 +86,7 @@ def _run_clean(cfg) -> None:
 
         processed_dir = cfg.data_root / "processed"
         processed_dir.mkdir(parents=True, exist_ok=True)
-        write_processed_artifact(
-            cdc_raw, processed_dir / "cdc_county_overdose.json"
-        )
+        write_processed_artifact(cdc_raw, processed_dir / "cdc_county_overdose.json")
 
     # DEA — Federal Register NOTICES, classified into registrant actions.
     # Reads cached FR payloads from data/raw/dea/fr_notices_<year>.json
@@ -122,9 +120,7 @@ def _run_clean(cfg) -> None:
         processed_dir = cfg.data_root / "processed"
         processed_dir.mkdir(parents=True, exist_ok=True)
         artifact = build_artifact(classified, years=year_range)
-        (processed_dir / "dea_actions_by_year.json").write_text(
-            json.dumps(artifact, indent=2)
-        )
+        (processed_dir / "dea_actions_by_year.json").write_text(json.dumps(artifact, indent=2))
 
         # Consumer-facing parquet: year, action_count, by_type,
         # notable_actions. Notable actions pick 3 representative notices
@@ -182,7 +178,9 @@ def _run_clean(cfg) -> None:
             # by_type struct has a stable schema every year — this
             # avoids Polars' "struct with no child field" error when a
             # year happens to have zero of some action type.
-            full_by_type: dict[str, int] = {t.value: 0 for t in ActionType if t is not ActionType.NON_ACTION}
+            full_by_type: dict[str, int] = {
+                t.value: 0 for t in ActionType if t is not ActionType.NON_ACTION
+            }
             for k, v in entry["by_type"].items():
                 full_by_type[k] = v
             records.append(

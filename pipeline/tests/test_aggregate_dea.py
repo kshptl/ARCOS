@@ -106,9 +106,7 @@ def test_build_artifact_validates_against_schema(tmp_path):
     """The artifact must validate against dea-actions-by-year.schema.json."""
     import jsonschema
 
-    schema_path = (
-        Path(__file__).parent.parent / "schemas" / "dea-actions-by-year.schema.json"
-    )
+    schema_path = Path(__file__).parent.parent / "schemas" / "dea-actions-by-year.schema.json"
     schema = json.loads(schema_path.read_text())
 
     notices = [

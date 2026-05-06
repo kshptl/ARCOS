@@ -50,10 +50,7 @@ def load_cache_dir(cache_dir: Path) -> pl.DataFrame:
     Dedupes by ``(fips, year)``; first occurrence wins.
     """
     cache_dir = Path(cache_dir)
-    frames = [
-        parse_d76_tsv(p.read_text())
-        for p in sorted(cache_dir.glob("*.tsv"))
-    ]
+    frames = [parse_d76_tsv(p.read_text()) for p in sorted(cache_dir.glob("*.tsv"))]
     if not frames:
         return pl.DataFrame(schema=_CANONICAL_SCHEMA)
     df = pl.concat(frames, how="vertical_relaxed")

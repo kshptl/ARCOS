@@ -16,9 +16,7 @@ from openarcos_pipeline.aggregate_cdc import (
 
 FIXTURES = Path(__file__).parent / "fixtures" / "cdc_wonder"
 SAMPLE_TSV = FIXTURES / "sample_wv_2006_2014.tsv"
-SCHEMA_PATH = (
-    Path(__file__).parent.parent / "schemas" / "cdc_county_overdose.schema.json"
-)
+SCHEMA_PATH = Path(__file__).parent.parent / "schemas" / "cdc_county_overdose.schema.json"
 
 
 def _make_cache(tmp_path: Path) -> Path:
@@ -45,9 +43,7 @@ def test_aggregate_produces_county_year_records(tmp_path):
     # 5 non-suppressed + 1 suppressed = 6 rows.
     assert len(records) == 6
     # Mingo 2010 preserved.
-    mingo = next(
-        r for r in records if r["county_fips"] == "54059" and r["year"] == 2010
-    )
+    mingo = next(r for r in records if r["county_fips"] == "54059" and r["year"] == 2010)
     assert mingo["deaths"] == 14
     assert mingo["suppressed"] is False
     assert mingo["unreliable"] is True
@@ -69,9 +65,7 @@ def test_aggregate_deduplicates_by_fips_year(tmp_path):
 def test_aggregate_preserves_suppressed(tmp_path):
     cache = _make_cache(tmp_path)
     records = aggregate_cdc_raw(cache)
-    webster_2010 = next(
-        r for r in records if r["county_fips"] == "54101" and r["year"] == 2010
-    )
+    webster_2010 = next(r for r in records if r["county_fips"] == "54101" and r["year"] == 2010)
     assert webster_2010["deaths"] is None
     assert webster_2010["suppressed"] is True
 
@@ -116,13 +110,10 @@ def test_processed_artifact_sanity_counts_real_scrape():
     # A large publishable subset remains after the <=9 suppression floor.
     non_sup = sum(1 for r in artifact["records"] if not r["suppressed"])
     assert non_sup >= 6_000
-    assert all(
-        r["deaths"] is None or r["deaths"] >= 10 for r in artifact["records"]
-    )
+    assert all(r["deaths"] is None or r["deaths"] >= 10 for r in artifact["records"])
     # Mingo WV 2010 ≥ 10 (publishable).
     mingo_2010 = next(
-        r for r in artifact["records"]
-        if r["county_fips"] == "54059" and r["year"] == 2010
+        r for r in artifact["records"] if r["county_fips"] == "54059" and r["year"] == 2010
     )
     assert mingo_2010["deaths"] is not None
     assert 10 <= mingo_2010["deaths"] <= 20

@@ -21,9 +21,7 @@ from openarcos_pipeline.sources.cdc_wonder_scraper import CDCWonderScraper
 LIVE = os.environ.get("PYTEST_RUN_LIVE") == "1"
 
 
-@pytest.mark.skipif(
-    not LIVE, reason="Live-network CDC scrape disabled. Set PYTEST_RUN_LIVE=1."
-)
+@pytest.mark.skipif(not LIVE, reason="Live-network CDC scrape disabled. Set PYTEST_RUN_LIVE=1.")
 def test_cdc_wonder_live_wv_2006_2014(tmp_path: Path) -> None:
     """West Virginia, all counties, 2006-2014.
 
@@ -32,17 +30,13 @@ def test_cdc_wonder_live_wv_2006_2014(tmp_path: Path) -> None:
     updated the 2010 vintage between the investigation date and now.
     """
     scraper = CDCWonderScraper()
-    rows = scraper.scrape_state(
-        state_fips="54", years=list(range(2006, 2015)), cache_dir=tmp_path
-    )
+    rows = scraper.scrape_state(state_fips="54", years=list(range(2006, 2015)), cache_dir=tmp_path)
 
     # Non-empty result.
     assert len(rows) > 0, "WV scrape returned no rows"
 
     # Mingo 2010 canonical.
-    mingo_rows = [
-        r for r in rows if r["county_fips"] == "54059" and r["year"] == 2010
-    ]
+    mingo_rows = [r for r in rows if r["county_fips"] == "54059" and r["year"] == 2010]
     assert len(mingo_rows) == 1, f"expected 1 Mingo 2010 row, got {len(mingo_rows)}"
     mingo = mingo_rows[0]
     assert mingo["suppressed"] is False
@@ -54,9 +48,7 @@ def test_cdc_wonder_live_wv_2006_2014(tmp_path: Path) -> None:
     # Majority of WV's 55 counties should appear somewhere (suppressed or
     # not) across 2006-2014.
     fips_seen = {r["county_fips"] for r in rows}
-    assert len(fips_seen) >= 40, (
-        f"only {len(fips_seen)} unique WV counties in response"
-    )
+    assert len(fips_seen) >= 40, f"only {len(fips_seen)} unique WV counties in response"
 
     # Cache files written.
     assert (tmp_path / "54_WV.tsv").exists()

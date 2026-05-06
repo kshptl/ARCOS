@@ -70,16 +70,56 @@ USER_AGENT = (
 # 2-digit FIPS → USPS abbreviation for the 50 states + DC. Territories
 # excluded: WONDER's D76 county-level breakdown covers US states + DC.
 STATE_FIPS_TO_ABBREV: dict[str, str] = {
-    "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA",
-    "08": "CO", "09": "CT", "10": "DE", "11": "DC", "12": "FL",
-    "13": "GA", "15": "HI", "16": "ID", "17": "IL", "18": "IN",
-    "19": "IA", "20": "KS", "21": "KY", "22": "LA", "23": "ME",
-    "24": "MD", "25": "MA", "26": "MI", "27": "MN", "28": "MS",
-    "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH",
-    "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND",
-    "39": "OH", "40": "OK", "41": "OR", "42": "PA", "44": "RI",
-    "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT",
-    "50": "VT", "51": "VA", "53": "WA", "54": "WV", "55": "WI",
+    "01": "AL",
+    "02": "AK",
+    "04": "AZ",
+    "05": "AR",
+    "06": "CA",
+    "08": "CO",
+    "09": "CT",
+    "10": "DE",
+    "11": "DC",
+    "12": "FL",
+    "13": "GA",
+    "15": "HI",
+    "16": "ID",
+    "17": "IL",
+    "18": "IN",
+    "19": "IA",
+    "20": "KS",
+    "21": "KY",
+    "22": "LA",
+    "23": "ME",
+    "24": "MD",
+    "25": "MA",
+    "26": "MI",
+    "27": "MN",
+    "28": "MS",
+    "29": "MO",
+    "30": "MT",
+    "31": "NE",
+    "32": "NV",
+    "33": "NH",
+    "34": "NJ",
+    "35": "NM",
+    "36": "NY",
+    "37": "NC",
+    "38": "ND",
+    "39": "OH",
+    "40": "OK",
+    "41": "OR",
+    "42": "PA",
+    "44": "RI",
+    "45": "SC",
+    "46": "SD",
+    "47": "TN",
+    "48": "TX",
+    "49": "UT",
+    "50": "VT",
+    "51": "VA",
+    "53": "WA",
+    "54": "WV",
+    "55": "WI",
     "56": "WY",
 }
 ALL_STATE_FIPS = list(STATE_FIPS_TO_ABBREV.keys())
@@ -145,10 +185,20 @@ def parse_tsv(tsv_text: str) -> list[dict[str, Any]]:
         if first == "---":
             break
         if first.startswith(
-            ("Dataset:", "Query Parameters", "States:", "Year/Month:", "Group By:",
-             "Show Totals", "Show Zero", "Show Suppressed",
-             "Help:", "Query Date:", "Suggested Citation:",
-             "Drug/Alcohol Induced Causes:")
+            (
+                "Dataset:",
+                "Query Parameters",
+                "States:",
+                "Year/Month:",
+                "Group By:",
+                "Show Totals",
+                "Show Zero",
+                "Show Suppressed",
+                "Help:",
+                "Query Date:",
+                "Suggested Citation:",
+                "Drug/Alcohol Induced Causes:",
+            )
         ):
             break
 
@@ -301,9 +351,7 @@ class CDCWonderScraper:
 
         return self._live_drive_form(page, state_fips, years)
 
-    def _live_drive_form(
-        self, page: Any, state_fips: str, years: Iterable[int]
-    ) -> tuple[str, str]:
+    def _live_drive_form(self, page: Any, state_fips: str, years: Iterable[int]) -> tuple[str, str]:
         """Real Playwright UI flow.
 
         We call the WONDER-provided JS helper ``add()`` to transfer
@@ -318,12 +366,8 @@ class CDCWonderScraper:
 
         # I-Agree gateway.
         page.click('input[value="I Agree"]', timeout=self._config.nav_timeout_ms)
-        page.wait_for_selector(
-            'input[name="action-Send"]', timeout=self._config.nav_timeout_ms
-        )
-        page.wait_for_function(
-            "typeof add === 'function'", timeout=self._config.nav_timeout_ms
-        )
+        page.wait_for_selector('input[name="action-Send"]', timeout=self._config.nav_timeout_ms)
+        page.wait_for_function("typeof add === 'function'", timeout=self._config.nav_timeout_ms)
 
         # Set group-by variables. Use evaluate to set select values
         # directly and dispatch change events so WONDER's onchange
@@ -509,12 +553,8 @@ class CDCWonderScraper:
                 dbg = Path(os.environ["OPENARCOS_SCRAPER_DEBUG"])
                 dbg.mkdir(parents=True, exist_ok=True)
                 with contextlib.suppress(Exception):
-                    (dbg / f"{state_fips}_wait_timeout.html").write_text(
-                        page.content()
-                    )
-                    (dbg / f"{state_fips}_wait_timeout.title").write_text(
-                        page.title() or ""
-                    )
+                    (dbg / f"{state_fips}_wait_timeout.html").write_text(page.content())
+                    (dbg / f"{state_fips}_wait_timeout.title").write_text(page.title() or "")
             raise
 
         # Session expiry / error detection.
@@ -693,9 +733,7 @@ def fetch_all_states(
                     "cdc wonder scrape",
                     extra={"state": state_fips, "attempt": attempt},
                 )
-                rows = scraper.scrape_state(
-                    state_fips=state_fips, years=years, cache_dir=cache_dir
-                )
+                rows = scraper.scrape_state(state_fips=state_fips, years=years, cache_dir=cache_dir)
                 results.extend(rows)
                 ok = True
                 break
@@ -753,9 +791,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--states", default="", help="Comma-separated FIPS (blank = all 50+DC)")
     ap.add_argument("--all-states", action="store_true", help="Scrape 50 states + DC")
     ap.add_argument("--cache-dir", default="data/raw/cdc", help="Raw-cache dir")
-    ap.add_argument(
-        "--delay", type=int, default=15, help="Seconds between state queries (>=15)"
-    )
+    ap.add_argument("--delay", type=int, default=15, help="Seconds between state queries (>=15)")
     ap.add_argument(
         "--skip-cached",
         action="store_true",

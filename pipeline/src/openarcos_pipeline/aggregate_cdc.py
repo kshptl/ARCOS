@@ -87,9 +87,7 @@ def aggregate_cdc_raw(cache_dir: Path) -> list[dict[str, Any]]:
     return records
 
 
-def build_processed_artifact(
-    cache_dir: Path, fetched_at: str | None = None
-) -> dict[str, Any]:
+def build_processed_artifact(cache_dir: Path, fetched_at: str | None = None) -> dict[str, Any]:
     """Build the full artifact dict, including methodology and totals."""
     records = aggregate_cdc_raw(cache_dir)
     suppressed = sum(1 for r in records if r["suppressed"])
