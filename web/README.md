@@ -44,12 +44,14 @@ at progress = 1 (end-state) and no tweening runs. See
 ## Performance budget
 
 Lighthouse CI (`.lighthouserc.json`) enforces, as errors, against a
-3-run median on each URL:
+3-run median on the static story, methodology, and county URLs:
 
-- perf ≥ 0.75, a11y ≥ 0.95, best-practices ≥ 0.9, seo ≥ 0.9 on all 4 target URLs.
+- perf ≥ 0.75, a11y ≥ 0.95, best-practices ≥ 0.9, seo ≥ 0.9 on all target URLs.
 - `color-contrast` score = 1 (no AA violations) and `cumulative-layout-shift` ≤ 0.1 everywhere.
 - LCP ≤ 5.5 s, TBT ≤ 500 ms on `/`, `/methodology`, `/county/:fips`.
-- LCP ≤ 7 s on `/explorer` (heavier: deck.gl + client parquet).
+
+The interactive `/explorer` page is covered by Playwright instead of Lighthouse
+because deck.gl/WebGL can make Lighthouse's Chrome DevTools protocol hang in CI.
 
 Thresholds are deliberately loose relative to production because
 Lighthouse emulates a mid-tier mobile device with 4× CPU throttling;

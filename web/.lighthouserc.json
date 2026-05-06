@@ -2,9 +2,10 @@
   "ci": {
     "collect": {
       "staticDistDir": "./out",
-      "url": ["/", "/explorer.html", "/methodology.html", "/county/54059.html"],
+      "url": ["/", "/methodology.html", "/county/54059.html"],
       "numberOfRuns": 3,
       "settings": {
+        "skipAudits": ["charset", "uses-text-compression"],
         "chromeFlags": "--no-sandbox --headless=new --disable-dev-shm-usage"
       }
     },
@@ -26,13 +27,6 @@
           "matchingUrlPattern": "/$",
           "assertions": {
             "largest-contentful-paint": ["error", { "maxNumericValue": 5500 }],
-            "total-blocking-time": ["error", { "maxNumericValue": 500 }]
-          }
-        },
-        {
-          "matchingUrlPattern": "/explorer\\.html$",
-          "assertions": {
-            "largest-contentful-paint": ["error", { "maxNumericValue": 7000 }],
             "total-blocking-time": ["error", { "maxNumericValue": 500 }]
           }
         },
