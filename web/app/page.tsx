@@ -8,7 +8,6 @@ import { Act1Scale } from "@/components/scrolly/scenes/Act1Scale";
 import { Act2Distributors } from "@/components/scrolly/scenes/Act2Distributors";
 import { Act3Enforcement } from "@/components/scrolly/scenes/Act3Enforcement";
 import { Act4Aftermath } from "@/components/scrolly/scenes/Act4Aftermath";
-import { Button } from "@/components/ui/Button";
 import { loadScrollyData } from "@/lib/data/loadScrollyData";
 import styles from "./page.module.css";
 
@@ -35,8 +34,8 @@ export default async function HomePage() {
           and counts what came after.
         </p>
         <div className={styles.cta}>
-          <Link href="/explorer" className={styles.ctaLink}>
-            <Button variant="primary">Open the explorer</Button>
+          <Link href="/explorer" className={styles.buttonLink}>
+            Open the explorer
           </Link>
         </div>
       </header>
@@ -120,8 +119,8 @@ export default async function HomePage() {
             <p className="eyebrow">Act 4 — Aftermath</p>
             <h2>The counties left behind.</h2>
             <p style={{ marginBlockStart: "var(--space-md)" }}>
-              <Link href="/explorer" style={{ textDecoration: "none" }}>
-                <Button variant="primary">See your county →</Button>
+              <Link href="/explorer" className={styles.buttonLink}>
+                See your county →
               </Link>
             </p>
           </Step>

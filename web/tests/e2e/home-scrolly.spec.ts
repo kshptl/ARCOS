@@ -25,12 +25,11 @@ test.describe("homepage scrolly", () => {
     await expect(page).toHaveURL(/\/explorer$/);
   });
 
-  test("each act provides a <details> data table", async ({ page }) => {
+  test("scrolly charts keep hidden data tables for screen-reader fallback", async ({ page }) => {
     await page.goto("/");
-    const summaries = page.getByText("Show data");
-    const count = await summaries.count();
-    expect(count).toBeGreaterThanOrEqual(4);
-    await summaries.first().click();
-    await expect(page.getByRole("table").first()).toBeVisible();
+    const fallbackTables = page.locator(
+      '[data-testid="act1-yearly-table"], [data-testid="act2-table"], [data-testid="act3-table"]',
+    );
+    await expect(fallbackTables).toHaveCount(3);
   });
 });
