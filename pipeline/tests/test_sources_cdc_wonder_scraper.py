@@ -212,9 +212,11 @@ def test_fetch_all_states_throttles_between_queries(tmp_path, monkeypatch):
 
     # 3 states → 3 scrape calls.
     assert len(call_times) == 3
+    # Allow a tiny rounding wiggle because decimal time is stored as a binary float.
+    min_gap_s = 15 - 1e-9
     # 15s minimum between consecutive calls.
     for i in range(1, len(call_times)):
-        assert call_times[i] - call_times[i - 1] >= 15, (
+        assert call_times[i] - call_times[i - 1] >= min_gap_s, (
             f"gap #{i} = {call_times[i] - call_times[i - 1]}s (<15s)"
         )
 
