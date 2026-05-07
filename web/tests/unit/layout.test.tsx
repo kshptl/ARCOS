@@ -45,7 +45,7 @@ describe("<Header>", () => {
 describe("<Footer>", () => {
   it("credits all three source datasets", () => {
     render(<Footer buildDate="2026-04-29" />);
-    expect(screen.getByText(/Washington Post ARCOS/i)).toBeInTheDocument();
+    expect(screen.getByText(/ARCOS county aggregates/i)).toBeInTheDocument();
     expect(screen.getByText(/DEA Diversion Control/i)).toBeInTheDocument();
     expect(screen.getByText(/CDC WONDER/i)).toBeInTheDocument();
     expect(screen.getByText(/2026-04-29/)).toBeInTheDocument();

@@ -17,12 +17,10 @@ def _run_fetch(cfg, source: str = "all") -> None:
     """Helper: download raw source data. Reused by `fetch` and `all`."""
     cfg.ensure_dirs()
     if source in ("all", "wapo"):
-        from openarcos_pipeline.sources.wapo_arcos import WapoClient
-        from openarcos_pipeline.sources.wapo_runner import fetch_all
+        from openarcos_pipeline.sources.wapo_runner import fetch_county_csv
 
-        with WapoClient() as client:
-            fetch_all(client, cfg)
-        log.info("wapo fetch complete")
+        fetch_county_csv(cfg)
+        log.info("wapo county shipment fetch complete")
     if source in ("all", "cdc"):
         from openarcos_pipeline.sources.cdc_runner import fetch_all_states
         from openarcos_pipeline.sources.cdc_wonder import CDCWonderClient
@@ -55,6 +53,7 @@ def _run_clean(cfg) -> None:
         classify_notices,
     )
     from openarcos_pipeline.clean.wapo import (
+        clean_county_csv,
         clean_county_raw,
         clean_distributors,
         clean_distributors_by_county,
@@ -206,6 +205,20 @@ def _run_clean(cfg) -> None:
         dist_frames: list[pl.DataFrame] = []
         dist_by_county_frames: list[pl.DataFrame] = []
         pharm_frames: list[pl.DataFrame] = []
+        county_csv = next(
+            (
+                path
+                for path in [
+                    wapo_raw / "arcos_mendeley_county.csv",
+                    wapo_raw / "ARCOS Data 11-29-20.csv",
+                ]
+                if path.exists()
+            ),
+            None,
+        )
+        if county_csv is not None:
+            county_frames.append(clean_county_csv(county_csv))
+            log.info("wapo clean: using county CSV %s", county_csv.name)
         for f in sorted(wapo_raw.glob("*.json")):
             stem = f.stem
             data = json.loads(f.read_text())
@@ -215,6 +228,8 @@ def _run_clean(cfg) -> None:
             if stem.startswith("county_list_"):
                 continue
             if stem.startswith("county_raw_") or stem.startswith("county_"):
+                if county_csv is not None:
+                    continue
                 tail = stem.split("_", 1)[1] if stem.startswith("county_") else ""
                 if stem.startswith("county_raw_"):
                     tail = stem[len("county_raw_") :]

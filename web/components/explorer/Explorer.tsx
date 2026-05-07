@@ -34,6 +34,7 @@ const DEFAULT_MAP_SIZE = {
 };
 const AUTOCOMPLETE_LIMIT = 12;
 const COUNTY_DETAIL_ZOOM = 5.15;
+const MAP_ZOOM_ANIMATION_MS = 700;
 const DEFAULT_URL_STATE = {
   year: 2012,
   metric: "pills_per_capita" as const,
@@ -123,6 +124,27 @@ type StateAccumulator = {
   value: number;
   weightedValue: number;
 };
+
+function easeMapProgress(progress: number): number {
+  const t = Math.max(0, Math.min(1, progress));
+  return t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+}
+
+export function interpolateMapViewState(
+  start: MapViewState,
+  target: MapViewState,
+  progress: number,
+): MapViewState {
+  const t = easeMapProgress(progress);
+  const lerp = (a: number, b: number) => a + (b - a) * t;
+  return {
+    longitude: lerp(start.longitude, target.longitude),
+    latitude: lerp(start.latitude, target.latitude),
+    zoom: lerp(start.zoom, target.zoom),
+    pitch: lerp(start.pitch, target.pitch),
+    bearing: lerp(start.bearing, target.bearing),
+  };
+}
 
 function countySearchLabel(county: CountyMetadata): string {
   return `${county.name}, ${county.state}`;
@@ -243,7 +265,16 @@ export function Explorer({ counties }: ExplorerProps) {
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
+  const mapAnimationRef = useRef<number | null>(null);
   const [mapSize, setMapSize] = useState(DEFAULT_MAP_SIZE);
+
+  const cancelMapAnimation = useCallback(() => {
+    if (mapAnimationRef.current === null || typeof window === "undefined") return;
+    window.cancelAnimationFrame(mapAnimationRef.current);
+    mapAnimationRef.current = null;
+  }, []);
+
+  useEffect(() => cancelMapAnimation, [cancelMapAnimation]);
 
   useEffect(() => {
     const el = mapAreaRef.current;
@@ -492,13 +523,39 @@ export function Explorer({ counties }: ExplorerProps) {
     setTopologyError(err.message);
   }, []);
 
+  const animateMapToViewState = useCallback(
+    (target: MapViewState) => {
+      if (typeof window === "undefined") {
+        setMapViewState(target);
+        return;
+      }
+
+      cancelMapAnimation();
+      const start = mapViewState;
+      const startedAt = performance.now();
+
+      const tick = (now: number) => {
+        const progress = Math.min(1, (now - startedAt) / MAP_ZOOM_ANIMATION_MS);
+        setMapViewState(interpolateMapViewState(start, target, progress));
+        if (progress < 1) {
+          mapAnimationRef.current = window.requestAnimationFrame(tick);
+          return;
+        }
+        mapAnimationRef.current = null;
+      };
+
+      mapAnimationRef.current = window.requestAnimationFrame(tick);
+    },
+    [cancelMapAnimation, mapViewState],
+  );
+
   const focusMapOnFeature = useCallback(
     (feature: Feature<Geometry> | null, options: { minZoom?: number; maxZoom?: number } = {}) => {
       if (!feature) return;
       const nextView = viewStateForFeature(feature, options);
-      if (nextView) setMapViewState(nextView);
+      if (nextView) animateMapToViewState(nextView);
     },
-    [],
+    [animateMapToViewState],
   );
 
   const focusMapOnCounty = useCallback(
@@ -555,21 +612,25 @@ export function Explorer({ counties }: ExplorerProps) {
     [findStateFeature, focusMapOnFeature],
   );
 
-  const handleMapViewStateChange = useCallback((next: MapViewport) => {
-    setMapViewState((prev) => {
-      const roundedPrev = `${prev.longitude.toFixed(4)}:${prev.latitude.toFixed(4)}:${prev.zoom.toFixed(3)}`;
-      const roundedNext = `${next.longitude.toFixed(4)}:${next.latitude.toFixed(4)}:${next.zoom.toFixed(3)}`;
-      if (roundedPrev === roundedNext) return prev;
-      return {
-        longitude: next.longitude,
-        latitude: next.latitude,
-        zoom: next.zoom,
-        pitch: next.pitch ?? 0,
-        bearing: next.bearing ?? 0,
-      };
-    });
-    if (next.zoom < COUNTY_DETAIL_ZOOM - 0.25) setFocusedStateFips(null);
-  }, []);
+  const handleMapViewStateChange = useCallback(
+    (next: MapViewport) => {
+      cancelMapAnimation();
+      setMapViewState((prev) => {
+        const roundedPrev = `${prev.longitude.toFixed(4)}:${prev.latitude.toFixed(4)}:${prev.zoom.toFixed(3)}`;
+        const roundedNext = `${next.longitude.toFixed(4)}:${next.latitude.toFixed(4)}:${next.zoom.toFixed(3)}`;
+        if (roundedPrev === roundedNext) return prev;
+        return {
+          longitude: next.longitude,
+          latitude: next.latitude,
+          zoom: next.zoom,
+          pitch: next.pitch ?? 0,
+          bearing: next.bearing ?? 0,
+        };
+      });
+      if (next.zoom < COUNTY_DETAIL_ZOOM - 0.25) setFocusedStateFips(null);
+    },
+    [cancelMapAnimation],
+  );
 
   const findCountyFromSearchValue = useCallback(
     (value: string) => {

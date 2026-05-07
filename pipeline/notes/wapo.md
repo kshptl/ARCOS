@@ -123,3 +123,17 @@ Downstream tests only assert structural properties (columns present,
 non-negative pill counts, FIPS round-trip) so the fabricated numbers are
 acceptable for exercising the pipeline. **Do not publish artifacts built
 from these fixtures as real openarcos.org data.**
+
+## 2026-05-07 replacement source for county-year shipments
+
+The explorer map now uses the small public Mendeley Data ARCOS file
+`ARCOS Data 11-29-20.csv` from Griffith et al., "County-level data on U.S.
+opioid distributions, demographics, healthcare supply, and healthcare
+access" (DOI `10.17632/dwfgxrh7tn.9`). The file has county-year
+`DOSAGE_UNIT` totals and `countyfips` for 2006-2014, so it replaces the
+synthetic `county_raw_*` fixtures for the published county shipment map.
+
+The fetcher downloads that CSV into `data/raw/wapo/arcos_mendeley_county.csv`.
+The cleaner prefers this CSV when present and ignores synthetic county JSON
+fixtures for county shipment totals. Distributor and pharmacy fixture support
+remains in place for tests and existing secondary artifacts.

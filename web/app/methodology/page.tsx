@@ -50,13 +50,12 @@ export default function Methodology() {
         <section id="sources">
           <h2>Sources</h2>
           <dl className={styles.sourceList}>
-            <dt>Washington Post ARCOS</dt>
+            <dt>ARCOS county shipments</dt>
             <dd>
-              County-, pharmacy-, and distributor-level shipments 2006–2014.{" "}
-              <a href="https://arcos-api.ext.nile.works/__swagger__/">
-                View at arcos-api.ext.nile.works
-              </a>
-              . Released under the Post's investigative usage terms.
+              County-year opioid shipment aggregates 2006–2014 from the Griffith et al. Data in
+              Brief ARCOS dataset.{" "}
+              <a href="https://data.mendeley.com/datasets/dwfgxrh7tn/9">View at Mendeley Data</a>.
+              Released under CC BY 4.0.
             </dd>
             <dt>DEA Diversion Control</dt>
             <dd>

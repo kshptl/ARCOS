@@ -22,12 +22,12 @@ describe("/methodology", () => {
     const { container } = render(<Methodology />);
     const article = container.querySelector("article");
     expect(article).toBeTruthy();
-    expect(article?.textContent).toMatch(/Washington Post ARCOS/i);
+    expect(article?.textContent).toMatch(/ARCOS county shipments/i);
     expect(article?.textContent).toMatch(/DEA Diversion Control/i);
     expect(article?.textContent).toMatch(/CDC WONDER/i);
-    expect(screen.getByRole("link", { name: /arcos-api\.ext\.nile\.works/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /Mendeley Data/i })).toHaveAttribute(
       "href",
-      "https://arcos-api.ext.nile.works/__swagger__/",
+      "https://data.mendeley.com/datasets/dwfgxrh7tn/9",
     );
     expect(screen.getByRole("link", { name: /federal register api/i })).toHaveAttribute(
       "href",

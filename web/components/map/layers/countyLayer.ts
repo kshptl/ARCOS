@@ -72,7 +72,7 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
     extruded: false,
     getPolygon: polygonAccessor,
     getFillColor: (f) => {
-      const id = String(f.id ?? "");
+      const id = String(f.id ?? "").padStart(5, "0");
       const val = valueByFips.get(id);
       return colorFn(val ?? null, domain);
     },

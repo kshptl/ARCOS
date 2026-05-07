@@ -142,7 +142,7 @@ vi.mock("@/lib/geo/topology", () => ({
   }),
 }));
 
-import { Explorer } from "@/components/explorer/Explorer";
+import { Explorer, interpolateMapViewState } from "@/components/explorer/Explorer";
 
 async function flushExplorerEffects() {
   await act(async () => {
@@ -155,6 +155,19 @@ describe("Explorer interactions", () => {
   beforeEach(() => {
     mocks.mapProps.length = 0;
     window.history.replaceState(null, "", "/explorer");
+  });
+
+  it("computes in-between map views for smooth zoom animations", () => {
+    const start = { longitude: -98, latitude: 39, zoom: 3.2, pitch: 0, bearing: 0 };
+    const target = { longitude: -82, latitude: 38, zoom: 6.5, pitch: 0, bearing: 0 };
+
+    const middle = interpolateMapViewState(start, target, 0.5);
+
+    expect(middle.longitude).toBeGreaterThan(start.longitude);
+    expect(middle.longitude).toBeLessThan(target.longitude);
+    expect(middle.zoom).toBeGreaterThan(start.zoom);
+    expect(middle.zoom).toBeLessThan(target.zoom);
+    expect(interpolateMapViewState(start, target, 1)).toEqual(target);
   });
 
   it("keeps real values after switching metrics", async () => {

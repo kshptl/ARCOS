@@ -54,7 +54,7 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
     data: stateFeaturesForLayer(args.featureCollection),
     pickable,
     stroked: true,
-    filled: hasValues,
+    filled: hasValues || pickable,
     extruded: false,
     getPolygon: polygonAccessor,
     getFillColor: (f) => {

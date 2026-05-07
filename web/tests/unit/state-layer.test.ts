@@ -89,6 +89,17 @@ describe("stateLayer", () => {
     expect(onClick).toHaveBeenCalledWith({ object: FC.features[0] });
   });
 
+  it("keeps a transparent filled hit area when only state click handlers are provided", () => {
+    const props = buildStateLayerProps({
+      featureCollection: FC,
+      onClick: vi.fn(),
+    });
+
+    expect(props.pickable).toBe(true);
+    expect(props.filled).toBe(true);
+    expect(props.getFillColor(FC.features[0]!)).toEqual([0, 0, 0, 0]);
+  });
+
   it("keeps every polygon part for multi-part states", () => {
     const props = buildStateLayerProps({
       featureCollection: MULTI_PART_FC,

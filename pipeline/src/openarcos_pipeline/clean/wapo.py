@@ -9,6 +9,7 @@ computing outputs.
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 import polars as pl
@@ -46,6 +47,37 @@ def clean_county_raw(rows: list[dict[str, Any]], state: str, county_fips: str) -
         .select(["fips", "year", "pills"])
         .with_columns(pl.col("year").cast(pl.Int64))
         .sort("year")
+    )
+
+
+def clean_county_csv(path: Path) -> pl.DataFrame:
+    """Mendeley ARCOS county CSV → `{fips, year, pills}` DataFrame.
+
+    The CSV is already aggregated to county-year rows, but a few counties can
+    appear more than once in a year. We group them so the rest of the pipeline
+    sees one clean row per county and year.
+    """
+    df = _lower_columns(
+        pl.read_csv(path, infer_schema_length=1_000, schema_overrides={"countyfips": pl.Utf8})
+    )
+    required = {"countyfips", "year", "dosage_unit"}
+    missing = sorted(required.difference(df.columns))
+    if missing:
+        raise ValueError(f"{path.name} is missing columns: {', '.join(missing)}")
+
+    return (
+        df.with_columns(
+            [
+                pl.col("countyfips").cast(pl.Utf8).str.strip_chars().str.zfill(5).alias("fips"),
+                pl.col("year").cast(pl.Int64),
+                pl.col("dosage_unit").fill_null(0).cast(pl.Float64).alias("dosage_unit"),
+            ]
+        )
+        .filter(pl.col("fips").str.len_chars() == 5)
+        .group_by(["fips", "year"])
+        .agg(pl.col("dosage_unit").sum().round(0).cast(pl.Int64).alias("pills"))
+        .select(["fips", "year", "pills"])
+        .sort(["fips", "year"])
     )
 
 

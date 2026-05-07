@@ -95,6 +95,36 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
 
     const layersOut: PolygonLayer[] = [];
     const useCountyLayer = showCountyLayer ?? !states;
+    if (states) {
+      const stateProps = buildStateLayerProps({
+        featureCollection: states,
+        valueByStateFips: useCountyLayer ? undefined : stateValueByFips,
+        metric,
+        domain: useCountyLayer ? undefined : (stateDomain ?? domain),
+        colorKey: `${metric}-${year ?? ""}-${stateDomain?.domainMin ?? domain.domainMin}-${
+          stateDomain?.domainMax ?? domain.domainMax
+        }`,
+        onHover: onStateHover
+          ? (info) => {
+              const stateId = info.object?.id == null ? "" : String(info.object.id);
+              onStateHover(stateId ? stateId.padStart(2, "0") : null, info.object ?? null, {
+                x: info.x ?? 0,
+                y: info.y ?? 0,
+              });
+            }
+          : undefined,
+        onClick: onStateClick
+          ? (info) => {
+              const stateId = info.object?.id == null ? "" : String(info.object.id);
+              onStateClick(stateId ? stateId.padStart(2, "0") : null, info.object ?? null);
+            }
+          : undefined,
+      });
+      layersOut.push(
+        new PolygonLayer(stateProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
+      );
+    }
+
     if (useCountyLayer || !states) {
       const countyFeatures = focusedStateFips
         ? counties.features.filter((feature) =>
@@ -128,35 +158,6 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       });
       layersOut.push(
         new PolygonLayer(countyProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
-      );
-    }
-    if (states) {
-      const stateProps = buildStateLayerProps({
-        featureCollection: states,
-        valueByStateFips: useCountyLayer ? undefined : stateValueByFips,
-        metric,
-        domain: useCountyLayer ? undefined : (stateDomain ?? domain),
-        colorKey: `${metric}-${year ?? ""}-${stateDomain?.domainMin ?? domain.domainMin}-${
-          stateDomain?.domainMax ?? domain.domainMax
-        }`,
-        onHover: onStateHover
-          ? (info) => {
-              const stateId = info.object?.id == null ? "" : String(info.object.id);
-              onStateHover(stateId ? stateId.padStart(2, "0") : null, info.object ?? null, {
-                x: info.x ?? 0,
-                y: info.y ?? 0,
-              });
-            }
-          : undefined,
-        onClick: onStateClick
-          ? (info) => {
-              const stateId = info.object?.id == null ? "" : String(info.object.id);
-              onStateClick(stateId ? stateId.padStart(2, "0") : null, info.object ?? null);
-            }
-          : undefined,
-      });
-      layersOut.push(
-        new PolygonLayer(stateProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
       );
     }
 

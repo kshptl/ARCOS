@@ -26,8 +26,7 @@ export default async function RankingsPage() {
         <p className="eyebrow">2006–2014</p>
         <h1 className={styles.title}>Rankings</h1>
         <p className={styles.lede}>
-          Who shipped the most prescription opioids, and to whom. Based on Washington Post ARCOS
-          aggregates.
+          Who shipped the most prescription opioids, and to whom. Based on public ARCOS aggregates.
         </p>
       </header>
       <Tabs

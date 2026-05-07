@@ -27,4 +27,19 @@ describe("explorer county coverage", () => {
     expect(years).toEqual(new Set([2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]));
     expect(rows.length).toBeGreaterThanOrEqual(27_000);
   });
+
+  it("ships real non-zero county shipment values across the national map", async () => {
+    const raw = await readFile(path.join(DATA_DIR, "county-shipments-by-year.parquet"));
+    const rows = await readParquetRows<CountyShipmentsByYear>(raw, {
+      columns: ["fips", "year", "pills", "pills_per_capita"],
+    });
+
+    const countiesWith2012Values = new Set(
+      rows
+        .filter((row) => row.year === 2012 && row.pills > 0 && row.pills_per_capita > 0)
+        .map((row) => row.fips),
+    );
+
+    expect(countiesWith2012Values.size).toBeGreaterThanOrEqual(2_900);
+  });
 });

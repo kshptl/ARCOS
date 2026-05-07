@@ -74,6 +74,21 @@ describe("countyLayer", () => {
     expect(c.slice(0, 3)).toEqual([222, 214, 200]);
   });
 
+  it("normalizes numeric topology ids before looking up county values", () => {
+    const props = buildCountyLayerProps({
+      featureCollection: {
+        ...FC,
+        features: [{ ...FC.features[0]!, id: 1001 }],
+      },
+      valueByFips: new Map([["01001", 100]]),
+      metric: "pills",
+      domain: { domainMin: 0, domainMax: 100 },
+    });
+
+    const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(props.data[0]!);
+    expect(c.slice(0, 3)).not.toEqual([222, 214, 200]);
+  });
+
   it("switches color scale when metric is deaths", () => {
     const data = new Map<string, number>([["54059", 9]]);
     const props = buildCountyLayerProps({

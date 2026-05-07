@@ -138,12 +138,10 @@ serving the last-good data until someone updates the hash fingerprint.
 
 ## Spike status
 
-Three source-probe spikes (Task 19 WaPo, Task 25 CDC, Task 31 DEA) ran
-with synthetic fixtures rather than live-captured responses — see
-`notes/wapo.md`, `notes/cdc.md`, and `notes/dea.md` for details. A
-maintainer with browser access MUST re-run the probe notebooks against
-production endpoints and update both fixtures and `sources/expected_hashes.py`
-signatures before the first production refresh.
+The original WaPo ARCOS API probe ran against synthetic fixtures because the
+public API is offline. County-year shipment totals now come from the public
+Mendeley Data ARCOS CSV documented in `notes/wapo.md`; CDC and DEA source notes
+remain in `notes/cdc.md` and `notes/dea.md`.
 
 ## Troubleshooting
 

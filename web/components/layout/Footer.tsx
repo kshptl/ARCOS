@@ -14,11 +14,11 @@ export function Footer({ buildDate }: Props) {
           <ul>
             <li>
               <a
-                href="https://github.com/wpinvestigative/arcos-api"
+                href="https://data.mendeley.com/datasets/dwfgxrh7tn/9"
                 target="_blank"
                 rel="noreferrer"
               >
-                Washington Post ARCOS API
+                ARCOS county aggregates
               </a>
             </li>
             <li>

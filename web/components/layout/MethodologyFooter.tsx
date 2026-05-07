@@ -6,7 +6,7 @@ export function MethodologyFooter() {
     <footer className={styles.root}>
       <div className={styles.inner}>
         <p>
-          Data sourced from WaPo ARCOS, DEA Diversion Control, and CDC WONDER. See{" "}
+          Data sourced from ARCOS county aggregates, DEA Diversion Control, and CDC WONDER. See{" "}
           <Link href="/methodology">methodology</Link> for full details.
         </p>
         <p>
