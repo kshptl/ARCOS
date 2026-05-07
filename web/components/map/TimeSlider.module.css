@@ -58,17 +58,23 @@
 
 .ticks {
   display: grid;
-  grid-template-columns: repeat(var(--year-count), minmax(2rem, 1fr));
+  grid-template-columns: repeat(var(--year-count), minmax(0, 1fr));
   gap: 0.2rem;
+  min-height: 2.5rem;
+  padding-top: 0.2rem;
   font-size: 0.72rem;
   color: var(--explorer-olive, var(--text-muted));
   font-variant-numeric: tabular-nums;
 }
 
 .tick {
-  min-width: 2rem;
+  min-width: 0;
   padding: 0;
-  text-align: center;
+  justify-self: center;
+  text-align: right;
+  transform: rotate(-45deg);
+  transform-origin: top center;
+  white-space: nowrap;
 }
 
 .tickActive {

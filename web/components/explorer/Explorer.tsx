@@ -2,18 +2,24 @@
 
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import dynamic from "next/dynamic";
-import type { CSSProperties } from "react";
+import type { ChangeEvent, CSSProperties } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { ChoroplethMapProps } from "@/components/map/ChoroplethMap";
+import type {
+  ChoroplethMapProps,
+  MapPointerPosition,
+  MapViewport,
+} from "@/components/map/ChoroplethMap";
 import { deathsColorScale, pillsColorScale, rgbToCss } from "@/components/map/colorScales";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import { TimeSlider } from "@/components/map/TimeSlider";
 import { useWebGLSupport } from "@/components/map/useWebGLSupport";
 import type { CountyMetadata } from "@/lib/data/schemas";
+import { FIPS_STATE_MAP } from "@/lib/geo/fips";
 import { loadCountyTopology, loadStateTopology } from "@/lib/geo/topology";
 import { DataLoader } from "./DataLoader";
 import styles from "./Explorer.module.css";
 import { Filters, type FiltersState } from "./Filters";
+import { MapTooltip } from "./Tooltip";
 import { useURLState } from "./useURLState";
 import { WebGLFallback } from "./WebGLFallback";
 
@@ -22,7 +28,8 @@ const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
 const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
-const BROWSE_BATCH_SIZE = 120;
+const AUTOCOMPLETE_LIMIT = 12;
+const COUNTY_DETAIL_ZOOM = 5.15;
 const DEFAULT_URL_STATE = {
   year: 2012,
   metric: "pills_per_capita" as const,
@@ -34,6 +41,9 @@ const DEFAULT_MAP_VIEW_STATE = {
   pitch: 0,
   bearing: 0,
 };
+const STATE_FIPS_BY_CODE = Object.fromEntries(
+  Object.entries(FIPS_STATE_MAP).map(([fips, code]) => [code, fips]),
+) as Record<string, string>;
 
 const METRIC_DETAILS: Record<
   MapMetric,
@@ -95,6 +105,24 @@ type CountyWithValue = {
 
 type MapViewState = typeof DEFAULT_MAP_VIEW_STATE;
 type ValuesByMetricYear = Map<MapMetric, Map<number, Map<string, number>>>;
+type MapHoverState = {
+  title: string;
+  value: number | null;
+  x: number;
+  y: number;
+};
+
+type StateAccumulator = {
+  code: string;
+  count: number;
+  population: number;
+  value: number;
+  weightedValue: number;
+};
+
+function countySearchLabel(county: CountyMetadata): string {
+  return `${county.name}, ${county.state}`;
+}
 
 function addCoordinatesToBounds(value: unknown, bounds: number[]) {
   if (!Array.isArray(value)) return;
@@ -119,7 +147,10 @@ function addGeometryToBounds(geometry: Geometry | null, bounds: number[]) {
   addCoordinatesToBounds(geometry.coordinates, bounds);
 }
 
-function viewStateForCounty(feature: Feature<Geometry>): MapViewState | null {
+function viewStateForFeature(
+  feature: Feature<Geometry>,
+  options: { minZoom?: number; maxZoom?: number } = {},
+): MapViewState | null {
   const bounds: number[] = [];
   addGeometryToBounds(feature.geometry, bounds);
   const [minLon, minLat, maxLon, maxLat] = bounds;
@@ -134,10 +165,12 @@ function viewStateForCounty(feature: Feature<Geometry>): MapViewState | null {
   const lonSpan = Math.max(maxLon - minLon, 0.05);
   const latSpan = Math.max(maxLat - minLat, 0.05);
   const span = Math.max(lonSpan, latSpan);
+  const minZoom = options.minZoom ?? DEFAULT_MAP_VIEW_STATE.zoom + 1;
+  const maxZoom = options.maxZoom ?? 8.4;
   return {
     longitude: (minLon + maxLon) / 2,
     latitude: (minLat + maxLat) / 2,
-    zoom: Math.min(8.4, Math.max(DEFAULT_MAP_VIEW_STATE.zoom + 1, Math.log2(360 / span) - 1)),
+    zoom: Math.min(maxZoom, Math.max(minZoom, Math.log2(360 / span) - 1)),
     pitch: 0,
     bearing: 0,
   };
@@ -197,12 +230,13 @@ export function Explorer({ counties }: ExplorerProps) {
   }>({ counties: null, states: null });
   const [valuesByMetricYear, setValuesByMetricYear] = useState<ValuesByMetricYear>(new Map());
   const [selectedFips, setSelectedFips] = useState<string | null>(null);
+  const [focusedStateFips, setFocusedStateFips] = useState<string | null>(null);
   const [countyQuery, setCountyQuery] = useState("");
   const [topologyError, setTopologyError] = useState<string | null>(null);
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
-  const [browseLimit, setBrowseLimit] = useState(BROWSE_BATCH_SIZE);
   const [mapViewState, setMapViewState] = useState<MapViewState>(DEFAULT_MAP_VIEW_STATE);
+  const [mapHover, setMapHover] = useState<MapHoverState | null>(null);
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
@@ -266,6 +300,55 @@ export function Explorer({ counties }: ExplorerProps) {
     for (const v of currentValues.values()) if (v > max) max = v;
     return { domainMin: 0, domainMax: Math.max(max, 1) };
   }, [currentValues]);
+
+  const stateSummaryByFips = useMemo(() => {
+    const summaries = new Map<string, StateAccumulator>();
+    for (const county of counties) {
+      const stateFips = STATE_FIPS_BY_CODE[county.state];
+      if (!stateFips) continue;
+      const current =
+        summaries.get(stateFips) ??
+        ({
+          code: county.state,
+          count: 0,
+          population: 0,
+          value: 0,
+          weightedValue: 0,
+        } satisfies StateAccumulator);
+      const value = currentValues.get(county.fips) ?? 0;
+      current.count += 1;
+      current.population += county.pop;
+      current.value += value;
+      current.weightedValue += value * county.pop;
+      summaries.set(stateFips, current);
+    }
+    if (urlState.metric !== "pills_per_capita") return summaries;
+    const perCapitaSummaries = new Map<string, StateAccumulator>();
+    for (const [stateFips, summary] of summaries) {
+      perCapitaSummaries.set(stateFips, {
+        ...summary,
+        value: summary.population > 0 ? summary.weightedValue / summary.population : 0,
+      });
+    }
+    return perCapitaSummaries;
+  }, [counties, currentValues, urlState.metric]);
+
+  const stateValueByFips = useMemo(() => {
+    return new Map(
+      [...stateSummaryByFips].map(([stateFips, summary]) => [stateFips, summary.value]),
+    );
+  }, [stateSummaryByFips]);
+
+  const stateDomain = useMemo(() => {
+    let max = 0;
+    for (const v of stateValueByFips.values()) if (v > max) max = v;
+    return { domainMin: 0, domainMax: Math.max(max, 1) };
+  }, [stateValueByFips]);
+
+  const showCountyLayer = focusedStateFips !== null || mapViewState.zoom >= COUNTY_DETAIL_ZOOM;
+  const activeDomain = showCountyLayer ? domain : stateDomain;
+  const activeValueCount = showCountyLayer ? currentValues.size : stateValueByFips.size;
+  const activeGeographyLabel = showCountyLayer ? "counties" : "states";
 
   const sortedCounties = useMemo(() => {
     return [...counties].sort((a, b) =>
@@ -340,19 +423,17 @@ export function Explorer({ counties }: ExplorerProps) {
 
   const filteredCounties = useMemo(() => {
     const query = countyQuery.trim().toLowerCase();
-    if (!query) return sortedCounties;
+    if (!query) return [];
     return sortedCounties.filter((county) => {
       const label = `${county.name} ${county.state} ${county.fips}`.toLowerCase();
       return label.includes(query);
     });
   }, [countyQuery, sortedCounties]);
 
-  const visibleCounties = useMemo(
-    () => filteredCounties.slice(0, browseLimit),
-    [browseLimit, filteredCounties],
+  const autocompleteCounties = useMemo(
+    () => filteredCounties.slice(0, AUTOCOMPLETE_LIMIT),
+    [filteredCounties],
   );
-
-  const canShowMoreCounties = visibleCounties.length < filteredCounties.length;
 
   const metricDetails = METRIC_DETAILS[urlState.metric];
   const selectedName = selectedCounty?.meta
@@ -368,22 +449,28 @@ export function Explorer({ counties }: ExplorerProps) {
   const legendColors = useMemo(() => {
     const scale = urlState.metric === "deaths" ? deathsColorScale : pillsColorScale;
     return [0.96, 0.78, 0.6, 0.42, 0.24, 0.08].map((stop) =>
-      rgbToCss(scale(domain.domainMax * stop, domain)),
+      rgbToCss(scale(activeDomain.domainMax * stop, activeDomain)),
     );
-  }, [domain, urlState.metric]);
+  }, [activeDomain, urlState.metric]);
 
   const legendLabels = useMemo(
-    () => buildLegendLabels(domain.domainMax, urlState.metric),
-    [domain.domainMax, urlState.metric],
+    () => buildLegendLabels(activeDomain.domainMax, urlState.metric),
+    [activeDomain.domainMax, urlState.metric],
   );
 
   const handleFilterChange = useCallback(
-    (next: FiltersState) => setURLState({ ...urlState, ...next }),
+    (next: FiltersState) => {
+      setMapHover(null);
+      setURLState({ ...urlState, ...next });
+    },
     [setURLState, urlState],
   );
 
   const handleYearChange = useCallback(
-    (year: number) => setURLState({ ...urlState, year }),
+    (year: number) => {
+      setMapHover(null);
+      setURLState({ ...urlState, year });
+    },
     [setURLState, urlState],
   );
 
@@ -406,22 +493,44 @@ export function Explorer({ counties }: ExplorerProps) {
     setTopologyError(err.message);
   }, []);
 
-  const focusMapOnCounty = useCallback((feature: Feature<Geometry> | null) => {
-    if (!feature) return;
-    const nextView = viewStateForCounty(feature);
-    if (nextView) setMapViewState(nextView);
-  }, []);
+  const focusMapOnFeature = useCallback(
+    (feature: Feature<Geometry> | null, options: { minZoom?: number; maxZoom?: number } = {}) => {
+      if (!feature) return;
+      const nextView = viewStateForFeature(feature, options);
+      if (nextView) setMapViewState(nextView);
+    },
+    [],
+  );
+
+  const focusMapOnCounty = useCallback(
+    (feature: Feature<Geometry> | null) => {
+      if (!feature) return;
+      focusMapOnFeature(feature, { minZoom: COUNTY_DETAIL_ZOOM + 0.7, maxZoom: 8.4 });
+    },
+    [focusMapOnFeature],
+  );
 
   const findCountyFeature = useCallback(
     (fips: string) =>
-      topology.counties?.features.find((feature) => String(feature.id ?? "") === fips) ?? null,
+      topology.counties?.features.find(
+        (feature) => String(feature.id ?? "").padStart(5, "0") === fips,
+      ) ?? null,
     [topology.counties],
+  );
+
+  const findStateFeature = useCallback(
+    (stateFips: string) =>
+      topology.states?.features.find(
+        (feature) => String(feature.id ?? "").padStart(2, "0") === stateFips,
+      ) ?? null,
+    [topology.states],
   );
 
   const selectCounty = useCallback(
     (fips: string | null, feature?: Feature<Geometry> | null) => {
       if (!fips || !countyByFips.has(fips)) return;
       setSelectedFips(fips);
+      setFocusedStateFips(fips.slice(0, 2));
       focusMapOnCounty(feature ?? findCountyFeature(fips));
     },
     [countyByFips, findCountyFeature, focusMapOnCounty],
@@ -432,6 +541,96 @@ export function Explorer({ counties }: ExplorerProps) {
       selectCounty(fips, feature);
     },
     [selectCounty],
+  );
+
+  const handleStateClick = useCallback(
+    (fips: string | null, feature: Feature<Geometry> | null) => {
+      if (!fips) return;
+      const stateFips = fips.padStart(2, "0");
+      setFocusedStateFips(stateFips);
+      focusMapOnFeature(feature ?? findStateFeature(stateFips), {
+        minZoom: COUNTY_DETAIL_ZOOM + 0.25,
+        maxZoom: 6.7,
+      });
+    },
+    [findStateFeature, focusMapOnFeature],
+  );
+
+  const handleMapViewStateChange = useCallback((next: MapViewport) => {
+    setMapViewState((prev) => {
+      const roundedPrev = `${prev.longitude.toFixed(4)}:${prev.latitude.toFixed(4)}:${prev.zoom.toFixed(3)}`;
+      const roundedNext = `${next.longitude.toFixed(4)}:${next.latitude.toFixed(4)}:${next.zoom.toFixed(3)}`;
+      if (roundedPrev === roundedNext) return prev;
+      return {
+        longitude: next.longitude,
+        latitude: next.latitude,
+        zoom: next.zoom,
+        pitch: next.pitch ?? 0,
+        bearing: next.bearing ?? 0,
+      };
+    });
+    if (next.zoom < COUNTY_DETAIL_ZOOM - 0.25) setFocusedStateFips(null);
+  }, []);
+
+  const findCountyFromSearchValue = useCallback(
+    (value: string) => {
+      const query = value.trim().toLowerCase();
+      if (!query) return null;
+      return (
+        sortedCounties.find((county) => countySearchLabel(county).toLowerCase() === query) ??
+        sortedCounties.find((county) => county.fips === query) ??
+        null
+      );
+    },
+    [sortedCounties],
+  );
+
+  const handleCountySearchChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const nextQuery = event.target.value;
+      setCountyQuery(nextQuery);
+      const county = findCountyFromSearchValue(nextQuery);
+      if (county) selectCounty(county.fips);
+    },
+    [findCountyFromSearchValue, selectCounty],
+  );
+
+  const handleCountyHover = useCallback(
+    (fips: string | null, _feature: Feature | null, position: MapPointerPosition) => {
+      if (!fips) {
+        setMapHover(null);
+        return;
+      }
+      const county = countyByFips.get(fips);
+      if (!county) {
+        setMapHover(null);
+        return;
+      }
+      setMapHover({
+        title: countySearchLabel(county),
+        value: currentValues.get(fips) ?? null,
+        x: position.x,
+        y: position.y,
+      });
+    },
+    [countyByFips, currentValues],
+  );
+
+  const handleStateHover = useCallback(
+    (fips: string | null, feature: Feature | null, position: MapPointerPosition) => {
+      if (!fips) {
+        setMapHover(null);
+        return;
+      }
+      const stateFips = fips.padStart(2, "0");
+      setMapHover({
+        title: feature?.properties?.name ?? FIPS_STATE_MAP[stateFips] ?? `State ${stateFips}`,
+        value: stateValueByFips.get(stateFips) ?? null,
+        x: position.x,
+        y: position.y,
+      });
+    },
+    [stateValueByFips],
   );
 
   const finishShare = useCallback((status: "copied" | "failed") => {
@@ -464,12 +663,9 @@ export function Explorer({ counties }: ExplorerProps) {
     });
   }, [selectedCountyFips]);
 
-  const handleShowMoreCounties = useCallback(() => {
-    setBrowseLimit((prev) => Math.min(prev + BROWSE_BATCH_SIZE, filteredCounties.length));
-  }, [filteredCounties.length]);
-
   return (
-    <section className={styles.root} aria-labelledby="explorer-heading">
+    <section className={styles.root} aria-label="Explorer">
+      <h1 className={styles.srOnly}>Explorer</h1>
       <aside className={styles.rail} aria-label="Explorer controls">
         <div className={styles.railSection}>
           <Filters metric={urlState.metric} onChange={handleFilterChange} />
@@ -488,53 +684,19 @@ export function Explorer({ counties }: ExplorerProps) {
             <input
               id="explorer-county-search"
               type="search"
+              list="explorer-county-options"
+              aria-autocomplete="list"
               value={countyQuery}
               placeholder="Type a county or state..."
-              onChange={(event) => {
-                setCountyQuery(event.target.value);
-                setBrowseLimit(BROWSE_BATCH_SIZE);
-              }}
+              onChange={handleCountySearchChange}
             />
+            <datalist id="explorer-county-options">
+              {autocompleteCounties.map((county) => (
+                <option key={county.fips} value={countySearchLabel(county)} />
+              ))}
+            </datalist>
           </div>
         </div>
-
-        <aside className={styles.browse} aria-label="Browse counties">
-          <h2>
-            Browse counties <span>({filteredCounties.length.toLocaleString("en-US")})</span>
-          </h2>
-          <ul className={styles.browseList}>
-            {visibleCounties.map((county) => {
-              const isSelected = county.fips === selectedFipsResolved;
-              return (
-                <li key={county.fips}>
-                  <button
-                    type="button"
-                    aria-current={isSelected ? "true" : undefined}
-                    onClick={() => selectCounty(county.fips)}
-                  >
-                    <span>
-                      {county.name}, {county.state}
-                    </span>
-                    <span aria-hidden="true">›</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-          {canShowMoreCounties ? (
-            <button
-              type="button"
-              className={styles.browseMoreButton}
-              onClick={handleShowMoreCounties}
-            >
-              Show more counties{" "}
-              <span>
-                {visibleCounties.length.toLocaleString("en-US")} /{" "}
-                {filteredCounties.length.toLocaleString("en-US")}
-              </span>
-            </button>
-          ) : null}
-        </aside>
 
         <a className={styles.downloadButton} href="/data/county-shipments-by-year.parquet" download>
           <span aria-hidden="true">↓</span>
@@ -544,12 +706,6 @@ export function Explorer({ counties }: ExplorerProps) {
 
       <main className={styles.main}>
         <header className={styles.header}>
-          <div>
-            <h1 id="explorer-heading">US counties, 2006–2014</h1>
-            <p className={styles.lede}>
-              Shipments, per-capita rates, and overdose deaths across 3,100+ counties.
-            </p>
-          </div>
           <button
             type="button"
             className={styles.shareButton}
@@ -634,13 +790,22 @@ export function Explorer({ counties }: ExplorerProps) {
                 counties={topology.counties}
                 states={topology.states}
                 valueByFips={currentValues}
+                stateValueByFips={stateValueByFips}
                 metric={urlState.metric}
-                domain={domain}
+                domain={activeDomain}
+                stateDomain={stateDomain}
                 width={mapWidth}
                 height={mapHeight}
                 year={urlState.year}
                 initialViewState={mapViewState}
+                viewState={mapViewState}
+                focusedStateFips={focusedStateFips}
+                showCountyLayer={showCountyLayer}
+                onCountyHover={handleCountyHover}
                 onCountyClick={handleCountyClick}
+                onStateHover={handleStateHover}
+                onStateClick={handleStateClick}
+                onViewStateChange={handleMapViewStateChange}
               />
             ) : (
               <div role="status" className={styles.loading}>
@@ -649,10 +814,20 @@ export function Explorer({ counties }: ExplorerProps) {
             )}
           </div>
 
+          <MapTooltip
+            county={null}
+            title={mapHover?.title ?? null}
+            value={mapHover?.value ?? null}
+            metricLabel={metricDetails.label}
+            year={urlState.year}
+            x={mapHover?.x ?? 0}
+            y={mapHover?.y ?? 0}
+          />
+
           <footer className={styles.mapStatus}>
             <span aria-hidden="true">i</span>
             Showing {metricDetails.shortLabel.toLowerCase()} in {urlState.year} for{" "}
-            {currentValues.size.toLocaleString("en-US")} counties.
+            {activeValueCount.toLocaleString("en-US")} {activeGeographyLabel}.
           </footer>
         </section>
       </main>

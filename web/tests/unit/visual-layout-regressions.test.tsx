@@ -72,12 +72,19 @@ describe("visual layout regressions", () => {
     );
   });
 
-  it("spaces explorer year ticks as fixed grid cells", () => {
+  it("angles explorer year ticks so labels do not crowd the sidebar", () => {
     const src = css("components/map/TimeSlider.module.css");
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*2\.5rem/);
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?transform-origin:\s*top\s+center/);
+  });
+
+  it("keeps the explorer detail panel scrollable to its last action", () => {
+    const src = css("components/explorer/Explorer.module.css");
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?min-height:\s*0/);
     expect(src).toMatch(
-      /\.ticks\s*{[\s\S]*?grid-template-columns:\s*repeat\(var\(--year-count\),\s*minmax\(2rem,\s*1fr\)\)/,
+      /\.detailPanel\s*{[\s\S]*?padding-bottom:\s*max\(1\.5rem,\s*env\(safe-area-inset-bottom\)\)/,
     );
-    expect(src).toMatch(/\.tick\s*{[\s\S]*?text-align:\s*center/);
   });
 
   it("reserves enough desktop header width for the full search placeholder", () => {

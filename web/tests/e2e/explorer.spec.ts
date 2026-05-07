@@ -2,8 +2,8 @@ import { expect, type Page, test } from "@playwright/test";
 
 async function openExplorer(page: Page) {
   await page.goto("/explorer");
-  await page.getByRole("heading", { name: /US counties/i }).waitFor();
-  const shell = page.locator('section[aria-labelledby="explorer-heading"]');
+  const shell = page.getByRole("region", { name: "Explorer", exact: true });
+  await shell.waitFor();
   await expect
     .poll(() => shell.evaluate((el) => getComputedStyle(el).getPropertyValue("--explorer-bg")), {
       message: "explorer CSS has loaded",
@@ -89,37 +89,18 @@ test.describe("/explorer", () => {
     expect(railOverflowX).toBe("hidden");
   });
 
-  test("county browser renders in small batches but search still covers all counties", async ({
-    page,
-  }) => {
+  test("explorer uses county autocomplete instead of a full browse list", async ({ page }) => {
     await openExplorer(page);
 
-    const browseButtons = page.locator('aside[aria-label="Browse counties"] ul button');
-    const initialCount = await browseButtons.count();
-    expect(initialCount).toBeLessThanOrEqual(120);
+    await expect(page.getByRole("heading", { name: /US counties/i })).toHaveCount(0);
+    await expect(page.getByText(/Shipments, per-capita rates/i)).toHaveCount(0);
+    await expect(page.locator('aside[aria-label="Browse counties"]')).toHaveCount(0);
 
-    await page.getByRole("button", { name: /Show more counties/i }).click();
-    expect(await browseButtons.count()).toBeGreaterThan(initialCount);
-
-    await page.getByLabel("Search counties").fill("Los Angeles County");
-    await expect(page.getByRole("button", { name: /Los Angeles County, CA/i })).toBeVisible();
-  });
-
-  test("clicking a county in the browse list selects it without leaving explorer", async ({
-    page,
-  }) => {
-    await openExplorer(page);
-    const firstCounty = page.locator('aside[aria-label="Browse counties"] button').first();
-    const count = await firstCounty.count();
-    if (count === 0) {
-      // Empty county-metadata.json fixture: no counties to click.
-      test.skip();
-    }
-    await firstCounty.click();
+    await page.getByLabel("Search counties").fill("Los Angeles County, CA");
     await expect(page).toHaveURL(/\/explorer/);
     await expect(page.getByRole("link", { name: /View full county profile/i })).toHaveAttribute(
       "href",
-      /^\/county\/\d{5}$/,
+      "/county/06037",
     );
   });
 

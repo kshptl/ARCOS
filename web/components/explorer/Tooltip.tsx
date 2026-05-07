@@ -2,7 +2,8 @@ import type { CountyMetadata } from "@/lib/data/schemas";
 import { formatFull } from "@/lib/format/number";
 
 export interface MapTooltipProps {
-  county: CountyMetadata | null;
+  county?: CountyMetadata | null;
+  title?: string | null;
   value: number | null;
   metricLabel: string;
   year: number;
@@ -10,8 +11,9 @@ export interface MapTooltipProps {
   y: number;
 }
 
-export function MapTooltip({ county, value, metricLabel, year, x, y }: MapTooltipProps) {
-  if (!county) return null;
+export function MapTooltip({ county, title, value, metricLabel, year, x, y }: MapTooltipProps) {
+  const heading = title ?? (county ? `${county.name}, ${county.state}` : null);
+  if (!heading) return null;
   return (
     <div
       role="tooltip"
@@ -29,9 +31,7 @@ export function MapTooltip({ county, value, metricLabel, year, x, y }: MapToolti
         boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
       }}
     >
-      <div style={{ fontWeight: 600 }}>
-        {county.name}, {county.state}
-      </div>
+      <div style={{ fontWeight: 600 }}>{heading}</div>
       <div style={{ color: "var(--text-muted)" }}>
         {metricLabel} {year}
       </div>

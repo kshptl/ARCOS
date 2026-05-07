@@ -27,8 +27,8 @@ export interface BuildCountyLayerPropsArgs {
    * Map reference churn from the parent.
    */
   colorKey?: string | number;
-  onHover?: (info: { object?: Feature | null }) => void;
-  onClick?: (info: { object?: Feature | null }) => void;
+  onHover?: (info: { object?: Feature | null; x?: number; y?: number }) => void;
+  onClick?: (info: { object?: Feature | null; x?: number; y?: number }) => void;
 }
 
 export interface PolygonLayerProps {
@@ -43,8 +43,8 @@ export interface PolygonLayerProps {
   getLineColor: number[];
   getLineWidth: number;
   lineWidthMinPixels: number;
-  onHover?: (info: { object?: Feature | null }) => void;
-  onClick?: (info: { object?: Feature | null }) => void;
+  onHover?: (info: { object?: Feature | null; x?: number; y?: number }) => void;
+  onClick?: (info: { object?: Feature | null; x?: number; y?: number }) => void;
   updateTriggers: { getFillColor: unknown[] };
 }
 

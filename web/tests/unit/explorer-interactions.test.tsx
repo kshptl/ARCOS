@@ -24,6 +24,24 @@ const mocks = vi.hoisted(() => {
     },
   };
 
+  const stateFeature: Feature<Geometry, { name?: string }> = {
+    type: "Feature",
+    id: "54",
+    properties: { name: "West Virginia" },
+    geometry: {
+      type: "Polygon",
+      coordinates: [
+        [
+          [-83, 37],
+          [-80, 37],
+          [-80, 40],
+          [-83, 40],
+          [-83, 37],
+        ],
+      ],
+    },
+  };
+
   const topology: FeatureCollection<Geometry, { name?: string }> = {
     type: "FeatureCollection",
     features: [countyFeature],
@@ -37,7 +55,14 @@ const mocks = vi.hoisted(() => {
 
   return {
     countyFeature,
-    mapProps: [] as Array<{ initialViewState?: { zoom?: number }; viewState?: { zoom?: number } }>,
+    mapProps: [] as Array<{
+      focusedStateFips?: string | null;
+      initialViewState?: { zoom?: number };
+      showCountyLayer?: boolean;
+      stateValueByFips?: Map<string, number>;
+      viewState?: { zoom?: number };
+    }>,
+    stateFeature,
     topology,
     valuesByMetric,
   };
@@ -46,20 +71,42 @@ const mocks = vi.hoisted(() => {
 vi.mock("@/components/map/ChoroplethMap", () => ({
   ChoroplethMap: (props: {
     initialViewState?: { zoom?: number };
+    focusedStateFips?: string | null;
+    onCountyHover?: (
+      fips: string | null,
+      feature: Feature<Geometry, { name?: string }> | null,
+      pos: { x: number; y: number },
+    ) => void;
     viewState?: { zoom?: number };
     onCountyClick?: (fips: string, feature: Feature<Geometry, { name?: string }>) => void;
+    onStateClick?: (fips: string, feature: Feature<Geometry, { name?: string }>) => void;
+    onStateHover?: (
+      fips: string | null,
+      feature: Feature<Geometry, { name?: string }> | null,
+      pos: { x: number; y: number },
+    ) => void;
   }) => {
     mocks.mapProps.push(props);
     const zoom = props.viewState?.zoom ?? props.initialViewState?.zoom ?? 0;
     return (
-      <button
-        type="button"
-        data-testid="mock-map"
-        data-zoom={zoom}
-        onClick={() => props.onCountyClick?.("54059", mocks.countyFeature)}
-      >
-        Map county
-      </button>
+      <div data-testid="mock-map-shell">
+        <button
+          type="button"
+          data-testid="mock-map"
+          data-zoom={zoom}
+          onClick={() => props.onCountyClick?.("54059", mocks.countyFeature)}
+          onMouseEnter={() => props.onCountyHover?.("54059", mocks.countyFeature, { x: 18, y: 24 })}
+        >
+          Map county
+        </button>
+        <button
+          type="button"
+          onClick={() => props.onStateClick?.("54", mocks.stateFeature)}
+          onMouseEnter={() => props.onStateHover?.("54", mocks.stateFeature, { x: 28, y: 34 })}
+        >
+          Map state
+        </button>
+      </div>
     );
   },
 }));
@@ -91,7 +138,7 @@ vi.mock("@/lib/geo/topology", () => ({
   loadCountyTopology: vi.fn().mockResolvedValue(mocks.topology),
   loadStateTopology: vi.fn().mockResolvedValue({
     type: "FeatureCollection",
-    features: [],
+    features: [mocks.stateFeature],
   }),
 }));
 
@@ -142,6 +189,97 @@ describe("Explorer interactions", () => {
       const latest = mocks.mapProps.at(-1);
       const nextZoom = latest?.viewState?.zoom ?? latest?.initialViewState?.zoom ?? 0;
       expect(nextZoom).toBeGreaterThan(beforeZoom);
+    });
+  });
+
+  it("removes the large explainer heading from the explorer workspace", async () => {
+    render(
+      <Explorer counties={[{ fips: "54059", name: "Mingo County", state: "WV", pop: 26000 }]} />,
+    );
+    await flushExplorerEffects();
+
+    expect(screen.getByRole("region", { name: "Explorer" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Explorer" })).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: /US counties/i })).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(/Shipments, per-capita rates, and overdose deaths/i),
+    ).not.toBeInTheDocument();
+  });
+
+  it("uses county search autocomplete without showing the full browse list", async () => {
+    const user = userEvent.setup();
+    const { container } = render(
+      <Explorer
+        counties={[
+          { fips: "54059", name: "Mingo County", state: "WV", pop: 26000 },
+          { fips: "01001", name: "Autauga County", state: "AL", pop: 54954 },
+        ]}
+      />,
+    );
+    await flushExplorerEffects();
+
+    expect(
+      screen.queryByRole("complementary", { name: "Browse counties" }),
+    ).not.toBeInTheDocument();
+
+    const input = screen.getByLabelText("Search counties");
+    await user.type(input, "Mingo");
+
+    const options = Array.from(container.querySelectorAll("datalist option")).map((option) =>
+      option.getAttribute("value"),
+    );
+    expect(options).toContain("Mingo County, WV");
+    expect(options).not.toContain("Autauga County, AL");
+
+    await user.clear(input);
+    await user.type(input, "Mingo County, WV");
+
+    await waitFor(() => {
+      const latest = mocks.mapProps.at(-1);
+      const nextZoom = latest?.viewState?.zoom ?? latest?.initialViewState?.zoom ?? 0;
+      expect(nextZoom).toBeGreaterThan(3.2);
+    });
+  });
+
+  it("zooms to a state click and switches the map into county detail", async () => {
+    const user = userEvent.setup();
+    render(
+      <Explorer counties={[{ fips: "54059", name: "Mingo County", state: "WV", pop: 26000 }]} />,
+    );
+    await flushExplorerEffects();
+
+    const beforeZoom = mocks.mapProps.at(-1)?.initialViewState?.zoom ?? 0;
+    await user.click(screen.getByRole("button", { name: "Map state" }));
+
+    await waitFor(() => {
+      const latest = mocks.mapProps.at(-1);
+      const nextZoom = latest?.viewState?.zoom ?? latest?.initialViewState?.zoom ?? 0;
+      expect(nextZoom).toBeGreaterThan(beforeZoom);
+      expect(latest?.focusedStateFips).toBe("54");
+      expect(latest?.showCountyLayer).toBe(true);
+      expect(latest?.stateValueByFips?.get("54")).toBe(7.5);
+    });
+  });
+
+  it("shows stats when hovering over a state or county", async () => {
+    const user = userEvent.setup();
+    render(
+      <Explorer counties={[{ fips: "54059", name: "Mingo County", state: "WV", pop: 26000 }]} />,
+    );
+    await flushExplorerEffects();
+
+    await user.hover(screen.getByRole("button", { name: "Map state" }));
+    await waitFor(() => {
+      const tooltip = screen.getByRole("tooltip");
+      expect(tooltip).toHaveTextContent("West Virginia");
+      expect(tooltip).toHaveTextContent("7.5");
+    });
+
+    await user.hover(screen.getByRole("button", { name: "Map county" }));
+    await waitFor(() => {
+      const tooltip = screen.getByRole("tooltip");
+      expect(tooltip).toHaveTextContent("Mingo County, WV");
+      expect(tooltip).toHaveTextContent("7.5");
     });
   });
 });
