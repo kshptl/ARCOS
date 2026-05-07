@@ -78,6 +78,7 @@ export default async function HomePage() {
         <ScrollyStage
           canvas={<Act3Enforcement actions={data.act3.actions} />}
           ariaLabel="Act 3: DEA Final Orders and registrant administrative actions published in the Federal Register, 2006 through 2014."
+          stepLayout="stacked"
         >
           <Step id="act3-baseline">
             <p className="eyebrow">Act 3 — Enforcement</p>

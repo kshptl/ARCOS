@@ -82,4 +82,19 @@ describe("ScrollyStage", () => {
     );
     expect(screen.queryByText(/show data/i)).toBeNull();
   });
+
+  it("can mark a stage so its step cards stack instead of pinning", () => {
+    render(
+      <ScrollyStage canvas={<div />} ariaLabel="act" stepLayout="stacked">
+        <Step id="a1">
+          <p>first</p>
+        </Step>
+        <Step id="a2">
+          <p>second</p>
+        </Step>
+      </ScrollyStage>,
+    );
+
+    expect(screen.getByRole("region")).toHaveAttribute("data-step-layout", "stacked");
+  });
 });

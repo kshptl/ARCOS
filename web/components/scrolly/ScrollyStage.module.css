@@ -34,6 +34,10 @@
   padding-bottom: 40vh;
 }
 
+.stage[data-step-layout="stacked"] .steps {
+  gap: var(--space-md);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .sticky {
     position: relative;
@@ -62,6 +66,17 @@
   .steps {
     gap: var(--space-xl);
     padding: var(--space-md) 0;
+  }
+}
+
+@media (min-width: 721px) {
+  .stage[data-step-layout="stacked"] .steps {
+    padding-bottom: 80vh;
+  }
+
+  .stage[data-step-layout="stacked"] .steps > article {
+    position: static;
+    top: auto;
   }
 }
 

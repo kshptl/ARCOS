@@ -10,9 +10,15 @@ export interface ScrollyStageProps {
   canvas: ReactNode;
   children: ReactNode;
   ariaLabel: string;
+  stepLayout?: "sticky" | "stacked";
 }
 
-export function ScrollyStage({ canvas, children, ariaLabel }: ScrollyStageProps) {
+export function ScrollyStage({
+  canvas,
+  children,
+  ariaLabel,
+  stepLayout = "sticky",
+}: ScrollyStageProps) {
   const { progress, ref } = useScrollProgress();
   const reduced = useReducedMotion();
   const effective = reduced ? 1 : progress;
@@ -23,6 +29,7 @@ export function ScrollyStage({ canvas, children, ariaLabel }: ScrollyStageProps)
       aria-label={ariaLabel}
       className={styles.stage}
       data-reduced={reduced ? "true" : "false"}
+      data-step-layout={stepLayout}
     >
       <ScrollyProgressContext.Provider value={effective}>
         {/*

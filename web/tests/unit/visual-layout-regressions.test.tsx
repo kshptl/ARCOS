@@ -81,6 +81,23 @@ describe("visual layout regressions", () => {
     expect(src).not.toMatch(/\.step\s*{[\s\S]*?background:\s*color-mix\([^;]*transparent/);
   });
 
+  it("lets selected scrolly stages stack text cards instead of pinning each card", () => {
+    const src = css("components/scrolly/ScrollyStage.module.css");
+    expect(src).toMatch(
+      /\.stage\[data-step-layout="stacked"\]\s+\.steps\s*>\s*article\s*{[\s\S]*?position:\s*static/,
+    );
+    expect(src).toMatch(/\.stage\[data-step-layout="stacked"\]\s+\.steps\s*{[\s\S]*?gap:/);
+  });
+
+  it("uses the stacked text-card layout for Act 3 on the homepage", () => {
+    const src = css("app/page.tsx");
+    const act3Stage = src.match(
+      /<ScrollyStage[\s\S]*?canvas=\{<Act3Enforcement[\s\S]*?<\/ScrollyStage>/,
+    );
+    expect(act3Stage, "Act 3 ScrollyStage not found").toBeTruthy();
+    expect(act3Stage?.[0]).toMatch(/stepLayout="stacked"/);
+  });
+
   it("lets chart-only scrolly scenes fill the sticky card", () => {
     const src = css("components/scrolly/scenes/scenes.module.css");
     expect(src).toMatch(/\.chartPanel\s*{[\s\S]*?width:\s*100%/);

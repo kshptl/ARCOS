@@ -31,4 +31,15 @@ test.describe("homepage scrolly", () => {
     );
     await expect(fallbackTables).toHaveCount(3);
   });
+
+  test("Act 3 copy cards stack instead of pinning on top of each other", async ({ page }) => {
+    await page.goto("/");
+
+    const positions = await page
+      .locator('article[data-step^="act3"]')
+      .evaluateAll((articles) => articles.map((article) => getComputedStyle(article).position));
+
+    expect(positions).toHaveLength(4);
+    expect(positions.every((position) => position === "static")).toBe(true);
+  });
 });
