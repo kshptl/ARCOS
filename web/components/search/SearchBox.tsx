@@ -154,6 +154,7 @@ export function SearchBox({
                       data-active={idx === activeIdx}
                       className={styles.item}
                       href={hrefFor(entry) as `/${string}`}
+                      prefetch={false}
                     >
                       <span className={styles.itemLabel}>{entry.name}</span>
                       {sub && <span className={styles.itemSub}>{sub}</span>}

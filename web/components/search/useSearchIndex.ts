@@ -1,21 +1,24 @@
 "use client";
 
-import MiniSearch from "minisearch";
+import type MiniSearch from "minisearch";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SearchIndexEntry } from "@/lib/data/schemas";
 
 const SEARCH_INDEX_URL = "/data/search-index.json";
 const SESSION_KEY = "openarcos:search-index:v1";
+type MiniSearchConstructor = typeof import("minisearch").default;
 
 // Module-level cache so multiple hook instances share the same loaded index.
 let cachedEntries: SearchIndexEntry[] | null = null;
 let cachedMini: MiniSearch<SearchIndexEntry> | null = null;
 let inflight: Promise<void> | null = null;
+let miniSearchImport: Promise<MiniSearchConstructor> | null = null;
 
 export function resetSearchIndexCache(): void {
   cachedEntries = null;
   cachedMini = null;
   inflight = null;
+  miniSearchImport = null;
 }
 
 export type SearchIndexStatus = "idle" | "loading" | "ready" | "error";
@@ -28,7 +31,13 @@ export interface UseSearchIndexResult {
   load: () => Promise<void>;
 }
 
-function buildMini(entries: SearchIndexEntry[]): MiniSearch<SearchIndexEntry> {
+async function loadMiniSearch(): Promise<MiniSearchConstructor> {
+  miniSearchImport ??= import("minisearch").then((mod) => mod.default);
+  return miniSearchImport;
+}
+
+async function buildMini(entries: SearchIndexEntry[]): Promise<MiniSearch<SearchIndexEntry>> {
+  const MiniSearch = await loadMiniSearch();
   const mini = new MiniSearch<SearchIndexEntry>({
     idField: "id",
     fields: ["name"],
@@ -84,7 +93,7 @@ export function useSearchIndex(): UseSearchIndexResult {
     const session = tryReadSession();
     if (session) {
       cachedEntries = session;
-      cachedMini = buildMini(session);
+      cachedMini = await buildMini(session);
       if (mountedRef.current) setStatus("ready");
       return;
     }
@@ -104,7 +113,7 @@ export function useSearchIndex(): UseSearchIndexResult {
         if (!res.ok) throw new Error(`search-index.json fetch failed: ${res.status}`);
         const entries = (await res.json()) as SearchIndexEntry[];
         cachedEntries = entries;
-        cachedMini = buildMini(entries);
+        cachedMini = await buildMini(entries);
         writeSession(entries);
       } catch (err) {
         cachedEntries = null;

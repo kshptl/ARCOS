@@ -1,9 +1,9 @@
 """Tests for Census county metadata source."""
 
-from __future__ import annotations
-
+import httpx
 import polars as pl
 
+from openarcos_pipeline.config import Config
 from openarcos_pipeline.sources import census
 
 
@@ -69,3 +69,25 @@ def test_state_fips_maps_to_abbreviation():
     assert census._state_abbrev("54") == "WV"
     assert census._state_abbrev("51") == "VA"
     assert census._state_abbrev("21") == "KY"
+
+
+def test_fetch_popest_replaces_tiny_cached_file(tmp_path):
+    cfg = Config(data_root=tmp_path / "data", emit_dir=tmp_path / "emit")
+    tiny = cfg.raw_dir / "census" / "co-est2019-alldata.csv"
+    tiny.parent.mkdir(parents=True, exist_ok=True)
+    tiny.write_text(
+        "SUMLEV,STATE,COUNTY,STNAME,CTYNAME,POPESTIMATE2012\n"
+        "050,54,059,West Virginia,Mingo County,25764\n"
+    )
+    full = (
+        "SUMLEV,STATE,COUNTY,STNAME,CTYNAME,POPESTIMATE2012\n"
+        "050,54,059,West Virginia,Mingo County,25764\n"
+        "050,51,720,Virginia,Norton city,3892\n"
+    )
+
+    def handler(_request: httpx.Request) -> httpx.Response:
+        return httpx.Response(200, content=full.encode("latin1"))
+
+    out = census.fetch_popest(cfg, transport=httpx.MockTransport(handler))
+
+    assert out.read_text() == full

@@ -1,6 +1,6 @@
 "use client";
 
-import { type KeyboardEvent, useCallback, useId } from "react";
+import { type KeyboardEvent, type PointerEvent, useCallback, useId, useRef } from "react";
 import styles from "./TimeSlider.module.css";
 
 export interface TimeSliderProps {
@@ -12,10 +12,61 @@ export interface TimeSliderProps {
 
 export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSliderProps) {
   const labelId = useId();
+  const trackRef = useRef<HTMLDivElement | null>(null);
+  const activePointerId = useRef<number | null>(null);
+  const latestYear = useRef(value);
+  latestYear.current = value;
   const sortedYears = [...years].sort((a, b) => a - b);
   const min = sortedYears[0] ?? value;
   const max = sortedYears[sortedYears.length - 1] ?? value;
   const idx = sortedYears.indexOf(value);
+
+  const yearFromClientX = useCallback(
+    (clientX: number) => {
+      const track = trackRef.current;
+      if (!track || sortedYears.length === 0) return null;
+      const rect = track.getBoundingClientRect();
+      if (rect.width <= 0) return null;
+      const pct = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+      const nextIdx = Math.round(pct * (sortedYears.length - 1));
+      return sortedYears[nextIdx] ?? null;
+    },
+    [sortedYears],
+  );
+
+  const changeFromPointer = useCallback(
+    (clientX: number) => {
+      const nextYear = yearFromClientX(clientX);
+      if (nextYear === null || nextYear === latestYear.current) return;
+      latestYear.current = nextYear;
+      onChange(nextYear);
+    },
+    [onChange, yearFromClientX],
+  );
+
+  const onPointerDown = useCallback(
+    (e: PointerEvent<HTMLDivElement>) => {
+      activePointerId.current = e.pointerId;
+      e.currentTarget.focus();
+      e.currentTarget.setPointerCapture?.(e.pointerId);
+      changeFromPointer(e.clientX);
+    },
+    [changeFromPointer],
+  );
+
+  const onPointerMove = useCallback(
+    (e: PointerEvent<HTMLDivElement>) => {
+      if (activePointerId.current !== e.pointerId) return;
+      changeFromPointer(e.clientX);
+    },
+    [changeFromPointer],
+  );
+
+  const onPointerEnd = useCallback((e: PointerEvent<HTMLDivElement>) => {
+    if (activePointerId.current !== e.pointerId) return;
+    activePointerId.current = null;
+    e.currentTarget.releasePointerCapture?.(e.pointerId);
+  }, []);
 
   const onKeyDown = useCallback(
     (e: KeyboardEvent<HTMLDivElement>) => {
@@ -73,6 +124,11 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
         aria-valuenow={value}
         aria-valuetext={`${label} ${value}`}
         onKeyDown={onKeyDown}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerEnd}
+        onPointerCancel={onPointerEnd}
+        ref={trackRef}
         className={styles.track}
       >
         <div className={styles.progress} style={{ width: `${pct}%` }} aria-hidden="true" />

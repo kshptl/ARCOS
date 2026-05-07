@@ -5,14 +5,11 @@ import type { MapMetric } from "@/components/map/layers/countyLayer";
 import styles from "./Filters.module.css";
 
 export interface FiltersState {
-  year?: number;
   metric?: MapMetric;
 }
 
 export interface FiltersProps {
-  year: number;
   metric: MapMetric;
-  years: number[];
   onChange: (next: FiltersState) => void;
 }
 
@@ -22,24 +19,9 @@ const METRIC_LABELS: Record<MapMetric, string> = {
   deaths: "Overdose deaths",
 };
 
-export function Filters({ year, metric, years, onChange }: FiltersProps) {
+export function Filters({ metric, onChange }: FiltersProps) {
   return (
     <fieldset className={styles.root} aria-label="Filters">
-      <label className={styles.field}>
-        <span className={styles.label}>Year</span>
-        <select
-          value={String(year)}
-          onChange={(e: ChangeEvent<HTMLSelectElement>) =>
-            onChange({ year: Number(e.target.value) })
-          }
-        >
-          {years.map((y) => (
-            <option key={y} value={y}>
-              {y}
-            </option>
-          ))}
-        </select>
-      </label>
       <label className={styles.field}>
         <span className={styles.label}>Metric</span>
         <select

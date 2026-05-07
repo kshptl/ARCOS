@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { TimeSlider } from "@/components/map/TimeSlider";
@@ -59,5 +59,28 @@ describe("TimeSlider", () => {
     render(<TimeSlider years={[2006, 2007, 2008]} value={2007} onChange={() => {}} />);
     expect(screen.getByText("2006")).toBeInTheDocument();
     expect(screen.getByText("2008")).toBeInTheDocument();
+  });
+
+  it("lets people pull the thumb with a pointer", () => {
+    const onChange = vi.fn();
+    render(<TimeSlider years={[2006, 2007, 2008, 2009, 2010]} value={2006} onChange={onChange} />);
+    const slider = screen.getByRole("slider");
+
+    slider.getBoundingClientRect = () =>
+      ({
+        left: 0,
+        right: 400,
+        width: 400,
+        top: 0,
+        bottom: 20,
+        height: 20,
+        x: 0,
+        y: 0,
+        toJSON: () => ({}),
+      }) as DOMRect;
+
+    fireEvent(slider, new MouseEvent("pointerdown", { bubbles: true, clientX: 300 }));
+
+    expect(onChange).toHaveBeenCalledWith(2009);
   });
 });

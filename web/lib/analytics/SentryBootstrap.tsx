@@ -5,7 +5,7 @@ import { initSentryOnce } from "./sentry.client";
 
 export function SentryBootstrap() {
   useEffect(() => {
-    initSentryOnce();
+    void initSentryOnce();
   }, []);
   return null;
 }

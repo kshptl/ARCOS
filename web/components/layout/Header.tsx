@@ -34,13 +34,13 @@ export function Header({ search }: Props) {
   return (
     <header className={styles.root}>
       <div className={styles.row}>
-        <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
+        <Link href="/" prefetch={false} className={styles.brand} onClick={() => setOpen(false)}>
           openarcos
         </Link>
         <div className={styles.search}>{searchNode}</div>
         <nav className={styles.nav} aria-label="Primary">
           {NAV.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href} prefetch={false}>
               {item.label}
             </Link>
           ))}
@@ -62,7 +62,12 @@ export function Header({ search }: Props) {
         <div id={panelId} className={styles.mobilePanel} data-open="true">
           <nav aria-label="Primary mobile" className={styles.mobileNav}>
             {NAV.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>
+              <Link
+                key={item.href}
+                href={item.href}
+                prefetch={false}
+                onClick={() => setOpen(false)}
+              >
                 {item.label}
               </Link>
             ))}

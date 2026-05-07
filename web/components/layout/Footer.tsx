@@ -41,10 +41,14 @@ export function Footer({ buildDate }: Props) {
           <h2>Site</h2>
           <ul>
             <li>
-              <Link href="/methodology">Methodology</Link>
+              <Link href="/methodology" prefetch={false}>
+                Methodology
+              </Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about" prefetch={false}>
+                About
+              </Link>
             </li>
             <li>
               <a href="https://github.com/openarcos/openarcos" target="_blank" rel="noreferrer">

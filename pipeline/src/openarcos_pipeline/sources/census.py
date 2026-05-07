@@ -24,6 +24,7 @@ CENSUS_POPEST_URL = (
     "2010-2019/counties/totals/co-est2019-alldata.csv"
 )
 POP_YEAR = 2012  # middle of ARCOS window (2006–2014)
+MIN_FULL_COUNTY_ROWS = 3_000
 
 
 def _state_abbrev(state_fips: str) -> str:
@@ -57,9 +58,7 @@ def parse_popest_csv(path: Path) -> pl.DataFrame:
             [
                 (pl.col("_state_fips") + pl.col("_county_fips")).alias("fips"),
                 pl.col("CTYNAME").alias("name"),
-                pl.col("_state_fips")
-                .map_elements(_state_abbrev, return_dtype=pl.Utf8)
-                .alias("state"),
+                pl.col("_state_fips").replace_strict(FIPS_STATE_MAP).alias("state"),
                 pl.col("POPESTIMATE2012").cast(pl.Int64).alias("pop"),
             ]
         )
@@ -67,6 +66,19 @@ def parse_popest_csv(path: Path) -> pl.DataFrame:
     )
     log.info("census: loaded %d county rows", len(df))
     return df
+
+
+def _cached_popest_is_complete(path: Path) -> bool:
+    """Return True only when the cached Census file has the full county list."""
+    try:
+        row_count = len(parse_popest_csv(path))
+    except Exception as exc:
+        log.warning("census: cached file could not be parsed; refetching (%s)", exc)
+        return False
+    if row_count >= MIN_FULL_COUNTY_ROWS:
+        return True
+    log.warning("census: cached file has only %d county rows; refetching full file", row_count)
+    return False
 
 
 @tenacity.retry(
@@ -90,7 +102,7 @@ def fetch_popest(cfg: Config, transport: httpx.BaseTransport | None = None) -> P
     dest_dir = cfg.raw_dir / "census"
     dest_dir.mkdir(parents=True, exist_ok=True)
     dest = dest_dir / "co-est2019-alldata.csv"
-    if dest.exists() and dest.stat().st_size > 0:
+    if dest.exists() and dest.stat().st_size > 0 and _cached_popest_is_complete(dest):
         log.info("census: cached at %s", dest)
         return dest
     log.info("census: downloading %s", CENSUS_POPEST_URL)

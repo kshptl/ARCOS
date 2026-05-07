@@ -12,8 +12,26 @@ test.describe("/explorer", () => {
     expect(Number(after)).toBeGreaterThan(Number(before));
   });
 
+  test("dragging the year slider updates the selected year", async ({ page }) => {
+    await page.goto("/explorer");
+    await page.getByRole("heading", { name: /US counties/i }).waitFor();
+    const slider = page.getByRole("slider", { name: /Year/ });
+    const box = await slider.boundingBox();
+    expect(box).not.toBeNull();
+    if (!box) return;
+
+    await page.mouse.move(box.x + 2, box.y + box.height / 2);
+    await page.mouse.down();
+    await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
+    await page.mouse.up();
+
+    await expect(slider).toHaveAttribute("aria-valuenow", "2014");
+    await expect(page).toHaveURL(/year=2014/);
+  });
+
   test("metric select change updates URL query", async ({ page }) => {
     await page.goto("/explorer");
+    await expect(page.locator('fieldset[aria-label="Filters"] select')).toHaveCount(1);
     await page.getByLabel("Metric").selectOption("deaths");
     await expect(page).toHaveURL(/metric=deaths/);
   });

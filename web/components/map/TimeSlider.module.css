@@ -25,6 +25,8 @@
   border-radius: 999px;
   cursor: pointer;
   outline-offset: 3px;
+  touch-action: none;
+  user-select: none;
 }
 
 .track:focus-visible {

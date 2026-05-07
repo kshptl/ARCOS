@@ -1,8 +1,9 @@
 "use client";
 
 import type { FeatureCollection, Geometry } from "geojson";
+import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ChoroplethMap } from "@/components/map/ChoroplethMap";
+import type { ChoroplethMapProps } from "@/components/map/ChoroplethMap";
 import { TimeSlider } from "@/components/map/TimeSlider";
 import { useWebGLSupport } from "@/components/map/useWebGLSupport";
 import type { CountyMetadata } from "@/lib/data/schemas";
@@ -22,6 +23,18 @@ const DEFAULT_URL_STATE = {
   year: 2012,
   metric: "pills" as const,
 };
+
+const LazyChoroplethMap = dynamic<ChoroplethMapProps>(
+  () => import("@/components/map/ChoroplethMap").then((mod) => mod.ChoroplethMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div role="status" className={styles.loading}>
+        Preparing map…
+      </div>
+    ),
+  },
+);
 
 // Shared empty map reused across renders so that currentValues keeps a
 // stable identity while data is loading — otherwise every Explorer render
@@ -142,12 +155,7 @@ export function Explorer({ counties }: ExplorerProps) {
       </header>
 
       <div className={styles.controls}>
-        <Filters
-          year={urlState.year}
-          metric={urlState.metric}
-          years={AVAILABLE_YEARS}
-          onChange={handleFilterChange}
-        />
+        <Filters metric={urlState.metric} onChange={handleFilterChange} />
       </div>
 
       <div className={styles.slider}>
@@ -163,7 +171,7 @@ export function Explorer({ counties }: ExplorerProps) {
         ) : webgl === false ? (
           <WebGLFallback counties={sortedCounties} reason="WebGL unavailable in this browser." />
         ) : topology.counties && topology.states ? (
-          <ChoroplethMap
+          <LazyChoroplethMap
             counties={topology.counties}
             states={topology.states}
             valueByFips={currentValues}

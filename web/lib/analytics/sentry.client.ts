@@ -1,13 +1,12 @@
 "use client";
 
-import * as Sentry from "@sentry/nextjs";
-
 let initialized = false;
 
-export function initSentryOnce(): void {
+export async function initSentryOnce(): Promise<void> {
   if (initialized) return;
   const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN;
   if (!dsn) return;
+  const Sentry = await import("@sentry/nextjs");
   Sentry.init({
     dsn,
     tracesSampleRate: 0, // errors only; no perf sampling for v1
