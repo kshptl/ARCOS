@@ -15,8 +15,9 @@ export interface DataLoaderProps {
   cdcUrl?: string;
 }
 
-const DEFAULT_URL = "/data/county-shipments-by-year.parquet";
-const DEFAULT_CDC_URL = "/data/cdc-overdose-by-county-year.parquet";
+const DATA_VERSION = process.env.NEXT_PUBLIC_DATA_VERSION ?? "2026-05-07-arcos-county-v2";
+const DEFAULT_URL = versionDataUrl("/data/county-shipments-by-year.parquet");
+const DEFAULT_CDC_URL = versionDataUrl("/data/cdc-overdose-by-county-year.parquet");
 type ValuesByYear = Map<number, Map<string, number>>;
 type ShipmentMetricCache = {
   pills: ValuesByYear;
@@ -34,6 +35,11 @@ function valueMapForYear(cache: ValuesByYear, year: number): Map<string, number>
     cache.set(year, values);
   }
   return values;
+}
+
+function versionDataUrl(url: string): string {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}v=${encodeURIComponent(DATA_VERSION)}`;
 }
 
 function buildShipmentMetricCache(rows: CountyShipmentsByYear[]): ShipmentMetricCache {

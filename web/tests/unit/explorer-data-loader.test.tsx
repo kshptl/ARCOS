@@ -30,6 +30,10 @@ describe("DataLoader", () => {
     const onData = vi.fn();
     render(<DataLoader year={2012} onData={onData} />);
     await waitFor(() => expect(onData).toHaveBeenCalled());
+    expect(fetchParquetRows).toHaveBeenCalledWith(
+      expect.stringMatching(/^\/data\/county-shipments-by-year\.parquet\?v=.+/),
+      expect.any(Object),
+    );
     const years = onData.mock.calls.map((c: unknown[]) => c[0]);
     expect(years).toContain(2012);
     expect(years).toContain(2011);
@@ -103,7 +107,7 @@ describe("DataLoader", () => {
     expect(values2012.get("54059")).toBe(42);
     expect(values2012.get("54047")).toBe(0);
     expect(fetchParquetRows).toHaveBeenCalledWith(
-      "/data/cdc-overdose-by-county-year.parquet",
+      expect.stringMatching(/^\/data\/cdc-overdose-by-county-year\.parquet\?v=.+/),
       expect.any(Object),
     );
   });

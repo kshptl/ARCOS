@@ -25,12 +25,11 @@ import { WebGLFallback } from "./WebGLFallback";
 
 const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 
-const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
-const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
+const MAP_MIN_HEIGHT = 260;
 const DEFAULT_MAP_SIZE = {
   width: 720,
-  height: Math.round(720 / MAP_ASPECT_RATIO),
+  height: 420,
 };
 const AUTOCOMPLETE_LIMIT = 12;
 const COUNTY_DETAIL_ZOOM = 5.15;
@@ -282,12 +281,9 @@ export function Explorer({ counties }: ExplorerProps) {
     let lastApplied = "";
     const update = (rawWidth: number, rawHeight: number) => {
       const availableWidth = rawWidth || DEFAULT_MAP_SIZE.width;
-      const availableHeight = rawHeight || availableWidth / MAP_ASPECT_RATIO;
-      const widthFromHeight = availableHeight * MAP_ASPECT_RATIO;
-      const width = Math.round(
-        Math.max(MAP_MIN_WIDTH, Math.min(MAP_MAX_WIDTH, availableWidth, widthFromHeight)),
-      );
-      const height = Math.round(width / MAP_ASPECT_RATIO);
+      const availableHeight = rawHeight || DEFAULT_MAP_SIZE.height;
+      const width = Math.round(Math.max(MAP_MIN_WIDTH, availableWidth));
+      const height = Math.round(Math.max(MAP_MIN_HEIGHT, availableHeight));
       const nextKey = `${width}:${height}`;
       if (nextKey === lastApplied) return;
       lastApplied = nextKey;

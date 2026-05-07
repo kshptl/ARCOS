@@ -67,22 +67,30 @@ describe("visual layout regressions", () => {
     expect(src).toMatch(/--explorer-cream:\s*#f4edd9/);
     expect(src).toMatch(/--explorer-sage:\s*#acb3aa/);
     expect(src).toMatch(/--explorer-rust:\s*#b3462c/);
-    expect(src).toMatch(/grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(240px,\s*300px\)/);
+    expect(src).toMatch(/--detail-width:\s*clamp\(16rem,\s*20vw,\s*18\.5rem\)/);
+    expect(src).toMatch(/\.root\s*{[\s\S]*?position:\s*relative/);
+    expect(src).toMatch(/\.root\s*{[\s\S]*?display:\s*block/);
+    expect(src).not.toMatch(
+      /grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(240px,\s*300px\)/,
+    );
     expect(src).not.toMatch(/grid-template-columns:[^;]*minmax\(220px,\s*280px\)/);
   });
 
-  it("uses a horizontal explorer control bar above the map instead of a left rail", () => {
+  it("floats the explorer controls and summary over the map instead of a left rail", () => {
     const src = css("components/explorer/Explorer.module.css");
     expect(src).not.toMatch(/\.rail\s*{/);
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?position:\s*absolute/);
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?top:\s*var\(--overlay-gap\)/);
     expect(src).toMatch(
-      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(16rem,\s*0\.9fr\)\s+minmax\(18rem,\s*1\.15fr\)\s+minmax\(14rem,\s*0\.85fr\)\s+auto/,
+      /\.controlBar\s*{[\s\S]*?right:\s*calc\(var\(--detail-width\)\s*\+\s*var\(--overlay-gap\)\s*\*\s*2\)/,
     );
-    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?padding:\s*0\.75rem/);
-    expect(src).toMatch(/\.main\s*{[\s\S]*?gap:\s*0\.85rem/);
-    expect(src).toMatch(/\.main\s*{[\s\S]*?padding:\s*clamp\(0\.9rem,\s*1\.3vw,\s*1\.35rem\)/);
-    expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.75rem\s+0\.9rem/);
+    expect(src).toMatch(
+      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(14rem,\s*0\.9fr\)\s+minmax\(15rem,\s*1\.15fr\)\s+minmax\(12rem,\s*0\.85fr\)\s+auto/,
+    );
+    expect(src).toMatch(/\.stats\s*{[\s\S]*?position:\s*absolute/);
+    expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.58rem\s+0\.72rem/);
     expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
-    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?padding:\s*0\.75rem/);
+    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?inset:\s*0/);
   });
 
   it("locks the desktop explorer into one viewport without the map footer", () => {
@@ -90,16 +98,24 @@ describe("visual layout regressions", () => {
     const globals = css("styles/globals.css");
     const component = css("components/explorer/Explorer.tsx");
 
-    expect(styles).toMatch(/\.root\s*{[\s\S]*?height:\s*calc\(100dvh\s*-\s*77px\)/);
+    expect(styles).toMatch(/\.root\s*{[\s\S]*?height:\s*calc\(100dvh\s*-\s*61px\)/);
     expect(styles).toMatch(/\.root\s*{[\s\S]*?overflow:\s*hidden/);
-    expect(styles).toMatch(
-      /\.main\s*{[\s\S]*?grid-template-rows:\s*auto\s+auto\s+minmax\(0,\s*1fr\)/,
-    );
+    expect(styles).toMatch(/\.main\s*{[\s\S]*?position:\s*absolute/);
+    expect(styles).toMatch(/\.main\s*{[\s\S]*?display:\s*block/);
     expect(styles).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
+    expect(styles).toMatch(/\.mapShell\s*{[\s\S]*?position:\s*absolute/);
     expect(styles).toMatch(/\.mapCanvas\s*{[\s\S]*?min-height:\s*0/);
+    expect(styles).toMatch(/\.mapCanvas\s*{[\s\S]*?position:\s*absolute/);
     expect(styles).not.toMatch(/\.mapStatus\s*{/);
     expect(component).not.toMatch(/<footer className=\{styles\.mapStatus\}/);
     expect(globals).toMatch(/body:has\(>\s*main\s+section\[aria-label="Explorer"\]\)\s*>\s*footer/);
+  });
+
+  it("keeps the mobile explorer map to a sane viewport height", () => {
+    const styles = css("components/explorer/Explorer.module.css");
+    expect(styles).toMatch(
+      /@media\s*\(max-width:\s*760px\)[\s\S]*?\.mapCanvas\s*{[\s\S]*?height:\s*min\(62vh,\s*26rem\)/,
+    );
   });
 
   it("angles explorer year ticks so labels do not crowd the sidebar", () => {
@@ -112,17 +128,19 @@ describe("visual layout regressions", () => {
   it("keeps the explorer detail panel scrollable to its last action", () => {
     const src = css("components/explorer/Explorer.module.css");
     expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?min-height:\s*0/);
-    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?gap:\s*0\.85rem/);
-    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?padding:\s*1rem/);
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?position:\s*absolute/);
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?gap:\s*0\.7rem/);
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?padding:\s*0\.85rem/);
     expect(src).toMatch(
-      /\.detailPanel\s*{[\s\S]*?padding-bottom:\s*max\(1rem,\s*env\(safe-area-inset-bottom\)\)/,
+      /\.detailPanel\s*{[\s\S]*?padding-bottom:\s*max\(0\.85rem,\s*env\(safe-area-inset-bottom\)\)/,
     );
   });
 
   it("reserves enough desktop header width for the full search placeholder", () => {
     const header = css("components/layout/Header.module.css");
     const search = css("components/search/SearchBox.module.css");
-    expect(header).toMatch(/\.search\s*{[\s\S]*?flex:\s*0\s+1\s+24rem/);
+    expect(header).toMatch(/\.row\s*{[\s\S]*?min-height:\s*60px/);
+    expect(header).toMatch(/\.search\s*{[\s\S]*?flex:\s*0\s+1\s+22rem/);
     expect(search).toMatch(/\.root\s*{[\s\S]*?max-width:\s*24rem/);
   });
 

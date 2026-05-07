@@ -27,7 +27,7 @@ vi.mock("@/lib/geo/topology", () => ({
 
 import { Explorer } from "@/components/explorer/Explorer";
 
-type ROCallback = (entries: Array<{ contentRect: { width: number } }>) => void;
+type ROCallback = (entries: Array<{ contentRect: { width: number; height: number } }>) => void;
 
 class MockResizeObserver {
   static instances: MockResizeObserver[] = [];
@@ -39,8 +39,8 @@ class MockResizeObserver {
   observe() {}
   unobserve() {}
   disconnect() {}
-  trigger(width: number) {
-    this.cb([{ contentRect: { width } }]);
+  trigger(width: number, height: number) {
+    this.cb([{ contentRect: { width, height } }]);
   }
 }
 
@@ -62,36 +62,35 @@ async function flush() {
 }
 
 describe("Explorer responsive map", () => {
-  it("passes a narrower width to the map when the container shrinks", async () => {
+  it("passes the full map panel rectangle to the map", async () => {
     const { getByTestId } = render(<Explorer counties={[]} />);
     await flush();
 
     const ro = MockResizeObserver.instances.at(-1);
     expect(ro).toBeDefined();
-    // Simulate a 375px mobile viewport parent.
+    // Simulate the size of the visible map panel.
     await act(async () => {
-      ro?.trigger(375);
+      ro?.trigger(375, 300);
     });
 
     const map = getByTestId("map");
     const width = Number(map.dataset.width);
     const height = Number(map.dataset.height);
-    expect(width).toBeLessThanOrEqual(375);
-    expect(width).toBeGreaterThanOrEqual(280);
-    // Maintain ~1.714 aspect ratio (720:420).
-    expect(Math.abs(width / height - 720 / 420)).toBeLessThan(0.02);
+    expect(width).toBe(375);
+    expect(height).toBe(300);
   });
 
-  it("caps width at 1200 on very wide containers", async () => {
+  it("fills very wide desktop containers instead of capping at a narrow map width", async () => {
     const { getByTestId } = render(<Explorer counties={[]} />);
     await flush();
 
     const ro = MockResizeObserver.instances.at(-1);
     await act(async () => {
-      ro?.trigger(2560);
+      ro?.trigger(2560, 1300);
     });
 
     const map = getByTestId("map");
-    expect(Number(map.dataset.width)).toBeLessThanOrEqual(1200);
+    expect(Number(map.dataset.width)).toBe(2560);
+    expect(Number(map.dataset.height)).toBe(1300);
   });
 });
