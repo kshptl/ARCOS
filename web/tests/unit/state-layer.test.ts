@@ -57,14 +57,14 @@ const MULTI_PART_FC: FeatureCollection<Geometry, { name?: string }> = {
 };
 
 describe("stateLayer", () => {
-  it("builds PolygonLayer props for states with ink stroke", () => {
+  it("builds PolygonLayer props for states with a thick black stroke", () => {
     const props = buildStateLayerProps({ featureCollection: FC });
     expect(props.id).toBe("states");
     expect(props.filled).toBe(false);
     expect(props.stroked).toBe(true);
-    expect(props.getLineColor).toEqual([26, 26, 26, 200]);
-    expect(props.getLineWidth).toBe(2.1);
-    expect(props.lineWidthMinPixels).toBe(1.6);
+    expect(props.getLineColor).toEqual([0, 0, 0, 235]);
+    expect(props.getLineWidth).toBe(3.4);
+    expect(props.lineWidthMinPixels).toBe(2.4);
   });
 
   it("can fill and pick states when metric values and handlers are provided", () => {

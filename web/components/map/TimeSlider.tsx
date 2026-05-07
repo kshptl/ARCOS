@@ -139,7 +139,7 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
         className={styles.track}
       >
         <div className={styles.progress} style={{ width: `${pct}%` }} aria-hidden="true" />
-        <div className={styles.thumb} style={{ left: `calc(${pct}% - 8px)` }} aria-hidden="true" />
+        <div className={styles.thumb} style={{ left: `${pct}%` }} aria-hidden="true" />
       </div>
       <div
         className={styles.ticks}

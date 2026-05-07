@@ -109,7 +109,9 @@ describe("ChoroplethMap", () => {
       />,
     );
     const deck = screen.getByTestId("deck");
-    expect(deck.getAttribute("data-layer-ids")).toBe("states,counties-pills_per_capita");
+    expect(deck.getAttribute("data-layer-ids")).toBe(
+      "states,counties-pills_per_capita,state-outlines",
+    );
   });
 
   it("renders with aria-label describing metric and year", () => {

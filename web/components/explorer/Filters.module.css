@@ -12,24 +12,31 @@
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.72rem;
+  font-size: 0.84rem;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--explorer-ink, #211d12);
 }
 
-.label::after {
-  content: "i";
+.infoButton {
   display: inline-grid;
   place-items: center;
   width: 0.9rem;
   height: 0.9rem;
+  padding: 0;
   border: 1px solid color-mix(in srgb, var(--explorer-olive, #615d54), transparent 45%);
   border-radius: 50%;
+  background: transparent;
   color: var(--explorer-olive, #615d54);
   font-size: 0.58rem;
   font-weight: 700;
   text-transform: none;
+  cursor: help;
+}
+
+.infoButton:focus-visible {
+  outline: 2px solid var(--explorer-rust, #b3462c);
+  outline-offset: 2px;
 }
 
 .options {
@@ -62,14 +69,12 @@
   transform: translateY(-1px);
 }
 
-.option:disabled {
-  opacity: 0.62;
-  cursor: not-allowed;
+.option[aria-disabled="true"] {
+  cursor: help;
 }
 
-.option:disabled:hover {
-  border-color: var(--explorer-border, #ded6c8);
-  transform: none;
+.option[aria-disabled="true"]:hover {
+  border-color: var(--explorer-olive, #615d54);
 }
 
 .option:focus-visible {
@@ -84,11 +89,12 @@
   box-shadow: 0 8px 18px rgba(179, 70, 44, 0.22);
 }
 
-.tooltip {
+.tooltip,
+.metricTooltip {
   position: absolute;
   top: calc(100% + 0.35rem);
   right: 0;
-  z-index: 8;
+  z-index: 40;
   width: min(18rem, 100%);
   margin: 0;
   padding: 0.45rem 0.55rem;
@@ -104,8 +110,16 @@
   transition: opacity var(--duration-fast, 140ms) ease;
 }
 
-.root:has(.option:disabled:hover) .tooltip,
-.root:has(.option:disabled:focus-visible) .tooltip {
+.metricTooltip {
+  top: 1.35rem;
+  right: auto;
+  left: 0;
+}
+
+.root:has(.option[aria-disabled="true"]:hover) .tooltip,
+.root:has(.option[aria-disabled="true"]:focus) .tooltip,
+.root:has(.infoButton:hover) .metricTooltip,
+.root:has(.infoButton:focus) .metricTooltip {
   opacity: 1;
 }
 

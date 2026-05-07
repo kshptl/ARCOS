@@ -65,7 +65,7 @@
   top: var(--overlay-gap);
   left: var(--overlay-gap);
   right: calc(var(--detail-width) + var(--overlay-gap) * 2);
-  z-index: 5;
+  z-index: 8;
   min-width: 0;
   display: grid;
   grid-template-columns: minmax(15rem, 0.75fr) minmax(26rem, 1.55fr) minmax(18rem, 0.8fr);
@@ -460,27 +460,6 @@
   margin: 0;
   color: var(--explorer-olive);
   font-size: 0.8rem;
-}
-
-.saveButton {
-  width: 1.8rem;
-  height: 1.8rem;
-  border: 0;
-  background: transparent;
-  color: var(--explorer-olive);
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.saveButton:hover,
-.saveButton:focus-visible,
-.saveButton[aria-pressed="true"] {
-  color: var(--explorer-rust);
-}
-
-.saveButton:focus-visible {
-  outline: 2px solid rgba(179, 70, 44, 0.35);
-  outline-offset: 2px;
 }
 
 .detailMetric {

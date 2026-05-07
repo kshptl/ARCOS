@@ -122,11 +122,23 @@ describe("visual layout regressions", () => {
 
   it("keeps explorer year ticks horizontal with a centered active pill", () => {
     const src = css("components/map/TimeSlider.module.css");
+    expect(src).toMatch(/--slider-edge:\s*1\.1rem/);
+    expect(src).toMatch(/\.track\s*{[\s\S]*?margin-inline:\s*var\(--slider-edge\)/);
+    expect(src).toMatch(/\.thumb\s*{[\s\S]*?transform:\s*translate\(-50%,\s*-50%\)/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?padding-inline:\s*var\(--slider-edge\)/);
     expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*1\.55rem/);
     expect(src).toMatch(/\.tick\s*{[\s\S]*?text-align:\s*center/);
     expect(src).not.toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
     expect(src).toMatch(/\.tickActive\s*{[\s\S]*?justify-self:\s*center/);
     expect(src).toMatch(/\.tickActive\s*{[\s\S]*?border-radius:\s*999px/);
+  });
+
+  it("keeps explorer tooltips above map overlays and makes the metric label readable", () => {
+    const explorer = css("components/explorer/Explorer.module.css");
+    const filters = css("components/explorer/Filters.module.css");
+    expect(explorer).toMatch(/\.controlBar\s*{[\s\S]*?z-index:\s*8/);
+    expect(filters).toMatch(/\.label\s*{[\s\S]*?font-size:\s*0\.84rem/);
+    expect(filters).toMatch(/\.tooltip,\s*[\r\n]\.metricTooltip\s*{[\s\S]*?z-index:\s*40/);
   });
 
   it("keeps the explorer detail panel scrollable to its last action", () => {

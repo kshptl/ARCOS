@@ -4,6 +4,7 @@ import { deathsColorScale, pillsColorScale } from "../colorScales";
 import type { MapMetric, PolygonLayerProps } from "./countyLayer";
 
 export interface BuildStateLayerPropsArgs {
+  id?: string;
   featureCollection: FeatureCollection<Geometry, { name?: string }>;
   valueByStateFips?: Map<string, number>;
   metric?: MapMetric;
@@ -50,7 +51,7 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
   const colorFn = scaleFor(metric);
 
   return {
-    id: hasValues ? `states-${metric}` : "states",
+    id: args.id ?? (hasValues ? `states-${metric}` : "states"),
     data: stateFeaturesForLayer(args.featureCollection),
     pickable,
     stroked: true,
@@ -62,9 +63,9 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
       const id = String(f.id ?? "").padStart(2, "0");
       return colorFn(args.valueByStateFips?.get(id) ?? null, domain);
     },
-    getLineColor: [26, 26, 26, 200],
-    getLineWidth: 2.1,
-    lineWidthMinPixels: 1.6,
+    getLineColor: [0, 0, 0, 235],
+    getLineWidth: 3.4,
+    lineWidthMinPixels: 2.4,
     onHover: args.onHover,
     onClick: args.onClick,
     updateTriggers: {

@@ -73,6 +73,16 @@ describe("TimeSlider", () => {
     expect(ticks).toHaveStyle("--year-count: 9");
   });
 
+  it("centers the thumb on the same percent used by the active year label", () => {
+    const { container } = render(
+      <TimeSlider years={[2006, 2007, 2008, 2009, 2010]} value={2010} onChange={() => {}} />,
+    );
+    const thumb = Array.from(container.querySelectorAll('[aria-hidden="true"]')).find((node) =>
+      node.getAttribute("style")?.includes("left:"),
+    );
+    expect(thumb).toHaveStyle("left: 100%");
+  });
+
   it("lets people pull the thumb with a pointer", () => {
     const onChange = vi.fn();
     render(<TimeSlider years={[2006, 2007, 2008, 2009, 2010]} value={2006} onChange={onChange} />);

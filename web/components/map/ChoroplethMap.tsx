@@ -161,6 +161,16 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       );
     }
 
+    if (states && useCountyLayer) {
+      const outlineProps = buildStateLayerProps({
+        id: "state-outlines",
+        featureCollection: states,
+      });
+      layersOut.push(
+        new PolygonLayer(outlineProps as unknown as ConstructorParameters<typeof PolygonLayer>[0]),
+      );
+    }
+
     if (process.env.NODE_ENV === "development" && typeof performance !== "undefined") {
       const dt = performance.now() - t0;
       // Gate on a reasonable threshold so we do not spam the console on

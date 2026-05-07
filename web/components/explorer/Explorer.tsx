@@ -255,7 +255,6 @@ export function Explorer({ counties }: ExplorerProps) {
   const [focusedStateFips, setFocusedStateFips] = useState<string | null>(null);
   const [countyQuery, setCountyQuery] = useState("");
   const [topologyError, setTopologyError] = useState<string | null>(null);
-  const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
   const [mapViewState, setMapViewState] = useState<MapViewState>(DEFAULT_MAP_VIEW_STATE);
   const [mapHover, setMapHover] = useState<MapHoverState | null>(null);
   const webgl = useWebGLSupport();
@@ -475,11 +474,6 @@ export function Explorer({ counties }: ExplorerProps) {
   const selectedName = selectedCounty?.meta
     ? `${selectedCounty.meta.name}, ${selectedCounty.meta.state}`
     : "No county selected";
-  const selectedCountyFips = selectedCounty?.meta?.fips ?? null;
-  const isSelectedCountySaved = selectedCountyFips
-    ? savedCountyFips.has(selectedCountyFips)
-    : false;
-
   const legendColors = useMemo(() => {
     const scale = urlState.metric === "deaths_per_100k" ? deathsColorScale : pillsColorScale;
     return [0.96, 0.78, 0.6, 0.42, 0.24, 0.08].map((stop) =>
@@ -697,16 +691,6 @@ export function Explorer({ counties }: ExplorerProps) {
     [stateValueByFips],
   );
 
-  const handleToggleSavedCounty = useCallback(() => {
-    if (!selectedCountyFips) return;
-    setSavedCountyFips((prev) => {
-      const next = new Set(prev);
-      if (next.has(selectedCountyFips)) next.delete(selectedCountyFips);
-      else next.add(selectedCountyFips);
-      return next;
-    });
-  }, [selectedCountyFips]);
-
   return (
     <section className={styles.root} aria-label="Explorer">
       <h1 className={styles.srOnly}>Explorer</h1>
@@ -861,17 +845,6 @@ export function Explorer({ counties }: ExplorerProps) {
                 <h2>{selectedCounty.meta.name}</h2>
                 <p>{selectedCounty.meta.state}</p>
               </div>
-              <button
-                type="button"
-                className={styles.saveButton}
-                aria-label={`${isSelectedCountySaved ? "Saved" : "Save"} ${
-                  selectedCounty.meta.name
-                }`}
-                aria-pressed={isSelectedCountySaved}
-                onClick={handleToggleSavedCounty}
-              >
-                {isSelectedCountySaved ? "★" : "☆"}
-              </button>
             </div>
 
             <div className={styles.detailMetric}>

@@ -1,4 +1,5 @@
 .wrap {
+  --slider-edge: 1.1rem;
   display: grid;
   gap: var(--space-2xs);
   font-family: var(--font-body);
@@ -21,6 +22,7 @@
 .track {
   position: relative;
   height: 14px;
+  margin-inline: var(--slider-edge);
   background: color-mix(in srgb, var(--explorer-olive, var(--canvas-shade)), transparent 72%);
   border: 0;
   border-radius: 999px;
@@ -49,7 +51,7 @@
   top: 50%;
   width: 16px;
   height: 16px;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   background: var(--explorer-rust, var(--ink));
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -62,6 +64,7 @@
   gap: 0.06rem;
   min-height: 1.55rem;
   padding-top: 0.15rem;
+  padding-inline: var(--slider-edge);
   font-size: 0.64rem;
   color: var(--explorer-olive, var(--text-muted));
   font-variant-numeric: tabular-nums;

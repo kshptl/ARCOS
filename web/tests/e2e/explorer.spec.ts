@@ -42,22 +42,24 @@ test.describe("/explorer", () => {
     await openExplorer(page);
     await expect(page.locator('fieldset[aria-label="Filters"] select')).toHaveCount(0);
     await expect(page.getByRole("button", { name: "Pills shipped" })).toHaveCount(0);
-    await expect(page.getByRole("button", { name: "MME per capita" })).toBeDisabled();
+    await expect(page.getByRole("button", { name: "MME per capita" })).toHaveAttribute(
+      "aria-disabled",
+      "true",
+    );
     await page.getByRole("button", { name: "Overdose deaths per 100k" }).click();
     await expect(page).toHaveURL(/metric=deaths_per_100k/);
   });
 
-  test("save button shows clear feedback after click without a share control", async ({ page }) => {
+  test("detail panel has no favorite star or share control", async ({ page }) => {
     await openExplorer(page);
 
     await expect(page.getByRole("button", { name: /^Share$/ })).toHaveCount(0);
-
-    const saveButton = page
-      .locator('aside[aria-label="Selected county details"] button[aria-label^="Save"]')
-      .first();
-    await saveButton.click();
-    await expect(saveButton).toHaveAttribute("aria-pressed", "true");
-    await expect(saveButton).toHaveAccessibleName(/Saved/);
+    await expect(
+      page.locator('aside[aria-label="Selected county details"] button[aria-label^="Save"]'),
+    ).toHaveCount(0);
+    await expect(
+      page.locator('aside[aria-label="Selected county details"] button[aria-label^="Saved"]'),
+    ).toHaveCount(0);
   });
 
   test("mobile explorer fits the viewport without sideways scrolling", async ({ page }) => {
