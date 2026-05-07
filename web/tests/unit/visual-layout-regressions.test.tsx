@@ -72,6 +72,14 @@ describe("visual layout regressions", () => {
     );
   });
 
+  it("spaces explorer year ticks as fixed grid cells", () => {
+    const src = css("components/map/TimeSlider.module.css");
+    expect(src).toMatch(
+      /\.ticks\s*{[\s\S]*?grid-template-columns:\s*repeat\(var\(--year-count\),\s*minmax\(2rem,\s*1fr\)\)/,
+    );
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?text-align:\s*center/);
+  });
+
   it("reserves enough desktop header width for the full search placeholder", () => {
     const header = css("components/layout/Header.module.css");
     const search = css("components/search/SearchBox.module.css");

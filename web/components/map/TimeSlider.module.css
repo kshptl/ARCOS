@@ -57,20 +57,23 @@
 }
 
 .ticks {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(var(--year-count), minmax(2rem, 1fr));
+  gap: 0.2rem;
   font-size: 0.72rem;
   color: var(--explorer-olive, var(--text-muted));
   font-variant-numeric: tabular-nums;
 }
 
 .tick {
+  min-width: 2rem;
   padding: 0;
+  text-align: center;
 }
 
 .tickActive {
-  min-width: 2.35rem;
-  padding: 0.16rem 0.4rem;
+  min-width: 2.2rem;
+  padding: 0.16rem 0.28rem;
   border-radius: 999px;
   background: var(--explorer-rust, var(--ink));
   color: #ffffff;

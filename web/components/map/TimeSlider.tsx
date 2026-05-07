@@ -1,6 +1,13 @@
 "use client";
 
-import { type KeyboardEvent, type PointerEvent, useCallback, useId, useRef } from "react";
+import {
+  type CSSProperties,
+  type KeyboardEvent,
+  type PointerEvent,
+  useCallback,
+  useId,
+  useRef,
+} from "react";
 import styles from "./TimeSlider.module.css";
 
 export interface TimeSliderProps {
@@ -134,7 +141,11 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
         <div className={styles.progress} style={{ width: `${pct}%` }} aria-hidden="true" />
         <div className={styles.thumb} style={{ left: `calc(${pct}% - 10px)` }} aria-hidden="true" />
       </div>
-      <div className={styles.ticks} aria-hidden="true">
+      <div
+        className={styles.ticks}
+        style={{ "--year-count": sortedYears.length } as CSSProperties}
+        aria-hidden="true"
+      >
         {sortedYears.map((y) => (
           <span key={y} className={`${styles.tick} ${y === value ? styles.tickActive : ""}`}>
             {y}

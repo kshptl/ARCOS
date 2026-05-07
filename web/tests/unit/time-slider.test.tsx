@@ -61,6 +61,18 @@ describe("TimeSlider", () => {
     expect(screen.getByText("2008")).toBeInTheDocument();
   });
 
+  it("sets the tick count so year labels can be spaced evenly", () => {
+    render(
+      <TimeSlider
+        years={[2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]}
+        value={2012}
+        onChange={() => {}}
+      />,
+    );
+    const ticks = screen.getByText("2006").parentElement;
+    expect(ticks).toHaveStyle("--year-count: 9");
+  });
+
   it("lets people pull the thumb with a pointer", () => {
     const onChange = vi.fn();
     render(<TimeSlider years={[2006, 2007, 2008, 2009, 2010]} value={2006} onChange={onChange} />);

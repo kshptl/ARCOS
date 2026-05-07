@@ -1,6 +1,6 @@
 "use client";
 
-import type { FeatureCollection, Geometry } from "geojson";
+import type { Feature, FeatureCollection, Geometry } from "geojson";
 import dynamic from "next/dynamic";
 import type { CSSProperties } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -26,6 +26,13 @@ const BROWSE_BATCH_SIZE = 120;
 const DEFAULT_URL_STATE = {
   year: 2012,
   metric: "pills_per_capita" as const,
+};
+const DEFAULT_MAP_VIEW_STATE = {
+  longitude: -98,
+  latitude: 39,
+  zoom: 3.2,
+  pitch: 0,
+  bearing: 0,
 };
 
 const METRIC_DETAILS: Record<
@@ -86,6 +93,56 @@ type CountyWithValue = {
   value: number;
 };
 
+type MapViewState = typeof DEFAULT_MAP_VIEW_STATE;
+type ValuesByMetricYear = Map<MapMetric, Map<number, Map<string, number>>>;
+
+function addCoordinatesToBounds(value: unknown, bounds: number[]) {
+  if (!Array.isArray(value)) return;
+  if (typeof value[0] === "number" && typeof value[1] === "number") {
+    const lon = value[0];
+    const lat = value[1];
+    bounds[0] = Math.min(bounds[0] ?? lon, lon);
+    bounds[1] = Math.min(bounds[1] ?? lat, lat);
+    bounds[2] = Math.max(bounds[2] ?? lon, lon);
+    bounds[3] = Math.max(bounds[3] ?? lat, lat);
+    return;
+  }
+  for (const child of value) addCoordinatesToBounds(child, bounds);
+}
+
+function addGeometryToBounds(geometry: Geometry | null, bounds: number[]) {
+  if (!geometry) return;
+  if (geometry.type === "GeometryCollection") {
+    for (const child of geometry.geometries) addGeometryToBounds(child, bounds);
+    return;
+  }
+  addCoordinatesToBounds(geometry.coordinates, bounds);
+}
+
+function viewStateForCounty(feature: Feature<Geometry>): MapViewState | null {
+  const bounds: number[] = [];
+  addGeometryToBounds(feature.geometry, bounds);
+  const [minLon, minLat, maxLon, maxLat] = bounds;
+  if (
+    minLon === undefined ||
+    minLat === undefined ||
+    maxLon === undefined ||
+    maxLat === undefined
+  ) {
+    return null;
+  }
+  const lonSpan = Math.max(maxLon - minLon, 0.05);
+  const latSpan = Math.max(maxLat - minLat, 0.05);
+  const span = Math.max(lonSpan, latSpan);
+  return {
+    longitude: (minLon + maxLon) / 2,
+    latitude: (minLat + maxLat) / 2,
+    zoom: Math.min(8.4, Math.max(DEFAULT_MAP_VIEW_STATE.zoom + 1, Math.log2(360 / span) - 1)),
+    pitch: 0,
+    bearing: 0,
+  };
+}
+
 function formatMetricValue(value: number, metric: MapMetric): string {
   const details = METRIC_DETAILS[metric];
   if (details.compact && Math.abs(value) >= 1_000_000) {
@@ -138,17 +195,17 @@ export function Explorer({ counties }: ExplorerProps) {
     counties: FeatureCollection<Geometry, { name?: string }> | null;
     states: FeatureCollection<Geometry, { name?: string }> | null;
   }>({ counties: null, states: null });
-  const [valuesByYear, setValuesByYear] = useState<Map<number, Map<string, number>>>(new Map());
+  const [valuesByMetricYear, setValuesByMetricYear] = useState<ValuesByMetricYear>(new Map());
   const [selectedFips, setSelectedFips] = useState<string | null>(null);
   const [countyQuery, setCountyQuery] = useState("");
   const [topologyError, setTopologyError] = useState<string | null>(null);
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
   const [browseLimit, setBrowseLimit] = useState(BROWSE_BATCH_SIZE);
+  const [mapViewState, setMapViewState] = useState<MapViewState>(DEFAULT_MAP_VIEW_STATE);
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
-  const previousMetric = useRef<MapMetric>(urlState.metric);
   const shareResetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [mapWidth, setMapWidth] = useState<number>(720);
 
@@ -198,15 +255,10 @@ export function Explorer({ counties }: ExplorerProps) {
     };
   }, []);
 
-  useEffect(() => {
-    if (previousMetric.current === urlState.metric) return;
-    previousMetric.current = urlState.metric;
-    setValuesByYear(new Map());
-  }, [urlState.metric]);
-
+  const currentValuesByYear = valuesByMetricYear.get(urlState.metric);
   const currentValues = useMemo(
-    () => valuesByYear.get(urlState.year) ?? EMPTY_VALUES,
-    [valuesByYear, urlState.year],
+    () => currentValuesByYear?.get(urlState.year) ?? EMPTY_VALUES,
+    [currentValuesByYear, urlState.year],
   );
 
   const domain = useMemo(() => {
@@ -277,11 +329,12 @@ export function Explorer({ counties }: ExplorerProps) {
 
   const selectedTrend = useMemo(() => {
     if (!selectedFipsResolved) return [];
+    const metricValuesByYear = valuesByMetricYear.get(urlState.metric);
     return AVAILABLE_YEARS.map((year) => ({
       year,
-      value: valuesByYear.get(year)?.get(selectedFipsResolved) ?? 0,
+      value: metricValuesByYear?.get(year)?.get(selectedFipsResolved) ?? 0,
     }));
-  }, [selectedFipsResolved, valuesByYear]);
+  }, [selectedFipsResolved, valuesByMetricYear, urlState.metric]);
 
   const selectedTrendPoints = useMemo(() => buildSparklinePoints(selectedTrend), [selectedTrend]);
 
@@ -334,25 +387,51 @@ export function Explorer({ counties }: ExplorerProps) {
     [setURLState, urlState],
   );
 
-  const handleData = useCallback((year: number, values: Map<string, number>) => {
-    setValuesByYear((prev) => {
-      if (prev.get(year) === values) return prev;
-      const next = new Map(prev);
-      next.set(year, values);
-      return next;
-    });
-  }, []);
+  const handleData = useCallback(
+    (year: number, values: Map<string, number>) => {
+      setValuesByMetricYear((prev) => {
+        const metricValues = prev.get(urlState.metric);
+        if (metricValues?.get(year) === values) return prev;
+        const next = new Map(prev);
+        const nextMetricValues = new Map(metricValues);
+        nextMetricValues.set(year, values);
+        next.set(urlState.metric, nextMetricValues);
+        return next;
+      });
+    },
+    [urlState.metric],
+  );
 
   const handleDataError = useCallback((err: Error) => {
     setTopologyError(err.message);
   }, []);
 
-  const handleCountyClick = useCallback(
-    (fips: string | null) => {
+  const focusMapOnCounty = useCallback((feature: Feature<Geometry> | null) => {
+    if (!feature) return;
+    const nextView = viewStateForCounty(feature);
+    if (nextView) setMapViewState(nextView);
+  }, []);
+
+  const findCountyFeature = useCallback(
+    (fips: string) =>
+      topology.counties?.features.find((feature) => String(feature.id ?? "") === fips) ?? null,
+    [topology.counties],
+  );
+
+  const selectCounty = useCallback(
+    (fips: string | null, feature?: Feature<Geometry> | null) => {
       if (!fips || !countyByFips.has(fips)) return;
       setSelectedFips(fips);
+      focusMapOnCounty(feature ?? findCountyFeature(fips));
     },
-    [countyByFips],
+    [countyByFips, findCountyFeature, focusMapOnCounty],
+  );
+
+  const handleCountyClick = useCallback(
+    (fips: string | null, feature: Feature<Geometry> | null) => {
+      selectCounty(fips, feature);
+    },
+    [selectCounty],
   );
 
   const finishShare = useCallback((status: "copied" | "failed") => {
@@ -431,7 +510,7 @@ export function Explorer({ counties }: ExplorerProps) {
                   <button
                     type="button"
                     aria-current={isSelected ? "true" : undefined}
-                    onClick={() => setSelectedFips(county.fips)}
+                    onClick={() => selectCounty(county.fips)}
                   >
                     <span>
                       {county.name}, {county.state}
@@ -560,6 +639,7 @@ export function Explorer({ counties }: ExplorerProps) {
                 width={mapWidth}
                 height={mapHeight}
                 year={urlState.year}
+                initialViewState={mapViewState}
                 onCountyClick={handleCountyClick}
               />
             ) : (

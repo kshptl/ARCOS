@@ -110,6 +110,13 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
     <figure aria-label={label} className={styles.root} style={{ width, height }}>
       <DeckGL
         initialViewState={initialViewState}
+        key={[
+          initialViewState.longitude,
+          initialViewState.latitude,
+          initialViewState.zoom,
+          initialViewState.pitch ?? 0,
+          initialViewState.bearing ?? 0,
+        ].join(":")}
         controller={true}
         layers={layers}
         width={width}
