@@ -5,10 +5,10 @@ async function openExplorer(page: Page) {
   await page.getByRole("heading", { name: /US counties/i }).waitFor();
   const shell = page.locator('section[aria-labelledby="explorer-heading"]');
   await expect
-    .poll(() => shell.evaluate((el) => getComputedStyle(el).display), {
+    .poll(() => shell.evaluate((el) => getComputedStyle(el).getPropertyValue("--explorer-bg")), {
       message: "explorer CSS has loaded",
     })
-    .toBe("grid");
+    .toBe("#faf7f1");
 }
 
 test.describe("/explorer", () => {
@@ -43,6 +43,50 @@ test.describe("/explorer", () => {
     await expect(page.locator('fieldset[aria-label="Filters"] select')).toHaveCount(0);
     await page.getByRole("button", { name: "Overdose deaths" }).click();
     await expect(page).toHaveURL(/metric=deaths/);
+  });
+
+  test("share and save buttons show clear feedback after clicks", async ({ page }) => {
+    await page.addInitScript(() => {
+      Object.defineProperty(navigator, "clipboard", {
+        configurable: true,
+        value: {
+          writeText: async () => undefined,
+        },
+      });
+    });
+    await openExplorer(page);
+
+    const shareButton = page.locator("main header button").first();
+    await expect(shareButton).toContainText("Share");
+    await shareButton.click();
+    await expect(shareButton).toContainText("Copied");
+
+    const saveButton = page
+      .locator('aside[aria-label="Selected county details"] button[aria-label^="Save"]')
+      .first();
+    await saveButton.click();
+    await expect(saveButton).toHaveAttribute("aria-pressed", "true");
+    await expect(saveButton).toHaveAccessibleName(/Saved/);
+  });
+
+  test("mobile explorer fits the viewport without sideways scrolling", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await openExplorer(page);
+
+    const overflow = await page.evaluate(
+      () => Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,
+    );
+    expect(overflow).toBeLessThanOrEqual(1);
+  });
+
+  test("desktop control rail does not show a sideways scrollbar", async ({ page }) => {
+    await page.setViewportSize({ width: 1680, height: 945 });
+    await openExplorer(page);
+
+    const railOverflowX = await page
+      .locator('aside[aria-label="Explorer controls"]')
+      .evaluate((el) => getComputedStyle(el).overflowX);
+    expect(railOverflowX).toBe("hidden");
   });
 
   test("clicking a county in the browse list selects it without leaving explorer", async ({

@@ -15,7 +15,6 @@
     radial-gradient(circle at 72% 18%, rgba(244, 237, 217, 0.7), transparent 26rem),
     var(--explorer-bg);
   color: var(--explorer-ink);
-  container-type: inline-size;
 }
 
 .rail,
@@ -24,7 +23,8 @@
   top: 76px;
   align-self: start;
   max-height: calc(100dvh - 76px);
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: color-mix(in srgb, #ffffff, var(--explorer-bg) 54%);
 }
 
@@ -430,7 +430,7 @@
   color: var(--explorer-olive);
 }
 
-.detailHeader button {
+.saveButton {
   width: 2.2rem;
   height: 2.2rem;
   border: 0;
@@ -438,6 +438,17 @@
   color: var(--explorer-olive);
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+.saveButton:hover,
+.saveButton:focus-visible,
+.saveButton[aria-pressed="true"] {
+  color: var(--explorer-rust);
+}
+
+.saveButton:focus-visible {
+  outline: 2px solid rgba(179, 70, 44, 0.35);
+  outline-offset: 2px;
 }
 
 .detailMetric {
@@ -533,7 +544,7 @@
   color: var(--explorer-olive);
 }
 
-@container (max-width: 1120px) {
+@media (max-width: 1120px) {
   .root {
     grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
   }
@@ -547,9 +558,10 @@
   }
 }
 
-@container (max-width: 760px) {
+@media (max-width: 760px) {
   .root {
     display: block;
+    overflow-x: hidden;
   }
 
   .rail,
@@ -560,6 +572,17 @@
     border-left: 0;
   }
 
+  .rail {
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .browseList {
+    min-height: 12rem;
+    max-height: 16rem;
+  }
+
   .main {
     padding: 1rem;
   }
@@ -568,6 +591,11 @@
   .stats {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .shareButton {
+    width: min(100%, 10rem);
+    justify-self: start;
   }
 
   .stat {
@@ -587,5 +615,20 @@
 
   .mapShell {
     min-height: 0;
+    padding: 0.75rem;
+  }
+
+  .mapCanvas {
+    min-height: 16rem;
+    overflow: hidden;
+  }
+
+  .detailPanel {
+    padding: 1rem;
+  }
+
+  .detailGrid,
+  .rankGrid {
+    grid-template-columns: 1fr;
   }
 }

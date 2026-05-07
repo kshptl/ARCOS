@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -7,10 +7,11 @@ import { MethodologyFooter } from "@/components/layout/MethodologyFooter";
 describe("<Header>", () => {
   it("renders brand + nav", () => {
     render(<Header />);
+    const primaryNav = screen.getByRole("navigation", { name: "Primary" });
     expect(screen.getByText(/openarcos/i)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /explorer/i })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /rankings/i })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /methodology/i })).toBeInTheDocument();
+    expect(within(primaryNav).getByRole("link", { name: /explorer/i })).toBeInTheDocument();
+    expect(within(primaryNav).getByRole("link", { name: /rankings/i })).toBeInTheDocument();
+    expect(within(primaryNav).getByRole("link", { name: /methodology/i })).toBeInTheDocument();
   });
 
   it("renders the search slot when provided", () => {

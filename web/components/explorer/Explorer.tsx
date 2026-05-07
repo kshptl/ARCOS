@@ -141,11 +141,20 @@ export function Explorer({ counties }: ExplorerProps) {
   const [selectedFips, setSelectedFips] = useState<string | null>(null);
   const [countyQuery, setCountyQuery] = useState("");
   const [topologyError, setTopologyError] = useState<string | null>(null);
+  const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
   const previousMetric = useRef<MapMetric>(urlState.metric);
+  const shareResetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [mapWidth, setMapWidth] = useState<number>(720);
+
+  useEffect(() => {
+    return () => {
+      if (shareResetTimer.current) clearTimeout(shareResetTimer.current);
+    };
+  }, []);
 
   useEffect(() => {
     const el = mapAreaRef.current;
@@ -287,6 +296,12 @@ export function Explorer({ counties }: ExplorerProps) {
   const selectedName = selectedCounty?.meta
     ? `${selectedCounty.meta.name}, ${selectedCounty.meta.state}`
     : "No county selected";
+  const selectedCountyFips = selectedCounty?.meta?.fips ?? null;
+  const isSelectedCountySaved = selectedCountyFips
+    ? savedCountyFips.has(selectedCountyFips)
+    : false;
+  const shareLabel =
+    shareStatus === "copied" ? "Copied" : shareStatus === "failed" ? "Copy failed" : "Share";
 
   const legendColors = useMemo(() => {
     const scale = urlState.metric === "deaths" ? deathsColorScale : pillsColorScale;
@@ -330,6 +345,36 @@ export function Explorer({ counties }: ExplorerProps) {
     },
     [countyByFips],
   );
+
+  const finishShare = useCallback((status: "copied" | "failed") => {
+    setShareStatus(status);
+    if (shareResetTimer.current) clearTimeout(shareResetTimer.current);
+    shareResetTimer.current = setTimeout(() => {
+      setShareStatus("idle");
+      shareResetTimer.current = null;
+    }, 1800);
+  }, []);
+
+  const handleShare = useCallback(() => {
+    if (!navigator.clipboard?.writeText) {
+      finishShare("failed");
+      return;
+    }
+    void navigator.clipboard
+      .writeText(window.location.href)
+      .then(() => finishShare("copied"))
+      .catch(() => finishShare("failed"));
+  }, [finishShare]);
+
+  const handleToggleSavedCounty = useCallback(() => {
+    if (!selectedCountyFips) return;
+    setSavedCountyFips((prev) => {
+      const next = new Set(prev);
+      if (next.has(selectedCountyFips)) next.delete(selectedCountyFips);
+      else next.add(selectedCountyFips);
+      return next;
+    });
+  }, [selectedCountyFips]);
 
   return (
     <section className={styles.root} aria-labelledby="explorer-heading">
@@ -400,10 +445,11 @@ export function Explorer({ counties }: ExplorerProps) {
           <button
             type="button"
             className={styles.shareButton}
-            onClick={() => void navigator.clipboard?.writeText(window.location.href)}
+            onClick={handleShare}
+            aria-live="polite"
           >
-            <span aria-hidden="true">↥</span>
-            Share
+            <span aria-hidden="true">{shareStatus === "copied" ? "✓" : "↥"}</span>
+            {shareLabel}
           </button>
         </header>
 
@@ -510,8 +556,16 @@ export function Explorer({ counties }: ExplorerProps) {
                 <h2>{selectedCounty.meta.name}</h2>
                 <p>{selectedCounty.meta.state}</p>
               </div>
-              <button type="button" aria-label={`Save ${selectedCounty.meta.name}`}>
-                ☆
+              <button
+                type="button"
+                className={styles.saveButton}
+                aria-label={`${isSelectedCountySaved ? "Saved" : "Save"} ${
+                  selectedCounty.meta.name
+                }`}
+                aria-pressed={isSelectedCountySaved}
+                onClick={handleToggleSavedCounty}
+              >
+                {isSelectedCountySaved ? "★" : "☆"}
               </button>
             </div>
 
