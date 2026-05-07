@@ -89,6 +89,22 @@ test.describe("/explorer", () => {
     expect(railOverflowX).toBe("hidden");
   });
 
+  test("county browser renders in small batches but search still covers all counties", async ({
+    page,
+  }) => {
+    await openExplorer(page);
+
+    const browseButtons = page.locator('aside[aria-label="Browse counties"] ul button');
+    const initialCount = await browseButtons.count();
+    expect(initialCount).toBeLessThanOrEqual(120);
+
+    await page.getByRole("button", { name: /Show more counties/i }).click();
+    expect(await browseButtons.count()).toBeGreaterThan(initialCount);
+
+    await page.getByLabel("Search counties").fill("Los Angeles County");
+    await expect(page.getByRole("button", { name: /Los Angeles County, CA/i })).toBeVisible();
+  });
+
   test("clicking a county in the browse list selects it without leaving explorer", async ({
     page,
   }) => {

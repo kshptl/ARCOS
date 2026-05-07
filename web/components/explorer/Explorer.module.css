@@ -337,7 +337,7 @@
 .browse {
   min-height: 0;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   gap: 0.5rem;
 }
 
@@ -401,6 +401,34 @@
 .browseList button[aria-current="true"] {
   border-left-color: var(--explorer-rust);
   font-weight: 800;
+}
+
+.browseMoreButton {
+  width: 100%;
+  min-height: 2.55rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--explorer-border);
+  border-radius: 8px;
+  background: color-mix(in srgb, #ffffff, var(--explorer-bg) 34%);
+  color: var(--explorer-ink);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.browseMoreButton span {
+  color: var(--explorer-olive);
+  font-weight: 700;
+}
+
+.browseMoreButton:hover,
+.browseMoreButton:focus-visible {
+  border-color: var(--explorer-rust);
 }
 
 .detailPanel {

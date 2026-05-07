@@ -22,6 +22,7 @@ const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
 const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
+const BROWSE_BATCH_SIZE = 120;
 const DEFAULT_URL_STATE = {
   year: 2012,
   metric: "pills_per_capita" as const,
@@ -143,6 +144,7 @@ export function Explorer({ counties }: ExplorerProps) {
   const [topologyError, setTopologyError] = useState<string | null>(null);
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
+  const [browseLimit, setBrowseLimit] = useState(BROWSE_BATCH_SIZE);
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
@@ -292,6 +294,13 @@ export function Explorer({ counties }: ExplorerProps) {
     });
   }, [countyQuery, sortedCounties]);
 
+  const visibleCounties = useMemo(
+    () => filteredCounties.slice(0, browseLimit),
+    [browseLimit, filteredCounties],
+  );
+
+  const canShowMoreCounties = visibleCounties.length < filteredCounties.length;
+
   const metricDetails = METRIC_DETAILS[urlState.metric];
   const selectedName = selectedCounty?.meta
     ? `${selectedCounty.meta.name}, ${selectedCounty.meta.state}`
@@ -376,6 +385,10 @@ export function Explorer({ counties }: ExplorerProps) {
     });
   }, [selectedCountyFips]);
 
+  const handleShowMoreCounties = useCallback(() => {
+    setBrowseLimit((prev) => Math.min(prev + BROWSE_BATCH_SIZE, filteredCounties.length));
+  }, [filteredCounties.length]);
+
   return (
     <section className={styles.root} aria-labelledby="explorer-heading">
       <aside className={styles.rail} aria-label="Explorer controls">
@@ -398,7 +411,10 @@ export function Explorer({ counties }: ExplorerProps) {
               type="search"
               value={countyQuery}
               placeholder="Type a county or state..."
-              onChange={(event) => setCountyQuery(event.target.value)}
+              onChange={(event) => {
+                setCountyQuery(event.target.value);
+                setBrowseLimit(BROWSE_BATCH_SIZE);
+              }}
             />
           </div>
         </div>
@@ -408,7 +424,7 @@ export function Explorer({ counties }: ExplorerProps) {
             Browse counties <span>({filteredCounties.length.toLocaleString("en-US")})</span>
           </h2>
           <ul className={styles.browseList}>
-            {filteredCounties.map((county) => {
+            {visibleCounties.map((county) => {
               const isSelected = county.fips === selectedFipsResolved;
               return (
                 <li key={county.fips}>
@@ -426,6 +442,19 @@ export function Explorer({ counties }: ExplorerProps) {
               );
             })}
           </ul>
+          {canShowMoreCounties ? (
+            <button
+              type="button"
+              className={styles.browseMoreButton}
+              onClick={handleShowMoreCounties}
+            >
+              Show more counties{" "}
+              <span>
+                {visibleCounties.length.toLocaleString("en-US")} /{" "}
+                {filteredCounties.length.toLocaleString("en-US")}
+              </span>
+            </button>
+          ) : null}
         </aside>
 
         <a className={styles.downloadButton} href="/data/county-shipments-by-year.parquet" download>
