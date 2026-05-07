@@ -91,6 +91,35 @@ test.describe("/explorer", () => {
     expect(Math.abs(statsBox.x - controlsBox.x)).toBeLessThanOrEqual(2);
   });
 
+  test("desktop explorer locks inside one viewport without a map footer", async ({ page }) => {
+    await page.setViewportSize({ width: 1680, height: 945 });
+    await openExplorer(page);
+
+    await expect(page.locator('section[aria-label="County map panel"] footer')).toHaveCount(0);
+    await expect(page.locator("body > footer")).toBeHidden();
+
+    const pageOverflow = await page.evaluate(
+      () =>
+        Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) - innerHeight,
+    );
+    expect(pageOverflow).toBeLessThanOrEqual(1);
+
+    const rootBox = await page.getByRole("region", { name: "Explorer", exact: true }).boundingBox();
+    const mapBox = await page.locator('section[aria-label="County map panel"]').boundingBox();
+    const detailBox = await page
+      .locator('aside[aria-label="Selected county details"]')
+      .boundingBox();
+    expect(rootBox).not.toBeNull();
+    expect(mapBox).not.toBeNull();
+    expect(detailBox).not.toBeNull();
+    if (!rootBox || !mapBox || !detailBox) return;
+
+    expect(rootBox.y + rootBox.height).toBeLessThanOrEqual(945);
+    expect(mapBox.y + mapBox.height).toBeLessThanOrEqual(945);
+    expect(detailBox.y).toBeLessThanOrEqual(rootBox.y + 1);
+    expect(detailBox.y + detailBox.height).toBeLessThanOrEqual(945);
+  });
+
   test("explorer uses county autocomplete instead of a full browse list", async ({ page }) => {
     await openExplorer(page);
 

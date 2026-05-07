@@ -81,8 +81,25 @@ describe("visual layout regressions", () => {
     expect(src).toMatch(/\.main\s*{[\s\S]*?gap:\s*0\.85rem/);
     expect(src).toMatch(/\.main\s*{[\s\S]*?padding:\s*clamp\(0\.9rem,\s*1\.3vw,\s*1\.35rem\)/);
     expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.75rem\s+0\.9rem/);
-    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*30rem/);
+    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
     expect(src).toMatch(/\.mapShell\s*{[\s\S]*?padding:\s*0\.75rem/);
+  });
+
+  it("locks the desktop explorer into one viewport without the map footer", () => {
+    const styles = css("components/explorer/Explorer.module.css");
+    const globals = css("styles/globals.css");
+    const component = css("components/explorer/Explorer.tsx");
+
+    expect(styles).toMatch(/\.root\s*{[\s\S]*?height:\s*calc\(100dvh\s*-\s*77px\)/);
+    expect(styles).toMatch(/\.root\s*{[\s\S]*?overflow:\s*hidden/);
+    expect(styles).toMatch(
+      /\.main\s*{[\s\S]*?grid-template-rows:\s*auto\s+auto\s+minmax\(0,\s*1fr\)/,
+    );
+    expect(styles).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
+    expect(styles).toMatch(/\.mapCanvas\s*{[\s\S]*?min-height:\s*0/);
+    expect(styles).not.toMatch(/\.mapStatus\s*{/);
+    expect(component).not.toMatch(/<footer className=\{styles\.mapStatus\}/);
+    expect(globals).toMatch(/body:has\(>\s*main\s+section\[aria-label="Explorer"\]\)\s*>\s*footer/);
   });
 
   it("angles explorer year ticks so labels do not crowd the sidebar", () => {

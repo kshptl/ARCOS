@@ -10,7 +10,9 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
   width: 100%;
-  min-height: calc(100dvh - 76px);
+  height: calc(100dvh - 77px);
+  min-height: 0;
+  overflow: hidden;
   background:
     radial-gradient(circle at 72% 18%, rgba(244, 237, 217, 0.7), transparent 26rem),
     var(--explorer-bg);
@@ -30,11 +32,9 @@
 }
 
 .detailPanel {
-  position: sticky;
-  top: 76px;
-  align-self: start;
+  align-self: stretch;
   min-height: 0;
-  max-height: calc(100dvh - 76px);
+  max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   background: color-mix(in srgb, #ffffff, var(--explorer-bg) 54%);
@@ -43,8 +43,11 @@
 .main {
   min-width: 0;
   display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
   gap: 0.85rem;
   align-content: start;
+  height: 100%;
+  overflow: hidden;
   padding: clamp(0.9rem, 1.3vw, 1.35rem);
 }
 
@@ -176,8 +179,10 @@
 .mapShell {
   position: relative;
   display: grid;
+  grid-template-rows: minmax(0, 1fr);
   gap: 0.55rem;
-  min-height: 30rem;
+  min-height: 0;
+  height: 100%;
   padding: 0.75rem;
   border: 1px solid var(--explorer-border);
   border-radius: 8px;
@@ -188,9 +193,11 @@
 
 .mapCanvas {
   min-width: 0;
-  min-height: 24.5rem;
+  min-height: 0;
+  height: 100%;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
 .legend {
@@ -259,33 +266,10 @@
   font-size: 0.68rem;
 }
 
-.mapStatus {
-  min-height: 2.35rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.7rem;
-  border: 1px solid var(--explorer-border);
-  border-radius: 8px;
-  color: var(--explorer-olive);
-  font-size: 0.76rem;
-}
-
-.mapStatus span {
-  width: 1rem;
-  height: 1rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--explorer-olive);
-  border-radius: 50%;
-  color: var(--explorer-ink);
-  font-size: 0.65rem;
-  font-weight: 800;
-}
-
 .loading {
   width: 100%;
-  min-height: 28rem;
+  height: 100%;
+  min-height: 0;
   display: grid;
   place-items: center;
   color: var(--explorer-olive);
@@ -573,26 +557,17 @@
 }
 
 @media (max-width: 1120px) {
-  .root {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .controlBar {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .detailPanel {
-    position: static;
-    max-height: none;
-    grid-column: 1 / -1;
-    border-top: 1px solid var(--explorer-border);
-    border-left: 0;
   }
 }
 
 @media (max-width: 760px) {
   .root {
     display: block;
+    height: auto;
+    min-height: calc(100dvh - 77px);
+    overflow: visible;
     overflow-x: hidden;
   }
 
@@ -609,6 +584,8 @@
   }
 
   .main {
+    height: auto;
+    overflow: visible;
     padding: 1rem;
   }
 

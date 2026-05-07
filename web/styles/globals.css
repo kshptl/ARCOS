@@ -96,6 +96,16 @@ hr {
   border: 0;
 }
 
+@media (min-width: 761px) {
+  body:has(> main section[aria-label="Explorer"]) {
+    overflow: hidden;
+  }
+
+  body:has(> main section[aria-label="Explorer"]) > footer {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0ms !important;

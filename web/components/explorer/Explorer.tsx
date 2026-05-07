@@ -28,6 +28,10 @@ const AVAILABLE_YEARS = [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014];
 const MAP_ASPECT_RATIO = 720 / 420; // ≈1.714
 const MAP_MAX_WIDTH = 1200;
 const MAP_MIN_WIDTH = 280;
+const DEFAULT_MAP_SIZE = {
+  width: 720,
+  height: Math.round(720 / MAP_ASPECT_RATIO),
+};
 const AUTOCOMPLETE_LIMIT = 12;
 const COUNTY_DETAIL_ZOOM = 5.15;
 const DEFAULT_URL_STATE = {
@@ -239,31 +243,38 @@ export function Explorer({ counties }: ExplorerProps) {
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
-  const [mapWidth, setMapWidth] = useState<number>(720);
+  const [mapSize, setMapSize] = useState(DEFAULT_MAP_SIZE);
 
   useEffect(() => {
     const el = mapAreaRef.current;
     if (!el) return;
-    let lastApplied = -1;
-    const update = (rawWidth: number) => {
-      const clamped = Math.max(MAP_MIN_WIDTH, Math.min(MAP_MAX_WIDTH, rawWidth));
-      if (clamped === lastApplied) return;
-      lastApplied = clamped;
-      setMapWidth(clamped);
+    let lastApplied = "";
+    const update = (rawWidth: number, rawHeight: number) => {
+      const availableWidth = rawWidth || DEFAULT_MAP_SIZE.width;
+      const availableHeight = rawHeight || availableWidth / MAP_ASPECT_RATIO;
+      const widthFromHeight = availableHeight * MAP_ASPECT_RATIO;
+      const width = Math.round(
+        Math.max(MAP_MIN_WIDTH, Math.min(MAP_MAX_WIDTH, availableWidth, widthFromHeight)),
+      );
+      const height = Math.round(width / MAP_ASPECT_RATIO);
+      const nextKey = `${width}:${height}`;
+      if (nextKey === lastApplied) return;
+      lastApplied = nextKey;
+      setMapSize({ width, height });
     };
-    update(el.clientWidth || el.getBoundingClientRect().width || 720);
+    const rect = el.getBoundingClientRect();
+    update(el.clientWidth || rect.width, el.clientHeight || rect.height);
     if (typeof ResizeObserver === "undefined") return;
     const ro = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const w = entry.contentRect.width;
-        if (w > 0) update(w);
+        const h = entry.contentRect.height;
+        if (w > 0) update(w, h);
       }
     });
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
-
-  const mapHeight = useMemo(() => Math.round(mapWidth / MAP_ASPECT_RATIO), [mapWidth]);
 
   useEffect(() => {
     let cancelled = false;
@@ -339,8 +350,6 @@ export function Explorer({ counties }: ExplorerProps) {
 
   const showCountyLayer = focusedStateFips !== null || mapViewState.zoom >= COUNTY_DETAIL_ZOOM;
   const activeDomain = showCountyLayer ? domain : stateDomain;
-  const activeValueCount = showCountyLayer ? currentValues.size : stateValueByFips.size;
-  const activeGeographyLabel = showCountyLayer ? "counties" : "states";
 
   const sortedCounties = useMemo(() => {
     return [...counties].sort((a, b) =>
@@ -756,8 +765,8 @@ export function Explorer({ counties }: ExplorerProps) {
                 metric={urlState.metric}
                 domain={activeDomain}
                 stateDomain={stateDomain}
-                width={mapWidth}
-                height={mapHeight}
+                width={mapSize.width}
+                height={mapSize.height}
                 year={urlState.year}
                 initialViewState={mapViewState}
                 viewState={mapViewState}
@@ -785,12 +794,6 @@ export function Explorer({ counties }: ExplorerProps) {
             x={mapHover?.x ?? 0}
             y={mapHover?.y ?? 0}
           />
-
-          <footer className={styles.mapStatus}>
-            <span aria-hidden="true">i</span>
-            Showing {metricDetails.shortLabel.toLowerCase()} in {urlState.year} for{" "}
-            {activeValueCount.toLocaleString("en-US")} {activeGeographyLabel}.
-          </footer>
         </section>
       </main>
 
