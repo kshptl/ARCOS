@@ -97,4 +97,19 @@ describe("ScrollyStage", () => {
 
     expect(screen.getByRole("region")).toHaveAttribute("data-step-layout", "stacked");
   });
+
+  it("marks the active narrative beat for stacked stages", () => {
+    render(
+      <ScrollyStage canvas={<div />} ariaLabel="act" stepLayout="stacked">
+        <Step id="a1">
+          <p>first</p>
+        </Step>
+        <Step id="a2">
+          <p>second</p>
+        </Step>
+      </ScrollyStage>,
+    );
+
+    expect(screen.getByRole("region")).toHaveAttribute("data-active-step");
+  });
 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useEffect, useRef } from "react";
+import { Children, type ReactNode, useEffect, useRef } from "react";
 import { ScrollyProgressContext } from "./progressContext";
 import styles from "./ScrollyStage.module.css";
 import { useReducedMotion } from "./useReducedMotion";
@@ -23,6 +23,11 @@ export function ScrollyStage({
   const stepsRef = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const effective = reduced ? 1 : progress;
+  const stepCount = Children.count(children);
+  const activeStep =
+    stepLayout === "stacked" && stepCount > 0
+      ? Math.min(stepCount - 1, Math.floor(effective * stepCount))
+      : undefined;
 
   useEffect(() => {
     if (stepLayout !== "stacked") return;
@@ -59,6 +64,7 @@ export function ScrollyStage({
       className={styles.stage}
       data-reduced={reduced ? "true" : "false"}
       data-step-layout={stepLayout}
+      data-active-step={activeStep}
     >
       <ScrollyProgressContext.Provider value={effective}>
         {/*

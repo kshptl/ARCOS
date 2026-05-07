@@ -56,5 +56,16 @@ test.describe("homepage scrolly", () => {
         );
       })
       .toBe(true);
+
+    await expect
+      .poll(async () => {
+        return page.locator('section[data-step-layout="stacked"]').evaluate((section) => {
+          const activeIndex = Number(section.getAttribute("data-active-step"));
+          const activeCard = section.querySelectorAll('article[data-step^="act3"]')[activeIndex];
+          if (!activeCard) return "";
+          return getComputedStyle(activeCard).borderTopColor;
+        });
+      })
+      .toBe("rgb(194, 59, 32)");
   });
 });

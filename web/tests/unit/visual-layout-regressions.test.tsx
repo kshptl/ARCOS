@@ -91,6 +91,13 @@ describe("visual layout regressions", () => {
     );
   });
 
+  it("highlights the active parked scrolly text card", () => {
+    const src = css("components/scrolly/ScrollyStage.module.css");
+    expect(src).toMatch(/\[data-active-step="0"\][\s\S]*?article:nth-child\(1\)/);
+    expect(src).toMatch(/\[data-active-step="1"\][\s\S]*?article:nth-child\(2\)/);
+    expect(src).toMatch(/border-color:\s*var\(--accent-hot\)/);
+  });
+
   it("uses the stacked text-card layout for Act 3 on the homepage", () => {
     const src = css("app/page.tsx");
     const act3Stage = src.match(
