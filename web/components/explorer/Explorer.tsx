@@ -233,21 +233,13 @@ export function Explorer({ counties }: ExplorerProps) {
   const [focusedStateFips, setFocusedStateFips] = useState<string | null>(null);
   const [countyQuery, setCountyQuery] = useState("");
   const [topologyError, setTopologyError] = useState<string | null>(null);
-  const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [savedCountyFips, setSavedCountyFips] = useState<Set<string>>(() => new Set());
   const [mapViewState, setMapViewState] = useState<MapViewState>(DEFAULT_MAP_VIEW_STATE);
   const [mapHover, setMapHover] = useState<MapHoverState | null>(null);
   const webgl = useWebGLSupport();
 
   const mapAreaRef = useRef<HTMLDivElement | null>(null);
-  const shareResetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [mapWidth, setMapWidth] = useState<number>(720);
-
-  useEffect(() => {
-    return () => {
-      if (shareResetTimer.current) clearTimeout(shareResetTimer.current);
-    };
-  }, []);
 
   useEffect(() => {
     const el = mapAreaRef.current;
@@ -443,8 +435,6 @@ export function Explorer({ counties }: ExplorerProps) {
   const isSelectedCountySaved = selectedCountyFips
     ? savedCountyFips.has(selectedCountyFips)
     : false;
-  const shareLabel =
-    shareStatus === "copied" ? "Copied" : shareStatus === "failed" ? "Copy failed" : "Share";
 
   const legendColors = useMemo(() => {
     const scale = urlState.metric === "deaths" ? deathsColorScale : pillsColorScale;
@@ -633,26 +623,6 @@ export function Explorer({ counties }: ExplorerProps) {
     [stateValueByFips],
   );
 
-  const finishShare = useCallback((status: "copied" | "failed") => {
-    setShareStatus(status);
-    if (shareResetTimer.current) clearTimeout(shareResetTimer.current);
-    shareResetTimer.current = setTimeout(() => {
-      setShareStatus("idle");
-      shareResetTimer.current = null;
-    }, 1800);
-  }, []);
-
-  const handleShare = useCallback(() => {
-    if (!navigator.clipboard?.writeText) {
-      finishShare("failed");
-      return;
-    }
-    void navigator.clipboard
-      .writeText(window.location.href)
-      .then(() => finishShare("copied"))
-      .catch(() => finishShare("failed"));
-  }, [finishShare]);
-
   const handleToggleSavedCounty = useCallback(() => {
     if (!selectedCountyFips) return;
     setSavedCountyFips((prev) => {
@@ -666,56 +636,48 @@ export function Explorer({ counties }: ExplorerProps) {
   return (
     <section className={styles.root} aria-label="Explorer">
       <h1 className={styles.srOnly}>Explorer</h1>
-      <aside className={styles.rail} aria-label="Explorer controls">
-        <div className={styles.railSection}>
-          <Filters metric={urlState.metric} onChange={handleFilterChange} />
-        </div>
-
-        <div className={styles.railSection}>
-          <TimeSlider years={AVAILABLE_YEARS} value={urlState.year} onChange={handleYearChange} />
-        </div>
-
-        <div className={styles.railSection}>
-          <label className={styles.searchLabel} htmlFor="explorer-county-search">
-            Search counties
-          </label>
-          <div className={styles.countySearch}>
-            <span aria-hidden="true">⌕</span>
-            <input
-              id="explorer-county-search"
-              type="search"
-              list="explorer-county-options"
-              aria-autocomplete="list"
-              value={countyQuery}
-              placeholder="Type a county or state..."
-              onChange={handleCountySearchChange}
-            />
-            <datalist id="explorer-county-options">
-              {autocompleteCounties.map((county) => (
-                <option key={county.fips} value={countySearchLabel(county)} />
-              ))}
-            </datalist>
-          </div>
-        </div>
-
-        <a className={styles.downloadButton} href="/data/county-shipments-by-year.parquet" download>
-          <span aria-hidden="true">↓</span>
-          Download data
-        </a>
-      </aside>
-
       <main className={styles.main}>
-        <header className={styles.header}>
-          <button
-            type="button"
-            className={styles.shareButton}
-            onClick={handleShare}
-            aria-live="polite"
+        <section className={styles.controlBar} aria-label="Explorer controls">
+          <div className={styles.controlGroup}>
+            <Filters metric={urlState.metric} onChange={handleFilterChange} />
+          </div>
+
+          <div className={styles.controlGroup}>
+            <TimeSlider years={AVAILABLE_YEARS} value={urlState.year} onChange={handleYearChange} />
+          </div>
+
+          <div className={styles.controlGroup}>
+            <label className={styles.searchLabel} htmlFor="explorer-county-search">
+              Search counties
+            </label>
+            <div className={styles.countySearch}>
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="explorer-county-search"
+                type="search"
+                list="explorer-county-options"
+                aria-autocomplete="list"
+                value={countyQuery}
+                placeholder="Type a county or state..."
+                onChange={handleCountySearchChange}
+              />
+              <datalist id="explorer-county-options">
+                {autocompleteCounties.map((county) => (
+                  <option key={county.fips} value={countySearchLabel(county)} />
+                ))}
+              </datalist>
+            </div>
+          </div>
+
+          <a
+            className={styles.downloadButton}
+            href="/data/county-shipments-by-year.parquet"
+            download
           >
-            <span aria-hidden="true">{shareStatus === "copied" ? "✓" : "↥"}</span>
-            {shareLabel}
-          </button>
-        </header>
+            <span aria-hidden="true">↓</span>
+            Download data
+          </a>
+        </section>
 
         <section className={styles.stats} aria-label="Explorer summary">
           <article className={styles.stat}>

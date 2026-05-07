@@ -67,15 +67,17 @@ describe("visual layout regressions", () => {
     expect(src).toMatch(/--explorer-cream:\s*#f4edd9/);
     expect(src).toMatch(/--explorer-sage:\s*#acb3aa/);
     expect(src).toMatch(/--explorer-rust:\s*#b3462c/);
-    expect(src).toMatch(
-      /grid-template-columns:\s*minmax\(220px,\s*280px\)\s+minmax\(0,\s*1fr\)\s+minmax\(240px,\s*300px\)/,
-    );
+    expect(src).toMatch(/grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(240px,\s*300px\)/);
+    expect(src).not.toMatch(/grid-template-columns:[^;]*minmax\(220px,\s*280px\)/);
   });
 
-  it("keeps the explorer controls compact enough for desktop visual QA", () => {
+  it("uses a horizontal explorer control bar above the map instead of a left rail", () => {
     const src = css("components/explorer/Explorer.module.css");
-    expect(src).toMatch(/\.rail\s*{[\s\S]*?gap:\s*1rem/);
-    expect(src).toMatch(/\.rail\s*{[\s\S]*?padding:\s*1rem/);
+    expect(src).not.toMatch(/\.rail\s*{/);
+    expect(src).toMatch(
+      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(16rem,\s*0\.9fr\)\s+minmax\(18rem,\s*1\.15fr\)\s+minmax\(14rem,\s*0\.85fr\)\s+auto/,
+    );
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?padding:\s*0\.75rem/);
     expect(src).toMatch(/\.main\s*{[\s\S]*?gap:\s*0\.85rem/);
     expect(src).toMatch(/\.main\s*{[\s\S]*?padding:\s*clamp\(0\.9rem,\s*1\.3vw,\s*1\.35rem\)/);
     expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.75rem\s+0\.9rem/);

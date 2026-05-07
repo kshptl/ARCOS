@@ -45,21 +45,10 @@ test.describe("/explorer", () => {
     await expect(page).toHaveURL(/metric=deaths/);
   });
 
-  test("share and save buttons show clear feedback after clicks", async ({ page }) => {
-    await page.addInitScript(() => {
-      Object.defineProperty(navigator, "clipboard", {
-        configurable: true,
-        value: {
-          writeText: async () => undefined,
-        },
-      });
-    });
+  test("save button shows clear feedback after click without a share control", async ({ page }) => {
     await openExplorer(page);
 
-    const shareButton = page.locator("main header button").first();
-    await expect(shareButton).toContainText("Share");
-    await shareButton.click();
-    await expect(shareButton).toContainText("Copied");
+    await expect(page.getByRole("button", { name: /^Share$/ })).toHaveCount(0);
 
     const saveButton = page
       .locator('aside[aria-label="Selected county details"] button[aria-label^="Save"]')
@@ -79,14 +68,27 @@ test.describe("/explorer", () => {
     expect(overflow).toBeLessThanOrEqual(1);
   });
 
-  test("desktop control rail does not show a sideways scrollbar", async ({ page }) => {
+  test("desktop controls are horizontal and stats span the old rail space", async ({ page }) => {
     await page.setViewportSize({ width: 1680, height: 945 });
     await openExplorer(page);
 
-    const railOverflowX = await page
-      .locator('aside[aria-label="Explorer controls"]')
-      .evaluate((el) => getComputedStyle(el).overflowX);
-    expect(railOverflowX).toBe("hidden");
+    await expect(page.locator('aside[aria-label="Explorer controls"]')).toHaveCount(0);
+    const controls = page.locator('section[aria-label="Explorer controls"]');
+    await expect(controls).toBeVisible();
+
+    const controlsBox = await controls.boundingBox();
+    const statsBox = await page.locator('section[aria-label="Explorer summary"]').boundingBox();
+    const mapBox = await page.locator('section[aria-label="County map panel"]').boundingBox();
+
+    expect(controlsBox).not.toBeNull();
+    expect(statsBox).not.toBeNull();
+    expect(mapBox).not.toBeNull();
+    if (!controlsBox || !statsBox || !mapBox) return;
+
+    expect(controlsBox.width).toBeGreaterThan(900);
+    expect(statsBox.x).toBeLessThan(40);
+    expect(mapBox.x).toBeLessThan(40);
+    expect(Math.abs(statsBox.x - controlsBox.x)).toBeLessThanOrEqual(2);
   });
 
   test("explorer uses county autocomplete instead of a full browse list", async ({ page }) => {

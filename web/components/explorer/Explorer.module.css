@@ -8,7 +8,7 @@
   --explorer-border: #ded6c8;
   --explorer-shadow: 0 14px 34px rgba(97, 93, 84, 0.12);
   display: grid;
-  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr) minmax(240px, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
   width: 100%;
   min-height: calc(100dvh - 76px);
   background:
@@ -29,7 +29,6 @@
   border: 0;
 }
 
-.rail,
 .detailPanel {
   position: sticky;
   top: 76px;
@@ -41,20 +40,6 @@
   background: color-mix(in srgb, #ffffff, var(--explorer-bg) 54%);
 }
 
-.rail {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  align-content: start;
-  gap: 1rem;
-  padding: 1rem;
-  border-right: 1px solid var(--explorer-border);
-}
-
-.railSection {
-  display: grid;
-  gap: 0.55rem;
-}
-
 .main {
   min-width: 0;
   display: grid;
@@ -63,27 +48,25 @@
   padding: clamp(0.9rem, 1.3vw, 1.35rem);
 }
 
-.header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: 1rem;
+.controlBar {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(18rem, 1.15fr) minmax(14rem, 0.85fr) auto;
+  align-items: end;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--explorer-border);
+  border-radius: 8px;
+  background: color-mix(in srgb, #ffffff, var(--explorer-bg) 30%);
+  box-shadow: 0 1px 1px rgba(33, 29, 18, 0.04);
 }
 
-.header h1 {
-  margin: 0 0 0.45rem;
-  font-size: clamp(2rem, 3vw, 3rem);
-  letter-spacing: 0;
+.controlGroup {
+  min-width: 0;
+  display: grid;
+  gap: 0.45rem;
 }
 
-.lede {
-  margin: 0;
-  max-width: 68ch;
-  color: color-mix(in srgb, var(--explorer-olive), var(--explorer-ink) 22%);
-  font-size: 0.98rem;
-}
-
-.shareButton,
 .downloadButton,
 .profileLink {
   min-height: 2.55rem;
@@ -104,7 +87,6 @@
   cursor: pointer;
 }
 
-.shareButton:hover,
 .downloadButton:hover,
 .profileLink:hover {
   border-color: var(--explorer-olive);
@@ -579,7 +561,8 @@
 }
 
 .downloadButton {
-  width: 100%;
+  width: auto;
+  white-space: nowrap;
 }
 
 .emptyDetail {
@@ -591,7 +574,11 @@
 
 @media (max-width: 1120px) {
   .root {
-    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .controlBar {
+    grid-template-columns: 1fr 1fr;
   }
 
   .detailPanel {
@@ -609,18 +596,11 @@
     overflow-x: hidden;
   }
 
-  .rail,
   .detailPanel {
     position: static;
     max-height: none;
     border-right: 0;
     border-left: 0;
-  }
-
-  .rail {
-    grid-template-rows: auto auto auto auto auto;
-    gap: 1rem;
-    padding: 1rem;
   }
 
   .browseList {
@@ -632,15 +612,14 @@
     padding: 1rem;
   }
 
-  .header,
+  .controlBar,
   .stats {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .shareButton {
-    width: min(100%, 10rem);
-    justify-self: start;
+  .downloadButton {
+    width: 100%;
   }
 
   .stat {
