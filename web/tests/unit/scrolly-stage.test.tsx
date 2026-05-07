@@ -83,7 +83,7 @@ describe("ScrollyStage", () => {
     expect(screen.queryByText(/show data/i)).toBeNull();
   });
 
-  it("can mark a stage so its step cards stack instead of pinning", () => {
+  it("can mark a stage so its step cards pin into a stack", () => {
     render(
       <ScrollyStage canvas={<div />} ariaLabel="act" stepLayout="stacked">
         <Step id="a1">

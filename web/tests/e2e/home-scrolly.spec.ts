@@ -32,14 +32,29 @@ test.describe("homepage scrolly", () => {
     await expect(fallbackTables).toHaveCount(3);
   });
 
-  test("Act 3 copy cards stack instead of pinning on top of each other", async ({ page }) => {
+  test("Act 3 copy cards pin into a readable stack", async ({ page }) => {
     await page.goto("/");
+    await page.locator('article[data-step="act3-retreat"]').scrollIntoViewIfNeeded();
 
-    const positions = await page
-      .locator('article[data-step^="act3"]')
-      .evaluateAll((articles) => articles.map((article) => getComputedStyle(article).position));
+    await expect
+      .poll(async () => {
+        const cards = await page.locator('article[data-step^="act3"]').evaluateAll((articles) =>
+          articles.map((article) => {
+            const rect = article.getBoundingClientRect();
+            return {
+              position: getComputedStyle(article).position,
+              top: rect.top,
+              bottom: rect.bottom,
+            };
+          }),
+        );
 
-    expect(positions).toHaveLength(4);
-    expect(positions.every((position) => position === "static")).toBe(true);
+        return (
+          cards.length === 4 &&
+          cards.every((card) => card.position === "sticky") &&
+          cards.every((card, index) => index === 0 || card.top >= cards[index - 1]!.bottom - 1)
+        );
+      })
+      .toBe(true);
   });
 });

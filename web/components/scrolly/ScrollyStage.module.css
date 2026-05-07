@@ -34,10 +34,6 @@
   padding-bottom: 40vh;
 }
 
-.stage[data-step-layout="stacked"] .steps {
-  gap: var(--space-md);
-}
-
 @media (prefers-reduced-motion: reduce) {
   .sticky {
     position: relative;
@@ -70,13 +66,20 @@
 }
 
 @media (min-width: 721px) {
-  .stage[data-step-layout="stacked"] .steps {
-    padding-bottom: 80vh;
+  .stage[data-step-layout="stacked"] .steps > article {
+    top: var(--stacked-step-top, 10vh);
+    padding: var(--space-sm);
+    font-size: var(--type-body-sm);
+    line-height: 1.35;
   }
 
-  .stage[data-step-layout="stacked"] .steps > article {
-    position: static;
-    top: auto;
+  .stage[data-step-layout="stacked"] .steps > article :is(h2, h3) {
+    font-size: var(--type-h3);
+    margin-bottom: var(--space-2xs);
+  }
+
+  .stage[data-step-layout="stacked"] .steps > article p {
+    margin-bottom: var(--space-xs);
   }
 }
 

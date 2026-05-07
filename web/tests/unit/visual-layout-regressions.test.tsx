@@ -81,12 +81,14 @@ describe("visual layout regressions", () => {
     expect(src).not.toMatch(/\.step\s*{[\s\S]*?background:\s*color-mix\([^;]*transparent/);
   });
 
-  it("lets selected scrolly stages stack text cards instead of pinning each card", () => {
+  it("lets selected scrolly stages pin text cards into a measured stack", () => {
     const src = css("components/scrolly/ScrollyStage.module.css");
     expect(src).toMatch(
+      /\.stage\[data-step-layout="stacked"\]\s+\.steps\s*>\s*article\s*{[\s\S]*?top:\s*var\(--stacked-step-top,\s*10vh\)/,
+    );
+    expect(src).not.toMatch(
       /\.stage\[data-step-layout="stacked"\]\s+\.steps\s*>\s*article\s*{[\s\S]*?position:\s*static/,
     );
-    expect(src).toMatch(/\.stage\[data-step-layout="stacked"\]\s+\.steps\s*{[\s\S]*?gap:/);
   });
 
   it("uses the stacked text-card layout for Act 3 on the homepage", () => {

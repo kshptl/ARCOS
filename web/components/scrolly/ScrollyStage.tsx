@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { type ReactNode, useEffect, useRef } from "react";
 import { ScrollyProgressContext } from "./progressContext";
 import styles from "./ScrollyStage.module.css";
 import { useReducedMotion } from "./useReducedMotion";
@@ -20,8 +20,37 @@ export function ScrollyStage({
   stepLayout = "sticky",
 }: ScrollyStageProps) {
   const { progress, ref } = useScrollProgress();
+  const stepsRef = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const effective = reduced ? 1 : progress;
+
+  useEffect(() => {
+    if (stepLayout !== "stacked") return;
+    const steps = stepsRef.current;
+    if (!steps) return;
+
+    const getArticles = () => Array.from(steps.querySelectorAll<HTMLElement>("article"));
+    const setOffsets = () => {
+      let top = Math.round(window.innerHeight * 0.1);
+      for (const article of getArticles()) {
+        article.style.setProperty("--stacked-step-top", `${top}px`);
+        top += article.getBoundingClientRect().height + 8;
+      }
+    };
+
+    const ResizeObserverCtor = globalThis.ResizeObserver;
+    const resizeObserver = ResizeObserverCtor ? new ResizeObserverCtor(setOffsets) : null;
+    resizeObserver?.observe(steps);
+    for (const article of getArticles()) resizeObserver?.observe(article);
+    window.addEventListener("resize", setOffsets);
+    setOffsets();
+
+    return () => {
+      window.removeEventListener("resize", setOffsets);
+      resizeObserver?.disconnect();
+      for (const article of getArticles()) article.style.removeProperty("--stacked-step-top");
+    };
+  }, [stepLayout]);
 
   return (
     <section
@@ -48,7 +77,9 @@ export function ScrollyStage({
             {canvas}
           </div>
         </div>
-        <div className={styles.steps}>{children}</div>
+        <div ref={stepsRef} className={styles.steps}>
+          {children}
+        </div>
       </ScrollyProgressContext.Provider>
     </section>
   );
