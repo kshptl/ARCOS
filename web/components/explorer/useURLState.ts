@@ -8,7 +8,7 @@ export interface URLState {
   metric: MapMetric;
 }
 
-const VALID_METRICS: MapMetric[] = ["pills", "pills_per_capita", "deaths"];
+const VALID_METRICS: MapMetric[] = ["pills_per_capita", "deaths_per_100k"];
 
 export function parseQuery(search: string, defaults: URLState): URLState {
   const params = new URLSearchParams(search);
@@ -16,9 +16,10 @@ export function parseQuery(search: string, defaults: URLState): URLState {
   const metricStr = params.get("metric");
   const yearNum = yearStr != null ? Number(yearStr) : NaN;
   const year = Number.isFinite(yearNum) ? yearNum : defaults.year;
+  const upgradedMetric = metricStr === "deaths" ? "deaths_per_100k" : metricStr;
   const metric =
-    metricStr && VALID_METRICS.includes(metricStr as MapMetric)
-      ? (metricStr as MapMetric)
+    upgradedMetric && VALID_METRICS.includes(upgradedMetric as MapMetric)
+      ? (upgradedMetric as MapMetric)
       : defaults.metric;
   return { year, metric };
 }

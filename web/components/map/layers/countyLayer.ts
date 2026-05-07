@@ -2,7 +2,7 @@ import type { Feature, FeatureCollection, Geometry } from "geojson";
 import type { RGBA, ScaleDomain } from "../colorScales";
 import { deathsColorScale, pillsColorScale } from "../colorScales";
 
-export type MapMetric = "pills" | "pills_per_capita" | "deaths";
+export type MapMetric = "pills_per_capita" | "deaths_per_100k";
 
 // Stable, module-level polygon accessor. Geometry never changes once loaded,
 // so this function must keep a fixed identity across renders — otherwise
@@ -49,7 +49,7 @@ export interface PolygonLayerProps {
 }
 
 function scaleFor(metric: MapMetric): (v: number | null | undefined, d: ScaleDomain) => RGBA {
-  return metric === "deaths" ? deathsColorScale : pillsColorScale;
+  return metric === "deaths_per_100k" ? deathsColorScale : pillsColorScale;
 }
 
 export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonLayerProps {

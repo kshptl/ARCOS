@@ -85,8 +85,9 @@ describe("visual layout regressions", () => {
       /\.controlBar\s*{[\s\S]*?right:\s*calc\(var\(--detail-width\)\s*\+\s*var\(--overlay-gap\)\s*\*\s*2\)/,
     );
     expect(src).toMatch(
-      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(14rem,\s*0\.9fr\)\s+minmax\(15rem,\s*1\.15fr\)\s+minmax\(12rem,\s*0\.85fr\)\s+auto/,
+      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(15rem,\s*0\.75fr\)\s+minmax\(26rem,\s*1\.55fr\)\s+minmax\(18rem,\s*0\.8fr\)/,
     );
+    expect(src).not.toMatch(/\.downloadButton\s*{/);
     expect(src).toMatch(/\.stats\s*{[\s\S]*?position:\s*absolute/);
     expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.58rem\s+0\.72rem/);
     expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
@@ -108,6 +109,7 @@ describe("visual layout regressions", () => {
     expect(styles).toMatch(/\.mapCanvas\s*{[\s\S]*?position:\s*absolute/);
     expect(styles).not.toMatch(/\.mapStatus\s*{/);
     expect(component).not.toMatch(/<footer className=\{styles\.mapStatus\}/);
+    expect(component).not.toMatch(/Download data/);
     expect(globals).toMatch(/body:has\(>\s*main\s+section\[aria-label="Explorer"\]\)\s*>\s*footer/);
   });
 
@@ -118,11 +120,13 @@ describe("visual layout regressions", () => {
     );
   });
 
-  it("angles explorer year ticks so labels do not crowd the sidebar", () => {
+  it("keeps explorer year ticks horizontal with a centered active pill", () => {
     const src = css("components/map/TimeSlider.module.css");
-    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*2\.15rem/);
-    expect(src).toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
-    expect(src).toMatch(/\.tick\s*{[\s\S]*?transform-origin:\s*top\s+center/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*1\.55rem/);
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?text-align:\s*center/);
+    expect(src).not.toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
+    expect(src).toMatch(/\.tickActive\s*{[\s\S]*?justify-self:\s*center/);
+    expect(src).toMatch(/\.tickActive\s*{[\s\S]*?border-radius:\s*999px/);
   });
 
   it("keeps the explorer detail panel scrollable to its last action", () => {

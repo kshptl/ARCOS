@@ -19,7 +19,7 @@ const PILLS_STOPS: NonEmptyStops = [
   [0.45, [172, 179, 170]],
   [0.68, [198, 122, 78]],
   [0.86, [179, 70, 44]],
-  [1.0, [97, 93, 84]],
+  [1.0, [93, 24, 28]],
 ];
 
 const DEATHS_STOPS: NonEmptyStops = [
@@ -27,7 +27,7 @@ const DEATHS_STOPS: NonEmptyStops = [
   [0.25, [172, 179, 170]],
   [0.52, [198, 122, 78]],
   [0.75, [179, 70, 44]],
-  [1.0, [97, 93, 84]],
+  [1.0, [93, 24, 28]],
 ];
 
 function lerp(a: number, b: number, t: number): number {

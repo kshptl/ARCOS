@@ -83,7 +83,7 @@ describe("ChoroplethMap", () => {
         states={STATES}
         valueByFips={new Map([["54059", 100]])}
         stateValueByFips={new Map([["54", 100]])}
-        metric="pills"
+        metric="pills_per_capita"
         domain={{ domainMin: 0, domainMax: 100 }}
         width={320}
         height={200}
@@ -91,7 +91,7 @@ describe("ChoroplethMap", () => {
       />,
     );
     const deck = screen.getByTestId("deck");
-    expect(deck.getAttribute("data-layer-ids")).toBe("states-pills");
+    expect(deck.getAttribute("data-layer-ids")).toBe("states-pills_per_capita");
   });
 
   it("renders county detail over state outlines when county detail is requested", () => {
@@ -101,7 +101,7 @@ describe("ChoroplethMap", () => {
         states={STATES}
         valueByFips={new Map([["54059", 100]])}
         stateValueByFips={new Map([["54", 100]])}
-        metric="pills"
+        metric="pills_per_capita"
         domain={{ domainMin: 0, domainMax: 100 }}
         width={320}
         height={200}
@@ -109,7 +109,7 @@ describe("ChoroplethMap", () => {
       />,
     );
     const deck = screen.getByTestId("deck");
-    expect(deck.getAttribute("data-layer-ids")).toBe("states,counties-pills");
+    expect(deck.getAttribute("data-layer-ids")).toBe("states,counties-pills_per_capita");
   });
 
   it("renders with aria-label describing metric and year", () => {
@@ -118,17 +118,17 @@ describe("ChoroplethMap", () => {
         counties={COUNTIES}
         states={STATES}
         valueByFips={new Map()}
-        metric="pills"
+        metric="pills_per_capita"
         domain={{ domainMin: 0, domainMax: 100 }}
         width={320}
         height={200}
         year={2012}
-        ariaLabel="County map of pills shipped, 2012"
+        ariaLabel="County map of pills per capita, 2012"
       />,
     );
     expect(screen.getByRole("figure")).toHaveAttribute(
       "aria-label",
-      "County map of pills shipped, 2012",
+      "County map of pills per capita, 2012",
     );
   });
 });

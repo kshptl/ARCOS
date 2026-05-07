@@ -1,4 +1,5 @@
 .root {
+  position: relative;
   display: grid;
   gap: 0.5rem;
   min-width: 0;
@@ -61,6 +62,16 @@
   transform: translateY(-1px);
 }
 
+.option:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.option:disabled:hover {
+  border-color: var(--explorer-border, #ded6c8);
+  transform: none;
+}
+
 .option:focus-visible {
   outline: 2px solid var(--explorer-rust, #b3462c);
   outline-offset: 2px;
@@ -71,6 +82,31 @@
   background: var(--explorer-rust, #b3462c);
   border-color: var(--explorer-rust, #b3462c);
   box-shadow: 0 8px 18px rgba(179, 70, 44, 0.22);
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 8;
+  width: min(18rem, 100%);
+  margin: 0;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--explorer-border, #ded6c8);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--explorer-ink, #211d12);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  box-shadow: 0 10px 24px rgba(97, 93, 84, 0.14);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-fast, 140ms) ease;
+}
+
+.root:has(.option:disabled:hover) .tooltip,
+.root:has(.option:disabled:focus-visible) .tooltip {
+  opacity: 1;
 }
 
 @media (max-width: 760px) {

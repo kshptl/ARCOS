@@ -41,8 +41,10 @@ test.describe("/explorer", () => {
   test("metric button change updates URL query", async ({ page }) => {
     await openExplorer(page);
     await expect(page.locator('fieldset[aria-label="Filters"] select')).toHaveCount(0);
-    await page.getByRole("button", { name: "Overdose deaths" }).click();
-    await expect(page).toHaveURL(/metric=deaths/);
+    await expect(page.getByRole("button", { name: "Pills shipped" })).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "MME per capita" })).toBeDisabled();
+    await page.getByRole("button", { name: "Overdose deaths per 100k" }).click();
+    await expect(page).toHaveURL(/metric=deaths_per_100k/);
   });
 
   test("save button shows clear feedback after click without a share control", async ({ page }) => {
@@ -116,7 +118,8 @@ test.describe("/explorer", () => {
 
     expect(rootBox.y + rootBox.height).toBeLessThanOrEqual(945);
     expect(mapBox.y + mapBox.height).toBeLessThanOrEqual(945);
-    expect(detailBox.y).toBeLessThanOrEqual(rootBox.y + 1);
+    expect(detailBox.y).toBeGreaterThanOrEqual(rootBox.y);
+    expect(detailBox.y).toBeLessThanOrEqual(rootBox.y + 24);
     expect(detailBox.y + detailBox.height).toBeLessThanOrEqual(945);
   });
 

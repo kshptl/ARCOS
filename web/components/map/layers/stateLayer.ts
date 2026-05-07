@@ -39,13 +39,13 @@ function stateFeaturesForLayer(
 }
 
 function scaleFor(metric: MapMetric): (v: number | null | undefined, d: ScaleDomain) => RGBA {
-  return metric === "deaths" ? deathsColorScale : pillsColorScale;
+  return metric === "deaths_per_100k" ? deathsColorScale : pillsColorScale;
 }
 
 export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLayerProps {
   const hasValues = Boolean(args.valueByStateFips && args.metric && args.domain);
   const pickable = Boolean(args.onHover || args.onClick);
-  const metric = args.metric ?? "pills";
+  const metric = args.metric ?? "pills_per_capita";
   const domain = args.domain ?? { domainMin: 0, domainMax: 1 };
   const colorFn = scaleFor(metric);
 
@@ -63,8 +63,8 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
       return colorFn(args.valueByStateFips?.get(id) ?? null, domain);
     },
     getLineColor: [26, 26, 26, 200],
-    getLineWidth: 1.2,
-    lineWidthMinPixels: 1,
+    getLineWidth: 2.1,
+    lineWidthMinPixels: 1.6,
     onHover: args.onHover,
     onClick: args.onClick,
     updateTriggers: {

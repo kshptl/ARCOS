@@ -59,13 +59,6 @@ const METRIC_DETAILS: Record<
     compact: boolean;
   }
 > = {
-  pills: {
-    label: "Pills shipped",
-    shortLabel: "Pills",
-    unit: "pills",
-    valueDigits: 0,
-    compact: true,
-  },
   pills_per_capita: {
     label: "Pills per capita",
     shortLabel: "Per capita",
@@ -73,11 +66,11 @@ const METRIC_DETAILS: Record<
     valueDigits: 1,
     compact: false,
   },
-  deaths: {
-    label: "Overdose deaths",
-    shortLabel: "Deaths",
-    unit: "deaths",
-    valueDigits: 0,
+  deaths_per_100k: {
+    label: "Overdose deaths per 100k",
+    shortLabel: "Deaths/100k",
+    unit: "deaths per 100,000 people",
+    valueDigits: 1,
     compact: false,
   },
 };
@@ -213,6 +206,10 @@ function formatMetricValue(value: number, metric: MapMetric): string {
     maximumFractionDigits: details.valueDigits,
     minimumFractionDigits: details.valueDigits,
   });
+}
+
+function isPopulationNormalizedMetric(metric: MapMetric): boolean {
+  return metric === "pills_per_capita" || metric === "deaths_per_100k";
 }
 
 function buildSparklinePoints(points: Array<{ year: number; value: number }>): string {
@@ -352,7 +349,7 @@ export function Explorer({ counties }: ExplorerProps) {
       current.weightedValue += value * county.pop;
       summaries.set(stateFips, current);
     }
-    if (urlState.metric !== "pills_per_capita") return summaries;
+    if (!isPopulationNormalizedMetric(urlState.metric)) return summaries;
     const perCapitaSummaries = new Map<string, StateAccumulator>();
     for (const [stateFips, summary] of summaries) {
       perCapitaSummaries.set(stateFips, {
@@ -401,6 +398,17 @@ export function Explorer({ counties }: ExplorerProps) {
   }, [rankedCounties]);
 
   const nationalAverage = useMemo(() => {
+    if (isPopulationNormalizedMetric(urlState.metric)) {
+      let weightedTotal = 0;
+      let population = 0;
+      for (const county of sortedCounties) {
+        const value = currentValues.get(county.fips);
+        if (value == null) continue;
+        weightedTotal += value * county.pop;
+        population += county.pop;
+      }
+      return population > 0 ? weightedTotal / population : 0;
+    }
     let total = 0;
     let count = 0;
     for (const value of currentValues.values()) {
@@ -408,7 +416,7 @@ export function Explorer({ counties }: ExplorerProps) {
       count += 1;
     }
     return count ? total / count : 0;
-  }, [currentValues]);
+  }, [currentValues, sortedCounties, urlState.metric]);
 
   const selectedFipsResolved =
     selectedFips && countyByFips.has(selectedFips)
@@ -473,7 +481,7 @@ export function Explorer({ counties }: ExplorerProps) {
     : false;
 
   const legendColors = useMemo(() => {
-    const scale = urlState.metric === "deaths" ? deathsColorScale : pillsColorScale;
+    const scale = urlState.metric === "deaths_per_100k" ? deathsColorScale : pillsColorScale;
     return [0.96, 0.78, 0.6, 0.42, 0.24, 0.08].map((stop) =>
       rgbToCss(scale(activeDomain.domainMax * stop, activeDomain)),
     );
@@ -734,15 +742,6 @@ export function Explorer({ counties }: ExplorerProps) {
               </datalist>
             </div>
           </div>
-
-          <a
-            className={styles.downloadButton}
-            href="/data/county-shipments-by-year.parquet"
-            download
-          >
-            <span aria-hidden="true">↓</span>
-            Download data
-          </a>
         </section>
 
         <section className={styles.stats} aria-label="Explorer summary">

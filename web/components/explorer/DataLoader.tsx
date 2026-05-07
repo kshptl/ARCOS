@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import { fetchParquetRows } from "@/lib/data/parquet";
-import type { CDCOverdoseByCountyYear, CountyShipmentsByYear } from "@/lib/data/schemas";
+import type { CDCCountyOverdoseArtifact, CountyShipmentsByYear } from "@/lib/data/schemas";
 
 export interface DataLoaderProps {
   year: number;
@@ -17,10 +17,9 @@ export interface DataLoaderProps {
 
 const DATA_VERSION = process.env.NEXT_PUBLIC_DATA_VERSION ?? "2026-05-07-arcos-county-v2";
 const DEFAULT_URL = versionDataUrl("/data/county-shipments-by-year.parquet");
-const DEFAULT_CDC_URL = versionDataUrl("/data/cdc-overdose-by-county-year.parquet");
+const DEFAULT_CDC_URL = versionDataUrl("/data/cdc_county_overdose.json");
 type ValuesByYear = Map<number, Map<string, number>>;
 type ShipmentMetricCache = {
-  pills: ValuesByYear;
   pills_per_capita: ValuesByYear;
 };
 type CacheForUrl<T> = {
@@ -44,27 +43,35 @@ function versionDataUrl(url: string): string {
 
 function buildShipmentMetricCache(rows: CountyShipmentsByYear[]): ShipmentMetricCache {
   const cache: ShipmentMetricCache = {
-    pills: new Map(),
     pills_per_capita: new Map(),
   };
   for (const row of rows) {
-    valueMapForYear(cache.pills, row.year).set(row.fips, row.pills ?? 0);
     valueMapForYear(cache.pills_per_capita, row.year).set(row.fips, row.pills_per_capita ?? 0);
   }
   return cache;
 }
 
-function buildDeathMetricCache(rows: CDCOverdoseByCountyYear[]): ValuesByYear {
+function buildDeathRateMetricCache(artifact: CDCCountyOverdoseArtifact): ValuesByYear {
   const cache: ValuesByYear = new Map();
-  for (const row of rows) {
-    valueMapForYear(cache, row.year).set(row.fips, row.deaths ?? 0);
+  for (const row of artifact.records) {
+    const rawFips = row.fips ?? row.county_fips;
+    if (!rawFips) continue;
+    const fips = String(rawFips).padStart(5, "0");
+    const rate =
+      typeof row.crude_rate === "number" && Number.isFinite(row.crude_rate)
+        ? row.crude_rate
+        : row.deaths != null && row.population != null && row.population > 0
+          ? (row.deaths / row.population) * 100000
+          : 0;
+    valueMapForYear(cache, row.year).set(fips, rate);
   }
   return cache;
 }
 
-function valuesForShipmentMetric(cache: ShipmentMetricCache, metric: MapMetric): ValuesByYear {
-  if (metric === "pills_per_capita") return cache.pills_per_capita;
-  return cache.pills;
+async function fetchCDCOverdoseArtifact(url: string): Promise<CDCCountyOverdoseArtifact> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`fetchCDCOverdoseArtifact ${url} -> HTTP ${res.status}`);
+  return res.json() as Promise<CDCCountyOverdoseArtifact>;
 }
 
 export function DataLoader(props: DataLoaderProps) {
@@ -74,7 +81,7 @@ export function DataLoader(props: DataLoaderProps) {
     onProgress,
     parquetUrl = DEFAULT_URL,
     cdcUrl = DEFAULT_CDC_URL,
-    metric = "pills",
+    metric = "pills_per_capita",
   } = props;
   const latestCallbacks = useRef({ onData, onError, onProgress });
   const [shipmentCache, setShipmentCache] = useState<CacheForUrl<ShipmentMetricCache> | null>(null);
@@ -84,7 +91,7 @@ export function DataLoader(props: DataLoaderProps) {
   latestCallbacks.current = { onData, onError, onProgress };
 
   useEffect(() => {
-    if (metric === "deaths" || shipmentCache?.url === parquetUrl) return;
+    if (metric === "deaths_per_100k" || shipmentCache?.url === parquetUrl) return;
     let cancelled = false;
     const progress = (received: number, total: number) => {
       latestCallbacks.current.onProgress?.(received, total);
@@ -116,14 +123,12 @@ export function DataLoader(props: DataLoaderProps) {
   }, [metric, parquetUrl, shipmentCache]);
 
   useEffect(() => {
-    if (metric !== "deaths" || deathCache?.url === cdcUrl) return;
+    if (metric !== "deaths_per_100k" || deathCache?.url === cdcUrl) return;
     let cancelled = false;
-    fetchParquetRows<CDCOverdoseByCountyYear>(cdcUrl, {
-      columns: ["fips", "year", "deaths", "suppressed"],
-    })
-      .then((rows) => {
+    fetchCDCOverdoseArtifact(cdcUrl)
+      .then((artifact) => {
         if (cancelled) return;
-        setDeathCache({ url: cdcUrl, data: buildDeathMetricCache(rows) });
+        setDeathCache({ url: cdcUrl, data: buildDeathRateMetricCache(artifact) });
       })
       .catch((err: Error) => {
         if (cancelled) return;
@@ -136,12 +141,12 @@ export function DataLoader(props: DataLoaderProps) {
 
   useEffect(() => {
     const byYear =
-      metric === "deaths"
+      metric === "deaths_per_100k"
         ? deathCache?.url === cdcUrl
           ? deathCache.data
           : null
         : shipmentCache?.url === parquetUrl
-          ? valuesForShipmentMetric(shipmentCache.data, metric)
+          ? shipmentCache.data.pills_per_capita
           : null;
     if (!byYear) return;
     for (const [year, values] of byYear) latestCallbacks.current.onData(year, values);

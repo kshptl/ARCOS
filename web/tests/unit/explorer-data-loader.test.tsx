@@ -1,5 +1,5 @@
 import { render, waitFor } from "@testing-library/react";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { DataLoader } from "@/components/explorer/DataLoader";
 import { fetchParquetRows } from "@/lib/data/parquet";
 
@@ -14,16 +14,46 @@ const rows = [
   { fips: "54059", year: 2011, pills: 800, pills_per_capita: 30 },
 ];
 
-const deathRows = [
-  { fips: "54059", year: 2012, deaths: 42, suppressed: false },
-  { fips: "54047", year: 2012, deaths: null, suppressed: true },
-  { fips: "54059", year: 2011, deaths: 35, suppressed: false },
-];
+const deathArtifact = {
+  records: [
+    {
+      county_fips: "54059",
+      year: 2012,
+      deaths: 42,
+      population: 26000,
+      crude_rate: 161.5,
+      suppressed: false,
+      unreliable: false,
+    },
+    {
+      county_fips: "54047",
+      year: 2012,
+      deaths: null,
+      population: 18000,
+      crude_rate: null,
+      suppressed: true,
+      unreliable: false,
+    },
+    {
+      county_fips: "54059",
+      year: 2011,
+      deaths: 35,
+      population: 25000,
+      crude_rate: null,
+      suppressed: false,
+      unreliable: false,
+    },
+  ],
+};
 
 describe("DataLoader", () => {
   beforeEach(() => {
     vi.mocked(fetchParquetRows).mockReset();
     vi.mocked(fetchParquetRows).mockResolvedValue(rows);
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
   });
 
   it("groups rows by year and calls onData once per year", async () => {
@@ -41,7 +71,7 @@ describe("DataLoader", () => {
       string,
       number
     >;
-    expect(values2012.get("54059")).toBe(1000);
+    expect(values2012.get("54059")).toBe(38);
   });
 
   it("does not refetch parquet when parent callbacks change during a render", async () => {
@@ -66,17 +96,26 @@ describe("DataLoader", () => {
     expect(firstOnData).not.toHaveBeenCalled();
   });
 
-  it("does not refetch parquet when changing the metric", async () => {
+  it("keeps shipment parquet cached after visiting the CDC metric", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => deathArtifact,
+      }),
+    );
+
     const onData = vi.fn();
-    const { rerender } = render(<DataLoader year={2012} metric="pills" onData={onData} />);
+    const { rerender } = render(
+      <DataLoader year={2012} metric="pills_per_capita" onData={onData} />,
+    );
 
     await waitFor(() => expect(onData).toHaveBeenCalled());
-    const firstValues2012 = onData.mock.calls.find((c: unknown[]) => c[0] === 2012)?.[1] as Map<
-      string,
-      number
-    >;
-    expect(firstValues2012.get("54059")).toBe(1000);
     expect(fetchParquetRows).toHaveBeenCalledTimes(1);
+
+    onData.mockClear();
+    rerender(<DataLoader year={2012} metric="deaths_per_100k" onData={onData} />);
+    await waitFor(() => expect(onData).toHaveBeenCalled());
 
     onData.mockClear();
     rerender(<DataLoader year={2012} metric="pills_per_capita" onData={onData} />);
@@ -90,25 +129,33 @@ describe("DataLoader", () => {
     expect(fetchParquetRows).toHaveBeenCalledTimes(1);
   });
 
-  it("loads overdose deaths from the CDC parquet instead of shipment pills", async () => {
-    vi.mocked(fetchParquetRows).mockImplementation((url: string) => {
-      if (url.includes("cdc-overdose")) return Promise.resolve(deathRows);
-      return Promise.resolve(rows);
-    });
+  it("loads overdose deaths per 100k from the rich CDC JSON", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => deathArtifact,
+      }),
+    );
 
     const onData = vi.fn();
-    render(<DataLoader year={2012} metric="deaths" onData={onData} />);
+    render(<DataLoader year={2012} metric="deaths_per_100k" onData={onData} />);
 
     await waitFor(() => expect(onData).toHaveBeenCalled());
     const values2012 = onData.mock.calls.find((c: unknown[]) => c[0] === 2012)?.[1] as Map<
       string,
       number
     >;
-    expect(values2012.get("54059")).toBe(42);
+    const values2011 = onData.mock.calls.find((c: unknown[]) => c[0] === 2011)?.[1] as Map<
+      string,
+      number
+    >;
+    expect(values2012.get("54059")).toBe(161.5);
     expect(values2012.get("54047")).toBe(0);
-    expect(fetchParquetRows).toHaveBeenCalledWith(
-      expect.stringMatching(/^\/data\/cdc-overdose-by-county-year\.parquet\?v=.+/),
-      expect.any(Object),
+    expect(values2011.get("54059")).toBe(140);
+    expect(fetchParquetRows).not.toHaveBeenCalled();
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringMatching(/^\/data\/cdc_county_overdose\.json\?v=.+/),
     );
   });
 

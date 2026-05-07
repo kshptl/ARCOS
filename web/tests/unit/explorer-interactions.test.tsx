@@ -48,9 +48,8 @@ const mocks = vi.hoisted(() => {
   };
 
   const valuesByMetric: Record<MapMetric, Map<number, Map<string, number>>> = {
-    pills: new Map([[2012, new Map([["54059", 2000]])]]),
     pills_per_capita: new Map([[2012, new Map([["54059", 7.5]])]]),
-    deaths: new Map([[2012, new Map([["54059", 11]])]]),
+    deaths_per_100k: new Map([[2012, new Map([["54059", 55.2]])]]),
   };
 
   return {
@@ -119,7 +118,7 @@ vi.mock("@/components/explorer/DataLoader", async () => {
   const React = await import("react");
   return {
     DataLoader: ({
-      metric = "pills",
+      metric = "pills_per_capita",
       onData,
     }: {
       metric?: MapMetric;
@@ -180,9 +179,9 @@ describe("Explorer interactions", () => {
     const details = screen.getByRole("complementary", { name: "Selected county details" });
     await waitFor(() => expect(within(details).getByText("7.5")).toBeInTheDocument());
 
-    await user.click(screen.getByRole("button", { name: "Pills shipped" }));
+    await user.click(screen.getByRole("button", { name: "Overdose deaths per 100k" }));
 
-    await waitFor(() => expect(within(details).getByText("2,000")).toBeInTheDocument());
+    await waitFor(() => expect(within(details).getByText("55.2")).toBeInTheDocument());
     expect(within(details).queryByText(/^0(?:\.0)?$/)).not.toBeInTheDocument();
   });
 
@@ -283,14 +282,20 @@ describe("Explorer interactions", () => {
 
     await user.hover(screen.getByRole("button", { name: "Map state" }));
     await waitFor(() => {
-      const tooltip = screen.getByRole("tooltip");
+      const tooltip = screen
+        .getAllByRole("tooltip")
+        .find((node) => node.textContent?.includes("West Virginia"));
+      expect(tooltip).toBeTruthy();
       expect(tooltip).toHaveTextContent("West Virginia");
       expect(tooltip).toHaveTextContent("7.5");
     });
 
     await user.hover(screen.getByRole("button", { name: "Map county" }));
     await waitFor(() => {
-      const tooltip = screen.getByRole("tooltip");
+      const tooltip = screen
+        .getAllByRole("tooltip")
+        .find((node) => node.textContent?.includes("Mingo County, WV"));
+      expect(tooltip).toBeTruthy();
       expect(tooltip).toHaveTextContent("Mingo County, WV");
       expect(tooltip).toHaveTextContent("7.5");
     });

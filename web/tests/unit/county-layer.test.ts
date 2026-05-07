@@ -49,10 +49,10 @@ describe("countyLayer", () => {
     const props = buildCountyLayerProps({
       featureCollection: FC,
       valueByFips: data,
-      metric: "pills",
+      metric: "pills_per_capita",
       domain: { domainMin: 0, domainMax: 100 },
     });
-    expect(props.id).toBe("counties-pills");
+    expect(props.id).toBe("counties-pills_per_capita");
     expect(props.data).toBe(FC.features);
     expect(typeof props.getFillColor).toBe("function");
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(
@@ -65,7 +65,7 @@ describe("countyLayer", () => {
     const props = buildCountyLayerProps({
       featureCollection: FC,
       valueByFips: new Map(),
-      metric: "pills",
+      metric: "pills_per_capita",
       domain: { domainMin: 0, domainMax: 100 },
     });
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(
@@ -81,20 +81,20 @@ describe("countyLayer", () => {
         features: [{ ...FC.features[0]!, id: 1001 }],
       },
       valueByFips: new Map([["01001", 100]]),
-      metric: "pills",
+      metric: "pills_per_capita",
       domain: { domainMin: 0, domainMax: 100 },
     });
 
-    const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(props.data[0]!);
+    const c = props.getFillColor(props.data[0]!);
     expect(c.slice(0, 3)).not.toEqual([222, 214, 200]);
   });
 
-  it("switches color scale when metric is deaths", () => {
+  it("switches color scale when metric is deaths per 100k", () => {
     const data = new Map<string, number>([["54059", 9]]);
     const props = buildCountyLayerProps({
       featureCollection: FC,
       valueByFips: data,
-      metric: "deaths",
+      metric: "deaths_per_100k",
       domain: { domainMin: 0, domainMax: 10 },
     });
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(

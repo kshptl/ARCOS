@@ -21,9 +21,10 @@ of `/public/data/county-shipments-by-year.parquet` via `hyparquet`. A WebGL
 feature-detect falls back to a static SVG choropleth with a keyboard-navigable
 county list when WebGL is unavailable.
 
-- URL state: `?year=2012&metric=pills` is the source of truth. All filter
+- URL state: `?year=2012&metric=pills_per_capita` is the source of truth. All filter
   changes update the URL via `history.replaceState`; `popstate` re-parses.
-- Metrics: `pills` (total), `pills_per_capita`, `deaths`.
+- Metrics: `pills_per_capita` and `deaths_per_100k`. MME per capita is shown as
+  unavailable until the dataset includes drug strength and opioid conversion data.
 - Keyboard: the slider advances ±1 year on arrow keys, ±3 on PageUp/PageDown,
   jumps to first/last on Home/End.
 

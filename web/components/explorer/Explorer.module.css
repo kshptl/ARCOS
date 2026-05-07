@@ -68,7 +68,7 @@
   z-index: 5;
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(14rem, 0.9fr) minmax(15rem, 1.15fr) minmax(12rem, 0.85fr) auto;
+  grid-template-columns: minmax(15rem, 0.75fr) minmax(26rem, 1.55fr) minmax(18rem, 0.8fr);
   align-items: end;
   gap: 0.55rem;
   padding: 0.6rem;
@@ -85,7 +85,6 @@
   gap: 0.45rem;
 }
 
-.downloadButton,
 .profileLink {
   min-height: 2.35rem;
   display: inline-flex;
@@ -105,7 +104,6 @@
   cursor: pointer;
 }
 
-.downloadButton:hover,
 .profileLink:hover {
   border-color: var(--explorer-olive);
 }
@@ -567,11 +565,6 @@
   background: var(--explorer-cream);
 }
 
-.downloadButton {
-  width: auto;
-  white-space: nowrap;
-}
-
 .emptyDetail {
   min-height: 20rem;
   display: grid;
@@ -627,10 +620,6 @@
     position: static;
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .downloadButton {
-    width: 100%;
   }
 
   .stat {

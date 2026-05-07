@@ -63,6 +63,8 @@ describe("stateLayer", () => {
     expect(props.filled).toBe(false);
     expect(props.stroked).toBe(true);
     expect(props.getLineColor).toEqual([26, 26, 26, 200]);
+    expect(props.getLineWidth).toBe(2.1);
+    expect(props.lineWidthMinPixels).toBe(1.6);
   });
 
   it("can fill and pick states when metric values and handlers are provided", () => {
@@ -71,14 +73,14 @@ describe("stateLayer", () => {
     const props = buildStateLayerProps({
       featureCollection: FC,
       valueByStateFips: new Map([["54", 100]]),
-      metric: "pills",
+      metric: "pills_per_capita",
       domain: { domainMin: 0, domainMax: 100 },
-      colorKey: "pills-2012",
+      colorKey: "pills_per_capita-2012",
       onHover,
       onClick,
     });
 
-    expect(props.id).toBe("states-pills");
+    expect(props.id).toBe("states-pills_per_capita");
     expect(props.filled).toBe(true);
     expect(props.pickable).toBe(true);
     expect(props.getFillColor(FC.features[0]!)).not.toEqual([0, 0, 0, 0]);
@@ -104,7 +106,7 @@ describe("stateLayer", () => {
     const props = buildStateLayerProps({
       featureCollection: MULTI_PART_FC,
       valueByStateFips: new Map([["02", 100]]),
-      metric: "pills",
+      metric: "pills_per_capita",
       domain: { domainMin: 0, domainMax: 100 },
     });
 

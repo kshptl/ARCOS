@@ -15,11 +15,11 @@ describe("color scales", () => {
     expect(c[3]).toBe(220);
   });
 
-  it("pillsColorScale moves from warm cream to dark olive", () => {
+  it("pillsColorScale moves from warm cream to dark maroon", () => {
     const low = pillsColorScale(0, { domainMin: 0, domainMax: 100 });
     const high = pillsColorScale(100, { domainMin: 0, domainMax: 100 });
     expect(low.slice(0, 3)).toEqual([244, 237, 217]);
-    expect(high.slice(0, 3)).toEqual([97, 93, 84]);
+    expect(high.slice(0, 3)).toEqual([93, 24, 28]);
   });
 
   it("deathsColorScale returns a warm palette color", () => {
