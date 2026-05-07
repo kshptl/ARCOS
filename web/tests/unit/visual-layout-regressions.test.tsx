@@ -61,11 +61,15 @@ describe("visual layout regressions", () => {
     expect(scroller).toHaveAttribute("tabindex", "0");
   });
 
-  it("gives the explorer shell the same max-width and gutters as other pages", () => {
+  it("uses a full-width explorer dashboard shell with the provided palette", () => {
     const src = css("components/explorer/Explorer.module.css");
-    expect(src).toMatch(/\.root\s*{[\s\S]*?max-width:\s*var\(--page-max\)/);
-    expect(src).toMatch(/\.root\s*{[\s\S]*?margin-inline:\s*auto/);
-    expect(src).toMatch(/\.root\s*{[\s\S]*?padding-inline:\s*var\(--gutter\)/);
+    expect(src).toMatch(/--explorer-bg:\s*#faf7f1/);
+    expect(src).toMatch(/--explorer-cream:\s*#f4edd9/);
+    expect(src).toMatch(/--explorer-sage:\s*#acb3aa/);
+    expect(src).toMatch(/--explorer-rust:\s*#b3462c/);
+    expect(src).toMatch(
+      /grid-template-columns:\s*minmax\(260px,\s*320px\)\s+minmax\(0,\s*1fr\)\s+minmax\(280px,\s*340px\)/,
+    );
   });
 
   it("reserves enough desktop header width for the full search placeholder", () => {

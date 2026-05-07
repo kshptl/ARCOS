@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { type ReactNode, useEffect, useId, useState } from "react";
 import { SearchBox } from "@/components/search/SearchBox";
 import styles from "./Header.module.css";
@@ -17,7 +18,8 @@ const NAV: Array<{ href: "/explorer" | "/rankings" | "/methodology" | "/about"; 
 ];
 
 export function Header({ search }: Props) {
-  const searchNode = search ?? <SearchBox />;
+  const pathname = usePathname();
+  const searchNode = search ?? <SearchBox placeholder="Search counties, states, or ZIP codes..." />;
   const [open, setOpen] = useState(false);
   const panelId = useId();
 
@@ -37,13 +39,26 @@ export function Header({ search }: Props) {
         <Link href="/" prefetch={false} className={styles.brand} onClick={() => setOpen(false)}>
           openarcos
         </Link>
-        <div className={styles.search}>{searchNode}</div>
         <nav className={styles.nav} aria-label="Primary">
           {NAV.map((item) => (
-            <Link key={item.href} href={item.href} prefetch={false}>
+            <Link
+              key={item.href}
+              href={item.href}
+              prefetch={false}
+              aria-current={pathname === item.href ? "page" : undefined}
+            >
               {item.label}
             </Link>
           ))}
+        </nav>
+        <div className={styles.search}>{searchNode}</div>
+        <nav className={styles.actions} aria-label="Quick links">
+          <Link href="/methodology" prefetch={false} aria-label="Methodology help">
+            ?
+          </Link>
+          <Link href="/rankings" prefetch={false} aria-label="Rankings chart">
+            ▥
+          </Link>
         </nav>
         <button
           type="button"

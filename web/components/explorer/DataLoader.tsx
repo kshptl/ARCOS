@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import { fetchParquetRows } from "@/lib/data/parquet";
-import type { CountyShipmentsByYear } from "@/lib/data/schemas";
+import type { CDCOverdoseByCountyYear, CountyShipmentsByYear } from "@/lib/data/schemas";
 
 export interface DataLoaderProps {
   year: number;
@@ -12,13 +12,19 @@ export interface DataLoaderProps {
   onProgress?: (received: number, total: number | null) => void;
   metric?: MapMetric;
   parquetUrl?: string;
+  cdcUrl?: string;
 }
 
 const DEFAULT_URL = "/data/county-shipments-by-year.parquet";
+const DEFAULT_CDC_URL = "/data/cdc-overdose-by-county-year.parquet";
 type ValuesByYear = Map<number, Map<string, number>>;
 type ShipmentMetricCache = {
   pills: ValuesByYear;
   pills_per_capita: ValuesByYear;
+};
+type CacheForUrl<T> = {
+  url: string;
+  data: T;
 };
 
 function valueMapForYear(cache: ValuesByYear, year: number): Map<string, number> {
@@ -42,24 +48,38 @@ function buildShipmentMetricCache(rows: CountyShipmentsByYear[]): ShipmentMetric
   return cache;
 }
 
-function valuesForMetric(cache: ShipmentMetricCache, metric: MapMetric): ValuesByYear {
+function buildDeathMetricCache(rows: CDCOverdoseByCountyYear[]): ValuesByYear {
+  const cache: ValuesByYear = new Map();
+  for (const row of rows) {
+    valueMapForYear(cache, row.year).set(row.fips, row.deaths ?? 0);
+  }
+  return cache;
+}
+
+function valuesForShipmentMetric(cache: ShipmentMetricCache, metric: MapMetric): ValuesByYear {
   if (metric === "pills_per_capita") return cache.pills_per_capita;
-  // Deaths are still loaded by a separate future artifact. This keeps the old
-  // no-crash behavior while avoiding a second big client load during startup.
   return cache.pills;
 }
 
 export function DataLoader(props: DataLoaderProps) {
-  const { onData, onError, onProgress, parquetUrl = DEFAULT_URL, metric = "pills" } = props;
+  const {
+    onData,
+    onError,
+    onProgress,
+    parquetUrl = DEFAULT_URL,
+    cdcUrl = DEFAULT_CDC_URL,
+    metric = "pills",
+  } = props;
   const latestCallbacks = useRef({ onData, onError, onProgress });
-  const [cache, setCache] = useState<ShipmentMetricCache | null>(null);
+  const [shipmentCache, setShipmentCache] = useState<CacheForUrl<ShipmentMetricCache> | null>(null);
+  const [deathCache, setDeathCache] = useState<CacheForUrl<ValuesByYear> | null>(null);
 
   // Keep the newest callbacks without restarting the large Parquet load.
   latestCallbacks.current = { onData, onError, onProgress };
 
   useEffect(() => {
+    if (metric === "deaths" || shipmentCache?.url === parquetUrl) return;
     let cancelled = false;
-    setCache(null);
     const progress = (received: number, total: number) => {
       latestCallbacks.current.onProgress?.(received, total);
     };
@@ -78,7 +98,7 @@ export function DataLoader(props: DataLoaderProps) {
             `[DataLoader] loaded and grouped ${rows.length} shipment rows in ${dt.toFixed(1)}ms`,
           );
         }
-        setCache(nextCache);
+        setShipmentCache({ url: parquetUrl, data: nextCache });
       })
       .catch((err: Error) => {
         if (cancelled) return;
@@ -87,13 +107,39 @@ export function DataLoader(props: DataLoaderProps) {
     return () => {
       cancelled = true;
     };
-  }, [parquetUrl]);
+  }, [metric, parquetUrl, shipmentCache]);
 
   useEffect(() => {
-    if (!cache) return;
-    const byYear = valuesForMetric(cache, metric);
+    if (metric !== "deaths" || deathCache?.url === cdcUrl) return;
+    let cancelled = false;
+    fetchParquetRows<CDCOverdoseByCountyYear>(cdcUrl, {
+      columns: ["fips", "year", "deaths", "suppressed"],
+    })
+      .then((rows) => {
+        if (cancelled) return;
+        setDeathCache({ url: cdcUrl, data: buildDeathMetricCache(rows) });
+      })
+      .catch((err: Error) => {
+        if (cancelled) return;
+        latestCallbacks.current.onError?.(err);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [metric, cdcUrl, deathCache]);
+
+  useEffect(() => {
+    const byYear =
+      metric === "deaths"
+        ? deathCache?.url === cdcUrl
+          ? deathCache.data
+          : null
+        : shipmentCache?.url === parquetUrl
+          ? valuesForShipmentMetric(shipmentCache.data, metric)
+          : null;
+    if (!byYear) return;
     for (const [year, values] of byYear) latestCallbacks.current.onData(year, values);
-  }, [cache, metric]);
+  }, [deathCache, shipmentCache, metric, cdcUrl, parquetUrl]);
 
   return null;
 }

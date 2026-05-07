@@ -15,18 +15,17 @@ describe("color scales", () => {
     expect(c[3]).toBe(220);
   });
 
-  it("pillsColorScale at min returns low-intensity color", () => {
+  it("pillsColorScale moves from warm cream to dark olive", () => {
     const low = pillsColorScale(0, { domainMin: 0, domainMax: 100 });
     const high = pillsColorScale(100, { domainMin: 0, domainMax: 100 });
-    const lumLow = 0.2126 * low[0] + 0.7152 * low[1] + 0.0722 * low[2];
-    const lumHigh = 0.2126 * high[0] + 0.7152 * high[1] + 0.0722 * high[2];
-    expect(lumHigh).toBeGreaterThan(lumLow);
+    expect(low.slice(0, 3)).toEqual([244, 237, 217]);
+    expect(high.slice(0, 3)).toEqual([97, 93, 84]);
   });
 
-  it("deathsColorScale returns cool-ramp color", () => {
+  it("deathsColorScale returns a warm palette color", () => {
     const c = deathsColorScale(5, { domainMin: 0, domainMax: 10 });
     expect(c[3]).toBe(220);
-    expect(c[2]).toBeGreaterThan(50);
+    expect(c[0]!).toBeGreaterThan(c[2]!);
   });
 
   it("clamps out-of-range to domain endpoints", () => {
@@ -41,8 +40,7 @@ describe("color scales", () => {
   it("returns suppressed/null color for null value", () => {
     const n = pillsColorScale(null as unknown as number, { domainMin: 0, domainMax: 100 });
     expect(n[3]).toBeGreaterThan(0);
-    expect(n[0]).toEqual(n[1]);
-    expect(n[1]).toEqual(n[2]);
+    expect(n.slice(0, 3)).toEqual([222, 214, 200]);
   });
 
   it("rgbToCss formats for CSS", () => {

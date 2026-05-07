@@ -1,6 +1,5 @@
 "use client";
 
-import type { ChangeEvent } from "react";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import styles from "./Filters.module.css";
 
@@ -22,21 +21,20 @@ const METRIC_LABELS: Record<MapMetric, string> = {
 export function Filters({ metric, onChange }: FiltersProps) {
   return (
     <fieldset className={styles.root} aria-label="Filters">
-      <label className={styles.field}>
-        <span className={styles.label}>Metric</span>
-        <select
-          value={metric}
-          onChange={(e: ChangeEvent<HTMLSelectElement>) =>
-            onChange({ metric: e.target.value as MapMetric })
-          }
-        >
-          {(Object.keys(METRIC_LABELS) as MapMetric[]).map((m) => (
-            <option key={m} value={m}>
-              {METRIC_LABELS[m]}
-            </option>
-          ))}
-        </select>
-      </label>
+      <legend className={styles.label}>Metric</legend>
+      <div className={styles.options}>
+        {(Object.keys(METRIC_LABELS) as MapMetric[]).map((m) => (
+          <button
+            key={m}
+            type="button"
+            className={styles.option}
+            aria-pressed={metric === m}
+            onClick={() => onChange({ metric: m })}
+          >
+            <span>{METRIC_LABELS[m]}</span>
+          </button>
+        ))}
+      </div>
     </fieldset>
   );
 }

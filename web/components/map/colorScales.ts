@@ -5,7 +5,7 @@ export interface ScaleDomain {
   domainMax: number;
 }
 
-const NULL_COLOR: RGBA = [204, 204, 204, 220];
+const NULL_COLOR: RGBA = [222, 214, 200, 220];
 const ALPHA = 220;
 
 type ColorStop = [number, [number, number, number]];
@@ -14,19 +14,20 @@ type ColorStop = [number, [number, number, number]];
 type NonEmptyStops = readonly [ColorStop, ...ColorStop[]];
 
 const PILLS_STOPS: NonEmptyStops = [
-  [0.0, [68, 1, 84]],
-  [0.25, [59, 82, 139]],
-  [0.5, [33, 144, 141]],
-  [0.75, [94, 201, 98]],
-  [1.0, [253, 231, 37]],
+  [0.0, [244, 237, 217]],
+  [0.22, [220, 211, 194]],
+  [0.45, [172, 179, 170]],
+  [0.68, [198, 122, 78]],
+  [0.86, [179, 70, 44]],
+  [1.0, [97, 93, 84]],
 ];
 
 const DEATHS_STOPS: NonEmptyStops = [
-  [0.0, [198, 219, 239]],
-  [0.25, [158, 202, 225]],
-  [0.5, [107, 174, 214]],
-  [0.75, [49, 130, 189]],
-  [1.0, [8, 48, 107]],
+  [0.0, [244, 237, 217]],
+  [0.25, [172, 179, 170]],
+  [0.52, [198, 122, 78]],
+  [0.75, [179, 70, 44]],
+  [1.0, [97, 93, 84]],
 ];
 
 function lerp(a: number, b: number, t: number): number {

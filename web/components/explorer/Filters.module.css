@@ -1,33 +1,80 @@
 .root {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-  align-items: flex-end;
-}
-
-.field {
   display: grid;
-  gap: var(--space-2xs);
-  font-family: var(--font-body);
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
 .label {
-  font-size: var(--type-eyebrow);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
+  color: var(--explorer-ink, #211d12);
 }
 
-.field select {
+.label::after {
+  content: "i";
+  display: inline-grid;
+  place-items: center;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid color-mix(in srgb, var(--explorer-olive, #615d54), transparent 45%);
+  border-radius: 50%;
+  color: var(--explorer-olive, #615d54);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.option {
+  min-height: 2.7rem;
+  padding: 0.55rem 0.65rem;
   font: inherit;
-  padding: var(--space-xs) var(--space-sm);
-  border: 1px solid var(--ink);
-  background: var(--canvas);
-  color: var(--text);
-  min-width: 140px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--explorer-ink, #211d12);
+  background: color-mix(in srgb, #ffffff, var(--explorer-bg, #faf7f1) 36%);
+  border: 1px solid var(--explorer-border, #ded6c8);
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(33, 29, 18, 0.04);
+  cursor: pointer;
+  transition:
+    background var(--duration-fast, 140ms) ease,
+    border-color var(--duration-fast, 140ms) ease,
+    color var(--duration-fast, 140ms) ease,
+    transform var(--duration-fast, 140ms) ease;
 }
 
-.field select:focus-visible {
-  outline: 2px solid var(--accent-cool);
+.option:hover {
+  border-color: var(--explorer-olive, #615d54);
+  transform: translateY(-1px);
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--explorer-rust, #b3462c);
   outline-offset: 2px;
+}
+
+.option[aria-pressed="true"] {
+  color: #ffffff;
+  background: var(--explorer-rust, #b3462c);
+  border-color: var(--explorer-rust, #b3462c);
+  box-shadow: 0 8px 18px rgba(179, 70, 44, 0.22);
+}
+
+@media (max-width: 760px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
 }

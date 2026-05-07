@@ -71,7 +71,7 @@ describe("countyLayer", () => {
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(
       FC.features[0]!,
     );
-    expect(c[0]).toEqual(c[1]);
+    expect(c.slice(0, 3)).toEqual([222, 214, 200]);
   });
 
   it("switches color scale when metric is deaths", () => {
@@ -85,6 +85,6 @@ describe("countyLayer", () => {
     const c = (props.getFillColor as (f: (typeof FC.features)[number]) => number[])(
       FC.features[0]!,
     );
-    expect(c[0]!).toBeLessThan(c[2]!);
+    expect(c[0]!).toBeGreaterThan(c[2]!);
   });
 });

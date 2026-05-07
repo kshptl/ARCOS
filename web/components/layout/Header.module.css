@@ -2,44 +2,82 @@
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  background: var(--surface);
+  background: color-mix(in srgb, #ffffff, var(--surface) 58%);
   border-bottom: 1px solid var(--rule);
   backdrop-filter: saturate(150%) blur(4px);
 }
 .row {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
-  padding: var(--space-md) var(--gutter);
-  max-width: var(--page-max);
+  gap: 1.75rem;
+  min-height: 76px;
+  padding: 0.75rem clamp(1rem, 1.8vw, 1.75rem);
+  max-width: none;
   margin-inline: auto;
 }
 .brand {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: var(--type-h2);
+  font-size: clamp(1.8rem, 2vw, 2.35rem);
   color: var(--ink);
   text-decoration: none;
   letter-spacing: -0.02em;
 }
 .nav {
   display: flex;
-  gap: var(--space-md);
-  margin-left: auto;
+  align-self: stretch;
+  align-items: center;
+  gap: 1.45rem;
   font-family: var(--font-display);
   font-size: var(--type-body-sm);
 }
 .nav a {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--text-muted);
+  border-bottom: 3px solid transparent;
 }
 .nav a:hover,
 .nav a[aria-current="page"] {
   color: var(--ink);
 }
+.nav a[aria-current="page"] {
+  border-bottom-color: var(--accent-hot);
+  color: var(--accent-hot);
+  font-weight: 700;
+}
 .search {
+  margin-left: auto;
   flex: 0 1 24rem;
   min-width: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.actions a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: color-mix(in srgb, #ffffff, var(--surface) 34%);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.actions a:hover,
+.actions a:focus-visible {
+  border-color: var(--ink);
 }
 
 .hamburger {
@@ -86,6 +124,7 @@
 
 @media (max-width: 720px) {
   .search { display: none; }
+  .actions { display: none; }
   .nav { font-size: var(--type-caption); }
 }
 

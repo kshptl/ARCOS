@@ -1,7 +1,7 @@
 .root {
   position: relative;
   display: block;
-  background: var(--canvas-shade);
-  border: 1px solid var(--rule);
+  background: transparent;
+  border: 0;
   overflow: hidden;
 }

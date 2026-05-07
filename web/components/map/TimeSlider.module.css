@@ -6,22 +6,23 @@
 
 .label {
   font-size: var(--type-eyebrow);
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
+  color: var(--explorer-ink, var(--text-muted));
+  letter-spacing: 0;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
 .valueText {
-  color: var(--text);
+  color: var(--explorer-rust, var(--text));
   font-variant-numeric: tabular-nums;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .track {
   position: relative;
-  height: 20px;
-  background: var(--canvas-shade);
-  border: 1px solid var(--rule);
+  height: 18px;
+  background: color-mix(in srgb, var(--explorer-olive, var(--canvas-shade)), transparent 72%);
+  border: 0;
   border-radius: 999px;
   cursor: pointer;
   outline-offset: 3px;
@@ -30,7 +31,7 @@
 }
 
 .track:focus-visible {
-  outline: 2px solid var(--accent-cool);
+  outline: 2px solid var(--explorer-rust, var(--accent-cool));
 }
 
 .progress {
@@ -38,27 +39,28 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--accent-cool);
+  background: var(--explorer-rust, var(--accent-cool));
   border-radius: inherit;
-  opacity: 0.35;
+  opacity: 0.28;
 }
 
 .thumb {
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   transform: translateY(-50%);
-  background: var(--ink);
-  border: 2px solid var(--canvas);
+  background: var(--explorer-rust, var(--ink));
+  border: 2px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(179, 70, 44, 0.28);
 }
 
 .ticks {
   display: flex;
   justify-content: space-between;
-  font-size: var(--type-eyebrow);
-  color: var(--text-muted);
+  font-size: 0.72rem;
+  color: var(--explorer-olive, var(--text-muted));
   font-variant-numeric: tabular-nums;
 }
 
@@ -67,6 +69,11 @@
 }
 
 .tickActive {
-  color: var(--ink);
-  font-weight: 600;
+  min-width: 2.35rem;
+  padding: 0.16rem 0.4rem;
+  border-radius: 999px;
+  background: var(--explorer-rust, var(--ink));
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
 }
