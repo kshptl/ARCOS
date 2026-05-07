@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "scrollytelling",
+  "owner": "doodledood",
+  "repo": "claude-code-plugins",
+  "path": "claude-plugins/frontend-design/skills/scrollytelling",
+  "branch": "main",
+  "sha": "c89b4f4004d4c6566bcbc07d0ddffdc4ff4986a6",
+  "source": "manual"
+}
