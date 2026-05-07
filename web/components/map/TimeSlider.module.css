@@ -20,7 +20,7 @@
 
 .track {
   position: relative;
-  height: 18px;
+  height: 14px;
   background: color-mix(in srgb, var(--explorer-olive, var(--canvas-shade)), transparent 72%);
   border: 0;
   border-radius: 999px;
@@ -47,8 +47,8 @@
 .thumb {
   position: absolute;
   top: 50%;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   transform: translateY(-50%);
   background: var(--explorer-rust, var(--ink));
   border: 2px solid #ffffff;
@@ -59,10 +59,10 @@
 .ticks {
   display: grid;
   grid-template-columns: repeat(var(--year-count), minmax(0, 1fr));
-  gap: 0.2rem;
-  min-height: 2.5rem;
-  padding-top: 0.2rem;
-  font-size: 0.72rem;
+  gap: 0.12rem;
+  min-height: 2.15rem;
+  padding-top: 0.15rem;
+  font-size: 0.64rem;
   color: var(--explorer-olive, var(--text-muted));
   font-variant-numeric: tabular-nums;
 }
@@ -78,8 +78,8 @@
 }
 
 .tickActive {
-  min-width: 2.2rem;
-  padding: 0.16rem 0.28rem;
+  min-width: 1.95rem;
+  padding: 0.12rem 0.22rem;
   border-radius: 999px;
   background: var(--explorer-rust, var(--ink));
   color: #ffffff;

@@ -68,13 +68,24 @@ describe("visual layout regressions", () => {
     expect(src).toMatch(/--explorer-sage:\s*#acb3aa/);
     expect(src).toMatch(/--explorer-rust:\s*#b3462c/);
     expect(src).toMatch(
-      /grid-template-columns:\s*minmax\(260px,\s*320px\)\s+minmax\(0,\s*1fr\)\s+minmax\(280px,\s*340px\)/,
+      /grid-template-columns:\s*minmax\(220px,\s*280px\)\s+minmax\(0,\s*1fr\)\s+minmax\(240px,\s*300px\)/,
     );
+  });
+
+  it("keeps the explorer controls compact enough for desktop visual QA", () => {
+    const src = css("components/explorer/Explorer.module.css");
+    expect(src).toMatch(/\.rail\s*{[\s\S]*?gap:\s*1rem/);
+    expect(src).toMatch(/\.rail\s*{[\s\S]*?padding:\s*1rem/);
+    expect(src).toMatch(/\.main\s*{[\s\S]*?gap:\s*0\.85rem/);
+    expect(src).toMatch(/\.main\s*{[\s\S]*?padding:\s*clamp\(0\.9rem,\s*1\.3vw,\s*1\.35rem\)/);
+    expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.75rem\s+0\.9rem/);
+    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*30rem/);
+    expect(src).toMatch(/\.mapShell\s*{[\s\S]*?padding:\s*0\.75rem/);
   });
 
   it("angles explorer year ticks so labels do not crowd the sidebar", () => {
     const src = css("components/map/TimeSlider.module.css");
-    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*2\.5rem/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*2\.15rem/);
     expect(src).toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
     expect(src).toMatch(/\.tick\s*{[\s\S]*?transform-origin:\s*top\s+center/);
   });
@@ -82,8 +93,10 @@ describe("visual layout regressions", () => {
   it("keeps the explorer detail panel scrollable to its last action", () => {
     const src = css("components/explorer/Explorer.module.css");
     expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?min-height:\s*0/);
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?gap:\s*0\.85rem/);
+    expect(src).toMatch(/\.detailPanel\s*{[\s\S]*?padding:\s*1rem/);
     expect(src).toMatch(
-      /\.detailPanel\s*{[\s\S]*?padding-bottom:\s*max\(1\.5rem,\s*env\(safe-area-inset-bottom\)\)/,
+      /\.detailPanel\s*{[\s\S]*?padding-bottom:\s*max\(1rem,\s*env\(safe-area-inset-bottom\)\)/,
     );
   });
 
