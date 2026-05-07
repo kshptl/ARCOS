@@ -1,6 +1,6 @@
 "use client";
 
-import { Children, type ReactNode, useEffect, useRef } from "react";
+import { Children, type ReactNode, useEffect, useRef, useState } from "react";
 import { ScrollyProgressContext } from "./progressContext";
 import styles from "./ScrollyStage.module.css";
 import { useReducedMotion } from "./useReducedMotion";
@@ -21,12 +21,13 @@ export function ScrollyStage({
 }: ScrollyStageProps) {
   const { progress, ref } = useScrollProgress();
   const stepsRef = useRef<HTMLDivElement>(null);
+  const [stackedActiveStep, setStackedActiveStep] = useState(0);
   const reduced = useReducedMotion();
   const effective = reduced ? 1 : progress;
   const stepCount = Children.count(children);
   const activeStep =
     stepLayout === "stacked" && stepCount > 0
-      ? Math.min(stepCount - 1, Math.floor(effective * stepCount))
+      ? Math.min(stepCount - 1, stackedActiveStep)
       : undefined;
 
   useEffect(() => {
@@ -42,16 +43,40 @@ export function ScrollyStage({
         top += article.getBoundingClientRect().height + 8;
       }
     };
+    const updateActiveStep = () => {
+      let nextActive = 0;
+      for (const [index, article] of getArticles().entries()) {
+        const stickyTop = Number.parseFloat(article.style.getPropertyValue("--stacked-step-top"));
+        const stopLine = Number.isFinite(stickyTop)
+          ? stickyTop
+          : Math.round(window.innerHeight * 0.1);
+        if (article.getBoundingClientRect().top <= stopLine + 1) nextActive = index;
+      }
+      setStackedActiveStep((current) => (current === nextActive ? current : nextActive));
+    };
+    const refreshLayout = () => {
+      setOffsets();
+      updateActiveStep();
+    };
+
+    let rafId = 0;
+    const requestActiveUpdate = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(updateActiveStep);
+    };
 
     const ResizeObserverCtor = globalThis.ResizeObserver;
-    const resizeObserver = ResizeObserverCtor ? new ResizeObserverCtor(setOffsets) : null;
+    const resizeObserver = ResizeObserverCtor ? new ResizeObserverCtor(refreshLayout) : null;
     resizeObserver?.observe(steps);
     for (const article of getArticles()) resizeObserver?.observe(article);
-    window.addEventListener("resize", setOffsets);
-    setOffsets();
+    window.addEventListener("resize", refreshLayout);
+    window.addEventListener("scroll", requestActiveUpdate, { passive: true });
+    refreshLayout();
 
     return () => {
-      window.removeEventListener("resize", setOffsets);
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("resize", refreshLayout);
+      window.removeEventListener("scroll", requestActiveUpdate);
       resizeObserver?.disconnect();
       for (const article of getArticles()) article.style.removeProperty("--stacked-step-top");
     };
