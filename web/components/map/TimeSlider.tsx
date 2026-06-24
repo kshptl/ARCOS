@@ -27,6 +27,7 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
   const min = sortedYears[0] ?? value;
   const max = sortedYears[sortedYears.length - 1] ?? value;
   const idx = sortedYears.indexOf(value);
+  const tickCount = Math.max(sortedYears.length - 1, 1);
 
   const yearFromClientX = useCallback(
     (clientX: number) => {
@@ -115,42 +116,55 @@ export function TimeSlider({ years, value, onChange, label = "Year" }: TimeSlide
     [idx, sortedYears, onChange],
   );
 
-  const pct = max === min ? 0 : ((value - min) / (max - min)) * 100;
+  const activePct = max === min ? 0 : (Math.max(idx, 0) / tickCount) * 100;
 
   return (
     <div className={styles.wrap}>
       <span id={labelId} className={styles.label}>
         {label}: <span className={styles.valueText}>{value}</span>
       </span>
-      <div
-        role="slider"
-        tabIndex={0}
-        aria-labelledby={labelId}
-        aria-valuemin={min}
-        aria-valuemax={max}
-        aria-valuenow={value}
-        aria-valuetext={`${label} ${value}`}
-        onKeyDown={onKeyDown}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerEnd}
-        onPointerCancel={onPointerEnd}
-        ref={trackRef}
-        className={styles.track}
-      >
-        <div className={styles.progress} style={{ width: `${pct}%` }} aria-hidden="true" />
-        <div className={styles.thumb} style={{ left: `${pct}%` }} aria-hidden="true" />
-      </div>
-      <div
-        className={styles.ticks}
-        style={{ "--year-count": sortedYears.length } as CSSProperties}
-        aria-hidden="true"
-      >
-        {sortedYears.map((y) => (
-          <span key={y} className={`${styles.tick} ${y === value ? styles.tickActive : ""}`}>
-            {y}
-          </span>
-        ))}
+      <div className={styles.axis} style={{ "--active-pct": `${activePct}%` } as CSSProperties}>
+        <div
+          role="slider"
+          tabIndex={0}
+          aria-labelledby={labelId}
+          aria-valuemin={min}
+          aria-valuemax={max}
+          aria-valuenow={value}
+          aria-valuetext={`${label} ${value}`}
+          onKeyDown={onKeyDown}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerEnd}
+          onPointerCancel={onPointerEnd}
+          ref={trackRef}
+          className={styles.track}
+        >
+          <div className={styles.progress} style={{ width: `${activePct}%` }} aria-hidden="true" />
+          <div className={styles.thumb} style={{ left: `${activePct}%` }} aria-hidden="true" />
+        </div>
+        <div className={styles.ticks} aria-hidden="true">
+          {sortedYears.map((y, index) => {
+            const tickPct = (index / tickCount) * 100;
+            return (
+              <span
+                key={y}
+                className={`${styles.tick} ${y === value ? styles.tickHidden : ""}`}
+                style={{ "--tick-pct": `${tickPct}%` } as CSSProperties}
+              >
+                {y}
+              </span>
+            );
+          })}
+        </div>
+        <span
+          className={styles.activePill}
+          data-active-year-pill="true"
+          style={{ left: `${activePct}%` }}
+          aria-hidden="true"
+        >
+          {value}
+        </span>
       </div>
     </div>
   );

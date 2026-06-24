@@ -9,13 +9,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "openarcos — prescription opioid distribution in the US",
-    template: "%s — openarcos",
+    default: "openARCOS — prescription opioid distribution in the US",
+    template: "%s — openARCOS",
   },
   description:
     "An investigative map of prescription opioid shipments across US counties, 2006–2014. Built on DEA ARCOS, DEA Diversion Control, and CDC WONDER.",
   openGraph: {
-    siteName: "openarcos",
+    siteName: "openARCOS",
     type: "website",
   },
   metadataBase: new URL("https://openarcos.org"),

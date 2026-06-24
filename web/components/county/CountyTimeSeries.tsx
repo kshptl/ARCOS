@@ -19,11 +19,15 @@ export function dedupeCountyShipments(
   rows: CountyShipmentsByYear[],
   pop: number,
 ): CountyShipmentsByYear[] {
-  const byYear = new Map<number, { pills: number; fips: string }>();
+  const byYear = new Map<number, { pills: number; mmePerCapita: number; fips: string }>();
   for (const r of rows) {
     const prev = byYear.get(r.year);
-    if (prev) prev.pills += r.pills;
-    else byYear.set(r.year, { pills: r.pills, fips: r.fips });
+    if (prev) {
+      prev.pills += r.pills;
+      prev.mmePerCapita += r.mme_per_capita ?? 0;
+    } else {
+      byYear.set(r.year, { pills: r.pills, mmePerCapita: r.mme_per_capita ?? 0, fips: r.fips });
+    }
   }
   return [...byYear.entries()]
     .map(([year, v]) => ({
@@ -31,6 +35,7 @@ export function dedupeCountyShipments(
       year,
       pills: v.pills,
       pills_per_capita: pop > 0 ? v.pills / pop : 0,
+      mme_per_capita: v.mmePerCapita,
     }))
     .sort((a, b) => a.year - b.year);
 }

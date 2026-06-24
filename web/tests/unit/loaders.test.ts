@@ -86,7 +86,15 @@ describe("loadCountyBundle", () => {
     const bundle = await loadCountyBundle("54059", {
       overrides: {
         meta: { fips: "54059", name: "Mingo County", state: "WV", pop: 26839 },
-        shipments: [{ fips: "54059", year: 2012, pills: 5_000_000, pills_per_capita: 186.3 }],
+        shipments: [
+          {
+            fips: "54059",
+            year: 2012,
+            pills: 5_000_000,
+            pills_per_capita: 186.3,
+            mme_per_capita: null,
+          },
+        ],
         overdose: [{ fips: "54059", year: 2012, deaths: 42, suppressed: false }],
         pharmacies: [],
       },

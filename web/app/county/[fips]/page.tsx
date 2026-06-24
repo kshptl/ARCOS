@@ -57,7 +57,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
   return (
     <div className={`${styles.root} container`}>
       <nav className={styles.crumbs} aria-label="Breadcrumb">
-        <a href="/">openarcos</a> / <a href={`/?state=${meta.state}`}>{meta.state}</a> /{" "}
+        <a href="/">openARCOS</a> / <a href={`/?state=${meta.state}`}>{meta.state}</a> /{" "}
         <span aria-current="page">{meta.name}</span>
       </nav>
 

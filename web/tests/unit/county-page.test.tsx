@@ -18,7 +18,15 @@ vi.mock("@/lib/data/loadCountyMeta", () => ({
 vi.mock("@/lib/data/loadCountyBundle", () => ({
   loadCountyBundle: vi.fn(async () => ({
     meta: { fips: "54059", name: "Mingo County", state: "WV", pop: 22999 },
-    shipments: [{ fips: "54059", year: 2012, pills: 15_000_000, pills_per_capita: 652 }],
+    shipments: [
+      {
+        fips: "54059",
+        year: 2012,
+        pills: 15_000_000,
+        pills_per_capita: 652,
+        mme_per_capita: null,
+      },
+    ],
     pharmacies: [],
     overdose: [],
   })),

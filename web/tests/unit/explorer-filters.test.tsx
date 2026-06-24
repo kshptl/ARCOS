@@ -19,15 +19,15 @@ describe("Filters", () => {
     );
   });
 
-  it("shows MME per capita as an explained unavailable metric", () => {
+  it("shows MME per capita as an explained metric", () => {
     render(<Filters metric="pills_per_capita" onChange={() => {}} />);
     const button = screen.getByRole("button", { name: "MME per capita" });
     expect(button).not.toBeDisabled();
-    expect(button).toHaveAttribute("aria-disabled", "true");
+    expect(button).not.toHaveAttribute("aria-disabled");
     expect(button).toHaveAttribute("aria-describedby");
     const tooltip = screen.getByText(/morphine milligram equivalent/i);
     expect(tooltip).toHaveAttribute("role", "tooltip");
-    expect(tooltip).toHaveTextContent(/requires drug strength/i);
+    expect(tooltip).toHaveTextContent(/opioid amount/i);
   });
 
   it("explains the metric controls from the info icon", () => {
@@ -48,11 +48,11 @@ describe("Filters", () => {
     expect(onChange).toHaveBeenCalledWith({ metric: "deaths_per_100k" });
   });
 
-  it("does not switch to MME until MME source data exists", async () => {
+  it("switches to MME per capita", async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
     render(<Filters metric="pills_per_capita" onChange={onChange} />);
     await user.click(screen.getByRole("button", { name: "MME per capita" }));
-    expect(onChange).not.toHaveBeenCalled();
+    expect(onChange).toHaveBeenCalledWith({ metric: "mme_per_capita" });
   });
 });

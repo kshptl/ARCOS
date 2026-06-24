@@ -1,11 +1,12 @@
 "use client";
 
-import { PolygonLayer } from "@deck.gl/layers";
+import { PolygonLayer, TextLayer } from "@deck.gl/layers";
 import DeckGL from "@deck.gl/react";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import { useMemo } from "react";
 import styles from "./ChoroplethMap.module.css";
 import type { ScaleDomain } from "./colorScales";
+import { buildCityLabelLayerProps } from "./layers/cityLayer";
 import { buildCountyLayerProps, type MapMetric } from "./layers/countyLayer";
 import { buildStateLayerProps } from "./layers/stateLayer";
 
@@ -93,7 +94,7 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
         ? performance.now()
         : 0;
 
-    const layersOut: PolygonLayer[] = [];
+    const layersOut: Array<PolygonLayer | TextLayer> = [];
     const useCountyLayer = showCountyLayer ?? !states;
     if (states) {
       const stateProps = buildStateLayerProps({
@@ -104,15 +105,16 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
         colorKey: `${metric}-${year ?? ""}-${stateDomain?.domainMin ?? domain.domainMin}-${
           stateDomain?.domainMax ?? domain.domainMax
         }`,
-        onHover: onStateHover
-          ? (info) => {
-              const stateId = info.object?.id == null ? "" : String(info.object.id);
-              onStateHover(stateId ? stateId.padStart(2, "0") : null, info.object ?? null, {
-                x: info.x ?? 0,
-                y: info.y ?? 0,
-              });
-            }
-          : undefined,
+        onHover:
+          onStateHover && !useCountyLayer
+            ? (info) => {
+                const stateId = info.object?.id == null ? "" : String(info.object.id);
+                onStateHover(stateId ? stateId.padStart(2, "0") : null, info.object ?? null, {
+                  x: info.x ?? 0,
+                  y: info.y ?? 0,
+                });
+              }
+            : undefined,
         onClick: onStateClick
           ? (info) => {
               const stateId = info.object?.id == null ? "" : String(info.object.id);
@@ -126,15 +128,8 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
     }
 
     if (useCountyLayer || !states) {
-      const countyFeatures = focusedStateFips
-        ? counties.features.filter((feature) =>
-            String(feature.id ?? "")
-              .padStart(5, "0")
-              .startsWith(focusedStateFips),
-          )
-        : counties.features;
       const countyProps = buildCountyLayerProps({
-        featureCollection: { ...counties, features: countyFeatures },
+        featureCollection: counties,
         valueByFips,
         metric,
         domain,
@@ -171,6 +166,13 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
       );
     }
 
+    const cityLabelProps = buildCityLabelLayerProps({ zoom: currentViewState.zoom });
+    if (cityLabelProps) {
+      layersOut.push(
+        new TextLayer(cityLabelProps as unknown as ConstructorParameters<typeof TextLayer>[0]),
+      );
+    }
+
     if (process.env.NODE_ENV === "development" && typeof performance !== "undefined") {
       const dt = performance.now() - t0;
       // Gate on a reasonable threshold so we do not spam the console on
@@ -200,9 +202,11 @@ export function ChoroplethMap(props: ChoroplethMapProps) {
     onCountyClick,
     onStateHover,
     onStateClick,
+    currentViewState.zoom,
   ]);
 
-  const label = ariaLabel ?? `County map of ${metric}${year ? `, ${year}` : ""}`;
+  const geographyLabel = showCountyLayer === false ? "State" : "County";
+  const label = ariaLabel ?? `${geographyLabel} map of ${metric}${year ? `, ${year}` : ""}`;
   const uncontrolledKey = [
     initialViewState.longitude,
     initialViewState.latitude,

@@ -9,8 +9,8 @@ import { metadata } from "@/app/layout";
 describe("app/layout metadata", () => {
   it("has title default + template", () => {
     expect(metadata.title).toEqual({
-      default: "openarcos — prescription opioid distribution in the US",
-      template: "%s — openarcos",
+      default: "openARCOS — prescription opioid distribution in the US",
+      template: "%s — openARCOS",
     });
   });
   it("has a non-trivial description", () => {
@@ -19,6 +19,6 @@ describe("app/layout metadata", () => {
   });
   it("opts into metadata.openGraph with siteName", () => {
     expect(metadata.openGraph).toBeDefined();
-    expect(metadata.openGraph?.siteName).toBe("openarcos");
+    expect(metadata.openGraph?.siteName).toBe("openARCOS");
   });
 });

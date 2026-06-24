@@ -3,24 +3,40 @@
 import { useEffect, useRef, useState } from "react";
 import type { MapMetric } from "@/components/map/layers/countyLayer";
 import { fetchParquetRows } from "@/lib/data/parquet";
-import type { CDCCountyOverdoseArtifact, CountyShipmentsByYear } from "@/lib/data/schemas";
+import type {
+  CDCCountyOverdoseArtifact,
+  CountyShipmentsByYear,
+  StateOpioidMmeByYear,
+} from "@/lib/data/schemas";
 
 export interface DataLoaderProps {
   year: number;
   onData: (year: number, values: Map<string, number>) => void;
+  onStateData?: (
+    year: number,
+    values: Map<string, number>,
+    populations: Map<string, number>,
+  ) => void;
   onError?: (err: Error) => void;
   onProgress?: (received: number, total: number | null) => void;
   metric?: MapMetric;
   parquetUrl?: string;
   cdcUrl?: string;
+  stateMmeUrl?: string;
 }
 
-const DATA_VERSION = process.env.NEXT_PUBLIC_DATA_VERSION ?? "2026-05-07-arcos-county-v2";
+const DATA_VERSION = process.env.NEXT_PUBLIC_DATA_VERSION ?? "2026-05-08-mme-refresh-v1";
 const DEFAULT_URL = versionDataUrl("/data/county-shipments-by-year.parquet");
 const DEFAULT_CDC_URL = versionDataUrl("/data/cdc_county_overdose.json");
+const DEFAULT_STATE_MME_URL = versionDataUrl("/data/state-opioid-mme-by-year.json");
 type ValuesByYear = Map<number, Map<string, number>>;
+type StateValuesByYear = Map<
+  number,
+  { values: Map<string, number>; populations: Map<string, number> }
+>;
 type ShipmentMetricCache = {
   pills_per_capita: ValuesByYear;
+  mme_per_capita: ValuesByYear;
 };
 type CacheForUrl<T> = {
   url: string;
@@ -44,9 +60,13 @@ function versionDataUrl(url: string): string {
 function buildShipmentMetricCache(rows: CountyShipmentsByYear[]): ShipmentMetricCache {
   const cache: ShipmentMetricCache = {
     pills_per_capita: new Map(),
+    mme_per_capita: new Map(),
   };
   for (const row of rows) {
     valueMapForYear(cache.pills_per_capita, row.year).set(row.fips, row.pills_per_capita ?? 0);
+    if (typeof row.mme_per_capita === "number" && Number.isFinite(row.mme_per_capita)) {
+      valueMapForYear(cache.mme_per_capita, row.year).set(row.fips, row.mme_per_capita);
+    }
   }
   return cache;
 }
@@ -68,27 +88,50 @@ function buildDeathRateMetricCache(artifact: CDCCountyOverdoseArtifact): ValuesB
   return cache;
 }
 
+function buildStateMmeMetricCache(rows: StateOpioidMmeByYear[]): StateValuesByYear {
+  const cache: StateValuesByYear = new Map();
+  for (const row of rows) {
+    let yearValues = cache.get(row.year);
+    if (!yearValues) {
+      yearValues = { values: new Map(), populations: new Map() };
+      cache.set(row.year, yearValues);
+    }
+    yearValues.values.set(String(row.state_fips).padStart(2, "0"), row.mme_per_capita);
+    yearValues.populations.set(String(row.state_fips).padStart(2, "0"), row.population);
+  }
+  return cache;
+}
+
 async function fetchCDCOverdoseArtifact(url: string): Promise<CDCCountyOverdoseArtifact> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`fetchCDCOverdoseArtifact ${url} -> HTTP ${res.status}`);
   return res.json() as Promise<CDCCountyOverdoseArtifact>;
 }
 
+async function fetchStateMmeRows(url: string): Promise<StateOpioidMmeByYear[]> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`fetchStateMmeRows ${url} -> HTTP ${res.status}`);
+  return res.json() as Promise<StateOpioidMmeByYear[]>;
+}
+
 export function DataLoader(props: DataLoaderProps) {
   const {
     onData,
+    onStateData,
     onError,
     onProgress,
     parquetUrl = DEFAULT_URL,
     cdcUrl = DEFAULT_CDC_URL,
+    stateMmeUrl = DEFAULT_STATE_MME_URL,
     metric = "pills_per_capita",
   } = props;
-  const latestCallbacks = useRef({ onData, onError, onProgress });
+  const latestCallbacks = useRef({ onData, onStateData, onError, onProgress });
   const [shipmentCache, setShipmentCache] = useState<CacheForUrl<ShipmentMetricCache> | null>(null);
   const [deathCache, setDeathCache] = useState<CacheForUrl<ValuesByYear> | null>(null);
+  const [stateMmeCache, setStateMmeCache] = useState<CacheForUrl<StateValuesByYear> | null>(null);
 
   // Keep the newest callbacks without restarting the large Parquet load.
-  latestCallbacks.current = { onData, onError, onProgress };
+  latestCallbacks.current = { onData, onStateData, onError, onProgress };
 
   useEffect(() => {
     if (metric === "deaths_per_100k" || shipmentCache?.url === parquetUrl) return;
@@ -140,17 +183,41 @@ export function DataLoader(props: DataLoaderProps) {
   }, [metric, cdcUrl, deathCache]);
 
   useEffect(() => {
+    if (metric !== "mme_per_capita" || !onStateData || stateMmeCache?.url === stateMmeUrl) return;
+    let cancelled = false;
+    fetchStateMmeRows(stateMmeUrl)
+      .then((rows) => {
+        if (cancelled) return;
+        setStateMmeCache({ url: stateMmeUrl, data: buildStateMmeMetricCache(rows) });
+      })
+      .catch((err: Error) => {
+        if (cancelled) return;
+        latestCallbacks.current.onError?.(err);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [metric, onStateData, stateMmeCache, stateMmeUrl]);
+
+  useEffect(() => {
     const byYear =
       metric === "deaths_per_100k"
         ? deathCache?.url === cdcUrl
           ? deathCache.data
           : null
         : shipmentCache?.url === parquetUrl
-          ? shipmentCache.data.pills_per_capita
+          ? shipmentCache.data[metric]
           : null;
     if (!byYear) return;
     for (const [year, values] of byYear) latestCallbacks.current.onData(year, values);
   }, [deathCache, shipmentCache, metric, cdcUrl, parquetUrl]);
+
+  useEffect(() => {
+    if (metric !== "mme_per_capita" || stateMmeCache?.url !== stateMmeUrl) return;
+    for (const [year, stateValues] of stateMmeCache.data) {
+      latestCallbacks.current.onStateData?.(year, stateValues.values, stateValues.populations);
+    }
+  }, [metric, stateMmeCache, stateMmeUrl]);
 
   return null;
 }

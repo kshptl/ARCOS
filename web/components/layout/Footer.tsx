@@ -60,8 +60,8 @@ export function Footer({ buildDate }: Props) {
         <section className={styles.group}>
           <h2>About</h2>
           <p>
-            openarcos.org — a journalist-grade analysis of the DEA ARCOS dataset. Not a news outlet;
-            not affiliated with any publisher. All data is public.
+            openARCOS — a journalist-grade analysis of the DEA ARCOS dataset. Not a news outlet; not
+            affiliated with any publisher. All data is public.
           </p>
         </section>
         <div className={styles.meta}>

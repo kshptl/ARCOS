@@ -15,6 +15,11 @@ describe("design tokens", () => {
     expect(css).toMatch(/--type-display-xl:\s*6rem/);
   });
 
+  it("does not make font tokens refer to themselves", () => {
+    expect(css).not.toMatch(/--font-display:\s*var\(--font-display\)/);
+    expect(css).not.toMatch(/--font-body:\s*var\(--font-body\)/);
+  });
+
   it("declares tabular-nums variable for numerics", () => {
     expect(css).toMatch(/--numeric:\s*tabular-nums/);
   });

@@ -18,11 +18,12 @@ describe("/methodology", () => {
     expect(Array.isArray(data.distribution)).toBe(true);
   });
 
-  it("lists all three sources with external links", () => {
+  it("lists all four sources with external links", () => {
     const { container } = render(<Methodology />);
     const article = container.querySelector("article");
     expect(article).toBeTruthy();
     expect(article?.textContent).toMatch(/ARCOS county shipments/i);
+    expect(article?.textContent).toMatch(/DEA ARCOS retail summary PDFs/i);
     expect(article?.textContent).toMatch(/DEA Diversion Control/i);
     expect(article?.textContent).toMatch(/CDC WONDER/i);
     expect(screen.getByRole("link", { name: /Mendeley Data/i })).toHaveAttribute(
@@ -32,6 +33,10 @@ describe("/methodology", () => {
     expect(screen.getByRole("link", { name: /federal register api/i })).toHaveAttribute(
       "href",
       "https://www.federalregister.gov/api",
+    );
+    expect(screen.getByRole("link", { name: /deadiversion\.usdoj\.gov/i })).toHaveAttribute(
+      "href",
+      "https://www.deadiversion.usdoj.gov/arcos/retail_drug_summary/arcos-drug-summary-reports.html",
     );
     expect(screen.getByRole("link", { name: /wonder\.cdc\.gov/i })).toHaveAttribute(
       "href",
@@ -45,7 +50,7 @@ describe("/methodology", () => {
     expect(screen.getByText(/Underlying Cause of Death 1999-2020/i)).toBeInTheDocument();
     expect(screen.getByText(/interactive UI scrape/i)).toBeInTheDocument();
     expect(screen.getByText(/one state\/DC query at a time/i)).toBeInTheDocument();
-    expect(screen.getByText(/2006-2014/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/2006-2014/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/Drug\/Alcohol Induced Causes D1-D4/i)).toBeInTheDocument();
     expect(screen.getByText(/X40-X44, X60-X64, X85, Y10-Y14/i)).toBeInTheDocument();
     expect(screen.getByText(/42 USC 242m\(d\)/i)).toBeInTheDocument();

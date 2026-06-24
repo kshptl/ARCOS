@@ -8,7 +8,7 @@ export interface URLState {
   metric: MapMetric;
 }
 
-const VALID_METRICS: MapMetric[] = ["pills_per_capita", "deaths_per_100k"];
+const VALID_METRICS: MapMetric[] = ["pills_per_capita", "deaths_per_100k", "mme_per_capita"];
 
 export function parseQuery(search: string, defaults: URLState): URLState {
   const params = new URLSearchParams(search);

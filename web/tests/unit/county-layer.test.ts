@@ -40,6 +40,38 @@ const FC: FeatureCollection<Geometry, { name?: string }> = {
   ],
 };
 
+const MULTI_PART_FC: FeatureCollection<Geometry, { name?: string }> = {
+  type: "FeatureCollection",
+  features: [
+    {
+      type: "Feature",
+      id: "06037",
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
+          [
+            [
+              [0, 0],
+              [1, 0],
+              [1, 1],
+              [0, 0],
+            ],
+          ],
+          [
+            [
+              [2, 2],
+              [3, 2],
+              [3, 3],
+              [2, 2],
+            ],
+          ],
+        ],
+      },
+      properties: { name: "Los Angeles" },
+    },
+  ],
+};
+
 describe("countyLayer", () => {
   it("builds PolygonLayer props with getFillColor callback", () => {
     const data = new Map<string, number>([
@@ -101,5 +133,35 @@ describe("countyLayer", () => {
       FC.features[0]!,
     );
     expect(c[0]!).toBeGreaterThan(c[2]!);
+  });
+
+  it("draws county boundaries strongly enough to be visible at national zoom", () => {
+    const props = buildCountyLayerProps({
+      featureCollection: FC,
+      valueByFips: new Map([["54059", 100]]),
+      metric: "pills_per_capita",
+      domain: { domainMin: 0, domainMax: 200 },
+    });
+
+    expect(props.getLineColor).toEqual([255, 255, 255, 185]);
+    expect(props.lineWidthMinPixels).toBeGreaterThanOrEqual(0.95);
+  });
+
+  it("keeps every polygon part for multi-part counties", () => {
+    const props = buildCountyLayerProps({
+      featureCollection: MULTI_PART_FC,
+      valueByFips: new Map([["06037", 100]]),
+      metric: "pills_per_capita",
+      domain: { domainMin: 0, domainMax: 100 },
+    });
+
+    expect(props.data).toHaveLength(2);
+    expect(props.data.map((feature) => feature.id)).toEqual(["06037", "06037"]);
+    expect(props.data.map((feature) => props.getPolygon(feature))).toEqual(
+      MULTI_PART_FC.features[0]!.geometry.type === "MultiPolygon"
+        ? MULTI_PART_FC.features[0]!.geometry.coordinates
+        : [],
+    );
+    expect(props.getFillColor(props.data[0]!)).toEqual(props.getFillColor(props.data[1]!));
   });
 });

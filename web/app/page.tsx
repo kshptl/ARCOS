@@ -11,17 +11,34 @@ import { Act4Aftermath } from "@/components/scrolly/scenes/Act4Aftermath";
 import { loadScrollyData } from "@/lib/data/loadScrollyData";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-  title: {
-    default: "openarcos — where the pills went, who sent them, who paid",
-    absolute: "openarcos — where the pills went, who sent them, who paid",
-  },
-  description:
-    "76 billion oxycodone and hydrocodone pills shipped across the US from 2006 to 2014. Trace the distributors, the enforcement, and the counties left behind.",
-};
+const pageTitle = {
+  default: "openARCOS — where the pills went, who sent them, who paid",
+  absolute: "openARCOS — where the pills went, who sent them, who paid",
+} satisfies Metadata["title"];
+
+// Turn the exact pill count into sentence text like "98.1 billion".
+function formatPillScale(totalPills: number): string {
+  return `${(totalPills / 1_000_000_000).toFixed(1)} billion`;
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const data = await loadScrollyData();
+  const totalPillScale = formatPillScale(data.act1.totalPills);
+
+  return {
+    title: pageTitle,
+    description: `${totalPillScale} oxycodone and hydrocodone pills shipped across the US from 2006 to 2014. Trace the distributors, the enforcement, and the counties left behind.`,
+  };
+}
 
 export default async function HomePage() {
   const data = await loadScrollyData();
+  const totalPills = data.act1.totalPills;
+  const totalPillScale = formatPillScale(totalPills);
+  const act1Peak =
+    data.act1.yearly.length > 0
+      ? data.act1.yearly.reduce((best, row) => (row.pills > best.pills ? row : best))
+      : null;
 
   return (
     <>
@@ -29,9 +46,9 @@ export default async function HomePage() {
         <p className="eyebrow">2006–2014</p>
         <h1 className={styles.h1}>Where the pills went, who sent them, and who paid.</h1>
         <p className={styles.lede}>
-          <BigNumeral value={76_000_000_000} unit="pills" as="span" /> shipped across the United
-          States in nine years. This site follows the pill through the distribution system — and
-          counts what came after.
+          <BigNumeral value={totalPills} unit="pills" as="span" /> shipped across the United States
+          in nine years. This site follows the pill through the distribution system — and counts
+          what came after.
         </p>
         <div className={styles.cta}>
           <Link href="/explorer" className={styles.buttonLink}>
@@ -43,15 +60,18 @@ export default async function HomePage() {
       <ScrollyErrorBoundary label="act-1">
         <ScrollyStage
           canvas={<Act1Scale totalPills={data.act1.totalPills} yearly={data.act1.yearly} />}
-          ariaLabel="Act 1: the scale of shipments from 2006 to 2014, peaking at about 9.6 billion pills in 2010."
+          ariaLabel={`Act 1: the scale of shipments from 2006 to 2014${
+            act1Peak
+              ? `, peaking at about ${formatPillScale(act1Peak.pills)} pills in ${act1Peak.year}.`
+              : "."
+          }`}
         >
           <Step id="act1">
             <p className="eyebrow">Act 1 — Scale</p>
-            <h2>76 billion pills.</h2>
+            <h2>{totalPillScale} pills.</h2>
             <p>
-              Between 2006 and 2014, pharmaceutical distributors reported{" "}
-              {Math.round(data.act1.totalPills / 1e9)} billion doses of oxycodone and hydrocodone to
-              the DEA. The curve rises through 2010 and then turns.
+              Between 2006 and 2014, pharmaceutical distributors reported {totalPillScale} doses of
+              oxycodone and hydrocodone to the DEA. The curve rises through 2010 and then turns.
             </p>
           </Step>
         </ScrollyStage>
@@ -92,9 +112,9 @@ export default async function HomePage() {
           <Step id="act3-peak">
             <h2>2011: the agency spikes.</h2>
             <p>
-              By 2011, as the 76-billion-pill shipment scale became impossible to miss inside the
-              agency, DEA registrant actions nearly tripled — 69 Federal Register dispositions in a
-              single year — marking the start of the pharmacy-chain crackdowns.
+              By 2011, with {totalPillScale} pills moving through the distribution system, DEA
+              registrant actions nearly tripled — 69 Federal Register dispositions in a single year
+              — marking the start of the pharmacy-chain crackdowns.
             </p>
           </Step>
           <Step id="act3-settlements">

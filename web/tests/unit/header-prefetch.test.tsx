@@ -25,7 +25,7 @@ describe("<Header> prefetch behavior", () => {
   it("keeps visible navigation from preloading extra pages during initial load", () => {
     render(<Header search={<input aria-label="search" />} />);
 
-    expect(screen.getByRole("link", { name: "openarcos" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "openARCOS" })).toHaveAttribute(
       "data-prefetch",
       "false",
     );

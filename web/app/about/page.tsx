@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Who built openarcos and why.",
+  description: "Who built openARCOS and why.",
 };
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
         <Eyebrow>About</Eyebrow>
         <h1>Why this site</h1>
         <Lede>
-          Between 2006 and 2014, drug companies shipped 76 billion oxycodone and hydrocodone pills
+          Between 2006 and 2014, drug companies shipped 98.1 billion oxycodone and hydrocodone pills
           across the United States. In a handful of counties, the per-capita pill count exceeds
           every plausible medical need. The Washington Post won a 2019 fight to open the DEA's ARCOS
           database; this site asks what the numbers show.
@@ -25,7 +25,7 @@ export default function About() {
         <section>
           <h2>What it is</h2>
           <p>
-            openarcos is a fully static portfolio site. It joins three public datasets into a single
+            openARCOS is a fully static portfolio site. It joins three public datasets into a single
             browsable map. Everything is reproducible from the repo.
           </p>
         </section>

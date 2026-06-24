@@ -34,6 +34,14 @@ describe("useURLState helpers", () => {
     expect(s.metric).toBe("deaths_per_100k");
   });
 
+  it("parseQuery accepts the MME per capita metric", () => {
+    const s = parseQuery("?metric=mme_per_capita", {
+      year: 2012,
+      metric: "pills_per_capita",
+    });
+    expect(s.metric).toBe("mme_per_capita");
+  });
+
   it("serializeQuery emits year + metric keys", () => {
     expect(serializeQuery({ year: 2010, metric: "deaths_per_100k" })).toBe(
       "?year=2010&metric=deaths_per_100k",

@@ -37,6 +37,22 @@ export interface CountyShipmentsByYear {
   year: number;
   pills: number;
   pills_per_capita: number;
+  /** Morphine milligram equivalents per resident */
+  mme_per_capita: number | null;
+}
+
+export interface StateOpioidMmeByYear {
+  state_fips: string;
+  state: string;
+  year: number;
+  geography_level: "state";
+  population: number;
+  mme: number;
+  mme_per_capita: number;
+  mme_per_100k: number;
+  included_drug_codes: string[];
+  excluded_drug_codes: string[];
+  source_urls: string[];
 }
 
 export interface TopDistributorsByYear {
@@ -158,6 +174,7 @@ export type SearchIndexEntry =
 /** Names of emitted artifacts, mirroring spec §4 */
 export const ARTIFACT_NAMES = [
   "state-shipments-by-year",
+  "state-opioid-mme-by-year",
   "county-shipments-by-year",
   "county-metadata",
   "top-distributors-by-year",

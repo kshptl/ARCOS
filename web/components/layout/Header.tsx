@@ -37,7 +37,7 @@ export function Header({ search }: Props) {
     <header className={styles.root}>
       <div className={styles.row}>
         <Link href="/" prefetch={false} className={styles.brand} onClick={() => setOpen(false)}>
-          openarcos
+          openARCOS
         </Link>
         <nav className={styles.nav} aria-label="Primary">
           {NAV.map((item) => (

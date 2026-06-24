@@ -8,7 +8,7 @@ describe("<Header>", () => {
   it("renders brand + nav", () => {
     render(<Header />);
     const primaryNav = screen.getByRole("navigation", { name: "Primary" });
-    expect(screen.getByText(/openarcos/i)).toBeInTheDocument();
+    expect(screen.getByText("openARCOS")).toBeInTheDocument();
     expect(within(primaryNav).getByRole("link", { name: /explorer/i })).toBeInTheDocument();
     expect(within(primaryNav).getByRole("link", { name: /rankings/i })).toBeInTheDocument();
     expect(within(primaryNav).getByRole("link", { name: /methodology/i })).toBeInTheDocument();

@@ -5,9 +5,9 @@ import { CountyTimeSeries, dedupeCountyShipments } from "@/components/county/Cou
 describe("dedupeCountyShipments", () => {
   it("sums duplicate rows for the same (fips, year) and recomputes per-capita", () => {
     const rows = [
-      { fips: "54059", year: 2011, pills: 1000, pills_per_capita: 40 },
-      { fips: "54059", year: 2011, pills: 2000, pills_per_capita: 80 },
-      { fips: "54059", year: 2012, pills: 1500, pills_per_capita: 60 },
+      { fips: "54059", year: 2011, pills: 1000, pills_per_capita: 40, mme_per_capita: 4 },
+      { fips: "54059", year: 2011, pills: 2000, pills_per_capita: 80, mme_per_capita: 6 },
+      { fips: "54059", year: 2012, pills: 1500, pills_per_capita: 60, mme_per_capita: 3 },
     ];
     const out = dedupeCountyShipments(rows, 100);
     expect(out).toHaveLength(2);
@@ -16,26 +16,30 @@ describe("dedupeCountyShipments", () => {
       year: 2011,
       pills: 3000,
       pills_per_capita: 30,
+      mme_per_capita: 10,
     });
     expect(out[1]).toEqual({
       fips: "54059",
       year: 2012,
       pills: 1500,
       pills_per_capita: 15,
+      mme_per_capita: 3,
     });
   });
 
   it("passes a single-row-per-year input through sorted by year", () => {
     const rows = [
-      { fips: "21195", year: 2013, pills: 5000, pills_per_capita: 77 },
-      { fips: "21195", year: 2011, pills: 5900, pills_per_capita: 92 },
+      { fips: "21195", year: 2013, pills: 5000, pills_per_capita: 77, mme_per_capita: null },
+      { fips: "21195", year: 2011, pills: 5900, pills_per_capita: 92, mme_per_capita: null },
     ];
     const out = dedupeCountyShipments(rows, 100);
     expect(out.map((r) => r.year)).toEqual([2011, 2013]);
   });
 
   it("yields pills_per_capita = 0 when pop is 0", () => {
-    const rows = [{ fips: "21119", year: 2011, pills: 100, pills_per_capita: 0 }];
+    const rows = [
+      { fips: "21119", year: 2011, pills: 100, pills_per_capita: 0, mme_per_capita: null },
+    ];
     const out = dedupeCountyShipments(rows, 0);
     expect(out[0]?.pills_per_capita).toBe(0);
   });
@@ -47,8 +51,8 @@ describe("CountyTimeSeries", () => {
     const bundle = {
       meta,
       shipments: [
-        { fips: "54059", year: 2010, pills: 1, pills_per_capita: 400 },
-        { fips: "54059", year: 2011, pills: 1, pills_per_capita: 500 },
+        { fips: "54059", year: 2010, pills: 1, pills_per_capita: 400, mme_per_capita: null },
+        { fips: "54059", year: 2011, pills: 1, pills_per_capita: 500, mme_per_capita: null },
       ],
       pharmacies: [],
       overdose: [],
@@ -74,7 +78,9 @@ describe("CountyTimeSeries", () => {
     const meta = { fips: "54059", name: "Mingo", state: "WV", pop: 22999 };
     const bundle = {
       meta,
-      shipments: [{ fips: "54059", year: 2011, pills: 1, pills_per_capita: 500 }],
+      shipments: [
+        { fips: "54059", year: 2011, pills: 1, pills_per_capita: 500, mme_per_capita: null },
+      ],
       pharmacies: [],
       overdose: [],
     };
@@ -98,7 +104,9 @@ describe("CountyTimeSeries", () => {
     const meta = { fips: "54059", name: "Mingo", state: "WV", pop: 22999 };
     const bundle = {
       meta,
-      shipments: [{ fips: "54059", year: 2011, pills: 1, pills_per_capita: 500 }],
+      shipments: [
+        { fips: "54059", year: 2011, pills: 1, pills_per_capita: 500, mme_per_capita: null },
+      ],
       pharmacies: [],
       overdose: [],
     };

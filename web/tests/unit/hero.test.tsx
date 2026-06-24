@@ -8,8 +8,20 @@ describe("Hero", () => {
     const bundle = {
       meta,
       shipments: [
-        { fips: "54059", year: 2010, pills: 10_000_000, pills_per_capita: 435 },
-        { fips: "54059", year: 2012, pills: 15_000_000, pills_per_capita: 652 },
+        {
+          fips: "54059",
+          year: 2010,
+          pills: 10_000_000,
+          pills_per_capita: 435,
+          mme_per_capita: null,
+        },
+        {
+          fips: "54059",
+          year: 2012,
+          pills: 15_000_000,
+          pills_per_capita: 652,
+          mme_per_capita: null,
+        },
       ],
       pharmacies: [],
       overdose: [],
@@ -25,9 +37,9 @@ describe("Hero", () => {
     const bundle = {
       meta,
       shipments: [
-        { fips: "21119", year: 2011, pills: 0, pills_per_capita: 0 },
-        { fips: "21119", year: 2012, pills: 0, pills_per_capita: 0 },
-        { fips: "21119", year: 2013, pills: 0, pills_per_capita: 0 },
+        { fips: "21119", year: 2011, pills: 0, pills_per_capita: 0, mme_per_capita: null },
+        { fips: "21119", year: 2012, pills: 0, pills_per_capita: 0, mme_per_capita: null },
+        { fips: "21119", year: 2013, pills: 0, pills_per_capita: 0, mme_per_capita: null },
       ],
       pharmacies: [],
       overdose: [],

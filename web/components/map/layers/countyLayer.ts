@@ -2,7 +2,7 @@ import type { Feature, FeatureCollection, Geometry } from "geojson";
 import type { RGBA, ScaleDomain } from "../colorScales";
 import { deathsColorScale, pillsColorScale } from "../colorScales";
 
-export type MapMetric = "pills_per_capita" | "deaths_per_100k";
+export type MapMetric = "pills_per_capita" | "deaths_per_100k" | "mme_per_capita";
 
 // Stable, module-level polygon accessor. Geometry never changes once loaded,
 // so this function must keep a fixed identity across renders — otherwise
@@ -13,6 +13,30 @@ function polygonAccessor(f: Feature): number[][][] | number[][] {
   if (g.type === "Polygon") return g.coordinates;
   if (g.type === "MultiPolygon") return g.coordinates[0] ?? [];
   return [];
+}
+
+function countyFeaturesForLayer(
+  featureCollection: FeatureCollection<Geometry, { name?: string }>,
+): Feature<Geometry, { name?: string }>[] {
+  const hasMultiPartCounty = featureCollection.features.some(
+    (feature) => feature.geometry.type === "MultiPolygon",
+  );
+  if (!hasMultiPartCounty) return featureCollection.features;
+
+  // Deck's PolygonLayer draws one polygon per data row. Split counties with
+  // islands into separate rows so the mainland and each island stay visible
+  // and clickable while keeping the same county id.
+  return featureCollection.features.flatMap((feature) => {
+    if (feature.geometry.type !== "MultiPolygon") return [feature];
+
+    return feature.geometry.coordinates.map((coordinates) => ({
+      ...feature,
+      geometry: {
+        type: "Polygon" as const,
+        coordinates,
+      },
+    }));
+  });
 }
 
 export interface BuildCountyLayerPropsArgs {
@@ -65,7 +89,7 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
 
   return {
     id: `counties-${metric}`,
-    data: featureCollection.features,
+    data: countyFeaturesForLayer(featureCollection),
     pickable,
     stroked: true,
     filled: true,
@@ -76,9 +100,9 @@ export function buildCountyLayerProps(args: BuildCountyLayerPropsArgs): PolygonL
       const val = valueByFips.get(id);
       return colorFn(val ?? null, domain);
     },
-    getLineColor: [26, 26, 26, 40],
-    getLineWidth: 1,
-    lineWidthMinPixels: 0.5,
+    getLineColor: [255, 255, 255, 185],
+    getLineWidth: 0.9,
+    lineWidthMinPixels: 1,
     onHover,
     onClick,
     updateTriggers: {

@@ -21,6 +21,12 @@ describe("/about", () => {
     expect(container.querySelector('[data-theme="dark"]')).toBeTruthy();
   });
 
+  it("uses the current 2006-2014 shipment total", () => {
+    render(<About />);
+    expect(screen.getByText(/98\.1 billion oxycodone and hydrocodone pills/i)).toBeTruthy();
+    expect(screen.queryByText(/76 billion oxycodone and hydrocodone pills/i)).toBeNull();
+  });
+
   it("exports page metadata", async () => {
     const mod = await import("@/app/about/page");
     expect(mod.metadata?.title).toBe("About");

@@ -13,7 +13,7 @@ export const displayFont = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-display",
+  variable: "--font-display-family",
   display: "swap",
   preload: true,
 });
@@ -36,7 +36,7 @@ export const bodyFont = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-body",
+  variable: "--font-body-family",
   display: "swap",
   preload: true,
 });

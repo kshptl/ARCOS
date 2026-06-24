@@ -38,6 +38,7 @@ describe("schemas mirror", () => {
       year: 2012,
       pills: 5000000,
       pills_per_capita: 200.1,
+      mme_per_capita: null,
     };
     expect(row.fips).toHaveLength(5);
   });

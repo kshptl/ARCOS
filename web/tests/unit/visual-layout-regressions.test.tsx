@@ -78,6 +78,7 @@ describe("visual layout regressions", () => {
 
   it("floats the explorer controls and summary over the map instead of a left rail", () => {
     const src = css("components/explorer/Explorer.module.css");
+    const component = css("components/explorer/Explorer.tsx");
     expect(src).not.toMatch(/\.rail\s*{/);
     expect(src).toMatch(/\.controlBar\s*{[\s\S]*?position:\s*absolute/);
     expect(src).toMatch(/\.controlBar\s*{[\s\S]*?top:\s*var\(--overlay-gap\)/);
@@ -85,13 +86,70 @@ describe("visual layout regressions", () => {
       /\.controlBar\s*{[\s\S]*?right:\s*calc\(var\(--detail-width\)\s*\+\s*var\(--overlay-gap\)\s*\*\s*2\)/,
     );
     expect(src).toMatch(
-      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(15rem,\s*0\.75fr\)\s+minmax\(26rem,\s*1\.55fr\)\s+minmax\(18rem,\s*0\.8fr\)/,
+      /\.controlBar\s*{[\s\S]*?grid-template-columns:\s*minmax\(15rem,\s*0\.72fr\)\s+minmax\(18rem,\s*0\.88fr\)/,
     );
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?align-items:\s*center/);
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?gap:\s*0\.38rem/);
+    expect(src).toMatch(/\.controlBar\s*{[\s\S]*?padding:\s*0\.18rem\s+0\.25rem\s+0\.38rem/);
+    expect(src).toMatch(/\.controlGroup\s*{[\s\S]*?gap:\s*0\.18rem/);
     expect(src).not.toMatch(/\.downloadButton\s*{/);
     expect(src).toMatch(/\.stats\s*{[\s\S]*?position:\s*absolute/);
     expect(src).toMatch(/\.stat\s*{[\s\S]*?padding:\s*0\.58rem\s+0\.72rem/);
     expect(src).toMatch(/\.mapShell\s*{[\s\S]*?min-height:\s*0/);
     expect(src).toMatch(/\.mapShell\s*{[\s\S]*?inset:\s*0/);
+    const controlBlock = component.match(/<section ref=\{controlBarRef\}[\s\S]*?<\/section>/)?.[0];
+    expect(controlBlock).not.toMatch(/<TimeSlider/);
+  });
+
+  it("places the explorer legend just below the compact top controls", () => {
+    const src = css("components/explorer/Explorer.module.css");
+    const component = css("components/explorer/Explorer.tsx");
+    expect(src).toMatch(/--control-panel-height:\s*3\.65rem/);
+    expect(src).toMatch(/--legend-panel-gap:\s*0\.45rem/);
+    expect(src).toMatch(
+      /\.legend\s*{[\s\S]*?top:\s*calc\(var\(--overlay-gap\)\s*\+\s*var\(--control-panel-height\)\s*\+\s*var\(--legend-panel-gap\)\)/,
+    );
+    expect(component).toMatch(/"--control-panel-height":\s*`\$\{controlPanelHeight\}px`/);
+    expect(src).not.toMatch(/\.legend\s*{[\s\S]*?top:\s*clamp\(8\.75rem,\s*18vh,\s*11\.5rem\)/);
+  });
+
+  it("floats the year slider over the map above the bottom stats without a card", () => {
+    const src = css("components/explorer/Explorer.module.css");
+    const component = css("components/explorer/Explorer.tsx");
+    const yearOverlayBlock = src.match(/\.yearOverlay\s*{[^}]*}/)?.[0] ?? "";
+    expect(component).toMatch(
+      /<section ref=\{yearSliderRef\} className=\{styles\.yearOverlay\} aria-label="Year slider">[\s\S]*?<TimeSlider/,
+    );
+    expect(src).toMatch(/--stats-panel-height:\s*4\.55rem/);
+    expect(src).toMatch(/--year-slider-gap:\s*0\.7rem/);
+    expect(src).toMatch(/\.yearOverlay\s*{[\s\S]*?position:\s*absolute/);
+    expect(src).toMatch(
+      /\.yearOverlay\s*{[\s\S]*?bottom:\s*calc\(var\(--overlay-gap\)\s*\+\s*var\(--stats-panel-height\)\s*\+\s*var\(--year-slider-gap\)\)/,
+    );
+    expect(src).toMatch(
+      /\.yearOverlay\s*{[\s\S]*?left:\s*calc\(var\(--overlay-gap\)\s*\+\s*var\(--legend-panel-width\)\s*\+\s*var\(--overlay-gap\)\)/,
+    );
+    expect(yearOverlayBlock).not.toMatch(/background:/);
+    expect(yearOverlayBlock).not.toMatch(/box-shadow:/);
+  });
+
+  it("compacts the explorer legend for 4:3 and short desktop viewports", () => {
+    const src = css("components/explorer/Explorer.module.css");
+    expect(src).toMatch(
+      /@media\s*\(min-width:\s*761px\)\s+and\s+\(max-aspect-ratio:\s*4\/3\),\s*\(min-width:\s*761px\)\s+and\s+\(max-height:\s*700px\)/,
+    );
+    expect(src).toMatch(
+      /@media\s*\(min-width:\s*761px\)[\s\S]*?\.legend\s*{[\s\S]*?right:\s*calc\(var\(--detail-width\)\s*\+\s*var\(--overlay-gap\)\s*\*\s*2\)/,
+    );
+    expect(src).toMatch(
+      /@media\s*\(min-width:\s*761px\)[\s\S]*?\.legend\s*{[\s\S]*?grid-template-columns:\s*auto\s+minmax\(0,\s*1fr\)\s+auto/,
+    );
+    expect(src).toMatch(
+      /@media\s*\(min-width:\s*761px\)[\s\S]*?\.legend ol\s*{[\s\S]*?display:\s*flex/,
+    );
+    expect(src).toMatch(
+      /@media\s*\(min-width:\s*761px\)[\s\S]*?\.yearOverlay\s*{[\s\S]*?left:\s*var\(--overlay-gap\)/,
+    );
   });
 
   it("locks the desktop explorer into one viewport without the map footer", () => {
@@ -120,25 +178,67 @@ describe("visual layout regressions", () => {
     );
   });
 
+  it("uses mobile layout rules for iPhone landscape and shows the map before stats", () => {
+    const styles = css("components/explorer/Explorer.module.css");
+    expect(styles).toMatch(
+      /@media\s*\(max-width:\s*760px\),\s*\(max-width:\s*950px\)\s+and\s+\(max-height:\s*520px\)/,
+    );
+    expect(styles).toMatch(/\.controlBar\s*{[\s\S]*?order:\s*1/);
+    expect(styles).toMatch(/\.mapShell\s*{[\s\S]*?order:\s*2/);
+    expect(styles).toMatch(/\.stats\s*{[\s\S]*?order:\s*3/);
+    expect(styles).toMatch(
+      /@media\s*\(max-width:\s*760px\)[\s\S]*?\.legend ol\s*{[\s\S]*?grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
+    );
+  });
+
   it("keeps explorer year ticks horizontal with a centered active pill", () => {
     const src = css("components/map/TimeSlider.module.css");
     expect(src).toMatch(/--slider-edge:\s*1\.1rem/);
-    expect(src).toMatch(/\.track\s*{[\s\S]*?margin-inline:\s*var\(--slider-edge\)/);
+    expect(src).toMatch(/--slider-track-drop:\s*0\.12rem/);
+    expect(src).toMatch(/--slider-label-drop:\s*0rem/);
+    expect(src).toMatch(/\.label\s*{[\s\S]*?transform:\s*translateY\(var\(--slider-label-drop\)\)/);
+    expect(src).toMatch(/\.axis\s*{[\s\S]*?margin-inline:\s*var\(--slider-edge\)/);
+    expect(src).toMatch(/\.axis\s*{[\s\S]*?padding-top:\s*var\(--slider-track-drop\)/);
+    expect(src).toMatch(/\.axis\s*{[\s\S]*?padding-bottom:\s*1\.02rem/);
+    expect(src).toMatch(/\.track\s*{[\s\S]*?transform:\s*translateY\(var\(--slider-track-drop\)\)/);
+    expect(src).toMatch(/\.track\s*{[\s\S]*?height:\s*8px/);
     expect(src).toMatch(/\.thumb\s*{[\s\S]*?transform:\s*translate\(-50%,\s*-50%\)/);
-    expect(src).toMatch(/\.ticks\s*{[\s\S]*?padding-inline:\s*var\(--slider-edge\)/);
-    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*1\.55rem/);
+    expect(src).toMatch(/\.thumb\s*{[\s\S]*?width:\s*12px/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?position:\s*relative/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?min-height:\s*1rem/);
+    expect(src).toMatch(/\.ticks\s*{[\s\S]*?transform:\s*translateY\(var\(--slider-track-drop\)\)/);
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?left:\s*var\(--tick-pct\)/);
+    expect(src).toMatch(/\.tick\s*{[\s\S]*?transform:\s*translateX\(-50%\)/);
     expect(src).toMatch(/\.tick\s*{[\s\S]*?text-align:\s*center/);
     expect(src).not.toMatch(/\.tick\s*{[\s\S]*?transform:\s*rotate\(-45deg\)/);
-    expect(src).toMatch(/\.tickActive\s*{[\s\S]*?justify-self:\s*center/);
-    expect(src).toMatch(/\.tickActive\s*{[\s\S]*?border-radius:\s*999px/);
+    expect(src).toMatch(/\.activePill\s*{[\s\S]*?left:\s*var\(--active-pct\)/);
+    expect(src).toMatch(
+      /\.activePill\s*{[\s\S]*?top:\s*calc\(var\(--slider-track-drop\)\s*\+\s*var\(--slider-track-drop\)\s*\+\s*8px\s*\+\s*0\.04rem\)/,
+    );
+    expect(src).toMatch(/\.activePill\s*{[\s\S]*?transform:\s*translateX\(-50%\)/);
+    expect(src).toMatch(/\.activePill\s*{[\s\S]*?border-radius:\s*999px/);
+    expect(src).toMatch(
+      /@media\s*\(max-width:\s*760px\),\s*\(max-width:\s*950px\)\s+and\s+\(max-height:\s*520px\)[\s\S]*?\.track\s*{[\s\S]*?height:\s*10px/,
+    );
+    expect(src).toMatch(
+      /@media\s*\(max-width:\s*760px\),\s*\(max-width:\s*950px\)\s+and\s+\(max-height:\s*520px\)[\s\S]*?\.thumb\s*{[\s\S]*?width:\s*18px/,
+    );
   });
 
   it("keeps explorer tooltips above map overlays and makes the metric label readable", () => {
     const explorer = css("components/explorer/Explorer.module.css");
     const filters = css("components/explorer/Filters.module.css");
     expect(explorer).toMatch(/\.controlBar\s*{[\s\S]*?z-index:\s*8/);
-    expect(filters).toMatch(/\.label\s*{[\s\S]*?font-size:\s*0\.84rem/);
+    expect(filters).toMatch(/\.root\s*{[\s\S]*?gap:\s*0\.18rem/);
+    expect(filters).toMatch(/\.label\s*{[\s\S]*?font-size:\s*0\.66rem/);
+    expect(filters).toMatch(/\.label\s*{[\s\S]*?justify-content:\s*center/);
+    expect(filters).toMatch(/\.label\s*{[\s\S]*?text-align:\s*center/);
+    expect(filters).toMatch(/\.option\s*{[\s\S]*?min-height:\s*1\.75rem/);
+    expect(filters).toMatch(/\.option\s*{[\s\S]*?font-size:\s*0\.62rem/);
     expect(filters).toMatch(/\.tooltip,\s*[\r\n]\.metricTooltip\s*{[\s\S]*?z-index:\s*40/);
+    expect(filters).toMatch(
+      /\.root:has\(\.option\[data-metric="mme_per_capita"\]:hover\)\s+\.tooltip/,
+    );
   });
 
   it("keeps the explorer detail panel scrollable to its last action", () => {

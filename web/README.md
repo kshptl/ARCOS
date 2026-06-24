@@ -23,8 +23,9 @@ county list when WebGL is unavailable.
 
 - URL state: `?year=2012&metric=pills_per_capita` is the source of truth. All filter
   changes update the URL via `history.replaceState`; `popstate` re-parses.
-- Metrics: `pills_per_capita` and `deaths_per_100k`. MME per capita is shown as
-  unavailable until the dataset includes drug strength and opioid conversion data.
+- Metrics: `pills_per_capita`, `deaths_per_100k`, and `mme_per_capita`. MME is
+  county-level for 2006-2012 and state-level for 2015-2024 from DEA retail
+  summary PDFs.
 - Keyboard: the slider advances ±1 year on arrow keys, ±3 on PageUp/PageDown,
   jumps to first/last on Home/End.
 

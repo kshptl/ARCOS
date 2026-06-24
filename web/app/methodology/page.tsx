@@ -7,18 +7,18 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "Sources, joins, caveats, and licenses for the openarcos opioid distribution analysis.",
+    "Sources, joins, caveats, and licenses for the openARCOS opioid distribution analysis.",
 };
 
 const DATASET_JSONLD = {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  name: "openarcos county-year opioid distribution",
+  name: "openARCOS county-year opioid distribution",
   description:
-    "Merged, schema-validated aggregates of DEA ARCOS shipments, DEA enforcement actions, and CDC WONDER overdose deaths at the US county level.",
+    "Merged, schema-validated aggregates of DEA ARCOS county shipments, post-2014 DEA retail summary state MME, DEA enforcement actions, and CDC WONDER overdose deaths.",
   url: "https://openarcos.org/methodology",
   license: "https://www.apache.org/licenses/LICENSE-2.0",
-  creator: { "@type": "Organization", name: "openarcos" },
+  creator: { "@type": "Organization", name: "openARCOS" },
   distribution: [
     {
       "@type": "DataDownload",
@@ -29,6 +29,11 @@ const DATASET_JSONLD = {
       "@type": "DataDownload",
       encodingFormat: "application/vnd.apache.parquet",
       contentUrl: "https://openarcos.org/data/county-shipments-by-year.parquet",
+    },
+    {
+      "@type": "DataDownload",
+      encodingFormat: "application/json",
+      contentUrl: "https://openarcos.org/data/state-opioid-mme-by-year.json",
     },
   ],
 };
@@ -41,8 +46,9 @@ export default function Methodology() {
           <Eyebrow>Methodology</Eyebrow>
           <h1>How this site is built</h1>
           <p className={styles.lede}>
-            openarcos is a static site assembled from three public datasets. Everything below —
-            sources, cleaning, joins, caveats — is reproducible from the repo at{" "}
+            openARCOS is a static site assembled from public opioid distribution, overdose,
+            population, and enforcement datasets. Everything below — sources, cleaning, joins,
+            caveats — is reproducible from the repo at{" "}
             <a href="https://github.com/anomalyco/opencode">GitHub</a>.
           </p>
         </header>
@@ -56,6 +62,16 @@ export default function Methodology() {
               Brief ARCOS dataset.{" "}
               <a href="https://data.mendeley.com/datasets/dwfgxrh7tn/9">View at Mendeley Data</a>.
               Released under CC BY 4.0.
+            </dd>
+            <dt>DEA ARCOS retail summary PDFs</dt>
+            <dd>
+              State-year opioid MME estimates for 2015-2024 are extracted from DEA Diversion Control
+              ARCOS Retail Drug Summary Report 4 PDFs. Those PDFs publish grams by state and drug
+              code, not county rows, so post-2014 MME appears as state-level data only.{" "}
+              <a href="https://www.deadiversion.usdoj.gov/arcos/retail_drug_summary/arcos-drug-summary-reports.html">
+                View at deadiversion.usdoj.gov
+              </a>
+              .
             </dd>
             <dt>DEA Diversion Control</dt>
             <dd>
@@ -98,7 +114,10 @@ export default function Methodology() {
         <section id="caveats">
           <h2>Caveats</h2>
           <ul>
-            <li>ARCOS covers 2006–2014 only. Later years are not in this dataset.</li>
+            <li>
+              County ARCOS shipments cover 2006-2014. The public DEA post-2014 retail summary PDFs
+              add state-level MME for 2015-2024, but they do not provide county-level rows.
+            </li>
             <li>
               CDC suppression hides counts of 9 or fewer deaths in a county-year — the map renders
               these as &lt;10, never zero. Rates based on 10-20 deaths are flagged by CDC as

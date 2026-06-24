@@ -14,15 +14,14 @@ export interface FiltersProps {
 }
 
 type MetricOption = {
-  metric: MapMetric | "mme_per_capita";
+  metric: MapMetric;
   label: string;
-  unavailable?: boolean;
 };
 
 const METRIC_OPTIONS: MetricOption[] = [
   { metric: "pills_per_capita", label: "Pills per capita" },
   { metric: "deaths_per_100k", label: "Overdose deaths per 100k" },
-  { metric: "mme_per_capita", label: "MME per capita", unavailable: true },
+  { metric: "mme_per_capita", label: "MME per capita" },
 ];
 
 export function Filters({ metric, onChange }: FiltersProps) {
@@ -48,11 +47,11 @@ export function Filters({ metric, onChange }: FiltersProps) {
             key={option.metric}
             type="button"
             className={styles.option}
+            data-metric={option.metric}
             aria-pressed={metric === option.metric}
-            aria-disabled={option.unavailable ? "true" : undefined}
-            aria-describedby={option.unavailable ? mmeTooltipId : undefined}
+            aria-describedby={option.metric === "mme_per_capita" ? mmeTooltipId : undefined}
             onClick={() => {
-              if (option.metric !== "mme_per_capita") onChange({ metric: option.metric });
+              onChange({ metric: option.metric });
             }}
           >
             <span>{option.label}</span>
@@ -64,8 +63,9 @@ export function Filters({ metric, onChange }: FiltersProps) {
         where more people live.
       </p>
       <p id={mmeTooltipId} role="tooltip" className={styles.tooltip}>
-        MME means morphine milligram equivalent. It requires drug strength and opioid conversion
-        data, which are not in the current county shipment file.
+        MME means morphine milligram equivalent. It converts each opioid shipment into a common
+        opioid amount so stronger drugs count more than weaker drugs. County MME is available for
+        2006-2012, and state MME is available for 2015-2024.
       </p>
     </fieldset>
   );

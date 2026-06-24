@@ -64,8 +64,8 @@ export function buildStateLayerProps(args: BuildStateLayerPropsArgs): PolygonLay
       return colorFn(args.valueByStateFips?.get(id) ?? null, domain);
     },
     getLineColor: [0, 0, 0, 235],
-    getLineWidth: 3.4,
-    lineWidthMinPixels: 2.4,
+    getLineWidth: 1.2,
+    lineWidthMinPixels: 0.9,
     onHover: args.onHover,
     onClick: args.onClick,
     updateTriggers: {

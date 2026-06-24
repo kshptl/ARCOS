@@ -69,8 +69,9 @@ describe("TimeSlider", () => {
         onChange={() => {}}
       />,
     );
-    const ticks = screen.getByText("2006").parentElement;
-    expect(ticks).toHaveStyle("--year-count: 9");
+    expect(screen.getByText("2006")).toHaveStyle("--tick-pct: 0%");
+    expect(screen.getByText("2010")).toHaveStyle("--tick-pct: 50%");
+    expect(screen.getByText("2014")).toHaveStyle("--tick-pct: 100%");
   });
 
   it("centers the thumb on the same percent used by the active year label", () => {
@@ -81,6 +82,18 @@ describe("TimeSlider", () => {
       node.getAttribute("style")?.includes("left:"),
     );
     expect(thumb).toHaveStyle("left: 100%");
+    const activePill = container.querySelector('[data-active-year-pill="true"]');
+    expect(activePill).toHaveStyle("left: 100%");
+  });
+
+  it("renders the highlighted year as a separate pill locked to the thumb percent", () => {
+    const { container } = render(
+      <TimeSlider years={[2006, 2007, 2008, 2009, 2010]} value={2009} onChange={() => {}} />,
+    );
+
+    const activePill = container.querySelector('[data-active-year-pill="true"]');
+    expect(activePill).toHaveTextContent("2009");
+    expect(activePill).toHaveStyle("left: 75%");
   });
 
   it("lets people pull the thumb with a pointer", () => {
