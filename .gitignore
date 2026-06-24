@@ -190,3 +190,8 @@ pipeline/.coverage
 
 # git worktrees
 .worktrees/
+
+# Ad-hoc QA screenshots dropped in repo root (keep saved ones under docs/qa/)
+/*.png
+/*.jpeg
+/*.jpg
