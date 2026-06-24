@@ -460,6 +460,9 @@ describe("Explorer interactions", () => {
     expect(screen.getByText("Selected state (2024)")).toBeInTheDocument();
     expect(screen.getByLabelText("State map panel")).toBeInTheDocument();
     expect(mocks.mapProps.at(-1)?.ariaLabel).toBe("State map of MME per capita, 2024");
+    expect(screen.getByRole("complementary", { name: "MME per capita legend" })).toHaveTextContent(
+      "State-level estimate · 2015–2024",
+    );
   });
 
   it("uses fixed legend intervals without unit parentheticals", async () => {
@@ -476,6 +479,7 @@ describe("Explorer interactions", () => {
     expect(pillsLegend).toHaveTextContent("100 - 200");
     expect(pillsLegend).toHaveTextContent("< 20");
     expect(pillsLegend).not.toHaveTextContent("(pills per person)");
+    expect(pillsLegend).not.toHaveTextContent("State-level estimate");
 
     await user.click(screen.getByRole("button", { name: "Overdose deaths per 100k" }));
     const deathsLegend = await screen.findByRole("complementary", {

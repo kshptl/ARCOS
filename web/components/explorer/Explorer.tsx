@@ -1201,6 +1201,12 @@ export function Explorer({ counties }: ExplorerProps) {
             aria-label={`${metricDetails.label} legend`}
           >
             <h2>{metricDetails.label}</h2>
+            {isStateOnlyMetricYear && (
+              <p>
+                State-level estimate · {STATE_MME_AVAILABLE_YEARS[0]}–
+                {STATE_MME_AVAILABLE_YEARS[STATE_MME_AVAILABLE_YEARS.length - 1]}
+              </p>
+            )}
             <ol>
               {legendLabels.map((label, index) => (
                 <li key={label}>
