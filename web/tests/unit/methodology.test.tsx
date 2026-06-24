@@ -50,7 +50,7 @@ describe("/methodology", () => {
     expect(screen.getByText(/Underlying Cause of Death 1999-2020/i)).toBeInTheDocument();
     expect(screen.getByText(/interactive UI scrape/i)).toBeInTheDocument();
     expect(screen.getByText(/one state\/DC query at a time/i)).toBeInTheDocument();
-    expect(screen.getAllByText(/2006-2014/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/2006–2014/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/Drug\/Alcohol Induced Causes D1-D4/i)).toBeInTheDocument();
     expect(screen.getByText(/X40-X44, X60-X64, X85, Y10-Y14/i)).toBeInTheDocument();
     expect(screen.getByText(/42 USC 242m\(d\)/i)).toBeInTheDocument();

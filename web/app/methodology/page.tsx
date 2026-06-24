@@ -65,7 +65,7 @@ export default function Methodology() {
             </dd>
             <dt>DEA ARCOS retail summary PDFs</dt>
             <dd>
-              State-year opioid MME estimates for 2015-2024 are extracted from DEA Diversion Control
+              State-year opioid MME estimates for 2015–2024 are extracted from DEA Diversion Control
               ARCOS Retail Drug Summary Report 4 PDFs. Those PDFs publish grams by state and drug
               code, not county rows, so post-2014 MME appears as state-level data only.{" "}
               <a href="https://www.deadiversion.usdoj.gov/arcos/retail_drug_summary/arcos-drug-summary-reports.html">
@@ -93,7 +93,7 @@ export default function Methodology() {
               Overdose deaths by county-year from a CDC WONDER Underlying Cause of Death 1999-2020
               interactive UI scrape.{" "}
               <a href="https://wonder.cdc.gov/ucd-icd10.html">View at wonder.cdc.gov</a>. The scrape
-              runs one state/DC query at a time for 2006-2014, using the WONDER Drug/Alcohol Induced
+              runs one state/DC query at a time for 2006–2014, using the WONDER Drug/Alcohol Induced
               Causes D1-D4 macro and ICD-10 codes X40-X44, X60-X64, X85, Y10-Y14. Counts of 9 or
               fewer are suppressed under 42 USC 242m(d) and rendered &lt;10, never zero. Counts of
               10-20 are publishable as raw deaths, but CDC flags their rates as statistically
@@ -115,8 +115,8 @@ export default function Methodology() {
           <h2>Caveats</h2>
           <ul>
             <li>
-              County ARCOS shipments cover 2006-2014. The public DEA post-2014 retail summary PDFs
-              add state-level MME for 2015-2024, but they do not provide county-level rows.
+              County ARCOS shipments cover 2006–2014. The public DEA post-2014 retail summary PDFs
+              add state-level MME for 2015–2024, but they do not provide county-level rows.
             </li>
             <li>
               CDC suppression hides counts of 9 or fewer deaths in a county-year — the map renders
