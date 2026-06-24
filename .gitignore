@@ -41,6 +41,9 @@ pip-delete-this-directory.txt
 # Playwright MCP scratch artifacts (console logs, screenshots)
 .playwright-mcp/
 
+# codegraph MCP index
+.codegraph/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
