@@ -40,6 +40,14 @@ def _write_clean_inputs(clean_dir: Path) -> None:
 
     pl.DataFrame(
         {
+            "fips": ["54059", "54059", "21119"],
+            "year": [2011, 2012, 2012],
+            "mme": [8_000_000.0, 9_000_000.0, 3_150_000.0],
+        }
+    ).write_parquet(clean_dir / "wapo_mme_county_year.parquet")
+
+    pl.DataFrame(
+        {
             "fips": ["54059", "54059", "54059", "21119", "21119", "21119"],
             "year": [2011, 2012, 2013, 2011, 2012, 2013],
             "deaths": [42, 55, 61, None, None, None],
@@ -59,7 +67,7 @@ def test_build_master_produces_full_grid(tmp_path):
     df = pl.read_parquet(out)
     # 3 counties × 3 years = 9 rows
     assert len(df) == 9
-    assert set(df.columns) == {"fips", "year", "pop", "pills", "deaths", "suppressed"}
+    assert set(df.columns) == {"fips", "year", "pop", "pills", "mme", "deaths", "suppressed"}
     # Every (fips, year) combination exactly once
     assert df.group_by(["fips", "year"]).len()["len"].max() == 1
 
@@ -75,6 +83,7 @@ def test_build_master_left_joins_sparse_coverage(tmp_path):
     # Norton (51720) has no WaPo and no CDC rows → pills and deaths null
     norton = df.filter(pl.col("fips") == "51720").sort("year").to_dicts()
     assert all(r["pills"] is None for r in norton)
+    assert all(r["mme"] is None for r in norton)
     assert all(r["deaths"] is None for r in norton)
     # suppressed defaults to False for rows with no CDC source (not True)
     assert all(r["suppressed"] is False for r in norton)
@@ -103,3 +112,17 @@ def test_build_master_year_range_is_inclusive_of_endpoints(tmp_path):
 
     years = sorted(set(df["year"].to_list()))
     assert years == [2011, 2012, 2013]
+
+
+def test_build_master_adds_optional_mme_when_present(tmp_path):
+    cfg = Config(data_root=tmp_path / "data", emit_dir=tmp_path / "emit")
+    cfg.ensure_dirs()
+    _write_clean_inputs(cfg.clean_dir)
+
+    out = build_master(cfg, years=range(2011, 2014))
+    df = pl.read_parquet(out)
+
+    row = df.filter((pl.col("fips") == "54059") & (pl.col("year") == 2012)).row(
+        0, named=True
+    )
+    assert row["mme"] == 9_000_000.0

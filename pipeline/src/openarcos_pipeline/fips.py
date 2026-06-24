@@ -61,6 +61,11 @@ FIPS_STATE_MAP = {
     "78": "VI",
 }
 
+TERRITORY_STATE_FIPS = {"60", "66", "69", "72", "78"}
+STATE_DC_FIPS_MAP = {
+    fips: state for fips, state in FIPS_STATE_MAP.items() if fips not in TERRITORY_STATE_FIPS
+}
+
 
 def normalize_fips(value: object) -> str:
     """Return a 5-character zero-padded FIPS string.

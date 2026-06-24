@@ -29,6 +29,7 @@ def _register_inputs(conn: duckdb.DuckDBPyConnection, cfg: Config) -> None:
         "wapo_pharmacies": cfg.clean_dir / "wapo_pharmacies.parquet",
         "cdc_overdose": cfg.clean_dir / "cdc_overdose.parquet",
         "dea_enforcement": cfg.clean_dir / "dea_enforcement.parquet",
+        "dea_retail_state_mme_year": cfg.clean_dir / "dea_retail_state_mme_year.parquet",
     }
     for view_name, path in mapping.items():
         if path.exists():
@@ -108,6 +109,7 @@ _KNOWN_VIEWS = (
     "wapo_pharmacies",
     "cdc_overdose",
     "dea_enforcement",
+    "dea_retail_state_mme_year",
 )
 
 

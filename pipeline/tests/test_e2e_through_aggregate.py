@@ -53,7 +53,10 @@ def test_full_pipeline_through_aggregate(tmp_path, fixtures_dir, monkeypatch):
 
     agg_dir = data_root / "agg"
     produced = {p.stem for p in agg_dir.glob("*.parquet")}
-    assert produced == set(discover_sql())
-    for name in discover_sql():
+    # The DEA retail PDF aggregate is optional here because this fixture does
+    # not seed those large PDFs.
+    expected = set(discover_sql()) - {"state_opioid_mme_by_year"}
+    assert produced == expected
+    for name in expected:
         df = pl.read_parquet(agg_dir / f"{name}.parquet")
         assert df.height > 0, f"empty aggregation: {name}"

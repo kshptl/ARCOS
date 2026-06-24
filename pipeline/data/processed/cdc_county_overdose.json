@@ -310973,7 +310973,7 @@
   ],
   "methodology": "CDC WONDER Underlying Cause of Death 1999-2020 (D76), scraped via the interactive UI (Playwright-driven). Filters: Drug/Alcohol Induced Causes D1+D2+D3+D4 \u2014 maps to ICD-10 X40-X44 (unintentional drug poisoning) \u222a X60-X64 (suicide by drug) \u222a X85 (homicide by drug) \u222a Y10-Y14 (undetermined drug poisoning). Group-by: State, County, Year. Years: 2006-2014 annual. Show Zeros: true; Show Suppressed: true. Suppressed cells (NCHS rule, 42 USC 242m(d): counts of 9 or fewer not publishable) are carried through with deaths=null and suppressed=true. Crude-rate cells marked 'Unreliable' (NCHS rule: counts \u2264 20) arrive as crude_rate=null and unreliable=true \u2014 the count is still the ground truth. Population denominators come from CDC's bridged-race Census vintage used internally by WONDER.",
   "source": "https://wonder.cdc.gov/ucd-icd10.html",
-  "fetched_at": "2026-05-05T16:28:55.030068+00:00",
+  "fetched_at": "2026-05-08T18:23:19.895218+00:00",
   "totals": {
     "records": 28270,
     "suppressed": 21402,

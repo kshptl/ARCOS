@@ -81,6 +81,30 @@ def clean_county_csv(path: Path) -> pl.DataFrame:
     )
 
 
+def clean_mme_county_year_csv(path: Path) -> pl.DataFrame:
+    """Compact WaPo MME CSV → `{fips, year, mme}` DataFrame."""
+    df = _lower_columns(pl.read_csv(path, schema_overrides={"fips": pl.Utf8}))
+    required = {"fips", "year", "mme"}
+    missing = sorted(required.difference(df.columns))
+    if missing:
+        raise ValueError(f"{path.name} is missing columns: {', '.join(missing)}")
+
+    return (
+        df.with_columns(
+            [
+                pl.col("fips").cast(pl.Utf8).str.strip_chars().str.zfill(5).alias("fips"),
+                pl.col("year").cast(pl.Int64),
+                pl.col("mme").fill_null(0).cast(pl.Float64),
+            ]
+        )
+        .filter(pl.col("fips").str.contains(r"^[0-9]{5}$"))
+        .group_by(["fips", "year"])
+        .agg(pl.col("mme").sum().alias("mme"))
+        .select(["fips", "year", "mme"])
+        .sort(["fips", "year"])
+    )
+
+
 def clean_distributors(rows: list[dict[str, Any]]) -> pl.DataFrame:
     """Raw distributor rows → `{distributor, year, pills}` DataFrame.
 

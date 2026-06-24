@@ -16,6 +16,18 @@ log = get_logger("openarcos.cli")
 def _run_fetch(cfg, source: str = "all") -> None:
     """Helper: download raw source data. Reused by `fetch` and `all`."""
     cfg.ensure_dirs()
+    if source == "wapo-mme":
+        from openarcos_pipeline.sources.wapo_runner import fetch_wapo_mme
+
+        fetch_wapo_mme(cfg)
+        log.info("wapo mme fetch complete")
+        return
+    if source == "arcos-retail":
+        from openarcos_pipeline.sources.dea_retail_summaries import fetch_report_pdfs
+
+        fetch_report_pdfs(cfg)
+        log.info("dea retail summary fetch complete")
+        return
     if source in ("all", "wapo"):
         from openarcos_pipeline.sources.wapo_runner import fetch_county_csv
 
@@ -33,6 +45,11 @@ def _run_fetch(cfg, source: str = "all") -> None:
 
         fetch_reports(cfg)
         log.info("dea fetch complete")
+    if source in ("all", "arcos-retail"):
+        from openarcos_pipeline.sources.dea_retail_summaries import fetch_report_pdfs
+
+        fetch_report_pdfs(cfg)
+        log.info("dea retail summary fetch complete")
     if source in ("all", "census"):
         from openarcos_pipeline.sources.census import fetch_popest
 
@@ -52,11 +69,13 @@ def _run_clean(cfg) -> None:
         build_artifact,
         classify_notices,
     )
+    from openarcos_pipeline.clean.dea_retail_summaries import clean_report4_pdf_dir
     from openarcos_pipeline.clean.wapo import (
         clean_county_csv,
         clean_county_raw,
         clean_distributors,
         clean_distributors_by_county,
+        clean_mme_county_year_csv,
         clean_pharmacies,
     )
 
@@ -194,6 +213,18 @@ def _run_clean(cfg) -> None:
         if records:
             pl.DataFrame(records).write_parquet(cfg.clean_dir / "dea_enforcement.parquet")
 
+    dea_retail_raw = cfg.raw_dir / "arcos_retail_summary"
+    if dea_retail_raw.is_dir():
+        report_rows, state_mme_rows = clean_report4_pdf_dir(dea_retail_raw)
+        if not report_rows.is_empty():
+            report_rows.write_parquet(cfg.clean_dir / "dea_retail_state_drug_year.parquet")
+            state_mme_rows.write_parquet(cfg.clean_dir / "dea_retail_state_mme_year.parquet")
+            log.info(
+                "dea retail clean: parsed %d state-drug rows and %d state-year rows",
+                len(report_rows),
+                len(state_mme_rows),
+            )
+
     # WaPo — per-county fixtures named `{endpoint}_{state}_{county}.json`
     # Supported naming conventions (written by sources/wapo_runner.py):
     #   county_raw_{ST}_{County}.json
@@ -219,6 +250,12 @@ def _run_clean(cfg) -> None:
         if county_csv is not None:
             county_frames.append(clean_county_csv(county_csv))
             log.info("wapo clean: using county CSV %s", county_csv.name)
+        mme_csv = wapo_raw / "arcos_mme_county_year.csv"
+        if mme_csv.exists():
+            clean_mme_county_year_csv(mme_csv).write_parquet(
+                cfg.clean_dir / "wapo_mme_county_year.parquet"
+            )
+            log.info("wapo clean: using MME CSV %s", mme_csv.name)
         for f in sorted(wapo_raw.glob("*.json")):
             stem = f.stem
             data = json.loads(f.read_text())

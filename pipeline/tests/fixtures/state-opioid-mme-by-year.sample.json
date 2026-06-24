@@ -1,0 +1,17 @@
+[
+  {
+    "state_fips": "54",
+    "state": "WV",
+    "year": 2024,
+    "geography_level": "state",
+    "population": 1793716,
+    "mme": 450000000.0,
+    "mme_per_capita": 250.878,
+    "mme_per_100k": 25087800.0,
+    "included_drug_codes": ["9143", "9193"],
+    "excluded_drug_codes": ["9801"],
+    "source_urls": [
+      "https://www.deadiversion.usdoj.gov/arcos/retail_drug_summary/report_yr_2024.pdf"
+    ]
+  }
+]

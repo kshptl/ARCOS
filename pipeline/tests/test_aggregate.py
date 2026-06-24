@@ -40,11 +40,36 @@ def test_state_shipments_by_year(agg_master_parquet):
     _assert_snapshot(df, SNAPSHOTS / "state_shipments_by_year.expected.csv")
 
 
+def test_state_opioid_mme_by_year(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "state_opioid_mme_by_year")
+    df = pl.read_parquet(out).sort(["state_fips", "year"])
+    row = df.filter((pl.col("state_fips") == "51") & (pl.col("year") == 2024)).row(
+        0, named=True
+    )
+    assert row["mme_per_capita"] == 105.442
+    assert row["included_drug_codes"] == ["9143"]
+    assert row["excluded_drug_codes"] == ["9801"]
+    assert "deadiversion.usdoj.gov" in row["source_urls"][0]
+
+
 def test_county_shipments_by_year(agg_master_parquet):
     cfg = agg_master_parquet
     out = run_single(cfg, "county_shipments_by_year")
     df = pl.read_parquet(out).sort(["fips", "year"])
     _assert_snapshot(df, SNAPSHOTS / "county_shipments_by_year.expected.csv")
+
+
+def test_county_shipments_keeps_mme_missing_when_mme_source_has_no_row(agg_master_parquet):
+    cfg = agg_master_parquet
+    out = run_single(cfg, "county_shipments_by_year")
+    df = pl.read_parquet(out)
+
+    row = df.filter((pl.col("fips") == "51720") & (pl.col("year") == 2012)).row(
+        0, named=True
+    )
+    assert row["pills"] == 0
+    assert row["mme_per_capita"] is None
 
 
 def test_top_distributors_by_year(agg_master_parquet):

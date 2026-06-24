@@ -56,7 +56,7 @@ def test_cli_clean_then_join_produces_valid_master(tmp_path, fixtures_dir, monke
     n_counties = df.select(pl.col("fips").n_unique()).item()
     assert len(df) == n_counties * 3
     assert n_counties >= 4
-    assert set(df.columns) == {"fips", "year", "pop", "pills", "deaths", "suppressed"}
+    assert set(df.columns) == {"fips", "year", "pop", "pills", "mme", "deaths", "suppressed"}
     # 54059 should have a non-null pills figure in 2012 (the year the WaPo fixture covers)
     mingo_2012 = df.filter((pl.col("fips") == "54059") & (pl.col("year") == 2012)).to_dicts()[0]
     assert mingo_2012["pills"] is not None and mingo_2012["pills"] > 0

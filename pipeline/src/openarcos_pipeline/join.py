@@ -40,6 +40,7 @@ def build_master(cfg: Config, years: Iterable[int]) -> Path:
 
     meta_path = cfg.clean_dir / "county_metadata.parquet"
     wapo_path = cfg.clean_dir / "wapo_county.parquet"
+    mme_path = cfg.clean_dir / "wapo_mme_county_year.parquet"
     cdc_path = cfg.clean_dir / "cdc_overdose.parquet"
 
     for p in (meta_path, wapo_path, cdc_path):
@@ -52,6 +53,10 @@ def build_master(cfg: Config, years: Iterable[int]) -> Path:
     out = cfg.joined_dir / "master.parquet"
 
     years_csv = ",".join(f"({y})" for y in year_list)
+    if mme_path.exists():
+        mme_sql = f"SELECT fips, year, mme FROM read_parquet('{mme_path}')"
+    else:
+        mme_sql = "SELECT NULL::VARCHAR AS fips, NULL::INTEGER AS year, NULL::DOUBLE AS mme WHERE FALSE"
     sql = f"""
     WITH years(year) AS (VALUES {years_csv}),
     grid AS (
@@ -62,6 +67,9 @@ def build_master(cfg: Config, years: Iterable[int]) -> Path:
     wapo AS (
         SELECT fips, year, pills FROM read_parquet('{wapo_path}')
     ),
+    mme AS (
+        {mme_sql}
+    ),
     cdc AS (
         SELECT fips, year, deaths, suppressed FROM read_parquet('{cdc_path}')
     )
@@ -70,10 +78,12 @@ def build_master(cfg: Config, years: Iterable[int]) -> Path:
         g.year,
         g.pop,
         w.pills,
+        mme.mme,
         c.deaths,
         COALESCE(c.suppressed, FALSE) AS suppressed
     FROM grid g
     LEFT JOIN wapo w USING (fips, year)
+    LEFT JOIN mme USING (fips, year)
     LEFT JOIN cdc  c USING (fips, year)
     ORDER BY g.fips, g.year
     """

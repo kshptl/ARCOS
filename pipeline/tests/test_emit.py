@@ -14,6 +14,7 @@ from openarcos_pipeline.emit import (
     emit_county_metadata_json,
     emit_dea_enforcement_json,
     emit_search_index_json,
+    emit_state_opioid_mme_json,
     emit_state_shipments_json,
     emit_top_distributors_json,
 )
@@ -53,6 +54,27 @@ def test_emit_state_shipments_json_validates_and_writes(seeded_cfg):
         assert len(row["state"]) == 2
         assert 2006 <= row["year"] <= 2014
         assert row["pills"] >= 0
+
+
+def test_emit_state_opioid_mme_json_validates_and_writes(seeded_cfg):
+    out = emit_state_opioid_mme_json(seeded_cfg)
+    assert out.exists()
+    data = json.loads(out.read_text())
+    row = next(r for r in data if r["state_fips"] == "51" and r["year"] == 2024)
+    assert row["state"] == "VA"
+    assert row["geography_level"] == "state"
+    assert row["mme_per_capita"] == 105.442
+    assert row["included_drug_codes"] == ["9143"]
+    assert row["excluded_drug_codes"] == ["9801"]
+
+
+def test_emit_state_opioid_mme_json_rejects_incomplete_state_year(seeded_cfg):
+    src = seeded_cfg.agg_dir / "state_opioid_mme_by_year.parquet"
+    df = pl.read_parquet(src)
+    df.filter(~((pl.col("state_fips") == "54") & (pl.col("year") == 2024))).write_parquet(src)
+
+    with pytest.raises(SchemaValidationError, match="missing state"):
+        emit_state_opioid_mme_json(seeded_cfg)
 
 
 def test_emit_county_metadata_json(seeded_cfg):
@@ -187,7 +209,7 @@ def test_emit_county_shipments_parquet(seeded_cfg):
 
     out = emit_county_shipments_parquet(seeded_cfg)
     df = pl.read_parquet(out)
-    assert set(df.columns) == {"fips", "year", "pills", "pills_per_capita"}
+    assert set(df.columns) == {"fips", "year", "pills", "pills_per_capita", "mme_per_capita"}
     assert df.height > 0
 
 
@@ -215,11 +237,12 @@ def test_emit_all_produces_eight_artifacts(seeded_cfg):
     from openarcos_pipeline.emit import emit_all
 
     outs = emit_all(seeded_cfg)
-    # 5 JSON + 3 Parquet = 8 total
+    # 6 JSON + 3 Parquet = 9 total
     names = {p.name for p in outs}
     assert names == {
         "county-metadata.json",
         "state-shipments-by-year.json",
+        "state-opioid-mme-by-year.json",
         "top-distributors-by-year.json",
         "dea-enforcement-actions.json",
         "search-index.json",

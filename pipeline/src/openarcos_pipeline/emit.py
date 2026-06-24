@@ -14,12 +14,13 @@ import jsonschema
 import polars as pl
 
 from .config import Config
-from .fips import FIPS_STATE_MAP
+from .fips import FIPS_STATE_MAP, STATE_DC_FIPS_MAP
 from .log import get_logger
 
 log = get_logger(__name__)
 
 SCHEMAS_DIR = Path(__file__).resolve().parents[2] / "schemas"
+STATE_MME_YEARS = tuple(range(2015, 2025))
 
 
 class SchemaValidationError(RuntimeError):
@@ -77,6 +78,80 @@ def emit_state_shipments_json(cfg: Config) -> Path:
         )
     _validate(rows, "state-shipments-by-year")
     out = cfg.emit_dir / "state-shipments-by-year.json"
+    _write_json(out, rows)
+    log.info("emit: %s (%d rows)", out.name, len(rows))
+    return out
+
+
+def _validate_state_mme_frame(df: pl.DataFrame) -> None:
+    expected_fips = set(STATE_DC_FIPS_MAP)
+    found_years = {int(year) for year in df["year"].unique().to_list()}
+    expected_years = set(STATE_MME_YEARS)
+    if found_years != expected_years:
+        raise SchemaValidationError(
+            "state_opioid_mme_by_year: expected years "
+            f"{min(STATE_MME_YEARS)}-{max(STATE_MME_YEARS)}, got {sorted(found_years)}"
+        )
+
+    for year in STATE_MME_YEARS:
+        year_df = df.filter(pl.col("year") == year)
+        fips_values = [str(fips).zfill(2) for fips in year_df["state_fips"].to_list()]
+        fips_set = set(fips_values)
+        duplicate_count = len(fips_values) - len(fips_set)
+        if duplicate_count:
+            raise SchemaValidationError(
+                f"state_opioid_mme_by_year: duplicate state rows for {year}"
+            )
+        missing = sorted(expected_fips - fips_set)
+        extra = sorted(fips_set - expected_fips)
+        if missing:
+            raise SchemaValidationError(
+                f"state_opioid_mme_by_year: missing state rows for {year}: {', '.join(missing)}"
+            )
+        if extra:
+            raise SchemaValidationError(
+                f"state_opioid_mme_by_year: unexpected state rows for {year}: {', '.join(extra)}"
+            )
+
+
+def emit_state_opioid_mme_json(cfg: Config) -> Path | None:
+    src = cfg.agg_dir / "state_opioid_mme_by_year.parquet"
+    if not src.exists():
+        log.info("emit: state-opioid-mme-by-year.json skipped (%s missing)", src.name)
+        return None
+
+    df = pl.read_parquet(src)
+    _validate_state_mme_frame(df)
+    rows = []
+    for r in df.iter_rows(named=True):
+        state_fips = str(r["state_fips"]).zfill(2)
+        expected_state = STATE_DC_FIPS_MAP.get(state_fips)
+        if expected_state is None:
+            raise SchemaValidationError(
+                f"state_opioid_mme_by_year: unknown state_fips={state_fips!r}"
+            )
+        if str(r["state"]) != expected_state:
+            raise SchemaValidationError(
+                "state_opioid_mme_by_year: state code mismatch "
+                f"for state_fips={state_fips!r}"
+            )
+        rows.append(
+            {
+                "state_fips": state_fips,
+                "state": str(r["state"]),
+                "year": int(r["year"]),
+                "geography_level": "state",
+                "population": int(r["population"] or 0),
+                "mme": float(r["mme"] or 0),
+                "mme_per_capita": float(r["mme_per_capita"] or 0),
+                "mme_per_100k": float(r["mme_per_100k"] or 0),
+                "included_drug_codes": list(r["included_drug_codes"] or []),
+                "excluded_drug_codes": list(r["excluded_drug_codes"] or []),
+                "source_urls": list(r["source_urls"] or []),
+            }
+        )
+    _validate(rows, "state-opioid-mme-by-year")
+    out = cfg.emit_dir / "state-opioid-mme-by-year.json"
     _write_json(out, rows)
     log.info("emit: %s (%d rows)", out.name, len(rows))
     return out
@@ -231,6 +306,7 @@ def emit_county_shipments_parquet(cfg: Config) -> Path:
             pl.col("year").cast(pl.Int64),
             pl.col("pills").cast(pl.Int64),
             pl.col("pills_per_capita").cast(pl.Float64),
+            pl.col("mme_per_capita").cast(pl.Float64),
         ]
     )
     _validate_parquet_as_json(df, "county-shipments-by-year")
@@ -294,6 +370,9 @@ def emit_all(cfg: Config) -> list[Path]:
         emit_top_pharmacies_parquet(cfg),
         emit_cdc_overdose_parquet(cfg),
     ]
+    state_mme = emit_state_opioid_mme_json(cfg)
+    if state_mme is not None:
+        outs.append(state_mme)
     # county-distributors is optional — skipped when the per-county aggregate
     # isn't present (tests with minimal fixtures, for example).
     county_dist = emit_county_distributors_json(cfg)

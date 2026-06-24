@@ -81,5 +81,5 @@
   ],
   "methodology": "Counts reflect Federal Register publication date, not date of underlying misconduct. Each FR Notice with a title/TOC-subject matching a registrant-action disposition is counted once (deduped by document_number). Scheduling, quota, importer/manufacturer registration, and information-collection notices are excluded. Administrative scope only \u2014 criminal prosecutions are tracked separately and not included here. See pipeline/notes/dea-investigation-2026-05-01.md.",
   "source": "Federal Register API (federalregister.gov/api/v1)",
-  "fetched_at": "2026-05-01T16:30:40.295450+00:00"
+  "fetched_at": "2026-05-08T18:23:20.012052+00:00"
 }

@@ -5,13 +5,14 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["fips", "year", "pills", "pills_per_capita"],
+    "required": ["fips", "year", "pills", "pills_per_capita", "mme_per_capita"],
     "additionalProperties": false,
     "properties": {
       "fips": {"type": "string", "pattern": "^[0-9]{5}$"},
       "year": {"type": "integer", "minimum": 2006, "maximum": 2014},
       "pills": {"type": "integer", "minimum": 0},
-      "pills_per_capita": {"type": "number", "minimum": 0}
+      "pills_per_capita": {"type": "number", "minimum": 0},
+      "mme_per_capita": {"type": ["number", "null"], "minimum": 0}
     }
   }
 }

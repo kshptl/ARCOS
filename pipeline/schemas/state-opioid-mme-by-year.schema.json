@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarcos.org/schemas/state-opioid-mme-by-year.schema.json",
+  "title": "State-level opioid MME by year from DEA retail summary PDFs",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "state_fips",
+      "state",
+      "year",
+      "geography_level",
+      "population",
+      "mme",
+      "mme_per_capita",
+      "mme_per_100k",
+      "included_drug_codes",
+      "excluded_drug_codes",
+      "source_urls"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "state_fips": {"type": "string", "pattern": "^[0-9]{2}$"},
+      "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
+      "year": {"type": "integer", "minimum": 2015, "maximum": 2024},
+      "geography_level": {"const": "state"},
+      "population": {"type": "integer", "minimum": 0},
+      "mme": {"type": "number", "minimum": 0},
+      "mme_per_capita": {"type": "number", "minimum": 0},
+      "mme_per_100k": {"type": "number", "minimum": 0},
+      "included_drug_codes": {
+        "type": "array",
+        "items": {"type": "string", "pattern": "^[0-9]{4}[A-Z]?$"},
+        "uniqueItems": true
+      },
+      "excluded_drug_codes": {
+        "type": "array",
+        "items": {"type": "string", "pattern": "^[0-9]{4}[A-Z]?$"},
+        "uniqueItems": true
+      },
+      "source_urls": {
+        "type": "array",
+        "items": {"type": "string", "format": "uri"},
+        "minItems": 1,
+        "uniqueItems": true
+      }
+    }
+  }
+}
